@@ -1,11 +1,11 @@
 PACKAGES = "dpkg"
 PROVIDES = "dpkg"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/d/dpkg/dpkg_1.16.16+rpi1_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/d/dpkg/dpkg_1.16.17+rpi1_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_dpkg = "dpkg_1.16.16+rpi1_armhf.deb"
-SRC_URI[deb0.sha256sum] = "4f2b19fae64b0d5a7d6850540f28b2a7e231af7219f5cd5c97e01b4c1c785046"
-SRC_URI[deb0.md5sum] = "1b00c6bad2e15721d30b373031e58288"
+DEBFILENAME_dpkg = "dpkg_1.16.17+rpi1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "2e38db34ec1236fede15037346ade091613c9cf5354710a6df234f97c6f1726c"
+SRC_URI[deb0.md5sum] = "7aaec3d55e24ce0264053a75c2666adc"
 
 
 inherit deb_group
@@ -36,13 +36,12 @@ FILES_${PN} = " \
 	./usr/share/man/es/man1/dpkg-trigger.1.gz \
 	./usr/bin/dpkg-trigger \
 	./usr/share/man/it/man1/dpkg-deb.1.gz \
-	./usr/share/man/de/man5/dpkg.cfg.5.gz \
 	./usr/share/locale/el/LC_MESSAGES/dpkg.mo \
 	./usr/share/man/pl/man1/dpkg-query.1.gz \
 	./usr/share/locale/mr/LC_MESSAGES/dpkg.mo \
 	./usr/sbin/dpkg-divert \
 	./usr/share/man/pl/man8/dpkg-divert.8.gz \
-	./usr/share/man/pl/man1/dpkg-split.1.gz \
+	./usr/share/locale/es/LC_MESSAGES/dpkg.mo \
 	./usr/share/man/fr/man1/dpkg.1.gz \
 	./usr/share/man/it/man1/dpkg-split.1.gz \
 	./usr/share/man/ja/man1/dpkg-trigger.1.gz \
@@ -55,16 +54,16 @@ FILES_${PN} = " \
 	./usr/share/man/es/man8/update-alternatives.8.gz \
 	./usr/share/man/man1/dpkg.1.gz \
 	./usr/bin/dpkg-deb \
-	./usr/share/locale/bs/LC_MESSAGES/dpkg.mo \
-	./usr/share/locale/ne/LC_MESSAGES/dpkg.mo \
-	./usr/share/man/es/man8/start-stop-daemon.8.gz \
 	./usr/share/man/fr/man1/dpkg-deb.1.gz \
+	./usr/share/dpkg/ostable \
+	./usr/share/man/es/man8/start-stop-daemon.8.gz \
+	./usr/share/locale/bs/LC_MESSAGES/dpkg.mo \
 	./usr/share/doc/dpkg/changelog.gz \
 	./usr/share/man/fr/man8/start-stop-daemon.8.gz \
 	./usr/share/man/it/man5/dpkg.cfg.5.gz \
 	./usr/share/man/de/man1/dpkg-maintscript-helper.1.gz \
 	./usr/share/man/man1/dpkg-trigger.1.gz \
-	./usr/share/dpkg/ostable \
+	./usr/share/locale/ne/LC_MESSAGES/dpkg.mo \
 	./usr/share/dpkg/triplettable \
 	./usr/share/man/sv/man1/dpkg-deb.1.gz \
 	./usr/bin/dpkg \
@@ -79,7 +78,7 @@ FILES_${PN} = " \
 	./usr/share/doc/dpkg/usertags.gz \
 	./usr/share/man/pl/man8/start-stop-daemon.8.gz \
 	./usr/share/man/fr/man1/dpkg-query.1.gz \
-	./usr/share/locale/ku/LC_MESSAGES/dpkg.mo \
+	./usr/share/locale/th/LC_MESSAGES/dpkg.mo \
 	./usr/share/dpkg/abitable \
 	./usr/share/locale/dz/LC_MESSAGES/dpkg.mo \
 	./usr/share/man/ja/man8/start-stop-daemon.8.gz \
@@ -112,7 +111,7 @@ FILES_${PN} = " \
 	./usr/share/doc/dpkg/README.feature-removal-schedule.gz \
 	./usr/share/locale/vi/LC_MESSAGES/dpkg.mo \
 	./usr/share/man/sv/man8/dpkg-divert.8.gz \
-	./usr/share/locale/th/LC_MESSAGES/dpkg.mo \
+	./usr/share/locale/ku/LC_MESSAGES/dpkg.mo \
 	./sbin/start-stop-daemon \
 	./usr/bin/dpkg-divert \
 	./usr/share/dpkg/cputable \
@@ -122,13 +121,14 @@ FILES_${PN} = " \
 	./usr/share/locale/it/LC_MESSAGES/dpkg.mo \
 	./usr/sbin/dpkg-statoverride \
 	./usr/share/man/sv/man1/dpkg-split.1.gz \
-	./usr/share/locale/pl/LC_MESSAGES/dpkg.mo \
+	./usr/share/man/de/man1/dpkg.1.gz \
 	./usr/share/man/de/man8/dpkg-divert.8.gz \
 	./usr/share/man/man1/dpkg-deb.1.gz \
 	./usr/share/locale/eu/LC_MESSAGES/dpkg.mo \
 	./usr/share/locale/nb/LC_MESSAGES/dpkg.mo \
 	./usr/share/man/ja/man1/dpkg-query.1.gz \
 	./usr/share/man/man8/start-stop-daemon.8.gz \
+	./usr/share/man/fr/man5/dpkg.cfg.5.gz \
 	./usr/share/man/man1/dpkg-maintscript-helper.1.gz \
 	./usr/share/man/ja/man1/dpkg.1.gz \
 	./usr/share/locale/ast/LC_MESSAGES/dpkg.mo \
@@ -137,13 +137,13 @@ FILES_${PN} = " \
 	./usr/share/man/de/man1/dpkg-query.1.gz \
 	./usr/share/man/fr/man8/dpkg-statoverride.8.gz \
 	./usr/bin/dpkg-statoverride \
-	./usr/share/man/de/man1/dpkg.1.gz \
+	./usr/share/locale/pl/LC_MESSAGES/dpkg.mo \
 	./usr/share/locale/nn/LC_MESSAGES/dpkg.mo \
 	./usr/share/locale/cs/LC_MESSAGES/dpkg.mo \
 	./etc/dpkg/dpkg.cfg \
 	./usr/share/man/it/man1/dpkg.1.gz \
 	./usr/share/man/ja/man8/dpkg-statoverride.8.gz \
-	./usr/share/locale/es/LC_MESSAGES/dpkg.mo \
+	./usr/share/man/pl/man1/dpkg-split.1.gz \
 	./usr/share/man/es/man1/dpkg-split.1.gz \
 	./usr/share/man/hu/man5/dpkg.cfg.5.gz \
 	./usr/share/man/fr/man1/dpkg-maintscript-helper.1.gz \
@@ -166,7 +166,7 @@ FILES_${PN} = " \
 	./usr/share/lintian/overrides/dpkg \
 	./usr/share/locale/hu/LC_MESSAGES/dpkg.mo \
 	./usr/share/man/sv/man5/dpkg.cfg.5.gz \
-	./usr/share/man/fr/man5/dpkg.cfg.5.gz \
+	./usr/share/man/de/man5/dpkg.cfg.5.gz \
 	./usr/share/man/de/man1/dpkg-trigger.1.gz \
 	./usr/share/man/it/man8/dpkg-statoverride.8.gz \
 	./usr/bin/dpkg-query \
