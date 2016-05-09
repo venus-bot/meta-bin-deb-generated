@@ -1,13 +1,13 @@
 PACKAGES = "libglib2.0-0"
 PROVIDES = "libglib2.0-0"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/g/glib2.0/libglib2.0-0_2.42.1-1_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/g/glib2.0/libglib2.0-0_2.42.1-1+b1_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_libglib2.0-0 = "libglib2.0-0_2.42.1-1_armhf.deb"
-SRC_URI[deb0.sha256sum] = "d517502ed6b46ba8fd5b4939a993d784a3872cadb39a7554c7abe4c57dc49118"
-SRC_URI[deb0.md5sum] = "42eb168f53e41e40f69f803a3284594a"
+DEBFILENAME_libglib2.0-0 = "libglib2.0-0_2.42.1-1+b1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "357f10bdf39b93790841361001329ae68419a75fce276558159e04968ed393b9"
+SRC_URI[deb0.md5sum] = "33d51baf83cec9984d1f326da0f8f6de"
 
-RDEPENDS_lib${PN}-0 = "libc6 (>= 2.17) libffi6 (>= 3.0.4) libpcre3 (>= 8.10) libselinux1 (>= 1.32) zlib1g (>= 1:1.2.2)"
+RDEPENDS_lib${PN}-0 = "libc6 (>= 2.17) libffi6 (>= 3.0.4) libpcre3 (>= 1:8.35) libselinux1 (>= 1.32) zlib1g (>= 1:1.2.2)"
 DEPENDS = "libselinux1 libffi6 libpcre3 zlib1g libc6"
 
 
@@ -33,10 +33,11 @@ FILES_libglib2.0-0 = " \
 	./usr/lib/arm-linux-gnueabihf/libgmodule-2.0.so.0 \
 	./usr/lib/arm-linux-gnueabihf/glib-2.0/gio-querymodules \
 	./usr/share/doc/libglib2.0-0/changelog.gz \
+	./usr/lib/arm-linux-gnueabihf/libgmodule-2.0.so.0.4200.1 \
 	./lib/arm-linux-gnueabihf/libglib-2.0.so.0.4200.1 \
 	./lib/arm-linux-gnueabihf/libglib-2.0.so.0 \
 	./usr/share/doc/libglib2.0-0/ChangeLog.pre-1-2.gz \
-	./usr/lib/arm-linux-gnueabihf/libgmodule-2.0.so.0.4200.1 \
+	./usr/share/doc/libglib2.0-0/changelog.Debian.armhf.gz \
 	./usr/lib/arm-linux-gnueabihf/libgobject-2.0.so.0 \
 	./usr/lib/arm-linux-gnueabihf/libgio-2.0.so.0 \
 	./usr/share/doc/libglib2.0-0/README.gz \

@@ -1,18 +1,18 @@
 PACKAGES = "libssl1.0.0 openssl"
 PROVIDES = "libssl1.0.0 openssl"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/o/openssl/libssl1.0.0_1.0.1k-3+deb8u1_armhf.deb;unpack=0;name=deb0\
-	http://ftp.de.debian.org/debian/pool/main/o/openssl/openssl_1.0.1k-3+deb8u1_armhf.deb;unpack=0;name=deb1\
+	http://ftp.de.debian.org/debian/pool/main/o/openssl/libssl1.0.0_1.0.1k-3+deb8u4_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/o/openssl/openssl_1.0.1k-3+deb8u4_armhf.deb;unpack=0;name=deb1\
 "
-DEBFILENAME_libssl1.0.0 = "libssl1.0.0_1.0.1k-3+deb8u1_armhf.deb"
-SRC_URI[deb0.sha256sum] = "6bb53f0faa4c81c04ddd5abe4c2ae2a9835d63373392388db86f5108e6262f84"
-SRC_URI[deb0.md5sum] = "4b6eae067efc140f1598664ddc8b79e8"
-DEBFILENAME_openssl = "openssl_1.0.1k-3+deb8u1_armhf.deb"
-SRC_URI[deb1.sha256sum] = "1d5a405f7f826a49a0423de6ba31c3a258163c4e5f3d4005f7a0a6350a21a5fd"
-SRC_URI[deb1.md5sum] = "d4ff2a963a352fe075be2def43e7429f"
+DEBFILENAME_libssl1.0.0 = "libssl1.0.0_1.0.1k-3+deb8u4_armhf.deb"
+SRC_URI[deb0.sha256sum] = "184bf9abb376abca99957374ed9fc6024026a6391ab411608e1c0b5b5a3a4bdc"
+SRC_URI[deb0.md5sum] = "f3cfa667ef7b37511850e016045abb2b"
+DEBFILENAME_openssl = "openssl_1.0.1k-3+deb8u4_armhf.deb"
+SRC_URI[deb1.sha256sum] = "f8dd68bd4ed9d303eff8e88f1810e0882886d05e11a222e289275a4141a54889"
+SRC_URI[deb1.md5sum] = "a52d64eca54dc2089e71b1218bbae060"
 
 RDEPENDS_libssl1.0.0 = "libc6 (>= 2.11) debconf (>= 0.5)"
-RDEPENDS_${PN} = "libc6 (>= 2.15) libssl1.0.0 (>= 1.0.1)"
+RDEPENDS_${PN} = "libc6 (>= 2.15) libssl1.0.0 (>= 1.0.1k-3+deb8u3)"
 DEPENDS = "debconf libc6"
 
 
@@ -88,10 +88,10 @@ FILES_${PN} = " \
 	./usr/share/man/man1/ripemd160.1ssl.gz \
 	./usr/share/man/man1/s_server.1ssl.gz \
 	./usr/share/man/man1/pkeyparam.1ssl.gz \
-	./usr/share/man/man1/x509.1ssl.gz \
+	./usr/share/man/man1/sha224.1ssl.gz \
 	./usr/share/man/man1/sess_id.1ssl.gz \
 	./usr/share/man/man1/genrsa.1ssl.gz \
-	./usr/share/man/man1/sha.1ssl.gz \
+	./usr/share/doc/openssl/openssl_button.html \
 	./usr/share/doc/openssl/HOWTO/proxy_certificates.txt.gz \
 	./usr/share/man/man1/dsa.1ssl.gz \
 	./usr/share/doc/openssl/HOWTO/certificates.txt.gz \
@@ -110,7 +110,7 @@ FILES_${PN} = " \
 	./usr/share/man/man1/version.1ssl.gz \
 	./usr/lib/ssl/misc/CA.pl \
 	./usr/share/man/man1/pkcs8.1ssl.gz \
-	./usr/share/man/man1/sha224.1ssl.gz \
+	./usr/share/man/man1/x509.1ssl.gz \
 	./usr/share/doc/openssl/copyright \
 	./usr/share/man/man1/gendsa.1ssl.gz \
 	./usr/share/man/man1/mdc2.1ssl.gz \
@@ -124,7 +124,7 @@ FILES_${PN} = " \
 	./usr/share/man/man1/cms.1ssl.gz \
 	./usr/share/man/man1/dgst.1ssl.gz \
 	./usr/share/man/man1/passwd.1ssl.gz \
-	./usr/share/doc/openssl/openssl_button.html \
+	./usr/share/man/man1/sha.1ssl.gz \
 	./usr/lib/ssl/misc/c_name \
 	./usr/share/man/man1/sha384.1ssl.gz \
 	./usr/share/man/man7/des_modes.7ssl.gz \

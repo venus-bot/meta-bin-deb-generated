@@ -1,15 +1,15 @@
 PACKAGES = "libpam-modules libpam0g"
 PROVIDES = "libpam-modules libpam0g"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/p/pam/libpam-modules_1.1.8-3.1_armhf.deb;unpack=0;name=deb0\
-	http://ftp.de.debian.org/debian/pool/main/p/pam/libpam0g_1.1.8-3.1_armhf.deb;unpack=0;name=deb1\
+	http://ftp.de.debian.org/debian/pool/main/p/pam/libpam-modules_1.1.8-3.1+deb8u1+b1_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/p/pam/libpam0g_1.1.8-3.1+deb8u1+b1_armhf.deb;unpack=0;name=deb1\
 "
-DEBFILENAME_libpam-modules = "libpam-modules_1.1.8-3.1_armhf.deb"
-SRC_URI[deb0.sha256sum] = "9dc812776d9cfb9accbeefd04e7b9946bac83453d35cc385ed3f730871434e67"
-SRC_URI[deb0.md5sum] = "715d85d4245384800aa8aa8f7bb6d885"
-DEBFILENAME_libpam0g = "libpam0g_1.1.8-3.1_armhf.deb"
-SRC_URI[deb1.sha256sum] = "01b533095c73690dd5cfac35a9389ed65355f3e666aeac3027301130e958ad5f"
-SRC_URI[deb1.md5sum] = "2156d9230dba42e519057c93668d7bda"
+DEBFILENAME_libpam-modules = "libpam-modules_1.1.8-3.1+deb8u1+b1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "f629925f07239f9409e49238cd9d71fca704cf07bd8805c6d88720577682adb5"
+SRC_URI[deb0.md5sum] = "c4b5279b53ac76b89002438567f8f58e"
+DEBFILENAME_libpam0g = "libpam0g_1.1.8-3.1+deb8u1+b1_armhf.deb"
+SRC_URI[deb1.sha256sum] = "fe4e34296f1108222f3de387b2b4aa3a89ee5ff1078c7f8721b7ba55cc2fd329"
+SRC_URI[deb1.md5sum] = "707fa881f66d6b9c87a4acc208772e8e"
 
 RDEPENDS_lib${PN}0g = "libaudit1 (>= 1:2.2.1) libc6 (>= 2.8) debconf (>= 0.5)"
 DEPENDS = "debconf libaudit1 libc6"
@@ -25,17 +25,17 @@ INSANE_SKIP_${PN} += "already-stripped"
 FILES_libpam-modules = " \
 	./usr/share/man/man8/pam_issue.8.gz \
 	./lib/arm-linux-gnueabihf/security/pam_umask.so \
-	./usr/share/man/man8/pam_rhosts.8.gz \
+	./usr/share/man/man8/pam_timestamp.8.gz \
 	./usr/share/doc/libpam-modules/NEWS.Debian.gz \
 	./etc/security/namespace.conf \
-	./usr/share/man/man8/pam_timestamp.8.gz \
+	./usr/share/man/man8/pam_rhosts.8.gz \
 	./lib/arm-linux-gnueabihf/security/pam_filter.so \
 	./lib/arm-linux-gnueabihf/security/pam_sepermit.so \
 	./usr/share/man/man8/pam_tally.8.gz \
 	./usr/share/man/man5/access.conf.5.gz \
 	./usr/share/man/man8/pam_env.8.gz \
 	./usr/share/man/man8/pam_userdb.8.gz \
-	./lib/arm-linux-gnueabihf/security/pam_permit.so \
+	./usr/share/man/man8/pam_debug.8.gz \
 	./lib/arm-linux-gnueabihf/security/pam_tally2.so \
 	./usr/share/man/man8/pam_pwhistory.8.gz \
 	./lib/arm-linux-gnueabihf/security/pam_debug.so \
@@ -60,7 +60,7 @@ FILES_libpam-modules = " \
 	./lib/arm-linux-gnueabihf/security/pam_rootok.so \
 	./usr/share/man/man8/pam_keyinit.8.gz \
 	./usr/share/man/man8/pam_shells.8.gz \
-	./lib/arm-linux-gnueabihf/security/pam_limits.so \
+	./usr/share/man/man5/sepermit.conf.5.gz \
 	./usr/share/man/man8/pam_nologin.8.gz \
 	./lib/arm-linux-gnueabihf/security/pam_echo.so \
 	./etc/security/limits.conf \
@@ -71,24 +71,25 @@ FILES_libpam-modules = " \
 	./usr/share/man/man5/limits.conf.5.gz \
 	./usr/share/man/man8/pam_tally2.8.gz \
 	./usr/share/man/man8/pam_permit.8.gz \
-	./usr/share/man/man8/pam_debug.8.gz \
+	./lib/arm-linux-gnueabihf/security/pam_permit.so \
+	./usr/share/doc/libpam-modules/changelog.Debian.armhf.gz \
 	./usr/share/man/man8/pam_echo.8.gz \
 	./usr/share/man/man5/namespace.conf.5.gz \
 	./usr/share/man/man8/pam_warn.8.gz \
 	./lib/arm-linux-gnueabihf/security/pam_timestamp.so \
-	./usr/share/man/man8/pam_rootok.8.gz \
+	./lib/arm-linux-gnueabihf/security/pam_loginuid.so \
 	./usr/share/doc/libpam-modules/copyright \
 	./lib/arm-linux-gnueabihf/security/pam_keyinit.so \
 	./usr/share/man/man8/pam_sepermit.8.gz \
 	./usr/share/man/man8/pam_time.8.gz \
-	./lib/arm-linux-gnueabihf/security/pam_loginuid.so \
 	./usr/share/man/man8/pam_faildelay.8.gz \
 	./lib/arm-linux-gnueabihf/security/pam_stress.so \
 	./etc/security/sepermit.conf \
 	./lib/arm-linux-gnueabihf/security/pam_succeed_if.so \
 	./usr/share/man/man8/pam_filter.8.gz \
+	./usr/share/man/man8/pam_rootok.8.gz \
 	./lib/arm-linux-gnueabihf/security/pam_mkhomedir.so \
-	./lib/arm-linux-gnueabihf/security/pam_wheel.so \
+	./lib/arm-linux-gnueabihf/security/pam_access.so \
 	./lib/arm-linux-gnueabihf/security/pam_tally.so \
 	./lib/arm-linux-gnueabihf/security/pam_mail.so \
 	./usr/share/man/man8/pam_listfile.8.gz \
@@ -98,7 +99,7 @@ FILES_libpam-modules = " \
 	./lib/arm-linux-gnueabihf/security/pam_ftp.so \
 	./lib/arm-linux-gnueabihf/security/pam_time.so \
 	./lib/arm-linux-gnueabihf/security/pam_issue.so \
-	./usr/share/man/man5/sepermit.conf.5.gz \
+	./lib/arm-linux-gnueabihf/security/pam_limits.so \
 	./lib/arm-linux-gnueabihf/security/pam_warn.so \
 	./lib/arm-linux-gnueabihf/security/pam_faildelay.so \
 	./lib/arm-linux-gnueabihf/security/pam_motd.so \
@@ -113,7 +114,7 @@ FILES_libpam-modules = " \
 	./lib/arm-linux-gnueabihf/security/pam_deny.so \
 	./etc/security/namespace.init \
 	./usr/share/man/man8/pam_loginuid.8.gz \
-	./lib/arm-linux-gnueabihf/security/pam_access.so \
+	./lib/arm-linux-gnueabihf/security/pam_wheel.so \
 	./usr/share/man/man8/pam_limits.8.gz \
 	./lib/arm-linux-gnueabihf/security/pam_userdb.so \
 	./usr/share/man/man8/pam_securetty.8.gz \
@@ -138,10 +139,11 @@ FILES_libpam0g = " \
 	./lib/arm-linux-gnueabihf/libpamc.so.0.82.1 \
 	./usr/share/doc/libpam0g/Debian-PAM-MiniPolicy.gz \
 	./usr/share/doc/libpam0g/README \
-	./lib/arm-linux-gnueabihf/libpam_misc.so.0.82.0 \
+	./usr/share/doc/libpam0g/changelog.Debian.gz \
 	./lib/arm-linux-gnueabihf/libpam.so.0 \
 	./lib/arm-linux-gnueabihf/libpam.so.0.83.1 \
-	./usr/share/doc/libpam0g/changelog.Debian.gz \
+	./lib/arm-linux-gnueabihf/libpam_misc.so.0.82.0 \
+	./usr/share/doc/libpam0g/changelog.Debian.armhf.gz \
 	./usr/share/doc/libpam0g/copyright \
 	./usr/share/doc/libpam0g/NEWS.Debian.gz \
 	./usr/share/doc/libpam0g/README.Debian \

@@ -1,11 +1,11 @@
 PACKAGES = "libsystemd0"
 PROVIDES = "libsystemd0"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/s/systemd/libsystemd0_215-17+deb8u2_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/s/systemd/libsystemd0_215-17+deb8u4_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_libsystemd0 = "libsystemd0_215-17+deb8u2_armhf.deb"
-SRC_URI[deb0.sha256sum] = "bbb43a9a6c4553d442db9403885f456b78962eb90b8612ea6b1ec6f1c2c1e086"
-SRC_URI[deb0.md5sum] = "1f41165fc5bc9701b6febd415be753ea"
+DEBFILENAME_libsystemd0 = "libsystemd0_215-17+deb8u4_armhf.deb"
+SRC_URI[deb0.sha256sum] = "c07ce49bd7591ebeeec705c07a87b873dec1cccbeb8c8dcbc8db0d15c24424c3"
+SRC_URI[deb0.md5sum] = "2a1a1cec37791c54a7b56caab220916a"
 
 
 inherit deb_group

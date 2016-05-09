@@ -1,22 +1,22 @@
 PACKAGES = "icu-devtools libicu-dev libicu52"
 PROVIDES = "icu-devtools libicu-dev libicu52"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/i/icu/icu-devtools_52.1-8+deb8u2_armhf.deb;unpack=0;name=deb0\
-	http://ftp.de.debian.org/debian/pool/main/i/icu/libicu-dev_52.1-8+deb8u2_armhf.deb;unpack=0;name=deb1\
-	http://ftp.de.debian.org/debian/pool/main/i/icu/libicu52_52.1-8+deb8u2_armhf.deb;unpack=0;name=deb2\
+	http://ftp.de.debian.org/debian/pool/main/i/icu/icu-devtools_52.1-8+deb8u3_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/i/icu/libicu-dev_52.1-8+deb8u3_armhf.deb;unpack=0;name=deb1\
+	http://ftp.de.debian.org/debian/pool/main/i/icu/libicu52_52.1-8+deb8u3_armhf.deb;unpack=0;name=deb2\
 "
-DEBFILENAME_icu-devtools = "icu-devtools_52.1-8+deb8u2_armhf.deb"
-SRC_URI[deb0.sha256sum] = "9d678619f86f84773930a6d8b5031b68c53a259870617ba5c444217b4cf7a26a"
-SRC_URI[deb0.md5sum] = "6c2532e2ac5ff78c5e031a06ea6034d7"
-DEBFILENAME_libicu-dev = "libicu-dev_52.1-8+deb8u2_armhf.deb"
-SRC_URI[deb1.sha256sum] = "017243ba14f79ad8c7f15f5be1a898257b93df403693c4a5590ebde466d41992"
-SRC_URI[deb1.md5sum] = "89ca13c5df4f11d9f7d95269b9dd7bac"
-DEBFILENAME_libicu52 = "libicu52_52.1-8+deb8u2_armhf.deb"
-SRC_URI[deb2.sha256sum] = "a00852c2e9341725ba764694e598ebe46329352618ca108883a3b7dbe069b346"
-SRC_URI[deb2.md5sum] = "8f3da60ed1a6b64c3ec8e43df9d39b94"
+DEBFILENAME_icu-devtools = "icu-devtools_52.1-8+deb8u3_armhf.deb"
+SRC_URI[deb0.sha256sum] = "f1f163a37654a4c5d5b9a2b63e914cf99b470e70da54367524b8dd80baf160bd"
+SRC_URI[deb0.md5sum] = "e5b4c3a0857847c97fb4e91df075e7d1"
+DEBFILENAME_libicu-dev = "libicu-dev_52.1-8+deb8u3_armhf.deb"
+SRC_URI[deb1.sha256sum] = "16ed50ce388b39b0781d5a4ccfec58710c6aae26827be5a0779eb120452a1115"
+SRC_URI[deb1.md5sum] = "56f3c231df8e807695bb852838311f38"
+DEBFILENAME_libicu52 = "libicu52_52.1-8+deb8u3_armhf.deb"
+SRC_URI[deb2.sha256sum] = "a84cd273cb4b85791669a8ad35833f2cd206888bdb2adf3c4cb1502fe5f3880f"
+SRC_URI[deb2.md5sum] = "abb6c3147c9aa0f7c3a57c7a1a44d78d"
 
 RDEPENDS_${PN}-devtools = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libicu52 (>= 52~m1-1~) libstdc++6 (>= 4.9)"
-RDEPENDS_lib${PN}-dev = "libicu52 (= 52.1-8+deb8u2) icu-devtools (>= 52.1-8+deb8u2) libc6-dev"
+RDEPENDS_lib${PN}-dev = "libicu52 (= 52.1-8+deb8u3) icu-devtools (>= 52.1-8+deb8u3) libc6-dev"
 RDEPENDS_lib${PN}52 = "libc6 (>= 2.7) libgcc1 (>= 1:4.4.0) libstdc++6 (>= 4.9)"
 DEPENDS = "libgcc1 libc6 libc6-dev libstdc++6"
 
@@ -212,8 +212,7 @@ FILES_libicu-dev = " \
 	./usr/share/doc/libicu-dev/examples/layout/gdiglue.cpp \
 	./usr/include/arm-linux-gnueabihf/unicode/messagepattern.h \
 	./usr/include/arm-linux-gnueabihf/unicode/utf32.h \
-	./usr/include/arm-linux-gnueabihf/unicode/tznames.h \
-	./usr/include/arm-linux-gnueabihf/layout/plruns.h \
+	./usr/include/arm-linux-gnueabihf/unicode/plurrule.h \
 	./usr/share/doc/libicu-dev/copyright \
 	./usr/share/doc/libicu-dev/examples/layout/GDIFontMap.cpp \
 	./usr/include/arm-linux-gnueabihf/unicode/utf16.h \
@@ -241,6 +240,7 @@ FILES_libicu-dev = " \
 	./usr/include/arm-linux-gnueabihf/unicode/format.h \
 	./usr/share/doc/libicu-dev/examples/ucnv/data01.txt \
 	./usr/include/arm-linux-gnueabihf/unicode/udatpg.h \
+	./usr/include/arm-linux-gnueabihf/unicode/locdspnm.h \
 	./usr/share/doc/libicu-dev/examples/cal/Makefile \
 	./usr/share/doc/libicu-dev/examples/udata/writer.c \
 	./usr/share/doc/libicu-dev/examples/numfmt/numfmt.sln \
@@ -264,7 +264,7 @@ FILES_libicu-dev = " \
 	./usr/include/arm-linux-gnueabihf/unicode/schriter.h \
 	./usr/share/doc/libicu-dev/examples/layout/ScriptCompositeFontInstance.cpp \
 	./usr/include/arm-linux-gnueabihf/unicode/uvernum.h \
-	./usr/include/arm-linux-gnueabihf/unicode/ubidi.h \
+	./usr/include/arm-linux-gnueabihf/unicode/rep.h \
 	./usr/include/arm-linux-gnueabihf/unicode/calendar.h \
 	./usr/include/arm-linux-gnueabihf/unicode/ucnv_err.h \
 	./usr/include/arm-linux-gnueabihf/unicode/tmutfmt.h \
@@ -342,6 +342,7 @@ FILES_libicu-dev = " \
 	./usr/include/arm-linux-gnueabihf/unicode/coleitr.h \
 	./usr/share/doc/libicu-dev/examples/layout/FontTableCache.h \
 	./usr/share/doc/libicu-dev/examples/layout/GnomeFontMap.h \
+	./usr/include/arm-linux-gnueabihf/unicode/tznames.h \
 	./usr/include/arm-linux-gnueabihf/unicode/ucsdet.h \
 	./usr/share/doc/libicu-dev/examples/cal/Makefile.in \
 	./usr/share/doc/libicu-dev/examples/datefmt/main.cpp \
@@ -376,7 +377,7 @@ FILES_libicu-dev = " \
 	./usr/share/doc/libicu-dev/examples/translit/Makefile \
 	./usr/share/doc/libicu-dev/examples/strsrch/strsrch.vcxproj \
 	./usr/share/doc/libicu-dev/examples/layout/gnomeglue.cpp \
-	./usr/include/arm-linux-gnueabihf/unicode/usearch.h \
+	./usr/include/arm-linux-gnueabihf/layout/plruns.h \
 	./usr/share/doc/libicu-dev/examples/layout/resource.h \
 	./usr/lib/arm-linux-gnueabihf/libicutest.so \
 	./usr/share/doc/libicu-dev/examples/layout/layout.cpp \
@@ -396,11 +397,11 @@ FILES_libicu-dev = " \
 	./usr/include/arm-linux-gnueabihf/unicode/uchriter.h \
 	./usr/include/arm-linux-gnueabihf/unicode/umisc.h \
 	./usr/share/doc/libicu-dev/examples/uresb/root.txt \
-	./usr/include/arm-linux-gnueabihf/unicode/rep.h \
+	./usr/include/arm-linux-gnueabihf/unicode/ubidi.h \
 	./usr/include/arm-linux-gnueabihf/unicode/ucol.h \
 	./usr/include/arm-linux-gnueabihf/unicode/umsg.h \
 	./usr/include/arm-linux-gnueabihf/unicode/icudataver.h \
-	./usr/include/arm-linux-gnueabihf/unicode/locdspnm.h \
+	./usr/include/arm-linux-gnueabihf/unicode/usearch.h \
 	./usr/include/arm-linux-gnueabihf/unicode/utf_old.h \
 	./usr/share/doc/libicu-dev/examples/break/break.vcxproj.filters \
 	./usr/share/doc/libicu-dev/examples/citer/Makefile \
@@ -436,7 +437,6 @@ FILES_libicu-dev = " \
 	./usr/share/doc/libicu-dev/examples/layout/rsurface.cpp \
 	./usr/include/arm-linux-gnueabihf/unicode/bytestrie.h \
 	./usr/include/arm-linux-gnueabihf/unicode/alphaindex.h \
-	./usr/include/arm-linux-gnueabihf/unicode/plurrule.h \
 	./usr/share/doc/libicu-dev/examples/plurfmtsample/plurfmtsample.vcxproj.filters \
 	./usr/share/doc/libicu-dev/examples/csdet/csdet.c \
 	./usr/include/arm-linux-gnueabihf/unicode/curramt.h \
@@ -452,7 +452,7 @@ FILES_libicu-dev = " \
 	./usr/include/arm-linux-gnueabihf/unicode/uloc.h \
 	./usr/share/doc/libicu-dev/examples/cal/uprint.h \
 	./usr/share/doc/libicu-dev/examples/citer/citer.vcxproj.filters \
-	./usr/include/arm-linux-gnueabihf/unicode/normalizer2.h \
+	./usr/include/arm-linux-gnueabihf/unicode/dtitvfmt.h \
 	./usr/share/doc/libicu-dev/examples/cal/uprint.c \
 	./usr/share/doc/libicu-dev/examples/layout/UnicodeReader.h \
 	./usr/share/doc/libicu-dev/examples/props/props.cpp \
@@ -512,7 +512,7 @@ FILES_libicu-dev = " \
 	./usr/include/arm-linux-gnueabihf/unicode/measunit.h \
 	./usr/share/doc/libicu-dev/examples/uciter8/uciter8.vcxproj \
 	./usr/include/arm-linux-gnueabihf/unicode/measure.h \
-	./usr/include/arm-linux-gnueabihf/unicode/dtitvfmt.h \
+	./usr/include/arm-linux-gnueabihf/unicode/normalizer2.h \
 	./usr/share/doc/libicu-dev/examples/uresb/resources.vcxproj \
 	./usr/lib/arm-linux-gnueabihf/icu/52.1/Makefile.inc \
 	./usr/share/doc/libicu-dev/examples/layout/GnomeFontInstance.cpp \

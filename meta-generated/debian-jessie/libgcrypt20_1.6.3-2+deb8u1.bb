@@ -1,11 +1,11 @@
 PACKAGES = "libgcrypt20"
 PROVIDES = "libgcrypt20"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3-2_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u1_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_libgcrypt20 = "libgcrypt20_1.6.3-2_armhf.deb"
-SRC_URI[deb0.sha256sum] = "f06268e3e4fc5640d9f601eebb5923c50d3e78cd5115159fa628a4aaab01f721"
-SRC_URI[deb0.md5sum] = "fa7602af51d42ceb220907664b212d9c"
+DEBFILENAME_libgcrypt20 = "libgcrypt20_1.6.3-2+deb8u1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "da2a967e322fcfd377241e3593b58c5c4e8991595f616e2e0cab90f65f220700"
+SRC_URI[deb0.md5sum] = "635189bdb302dff9622f5a12779411d9"
 
 RDEPENDS_${PN} = "libc6 (>= 2.15) libgpg-error0 (>= 1.14)"
 DEPENDS = "libgpg-error0 libc6"

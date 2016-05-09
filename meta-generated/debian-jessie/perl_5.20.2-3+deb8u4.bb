@@ -1,11 +1,11 @@
 PACKAGES = "perl-base"
 PROVIDES = "perl-base"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/p/perl/perl-base_5.20.2-3+deb8u1_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/p/perl/perl-base_5.20.2-3+deb8u4_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_perl-base = "perl-base_5.20.2-3+deb8u1_armhf.deb"
-SRC_URI[deb0.sha256sum] = "83ec4e12263d151e1dcba795cb8e554b58aac1b285cfc9037d1882974c78adae"
-SRC_URI[deb0.md5sum] = "d7238fa2c978a104472dfc64c715d34e"
+DEBFILENAME_perl-base = "perl-base_5.20.2-3+deb8u4_armhf.deb"
+SRC_URI[deb0.sha256sum] = "6e93950dee43e5d2e08ece12ebed5e34fca9e30706169232ba0a42b4436f879c"
+SRC_URI[deb0.md5sum] = "1c4bdfcc8f89806a77c8e8edcac10054"
 
 
 inherit deb_group
@@ -24,7 +24,6 @@ FILES_perl-base = " \
 	./usr/share/perl/5.20.2/unicore/lib/Hex/Y.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Sc/Knda.pl \
 	./usr/share/doc/perl/Documentation \
-	./usr/share/perl/5.20.2/unicore/lib/Gc/Sc.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Age/V41.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Sc/Lao.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Scx/Grek.pl \
@@ -36,7 +35,7 @@ FILES_perl-base = " \
 	./usr/share/perl/5.20.2/unicore/lib/Perl/_PerlCha.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Space/Y.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Ext/Y.pl \
-	./usr/share/perl/5.20.2/unicore/lib/Gc/Lo.pl \
+	./usr/share/perl/5.20.2/File/Basename.pm \
 	./usr/share/perl/5.20.2/constant.pm \
 	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/IO/Socket/UNIX.pm \
 	./usr/share/perl/5.20.2/unicore/lib/WB/ML.pl \
@@ -64,8 +63,8 @@ FILES_perl-base = " \
 	./usr/share/perl/5.20.2/unicore/lib/Sc/Han.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Perl/_PerlIDS.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Sc/Limb.pl \
-	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/IO/Select.pm \
-	./usr/share/perl/5.20.2/unicore/lib/QMark/Y.pl \
+	./usr/share/perl/5.20.2/unicore/lib/Lb/BA.pl \
+	./usr/share/perl/5.20.2/unicore/lib/Nv/1_2.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Gc/Lt.pl \
 	./usr/share/perl/5.20.2/unicore/lib/WB/HL.pl \
 	./usr/share/perl/5.20.2/unicore/lib/CE/Y.pl \
@@ -76,18 +75,17 @@ FILES_perl-base = " \
 	./usr/share/perl/5.20.2/XSLoader.pm \
 	./usr/share/perl/5.20.2/unicore/lib/Perl/_XSpecia.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Perl/PerlWord.pl \
-	./usr/share/perl/5.20.2/unicore/lib/Jg/NoJoinin.pl \
+	./usr/share/perl/5.20.2/unicore/lib/Ea/Na.pl \
 	./usr/lib/arm-linux-gnueabihf/libperl.so.5.20.2 \
 	./usr/share/perl/5.20.2/unicore/lib/Nv/60.pl \
 	./usr/share/perl/5.20.2/unicore/To/Digit.pl \
 	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/auto/File/Glob/Glob.so \
-	./usr/share/perl/5.20.2/unicore/lib/Dt/Sqr.pl \
 	./usr/share/perl/5.20.2/warnings/register.pm \
 	./usr/share/perl/5.20.2/unicore/lib/Dt/Vert.pl \
 	./usr/share/perl/5.20.2/unicore/To/SB.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Ccc/ATAR.pl \
 	./usr/share/perl/5.20.2/unicore/lib/NFKCQC/Y.pl \
-	./usr/share/perl/5.20.2/unicore/To/GCB.pl \
+	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/Errno.pm \
 	./usr/share/perl/5.20.2/unicore/lib/NChar/Y.pl \
 	./usr/share/perl/5.20.2/unicore/lib/CWCM/Y.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Sc/Orya.pl \
@@ -125,17 +123,17 @@ FILES_perl-base = " \
 	./usr/share/perl/5.20.2/Text/Wrap.pm \
 	./usr/share/perl/5.20.2/bytes_heavy.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Perl/PosixPun.pl \
-	./usr/share/perl/5.20.2/unicore/lib/Lb/PR.pl \
+	./usr/share/perl/5.20.2/Text/ParseWords.pm \
 	./usr/share/perl/5.20.2/unicore/lib/Jg/Waw.pl \
 	./usr/share/perl/5.20.2/unicore/To/Lower.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Sc/Geor.pl \
 	./usr/share/perl/5.20.2/unicore/To/Bc.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Lb/NS.pl \
-	./usr/share/perl/5.20.2/unicore/lib/Gc/Cf.pl \
+	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/auto/re/re.so \
 	./usr/share/perl/5.20.2/unicore/lib/Jg/Hah.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Scx/Cprt.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Perl/_XExtend.pl \
-	./usr/share/perl/5.20.2/unicore/lib/CWT/Y.pl \
+	./usr/share/perl/5.20.2/unicore/lib/Nv/5000.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Math/Y.pl \
 	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/IO/Handle.pm \
 	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/Socket.pm \
@@ -149,7 +147,7 @@ FILES_perl-base = " \
 	./usr/share/perl/5.20.2/unicore/lib/Alpha/Y.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Perl/_PerlFol.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Dt/Sub.pl \
-	./usr/share/perl/5.20.2/unicore/lib/NFDQC/N.pl \
+	./usr/share/perl/5.20.2/unicore/lib/Perl/_XRegula.pl \
 	./usr/share/perl/5.20.2/Carp/Heavy.pm \
 	./usr/share/perl/5.20.2/unicore/lib/SB/UP.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Ccc/DB.pl \
@@ -159,13 +157,14 @@ FILES_perl-base = " \
 	./usr/share/perl/5.20.2/unicore/To/Bmg.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Gc/Nl.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Scx/Han.pl \
+	./usr/share/perl/5.20.2/unicore/Heavy.pl \
+	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/auto/Fcntl/Fcntl.so \
 	./usr/share/perl/5.20.2/utf8_heavy.pl \
 	./usr/share/doc/perl-base \
 	./usr/share/perl/5.20.2/unicore/lib/SB/LO.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Ea/N.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Nt/None.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Perl/Alnum.pl \
-	./usr/share/perl/5.20.2/unicore/lib/Dt/Iso.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Perl/_PerlPr2.pl \
 	./usr/share/perl/5.20.2/unicore/lib/WB/EX.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Sc/Armn.pl \
@@ -182,10 +181,10 @@ FILES_perl-base = " \
 	./usr/share/perl/5.20.2/unicore/lib/Bc/NSM.pl \
 	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/auto/Socket/Socket.so \
 	./usr/share/perl/5.20.2/unicore/lib/Sc/Beng.pl \
-	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/auto/Fcntl/Fcntl.so \
+	./usr/share/perl/5.20.2/unicore/To/NFKCQC.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Nv/1000.pl \
 	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/Hash/Util.pm \
-	./usr/share/perl/5.20.2/IO/Socket/IP.pm \
+	./usr/share/perl/5.20.2/unicore/lib/Dt/Sqr.pl \
 	./usr/share/perl/5.20.2/unicore/lib/SB/ST.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Gc/Z.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Scx/Takr.pl \
@@ -201,7 +200,7 @@ FILES_perl-base = " \
 	./usr/share/perl/5.20.2/unicore/To/Bpb.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Scx/Armn.pl \
 	./usr/share/perl/5.20.2/Carp.pm \
-	./usr/share/perl/5.20.2/unicore/lib/Ea/Na.pl \
+	./usr/share/perl/5.20.2/unicore/lib/Jg/NoJoinin.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Sc/Zyyy.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Sc/Zzzz.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Nt/Nu.pl \
@@ -219,17 +218,17 @@ FILES_perl-base = " \
 	./usr/share/perl/5.20.2/unicore/lib/IDC/Y.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Gc/No.pl \
 	./usr/share/perl/5.20.2/unicore/lib/GCB/CN.pl \
-	./usr/share/perl/5.20.2/Tie/Hash.pm \
+	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/IO/Socket.pm \
 	./usr/share/perl/5.20.2/unicore/To/Nt.pl \
 	./usr/share/perl/5.20.2/File/Temp.pm \
 	./usr/share/perl/5.20.2/unicore/lib/Nv/6.pl \
 	./usr/share/perl/5.20.2/strict.pm \
-	./usr/share/perl/5.20.2/unicore/lib/Nv/5000.pl \
+	./usr/share/perl/5.20.2/unicore/lib/CWT/Y.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Gc/Ps.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Sc/Mlym.pl \
 	./usr/share/perl/5.20.2/unicore/lib/In/6_0.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Nv/13.pl \
-	./usr/share/perl/5.20.2/unicore/lib/Scx/Arab.pl \
+	./usr/share/perl/5.20.2/unicore/lib/Nv/4.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Ccc/VR.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Gc/L.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Ccc/AR.pl \
@@ -253,19 +252,18 @@ FILES_perl-base = " \
 	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/auto/Hash/Util/Util.so \
 	./usr/share/perl/5.20.2/unicore/lib/In/5_0.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Scx/Yi.pl \
-	./usr/share/perl/5.20.2/unicore/lib/Sc/Telu.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Sc/Deva.pl \
 	./usr/share/perl/5.20.2/unicore/lib/WB/LE.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Sc/Hebr.pl \
-	./usr/share/perl/5.20.2/unicore/lib/Jg/Seen.pl \
+	./usr/share/perl/5.20.2/unicore/lib/Gc/Pf.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Scx/Geor.pl \
-	./usr/share/perl/5.20.2/unicore/lib/Nv/16.pl \
+	./usr/share/perl/5.20.2/unicore/lib/IDS/Y.pl \
 	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/attributes.pm \
 	./usr/share/perl/5.20.2/unicore/To/Nv.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Gc/Pe.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Nv/9.pl \
-	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/Cwd.pm \
-	./usr/share/perl/5.20.2/unicore/lib/Nv/4.pl \
+	./usr/share/perl/5.20.2/unicore/lib/Bc/AN.pl \
+	./usr/share/perl/5.20.2/unicore/lib/Scx/Arab.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Nv/1_4.pl \
 	./usr/share/perl/5.20.2/fields.pm \
 	./usr/share/perl/5.20.2/unicore/lib/Nv/12.pl \
@@ -282,50 +280,49 @@ FILES_perl-base = " \
 	./usr/share/perl/5.20.2/unicore/lib/Nv/40.pl \
 	./usr/share/perl/5.20.2/unicore/lib/CWL/Y.pl \
 	./usr/share/perl/5.20.2/unicore/lib/In/3_0.pl \
-	./usr/share/perl/5.20.2/unicore/lib/Jg/Beh.pl \
+	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/auto/attributes/attributes.so \
 	./usr/share/perl/5.20.2/unicore/lib/Dt/Nar.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Bc/ON.pl \
 	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/IO/File.pm \
 	./usr/share/perl/5.20.2/unicore/lib/Ideo/Y.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Scx/Guru.pl \
-	./usr/share/perl/5.20.2/unicore/lib/Bc/AN.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Hyphen/Y.pl \
-	./usr/share/perl/5.20.2/unicore/lib/Lb/CL.pl \
+	./usr/share/perl/5.20.2/unicore/lib/Bc/ES.pl \
 	./usr/share/perl/5.20.2/IPC/Open2.pm \
 	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/re.pm \
 	./usr/share/perl/5.20.2/unicore/To/Jt.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Bc/R.pl \
 	./usr/share/perl/5.20.2/unicore/lib/NFKDQC/Y.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Ccc/NR.pl \
-	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/IO/Socket.pm \
+	./usr/share/perl/5.20.2/Tie/Hash.pm \
 	./usr/share/perl/5.20.2/unicore/lib/Blk/NB.pl \
 	./usr/share/perl/5.20.2/unicore/To/Tc.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Perl/_PerlPro.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Gc/Pi.pl \
-	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/auto/attributes/attributes.so \
+	./usr/share/perl/5.20.2/unicore/lib/Jg/Beh.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Scx/Linb.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Perl/Graph.pl \
-	./usr/share/perl/5.20.2/unicore/lib/Lb/BA.pl \
-	./usr/share/perl/5.20.2/FileHandle.pm \
+	./usr/share/perl/5.20.2/unicore/lib/Gc/Sc.pl \
+	./usr/share/perl/5.20.2/unicore/lib/Age/V51.pl \
 	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/File/Glob.pm \
 	./usr/share/perl/5.20.2/unicore/lib/Gc/N.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Jt/T.pl \
-	./usr/share/perl/5.20.2/unicore/lib/Sc/Cprt.pl \
+	./usr/share/perl/5.20.2/unicore/lib/In/6_1.pl \
 	./usr/share/perl/5.20.2/overloading.pm \
 	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/auto/List/Util/Util.so \
 	./usr/share/perl/5.20.2/unicore/lib/Lb/AI.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Gc/Nd.pl \
-	./usr/share/perl/5.20.2/unicore/lib/Nv/7.pl \
+	./usr/share/perl/5.20.2/unicore/lib/Nv/500.pl \
 	./usr/share/perl/5.20.2/unicore/lib/NFKDQC/N.pl \
-	./usr/share/doc/perl/changelog.Debian.gz \
+	./usr/share/perl/5.20.2/unicore/lib/Sc/Telu.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Sc/Gujr.pl \
-	./usr/share/perl/5.20.2/unicore/lib/Nv/1_2.pl \
+	./usr/share/perl/5.20.2/unicore/lib/QMark/Y.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Lb/AL.pl \
 	./usr/share/perl/5.20.2/unicore/To/Lb.pl \
-	./usr/share/perl/5.20.2/unicore/lib/Age/V51.pl \
+	./usr/share/perl/5.20.2/FileHandle.pm \
 	./usr/share/perl/5.20.2/unicore/lib/NFCQC/Y.pl \
 	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/IO/Pipe.pm \
-	./usr/share/perl/5.20.2/unicore/lib/Lower/Y.pl \
+	./usr/share/perl/5.20.2/unicore/lib/Gc/Ll.pl \
 	./usr/share/perl/5.20.2/unicore/To/Hst.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Age/V32.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Jg/Lam.pl \
@@ -333,29 +330,31 @@ FILES_perl-base = " \
 	./usr/share/perl/5.20.2/Symbol.pm \
 	./usr/share/perl/5.20.2/unicore/lib/Scx/Orya.pl \
 	./usr/share/perl/5.20.2/unicore/lib/NFKCQC/N.pl \
-	./usr/share/perl/5.20.2/locale.pm \
+	./usr/share/perl/5.20.2/SelectSaver.pm \
 	./usr/share/perl/5.20.2/unicore/lib/Nv/0.pl \
 	./usr/share/perl/5.20.2/unicore/lib/WB/MB.pl \
 	./usr/share/perl/5.20.2/unicore/lib/SD/Y.pl \
-	./usr/share/perl/5.20.2/File/Basename.pm \
+	./usr/share/perl/5.20.2/unicore/lib/Gc/Lo.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Bc/WS.pl \
 	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/DynaLoader.pm \
 	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/Config.pm \
 	./usr/share/perl/5.20.2/unicore/lib/Perl/Word.pl \
 	./usr/share/perl/5.20.2/IPC/Open3.pm \
+	./usr/share/perl/5.20.2/unicore/lib/Sc/Cprt.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Upper/Y.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Scx/Hira.pl \
 	./usr/share/perl/5.20.2/unicore/To/Age.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Bpt/O.pl \
-	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/Errno.pm \
+	./usr/share/perl/5.20.2/unicore/To/GCB.pl \
 	./usr/share/perl/5.20.2/unicore/To/Upper.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Sc/Ethi.pl \
 	./usr/share/perl/5.20.2/warnings.pm \
-	./usr/share/perl/5.20.2/Text/ParseWords.pm \
+	./usr/share/perl/5.20.2/unicore/lib/Lb/PR.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Nv/2_3.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Lb/CM.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Sc/Latn.pl \
-	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/auto/re/re.so \
+	./usr/share/perl/5.20.2/unicore/lib/Gc/Cf.pl \
+	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/Cwd.pm \
 	./usr/share/perl/5.20.2/unicore/lib/Jt/U.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Scx/Zyyy.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Gc/Mn.pl \
@@ -363,7 +362,7 @@ FILES_perl-base = " \
 	./usr/share/perl/5.20.2/unicore/To/NFCQC.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Age/V11.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Gc/Pd.pl \
-	./usr/share/perl/5.20.2/unicore/lib/Nv/30.pl \
+	./usr/share/perl/5.20.2/unicore/lib/Age/V20.pl \
 	./usr/share/perl/5.20.2/parent.pm \
 	./usr/share/perl/5.20.2/unicore/lib/Ccc/OV.pl \
 	./usr/share/perl/5.20.2/unicore/lib/NFCQC/M.pl \
@@ -374,18 +373,18 @@ FILES_perl-base = " \
 	./usr/share/perl/5.20.2/unicore/lib/WB/XX.pl \
 	./usr/share/perl/5.20.2/unicore/lib/BidiC/Y.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Scx/Deva.pl \
-	./usr/share/perl/5.20.2/unicore/lib/Nv/500.pl \
+	./usr/share/perl/5.20.2/unicore/lib/Nv/7.pl \
 	./usr/share/perl/5.20.2/unicore/To/NFKDQC.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Ccc/BR.pl \
 	./usr/share/lintian/overrides/perl-base \
 	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/Scalar/Util.pm \
 	./usr/share/perl/5.20.2/unicore/lib/Dt/Font.pl \
+	./usr/share/doc/perl/changelog.Debian.gz \
 	./usr/share/perl/5.20.2/unicore/lib/SB/SC.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Dt/Enc.pl \
-	./usr/share/perl/5.20.2/unicore/lib/In/6_1.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Scx/Zinh.pl \
+	./usr/share/perl/5.20.2/Exporter/Heavy.pm \
 	./usr/share/perl/5.20.2/unicore/lib/Lb/QU.pl \
-	./usr/share/perl/5.20.2/unicore/To/NFKCQC.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Nv/1.pl \
 	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/File/Spec/Unix.pm \
 	./usr/share/perl/5.20.2/unicore/lib/Lb/IS.pl \
@@ -393,7 +392,7 @@ FILES_perl-base = " \
 	./usr/share/perl/5.20.2/unicore/lib/Gc/Cn.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Lb/SA.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Bpt/C.pl \
-	./usr/share/perl/5.20.2/unicore/lib/Age/V20.pl \
+	./usr/share/perl/5.20.2/unicore/lib/Nv/30.pl \
 	./usr/share/perl/5.20.2/bytes.pm \
 	./usr/share/perl/5.20.2/unicore/lib/Sc/Khmr.pl \
 	./usr/share/perl/5.20.2/Text/Tabs.pm \
@@ -415,19 +414,19 @@ FILES_perl-base = " \
 	./usr/share/perl/5.20.2/unicore/lib/Nv/19.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Sc/Kana.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Lb/CJ.pl \
+	./usr/share/perl/5.20.2/IO/Socket/IP.pm \
 	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/Config_heavy.pl \
-	./usr/share/perl/5.20.2/Exporter/Heavy.pm \
+	./usr/share/perl/5.20.2/unicore/lib/Dt/Iso.pl \
 	./usr/share/perl/5.20.2/unicore/lib/In/4_0.pl \
 	./usr/share/perl/5.20.2/unicore/lib/GCB/LVT.pl \
-	./usr/share/perl/5.20.2/unicore/Heavy.pl \
+	./usr/share/perl/5.20.2/unicore/lib/Lb/BB.pl \
 	./usr/share/perl/5.20.2/unicore/To/Ea.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Gc/Mc.pl \
-	./usr/share/perl/5.20.2/unicore/lib/Lb/BB.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Nv/90.pl \
 	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/IO/Seekable.pm \
 	./usr/share/perl/5.20.2/unicore/lib/LOE/Y.pl \
 	./usr/share/perl/5.20.2/unicore/To/NFKCCF.pl \
-	./usr/share/perl/5.20.2/unicore/lib/Gc/Ll.pl \
+	./usr/share/perl/5.20.2/unicore/lib/Lower/Y.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Scx/Kana.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Gc/Me.pl \
 	./usr/share/perl/5.20.2/unicore/To/Fold.pl \
@@ -435,9 +434,10 @@ FILES_perl-base = " \
 	./usr/share/perl/5.20.2/unicore/lib/Age/V52.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Sc/Talu.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Gc/Lm.pl \
+	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/IO/Select.pm \
 	./usr/lib/arm-linux-gnueabihf/libperl.so.5.20 \
 	./usr/share/perl/5.20.2/unicore/lib/Scx/Cyrl.pl \
-	./usr/share/perl/5.20.2/unicore/lib/Perl/_XRegula.pl \
+	./usr/share/perl/5.20.2/unicore/lib/NFDQC/N.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Perl/_PerlQuo.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Scx/Gujr.pl \
 	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/Config_git.pl \
@@ -459,7 +459,7 @@ FILES_perl-base = " \
 	./usr/share/perl/5.20.2/integer.pm \
 	./usr/share/perl/5.20.2/vars.pm \
 	./usr/share/perl/5.20.2/unicore/lib/CWKCF/Y.pl \
-	./usr/share/perl/5.20.2/unicore/lib/Bc/ES.pl \
+	./usr/share/perl/5.20.2/unicore/lib/Lb/CL.pl \
 	./usr/lib/arm-linux-gnueabihf/perl/5.20.2/File/Spec.pm \
 	./usr/share/perl/5.20.2/unicore/lib/Gc/P.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Age/V61.pl \
@@ -468,15 +468,15 @@ FILES_perl-base = " \
 	./usr/share/man/man1/perl.1.gz \
 	./usr/share/perl/5.20.2/unicore/lib/WB/KA.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Nv/2.pl \
-	./usr/share/perl/5.20.2/unicore/lib/Gc/Pf.pl \
+	./usr/share/perl/5.20.2/unicore/lib/Jg/Seen.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Scx/Latn.pl \
 	./usr/share/perl/5.20.2/unicore/lib/In/5_2.pl \
 	./usr/share/perl/5.20.2/Getopt/Long.pm \
 	./usr/share/perl/5.20.2/overload.pm \
-	./usr/share/perl/5.20.2/unicore/lib/IDS/Y.pl \
+	./usr/share/perl/5.20.2/unicore/lib/Nv/16.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Gc/So.pl \
 	./usr/share/perl/5.20.2/unicore/lib/In/2_1.pl \
-	./usr/share/perl/5.20.2/SelectSaver.pm \
+	./usr/share/perl/5.20.2/locale.pm \
 	./usr/share/perl/5.20.2/unicore/lib/Lb/OP.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Dt/NonCanon.pl \
 	./usr/share/perl/5.20.2/unicore/lib/Gc/Sm.pl \
