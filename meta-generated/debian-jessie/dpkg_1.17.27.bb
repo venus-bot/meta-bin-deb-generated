@@ -1,11 +1,11 @@
 PACKAGES = "dpkg"
 PROVIDES = "dpkg"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/d/dpkg/dpkg_1.17.26_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/d/dpkg/dpkg_1.17.27_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_dpkg = "dpkg_1.17.26_armhf.deb"
-SRC_URI[deb0.sha256sum] = "fa39d5fb1de704cf38686397ee4838670b8719446ade1a4b36b1cf43cb3213c6"
-SRC_URI[deb0.md5sum] = "72215b29039b9c5b73c1c9eae8b55a8b"
+DEBFILENAME_dpkg = "dpkg_1.17.27_armhf.deb"
+SRC_URI[deb0.sha256sum] = "3e95e4c6abf44afe84ff376afdb730f0107745d2a2978688b6618cbe4edc0a65"
+SRC_URI[deb0.md5sum] = "d3167ad44058e1dc15e88c1b4f72c662"
 
 
 inherit deb_group

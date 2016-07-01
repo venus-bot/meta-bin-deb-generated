@@ -1,11 +1,11 @@
 PACKAGES = "perl-base"
 PROVIDES = "perl-base"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/p/perl/perl-base_5.20.2-3+deb8u4_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/p/perl/perl-base_5.20.2-3+deb8u5_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_perl-base = "perl-base_5.20.2-3+deb8u4_armhf.deb"
-SRC_URI[deb0.sha256sum] = "6e93950dee43e5d2e08ece12ebed5e34fca9e30706169232ba0a42b4436f879c"
-SRC_URI[deb0.md5sum] = "1c4bdfcc8f89806a77c8e8edcac10054"
+DEBFILENAME_perl-base = "perl-base_5.20.2-3+deb8u5_armhf.deb"
+SRC_URI[deb0.sha256sum] = "497394446a05c16474dd01ba9ba0c8b61ff7f1a89466d430281bdb5d594aa53b"
+SRC_URI[deb0.md5sum] = "fdc304e1d68944c311f95bca406c0ade"
 
 
 inherit deb_group
