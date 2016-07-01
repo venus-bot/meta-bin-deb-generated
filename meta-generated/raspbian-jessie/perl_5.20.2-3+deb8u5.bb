@@ -1,11 +1,11 @@
 PACKAGES = "perl-base"
 PROVIDES = "perl-base"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/p/perl/perl-base_5.20.2-3+deb8u4_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/p/perl/perl-base_5.20.2-3+deb8u5_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_perl-base = "perl-base_5.20.2-3+deb8u4_armhf.deb"
-SRC_URI[deb0.sha256sum] = "329d0add2f4ca4773ba83fdb83dce65bfeb825a949d61e5137aa69f06dc0a43d"
-SRC_URI[deb0.md5sum] = "b581b49b9806820ebd4a686109e8424a"
+DEBFILENAME_perl-base = "perl-base_5.20.2-3+deb8u5_armhf.deb"
+SRC_URI[deb0.sha256sum] = "8443c7d9395420833cc1dc8a2cf1a8d1d4a2166bf5519d8d7a9b0cf23baceb46"
+SRC_URI[deb0.md5sum] = "065d06c429905d226723266729011692"
 
 
 inherit deb_group

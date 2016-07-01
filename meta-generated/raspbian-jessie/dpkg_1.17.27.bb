@@ -1,11 +1,11 @@
 PACKAGES = "dpkg"
 PROVIDES = "dpkg"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/d/dpkg/dpkg_1.17.26_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/d/dpkg/dpkg_1.17.27_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_dpkg = "dpkg_1.17.26_armhf.deb"
-SRC_URI[deb0.sha256sum] = "82178a997bf08ab2840ec2d566125638e9754abc1acabe87631a53133d4f42ea"
-SRC_URI[deb0.md5sum] = "ccacc4dec1a86611917e83156ec3540d"
+DEBFILENAME_dpkg = "dpkg_1.17.27_armhf.deb"
+SRC_URI[deb0.sha256sum] = "5bf4bb6c88f80d06ced43c4aa3baa593af73134faf3c7ab48dbcb3fb60e7ece6"
+SRC_URI[deb0.md5sum] = "c4b13e477a6752560797f5eee411e9c6"
 
 
 inherit deb_group
