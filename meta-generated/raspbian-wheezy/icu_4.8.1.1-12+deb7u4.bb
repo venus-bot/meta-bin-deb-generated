@@ -1,17 +1,17 @@
 PACKAGES = "libicu-dev libicu48"
 PROVIDES = "libicu-dev libicu48"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/i/icu/libicu-dev_4.8.1.1-12+deb7u3_armhf.deb;unpack=0;name=deb0\
-	http://archive.raspbian.org/raspbian/pool/main/i/icu/libicu48_4.8.1.1-12+deb7u3_armhf.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/i/icu/libicu-dev_4.8.1.1-12+deb7u4_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/i/icu/libicu48_4.8.1.1-12+deb7u4_armhf.deb;unpack=0;name=deb1\
 "
-DEBFILENAME_libicu-dev = "libicu-dev_4.8.1.1-12+deb7u3_armhf.deb"
-SRC_URI[deb0.sha256sum] = "33939826aca393cd50d830e00c20d5cda87fd2d360d35094dbfabd92f7935947"
-SRC_URI[deb0.md5sum] = "f226b58a0e6b5d896eec73a3826a2bc3"
-DEBFILENAME_libicu48 = "libicu48_4.8.1.1-12+deb7u3_armhf.deb"
-SRC_URI[deb1.sha256sum] = "5a66bf1baa7d065914f13718b6b4a1ef0bf7d0e5c67a1628997371cfa340a02f"
-SRC_URI[deb1.md5sum] = "8854ea27c2d513b9bffa626e73773c16"
+DEBFILENAME_libicu-dev = "libicu-dev_4.8.1.1-12+deb7u4_armhf.deb"
+SRC_URI[deb0.sha256sum] = "c5ff4fbf6969278c4d3b197f98b1b6414afeffd3e9d53239742e7d21389a911a"
+SRC_URI[deb0.md5sum] = "bacf1767e2bacd26ba397c77bc1bea1f"
+DEBFILENAME_libicu48 = "libicu48_4.8.1.1-12+deb7u4_armhf.deb"
+SRC_URI[deb1.sha256sum] = "1f05889f406850027d8015673da417a20a0fe3e1cd423e8b2916e8ae05a1a199"
+SRC_URI[deb1.md5sum] = "57a15a64fea9f4a5eac6394306401c52"
 
-RDEPENDS_lib${PN}-dev = "libc6 (>= 2.13-28) libgcc1 (>= 1:4.4.0) libicu48 (= 4.8.1.1-12+deb7u3) libstdc++6 (>= 4.3.0) libc6-dev"
+RDEPENDS_lib${PN}-dev = "libc6 (>= 2.13-28) libgcc1 (>= 1:4.4.0) libicu48 (= 4.8.1.1-12+deb7u4) libstdc++6 (>= 4.3.0) libc6-dev"
 RDEPENDS_lib${PN}48 = "libc6 (>= 2.13-28) libgcc1 (>= 1:4.4.0) libstdc++6 (>= 4.4.0)"
 DEPENDS = "libgcc1 libc6-dev libstdc++6 libc6"
 
