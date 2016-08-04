@@ -1,0 +1,5 @@
+This repository contains auto generated openembedded recipes to
+create deb packages from openembedded layers which can be installed
+on debian and raspbian and the like.
+
+See https://github.com/jhofstee/meta-bin-deb for more details.
