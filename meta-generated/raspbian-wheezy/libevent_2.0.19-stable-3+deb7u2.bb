@@ -1,39 +1,39 @@
 PACKAGES = "libevent-2.0-5 libevent-core-2.0-5 libevent-dev libevent-extra-2.0-5 libevent-openssl-2.0-5 libevent-pthreads-2.0-5"
 PROVIDES = "libevent-2.0-5 libevent-core-2.0-5 libevent-dev libevent-extra-2.0-5 libevent-openssl-2.0-5 libevent-pthreads-2.0-5"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/libe/libevent/libevent-2.0-5_2.0.21-stable-2_armhf.deb;unpack=0;name=deb0\
-	http://archive.raspbian.org/raspbian/pool/main/libe/libevent/libevent-core-2.0-5_2.0.21-stable-2_armhf.deb;unpack=0;name=deb1\
-	http://archive.raspbian.org/raspbian/pool/main/libe/libevent/libevent-dev_2.0.21-stable-2_armhf.deb;unpack=0;name=deb2\
-	http://archive.raspbian.org/raspbian/pool/main/libe/libevent/libevent-extra-2.0-5_2.0.21-stable-2_armhf.deb;unpack=0;name=deb3\
-	http://archive.raspbian.org/raspbian/pool/main/libe/libevent/libevent-openssl-2.0-5_2.0.21-stable-2_armhf.deb;unpack=0;name=deb4\
-	http://archive.raspbian.org/raspbian/pool/main/libe/libevent/libevent-pthreads-2.0-5_2.0.21-stable-2_armhf.deb;unpack=0;name=deb5\
+	http://archive.raspbian.org/raspbian/pool/main/libe/libevent/libevent-2.0-5_2.0.19-stable-3+deb7u2_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/libe/libevent/libevent-core-2.0-5_2.0.19-stable-3+deb7u2_armhf.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/libe/libevent/libevent-dev_2.0.19-stable-3+deb7u2_armhf.deb;unpack=0;name=deb2\
+	http://archive.raspbian.org/raspbian/pool/main/libe/libevent/libevent-extra-2.0-5_2.0.19-stable-3+deb7u2_armhf.deb;unpack=0;name=deb3\
+	http://archive.raspbian.org/raspbian/pool/main/libe/libevent/libevent-openssl-2.0-5_2.0.19-stable-3+deb7u2_armhf.deb;unpack=0;name=deb4\
+	http://archive.raspbian.org/raspbian/pool/main/libe/libevent/libevent-pthreads-2.0-5_2.0.19-stable-3+deb7u2_armhf.deb;unpack=0;name=deb5\
 "
-DEBFILENAME_libevent-2.0-5 = "libevent-2.0-5_2.0.21-stable-2_armhf.deb"
-SRC_URI[deb0.sha256sum] = "a0d03cbb5a1bbe92c15534c538e8db7e57f29ad5ff59ca7dc8caf8c234eb1359"
-SRC_URI[deb0.md5sum] = "f97b5fbe4abccd93ebbce2d140af01fd"
-DEBFILENAME_libevent-core-2.0-5 = "libevent-core-2.0-5_2.0.21-stable-2_armhf.deb"
-SRC_URI[deb1.sha256sum] = "bd3c125ad7b1df4f1b1176447d87244f36379ed9a14d731f50f8ca98365bc986"
-SRC_URI[deb1.md5sum] = "8a549a0c19365fbb49e55521a69123dc"
-DEBFILENAME_libevent-dev = "libevent-dev_2.0.21-stable-2_armhf.deb"
-SRC_URI[deb2.sha256sum] = "f62882341558370838cc3167ef2eb6e42a69e03b5601703c2506e3a243031a9d"
-SRC_URI[deb2.md5sum] = "4e47a6885175ea106fa989d5875e8863"
-DEBFILENAME_libevent-extra-2.0-5 = "libevent-extra-2.0-5_2.0.21-stable-2_armhf.deb"
-SRC_URI[deb3.sha256sum] = "08addb48bb5490423f3ca690f059c1c205882199ee2611992c81fbeeffc4fd7c"
-SRC_URI[deb3.md5sum] = "14bc1e6cb30c929252201e2f18418fb4"
-DEBFILENAME_libevent-openssl-2.0-5 = "libevent-openssl-2.0-5_2.0.21-stable-2_armhf.deb"
-SRC_URI[deb4.sha256sum] = "808f2007588787b26f51c3a0d7f329ffb32b03afb49cc1f2a767f78edd6b62d0"
-SRC_URI[deb4.md5sum] = "13d03b60dc7dc3b1261498742430aa1b"
-DEBFILENAME_libevent-pthreads-2.0-5 = "libevent-pthreads-2.0-5_2.0.21-stable-2_armhf.deb"
-SRC_URI[deb5.sha256sum] = "473cadbaf2ffff9a3bbfec97b38235047ef64cb69e77c395a3f3258f8d267319"
-SRC_URI[deb5.md5sum] = "682848abaec5527db6f868d7b240e36e"
+DEBFILENAME_libevent-2.0-5 = "libevent-2.0-5_2.0.19-stable-3+deb7u2_armhf.deb"
+SRC_URI[deb0.sha256sum] = "f182085e07552fb3a56e3f345b4002f7b9842597ea6eeb22c2ed44b901930772"
+SRC_URI[deb0.md5sum] = "5530c22bd45ae0ea3bee0878ec377373"
+DEBFILENAME_libevent-core-2.0-5 = "libevent-core-2.0-5_2.0.19-stable-3+deb7u2_armhf.deb"
+SRC_URI[deb1.sha256sum] = "cd12aee6fd90f877f177457855d90c4f11344a10ca26549fc9e15c8a59cdfe6f"
+SRC_URI[deb1.md5sum] = "8091547432863003df5a57fbcd4baee0"
+DEBFILENAME_libevent-dev = "libevent-dev_2.0.19-stable-3+deb7u2_armhf.deb"
+SRC_URI[deb2.sha256sum] = "ec3a56b22b42f2e9af61661a0699812293c23faf130962f4143cf264cd195b91"
+SRC_URI[deb2.md5sum] = "a2a9574d27a3e4982b00d43a33b5aad0"
+DEBFILENAME_libevent-extra-2.0-5 = "libevent-extra-2.0-5_2.0.19-stable-3+deb7u2_armhf.deb"
+SRC_URI[deb3.sha256sum] = "d51bbd6f1acc078dc925a364febecd8483b99124f7d24b59d6788d587d4c6215"
+SRC_URI[deb3.md5sum] = "ad318d84b37db549cd391d98500f9081"
+DEBFILENAME_libevent-openssl-2.0-5 = "libevent-openssl-2.0-5_2.0.19-stable-3+deb7u2_armhf.deb"
+SRC_URI[deb4.sha256sum] = "25adcc19956a47d4e1013fdeda5f66c8168f63d2d2094c5ca0713ae5cf9cf04f"
+SRC_URI[deb4.md5sum] = "5ace7ee16d9ce1c2c6d2ac11d3ab043b"
+DEBFILENAME_libevent-pthreads-2.0-5 = "libevent-pthreads-2.0-5_2.0.19-stable-3+deb7u2_armhf.deb"
+SRC_URI[deb5.sha256sum] = "777d3a66bcc929e9841d4e203268517e5c786c9bc97e4996400499e9888339d6"
+SRC_URI[deb5.md5sum] = "1d3894f2464970e3b77dbd743c3b6234"
 
-RDEPENDS_${PN}-2.0-5 = "libc6 (>= 2.17)"
-RDEPENDS_${PN}-core-2.0-5 = "libc6 (>= 2.17)"
-RDEPENDS_${PN}-dev = "libevent-2.0-5 (= 2.0.21-stable-2) libevent-core-2.0-5 (= 2.0.21-stable-2) libevent-extra-2.0-5 (= 2.0.21-stable-2) libevent-pthreads-2.0-5 (= 2.0.21-stable-2) libevent-openssl-2.0-5 (= 2.0.21-stable-2)"
-RDEPENDS_${PN}-extra-2.0-5 = "libc6 (>= 2.7) libevent-core-2.0-5 (= 2.0.21-stable-2)"
-RDEPENDS_${PN}-openssl-2.0-5 = "libc6 (>= 2.4) libevent-core-2.0-5 (= 2.0.21-stable-2) libssl1.0.0 (>= 1.0.0)"
-RDEPENDS_${PN}-pthreads-2.0-5 = "libc6 (>= 2.4) libevent-core-2.0-5 (= 2.0.21-stable-2)"
-DEPENDS = "libssl1.0.0 libc6"
+RDEPENDS_${PN}-2.0-5 = "libc6 (>= 2.13-28) libgcc1 (>= 1:4.4.0)"
+RDEPENDS_${PN}-core-2.0-5 = "libc6 (>= 2.13-28) libgcc1 (>= 1:4.4.0)"
+RDEPENDS_${PN}-dev = "libevent-2.0-5 (= 2.0.19-stable-3+deb7u2) libevent-core-2.0-5 (= 2.0.19-stable-3+deb7u2) libevent-extra-2.0-5 (= 2.0.19-stable-3+deb7u2) libevent-pthreads-2.0-5 (= 2.0.19-stable-3+deb7u2) libevent-openssl-2.0-5 (= 2.0.19-stable-3+deb7u2)"
+RDEPENDS_${PN}-extra-2.0-5 = "libc6 (>= 2.13-28) libevent-core-2.0-5 (= 2.0.19-stable-3+deb7u2)"
+RDEPENDS_${PN}-openssl-2.0-5 = "libc6 (>= 2.13-28) libevent-core-2.0-5 (= 2.0.19-stable-3+deb7u2) libssl1.0.0 (>= 1.0.0)"
+RDEPENDS_${PN}-pthreads-2.0-5 = "libc6 (>= 2.13-28) libevent-core-2.0-5 (= 2.0.19-stable-3+deb7u2)"
+DEPENDS = "libgcc1 libssl1.0.0 libc6"
 
 
 inherit deb_group
@@ -44,17 +44,17 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libevent-2.0-5 = " \
+	./usr/lib/arm-linux-gnueabihf/libevent-2.0.so.5.1.7 \
 	./usr/share/doc/libevent-2.0-5/changelog.Debian.gz \
-	./usr/lib/arm-linux-gnueabihf/libevent-2.0.so.5 \
-	./usr/share/doc/libevent-2.0-5/changelog.gz \
 	./usr/share/doc/libevent-2.0-5/copyright \
-	./usr/lib/arm-linux-gnueabihf/libevent-2.0.so.5.1.9\
+	./usr/share/doc/libevent-2.0-5/changelog.gz \
+	./usr/lib/arm-linux-gnueabihf/libevent-2.0.so.5\
 "
 FILES_libevent-core-2.0-5 = " \
 	./usr/share/doc/libevent-core-2.0-5/changelog.Debian.gz \
-	./usr/lib/arm-linux-gnueabihf/libevent_core-2.0.so.5 \
+	./usr/lib/arm-linux-gnueabihf/libevent_core-2.0.so.5.1.7 \
 	./usr/share/doc/libevent-core-2.0-5/copyright \
-	./usr/lib/arm-linux-gnueabihf/libevent_core-2.0.so.5.1.9 \
+	./usr/lib/arm-linux-gnueabihf/libevent_core-2.0.so.5 \
 	./usr/share/doc/libevent-core-2.0-5/changelog.gz\
 "
 FILES_${PN}-dev = " \
@@ -118,21 +118,21 @@ FILES_${PN}-dev = " \
 FILES_libevent-extra-2.0-5 = " \
 	./usr/share/doc/libevent-extra-2.0-5/changelog.gz \
 	./usr/share/doc/libevent-extra-2.0-5/copyright \
-	./usr/share/doc/libevent-extra-2.0-5/changelog.Debian.gz \
-	./usr/lib/arm-linux-gnueabihf/libevent_extra-2.0.so.5.1.9 \
-	./usr/lib/arm-linux-gnueabihf/libevent_extra-2.0.so.5\
+	./usr/lib/arm-linux-gnueabihf/libevent_extra-2.0.so.5.1.7 \
+	./usr/lib/arm-linux-gnueabihf/libevent_extra-2.0.so.5 \
+	./usr/share/doc/libevent-extra-2.0-5/changelog.Debian.gz\
 "
 FILES_libevent-openssl-2.0-5 = " \
-	./usr/share/doc/libevent-openssl-2.0-5/changelog.Debian.gz \
+	./usr/lib/arm-linux-gnueabihf/libevent_openssl-2.0.so.5.1.7 \
 	./usr/share/doc/libevent-openssl-2.0-5/changelog.gz \
 	./usr/share/doc/libevent-openssl-2.0-5/copyright \
 	./usr/lib/arm-linux-gnueabihf/libevent_openssl-2.0.so.5 \
-	./usr/lib/arm-linux-gnueabihf/libevent_openssl-2.0.so.5.1.9\
+	./usr/share/doc/libevent-openssl-2.0-5/changelog.Debian.gz\
 "
 FILES_libevent-pthreads-2.0-5 = " \
-	./usr/lib/arm-linux-gnueabihf/libevent_pthreads-2.0.so.5.1.9 \
-	./usr/lib/arm-linux-gnueabihf/libevent_pthreads-2.0.so.5 \
 	./usr/share/doc/libevent-pthreads-2.0-5/changelog.Debian.gz \
+	./usr/lib/arm-linux-gnueabihf/libevent_pthreads-2.0.so.5 \
+	./usr/lib/arm-linux-gnueabihf/libevent_pthreads-2.0.so.5.1.7 \
 	./usr/share/doc/libevent-pthreads-2.0-5/copyright \
 	./usr/share/doc/libevent-pthreads-2.0-5/changelog.gz\
 "
