@@ -1,11 +1,11 @@
 PACKAGES = "libtiff4"
 PROVIDES = "libtiff4"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/t/tiff3/libtiff4_3.9.6-11+deb7u4_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/t/tiff3/libtiff4_3.9.6-11+deb7u5_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_libtiff4 = "libtiff4_3.9.6-11+deb7u4_armhf.deb"
-SRC_URI[deb0.sha256sum] = "87620b45db8eb84caf0647ca5e684156987e2d77412ad78778c20e3d746e9995"
-SRC_URI[deb0.md5sum] = "05918df5958cfa59b0792ae6047e311c"
+DEBFILENAME_libtiff4 = "libtiff4_3.9.6-11+deb7u5_armhf.deb"
+SRC_URI[deb0.sha256sum] = "c86e0672e85654c10785c152134382975a528dc5778f31404bae83cf730d9bfd"
+SRC_URI[deb0.md5sum] = "0f6bcd40a9804e548b888425cdac6438"
 
 RDEPENDS_libtiff4 = "libc6 (>= 2.13-28) libjbig0 libjpeg8 (>= 8c) zlib1g (>= 1:1.1.4)"
 DEPENDS = "zlib1g libjbig0 libjpeg8 libc6"
