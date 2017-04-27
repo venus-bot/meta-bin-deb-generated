@@ -1,11 +1,11 @@
 PACKAGES = "libfreetype6"
 PROVIDES = "libfreetype6"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/f/freetype/libfreetype6_2.4.9-1.1+deb7u5_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/f/freetype/libfreetype6_2.4.9-1.1+deb7u6_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_libfreetype6 = "libfreetype6_2.4.9-1.1+deb7u5_armhf.deb"
-SRC_URI[deb0.sha256sum] = "7427eea78d09c60b44443a5b09282cbab708572d0f00761f3487c9dc3089ee9b"
-SRC_URI[deb0.md5sum] = "ca4c8a755977dd4afae8aa6e52cccb3c"
+DEBFILENAME_libfreetype6 = "libfreetype6_2.4.9-1.1+deb7u6_armhf.deb"
+SRC_URI[deb0.sha256sum] = "e2f4e68fe47199eccafbea9dd78e1115e5507157c3ed382a118eddfa0555146b"
+SRC_URI[deb0.md5sum] = "c0537b2993cc5f0b25686e20d3a1ff86"
 
 RDEPENDS_lib${PN}6 = "libc6 (>= 2.13-28) zlib1g (>= 1:1.1.4)"
 DEPENDS = "zlib1g libc6"
