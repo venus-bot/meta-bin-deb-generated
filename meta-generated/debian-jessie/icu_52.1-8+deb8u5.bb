@@ -1,22 +1,22 @@
 PACKAGES = "icu-devtools libicu-dev libicu52"
 PROVIDES = "icu-devtools libicu-dev libicu52"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/i/icu/icu-devtools_52.1-8+deb8u4_armhf.deb;unpack=0;name=deb0\
-	http://ftp.de.debian.org/debian/pool/main/i/icu/libicu-dev_52.1-8+deb8u4_armhf.deb;unpack=0;name=deb1\
-	http://ftp.de.debian.org/debian/pool/main/i/icu/libicu52_52.1-8+deb8u4_armhf.deb;unpack=0;name=deb2\
+	http://ftp.de.debian.org/debian/pool/main/i/icu/icu-devtools_52.1-8+deb8u5_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/i/icu/libicu-dev_52.1-8+deb8u5_armhf.deb;unpack=0;name=deb1\
+	http://ftp.de.debian.org/debian/pool/main/i/icu/libicu52_52.1-8+deb8u5_armhf.deb;unpack=0;name=deb2\
 "
-DEBFILENAME_icu-devtools = "icu-devtools_52.1-8+deb8u4_armhf.deb"
-SRC_URI[deb0.sha256sum] = "5fe4fb60efcd9a836f09a9c47c340880a5197cadc0efa457226502c21fd8ccaf"
-SRC_URI[deb0.md5sum] = "b8908e2ebf9e3207886cf3c8015d210c"
-DEBFILENAME_libicu-dev = "libicu-dev_52.1-8+deb8u4_armhf.deb"
-SRC_URI[deb1.sha256sum] = "90b6bb2897f9f643a882eb1ba3e4046eeab88aac7a3dbfca59a370856ca25021"
-SRC_URI[deb1.md5sum] = "41b173e1126b11efe588ee22fcbf5105"
-DEBFILENAME_libicu52 = "libicu52_52.1-8+deb8u4_armhf.deb"
-SRC_URI[deb2.sha256sum] = "78d3982752c529c9d46379d9de5d8b009d5b93a1cda09d1f338ffbc14067806e"
-SRC_URI[deb2.md5sum] = "77598e3128ae1ed37bf08ac2fa17d714"
+DEBFILENAME_icu-devtools = "icu-devtools_52.1-8+deb8u5_armhf.deb"
+SRC_URI[deb0.sha256sum] = "da5aea32a78c1ee95121f86d61d958505924086d7a37bd1bb39b804b2c6fefd8"
+SRC_URI[deb0.md5sum] = "9c6784bc3136335eb7049f1216d2eda4"
+DEBFILENAME_libicu-dev = "libicu-dev_52.1-8+deb8u5_armhf.deb"
+SRC_URI[deb1.sha256sum] = "057f3dcae6a501cbabe3a56601e3e5ab0d50689a24689d6e887f9028d2c936f1"
+SRC_URI[deb1.md5sum] = "9cf8729291e142d1ddf688b73109ac15"
+DEBFILENAME_libicu52 = "libicu52_52.1-8+deb8u5_armhf.deb"
+SRC_URI[deb2.sha256sum] = "eaf505d8ba1a514d33c5fead594255f2251852f9526a463437710c44df4291f8"
+SRC_URI[deb2.md5sum] = "743db44d8b280856d5de1c05e146c605"
 
 RDEPENDS_${PN}-devtools = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libicu52 (>= 52~m1-1~) libstdc++6 (>= 4.9)"
-RDEPENDS_lib${PN}-dev = "libicu52 (= 52.1-8+deb8u4) icu-devtools (>= 52.1-8+deb8u4) libc6-dev"
+RDEPENDS_lib${PN}-dev = "libicu52 (= 52.1-8+deb8u5) icu-devtools (>= 52.1-8+deb8u5) libc6-dev"
 RDEPENDS_lib${PN}52 = "libc6 (>= 2.7) libgcc1 (>= 1:4.4.0) libstdc++6 (>= 4.9)"
 DEPENDS = "libgcc1 libc6 libc6-dev libstdc++6"
 
@@ -210,7 +210,7 @@ FILES_libicu-dev = " \
 	./usr/lib/arm-linux-gnueabihf/icu/Makefile.inc \
 	./usr/share/doc/libicu-dev/examples/translit/unaccent.cpp \
 	./usr/share/doc/libicu-dev/examples/layout/gdiglue.cpp \
-	./usr/include/arm-linux-gnueabihf/unicode/plurfmt.h \
+	./usr/include/arm-linux-gnueabihf/unicode/messagepattern.h \
 	./usr/include/arm-linux-gnueabihf/unicode/utf32.h \
 	./usr/include/arm-linux-gnueabihf/unicode/plurrule.h \
 	./usr/share/doc/libicu-dev/copyright \
@@ -264,7 +264,7 @@ FILES_libicu-dev = " \
 	./usr/include/arm-linux-gnueabihf/unicode/schriter.h \
 	./usr/share/doc/libicu-dev/examples/layout/ScriptCompositeFontInstance.cpp \
 	./usr/include/arm-linux-gnueabihf/unicode/uvernum.h \
-	./usr/include/arm-linux-gnueabihf/unicode/ubidi.h \
+	./usr/include/arm-linux-gnueabihf/unicode/rep.h \
 	./usr/include/arm-linux-gnueabihf/unicode/calendar.h \
 	./usr/include/arm-linux-gnueabihf/unicode/ucnv_err.h \
 	./usr/include/arm-linux-gnueabihf/unicode/tmutfmt.h \
@@ -317,7 +317,7 @@ FILES_libicu-dev = " \
 	./usr/share/doc/libicu-dev/examples/layout/layout.sln \
 	./usr/include/arm-linux-gnueabihf/unicode/ustring.h \
 	./usr/share/doc/libicu-dev/examples/ufortune/resources/res-file-list.txt \
-	./usr/include/arm-linux-gnueabihf/unicode/messagepattern.h \
+	./usr/include/arm-linux-gnueabihf/unicode/plurfmt.h \
 	./usr/include/arm-linux-gnueabihf/unicode/udata.h \
 	./usr/include/arm-linux-gnueabihf/unicode/urep.h \
 	./usr/include/arm-linux-gnueabihf/unicode/smpdtfmt.h \
@@ -381,7 +381,7 @@ FILES_libicu-dev = " \
 	./usr/share/doc/libicu-dev/examples/layout/resource.h \
 	./usr/lib/arm-linux-gnueabihf/libicutest.so \
 	./usr/share/doc/libicu-dev/examples/layout/layout.cpp \
-	./usr/include/arm-linux-gnueabihf/unicode/coll.h \
+	./usr/include/arm-linux-gnueabihf/unicode/rbtz.h \
 	./usr/share/doc/libicu-dev/examples/uciter8/uciter8.c \
 	./usr/include/arm-linux-gnueabihf/unicode/utext.h \
 	./usr/include/arm-linux-gnueabihf/unicode/locid.h \
@@ -397,7 +397,7 @@ FILES_libicu-dev = " \
 	./usr/include/arm-linux-gnueabihf/unicode/uchriter.h \
 	./usr/include/arm-linux-gnueabihf/unicode/umisc.h \
 	./usr/share/doc/libicu-dev/examples/uresb/root.txt \
-	./usr/include/arm-linux-gnueabihf/unicode/rep.h \
+	./usr/include/arm-linux-gnueabihf/unicode/ubidi.h \
 	./usr/include/arm-linux-gnueabihf/unicode/ucol.h \
 	./usr/include/arm-linux-gnueabihf/unicode/umsg.h \
 	./usr/include/arm-linux-gnueabihf/unicode/icudataver.h \
@@ -420,7 +420,7 @@ FILES_libicu-dev = " \
 	./usr/share/doc/libicu-dev/examples/Makefile.in \
 	./usr/include/arm-linux-gnueabihf/unicode/tzrule.h \
 	./usr/share/doc/libicu-dev/examples/layout/pflow.c \
-	./usr/include/arm-linux-gnueabihf/unicode/rbtz.h \
+	./usr/include/arm-linux-gnueabihf/unicode/coll.h \
 	./usr/share/doc/libicu-dev/examples/ustring/ustring.vcxproj.filters \
 	./usr/include/arm-linux-gnueabihf/unicode/compactdecimalformat.h \
 	./usr/share/doc/libicu-dev/examples/translit/answers/main_4.cpp \

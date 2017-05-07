@@ -1,23 +1,23 @@
 PACKAGES = "libc-dev-bin libc6 libc6-dev"
 PROVIDES = "libc-dev-bin libc6 libc6-dev"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/g/glibc/libc-dev-bin_2.19-18+deb8u7_armhf.deb;unpack=0;name=deb0\
-	http://ftp.de.debian.org/debian/pool/main/g/glibc/libc6_2.19-18+deb8u7_armhf.deb;unpack=0;name=deb1\
-	http://ftp.de.debian.org/debian/pool/main/g/glibc/libc6-dev_2.19-18+deb8u7_armhf.deb;unpack=0;name=deb2\
+	http://ftp.de.debian.org/debian/pool/main/g/glibc/libc-dev-bin_2.19-18+deb8u9_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/g/glibc/libc6_2.19-18+deb8u9_armhf.deb;unpack=0;name=deb1\
+	http://ftp.de.debian.org/debian/pool/main/g/glibc/libc6-dev_2.19-18+deb8u9_armhf.deb;unpack=0;name=deb2\
 "
-DEBFILENAME_libc-dev-bin = "libc-dev-bin_2.19-18+deb8u7_armhf.deb"
-SRC_URI[deb0.sha256sum] = "52b74462c6d68f749a8e6d82153bb9b9566671e697ffde5a8405555762182cd8"
-SRC_URI[deb0.md5sum] = "ee24f928fee8bfac397ae9b560f56ca1"
-DEBFILENAME_libc6 = "libc6_2.19-18+deb8u7_armhf.deb"
-SRC_URI[deb1.sha256sum] = "ec8e4a5e47fc371f77651cf7979b94dbf8ea6f44434cc5f267ae91a6472414b4"
-SRC_URI[deb1.md5sum] = "2ccecba68bebecf07b1f2f74aaca406f"
-DEBFILENAME_libc6-dev = "libc6-dev_2.19-18+deb8u7_armhf.deb"
-SRC_URI[deb2.sha256sum] = "244476f6a09df9f82d91d35f20034fb2df7f1befbb57cee4cf47d1ba376216ba"
-SRC_URI[deb2.md5sum] = "bb1a2bf31ec43d1ea377b93de109732c"
+DEBFILENAME_libc-dev-bin = "libc-dev-bin_2.19-18+deb8u9_armhf.deb"
+SRC_URI[deb0.sha256sum] = "61ba5e9d2c575409bf40a3a66eed8caf5061d4cddbae27deaaa9cae48ff50647"
+SRC_URI[deb0.md5sum] = "1d846ad5651cde324fffd1367f9549f1"
+DEBFILENAME_libc6 = "libc6_2.19-18+deb8u9_armhf.deb"
+SRC_URI[deb1.sha256sum] = "bc8ae6b310c8ce36205a663af00a8e6bc4754f78915cf263c1fe8c995b8e07e6"
+SRC_URI[deb1.md5sum] = "7d9b7dfc1b144071d647fa63c0416bbd"
+DEBFILENAME_libc6-dev = "libc6-dev_2.19-18+deb8u9_armhf.deb"
+SRC_URI[deb2.sha256sum] = "9d2ce44f59fcab9122c691509a2d20c9c2502d9915d2a8253fca1c7ad93d7e69"
+SRC_URI[deb2.md5sum] = "f0bf7c5f161c6ad6d24c77b4e148c568"
 
 RDEPENDS_libc-dev-bin = "libc6 (>> 2.19) libc6 (<< 2.20)"
 RDEPENDS_libc6 = ""
-RDEPENDS_libc6-dev = "libc6 (= 2.19-18+deb8u7) libc-dev-bin (= 2.19-18+deb8u7) linux-libc-dev"
+RDEPENDS_libc6-dev = "libc6 (= 2.19-18+deb8u9) libc-dev-bin (= 2.19-18+deb8u9) linux-libc-dev"
 DEPENDS = " linux-libc-dev"
 
 
@@ -356,7 +356,7 @@ FILES_libc6 = " \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM935.so\
 "
 FILES_libc6-dev = " \
-	./usr/include/arm-linux-gnueabihf/bits/posix_opt.h \
+	./usr/include/sched.h \
 	./usr/include/arm-linux-gnueabihf/bits/sockaddr.h \
 	./usr/include/inttypes.h \
 	./usr/include/arm-linux-gnueabihf/sys/kd.h \
@@ -386,7 +386,7 @@ FILES_libc6-dev = " \
 	./usr/include/arm-linux-gnueabihf/sys/dir.h \
 	./usr/include/stdio_ext.h \
 	./usr/include/thread_db.h \
-	./usr/include/arm-linux-gnueabihf/bits/monetary-ldbl.h \
+	./usr/include/arm-linux-gnueabihf/bits/ipc.h \
 	./usr/lib/arm-linux-gnueabihf/libcrypt.a \
 	./usr/include/pthread.h \
 	./usr/include/poll.h \
@@ -399,7 +399,6 @@ FILES_libc6-dev = " \
 	./usr/include/arm-linux-gnueabihf/gnu/stubs-hard.h \
 	./usr/include/protocols/timed.h \
 	./usr/include/netinet/ether.h \
-	./usr/include/arm-linux-gnueabihf/bits/string2.h \
 	./usr/include/arm-linux-gnueabihf/sys/profil.h \
 	./usr/lib/arm-linux-gnueabihf/libnsl.a \
 	./usr/include/arm-linux-gnueabihf/bits/dirent.h \
@@ -414,7 +413,7 @@ FILES_libc6-dev = " \
 	./usr/include/arm-linux-gnueabihf/sys/ttychars.h \
 	./usr/include/arm-linux-gnueabihf/bits/errno.h \
 	./usr/include/arm-linux-gnueabihf/gnu/libc-version.h \
-	./usr/include/arm-linux-gnueabihf/sys/ioctl.h \
+	./usr/include/ftw.h \
 	./usr/lib/arm-linux-gnueabihf/libBrokenLocale.so \
 	./usr/include/arm-linux-gnueabihf/sys/pci.h \
 	./usr/include/rpc/rpc_des.h \
@@ -428,9 +427,9 @@ FILES_libc6-dev = " \
 	./usr/include/arm-linux-gnueabihf/sys/vtimes.h \
 	./usr/include/arm-linux-gnueabihf/bits/wchar2.h \
 	./usr/include/rpc/xdr.h \
-	./usr/include/rpcsvc/rstat.h \
+	./usr/include/arm-linux-gnueabihf/bits/fenvinline.h \
 	./usr/include/libgen.h \
-	./usr/lib/arm-linux-gnueabihf/libcrypt.so \
+	./usr/include/arm-linux-gnueabihf/bits/math-finite.h \
 	./usr/include/obstack.h \
 	./usr/lib/arm-linux-gnueabihf/libpthread.a \
 	./usr/include/stab.h \
@@ -443,7 +442,9 @@ FILES_libc6-dev = " \
 	./usr/include/arm-linux-gnueabihf/bits/nan.h \
 	./usr/include/arm-linux-gnueabihf/sys/time.h \
 	./usr/include/arm-linux-gnueabihf/bits/posix1_lim.h \
+	./usr/include/arm-linux-gnueabihf/sys/sysctl.h \
 	./usr/include/arm-linux-gnueabihf/sys/cdefs.h \
+	./usr/lib/arm-linux-gnueabihf/libcrypt.so \
 	./usr/include/stdc-predef.h \
 	./usr/include/netipx/ipx.h \
 	./usr/include/arm-linux-gnueabihf/bits/confname.h \
@@ -459,7 +460,7 @@ FILES_libc6-dev = " \
 	./usr/include/arm-linux-gnueabihf/bits/string.h \
 	./usr/include/arm-linux-gnueabihf/bits/select.h \
 	./usr/include/gnu-versions.h \
-	./usr/include/arm-linux-gnueabihf/bits/types.h \
+	./usr/include/arm-linux-gnueabihf/bits/wchar.h \
 	./usr/lib/arm-linux-gnueabihf/libnsl.so \
 	./usr/include/rpc/types.h \
 	./usr/lib/arm-linux-gnueabihf/Scrt1.o \
@@ -489,7 +490,6 @@ FILES_libc6-dev = " \
 	./usr/include/wait.h \
 	./usr/include/printf.h \
 	./usr/include/paths.h \
-	./usr/include/net/if_arp.h \
 	./usr/include/utmp.h \
 	./usr/include/strings.h \
 	./usr/include/arm-linux-gnueabihf/sys/gmon.h \
@@ -501,6 +501,7 @@ FILES_libc6-dev = " \
 	./usr/include/arm-linux-gnueabihf/bits/mqueue2.h \
 	./usr/include/arm-linux-gnueabihf/sys/mman.h \
 	./usr/lib/arm-linux-gnueabihf/libthread_db.so \
+	./usr/include/arm-linux-gnueabihf/bits/types.h \
 	./usr/include/syslog.h \
 	./usr/include/arm-linux-gnueabihf/bits/environments.h \
 	./usr/include/arm-linux-gnueabihf/bits/setjmp2.h \
@@ -520,7 +521,7 @@ FILES_libc6-dev = " \
 	./usr/lib/arm-linux-gnueabihf/Mcrt1.o \
 	./usr/lib/arm-linux-gnueabihf/libresolv.so \
 	./usr/include/tar.h \
-	./usr/include/sched.h \
+	./usr/include/arm-linux-gnueabihf/bits/posix_opt.h \
 	./usr/include/netinet/udp.h \
 	./usr/include/arm-linux-gnueabihf/sys/vt.h \
 	./usr/include/arm-linux-gnueabihf/bits/libc-lock.h \
@@ -536,7 +537,7 @@ FILES_libc6-dev = " \
 	./usr/lib/arm-linux-gnueabihf/libresolv.a \
 	./usr/include/netiucv/iucv.h \
 	./usr/include/netash/ash.h \
-	./usr/include/arm-linux-gnueabihf/bits/ipc.h \
+	./usr/include/arm-linux-gnueabihf/bits/monetary-ldbl.h \
 	./usr/include/arm-linux-gnueabihf/bits/mathcalls.h \
 	./usr/include/arpa/ftp.h \
 	./usr/include/nss.h \
@@ -557,14 +558,13 @@ FILES_libc6-dev = " \
 	./usr/include/arm-linux-gnueabihf/sys/fsuid.h \
 	./usr/include/arm-linux-gnueabihf/bits/eventfd.h \
 	./usr/include/arm-linux-gnueabihf/sys/sendfile.h \
-	./usr/include/arm-linux-gnueabihf/sys/sysctl.h \
+	./usr/include/arm-linux-gnueabihf/bits/string2.h \
 	./usr/include/arm-linux-gnueabihf/bits/syslog.h \
 	./usr/include/arm-linux-gnueabihf/ieee754.h \
 	./usr/include/arm-linux-gnueabihf/sys/unistd.h \
 	./usr/include/shadow.h \
 	./usr/include/arm-linux-gnueabihf/bits/elfclass.h \
-	./usr/include/arm-linux-gnueabihf/bits/syscall.h \
-	./usr/include/arm-linux-gnueabihf/bits/wchar.h \
+	./usr/include/arm-linux-gnueabihf/bits/cmathcalls.h \
 	./usr/include/arm-linux-gnueabihf/bits/poll2.h \
 	./usr/include/arm-linux-gnueabihf/sys/termios.h \
 	./usr/include/arm-linux-gnueabihf/bits/auxv.h \
@@ -589,11 +589,11 @@ FILES_libc6-dev = " \
 	./usr/include/aio.h \
 	./usr/include/rpc/rpc_msg.h \
 	./usr/include/arm-linux-gnueabihf/bits/byteswap-16.h \
-	./usr/include/arm-linux-gnueabihf/bits/math-finite.h \
+	./usr/include/net/if_arp.h \
 	./usr/share/doc/libc6-dev/copyright \
 	./usr/include/arm-linux-gnueabihf/sys/fcntl.h \
 	./usr/include/ustat.h \
-	./usr/include/arm-linux-gnueabihf/bits/time.h \
+	./usr/include/arm-linux-gnueabihf/bits/stdio-lock.h \
 	./usr/include/rpcsvc/nis_object.x \
 	./usr/include/arm-linux-gnueabihf/sys/timex.h \
 	./usr/lib/arm-linux-gnueabihf/libm.so \
@@ -615,11 +615,12 @@ FILES_libc6-dev = " \
 	./usr/include/arm-linux-gnueabihf/bits/a.out.h \
 	./usr/include/arm-linux-gnueabihf/bits/resource.h \
 	./usr/include/time.h \
+	./usr/include/arm-linux-gnueabihf/bits/stat.h \
 	./usr/include/net/ppp-comp.h \
 	./usr/include/net/route.h \
 	./usr/include/dlfcn.h \
 	./usr/include/rpcsvc/nis_tags.h \
-	./usr/include/rpcsvc/spray.x \
+	./usr/include/rpcsvc/mount.h \
 	./usr/include/arm-linux-gnueabihf/bits/waitflags.h \
 	./usr/include/arm-linux-gnueabihf/bits/mman-linux.h \
 	./usr/include/nl_types.h \
@@ -627,11 +628,12 @@ FILES_libc6-dev = " \
 	./usr/include/errno.h \
 	./usr/include/arm-linux-gnueabihf/sys/io.h \
 	./usr/include/arm-linux-gnueabihf/bits/locale.h \
-	./usr/include/arm-linux-gnueabihf/bits/string3.h \
+	./usr/include/arm-linux-gnueabihf/bits/syscall.h \
 	./usr/include/netdb.h \
 	./usr/include/arm-linux-gnueabihf/sys/vfs.h \
 	./usr/include/mcheck.h \
 	./usr/include/netinet/ip6.h \
+	./usr/include/arm-linux-gnueabihf/bits/string3.h \
 	./usr/include/arm-linux-gnueabihf/bits/sigcontext.h \
 	./usr/include/arm-linux-gnueabihf/bits/link.h \
 	./usr/include/arpa/nameser.h \
@@ -640,7 +642,7 @@ FILES_libc6-dev = " \
 	./usr/include/arm-linux-gnueabihf/bits/stdio.h \
 	./usr/include/ucontext.h \
 	./usr/include/arm-linux-gnueabihf/bits/mathinline.h \
-	./usr/include/rpcsvc/spray.h \
+	./usr/include/rpcsvc/mount.x \
 	./usr/include/byteswap.h \
 	./usr/include/rpcsvc/nis.h \
 	./usr/include/ulimit.h \
@@ -663,7 +665,6 @@ FILES_libc6-dev = " \
 	./usr/include/arpa/nameser_compat.h \
 	./usr/lib/arm-linux-gnueabihf/libanl.so \
 	./usr/lib/arm-linux-gnueabihf/libutil.so \
-	./usr/lib/arm-linux-gnueabihf/libnss_compat.so \
 	./usr/include/arm-linux-gnueabihf/sys/inotify.h \
 	./usr/include/signal.h \
 	./usr/include/net/ppp_defs.h \
@@ -671,7 +672,7 @@ FILES_libc6-dev = " \
 	./usr/include/netinet/in.h \
 	./usr/include/rpcsvc/ypupd.h \
 	./usr/include/sgtty.h \
-	./usr/include/arm-linux-gnueabihf/bits/stropts.h \
+	./usr/include/arm-linux-gnueabihf/bits/hwcap.h \
 	./usr/include/arm-linux-gnueabihf/bits/select2.h \
 	./usr/include/arm-linux-gnueabihf/bits/poll.h \
 	./usr/include/stdlib.h \
@@ -693,7 +694,7 @@ FILES_libc6-dev = " \
 	./usr/include/libio.h \
 	./usr/share/lintian/overrides/libc6-dev \
 	./usr/include/rpc/rpc.h \
-	./usr/include/arm-linux-gnueabihf/bits/cmathcalls.h \
+	./usr/lib/arm-linux-gnueabihf/libnss_compat.so \
 	./usr/include/rpcsvc/rusers.h \
 	./usr/include/lastlog.h \
 	./usr/include/rpc/auth_des.h \
@@ -714,7 +715,7 @@ FILES_libc6-dev = " \
 	./usr/include/assert.h \
 	./usr/include/neteconet/ec.h \
 	./usr/include/arm-linux-gnueabihf/bits/printf-ldbl.h \
-	./usr/include/ftw.h \
+	./usr/include/arm-linux-gnueabihf/sys/ioctl.h \
 	./usr/include/regex.h \
 	./usr/include/stdio.h \
 	./usr/include/arm-linux-gnueabihf/bits/fcntl-linux.h \
@@ -722,11 +723,11 @@ FILES_libc6-dev = " \
 	./usr/include/setjmp.h \
 	./usr/include/rpc/svc.h \
 	./usr/include/arm-linux-gnueabihf/bits/sigstack.h \
-	./usr/include/rpcsvc/mount.h \
+	./usr/include/rpcsvc/spray.x \
 	./usr/include/arm-linux-gnueabihf/sys/elf.h \
 	./usr/include/arm-linux-gnueabihf/sys/user.h \
 	./usr/include/dirent.h \
-	./usr/include/rpcsvc/mount.x \
+	./usr/include/rpcsvc/spray.h \
 	./usr/lib/arm-linux-gnueabihf/crti.o \
 	./usr/include/arm-linux-gnueabihf/bits/statfs.h \
 	./usr/lib/arm-linux-gnueabihf/libnss_files.so \
@@ -739,7 +740,7 @@ FILES_libc6-dev = " \
 	./usr/include/arm-linux-gnueabihf/bits/mathdef.h \
 	./usr/include/arm-linux-gnueabihf/gnu/stubs.h \
 	./usr/include/rpcsvc/yppasswd.x \
-	./usr/include/arm-linux-gnueabihf/bits/stat.h \
+	./usr/include/mqueue.h \
 	./usr/include/arm-linux-gnueabihf/sys/xattr.h \
 	./usr/include/rpcsvc/yppasswd.h \
 	./usr/include/rpcsvc/nislib.h \
@@ -752,7 +753,7 @@ FILES_libc6-dev = " \
 	./usr/include/rpcsvc/sm_inter.h \
 	./usr/include/arm-linux-gnueabihf/bits/xopen_lim.h \
 	./usr/include/net/if_slip.h \
-	./usr/include/mqueue.h \
+	./usr/include/arm-linux-gnueabihf/sys/stat.h \
 	./usr/include/arm-linux-gnueabihf/bits/ioctl-types.h \
 	./usr/include/arm-linux-gnueabihf/sys/fanotify.h \
 	./usr/include/envz.h \
@@ -783,9 +784,9 @@ FILES_libc6-dev = " \
 	./usr/include/arm-linux-gnueabihf/sys/wait.h \
 	./usr/include/nfs/nfs.h \
 	./usr/lib/arm-linux-gnueabihf/libnss_hesiod.so \
-	./usr/include/arm-linux-gnueabihf/bits/fenvinline.h \
+	./usr/include/rpcsvc/rstat.h \
 	./usr/include/arm-linux-gnueabihf/bits/sigset.h \
-	./usr/include/arm-linux-gnueabihf/bits/stdio-lock.h \
+	./usr/include/arm-linux-gnueabihf/bits/time.h \
 	./usr/include/arm-linux-gnueabihf/sys/quota.h \
 	./usr/include/netinet/in_systm.h \
 	./usr/include/netinet/igmp.h \
@@ -818,8 +819,7 @@ FILES_libc6-dev = " \
 	./usr/include/arm-linux-gnueabihf/bits/ustat.h \
 	./usr/include/arm-linux-gnueabihf/sys/ultrasound.h \
 	./usr/include/rpc/auth.h \
-	./usr/include/arm-linux-gnueabihf/bits/hwcap.h \
-	./usr/include/arm-linux-gnueabihf/sys/stat.h \
+	./usr/include/arm-linux-gnueabihf/bits/stropts.h \
 	./usr/include/arm-linux-gnueabihf/sys/sysmacros.h \
 	./usr/include/crypt.h \
 	./usr/include/arm-linux-gnueabihf/sys/eventfd.h \

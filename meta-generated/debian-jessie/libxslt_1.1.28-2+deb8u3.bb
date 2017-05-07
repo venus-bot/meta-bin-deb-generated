@@ -1,11 +1,11 @@
 PACKAGES = "libxslt1.1"
 PROVIDES = "libxslt1.1"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/libx/libxslt/libxslt1.1_1.1.28-2+deb8u2_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/libx/libxslt/libxslt1.1_1.1.28-2+deb8u3_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_libxslt1.1 = "libxslt1.1_1.1.28-2+deb8u2_armhf.deb"
-SRC_URI[deb0.sha256sum] = "d7471ab66dd3dc11c5518729439aa7d2310e843c705e326ccd96f7916f895ba4"
-SRC_URI[deb0.md5sum] = "6b81c8f14c0921476297021367f2376d"
+DEBFILENAME_libxslt1.1 = "libxslt1.1_1.1.28-2+deb8u3_armhf.deb"
+SRC_URI[deb0.sha256sum] = "d093cced60ccd0496d7170114022bb5e7fa7ad9c5db1536d0c5d7b6d0a28d103"
+SRC_URI[deb0.md5sum] = "4ae2179c022b4ee4997dca3a6f61a45c"
 
 RDEPENDS_${PN}1.1 = "libc6 (>= 2.17) libgcrypt20 (>= 1.6.0) libxml2 (>= 2.9.0)"
 DEPENDS = "libxml2 libgcrypt20 libc6"
