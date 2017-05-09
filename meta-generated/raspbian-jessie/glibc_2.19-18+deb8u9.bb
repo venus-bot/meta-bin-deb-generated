@@ -1,23 +1,23 @@
 PACKAGES = "libc-dev-bin libc6 libc6-dev"
 PROVIDES = "libc-dev-bin libc6 libc6-dev"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/g/glibc/libc-dev-bin_2.19-18+deb8u7_armhf.deb;unpack=0;name=deb0\
-	http://archive.raspbian.org/raspbian/pool/main/g/glibc/libc6_2.19-18+deb8u7_armhf.deb;unpack=0;name=deb1\
-	http://archive.raspbian.org/raspbian/pool/main/g/glibc/libc6-dev_2.19-18+deb8u7_armhf.deb;unpack=0;name=deb2\
+	http://archive.raspbian.org/raspbian/pool/main/g/glibc/libc-dev-bin_2.19-18+deb8u9_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/g/glibc/libc6_2.19-18+deb8u9_armhf.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/g/glibc/libc6-dev_2.19-18+deb8u9_armhf.deb;unpack=0;name=deb2\
 "
-DEBFILENAME_libc-dev-bin = "libc-dev-bin_2.19-18+deb8u7_armhf.deb"
-SRC_URI[deb0.sha256sum] = "31dd59821be0307da4d96478af36bc68d94e15e79148813e50ba884f82286322"
-SRC_URI[deb0.md5sum] = "0c6360ab240acd71bfa82b68026bcdd1"
-DEBFILENAME_libc6 = "libc6_2.19-18+deb8u7_armhf.deb"
-SRC_URI[deb1.sha256sum] = "857139e8f5d6f1a14ea65b9dccc2716137aea762bc693b79a0549174b8c2018c"
-SRC_URI[deb1.md5sum] = "7fe05eec6bff0ab571554fa8f5fccd41"
-DEBFILENAME_libc6-dev = "libc6-dev_2.19-18+deb8u7_armhf.deb"
-SRC_URI[deb2.sha256sum] = "46e92ca8ed31e750eae62812cc74f0591300486bd390a15b63e56ad6ced0315c"
-SRC_URI[deb2.md5sum] = "099578bdf8d820dae0c7ef72f53fadd7"
+DEBFILENAME_libc-dev-bin = "libc-dev-bin_2.19-18+deb8u9_armhf.deb"
+SRC_URI[deb0.sha256sum] = "f484e271e2a979cfc75e4c8dc1e3c6ca763e880fea4238212961984bf7451e61"
+SRC_URI[deb0.md5sum] = "82c2ff10b784565107336f0c5cbbbc0c"
+DEBFILENAME_libc6 = "libc6_2.19-18+deb8u9_armhf.deb"
+SRC_URI[deb1.sha256sum] = "9239fbe92524b61b36396ad559f812d4694652539666c69b2b5d8c60dd8b7054"
+SRC_URI[deb1.md5sum] = "469201a0225266c6c358a5b7fef8973f"
+DEBFILENAME_libc6-dev = "libc6-dev_2.19-18+deb8u9_armhf.deb"
+SRC_URI[deb2.sha256sum] = "569996373d332f0b00d31b471f2a6902fca1326f31a9a3300d77a281fffbf26f"
+SRC_URI[deb2.md5sum] = "b7e9b91e30c7ac5d7b1cceb2846bb25f"
 
 RDEPENDS_libc-dev-bin = "libc6 (>> 2.19) libc6 (<< 2.20)"
 RDEPENDS_libc6 = ""
-RDEPENDS_libc6-dev = "libc6 (= 2.19-18+deb8u7) libc-dev-bin (= 2.19-18+deb8u7) linux-libc-dev"
+RDEPENDS_libc6-dev = "libc6 (= 2.19-18+deb8u9) libc-dev-bin (= 2.19-18+deb8u9) linux-libc-dev"
 DEPENDS = " linux-libc-dev"
 
 

@@ -1,11 +1,11 @@
 PACKAGES = "libxslt1.1"
 PROVIDES = "libxslt1.1"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/libx/libxslt/libxslt1.1_1.1.28-2+deb8u2_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/libx/libxslt/libxslt1.1_1.1.28-2+deb8u3_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_libxslt1.1 = "libxslt1.1_1.1.28-2+deb8u2_armhf.deb"
-SRC_URI[deb0.sha256sum] = "51efb0c9e9604c3301d044182f75f83bf33df837ffdb5d4d019cddc3fd723880"
-SRC_URI[deb0.md5sum] = "b9e24ae23f0f6e69296e450f6e69c8eb"
+DEBFILENAME_libxslt1.1 = "libxslt1.1_1.1.28-2+deb8u3_armhf.deb"
+SRC_URI[deb0.sha256sum] = "0325b0949f022458bacc517536b1712f4dfb7cee0f7cec118fe765241b3c706e"
+SRC_URI[deb0.md5sum] = "6d40756aedafd9c24bbfde30b36df525"
 
 RDEPENDS_${PN}1.1 = "libc6 (>= 2.17) libgcrypt20 (>= 1.6.0) libxml2 (>= 2.9.0)"
 DEPENDS = "libxml2 libgcrypt20 libc6"
