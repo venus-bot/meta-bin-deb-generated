@@ -1,11 +1,11 @@
 PACKAGES = "passwd"
 PROVIDES = "passwd"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/s/shadow/passwd_4.2-3+deb8u3_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/s/shadow/passwd_4.2-3+deb8u4_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_passwd = "passwd_4.2-3+deb8u3_armhf.deb"
-SRC_URI[deb0.sha256sum] = "ce7ac0ddb761381d85fec4ece4b79cb378e3a2b99ab5dca49182781d8670cc99"
-SRC_URI[deb0.md5sum] = "71e993f6d5e8c7f3d0c0df3a9ffc864b"
+DEBFILENAME_passwd = "passwd_4.2-3+deb8u4_armhf.deb"
+SRC_URI[deb0.sha256sum] = "dcb4fbfcd26189e63419629b1d073e392634a0929aa2bb3658b6894c270e30ac"
+SRC_URI[deb0.md5sum] = "32f25364b53b2767df5d4da229bf5cdb"
 
 RDEPENDS_passwd = "libaudit1 (>= 1:2.2.1) libc6 (>= 2.8) libpam0g (>= 0.99.7.1) libselinux1 (>= 1.32) libsemanage1 (>= 2.0.3) libpam-modules debianutils (>= 2.15.2)"
 DEPENDS = "libpam-modules libsemanage1 libc6 libaudit1 debianutils libselinux1 libpam0g"
