@@ -1,11 +1,11 @@
 PACKAGES = "libgcrypt20"
 PROVIDES = "libgcrypt20"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u2_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u3_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_libgcrypt20 = "libgcrypt20_1.6.3-2+deb8u2_armhf.deb"
-SRC_URI[deb0.sha256sum] = "28f7273d1cfd346365b8e2e5805c573c512596b9c43f1ca0c739a84feef36530"
-SRC_URI[deb0.md5sum] = "1acc844a07af038c095376765fe77ac7"
+DEBFILENAME_libgcrypt20 = "libgcrypt20_1.6.3-2+deb8u3_armhf.deb"
+SRC_URI[deb0.sha256sum] = "32c12fedaf1cb1dae4b10c5700e9ebc20b50e1fa543a3bb82165e09ebabe4a4e"
+SRC_URI[deb0.md5sum] = "b90af1b854d544a8e986f1fc9e53f84e"
 
 RDEPENDS_${PN} = "libc6 (>= 2.15) libgpg-error0 (>= 1.14)"
 DEPENDS = "libgpg-error0 libc6"
