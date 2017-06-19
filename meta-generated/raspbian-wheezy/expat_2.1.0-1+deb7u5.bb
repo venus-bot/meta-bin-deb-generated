@@ -1,11 +1,11 @@
 PACKAGES = "libexpat1"
 PROVIDES = "libexpat1"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/e/expat/libexpat1_2.1.0-1+deb7u4_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/e/expat/libexpat1_2.1.0-1+deb7u5_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_libexpat1 = "libexpat1_2.1.0-1+deb7u4_armhf.deb"
-SRC_URI[deb0.sha256sum] = "3d9925d5a9f7ec1e4f9ba43b644ae9b666b33bddede3af4a8d27977cdba3b63e"
-SRC_URI[deb0.md5sum] = "b8abe93d642758eb9cdde4a16930bbd9"
+DEBFILENAME_libexpat1 = "libexpat1_2.1.0-1+deb7u5_armhf.deb"
+SRC_URI[deb0.sha256sum] = "0a2311cd917d064ae544e2115475385190cca899f7304ebeb14d8056f7a8fa5f"
+SRC_URI[deb0.md5sum] = "ea08f690862bde4bbe09c1466d1abd9f"
 
 RDEPENDS_lib${PN}1 = "libc6 (>= 2.13-28) libgcc1 (>= 1:4.4.0)"
 DEPENDS = "libgcc1 libc6"
