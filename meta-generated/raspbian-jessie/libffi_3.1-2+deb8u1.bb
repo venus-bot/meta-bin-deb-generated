@@ -1,11 +1,11 @@
 PACKAGES = "libffi6"
 PROVIDES = "libffi6"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/libf/libffi/libffi6_3.1-2_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/libf/libffi/libffi6_3.1-2+deb8u1_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_libffi6 = "libffi6_3.1-2_armhf.deb"
-SRC_URI[deb0.sha256sum] = "f590a773e78641e5d897e4c5e3646137db6bcee6fe9cc1daaa72ebb6293d27ff"
-SRC_URI[deb0.md5sum] = "01f0a43f3145c11ff494180a830a87ff"
+DEBFILENAME_libffi6 = "libffi6_3.1-2+deb8u1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "76703fd86bbe062ac79d11192fa35fb0076ebc8782f02326261a88386d378fbe"
+SRC_URI[deb0.md5sum] = "f99635fba0a0576318a2d4b7fa7a2a12"
 
 RDEPENDS_${PN}6 = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0)"
 DEPENDS = "libgcc1 libc6"
