@@ -1,27 +1,27 @@
 PACKAGES = "libc-bin libc-dev-bin libc6 libc6-dev"
 PROVIDES = "libc-bin libc-dev-bin libc6 libc6-dev"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/e/eglibc/libc-bin_2.13-38+rpi2+deb7u11_armhf.deb;unpack=0;name=deb0\
-	http://archive.raspbian.org/raspbian/pool/main/e/eglibc/libc-dev-bin_2.13-38+rpi2+deb7u11_armhf.deb;unpack=0;name=deb1\
-	http://archive.raspbian.org/raspbian/pool/main/e/eglibc/libc6_2.13-38+rpi2+deb7u11_armhf.deb;unpack=0;name=deb2\
-	http://archive.raspbian.org/raspbian/pool/main/e/eglibc/libc6-dev_2.13-38+rpi2+deb7u11_armhf.deb;unpack=0;name=deb3\
+	http://archive.raspbian.org/raspbian/pool/main/e/eglibc/libc-bin_2.13-38+rpi2+deb7u12_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/e/eglibc/libc-dev-bin_2.13-38+rpi2+deb7u12_armhf.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/e/eglibc/libc6_2.13-38+rpi2+deb7u12_armhf.deb;unpack=0;name=deb2\
+	http://archive.raspbian.org/raspbian/pool/main/e/eglibc/libc6-dev_2.13-38+rpi2+deb7u12_armhf.deb;unpack=0;name=deb3\
 "
-DEBFILENAME_libc-bin = "libc-bin_2.13-38+rpi2+deb7u11_armhf.deb"
-SRC_URI[deb0.sha256sum] = "c4a829b34037b51646ea551e629325adc2874f2b0f7e1a845c1ef223be418f85"
-SRC_URI[deb0.md5sum] = "92bb4e588a9950bc96a67ab704a6867b"
-DEBFILENAME_libc-dev-bin = "libc-dev-bin_2.13-38+rpi2+deb7u11_armhf.deb"
-SRC_URI[deb1.sha256sum] = "854c221cb9a6a1ed16326b1b8dfc75c6427bfaf7cdaac3e93eb68f9a55aafcf4"
-SRC_URI[deb1.md5sum] = "047386037f27fcf7f622c81516079035"
-DEBFILENAME_libc6 = "libc6_2.13-38+rpi2+deb7u11_armhf.deb"
-SRC_URI[deb2.sha256sum] = "d8d1b25d4ed61f9214488a0af85a0126923cbf854f1a55536b14d2246ae599bc"
-SRC_URI[deb2.md5sum] = "1c6f6e20dac4a2756326aded4d86aa84"
-DEBFILENAME_libc6-dev = "libc6-dev_2.13-38+rpi2+deb7u11_armhf.deb"
-SRC_URI[deb3.sha256sum] = "e23ab214912bf98f508329c1b85937b898a0d0b4a6f6a4837a6d7d0a0ea4eb1c"
-SRC_URI[deb3.md5sum] = "b297cc16398bc164e02db7d7da1a42ed"
+DEBFILENAME_libc-bin = "libc-bin_2.13-38+rpi2+deb7u12_armhf.deb"
+SRC_URI[deb0.sha256sum] = "eee6cf4992b5931fac982979f1ade50a8e677f0b0583d03d19d70222694bed46"
+SRC_URI[deb0.md5sum] = "4c4458fde9a0f71ea11976bc01095906"
+DEBFILENAME_libc-dev-bin = "libc-dev-bin_2.13-38+rpi2+deb7u12_armhf.deb"
+SRC_URI[deb1.sha256sum] = "61be74071720a5003824097b9a6392771445b578df44788dac1b81add53880b8"
+SRC_URI[deb1.md5sum] = "70713a72480ecba3924e821977d3c7b5"
+DEBFILENAME_libc6 = "libc6_2.13-38+rpi2+deb7u12_armhf.deb"
+SRC_URI[deb2.sha256sum] = "47502b76457dc5dd49daa2da05529b27a47601e67b19127390c66b2d1e55be5f"
+SRC_URI[deb2.md5sum] = "9e21ef26c1e5158f6f2ac391ddf0f913"
+DEBFILENAME_libc6-dev = "libc6-dev_2.13-38+rpi2+deb7u12_armhf.deb"
+SRC_URI[deb3.sha256sum] = "06285e65c1fca19064369425dc3537a633a0b5dbbc223f5df07ad2949ceeeef8"
+SRC_URI[deb3.md5sum] = "822f5e304dc6196834ff00a2e0bcb288"
 
 RDEPENDS_libc-dev-bin = "libc6 (>= 2.13-28) libc6 (<< 2.14)"
-RDEPENDS_libc6 = "libc-bin (= 2.13-38+rpi2+deb7u11) "
-RDEPENDS_libc6-dev = "libc6 (= 2.13-38+rpi2+deb7u11) libc-dev-bin (= 2.13-38+rpi2+deb7u11) linux-libc-dev"
+RDEPENDS_libc6 = "libc-bin (= 2.13-38+rpi2+deb7u12) "
+RDEPENDS_libc6-dev = "libc6 (= 2.13-38+rpi2+deb7u12) libc-dev-bin (= 2.13-38+rpi2+deb7u12) linux-libc-dev"
 DEPENDS = " linux-libc-dev"
 
 
@@ -34,10 +34,10 @@ INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libc-bin = " \
 	./usr/lib/locale/C.UTF-8/LC_MONETARY \
-	./usr/lib/locale/C.UTF-8/LC_IDENTIFICATION \
+	./usr/share/man/man1/locale.1.gz \
 	./usr/bin/tzselect \
 	./usr/bin/iconv \
-	./usr/share/man/man1/locale.1.gz \
+	./usr/lib/locale/C.UTF-8/LC_IDENTIFICATION \
 	./usr/bin/locale \
 	./usr/share/man/man8/rpcinfo.8.gz \
 	./usr/lib/locale/C.UTF-8/LC_MEASUREMENT \
@@ -45,31 +45,31 @@ FILES_libc-bin = " \
 	./usr/bin/zdump \
 	./etc/gai.conf \
 	./usr/share/doc/libc-bin/TODO.Debian \
-	./usr/sbin/iconvconfig \
 	./usr/bin/catchsegv \
-	./usr/lib/locale/C.UTF-8/LC_NAME \
+	./usr/share/man/man1/ldd.1.gz \
 	./usr/lib/locale/C.UTF-8/LC_CTYPE \
+	./usr/bin/localedef \
 	./sbin/ldconfig \
 	./usr/share/lintian/overrides/libc-bin \
-	./usr/lib/pt_chown \
+	./usr/sbin/iconvconfig \
 	./usr/share/man/man1/tzselect.1.gz \
+	./usr/lib/locale/C.UTF-8/LC_PAPER \
 	./usr/share/man/man8/ldconfig.8.gz \
 	./usr/share/man/man1/zdump.1.gz \
 	./usr/bin/rpcinfo \
-	./usr/bin/localedef \
 	./usr/share/man/man5/gai.conf.5.gz \
 	./usr/share/doc/libc-bin/copyright \
 	./usr/share/man/man1/getconf.1.gz \
 	./usr/sbin/zic \
-	./usr/lib/locale/C.UTF-8/LC_PAPER \
+	./usr/lib/pt_chown \
 	./usr/lib/locale/C.UTF-8/LC_TIME \
 	./etc/bindresvport.blacklist \
 	./usr/share/man/man8/zic.8.gz \
 	./usr/share/man/man8/ld.so.8.gz \
-	./usr/share/man/man1/ldd.1.gz \
+	./usr/lib/locale/C.UTF-8/LC_NAME \
 	./etc/default/nss \
 	./usr/share/libc-bin/nsswitch.conf \
-	./usr/share/doc/libc-bin/changelog.gz \
+	./usr/lib/locale/C.UTF-8/LC_COLLATE \
 	./usr/lib/locale/C.UTF-8/LC_NUMERIC \
 	./usr/lib/locale/C.UTF-8/LC_MESSAGES/SYS_LC_MESSAGES \
 	./usr/share/man/man8/iconvconfig.8.gz \
@@ -81,17 +81,17 @@ FILES_libc-bin = " \
 	./usr/share/man/man1/catchsegv.1.gz \
 	./usr/bin/ldd \
 	./usr/bin/getconf \
-	./usr/lib/locale/C.UTF-8/LC_COLLATE \
+	./usr/share/doc/libc-bin/changelog.gz \
 	./etc/ld.so.conf.d/libc.conf\
 "
 FILES_libc-dev-bin = " \
-	./usr/bin/sprof \
+	./usr/share/doc/libc-dev-bin/NOTES.gz \
 	./usr/share/man/man1/rpcgen.1.gz \
 	./usr/share/doc/libc-dev-bin/copyright \
 	./usr/share/doc/libc-dev-bin/NAMESPACE \
-	./usr/share/doc/libc-dev-bin/NOTES.gz \
-	./usr/bin/mtrace \
 	./usr/bin/rpcgen \
+	./usr/bin/mtrace \
+	./usr/bin/sprof \
 	./usr/share/man/man1/sprof.1.gz \
 	./usr/share/man/man1/gencat.1.gz \
 	./usr/share/doc/libc-dev-bin/changelog.gz \
@@ -100,7 +100,6 @@ FILES_libc-dev-bin = " \
 	./usr/share/doc/libc-dev-bin/changelog.Debian.gz\
 "
 FILES_libc6 = " \
-	./usr/lib/arm-linux-gnueabihf/gconv/ISO_6937.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/SAMI-WS2.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM5347.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1153.so \
@@ -108,157 +107,157 @@ FILES_libc6 = " \
 	./usr/lib/arm-linux-gnueabihf/gconv/ISO-IR-197.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/EBCDIC-DK-NO-A.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/CP1251.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM424.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/CP1253.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/CP1125.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/GREEK7.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1154.so \
-	./usr/share/doc/libc6/NEWS.gz \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM1142.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/GOST_19768-74.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/ISO8859-10.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1008_420.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1130.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/EUC-KR.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/EUC-JP-MS.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/LATIN-GREEK.so \
 	./lib/arm-linux-gnueabihf/libnss_nisplus-2.13.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/ISO8859-4.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/GBBIG5.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM423.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/RK1048.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/ISIRI-3342.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/KOI-8.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/EUC-CN.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM275.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1399.so \
-	./lib/arm-linux-gnueabihf/librt-2.13.so \
+	./lib/arm-linux-gnueabihf/libc-2.13.so \
 	./lib/arm-linux-gnueabihf/libdl-2.13.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/ARMSCII-8.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/MACINTOSH.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/MAC-IS.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM1137.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/T.61.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/EBCDIC-CA-FR.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM1144.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM937.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/TSCII.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/EUC-JP.so \
+	./usr/share/lintian/overrides/libc6 \
 	./usr/share/doc/libc6/changelog.Debian.gz \
 	./usr/lib/arm-linux-gnueabihf/gconv/MAC-SAMI.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/NATS-DANO.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/CP1250.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/KOI8-RU.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/UHC.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM1124.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1390.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/MAC-UK.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/UTF-16.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/ISO8859-11.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/GEORGIAN-PS.so \
+	./lib/arm-linux-gnueabihf/libnss_nis-2.13.so \
 	./lib/arm-linux-gnueabihf/ld-linux-armhf.so.3 \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM866.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/EBCDIC-US.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/EBCDIC-IT.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/ISO_6937-2.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/ISO8859-9.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM902.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1143.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/GREEK7.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/libKSC.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/ISO8859-6.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/GEORGIAN-PS.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM874.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1123.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/EBCDIC-FI-SE-A.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/libGB.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/HP-ROMAN8.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/EBCDIC-UK.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM862.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/EUC-JP-MS.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1155.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1167.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/GEORGIAN-ACADEMY.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/ASMO_449.so \
 	./lib/arm-linux-gnueabihf/libBrokenLocale.so.1 \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM901.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/EBCDIC-US.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM866.so \
 	./lib/arm-linux-gnueabihf/libthread_db-1.0.so \
+	./lib/arm-linux-gnueabihf/libcidn.so.1 \
 	./lib/arm-linux-gnueabihf/libthread_db.so.1 \
+	./usr/lib/arm-linux-gnueabihf/gconv/ARMSCII-8.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM290.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/EUC-JISX0213.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/CP1125.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM870.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM855.so \
 	./lib/arm-linux-gnueabihf/libpthread-2.13.so \
 	./etc/ld.so.conf.d/arm-linux-gnueabihf.conf \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM875.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/SJIS.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/ISO8859-1.so \
 	./lib/arm-linux-gnueabihf/ld-2.13.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/ANSI_X3.110.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM16804.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/EBCDIC-AT-DE-A.so \
+	./usr/share/doc/libc6/NEWS.Debian.gz \
 	./usr/lib/arm-linux-gnueabihf/gconv/NATS-SEFI.so \
 	./lib/arm-linux-gnueabihf/libanl-2.13.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1141.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/ISO_10367-BOX.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/MAC-UK.so \
 	./lib/arm-linux-gnueabihf/libcidn-2.13.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/CP932.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM803.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/LATIN-GREEK-1.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/ISO646.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/TCVN5712-1.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/BRF.so \
 	./lib/arm-linux-gnueabihf/libnss_dns-2.13.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1157.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/BIG5HKSCS.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM905.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM284.so \
 	./lib/arm-linux-gnueabihf/libm.so.6 \
-	./usr/lib/arm-linux-gnueabihf/gconv/libISOIR165.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM9448.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM4971.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1025.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM281.so \
+	./usr/share/doc/libc6/BUGS \
 	./usr/lib/arm-linux-gnueabihf/gconv/ISO8859-7.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM930.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/ISO_2033.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/LATIN-GREEK-1.so \
-	./usr/share/doc/libc6/BUGS \
-	./usr/lib/arm-linux-gnueabihf/gconv/ISO8859-14.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM9066.so \
 	./lib/arm-linux-gnueabihf/libcrypt.so.1 \
-	./usr/lib/arm-linux-gnueabihf/gconv/LATIN-GREEK.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM278.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1097.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/HP-TURKISH8.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM866NAV.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/GREEK7-OLD.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM274.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/UTF-32.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/gconv-modules.cache \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM12712.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM273.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/ISO-2022-CN-EXT.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM891.so \
+	./usr/share/doc/libc6/README.hesiod.gz \
 	./lib/arm-linux-gnueabihf/libmemusage.so \
+	./lib/arm-linux-gnueabihf/libnsl.so.1 \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM423.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1160.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/libJISX0213.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/libCNS.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM871.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM4909.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1145.so \
-	./usr/share/doc/libc6/FAQ.gz \
 	./usr/lib/arm-linux-gnueabihf/gconv/ISO_11548-1.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/VISCII.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/ISO8859-9E.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1140.so \
 	./lib/arm-linux-gnueabihf/libnss_dns.so.2 \
-	./usr/lib/arm-linux-gnueabihf/gconv/KOI8-RU.so \
+	./usr/share/doc/libc6/README.Debian.gz \
 	./lib/arm-linux-gnueabihf/libSegFault.so \
-	./usr/share/doc/libc6/NEWS.Debian.gz \
-	./usr/lib/arm-linux-gnueabihf/gconv/CWI.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/UTF-16.so \
+	./usr/share/doc/libc6/changelog.gz \
 	./usr/lib/arm-linux-gnueabihf/gconv/ISO_5427-EXT.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM860.so \
 	./lib/arm-linux-gnueabihf/librt.so.1 \
 	./lib/arm-linux-gnueabihf/libpthread.so.0 \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM862.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/RK1048.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/libISOIR165.so \
+	./lib/arm-linux-gnueabihf/ld-linux.so.3 \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM297.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM274.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM424.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/ISO_6937-2.so \
 	./lib/arm-linux-gnueabihf/libresolv-2.13.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/CP1258.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/EBCDIC-AT-DE.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1364.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM277.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/KOI8-R.so \
-	./usr/share/doc/libc6/README.Debian.gz \
-	./usr/lib/arm-linux-gnueabihf/gconv/ISO8859-3.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/ISO-IR-209.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/ISO_2033.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/BIG5.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM1166.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1164.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/MAC-IS.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/EBCDIC-UK.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM921.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1161.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM943.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM855.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM1137.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/MACINTOSH.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM870.so \
 	./lib/arm-linux-gnueabihf/libnss_compat-2.13.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM850.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/UHC.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/ISO_6937.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/CP737.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1008.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM865.so \
@@ -266,140 +265,141 @@ FILES_libc6 = " \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM038.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IEC_P27-1.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/PT154.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM1156.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM932.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/libKSC.so \
+	./lib/arm-linux-gnueabihf/libanl.so.1 \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM922.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM918.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/EBCDIC-FI-SE.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/ISO_5427.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM1148.so \
+	./lib/ld-linux-armhf.so.3 \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM9030.so \
 	./lib/arm-linux-gnueabihf/libpcprofile.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/ISO8859-2.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM939.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/EBCDIC-DK-NO.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/ISO-2022-CN.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1147.so \
-	./usr/share/doc/libc6/changelog.gz \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM851.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/ISO_10367-BOX.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/CP1256.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/UTF-7.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM904.so \
-	./lib/arm-linux-gnueabihf/libanl.so.1 \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM1166.so \
-	./lib/arm-linux-gnueabihf/ld-linux.so.3 \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM4517.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/ISO-IR-209.so \
+	./lib/arm-linux-gnueabihf/libnss_nisplus.so.2 \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1133.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/MAC-CENTRALEUROPE.so \
-	./lib/ld-linux-armhf.so.3 \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM1132.so \
-	./usr/share/lintian/overrides/libc6 \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM1158.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM860.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/EUC-JP.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM857.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM852.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM9066.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM932.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/ISO8859-13.so \
 	./lib/arm-linux-gnueabihf/libutil.so.1 \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM420.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1047.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/ISO_5428.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/CP1253.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/CSN_369103.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM803.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM1156.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM880.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM4517.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/BIG5.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/ISO-2022-JP.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/GREEK-CCITT.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/EBCDIC-PT.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/GB18030.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/ISO-2022-JP-3.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM1132.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM16804.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/CP775.so \
+	./lib/arm-linux-gnueabihf/libnss_files.so.2 \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM281.so \
 	./usr/share/doc/libc6/copyright \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1388.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/UNICODE.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM256.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1004.so \
-	./usr/share/doc/libc6/README.hesiod.gz \
 	./usr/lib/arm-linux-gnueabihf/gconv/EBCDIC-IS-FRISS.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/TIS-620.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/HP-THAI8.so \
 	./lib/arm-linux-gnueabihf/libnss_nis.so.2 \
 	./usr/lib/arm-linux-gnueabihf/gconv/HP-ROMAN9.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM905.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/BIG5HKSCS.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/SHIFT_JISX0213.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/EUC-TW.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/CP775.so \
+	./lib/arm-linux-gnueabihf/librt-2.13.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1146.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/NATS-DANO.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/CP1252.so \
 	./lib/arm-linux-gnueabihf/libnss_files-2.13.so \
 	./lib/arm-linux-gnueabihf/libnss_compat.so.2 \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM1124.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/INIS-CYRILLIC.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/CP1257.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/DEC-MCS.so \
 	./lib/arm-linux-gnueabihf/libnss_hesiod.so.2 \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1162.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM891.so \
 	./lib/arm-linux-gnueabihf/libresolv.so.2 \
-	./lib/arm-linux-gnueabihf/libm-2.13.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/INIS-8.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM1144.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1026.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/KOI8-T.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM1148.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/libJIS.so \
 	./lib/arm-linux-gnueabihf/libutil-2.13.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1149.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM1163.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM9030.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/ISO-2022-JP-3.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/KOI-8.so \
 	./lib/arm-linux-gnueabihf/libcrypt-2.13.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/CP1254.so \
 	./lib/arm-linux-gnueabihf/libBrokenLocale-2.13.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/ISO8859-15.so \
-	./lib/arm-linux-gnueabihf/libnss_nis-2.13.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM1142.so \
+	./lib/arm-linux-gnueabihf/libm-2.13.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/VISCII.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1112.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1371.so \
 	./lib/arm-linux-gnueabihf/libc.so.6 \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM903.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1122.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM4899.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM285.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM864.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/gconv-modules.cache \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM937.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/ISO8859-14.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/JOHAB.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM863.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/ISO-2022-JP.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM500.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM875.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/GREEK-CCITT.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/UTF-7.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM850.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/GBK.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM037.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/ISO8859-9.so \
+	./usr/share/doc/libc6/NEWS.gz \
 	./usr/lib/arm-linux-gnueabihf/gconv/ISO-2022-KR.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/KOI8-U.so \
-	./lib/arm-linux-gnueabihf/libcidn.so.1 \
+	./usr/lib/arm-linux-gnueabihf/gconv/CP1250.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/gconv-modules \
 	./usr/lib/arm-linux-gnueabihf/gconv/CP10007.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/ISO8859-6.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM284.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/GB18030.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/INIS.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM868.so \
 	./usr/share/doc/libc6/test-results-arm-linux-gnueabihf-libc \
-	./lib/arm-linux-gnueabihf/libnsl.so.1 \
+	./usr/lib/arm-linux-gnueabihf/gconv/EBCDIC-AT-DE-A.so \
 	./lib/arm-linux-gnueabihf/libnsl-2.13.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM1163.so \
 	./lib/arm-linux-gnueabihf/libdl.so.2 \
 	./usr/lib/arm-linux-gnueabihf/gconv/EBCDIC-ES.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/ISO8859-5.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/ECMA-CYRILLIC.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM12712.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM939.so \
-	./lib/arm-linux-gnueabihf/libc-2.13.so \
+	./usr/share/doc/libc6/FAQ.gz \
+	./usr/lib/arm-linux-gnueabihf/gconv/ISO_5427.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/ISO8859-2.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM851.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM861.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/CP1255.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/EBCDIC-ES-S.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/CSN_369103.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/ISO_5428.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/EBCDIC-ES-A.so \
-	./lib/arm-linux-gnueabihf/libnss_files.so.2 \
+	./usr/lib/arm-linux-gnueabihf/gconv/CWI.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM933.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM437.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/ISO8859-8.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM1158.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/ISO8859-3.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM856.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/GBGBK.so \
-	./lib/arm-linux-gnueabihf/libnss_nisplus.so.2 \
+	./usr/lib/arm-linux-gnueabihf/gconv/ECMA-CYRILLIC.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/MIK.so \
 	./lib/arm-linux-gnueabihf/libnss_hesiod-2.13.so \
-	./usr/lib/arm-linux-gnueabihf/gconv/IBM285.so \
+	./usr/lib/arm-linux-gnueabihf/gconv/IBM4899.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM1046.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM869.so \
 	./usr/lib/arm-linux-gnueabihf/gconv/HP-GREEK8.so \
@@ -408,21 +408,21 @@ FILES_libc6 = " \
 	./usr/lib/arm-linux-gnueabihf/gconv/IBM935.so\
 "
 FILES_libc6-dev = " \
-	./usr/include/arm-linux-gnueabihf/bits/posix_opt.h \
+	./usr/include/sched.h \
 	./usr/include/arm-linux-gnueabihf/bits/sockaddr.h \
 	./usr/include/inttypes.h \
 	./usr/include/arm-linux-gnueabihf/sys/kd.h \
 	./usr/include/arm-linux-gnueabihf/bits/mman.h \
 	./usr/include/net/if_ppp.h \
 	./usr/include/arm-linux-gnueabihf/bits/fenv.h \
-	./usr/include/arm-linux-gnueabihf/bits/socket2.h \
+	./usr/include/stdint.h \
 	./usr/include/arm-linux-gnueabihf/sys/param.h \
 	./usr/include/arm-linux-gnueabihf/bits/local_lim.h \
 	./usr/include/arm-linux-gnueabihf/bits/pthreadtypes.h \
 	./usr/share/doc/libc6-dev/NAMESPACE \
 	./usr/include/getopt.h \
 	./usr/include/arm-linux-gnueabihf/bits/stdlib-ldbl.h \
-	./usr/include/arm-linux-gnueabihf/sys/soundcard.h \
+	./usr/include/arm-linux-gnueabihf/sys/uio.h \
 	./usr/include/arm-linux-gnueabihf/sys/ttydefaults.h \
 	./usr/include/arm-linux-gnueabihf/sys/personality.h \
 	./usr/include/netinet/ip.h \
@@ -432,11 +432,12 @@ FILES_libc6-dev = " \
 	./usr/include/_G_config.h \
 	./usr/include/arm-linux-gnueabihf/bits/dlfcn.h \
 	./usr/include/arm-linux-gnueabihf/bits/error.h \
+	./usr/include/arm-linux-gnueabihf/bits/ioctls.h \
 	./usr/lib/arm-linux-gnueabihf/libm.a \
-	./usr/include/arm-linux-gnueabihf/bits/libc-lock.h \
+	./usr/include/rpcsvc/nis_callback.x \
 	./usr/include/arm-linux-gnueabihf/sys/dir.h \
 	./usr/include/stdio_ext.h \
-	./usr/include/thread_db.h \
+	./usr/include/elf.h \
 	./usr/include/arm-linux-gnueabihf/bits/monetary-ldbl.h \
 	./usr/lib/arm-linux-gnueabihf/libcrypt.a \
 	./usr/include/pthread.h \
@@ -449,21 +450,22 @@ FILES_libc6-dev = " \
 	./usr/include/arm-linux-gnueabihf/sys/klog.h \
 	./usr/include/protocols/timed.h \
 	./usr/include/netinet/ether.h \
+	./usr/include/netatalk/at.h \
 	./usr/include/arm-linux-gnueabihf/sys/profil.h \
 	./usr/include/arm-linux-gnueabihf/bits/dirent.h \
 	./usr/include/monetary.h \
 	./usr/include/fts.h \
 	./usr/lib/arm-linux-gnueabihf/librpcsvc.a \
-	./usr/include/stdint.h \
+	./usr/include/arm-linux-gnueabihf/bits/socket2.h \
 	./usr/include/tgmath.h \
 	./usr/include/arm-linux-gnueabihf/bits/mqueue.h \
 	./usr/include/protocols/rwhod.h \
 	./usr/include/arm-linux-gnueabihf/sys/cdefs.h \
-	./usr/include/arm-linux-gnueabihf/sys/statvfs.h \
+	./usr/include/rpc/rpc.h \
 	./usr/include/arm-linux-gnueabihf/sys/ttychars.h \
 	./usr/include/arm-linux-gnueabihf/bits/errno.h \
 	./usr/include/arm-linux-gnueabihf/gnu/libc-version.h \
-	./usr/include/arm-linux-gnueabihf/sys/ioctl.h \
+	./usr/include/ftw.h \
 	./usr/lib/arm-linux-gnueabihf/libBrokenLocale.so \
 	./usr/include/arm-linux-gnueabihf/sys/pci.h \
 	./usr/include/rpc/rpc_des.h \
@@ -473,15 +475,15 @@ FILES_libc6-dev = " \
 	./usr/include/arm-linux-gnueabihf/sys/socket.h \
 	./usr/lib/arm-linux-gnueabihf/libg.a \
 	./usr/include/rpcsvc/rstat.x \
-	./usr/include/arm-linux-gnueabihf/bits/utsname.h \
+	./usr/include/pwd.h \
 	./usr/include/arm-linux-gnueabihf/sys/vtimes.h \
 	./usr/include/arm-linux-gnueabihf/bits/wchar2.h \
 	./usr/include/rpc/xdr.h \
-	./usr/include/arm-linux-gnueabihf/bits/fenvinline.h \
+	./usr/include/rpcsvc/rstat.h \
 	./usr/include/libgen.h \
 	./usr/lib/arm-linux-gnueabihf/libcrypt.so \
 	./usr/include/obstack.h \
-	./usr/lib/arm-linux-gnueabihf/libpthread.a \
+	./usr/include/arm-linux-gnueabihf/sys/swap.h \
 	./usr/include/stab.h \
 	./usr/include/arm-linux-gnueabihf/sys/ucontext.h \
 	./usr/lib/arm-linux-gnueabihf/libc.a \
@@ -492,15 +494,13 @@ FILES_libc6-dev = " \
 	./usr/include/arm-linux-gnueabihf/bits/posix1_lim.h \
 	./usr/include/arm-linux-gnueabihf/sys/sysctl.h \
 	./usr/lib/arm-linux-gnueabihf/libbsd-compat.a \
-	./usr/include/arm-linux-gnueabihf/sys/procfs.h \
+	./usr/include/arm-linux-gnueabihf/bits/sigstack.h \
 	./usr/include/netipx/ipx.h \
 	./usr/include/arm-linux-gnueabihf/bits/confname.h \
 	./usr/include/arm-linux-gnueabihf/bits/typesizes.h \
 	./usr/include/arm-linux-gnueabihf/bits/xtitypes.h \
 	./usr/include/arm-linux-gnueabihf/sys/prctl.h \
-	./usr/include/arm-linux-gnueabihf/bits/wchar.h \
-	./usr/include/rpcsvc/bootparam_prot.x \
-	./usr/include/sched.h \
+	./usr/include/arm-linux-gnueabihf/bits/uio.h \
 	./usr/include/rpc/key_prot.h \
 	./usr/include/aliases.h \
 	./usr/include/arm-linux-gnueabihf/sys/stropts.h \
@@ -510,10 +510,10 @@ FILES_libc6-dev = " \
 	./usr/include/arm-linux-gnueabihf/bits/types.h \
 	./usr/lib/arm-linux-gnueabihf/libnsl.so \
 	./usr/include/rpc/types.h \
-	./usr/lib/arm-linux-gnueabihf/Scrt1.o \
+	./usr/include/libio.h \
 	./usr/include/arm-linux-gnueabihf/bits/sigthread.h \
-	./usr/include/arm-linux-gnueabihf/sys/syslog.h \
-	./usr/share/lintian/overrides/libc6-dev \
+	./usr/include/arm-linux-gnueabihf/bits/setjmp.h \
+	./usr/include/arm-linux-gnueabihf/bits/fcntl.h \
 	./usr/lib/arm-linux-gnueabihf/crt1.o \
 	./usr/include/sysexits.h \
 	./usr/include/arm-linux-gnueabihf/sys/xattr.h \
@@ -525,7 +525,7 @@ FILES_libc6-dev = " \
 	./usr/include/netrose/rose.h \
 	./usr/include/error.h \
 	./usr/include/arm-linux-gnueabihf/bits/syslog-path.h \
-	./usr/lib/arm-linux-gnueabihf/libmcheck.a \
+	./usr/include/xlocale.h \
 	./usr/include/arm-linux-gnueabihf/bits/unistd.h \
 	./usr/include/iconv.h \
 	./usr/include/arm-linux-gnueabihf/bits/statvfs.h \
@@ -550,7 +550,7 @@ FILES_libc6-dev = " \
 	./usr/include/syslog.h \
 	./usr/include/arm-linux-gnueabihf/bits/environments.h \
 	./usr/include/arm-linux-gnueabihf/bits/setjmp2.h \
-	./usr/include/arm-linux-gnueabihf/bits/sigaction.h \
+	./usr/include/rpcsvc/nlm_prot.h \
 	./usr/include/limits.h \
 	./usr/lib/arm-linux-gnueabihf/libpthread_nonshared.a \
 	./usr/lib/arm-linux-gnueabihf/librt.a \
@@ -564,19 +564,18 @@ FILES_libc6-dev = " \
 	./usr/include/rpc/pmap_rmt.h \
 	./usr/lib/arm-linux-gnueabihf/Mcrt1.o \
 	./usr/lib/arm-linux-gnueabihf/libresolv.so \
-	./usr/include/rpcsvc/nlm_prot.h \
-	./usr/include/arm-linux-gnueabihf/bits/waitstatus.h \
-	./usr/include/arm-linux-gnueabihf/bits/sem.h \
+	./usr/include/tar.h \
+	./usr/include/arm-linux-gnueabihf/bits/posix_opt.h \
 	./usr/include/netinet/udp.h \
 	./usr/include/arm-linux-gnueabihf/sys/vt.h \
-	./usr/include/rpcsvc/nis_callback.x \
+	./usr/include/arm-linux-gnueabihf/bits/libc-lock.h \
 	./usr/lib/arm-linux-gnueabihf/crtn.o \
 	./usr/include/rpcsvc/nfs_prot.h \
 	./usr/include/search.h \
 	./usr/include/arm-linux-gnueabihf/sys/sem.h \
 	./usr/include/arm-linux-gnueabihf/sys/mtio.h \
 	./usr/lib/arm-linux-gnueabihf/libcidn.so \
-	./usr/include/rpcsvc/bootparam_prot.h \
+	./usr/include/netinet/ip_icmp.h \
 	./usr/include/utime.h \
 	./usr/include/rpcsvc/nfs_prot.x \
 	./usr/lib/arm-linux-gnueabihf/libresolv.a \
@@ -589,7 +588,7 @@ FILES_libc6-dev = " \
 	./usr/include/net/if_shaper.h \
 	./usr/include/arm-linux-gnueabihf/sys/bitypes.h \
 	./usr/include/arm-linux-gnueabihf/bits/utmpx.h \
-	./usr/include/rpc/rpc.h \
+	./usr/include/arm-linux-gnueabihf/sys/statvfs.h \
 	./usr/include/net/ethernet.h \
 	./usr/include/fenv.h \
 	./usr/include/locale.h \
@@ -597,24 +596,25 @@ FILES_libc6-dev = " \
 	./usr/include/rpc/pmap_prot.h \
 	./usr/include/wchar.h \
 	./usr/include/arm-linux-gnueabihf/sys/mount.h \
-	./usr/include/netinet/ip_icmp.h \
+	./usr/include/rpcsvc/bootparam_prot.h \
 	./usr/include/fmtmsg.h \
 	./usr/include/rpc/auth_unix.h \
 	./usr/include/arm-linux-gnueabihf/sys/ipc.h \
-	./usr/include/arm-linux-gnueabihf/sys/fsuid.h \
+	./usr/include/rpcsvc/bootparam_prot.x \
 	./usr/include/arm-linux-gnueabihf/sys/sendfile.h \
 	./usr/include/arm-linux-gnueabihf/bits/string2.h \
 	./usr/include/arm-linux-gnueabihf/bits/syslog.h \
 	./usr/include/arm-linux-gnueabihf/ieee754.h \
 	./usr/include/arm-linux-gnueabihf/sys/unistd.h \
-	./usr/include/rpcsvc/ypupd.h \
-	./usr/include/arm-linux-gnueabihf/bits/elfclass.h \
+	./usr/include/shadow.h \
+	./usr/include/rpcsvc/nis_tags.h \
 	./usr/include/arm-linux-gnueabihf/bits/cmathcalls.h \
-	./usr/include/arm-linux-gnueabihf/sys/termios.h \
+	./usr/include/termio.h \
 	./usr/include/link.h \
 	./usr/include/arm-linux-gnueabihf/bits/sys_errlist.h \
 	./usr/lib/arm-linux-gnueabihf/libc_nonshared.a \
 	./usr/include/values.h \
+	./usr/include/arm-linux-gnueabihf/bits/siginfo.h \
 	./usr/include/libintl.h \
 	./usr/include/execinfo.h \
 	./usr/include/rpc/clnt.h \
@@ -625,6 +625,7 @@ FILES_libc6-dev = " \
 	./usr/include/arm-linux-gnueabihf/bits/huge_val.h \
 	./usr/include/arm-linux-gnueabihf/bits/in.h \
 	./usr/include/mntent.h \
+	./usr/include/arm-linux-gnueabihf/bits/sigaction.h \
 	./usr/share/doc/libc6-dev/README.libm.gz \
 	./usr/include/aio.h \
 	./usr/include/rpc/rpc_msg.h \
@@ -632,7 +633,7 @@ FILES_libc6-dev = " \
 	./usr/share/doc/libc6-dev/copyright \
 	./usr/include/arm-linux-gnueabihf/sys/fcntl.h \
 	./usr/include/ustat.h \
-	./usr/include/arm-linux-gnueabihf/bits/stdio-lock.h \
+	./usr/include/arm-linux-gnueabihf/bits/time.h \
 	./usr/include/rpcsvc/nis_object.x \
 	./usr/include/arm-linux-gnueabihf/sys/timex.h \
 	./usr/lib/arm-linux-gnueabihf/libm.so \
@@ -644,7 +645,7 @@ FILES_libc6-dev = " \
 	./usr/include/arm-linux-gnueabihf/sys/errno.h \
 	./usr/include/arm-linux-gnueabihf/sys/raw.h \
 	./usr/include/arm-linux-gnueabihf/sys/sysinfo.h \
-	./usr/include/arm-linux-gnueabihf/sys/uio.h \
+	./usr/include/arm-linux-gnueabihf/sys/soundcard.h \
 	./usr/include/protocols/routed.h \
 	./usr/include/argz.h \
 	./usr/include/arm-linux-gnueabihf/bits/stab.def \
@@ -655,15 +656,14 @@ FILES_libc6-dev = " \
 	./usr/include/arm-linux-gnueabihf/bits/resource.h \
 	./usr/include/time.h \
 	./usr/include/net/ppp-comp.h \
-	./usr/include/shadow.h \
 	./usr/include/net/route.h \
 	./usr/include/dlfcn.h \
-	./usr/include/rpcsvc/nis_tags.h \
+	./usr/include/arm-linux-gnueabihf/bits/elfclass.h \
 	./usr/include/rpcsvc/mount.h \
 	./usr/include/arm-linux-gnueabihf/bits/waitflags.h \
 	./usr/include/nl_types.h \
 	./usr/include/fnmatch.h \
-	./usr/include/errno.h \
+	./usr/lib/arm-linux-gnueabihf/libmcheck.a \
 	./usr/include/arm-linux-gnueabihf/sys/io.h \
 	./usr/include/arm-linux-gnueabihf/bits/locale.h \
 	./usr/include/arm-linux-gnueabihf/bits/syscall.h \
@@ -674,29 +674,29 @@ FILES_libc6-dev = " \
 	./usr/include/arm-linux-gnueabihf/bits/sigcontext.h \
 	./usr/include/arm-linux-gnueabihf/bits/link.h \
 	./usr/include/arpa/nameser.h \
-	./usr/include/termio.h \
+	./usr/include/arm-linux-gnueabihf/sys/termios.h \
 	./usr/include/arm-linux-gnueabihf/sys/signal.h \
 	./usr/include/arm-linux-gnueabihf/bits/stdio.h \
-	./usr/include/ucontext.h \
+	./usr/include/gshadow.h \
 	./usr/include/arm-linux-gnueabihf/bits/mathinline.h \
-	./usr/include/rpcsvc/spray.h \
+	./usr/include/rpcsvc/mount.x \
 	./usr/include/byteswap.h \
 	./usr/include/rpcsvc/nis.h \
 	./usr/include/ulimit.h \
 	./usr/include/arm-linux-gnueabihf/sys/acct.h \
-	./usr/include/arm-linux-gnueabihf/sys/resource.h \
-	./usr/include/arm-linux-gnueabihf/bits/ioctls.h \
+	./usr/include/rpcsvc/nis.x \
+	./usr/include/arpa/telnet.h \
 	./usr/include/arm-linux-gnueabihf/bits/initspin.h \
 	./usr/include/arm-linux-gnueabihf/bits/posix2_lim.h \
 	./usr/include/arm-linux-gnueabihf/sys/timeb.h \
-	./usr/include/rpcsvc/nis.x \
+	./usr/include/arm-linux-gnueabihf/sys/resource.h \
 	./usr/include/rpcsvc/key_prot.h \
 	./usr/include/arm-linux-gnueabihf/bits/endian.h \
-	./usr/include/arpa/telnet.h \
 	./usr/include/arm-linux-gnueabihf/sys/epoll.h \
 	./usr/include/arm-linux-gnueabihf/sys/select.h \
 	./usr/include/rpcsvc/key_prot.x \
 	./usr/include/rpc/netdb.h \
+	./usr/include/arm-linux-gnueabihf/sys/fsuid.h \
 	./usr/include/arm-linux-gnueabihf/sys/gmon_out.h \
 	./usr/include/semaphore.h \
 	./usr/include/netrom/netrom.h \
@@ -704,30 +704,31 @@ FILES_libc6-dev = " \
 	./usr/lib/arm-linux-gnueabihf/libanl.so \
 	./usr/lib/arm-linux-gnueabihf/libutil.so \
 	./usr/include/arm-linux-gnueabihf/sys/inotify.h \
-	./usr/include/rpc/des_crypt.h \
+	./usr/include/signal.h \
 	./usr/include/net/ppp_defs.h \
 	./usr/include/gconv.h \
-	./usr/include/rpcsvc/yppasswd.x \
 	./usr/include/arm-linux-gnueabihf/sys/times.h \
+	./usr/include/rpcsvc/ypupd.h \
 	./usr/include/sgtty.h \
 	./usr/include/arm-linux-gnueabihf/bits/stropts.h \
 	./usr/share/doc/libc6-dev/NOTES.gz \
 	./usr/include/arm-linux-gnueabihf/bits/poll.h \
 	./usr/include/stdlib.h \
+	./usr/include/arm-linux-gnueabihf/bits/sem.h \
 	./usr/include/glob.h \
-	./usr/include/netatalk/at.h \
+	./usr/include/arm-linux-gnueabihf/bits/wchar.h \
 	./usr/lib/arm-linux-gnueabihf/libBrokenLocale.a \
 	./usr/include/arm-linux-gnueabihf/bits/msq.h \
 	./usr/lib/arm-linux-gnueabihf/libdl.so \
 	./usr/include/arm-linux-gnueabihf/sys/ustat.h \
-	./usr/include/arm-linux-gnueabihf/sys/swap.h \
+	./usr/lib/arm-linux-gnueabihf/libpthread.a \
 	./usr/include/arm-linux-gnueabihf/sys/shm.h \
 	./usr/share/doc/libc6-dev/changelog.Debian.gz \
 	./usr/include/arm-linux-gnueabihf/bits/syslog-ldbl.h \
 	./usr/lib/arm-linux-gnueabihf/libutil.a \
 	./usr/include/endian.h \
-	./usr/include/libio.h \
-	./usr/include/arm-linux-gnueabihf/bits/fcntl.h \
+	./usr/lib/arm-linux-gnueabihf/Scrt1.o \
+	./usr/share/lintian/overrides/libc6-dev \
 	./usr/include/re_comp.h \
 	./usr/lib/arm-linux-gnueabihf/libnss_compat.so \
 	./usr/include/rpcsvc/rusers.h \
@@ -744,13 +745,12 @@ FILES_libc6-dev = " \
 	./usr/include/termios.h \
 	./usr/lib/arm-linux-gnueabihf/libnss_dns.so \
 	./usr/include/protocols/talkd.h \
-	./usr/include/rpcsvc/nislib.h \
 	./usr/include/scsi/sg.h \
 	./usr/include/assert.h \
 	./usr/include/neteconet/ec.h \
 	./usr/share/doc/libc6-dev/FAQ.gz \
-	./usr/include/net/if.h \
-	./usr/include/ftw.h \
+	./usr/include/arm-linux-gnueabihf/bits/printf-ldbl.h \
+	./usr/include/arm-linux-gnueabihf/sys/ioctl.h \
 	./usr/include/arm-linux-gnueabihf/sys/syscall.h \
 	./usr/include/stdio.h \
 	./usr/lib/arm-linux-gnueabihf/libnss_nis.so \
@@ -760,23 +760,24 @@ FILES_libc6-dev = " \
 	./usr/include/arm-linux-gnueabihf/sys/elf.h \
 	./usr/include/arm-linux-gnueabihf/bits/string3.h \
 	./usr/include/arm-linux-gnueabihf/sys/signalfd.h \
-	./usr/include/rpcsvc/mount.x \
+	./usr/include/rpcsvc/spray.h \
 	./usr/lib/arm-linux-gnueabihf/crti.o \
 	./usr/include/arm-linux-gnueabihf/bits/statfs.h \
 	./usr/lib/arm-linux-gnueabihf/libnss_files.so \
 	./usr/include/arm-linux-gnueabihf/sys/file.h \
 	./usr/lib/arm-linux-gnueabihf/libieee.a \
 	./usr/include/err.h \
-	./usr/include/arm-linux-gnueabihf/bits/printf-ldbl.h \
+	./usr/include/net/if.h \
 	./usr/include/stropts.h \
 	./usr/lib/arm-linux-gnueabihf/libpthread.so \
 	./usr/include/arm-linux-gnueabihf/bits/mathdef.h \
 	./usr/include/arm-linux-gnueabihf/gnu/stubs.h \
-	./usr/include/arm-linux-gnueabihf/bits/siginfo.h \
-	./usr/include/mqueue.h \
+	./usr/include/arm-linux-gnueabihf/sys/syslog.h \
+	./usr/include/rpcsvc/yppasswd.x \
+	./usr/include/arm-linux-gnueabihf/bits/stat.h \
 	./usr/lib/arm-linux-gnueabihf/gcrt1.o \
 	./usr/include/rpcsvc/yppasswd.h \
-	./usr/include/arm-linux-gnueabihf/bits/predefs.h \
+	./usr/include/rpcsvc/nislib.h \
 	./usr/include/rpcsvc/rex.h \
 	./usr/include/rpcsvc/sm_inter.x \
 	./usr/lib/arm-linux-gnueabihf/librt.so \
@@ -786,12 +787,13 @@ FILES_libc6-dev = " \
 	./usr/include/rpcsvc/sm_inter.h \
 	./usr/include/arm-linux-gnueabihf/bits/xopen_lim.h \
 	./usr/include/net/if_slip.h \
-	./usr/include/arm-linux-gnueabihf/bits/stat.h \
+	./usr/include/mqueue.h \
 	./usr/include/arm-linux-gnueabihf/bits/ioctl-types.h \
+	./usr/include/errno.h \
 	./usr/include/arm-linux-gnueabihf/sys/fanotify.h \
 	./usr/include/envz.h \
 	./usr/include/arm-linux-gnueabihf/bits/stdio2.h \
-	./usr/include/elf.h \
+	./usr/include/thread_db.h \
 	./usr/include/rpcsvc/rquota.x \
 	./usr/include/net/if_packet.h \
 	./usr/lib/arm-linux-gnueabihf/libnsl.a \
@@ -800,13 +802,13 @@ FILES_libc6-dev = " \
 	./usr/include/arm-linux-gnueabihf/bits/byteswap.h \
 	./usr/include/wordexp.h \
 	./usr/include/arm-linux-gnueabihf/sys/un.h \
-	./usr/include/wctype.h \
-	./usr/include/arm-linux-gnueabihf/bits/sigstack.h \
-	./usr/include/signal.h \
+	./usr/include/rpcsvc/yp.h \
+	./usr/include/rpcsvc/bootparam.h \
+	./usr/include/rpc/des_crypt.h \
 	./usr/include/ifaddrs.h \
 	./usr/include/netinet/if_fddi.h \
 	./usr/lib/arm-linux-gnueabihf/libc.so \
-	./usr/include/pwd.h \
+	./usr/include/arm-linux-gnueabihf/bits/utsname.h \
 	./usr/include/rpcsvc/ypclnt.h \
 	./usr/include/arm-linux-gnueabihf/bits/wchar-ldbl.h \
 	./usr/include/arm-linux-gnueabihf/sys/reboot.h \
@@ -817,9 +819,9 @@ FILES_libc6-dev = " \
 	./usr/include/nfs/nfs.h \
 	./usr/lib/arm-linux-gnueabihf/libnss_hesiod.so \
 	./usr/include/arm-linux-gnueabihf/gnu/option-groups.h \
-	./usr/include/rpcsvc/rstat.h \
+	./usr/include/arm-linux-gnueabihf/bits/fenvinline.h \
 	./usr/include/arm-linux-gnueabihf/bits/sigset.h \
-	./usr/include/arm-linux-gnueabihf/bits/time.h \
+	./usr/include/arm-linux-gnueabihf/bits/stdio-lock.h \
 	./usr/include/arm-linux-gnueabihf/sys/quota.h \
 	./usr/include/netinet/in_systm.h \
 	./usr/include/netinet/igmp.h \
@@ -828,7 +830,9 @@ FILES_libc6-dev = " \
 	./usr/lib/arm-linux-gnueabihf/libdl.a \
 	./usr/include/arm-linux-gnueabihf/bits/huge_vall.h \
 	./usr/include/memory.h \
-	./usr/include/gshadow.h \
+	./usr/include/arm-linux-gnueabihf/bits/waitstatus.h \
+	./usr/include/arm-linux-gnueabihf/sys/procfs.h \
+	./usr/include/ucontext.h \
 	./usr/share/doc/libc6-dev/CONFORMANCE.gz \
 	./usr/include/arm-linux-gnueabihf/bits/wordsize.h \
 	./usr/include/ctype.h \
@@ -838,7 +842,6 @@ FILES_libc6-dev = " \
 	./usr/include/utmpx.h \
 	./usr/include/arm-linux-gnueabihf/sys/utsname.h \
 	./usr/include/fcntl.h \
-	./usr/include/arm-linux-gnueabihf/bits/setjmp.h \
 	./usr/include/arm-linux-gnueabihf/bits/inf.h \
 	./usr/include/dirent.h \
 	./usr/include/arm-linux-gnueabihf/bits/huge_valf.h \
@@ -846,18 +849,15 @@ FILES_libc6-dev = " \
 	./usr/include/rpc/svc_auth.h \
 	./usr/include/arm-linux-gnueabihf/sys/user.h \
 	./usr/include/arm-linux-gnueabihf/bits/fcntl2.h \
-	./usr/include/rpcsvc/yp.h \
+	./usr/include/wctype.h \
 	./usr/include/arm-linux-gnueabihf/bits/ustat.h \
 	./usr/include/arm-linux-gnueabihf/sys/ultrasound.h \
+	./usr/include/arm-linux-gnueabihf/bits/predefs.h \
 	./usr/include/rpc/auth.h \
-	./usr/include/rpcsvc/bootparam.h \
-	./usr/include/xlocale.h \
 	./usr/include/arm-linux-gnueabihf/sys/stat.h \
 	./usr/include/arm-linux-gnueabihf/sys/sysmacros.h \
 	./usr/include/crypt.h \
-	./usr/include/arm-linux-gnueabihf/bits/uio.h \
 	./usr/include/arm-linux-gnueabihf/sys/eventfd.h \
-	./usr/include/tar.h \
 	./usr/include/regexp.h\
 "
 #FAKE LICENSE FOR TESTING!!!
