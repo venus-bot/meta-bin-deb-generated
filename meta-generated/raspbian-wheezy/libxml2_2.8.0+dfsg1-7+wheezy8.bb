@@ -1,18 +1,18 @@
 PACKAGES = "libxml2 libxml2-dev"
 PROVIDES = "libxml2 libxml2-dev"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/libx/libxml2/libxml2_2.8.0+dfsg1-7+wheezy7_armhf.deb;unpack=0;name=deb0\
-	http://archive.raspbian.org/raspbian/pool/main/libx/libxml2/libxml2-dev_2.8.0+dfsg1-7+wheezy7_armhf.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/libx/libxml2/libxml2_2.8.0+dfsg1-7+wheezy8_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/libx/libxml2/libxml2-dev_2.8.0+dfsg1-7+wheezy8_armhf.deb;unpack=0;name=deb1\
 "
-DEBFILENAME_libxml2 = "libxml2_2.8.0+dfsg1-7+wheezy7_armhf.deb"
-SRC_URI[deb0.sha256sum] = "07b563b0ce5281e1fe54102b90fbdc049e7266f08474f6f0c67821a759770111"
-SRC_URI[deb0.md5sum] = "f9b9ab805138fc6db3bee3894d923c35"
-DEBFILENAME_libxml2-dev = "libxml2-dev_2.8.0+dfsg1-7+wheezy7_armhf.deb"
-SRC_URI[deb1.sha256sum] = "97a64f57f5acbbe7833370a24375c98064f451ef56982cb9e1eaf26fe5b96578"
-SRC_URI[deb1.md5sum] = "a1d0936b3843c273dbddd83df8466c21"
+DEBFILENAME_libxml2 = "libxml2_2.8.0+dfsg1-7+wheezy8_armhf.deb"
+SRC_URI[deb0.sha256sum] = "47a3ce0097fd43d651c75de3d8906c0d36d9fb001d58ad62c5f0f5e7ca880606"
+SRC_URI[deb0.md5sum] = "51e12eda4abefb4535b47c3b2daf78f8"
+DEBFILENAME_libxml2-dev = "libxml2-dev_2.8.0+dfsg1-7+wheezy8_armhf.deb"
+SRC_URI[deb1.sha256sum] = "80bdeb72e09f2943a70646c756307af4b9399ee036cdbc0d9210291033fb028d"
+SRC_URI[deb1.md5sum] = "258a58e95fa5b2141451b42a6ecc67f0"
 
 RDEPENDS_${PN} = "libc6 (>= 2.13-28) liblzma5 (>= 5.1.1alpha+20120614) zlib1g (>= 1:1.2.3.3)"
-RDEPENDS_${PN}-dev = "libxml2 (= 2.8.0+dfsg1-7+wheezy7)"
+RDEPENDS_${PN}-dev = "libxml2 (= 2.8.0+dfsg1-7+wheezy8)"
 DEPENDS = "liblzma5 zlib1g libc6"
 
 
