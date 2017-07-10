@@ -1,11 +1,11 @@
 PACKAGES = "libsqlite3-0"
 PROVIDES = "libsqlite3-0"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/s/sqlite3/libsqlite3-0_3.7.13-1+deb7u3_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/s/sqlite3/libsqlite3-0_3.7.13-1+deb7u4_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_libsqlite3-0 = "libsqlite3-0_3.7.13-1+deb7u3_armhf.deb"
-SRC_URI[deb0.sha256sum] = "be49836562be1e8801bd247b9a7dfee234cb9e461c8c68720022506472c8d71c"
-SRC_URI[deb0.md5sum] = "c305d00a7003878ee7e24f31d834266e"
+DEBFILENAME_libsqlite3-0 = "libsqlite3-0_3.7.13-1+deb7u4_armhf.deb"
+SRC_URI[deb0.sha256sum] = "02858ad076dcf56d0cdae4178d8bd673e43bbd2d5093c92443eeda08a55b30bb"
+SRC_URI[deb0.md5sum] = "d2aab6831ff365de888c343a7ed90f2f"
 
 RDEPENDS_lib${PN}-0 = "libc6 (>= 2.13-28) libgcc1 (>= 1:4.4.0)"
 DEPENDS = "libgcc1 libc6"
