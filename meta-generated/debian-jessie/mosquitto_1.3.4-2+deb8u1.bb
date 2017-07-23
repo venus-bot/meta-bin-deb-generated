@@ -1,11 +1,11 @@
 PACKAGES = "mosquitto"
 PROVIDES = "mosquitto"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/m/mosquitto/mosquitto_1.3.4-2_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/m/mosquitto/mosquitto_1.3.4-2+deb8u1_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_mosquitto = "mosquitto_1.3.4-2_armhf.deb"
-SRC_URI[deb0.sha256sum] = "36f640187536bff34b7120bf1bd97a68e02c0242ee8ab46e89c3936e8fb067eb"
-SRC_URI[deb0.md5sum] = "873589ad0e066e30ae245a069e73ca17"
+DEBFILENAME_mosquitto = "mosquitto_1.3.4-2+deb8u1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "ef65ad057aab5be3281ce7d37ed653c244071c1f4b4844f941091322a05028d9"
+SRC_URI[deb0.md5sum] = "38765588c3c219f3fabc3165288ccad1"
 
 RDEPENDS_${PN} = "libc6 (>= 2.4) libssl1.0.0 (>= 1.0.1) libwrap0 (>= 7.6-4~) adduser (>= 3.10) lsb-base (>= 4.1+Debian3) libuuid1"
 DEPENDS = "libssl1.0.0 lsb-base adduser libwrap0 libc6 libuuid1"

@@ -1,15 +1,15 @@
 PACKAGES = "libpam-modules libpam0g"
 PROVIDES = "libpam-modules libpam0g"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/p/pam/libpam-modules_1.1.8-3.1+deb8u2_armhf.deb;unpack=0;name=deb0\
-	http://ftp.de.debian.org/debian/pool/main/p/pam/libpam0g_1.1.8-3.1+deb8u2_armhf.deb;unpack=0;name=deb1\
+	http://ftp.de.debian.org/debian/pool/main/p/pam/libpam-modules_1.1.8-3.1+deb8u2+b1_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/p/pam/libpam0g_1.1.8-3.1+deb8u2+b1_armhf.deb;unpack=0;name=deb1\
 "
-DEBFILENAME_libpam-modules = "libpam-modules_1.1.8-3.1+deb8u2_armhf.deb"
-SRC_URI[deb0.sha256sum] = "c888da2b8d5476315b75a4353e1b9c65d76b82e20b9e89abdac4b0a0fa5bf80f"
-SRC_URI[deb0.md5sum] = "27123d6b1eae504a387935b457df1b7e"
-DEBFILENAME_libpam0g = "libpam0g_1.1.8-3.1+deb8u2_armhf.deb"
-SRC_URI[deb1.sha256sum] = "da9ef3159a6faeaddf1dbe7bc783f71bd27d9acd0d6b4468e943e315e96fa6b1"
-SRC_URI[deb1.md5sum] = "aa8d22907cff03dc10042ea1a507a4ad"
+DEBFILENAME_libpam-modules = "libpam-modules_1.1.8-3.1+deb8u2+b1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "5939f9ae4621f5dc1486a034736bc334e0cb232834c28ad72831b7b7107abaf2"
+SRC_URI[deb0.md5sum] = "cf7d1875d6f96845affea46bd452dc2c"
+DEBFILENAME_libpam0g = "libpam0g_1.1.8-3.1+deb8u2+b1_armhf.deb"
+SRC_URI[deb1.sha256sum] = "be22b07e9a62e113425e9104239dc08d90f99bdffbce8de9eeb384b032eae64f"
+SRC_URI[deb1.md5sum] = "cb1544bd5c6839fafac0a8c6c2510e61"
 
 RDEPENDS_lib${PN}0g = "libaudit1 (>= 1:2.2.1) libc6 (>= 2.8) debconf (>= 0.5)"
 DEPENDS = "debconf libaudit1 libc6"
@@ -72,6 +72,7 @@ FILES_libpam-modules = " \
 	./usr/share/man/man8/pam_tally2.8.gz \
 	./usr/share/man/man8/pam_permit.8.gz \
 	./lib/arm-linux-gnueabihf/security/pam_permit.so \
+	./usr/share/doc/libpam-modules/changelog.Debian.armhf.gz \
 	./usr/share/man/man8/pam_echo.8.gz \
 	./usr/share/man/man5/namespace.conf.5.gz \
 	./usr/share/man/man8/pam_warn.8.gz \
@@ -138,10 +139,11 @@ FILES_libpam0g = " \
 	./lib/arm-linux-gnueabihf/libpamc.so.0.82.1 \
 	./usr/share/doc/libpam0g/Debian-PAM-MiniPolicy.gz \
 	./usr/share/doc/libpam0g/README \
-	./lib/arm-linux-gnueabihf/libpam_misc.so.0.82.0 \
+	./usr/share/doc/libpam0g/changelog.Debian.gz \
 	./lib/arm-linux-gnueabihf/libpam.so.0 \
 	./lib/arm-linux-gnueabihf/libpam.so.0.83.1 \
-	./usr/share/doc/libpam0g/changelog.Debian.gz \
+	./lib/arm-linux-gnueabihf/libpam_misc.so.0.82.0 \
+	./usr/share/doc/libpam0g/changelog.Debian.armhf.gz \
 	./usr/share/doc/libpam0g/copyright \
 	./usr/share/doc/libpam0g/NEWS.Debian.gz \
 	./usr/share/doc/libpam0g/README.Debian \
