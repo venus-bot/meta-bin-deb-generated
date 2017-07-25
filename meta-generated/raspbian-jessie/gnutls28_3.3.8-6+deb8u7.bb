@@ -1,11 +1,11 @@
 PACKAGES = "libgnutls-deb0-28"
 PROVIDES = "libgnutls-deb0-28"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/g/gnutls28/libgnutls-deb0-28_3.3.8-6+deb8u6_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/g/gnutls28/libgnutls-deb0-28_3.3.8-6+deb8u7_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_libgnutls-deb0-28 = "libgnutls-deb0-28_3.3.8-6+deb8u6_armhf.deb"
-SRC_URI[deb0.sha256sum] = "86e342957b0cad52be39924bb5100128136d01e44623d39006556da632f70679"
-SRC_URI[deb0.md5sum] = "cc8a75289131b5d6bf99a5e773d35303"
+DEBFILENAME_libgnutls-deb0-28 = "libgnutls-deb0-28_3.3.8-6+deb8u7_armhf.deb"
+SRC_URI[deb0.sha256sum] = "8d96893e05a1b0cea92c51b70dece4e111519436a1e67e643387c39851fc2dde"
+SRC_URI[deb0.md5sum] = "cef4891db555ebb76c1a74989fc61e77"
 
 RDEPENDS_libgnutls-deb0-28 = "libc6 (>= 2.17) libgmp10 (>= 2:6) libhogweed2 (>= 2.7) libnettle4 (>= 2.7) libp11-kit0 (>= 0.20.7) libtasn1-6 (>= 4.1-0) zlib1g (>= 1:1.1.4)"
 DEPENDS = "libnettle4 libgmp10 libp11-kit0 zlib1g libc6 libhogweed2 libtasn1-6"
