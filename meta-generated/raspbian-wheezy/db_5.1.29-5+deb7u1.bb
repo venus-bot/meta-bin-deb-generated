@@ -1,11 +1,11 @@
 PACKAGES = "libdb5.1"
 PROVIDES = "libdb5.1"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/d/db/libdb5.1_5.1.29-5_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/d/db/libdb5.1_5.1.29-5+deb7u1_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_libdb5.1 = "libdb5.1_5.1.29-5_armhf.deb"
-SRC_URI[deb0.sha256sum] = "621f9d8cdd52b322c2bc551c8b3e00d569ce0896237b7b35cc028e4650d666a8"
-SRC_URI[deb0.md5sum] = "e271bcb68c76510ca880fec2ba73b4db"
+DEBFILENAME_libdb5.1 = "libdb5.1_5.1.29-5+deb7u1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "e26fab9994ec2462fff1da346491d9e3d13914b7ded95f29ac356b49a5584dd4"
+SRC_URI[deb0.md5sum] = "17837e711e04720299cabc64397c3173"
 
 RDEPENDS_lib${PN}5.1 = "libc6 (>= 2.13-28)"
 DEPENDS = "libc6"
