@@ -1,11 +1,11 @@
 PACKAGES = "mosquitto"
 PROVIDES = "mosquitto"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/m/mosquitto/mosquitto_0.15-2+deb7u1_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/m/mosquitto/mosquitto_0.15-2+deb7u2_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_mosquitto = "mosquitto_0.15-2+deb7u1_armhf.deb"
-SRC_URI[deb0.sha256sum] = "8ab590f74e4b84db11e288571aac657451c1367eafe4a9889229359c40e86e7c"
-SRC_URI[deb0.md5sum] = "4b55d8b13d9e94906a0cf7a576bfd5f2"
+DEBFILENAME_mosquitto = "mosquitto_0.15-2+deb7u2_armhf.deb"
+SRC_URI[deb0.sha256sum] = "91e19c0ffeea0636fb46c4d0c7e0f9e67f4d273091760a889d351bbf5f2e8ae8"
+SRC_URI[deb0.md5sum] = "f36efba952176eee846e13812ade77cc"
 
 RDEPENDS_${PN} = "libc6 (>= 2.13-28) libgcc1 (>= 1:4.4.0) libwrap0 (>= 7.6-4~) adduser (>= 3.10) lsb-base (>= 3.2-13)"
 DEPENDS = "libgcc1 libwrap0 adduser lsb-base libc6"
