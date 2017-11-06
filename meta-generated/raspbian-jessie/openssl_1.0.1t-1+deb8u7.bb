@@ -1,15 +1,15 @@
 PACKAGES = "libssl1.0.0 openssl"
 PROVIDES = "libssl1.0.0 openssl"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/o/openssl/libssl1.0.0_1.0.1t-1+deb8u6_armhf.deb;unpack=0;name=deb0\
-	http://archive.raspbian.org/raspbian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u6_armhf.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/o/openssl/libssl1.0.0_1.0.1t-1+deb8u7_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u7_armhf.deb;unpack=0;name=deb1\
 "
-DEBFILENAME_libssl1.0.0 = "libssl1.0.0_1.0.1t-1+deb8u6_armhf.deb"
-SRC_URI[deb0.sha256sum] = "21c5b91ecb872e1fc2c351aa8c77f1564d436503d8504d7ade3c7dd6cc4acf99"
-SRC_URI[deb0.md5sum] = "dbbf3406cea60b38fe66ecdd46d08da2"
-DEBFILENAME_openssl = "openssl_1.0.1t-1+deb8u6_armhf.deb"
-SRC_URI[deb1.sha256sum] = "8efc7b36556d830e5c2fb57d4306b2513fd18fff13cf3d597914ab8ad01bfe75"
-SRC_URI[deb1.md5sum] = "40468e6a80d3d9b73fa597a9142c9f00"
+DEBFILENAME_libssl1.0.0 = "libssl1.0.0_1.0.1t-1+deb8u7_armhf.deb"
+SRC_URI[deb0.sha256sum] = "850ec22211b62c08970fba94ee44e3af49afd9c36b7997c5f106d79d60c76b2e"
+SRC_URI[deb0.md5sum] = "a09998f3420a412f2555b4cb43d27289"
+DEBFILENAME_openssl = "openssl_1.0.1t-1+deb8u7_armhf.deb"
+SRC_URI[deb1.sha256sum] = "f8f8099fa2e092646c4851d93a5a62e1799160143264cb5ced939e0d8ec6a3a5"
+SRC_URI[deb1.md5sum] = "0496aaa3b28e8c3f20a28fe5fd8dabf6"
 
 RDEPENDS_libssl1.0.0 = "libc6 (>= 2.11) debconf (>= 0.5)"
 RDEPENDS_${PN} = "libc6 (>= 2.15) libssl1.0.0 (>= 1.0.1k-3+deb8u3)"
@@ -58,6 +58,7 @@ FILES_${PN} = " \
 	./usr/lib/ssl/misc/CA.sh \
 	./usr/share/man/man1/spkac.1ssl.gz \
 	./usr/share/man/man1/rsa.1ssl.gz \
+	./usr/share/man/man1/ecparam.1ssl.gz \
 	./usr/share/doc/openssl/changelog.gz \
 	./usr/share/man/man1/dhparam.1ssl.gz \
 	./usr/share/man/man1/verify.1ssl.gz \
@@ -83,7 +84,7 @@ FILES_${PN} = " \
 	./usr/share/man/man1/tsget.1ssl.gz \
 	./usr/lib/ssl/private \
 	./usr/share/doc/openssl/NEWS.gz \
-	./usr/share/man/man1/ecparam.1ssl.gz \
+	./usr/share/man/man1/sha512.1ssl.gz \
 	./usr/share/man/man1/pkeyparam.1ssl.gz \
 	./usr/share/man/man1/ripemd160.1ssl.gz \
 	./usr/share/man/man1/s_server.1ssl.gz \
@@ -91,7 +92,7 @@ FILES_${PN} = " \
 	./usr/share/man/man1/sha224.1ssl.gz \
 	./usr/share/man/man1/sess_id.1ssl.gz \
 	./usr/share/man/man1/genrsa.1ssl.gz \
-	./usr/share/man/man1/sha.1ssl.gz \
+	./usr/share/doc/openssl/openssl_button.html \
 	./usr/share/doc/openssl/HOWTO/proxy_certificates.txt.gz \
 	./usr/share/man/man1/dsa.1ssl.gz \
 	./usr/share/doc/openssl/HOWTO/certificates.txt.gz \
@@ -117,14 +118,13 @@ FILES_${PN} = " \
 	./usr/share/man/man1/nseq.1ssl.gz \
 	./usr/share/doc/openssl/README.optimization \
 	./usr/lib/ssl/certs \
-	./usr/share/man/man1/sha512.1ssl.gz \
 	./usr/share/doc/openssl/openssl_button.gif \
 	./usr/share/man/man1/dss1.1ssl.gz \
 	./usr/share/man/man1/cms.1ssl.gz \
 	./usr/share/man/man1/dgst.1ssl.gz \
 	./usr/share/man/man1/passwd.1ssl.gz \
 	./usr/share/doc/openssl/FAQ \
-	./usr/share/doc/openssl/openssl_button.html \
+	./usr/share/man/man1/sha.1ssl.gz \
 	./usr/lib/ssl/misc/c_name \
 	./usr/share/man/man1/sha384.1ssl.gz \
 	./usr/share/man/man7/des_modes.7ssl.gz \
