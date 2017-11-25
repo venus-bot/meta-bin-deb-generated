@@ -1,17 +1,17 @@
 PACKAGES = "python2.6 python2.6-minimal"
 PROVIDES = "python2.6 python2.6-minimal"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/p/python2.6/python2.6_2.6.8-1.1_armhf.deb;unpack=0;name=deb0\
-	http://archive.raspbian.org/raspbian/pool/main/p/python2.6/python2.6-minimal_2.6.8-1.1_armhf.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/p/python2.6/python2.6_2.6.8-1.1+deb7u1_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/p/python2.6/python2.6-minimal_2.6.8-1.1+deb7u1_armhf.deb;unpack=0;name=deb1\
 "
-DEBFILENAME_python2.6 = "python2.6_2.6.8-1.1_armhf.deb"
-SRC_URI[deb0.sha256sum] = "bff331249b200211014cdb907ec57f5cd2030434b9224a195125d7549bd47231"
-SRC_URI[deb0.md5sum] = "17c79627dae6ae973c387c1f096e86ba"
-DEBFILENAME_python2.6-minimal = "python2.6-minimal_2.6.8-1.1_armhf.deb"
-SRC_URI[deb1.sha256sum] = "3e18da9d581292070c16781d5f3a56e8edfe7857d8ba10ac55c4334b99e440e5"
-SRC_URI[deb1.md5sum] = "7ddb54a904bf4aec18ec5f2464ee66b1"
+DEBFILENAME_python2.6 = "python2.6_2.6.8-1.1+deb7u1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "ad7dd0efbb66d8983f151ab1b0a92bc80b340a5d74ece39dcf27a624d54b2fc2"
+SRC_URI[deb0.md5sum] = "9b61f86446691a5006cdc92bd3cdcb63"
+DEBFILENAME_python2.6-minimal = "python2.6-minimal_2.6.8-1.1+deb7u1_armhf.deb"
+SRC_URI[deb1.sha256sum] = "0fc0875c2f06aaa0c2789a18b76401c643e286987d3f9f4a578be73b0da43174"
+SRC_URI[deb1.md5sum] = "82f7412465c2f04977a8a94a6869ec2c"
 
-RDEPENDS_${PN} = "python2.6-minimal (= 2.6.8-1.1) mime-support libbz2-1.0 libc6 (>= 2.13-28) libdb5.1 libexpat1 (>= 2.1~beta3) libgcc1 (>= 1:4.4.0) libncursesw5 (>= 5.6+20070908) libreadline6 (>= 6.0) libsqlite3-0 (>= 3.5.9) libtinfo5"
+RDEPENDS_${PN} = "python2.6-minimal (= 2.6.8-1.1+deb7u1) mime-support libbz2-1.0 libc6 (>= 2.13-28) libdb5.1 libexpat1 (>= 2.1~beta3) libgcc1 (>= 1:4.4.0) libncursesw5 (>= 5.6+20070908) libreadline6 (>= 6.0) libsqlite3-0 (>= 3.5.9) libtinfo5"
 RDEPENDS_${PN}-minimal = "libc6 (>= 2.13-28) libssl1.0.0 (>= 1.0.0) zlib1g (>= 1:1.2.0)"
 DEPENDS = "libgcc1 libssl1.0.0 libncursesw5 libtinfo5 libbz2-1.0 libc6 libreadline6 libsqlite3-0 libdb5.1 mime-support libexpat1 zlib1g"
 
@@ -30,10 +30,10 @@ FILES_${PN} = " \
 	./usr/lib/python2.6/filecmp.py \
 	./usr/lib/python2.6/email/mime/__init__.py \
 	./usr/lib/python2.6/Cookie.py \
-	./usr/lib/python2.6/dist-packages/README \
+	./usr/lib/python2.6/distutils/versionpredicate.py \
 	./usr/lib/python2.6/lib2to3/fixes/fix_getcwdu.py \
 	./usr/lib/python2.6/distutils/command/command_template \
-	./usr/lib/python2.6/lib2to3/fixes/fix_itertools.py \
+	./usr/lib/python2.6/curses/textpad.py \
 	./usr/lib/python2.6/encodings/euc_jp.py \
 	./usr/lib/python2.6/lib2to3/fixes/fix_paren.py \
 	./usr/lib/python2.6/multiprocessing/heap.py \
@@ -41,11 +41,13 @@ FILES_${PN} = " \
 	./usr/lib/python2.6/tty.py \
 	./usr/lib/python2.6/pdb.doc \
 	./usr/lib/python2.6/bsddb/dbobj.py \
-	./usr/lib/python2.6/distutils/unixccompiler.py \
+	./usr/lib/python2.6/lib2to3/fixes/fix_exec.py \
 	./usr/lib/python2.6/cProfile.py \
+	./usr/lib/python2.6/dist-packages/README \
 	./usr/lib/python2.6/httplib.py \
 	./usr/lib/python2.6/encodings/johab.py \
 	./usr/lib/python2.6/encodings/shift_jis_2004.py \
+	./usr/lib/python2.6/plat-linux4/IN.py \
 	./usr/lib/python2.6/lib2to3/fixes/fix_sys_exc.py \
 	./usr/lib/python2.6/this.py \
 	./usr/lib/python2.6/lib2to3/fixes/fix_future.py \
@@ -56,7 +58,7 @@ FILES_${PN} = " \
 	./usr/lib/python2.6/compiler/__init__.py \
 	./usr/lib/python2.6/lib2to3/pgen2/driver.py \
 	./usr/lib/python2.6/lib2to3/pgen2/pgen.py \
-	./usr/lib/python2.6/uu.py \
+	./usr/lib/python2.6/lib-dynload/dbm.so \
 	./usr/lib/python2.6/test/README \
 	./usr/lib/python2.6/lib2to3/fixes/fix_renames.py \
 	./usr/lib/python2.6/multiprocessing/forking.py \
@@ -75,13 +77,13 @@ FILES_${PN} = " \
 	./usr/lib/python2.6/imputil.py \
 	./usr/lib/python2.6/compiler/pyassem.py \
 	./usr/lib/python2.6/email/charset.py \
-	./usr/lib/python2.6/xml/parsers/expat.py \
+	./usr/lib/python2.6/xml/etree/__init__.py \
 	./usr/lib/python2.6/ntpath.py \
 	./usr/lib/python2.6/dummy_thread.py \
 	./usr/lib/python2.6/distutils/core.py \
 	./usr/lib/python2.6/lib2to3/pgen2/tokenize.py \
+	./usr/lib/python2.6/xmlrpclib.py \
 	./usr/lib/python2.6/mimetools.py \
-	./usr/lib/python2.6/curses/textpad.py \
 	./usr/lib/python2.6/bsddb/dbtables.py \
 	./usr/lib/python2.6/gzip.py \
 	./usr/lib/python2.6/lib2to3/fixes/fix_raw_input.py \
@@ -90,11 +92,10 @@ FILES_${PN} = " \
 	./usr/share/man/man1/2to3-2.6.1.gz \
 	./usr/lib/python2.6/lib-tk/Dialog.py \
 	./usr/lib/python2.6/encodings/shift_jisx0213.py \
-	./usr/lib/python2.6/distutils/versionpredicate.py \
 	./usr/lib/python2.6/distutils/text_file.py \
 	./usr/lib/python2.6/sqlite3/dbapi2.py \
 	./usr/lib/python2.6/encodings/iso2022_jp_3.py \
-	./usr/lib/python2.6/curses/ascii.py \
+	./usr/lib/python2.6/email/mime/message.py \
 	./usr/lib/python2.6/json/__init__.py \
 	./usr/lib/python2.6/xml/dom/domreg.py \
 	./usr/lib/python2.6/curses/has_key.py \
@@ -110,29 +111,29 @@ FILES_${PN} = " \
 	./usr/lib/python2.6/lib-dynload/_bytesio.so \
 	./usr/lib/python2.6/_strptime.py \
 	./usr/lib/python2.6/encodings/shift_jis.py \
-	./usr/share/doc/python2.6/copyright \
 	./usr/lib/python2.6/lib-dynload/termios.so \
 	./usr/lib/python2.6/ftplib.py \
 	./usr/lib/python2.6/compiler/syntax.py \
 	./usr/lib/python2.6/encodings/euc_jisx0213.py \
-	./usr/lib/python2.6/email/mime/message.py \
+	./usr/lib/python2.6/curses/ascii.py \
 	./usr/lib/python2.6/lib-tk/tkColorChooser.py \
+	./usr/lib/python2.6/lib-dynload/resource.so \
 	./usr/lib/python2.6/encodings/iso2022_jp_1.py \
 	./usr/lib/python2.6/xml/sax/__init__.py \
 	./usr/lib/python2.6/multiprocessing/synchronize.py \
 	./usr/lib/python2.6/SimpleHTTPServer.py \
 	./usr/lib/python2.6/lib-tk/ScrolledText.py \
 	./usr/lib/python2.6/pickletools.py \
-	./usr/lib/python2.6/email/__init__.py \
+	./usr/lib/python2.6/multiprocessing/reduction.py \
 	./usr/lib/python2.6/dummy_threading.py \
 	./usr/lib/python2.6/lib-dynload/_codecs_kr.so \
 	./usr/lib/python2.6/lib-dynload/_bsddb.so \
-	./usr/lib/python2.6/multiprocessing/reduction.py \
-	./usr/lib/python2.6/multiprocessing/dummy/connection.py \
+	./usr/lib/python2.6/email/__init__.py \
+	./usr/lib/python2.6/xmllib.py \
 	./usr/lib/python2.6/lib-dynload/_json.so \
-	./usr/lib/python2.6/lib2to3/fixes/fix_exec.py \
+	./usr/lib/python2.6/distutils/unixccompiler.py \
 	./usr/lib/python2.6/urllib2.py \
-	./usr/lib/python2.6/pyclbr.py \
+	./usr/lib/python2.6/xml/sax/handler.py \
 	./usr/lib/python2.6/email/mime/audio.py \
 	./usr/lib/python2.6/distutils/command/build_py.py \
 	./usr/lib/python2.6/numbers.py \
@@ -140,7 +141,7 @@ FILES_${PN} = " \
 	./usr/bin/pydoc2.6 \
 	./usr/lib/python2.6/mailbox.py \
 	./usr/lib/python2.6/sched.py \
-	./usr/lib/python2.6/encodings/bz2_codec.py \
+	./usr/lib/python2.6/lib2to3/fixes/fix_xrange.py \
 	./usr/lib/python2.6/lib2to3/fixes/fix_unicode.py \
 	./usr/lib/python2.6/quopri.py \
 	./usr/lib/python2.6/sets.py \
@@ -165,7 +166,7 @@ FILES_${PN} = " \
 	./usr/share/doc/python2.6/README.Debian \
 	./usr/lib/python2.6/bsddb/db.py \
 	./usr/lib/python2.6/email/mime/text.py \
-	./usr/lib/python2.6/lib2to3/fixes/fix_raise.py \
+	./usr/lib/python2.6/lib2to3/pgen2/grammar.py \
 	./usr/lib/python2.6/lib-dynload/crypt.so \
 	./usr/lib/python2.6/lib-dynload/_ctypes_test.so \
 	./usr/lib/python2.6/markupbase.py \
@@ -187,11 +188,11 @@ FILES_${PN} = " \
 	./usr/lib/python2.6/encodings/gb2312.py \
 	./usr/lib/python2.6/BaseHTTPServer.py \
 	./usr/share/doc/python2.6/NEWS.gz \
-	./usr/lib/python2.6/modulefinder.py \
-	./usr/lib/python2.6/distutils/command/install_scripts.py \
+	./usr/lib/python2.6/encodings/euc_kr.py \
+	./usr/lib/python2.6/compiler/transformer.py \
 	./usr/lib/python2.6/heapq.py \
 	./usr/lib/python2.6/hotshot/stats.py \
-	./usr/lib/python2.6/distutils/command/register.py \
+	./usr/lib/python2.6/compiler/symbols.py \
 	./usr/lib/python2.6/rfc822.py \
 	./usr/lib/python2.6/user.py \
 	./usr/lib/python2.6/email/mime/application.py \
@@ -206,6 +207,7 @@ FILES_${PN} = " \
 	./usr/lib/python2.6/lib2to3/main.py \
 	./usr/lib/python2.6/MimeWriter.py \
 	./usr/share/man/man1/pydoc2.6.1.gz \
+	./usr/lib/python2.6/pyclbr.py \
 	./usr/lib/python2.6/lib2to3/fixes/fix_idioms.py \
 	./usr/lib/python2.6/fractions.py \
 	./usr/lib/python2.6/xml/dom/expatbuilder.py \
@@ -213,14 +215,15 @@ FILES_${PN} = " \
 	./usr/bin/pdb2.6 \
 	./usr/lib/python2.6/xml/dom/pulldom.py \
 	./usr/lib/python2.6/rexec.py \
+	./usr/lib/python2.6/plat-linux4/regen \
 	./usr/share/doc/python2.6/changelog.gz \
-	./usr/lib/python2.6/lib-dynload/resource.so \
+	./usr/lib/python2.6/wsgiref/simple_server.py \
 	./usr/lib/python2.6/plistlib.py \
-	./usr/lib/python2.6/xmllib.py \
+	./usr/lib/python2.6/multiprocessing/dummy/connection.py \
 	./usr/lib/python2.6/xdrlib.py \
 	./usr/share/man/man1/pygettext2.6.1.gz \
 	./usr/lib/python2.6/_MozillaCookieJar.py \
-	./usr/lib/python2.6/bsddb/dbutils.py \
+	./usr/lib/python2.6/lib2to3/fixes/fix_reduce.py \
 	./usr/lib/python2.6/lib-dynload/future_builtins.so \
 	./usr/lib/python2.6/distutils/command/bdist.py \
 	./usr/lib/python2.6/lib2to3/fixes/fix_basestring.py \
@@ -229,11 +232,12 @@ FILES_${PN} = " \
 	./usr/lib/python2.6/lib-tk/Canvas.py \
 	./usr/lib/python2.6/xml/sax/_exceptions.py \
 	./usr/lib/python2.6/config/Makefile \
-	./usr/lib/python2.6/xml/dom/xmlbuilder.py \
+	./usr/lib/python2.6/distutils/command/install_scripts.py \
 	./usr/lib/python2.6/lib2to3/fixes/fix_standarderror.py \
+	./usr/lib/python2.6/uu.py \
 	./usr/lib/python2.6/encodings/cp949.py \
-	./usr/lib/python2.6/wsgiref/simple_server.py \
-	./usr/lib/python2.6/lib2to3/fixes/fix_reduce.py \
+	./usr/lib/python2.6/curses/wrapper.py \
+	./usr/lib/python2.6/bsddb/dbutils.py \
 	./usr/lib/python2.6/distutils/command/__init__.py \
 	./usr/lib/python2.6/sgmllib.py \
 	./usr/lib/python2.6/distutils/command/bdist_rpm.py \
@@ -245,7 +249,7 @@ FILES_${PN} = " \
 	./usr/lib/python2.6/code.py \
 	./usr/lib/python2.6/xml/etree/ElementInclude.py \
 	./usr/lib/python2.6/email/header.py \
-	./usr/lib/python2.6/email/encoders.py \
+	./usr/lib/python2.6/distutils/spawn.py \
 	./usr/lib/python2.6/pprint.py \
 	./usr/lib/python2.6/symtable.py \
 	./usr/lib/python2.6/email/parser.py \
@@ -262,31 +266,25 @@ FILES_${PN} = " \
 	./usr/lib/python2.6/distutils/command/install_data.py \
 	./usr/lib/python2.6/lib2to3/fixes/fix_filter.py \
 	./usr/lib/python2.6/lib2to3/fixes/fix_except.py \
-	./usr/lib/python2.6/lib2to3/pygram.py \
-	./usr/lib/python2.6/lib-dynload/ossaudiodev.so \
+	./usr/lib/python2.6/htmlentitydefs.py \
 	./usr/lib/python2.6/lib-dynload/_hotshot.so \
-	./usr/lib/python2.6/smtplib.py \
+	./usr/lib/python2.6/email/mime/nonmultipart.py \
 	./usr/lib/python2.6/hotshot/stones.py \
 	./usr/lib/python2.6/__phello__.foo.py \
 	./usr/lib/python2.6/ihooks.py \
-	./usr/lib/python2.6/email/generator.py \
 	./usr/lib/python2.6/distutils/fancy_getopt.py \
 	./usr/lib/python2.6/lib2to3/pgen2/parse.py \
-	./usr/lib/python2.6/json/encoder.py \
-	./usr/lib/python2.6/plat-linux2/DLFCN.py \
 	./usr/lib/python2.6/timeit.py \
 	./usr/lib/python2.6/compiler/pycodegen.py \
 	./usr/lib/python2.6/lib2to3/fixes/fix_has_key.py \
 	./usr/lib/python2.6/lib2to3/fixes/fix_imports.py \
 	./usr/lib/python2.6/lib-tk/tkFont.py \
-	./usr/lib/python2.6/compiler/ast.py \
 	./usr/lib/python2.6/email/quoprimime.py \
 	./usr/lib/python2.6/distutils/mwerkscompiler.py \
 	./usr/lib/python2.6/xml/sax/expatreader.py \
 	./usr/lib/python2.6/tarfile.py \
-	./usr/lib/python2.6/plat-linux2/TYPES.py \
 	./usr/lib/python2.6/lib2to3/fixes/fix_isinstance.py \
-	./usr/lib/python2.6/xmlrpclib.py \
+	./usr/lib/python2.6/lib2to3/fixes/fix_itertools.py \
 	./usr/lib/python2.6/lib2to3/fixes/fix_input.py \
 	./usr/lib/python2.6/lib2to3/fixer_util.py \
 	./usr/lib/python2.6/distutils/__init__.py \
@@ -304,7 +302,7 @@ FILES_${PN} = " \
 	./usr/lib/python2.6/distutils/debug.py \
 	./usr/lib/python2.6/hotshot/log.py \
 	./usr/lib/python2.6/io.py \
-	./usr/lib/python2.6/lib2to3/fixes/fix_xrange.py \
+	./usr/lib/python2.6/encodings/bz2_codec.py \
 	./usr/lib/python2.6/lib2to3/fixes/fix_next.py \
 	./usr/lib/python2.6/encodings/cp950.py \
 	./usr/share/applications/python2.6.desktop \
@@ -323,12 +321,12 @@ FILES_${PN} = " \
 	./usr/include/python2.6/pyconfig.h \
 	./usr/lib/python2.6/wsgiref/handlers.py \
 	./usr/lib/python2.6/lib-dynload/pyexpat.so \
-	./usr/lib/python2.6/xml/etree/__init__.py \
+	./usr/lib/python2.6/xml/parsers/expat.py \
 	./usr/lib/python2.6/lib-dynload/_codecs_tw.so \
 	./usr/lib/python2.6/distutils/extension.py \
 	./usr/lib/python2.6/distutils/command/sdist.py \
 	./usr/lib/python2.6/pydoc.py \
-	./usr/lib/python2.6/SimpleXMLRPCServer.py \
+	./usr/lib/python2.6/lib-tk/FileDialog.py \
 	./usr/lib/python2.6/lib2to3/fixes/fix_metaclass.py \
 	./usr/lib/python2.6/xml/sax/saxutils.py \
 	./usr/lib/python2.6/lib2to3/pgen2/conv.py \
@@ -337,20 +335,19 @@ FILES_${PN} = " \
 	./usr/lib/python2.6/posixfile.py \
 	./usr/lib/python2.6/os2emxpath.py \
 	./usr/lib/python2.6/lib-dynload/parser.so \
-	./usr/lib/python2.6/sqlite3/dump.py \
+	./usr/lib/python2.6/contextlib.py \
 	./usr/lib/python2.6/distutils/command/build.py \
 	./usr/lib/python2.6/distutils/msvc9compiler.py \
 	./usr/lib/python2.6/lib2to3/fixes/fix_methodattrs.py \
-	./usr/lib/python2.6/lib-dynload/_codecs_iso2022.so \
+	./usr/lib/python2.6/webbrowser.py \
 	./usr/lib/python2.6/netrc.py \
 	./usr/lib/python2.6/lib2to3/refactor.py \
 	./usr/lib/python2.6/lib2to3/fixes/fix_callable.py \
-	./usr/lib/python2.6/lib2to3/pgen2/grammar.py \
+	./usr/lib/python2.6/lib2to3/fixes/fix_raise.py \
 	./usr/lib/python2.6/binhex.py \
-	./usr/lib/python2.6/curses/wrapper.py \
 	./usr/lib/python2.6/email/_parseaddr.py \
 	./usr/lib/python2.6/csv.py \
-	./usr/lib/python2.6/commands.py \
+	./usr/lib/python2.6/Queue.py \
 	./usr/lib/python2.6/test/regrtest.py \
 	./usr/lib/python2.6/telnetlib.py \
 	./usr/lib/python2.6/lib-dynload/_curses.so \
@@ -366,9 +363,7 @@ FILES_${PN} = " \
 	./usr/lib/python2.6/lib2to3/fixes/fix_ne.py \
 	./usr/lib/python2.6/lib-dynload/_sqlite3.so \
 	./usr/lib/python2.6/lib-dynload/mmap.so \
-	./usr/lib/python2.6/lib-dynload/dbm.so \
 	./usr/lib/python2.6/lib-tk/tkFileDialog.py \
-	./usr/lib/python2.6/distutils/dir_util.py \
 	./usr/lib/python2.6/dumbdbm.py \
 	./usr/lib/python2.6/lib2to3/fixes/fix_print.py \
 	./usr/lib/python2.6/difflib.py \
@@ -377,6 +372,7 @@ FILES_${PN} = " \
 	./usr/lib/python2.6/wsgiref/validate.py \
 	./usr/lib/python2.6/lib-tk/Tkdnd.py \
 	./usr/lib/python2.6/encodings/big5.py \
+	./usr/lib/python2.6/xml/dom/xmlbuilder.py \
 	./usr/lib/python2.6/lib2to3/pgen2/literals.py \
 	./usr/lib/python2.6/multiprocessing/sharedctypes.py \
 	./usr/lib/python2.6/distutils/sysconfig.py \
@@ -389,10 +385,10 @@ FILES_${PN} = " \
 	./usr/lib/python2.6/LICENSE.txt \
 	./usr/lib/python2.6/distutils/log.py \
 	./usr/lib/python2.6/lib-tk/turtle.py \
-	./usr/lib/python2.6/plat-linux2/CDROM.py \
+	./usr/lib/python2.6/email/generator.py \
 	./usr/lib/python2.6/lib2to3/fixes/fix_intern.py \
 	./usr/lib/python2.6/SocketServer.py \
-	./usr/lib/python2.6/sunaudio.py \
+	./usr/lib/python2.6/poplib.py \
 	./usr/lib/python2.6/lib-tk/tkMessageBox.py \
 	./usr/lib/python2.6/encodings/big5hkscs.py \
 	./usr/lib/python2.6/wsgiref/util.py \
@@ -412,24 +408,24 @@ FILES_${PN} = " \
 	./usr/lib/python2.6/multiprocessing/queues.py \
 	./usr/lib/python2.6/whichdb.py \
 	./usr/share/pixmaps/python2.6.xpm \
-	./usr/lib/python2.6/htmlentitydefs.py \
 	./usr/lib/python2.6/wsgiref/headers.py \
 	./usr/lib/python2.6/trace.py \
 	./usr/lib/python2.6/distutils/command/install.py \
 	./usr/lib/python2.6/lib-dynload/_ctypes.so \
 	./usr/lib/python2.6/distutils/emxccompiler.py \
 	./usr/lib/python2.6/encodings/iso2022_kr.py \
-	./usr/lib/python2.6/audiodev.py \
+	./usr/lib/python2.6/lib2to3/pgen2/token.py \
 	./usr/lib/python2.6/multiprocessing/managers.py \
 	./usr/lib/python2.6/anydbm.py \
 	./usr/lib/python2.6/lib2to3/fixes/fix_zip.py \
 	./usr/lib/python2.6/compiler/future.py \
 	./usr/lib/python2.6/distutils/command/build_clib.py \
-	./usr/lib/python2.6/lib2to3/pgen2/token.py \
-	./usr/lib/python2.6/plat-linux2/IN.py \
+	./usr/lib/python2.6/audiodev.py \
+	./usr/lib/python2.6/email/mime/base.py \
 	./usr/lib/python2.6/test/pystone.py \
 	./usr/lib/python2.6/symbol.py \
-	./usr/lib/python2.6/email/mime/nonmultipart.py \
+	./usr/lib/python2.6/sunaudio.py \
+	./usr/lib/python2.6/smtplib.py \
 	./usr/lib/python2.6/distutils/command/build_scripts.py \
 	./usr/bin/2to3-2.6 \
 	./usr/lib/python2.6/json/scanner.py \
@@ -437,12 +433,12 @@ FILES_${PN} = " \
 	./usr/lib/python2.6/xml/etree/cElementTree.py \
 	./usr/lib/python2.6/toaiff.py \
 	./usr/lib/python2.6/xml/etree/ElementTree.py \
+	./usr/lib/python2.6/modulefinder.py \
 	./usr/lib/python2.6/encodings/iso2022_jp.py \
-	./usr/lib/python2.6/contextlib.py \
+	./usr/lib/python2.6/sqlite3/dump.py \
 	./usr/lib/python2.6/lib-tk/tkSimpleDialog.py \
 	./usr/lib/python2.6/ctypes/_endian.py \
 	./usr/lib/python2.6/lib2to3/fixes/fix_ws_comma.py \
-	./usr/lib/python2.6/poplib.py \
 	./usr/lib/python2.6/DocXMLRPCServer.py \
 	./usr/share/man/man1/pdb2.6.1.gz \
 	./usr/lib/python2.6/_threading_local.py \
@@ -453,14 +449,13 @@ FILES_${PN} = " \
 	./usr/bin/pygettext2.6 \
 	./usr/lib/python2.6/multiprocessing/__init__.py \
 	./usr/lib/python2.6/bsddb/__init__.py \
-	./usr/lib/python2.6/xml/sax/handler.py \
+	./usr/lib/python2.6/compiler/ast.py \
 	./usr/lib/python2.6/tabnanny.py \
-	./usr/lib/python2.6/lib-dynload/linuxaudiodev.so \
-	./usr/lib/python2.6/plat-linux2/regen \
+	./usr/share/doc/python2.6/copyright \
 	./usr/lib/python2.6/profile.py \
 	./usr/lib/python2.6/sndhdr.py \
 	./usr/lib/python2.6/imghdr.py \
-	./usr/lib/python2.6/compiler/transformer.py \
+	./usr/lib/python2.6/json/encoder.py \
 	./usr/lib/python2.6/lib-dynload/_fileio.so \
 	./usr/lib/python2.6/distutils/util.py \
 	./usr/lib/python2.6/ctypes/util.py \
@@ -468,10 +463,10 @@ FILES_${PN} = " \
 	./usr/lib/python2.6/lib2to3/fixes/fix_operator.py \
 	./usr/share/doc/python2.6/ACKS.gz \
 	./usr/lib/python2.6/encodings/iso2022_jp_2.py \
-	./usr/lib/python2.6/distutils/spawn.py \
+	./usr/lib/python2.6/email/encoders.py \
 	./usr/lib/python2.6/_LWPCookieJar.py \
 	./usr/lib/python2.6/bsddb/dbshelve.py \
-	./usr/lib/python2.6/email/mime/base.py \
+	./usr/lib/python2.6/distutils/dir_util.py \
 	./usr/lib/python2.6/distutils/file_util.py \
 	./usr/lib/python2.6/hotshot/__init__.py \
 	./usr/lib/python2.6/curses/panel.py \
@@ -484,13 +479,13 @@ FILES_${PN} = " \
 	./usr/lib/python2.6/json/tool.py \
 	./usr/lib/python2.6/multiprocessing/pool.py \
 	./usr/lib/python2.6/mutex.py \
-	./usr/lib/python2.6/lib-tk/FileDialog.py \
+	./usr/lib/python2.6/SimpleXMLRPCServer.py \
 	./usr/lib/python2.6/lib2to3/Grammar.txt \
-	./usr/lib/python2.6/compiler/symbols.py \
+	./usr/lib/python2.6/distutils/command/register.py \
 	./usr/lib/python2.6/rlcompleter.py \
-	./usr/lib/python2.6/webbrowser.py \
+	./usr/lib/python2.6/lib-dynload/_codecs_iso2022.so \
 	./usr/lib/python2.6/lib2to3/fixes/fix_itertools_imports.py \
-	./usr/lib/python2.6/Queue.py \
+	./usr/lib/python2.6/commands.py \
 	./usr/lib/python2.6/lib-dynload/_codecs_cn.so \
 	./usr/lib/python2.6/lib-tk/tkCommonDialog.py \
 	./usr/lib/python2.6/lib-dynload/_heapq.so \
@@ -503,7 +498,7 @@ FILES_${PN} = " \
 	./usr/lib/python2.6/distutils/ccompiler.py \
 	./usr/lib/python2.6/lib2to3/fixes/fix_funcattrs.py \
 	./usr/lib/python2.6/asyncore.py \
-	./usr/lib/python2.6/encodings/euc_kr.py \
+	./usr/lib/python2.6/lib2to3/pygram.py \
 	./usr/lib/python2.6/robotparser.py \
 	./usr/lib/python2.6/lib-dynload/_multibytecodec.so \
 	./usr/lib/python2.6/lib2to3/patcomp.py \
@@ -532,19 +527,18 @@ FILES_python2.6-minimal = " \
 	./usr/lib/python2.6/collections.py \
 	./usr/lib/python2.6/encodings/koi8_r.py \
 	./usr/lib/python2.6/encodings/cp500.py \
-	./usr/lib/python2.6/__future__.py \
 	./usr/lib/python2.6/encodings/cp864.py \
 	./usr/lib/python2.6/re.py \
 	./usr/lib/python2.6/encodings/iso8859_15.py \
 	./usr/lib/python2.6/sre.py \
-	./usr/lib/python2.6/encodings/undefined.py \
+	./usr/lib/python2.6/encodings/hex_codec.py \
 	./usr/lib/python2.6/popen2.py \
 	./usr/lib/python2.6/tokenize.py \
 	./usr/lib/python2.6/socket.py \
 	./usr/lib/python2.6/encodings/punycode.py \
 	./usr/lib/python2.6/stringprep.py \
 	./usr/lib/python2.6/encodings/mac_farsi.py \
-	./usr/lib/python2.6/warnings.py \
+	./usr/lib/python2.6/__future__.py \
 	./usr/lib/python2.6/encodings/zlib_codec.py \
 	./usr/lib/python2.6/encodings/ptcp154.py \
 	./usr/lib/python2.6/keyword.py \
@@ -559,7 +553,7 @@ FILES_python2.6-minimal = " \
 	./usr/lib/python2.6/encodings/iso8859_2.py \
 	./usr/lib/python2.6/sitecustomize.py \
 	./usr/lib/python2.6/repr.py \
-	./usr/lib/python2.6/encodings/cp856.py \
+	./usr/bin/python2.6 \
 	./usr/lib/python2.6/encodings/cp775.py \
 	./usr/lib/python2.6/encodings/iso8859_6.py \
 	./usr/lib/python2.6/encodings/cp1256.py \
@@ -568,9 +562,9 @@ FILES_python2.6-minimal = " \
 	./usr/lib/python2.6/sre_parse.py \
 	./usr/lib/python2.6/encodings/koi8_u.py \
 	./usr/lib/python2.6/py_compile.py \
-	./usr/lib/python2.6/encodings/tis_620.py \
+	./usr/lib/python2.6/encodings/iso8859_13.py \
+	./usr/lib/python2.6/encodings/utf_32_be.py \
 	./usr/lib/python2.6/encodings/mac_roman.py \
-	./usr/lib/python2.6/random.py \
 	./usr/lib/python2.6/atexit.py \
 	./usr/lib/python2.6/stat.py \
 	./usr/lib/python2.6/encodings/cp860.py \
@@ -593,21 +587,22 @@ FILES_python2.6-minimal = " \
 	./usr/lib/python2.6/encodings/iso8859_1.py \
 	./usr/lib/python2.6/encodings/cp737.py \
 	./usr/lib/python2.6/sha.py \
-	./usr/lib/python2.6/compileall.py \
+	./usr/lib/python2.6/encodings/cp1250.py \
 	./usr/lib/python2.6/encodings/iso8859_10.py \
 	./etc/python2.6/sitecustomize.py \
 	./usr/lib/python2.6/encodings/cp874.py \
 	./usr/lib/python2.6/StringIO.py \
 	./usr/lib/python2.6/encodings/iso8859_4.py \
-	./usr/lib/python2.6/encodings/iso8859_13.py \
+	./usr/lib/python2.6/encodings/cp866.py \
 	./usr/lib/python2.6/linecache.py \
+	./usr/lib/python2.6/base64.py \
 	./usr/lib/python2.6/genericpath.py \
 	./usr/lib/python2.6/sre_constants.py \
 	./usr/lib/python2.6/textwrap.py \
-	./usr/bin/python2.6 \
+	./usr/lib/python2.6/encodings/cp856.py \
 	./usr/lib/python2.6/encodings/cp862.py \
-	./usr/lib/python2.6/logging/config.py \
-	./usr/share/man/man1/python2.6.1.gz \
+	./usr/lib/python2.6/encodings/mac_romanian.py \
+	./usr/lib/python2.6/md5.py \
 	./usr/lib/python2.6/logging/handlers.py \
 	./usr/lib/python2.6/encodings/utf_16_le.py \
 	./usr/lib/python2.6/encodings/mac_croatian.py \
@@ -622,13 +617,13 @@ FILES_python2.6-minimal = " \
 	./usr/lib/python2.6/encodings/mac_turkish.py \
 	./usr/lib/python2.6/encodings/quopri_codec.py \
 	./usr/lib/python2.6/encodings/cp875.py \
-	./usr/lib/python2.6/encodings/cp1250.py \
+	./usr/lib/python2.6/compileall.py \
 	./usr/lib/python2.6/copy.py \
-	./usr/lib/python2.6/_abcoll.py \
-	./usr/lib/python2.6/encodings/palmos.py \
-	./usr/lib/python2.6/encodings/cp424.py \
+	./usr/lib/python2.6/inspect.py \
+	./usr/lib/python2.6/subprocess.py \
+	./usr/lib/python2.6/encodings/hz.py \
 	./usr/lib/python2.6/getopt.py \
-	./usr/lib/python2.6/encodings/hex_codec.py \
+	./usr/lib/python2.6/encodings/undefined.py \
 	./usr/lib/python2.6/encodings/cp869.py \
 	./usr/lib/python2.6/ConfigParser.py \
 	./usr/lib/python2.6/encodings/cp1254.py \
@@ -638,7 +633,7 @@ FILES_python2.6-minimal = " \
 	./usr/lib/python2.6/encodings/mac_iceland.py \
 	./usr/lib/python2.6/encodings/cp855.py \
 	./usr/lib/python2.6/runpy.py \
-	./usr/lib/python2.6/encodings/utf_32_be.py \
+	./usr/lib/python2.6/encodings/tis_620.py \
 	./usr/lib/python2.6/tempfile.py \
 	./usr/lib/python2.6/codecs.py \
 	./usr/lib/python2.6/encodings/aliases.py \
@@ -646,16 +641,16 @@ FILES_python2.6-minimal = " \
 	./usr/lib/python2.6/encodings/utf_16.py \
 	./usr/lib/python2.6/encodings/iso8859_8.py \
 	./usr/lib/python2.6/encodings/rot_13.py \
-	./usr/lib/python2.6/subprocess.py \
-	./usr/lib/python2.6/md5.py \
-	./usr/lib/python2.6/inspect.py \
-	./usr/lib/python2.6/encodings/hz.py \
+	./usr/lib/python2.6/encodings/palmos.py \
+	./usr/share/man/man1/python2.6.1.gz \
+	./usr/lib/python2.6/_abcoll.py \
+	./usr/lib/python2.6/encodings/cp424.py \
 	./usr/lib/python2.6/encodings/mac_greek.py \
 	./usr/lib/python2.6/encodings/cp1251.py \
 	./usr/lib/python2.6/hashlib.py \
 	./usr/lib/python2.6/encodings/utf_8_sig.py \
 	./usr/lib/python2.6/dis.py \
-	./usr/lib/python2.6/encodings/cp850.py \
+	./usr/lib/python2.6/encodings/charmap.py \
 	./usr/share/doc/python2.6-minimal/copyright \
 	./usr/lib/python2.6/encodings/cp1255.py \
 	./usr/lib/python2.6/encodings/latin_1.py \
@@ -666,14 +661,14 @@ FILES_python2.6-minimal = " \
 	./usr/lib/python2.6/encodings/utf_32.py \
 	./usr/lib/python2.6/os.py \
 	./usr/lib/python2.6/encodings/cp857.py \
-	./usr/lib/python2.6/base64.py \
+	./usr/lib/python2.6/random.py \
 	./usr/share/doc/python2.6-minimal/changelog.Debian.gz \
 	./usr/lib/python2.6/encodings/uu_codec.py \
-	./usr/lib/python2.6/encodings/charmap.py \
-	./usr/lib/python2.6/encodings/mac_romanian.py \
+	./usr/lib/python2.6/encodings/cp850.py \
+	./usr/lib/python2.6/logging/config.py \
 	./usr/lib/python2.6/encodings/utf_7.py \
 	./usr/lib/python2.6/pickle.py \
-	./usr/lib/python2.6/encodings/cp866.py \
+	./usr/lib/python2.6/warnings.py \
 	./usr/lib/python2.6/encodings/cp865.py \
 	./usr/lib/python2.6/fnmatch.py \
 	./usr/lib/python2.6/string.py \
