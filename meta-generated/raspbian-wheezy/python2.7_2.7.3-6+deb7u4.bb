@@ -1,17 +1,17 @@
 PACKAGES = "python2.7 python2.7-minimal"
 PROVIDES = "python2.7 python2.7-minimal"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/p/python2.7/python2.7_2.7.3-6+deb7u3_armhf.deb;unpack=0;name=deb0\
-	http://archive.raspbian.org/raspbian/pool/main/p/python2.7/python2.7-minimal_2.7.3-6+deb7u3_armhf.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/p/python2.7/python2.7_2.7.3-6+deb7u4_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/p/python2.7/python2.7-minimal_2.7.3-6+deb7u4_armhf.deb;unpack=0;name=deb1\
 "
-DEBFILENAME_python2.7 = "python2.7_2.7.3-6+deb7u3_armhf.deb"
-SRC_URI[deb0.sha256sum] = "259ef6ff02d620600a5e0ed4028a3f33eddb1d1247dd14862b58b1605fbe819c"
-SRC_URI[deb0.md5sum] = "a2b8cb6ec9f46eadfb8588778f9c59f9"
-DEBFILENAME_python2.7-minimal = "python2.7-minimal_2.7.3-6+deb7u3_armhf.deb"
-SRC_URI[deb1.sha256sum] = "f5ff3925392332d152ef6eeb1963404e08168140ce1eb49d0db651d8110ee07a"
-SRC_URI[deb1.md5sum] = "48538fb49317f24a1981068d6e9daf85"
+DEBFILENAME_python2.7 = "python2.7_2.7.3-6+deb7u4_armhf.deb"
+SRC_URI[deb0.sha256sum] = "a5489caf0be3807c4e221ded49f065177819b8dd8e6de50fd8757c9eb150ac0d"
+SRC_URI[deb0.md5sum] = "970e68edf4c83a3d93b2b67f5b3c4d32"
+DEBFILENAME_python2.7-minimal = "python2.7-minimal_2.7.3-6+deb7u4_armhf.deb"
+SRC_URI[deb1.sha256sum] = "cd5437b2b24216516db1efa9e6e6485eb8633bfa5b80454815c65f359199fd0f"
+SRC_URI[deb1.md5sum] = "1558c65561e22f2e91cd8d8470e08f0d"
 
-RDEPENDS_${PN} = "python2.7-minimal (= 2.7.3-6+deb7u3) mime-support libbz2-1.0 libc6 (>= 2.13-28) libdb5.1 libexpat1 (>= 2.1~beta3) libgcc1 (>= 1:4.4.0) libncursesw5 (>= 5.6+20070908) libreadline6 (>= 6.0) libsqlite3-0 (>= 3.5.9) libtinfo5"
+RDEPENDS_${PN} = "python2.7-minimal (= 2.7.3-6+deb7u4) mime-support libbz2-1.0 libc6 (>= 2.13-28) libdb5.1 libexpat1 (>= 2.1~beta3) libgcc1 (>= 1:4.4.0) libncursesw5 (>= 5.6+20070908) libreadline6 (>= 6.0) libsqlite3-0 (>= 3.5.9) libtinfo5"
 RDEPENDS_${PN}-minimal = "libc6 (>= 2.13-28) libgcc1 (>= 1:4.1.1) libssl1.0.0 (>= 1.0.0) zlib1g (>= 1:1.2.0)"
 DEPENDS = "libgcc1 libssl1.0.0 libexpat1 libncursesw5 libtinfo5 libc6 libreadline6 libsqlite3-0 libdb5.1 mime-support libbz2-1.0 zlib1g"
 
