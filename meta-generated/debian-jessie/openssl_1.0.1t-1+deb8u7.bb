@@ -1,15 +1,15 @@
 PACKAGES = "libssl1.0.0 openssl"
 PROVIDES = "libssl1.0.0 openssl"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/o/openssl/libssl1.0.0_1.0.1t-1+deb8u6_armhf.deb;unpack=0;name=deb0\
-	http://ftp.de.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u6_armhf.deb;unpack=0;name=deb1\
+	http://ftp.de.debian.org/debian/pool/main/o/openssl/libssl1.0.0_1.0.1t-1+deb8u7_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u7_armhf.deb;unpack=0;name=deb1\
 "
-DEBFILENAME_libssl1.0.0 = "libssl1.0.0_1.0.1t-1+deb8u6_armhf.deb"
-SRC_URI[deb0.sha256sum] = "73b73841facb66885147cefe0b2eef752d0c32d9749d238e7965c6a06a6ac8e2"
-SRC_URI[deb0.md5sum] = "2d5d5d4e0879ae978997b870080e698d"
-DEBFILENAME_openssl = "openssl_1.0.1t-1+deb8u6_armhf.deb"
-SRC_URI[deb1.sha256sum] = "90a756e4c3d0bc3956c395d815e878d755d597126079bd6d45fec96f322a2a67"
-SRC_URI[deb1.md5sum] = "a2b3331d8d16e141bb8d71d37fe10bed"
+DEBFILENAME_libssl1.0.0 = "libssl1.0.0_1.0.1t-1+deb8u7_armhf.deb"
+SRC_URI[deb0.sha256sum] = "d18bcc3395e02de8de8675be48b5b7f4a45122623480133edc5e1b6a93ea4972"
+SRC_URI[deb0.md5sum] = "774a1fd788ac56ed25a29404651548b4"
+DEBFILENAME_openssl = "openssl_1.0.1t-1+deb8u7_armhf.deb"
+SRC_URI[deb1.sha256sum] = "0dcc10658d0f92521d168a7b8755b0ccded8448880e4b7e118555b5b415cf009"
+SRC_URI[deb1.md5sum] = "ef90d448f149b26c49754d455abc9763"
 
 RDEPENDS_libssl1.0.0 = "libc6 (>= 2.11) debconf (>= 0.5)"
 RDEPENDS_${PN} = "libc6 (>= 2.15) libssl1.0.0 (>= 1.0.1k-3+deb8u3)"
@@ -88,7 +88,7 @@ FILES_${PN} = " \
 	./usr/share/man/man1/ripemd160.1ssl.gz \
 	./usr/share/man/man1/s_server.1ssl.gz \
 	./usr/share/man/man1/pkeyparam.1ssl.gz \
-	./usr/share/man/man1/x509.1ssl.gz \
+	./usr/share/man/man1/sha224.1ssl.gz \
 	./usr/share/man/man1/sess_id.1ssl.gz \
 	./usr/share/man/man1/genrsa.1ssl.gz \
 	./usr/share/man/man1/sha.1ssl.gz \
@@ -109,7 +109,7 @@ FILES_${PN} = " \
 	./usr/share/man/man1/version.1ssl.gz \
 	./usr/lib/ssl/misc/CA.pl \
 	./usr/share/man/man1/pkcs8.1ssl.gz \
-	./usr/share/man/man1/sha224.1ssl.gz \
+	./usr/share/man/man1/x509.1ssl.gz \
 	./usr/share/doc/openssl/copyright \
 	./usr/share/man/man1/gendsa.1ssl.gz \
 	./usr/share/man/man1/mdc2.1ssl.gz \

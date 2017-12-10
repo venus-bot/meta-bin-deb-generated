@@ -1,18 +1,18 @@
 PACKAGES = "libxml2 libxml2-dev"
 PROVIDES = "libxml2 libxml2-dev"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u4_armhf.deb;unpack=0;name=deb0\
-	http://ftp.de.debian.org/debian/pool/main/libx/libxml2/libxml2-dev_2.9.1+dfsg1-5+deb8u4_armhf.deb;unpack=0;name=deb1\
+	http://ftp.de.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u5_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/libx/libxml2/libxml2-dev_2.9.1+dfsg1-5+deb8u5_armhf.deb;unpack=0;name=deb1\
 "
-DEBFILENAME_libxml2 = "libxml2_2.9.1+dfsg1-5+deb8u4_armhf.deb"
-SRC_URI[deb0.sha256sum] = "dec9609088fe71071e494d44ec16d9cfdc9086b31d1b8f0a17450b36155e0586"
-SRC_URI[deb0.md5sum] = "805e5acaf10423cf4d082d4d132740b7"
-DEBFILENAME_libxml2-dev = "libxml2-dev_2.9.1+dfsg1-5+deb8u4_armhf.deb"
-SRC_URI[deb1.sha256sum] = "c9c45987280d485171325ae516f3a1a26022105f819b9a7dbee6e88a70d404d2"
-SRC_URI[deb1.md5sum] = "9b7d1876bbfc22f08d54898681162c09"
+DEBFILENAME_libxml2 = "libxml2_2.9.1+dfsg1-5+deb8u5_armhf.deb"
+SRC_URI[deb0.sha256sum] = "a6612feb8eebccbce1fed0e042623bd18c3fc1f52773956883236332b34613a7"
+SRC_URI[deb0.md5sum] = "e249612387faa2cd416c51980e9db2ab"
+DEBFILENAME_libxml2-dev = "libxml2-dev_2.9.1+dfsg1-5+deb8u5_armhf.deb"
+SRC_URI[deb1.sha256sum] = "deebbd2069cca9aa95cf173cee2d10a5fda887c58b96caf3e47bb710929caf03"
+SRC_URI[deb1.md5sum] = "f8c189b87d711cc3f211e80b39554b4d"
 
 RDEPENDS_${PN} = "libc6 (>= 2.15) liblzma5 (>= 5.1.1alpha+20120614) zlib1g (>= 1:1.2.3.3)"
-RDEPENDS_${PN}-dev = "libxml2 (= 2.9.1+dfsg1-5+deb8u4)"
+RDEPENDS_${PN}-dev = "libxml2 (= 2.9.1+dfsg1-5+deb8u5)"
 DEPENDS = "liblzma5 zlib1g libc6"
 
 
@@ -42,10 +42,11 @@ FILES_${PN}-dev = " \
 	./usr/include/libxml2/libxml/valid.h \
 	./usr/include/libxml2/libxml/chvalid.h \
 	./usr/include/libxml2/libxml/catalog.h \
-	./usr/include/libxml2/libxml/xmlversion.h \
+	./usr/include/libxml2/libxml/xmlsave.h \
 	./usr/include/libxml2/libxml/tree.h \
 	./usr/share/man/man3/libxml.3.gz \
 	./usr/include/libxml2/libxml/DOCBparser.h \
+	./usr/include/libxml2/libxml/parserInternals.h \
 	./usr/include/libxml2/libxml/xpointer.h \
 	./usr/share/doc/libxml2-dev/copyright \
 	./usr/include/libxml2/libxml/xmlIO.h \
@@ -64,18 +65,18 @@ FILES_${PN}-dev = " \
 	./usr/include/libxml2/libxml/xmlautomata.h \
 	./usr/include/libxml2/libxml/relaxng.h \
 	./usr/lib/arm-linux-gnueabihf/pkgconfig/libxml-2.0.pc \
-	./usr/include/libxml2/libxml/SAX.h \
+	./usr/include/libxml2/libxml/xmlwriter.h \
 	./usr/share/doc/libxml2-dev/README \
 	./usr/include/libxml2/libxml/xmlmodule.h \
 	./usr/include/libxml2/libxml/nanoftp.h \
-	./usr/include/libxml2/libxml/xmlsave.h \
+	./usr/include/libxml2/libxml/xmlversion.h \
 	./usr/include/libxml2/libxml/hash.h \
 	./usr/share/man/man1/xml2-config.1.gz \
 	./usr/include/libxml2/libxml/xpathInternals.h \
 	./usr/lib/arm-linux-gnueabihf/libxml2.a \
-	./usr/include/libxml2/libxml/xmlregexp.h \
+	./usr/include/libxml2/libxml/pattern.h \
 	./usr/include/libxml2/libxml/nanohttp.h \
-	./usr/include/libxml2/libxml/parserInternals.h \
+	./usr/include/libxml2/libxml/xmlregexp.h \
 	./usr/include/libxml2/libxml/list.h \
 	./usr/share/doc/libxml2-dev/changelog.Debian.gz \
 	./usr/include/libxml2/libxml/xmlschemas.h \
@@ -83,7 +84,6 @@ FILES_${PN}-dev = " \
 	./usr/include/libxml2/libxml/SAX2.h \
 	./usr/include/libxml2/libxml/encoding.h \
 	./usr/include/libxml2/libxml/HTMLtree.h \
-	./usr/include/libxml2/libxml/xmlwriter.h \
 	./usr/include/libxml2/libxml/uri.h \
 	./usr/include/libxml2/libxml/xmlmemory.h \
 	./usr/include/libxml2/libxml/schematron.h \
@@ -96,8 +96,8 @@ FILES_${PN}-dev = " \
 	./usr/include/libxml2/libxml/xmlerror.h \
 	./usr/include/libxml2/libxml/xpath.h \
 	./usr/include/libxml2/libxml/schemasInternals.h \
-	./usr/include/libxml2/libxml/pattern.h \
-	./usr/include/libxml2/libxml/xmlschemastypes.h\
+	./usr/include/libxml2/libxml/xmlschemastypes.h \
+	./usr/include/libxml2/libxml/SAX.h\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

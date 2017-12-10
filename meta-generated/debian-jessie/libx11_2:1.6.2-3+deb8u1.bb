@@ -1,22 +1,22 @@
 PACKAGES = "libx11-6 libx11-data libx11-dev"
 PROVIDES = "libx11-6 libx11-data libx11-dev"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/libx/libx11/libx11-6_1.6.2-3_armhf.deb;unpack=0;name=deb0\
-	http://ftp.de.debian.org/debian/pool/main/libx/libx11/libx11-data_1.6.2-3_all.deb;unpack=0;name=deb1\
-	http://ftp.de.debian.org/debian/pool/main/libx/libx11/libx11-dev_1.6.2-3_armhf.deb;unpack=0;name=deb2\
+	http://ftp.de.debian.org/debian/pool/main/libx/libx11/libx11-6_1.6.2-3+deb8u1_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/libx/libx11/libx11-data_1.6.2-3+deb8u1_all.deb;unpack=0;name=deb1\
+	http://ftp.de.debian.org/debian/pool/main/libx/libx11/libx11-dev_1.6.2-3+deb8u1_armhf.deb;unpack=0;name=deb2\
 "
-DEBFILENAME_libx11-6 = "libx11-6_1.6.2-3_armhf.deb"
-SRC_URI[deb0.sha256sum] = "9b7b5816df21e90a6d1846d937b3d12b0bdccc7855df560c9d0a2ee231b23c59"
-SRC_URI[deb0.md5sum] = "3365d16e486c880006cc6bb7552197a7"
-DEBFILENAME_libx11-data = "libx11-data_1.6.2-3_all.deb"
-SRC_URI[deb1.sha256sum] = "fcf58a1bd20d9557baf253a624704450b627184a34879efb48fc1968a4645cfa"
-SRC_URI[deb1.md5sum] = "4a483d249507d47ba1a90643d550cca1"
-DEBFILENAME_libx11-dev = "libx11-dev_1.6.2-3_armhf.deb"
-SRC_URI[deb2.sha256sum] = "8a84fb3495a32a29a8931bf2fea6f2236c27a04f9c4663a1e3621e5be1963ad9"
-SRC_URI[deb2.md5sum] = "ad529039f0f9a22d738536d64d952f60"
+DEBFILENAME_libx11-6 = "libx11-6_1.6.2-3+deb8u1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "29b2da94d351278e0682f86b290724998b6aace8dd730a23930feb5ad11662e7"
+SRC_URI[deb0.md5sum] = "4dffa071eae83bf67bd55c1270280a84"
+DEBFILENAME_libx11-data = "libx11-data_1.6.2-3+deb8u1_all.deb"
+SRC_URI[deb1.sha256sum] = "4879a3054d6508e86f737bf668737c3fc64980c3512b2912f18bceea823e1899"
+SRC_URI[deb1.md5sum] = "a1ec8a1b0c9678bb04bc8ea13ac124fd"
+DEBFILENAME_libx11-dev = "libx11-dev_1.6.2-3+deb8u1_armhf.deb"
+SRC_URI[deb2.sha256sum] = "d5b0c2b3e8939e896da089757151a9f1f202b0e65134ed453b37d465566acd25"
+SRC_URI[deb2.md5sum] = "b4776a7b5e8d1a54280305cb9741aab1"
 
 RDEPENDS_${PN}-6 = "libc6 (>= 2.15) libxcb1 (>= 1.2) libx11-data"
-RDEPENDS_${PN}-dev = "libx11-6 (= 2:1.6.2-3) libxau-dev (>= 1:1.0.0-1) libxdmcp-dev (>= 1:1.0.0-1) x11proto-core-dev (>= 7.0.17) x11proto-input-dev x11proto-kb-dev xtrans-dev libxcb1-dev"
+RDEPENDS_${PN}-dev = "libx11-6 (= 2:1.6.2-3+deb8u1) libxau-dev (>= 1:1.0.0-1) libxdmcp-dev (>= 1:1.0.0-1) x11proto-core-dev (>= 7.0.17) x11proto-input-dev x11proto-kb-dev xtrans-dev libxcb1-dev"
 DEPENDS = "x11proto-core-dev xtrans-dev libxcb1 x11proto-kb-dev libxau-dev libxcb1-dev x11proto-input-dev libxdmcp-dev libc6"
 
 
@@ -48,17 +48,17 @@ FILES_libx11-data = " \
 	./usr/share/X11/locale/vi_VN.tcvn/XLC_LOCALE \
 	./usr/share/X11/locale/zh_HK.UTF-8/Compose \
 	./usr/share/X11/locale/iscii-dev/XI18N_OBJS \
-	./usr/share/X11/locale/iso8859-15/XI18N_OBJS \
+	./usr/share/X11/locale/armscii-8/XI18N_OBJS \
 	./usr/share/X11/locale/locale.dir \
 	./usr/share/X11/locale/iso8859-8/XI18N_OBJS \
 	./usr/share/X11/locale/th_TH.UTF-8/XI18N_OBJS \
 	./usr/share/man/man5/Compose.5.gz \
 	./usr/share/X11/locale/th_TH.UTF-8/XLC_LOCALE \
 	./usr/share/X11/locale/ko/Compose \
-	./usr/share/X11/locale/tatar-cyr/XI18N_OBJS \
+	./usr/share/X11/locale/iso8859-13/XI18N_OBJS \
 	./usr/share/X11/locale/ja_JP.UTF-8/Compose \
 	./usr/share/X11/locale/zh_CN/XLC_LOCALE \
-	./usr/share/X11/locale/iso8859-6/XLC_LOCALE \
+	./usr/share/X11/locale/koi8-r/Compose \
 	./usr/share/X11/locale/iso8859-9e/Compose \
 	./usr/share/X11/locale/ja.SJIS/XLC_LOCALE \
 	./usr/share/X11/locale/zh_HK.big5hkscs/XI18N_OBJS \
@@ -74,28 +74,28 @@ FILES_libx11-data = " \
 	./usr/share/X11/locale/nokhchi-1/Compose \
 	./usr/share/X11/locale/iso8859-15/XLC_LOCALE \
 	./usr/share/X11/locale/zh_CN.gb18030/XLC_LOCALE \
-	./usr/share/X11/locale/iso8859-13/XI18N_OBJS \
+	./usr/share/X11/locale/tatar-cyr/XI18N_OBJS \
 	./usr/share/X11/locale/th_TH/XI18N_OBJS \
 	./usr/share/X11/locale/en_US.UTF-8/Compose \
 	./usr/share/X11/locale/vi_VN.tcvn/XI18N_OBJS \
 	./usr/share/X11/locale/koi8-r/XLC_LOCALE \
 	./usr/share/X11/locale/pt_BR.UTF-8/XI18N_OBJS \
 	./usr/share/X11/locale/ibm-cp1133/Compose \
-	./usr/share/X11/locale/zh_TW.UTF-8/Compose \
+	./usr/share/X11/locale/zh_TW.UTF-8/XI18N_OBJS \
 	./usr/share/X11/locale/iso8859-7/XI18N_OBJS \
 	./usr/share/X11/locale/iso8859-10/Compose \
 	./usr/share/X11/locale/tscii-0/XLC_LOCALE \
 	./usr/share/X11/locale/en_US.UTF-8/XLC_LOCALE \
 	./usr/share/X11/locale/koi8-c/XI18N_OBJS \
-	./usr/share/X11/locale/isiri-3342/XLC_LOCALE \
+	./usr/share/X11/locale/iso8859-3/XI18N_OBJS \
 	./usr/share/X11/locale/zh_TW/Compose \
-	./usr/share/X11/locale/zh_CN.gbk/XI18N_OBJS \
+	./usr/share/X11/locale/iso8859-9e/XLC_LOCALE \
 	./usr/share/X11/locale/microsoft-cp1251/Compose \
 	./usr/share/X11/locale/iso8859-5/Compose \
-	./usr/share/X11/locale/iso8859-7/Compose \
+	./usr/share/X11/locale/iso8859-10/XLC_LOCALE \
 	./usr/share/X11/locale/iso8859-2/XI18N_OBJS \
-	./usr/share/X11/locale/th_TH.UTF-8/Compose \
-	./usr/share/X11/locale/iso8859-9/XLC_LOCALE \
+	./usr/share/X11/locale/iso8859-9/Compose \
+	./usr/share/X11/locale/iso8859-10/XI18N_OBJS \
 	./usr/share/X11/locale/zh_HK.big5hkscs/XLC_LOCALE \
 	./usr/share/X11/locale/vi_VN.viscii/XLC_LOCALE \
 	./usr/share/X11/locale/zh_TW/XI18N_OBJS \
@@ -106,21 +106,22 @@ FILES_libx11-data = " \
 	./usr/share/X11/locale/zh_HK.big5hkscs/Compose \
 	./usr/share/X11/locale/ja/XLC_LOCALE \
 	./usr/share/man/man5/XCompose.5.gz \
-	./usr/share/X11/locale/nokhchi-1/XI18N_OBJS \
+	./usr/share/X11/locale/iso8859-14/Compose \
 	./usr/share/X11/locale/koi8-u/XI18N_OBJS \
 	./usr/share/X11/locale/microsoft-cp1256/XLC_LOCALE \
 	./usr/share/X11/locale/koi8-r/XI18N_OBJS \
 	./usr/share/X11/locale/isiri-3342/XI18N_OBJS \
 	./usr/share/X11/locale/iso8859-1/XLC_LOCALE \
-	./usr/share/X11/locale/zh_TW.UTF-8/XLC_LOCALE \
+	./usr/share/X11/locale/iso8859-9/XLC_LOCALE \
 	./usr/share/X11/locale/iso8859-5/XI18N_OBJS \
 	./usr/share/X11/locale/iso8859-9e/XI18N_OBJS \
 	./usr/share/X11/locale/ja/Compose \
 	./usr/share/X11/locale/ru_RU.UTF-8/Compose \
 	./usr/share/X11/locale/mulelao-1/Compose \
 	./usr/share/X11/locale/tscii-0/XI18N_OBJS \
-	./usr/share/X11/locale/armscii-8/XI18N_OBJS \
+	./usr/share/X11/locale/iso8859-15/XI18N_OBJS \
 	./usr/share/X11/locale/iso8859-11/Compose \
+	./usr/share/X11/locale/zh_TW.UTF-8/XLC_LOCALE \
 	./usr/share/X11/locale/km_KH.UTF-8/XI18N_OBJS \
 	./usr/share/X11/locale/zh_CN.gb18030/Compose \
 	./usr/share/X11/locale/iso8859-11/XI18N_OBJS \
@@ -132,23 +133,23 @@ FILES_libx11-data = " \
 	./usr/share/X11/locale/georgian-ps/Compose \
 	./usr/share/X11/locale/iso8859-14/XI18N_OBJS \
 	./usr/share/X11/locale/ja.SJIS/Compose \
-	./usr/share/X11/locale/georgian-academy/Compose \
+	./usr/share/X11/locale/ko/XLC_LOCALE \
 	./usr/share/X11/locale/locale.alias \
 	./usr/share/X11/locale/mulelao-1/XI18N_OBJS \
 	./usr/share/X11/locale/C/XI18N_OBJS \
 	./usr/share/X11/locale/iso8859-8/Compose \
 	./usr/share/X11/locale/nokhchi-1/XLC_LOCALE \
 	./usr/share/X11/locale/iso8859-3/XLC_LOCALE \
-	./usr/share/X11/locale/koi8-r/Compose \
+	./usr/share/X11/locale/iso8859-6/XLC_LOCALE \
 	./usr/share/X11/locale/microsoft-cp1251/XI18N_OBJS \
 	./usr/share/X11/locale/zh_CN.UTF-8/XLC_LOCALE \
 	./usr/share/X11/locale/iso8859-5/XLC_LOCALE \
 	./usr/share/X11/locale/iso8859-8/XLC_LOCALE \
 	./usr/share/X11/locale/armscii-8/Compose \
 	./usr/share/X11/locale/iso8859-4/XI18N_OBJS \
-	./usr/share/X11/locale/iso8859-3/XI18N_OBJS \
+	./usr/share/X11/locale/isiri-3342/XLC_LOCALE \
 	./usr/share/X11/locale/georgian-academy/XI18N_OBJS \
-	./usr/share/X11/locale/iso8859-14/Compose \
+	./usr/share/X11/locale/nokhchi-1/XI18N_OBJS \
 	./usr/share/X11/locale/zh_TW.big5/XI18N_OBJS \
 	./usr/share/X11/locale/iso8859-7/XLC_LOCALE \
 	./usr/share/X11/locale/am_ET.UTF-8/Compose \
@@ -164,7 +165,7 @@ FILES_libx11-data = " \
 	./usr/share/X11/locale/ru_RU.UTF-8/XLC_LOCALE \
 	./usr/share/X11/locale/iso8859-6/XI18N_OBJS \
 	./usr/share/X11/locale/zh_CN.UTF-8/XI18N_OBJS \
-	./usr/share/X11/locale/iso8859-9e/XLC_LOCALE \
+	./usr/share/X11/locale/zh_CN.gbk/XI18N_OBJS \
 	./usr/share/X11/locale/ja_JP.UTF-8/XLC_LOCALE \
 	./usr/share/X11/locale/zh_TW/XLC_LOCALE \
 	./usr/share/X11/locale/zh_CN/XI18N_OBJS \
@@ -172,37 +173,37 @@ FILES_libx11-data = " \
 	./usr/share/X11/locale/pt_BR.UTF-8/XLC_LOCALE \
 	./usr/share/X11/locale/zh_TW.big5/XLC_LOCALE \
 	./usr/share/X11/locale/km_KH.UTF-8/Compose \
-	./usr/share/X11/locale/iso8859-10/XI18N_OBJS \
+	./usr/share/X11/locale/zh_TW.UTF-8/Compose \
 	./usr/share/X11/locale/tatar-cyr/XLC_LOCALE \
 	./usr/share/X11/locale/zh_HK.UTF-8/XI18N_OBJS \
 	./usr/share/X11/locale/zh_CN.gb18030/XI18N_OBJS \
 	./usr/share/X11/locale/am_ET.UTF-8/XLC_LOCALE \
-	./usr/share/X11/locale/ko/XLC_LOCALE \
+	./usr/share/X11/locale/georgian-academy/Compose \
 	./usr/share/X11/locale/am_ET.UTF-8/XI18N_OBJS \
 	./usr/share/X11/locale/microsoft-cp1255/Compose \
-	./usr/share/X11/locale/iso8859-10/XLC_LOCALE \
+	./usr/share/X11/locale/iso8859-7/Compose \
 	./usr/share/X11/locale/iso8859-1/Compose \
 	./usr/share/X11/locale/microsoft-cp1255/XLC_LOCALE \
 	./usr/share/doc/libx11-data/changelog.Debian.gz \
-	./usr/share/X11/locale/iso8859-2/XLC_LOCALE \
+	./usr/share/X11/locale/tscii-0/Compose \
 	./usr/share/X11/locale/koi8-u/Compose \
 	./usr/share/X11/locale/ko_KR.UTF-8/Compose \
-	./usr/share/X11/locale/ibm-cp1133/XI18N_OBJS \
+	./usr/share/X11/locale/ko/XI18N_OBJS \
 	./usr/share/X11/locale/fi_FI.UTF-8/XLC_LOCALE \
 	./usr/share/X11/locale/koi8-c/Compose \
-	./usr/share/X11/locale/ja.SJIS/XI18N_OBJS \
+	./usr/share/X11/locale/iso8859-4/Compose \
 	./usr/share/X11/locale/armscii-8/XLC_LOCALE \
 	./usr/share/X11/locale/vi_VN.viscii/Compose \
 	./usr/share/X11/locale/ko_KR.UTF-8/XLC_LOCALE \
 	./usr/share/X11/locale/iso8859-11/XLC_LOCALE \
 	./usr/share/X11/locale/iso8859-3/Compose \
-	./usr/share/X11/locale/ko/XI18N_OBJS \
+	./usr/share/X11/locale/ibm-cp1133/XI18N_OBJS \
 	./usr/share/X11/locale/iscii-dev/XLC_LOCALE \
 	./usr/share/X11/locale/zh_CN.gbk/Compose \
 	./usr/share/X11/locale/zh_CN.UTF-8/Compose \
 	./usr/share/X11/locale/iso8859-6/Compose \
 	./usr/share/doc/libx11-data/changelog.gz \
-	./usr/share/X11/locale/iso8859-9/Compose \
+	./usr/share/X11/locale/th_TH.UTF-8/Compose \
 	./usr/share/X11/locale/sr_CS.UTF-8/XI18N_OBJS \
 	./usr/share/X11/locale/koi8-u/XLC_LOCALE \
 	./usr/share/doc/libx11-data/copyright \
@@ -216,17 +217,16 @@ FILES_libx11-data = " \
 	./usr/share/X11/locale/iso8859-15/Compose \
 	./usr/share/X11/locale/iso8859-4/XLC_LOCALE \
 	./usr/share/X11/locale/ko_KR.UTF-8/XI18N_OBJS \
-	./usr/share/X11/locale/tscii-0/Compose \
+	./usr/share/X11/locale/iso8859-2/XLC_LOCALE \
 	./usr/share/X11/locale/sr_CS.UTF-8/Compose \
-	./usr/share/X11/locale/iso8859-4/Compose \
+	./usr/share/X11/locale/ja.SJIS/XI18N_OBJS \
 	./usr/share/X11/locale/tatar-cyr/Compose \
 	./usr/share/X11/locale/georgian-ps/XI18N_OBJS \
 	./usr/share/X11/locale/vi_VN.viscii/XI18N_OBJS \
 	./usr/share/X11/locale/zh_HK.big5/XI18N_OBJS \
 	./usr/share/X11/locale/iso8859-2/Compose \
 	./usr/share/X11/locale/el_GR.UTF-8/XI18N_OBJS \
-	./usr/share/X11/locale/ja.JIS/Compose \
-	./usr/share/X11/locale/zh_TW.UTF-8/XI18N_OBJS\
+	./usr/share/X11/locale/ja.JIS/Compose\
 "
 FILES_${PN}-dev = " \
 	./usr/lib/arm-linux-gnueabihf/pkgconfig/x11.pc \
@@ -234,7 +234,7 @@ FILES_${PN}-dev = " \
 	./usr/include/X11/XlibConf.h \
 	./usr/include/X11/ImUtil.h \
 	./usr/include/X11/Xlib.h \
-	./usr/share/doc/libx11-dev/changelog.gz \
+	./usr/share/doc/libx11-dev/changelog.Debian.gz \
 	./usr/lib/arm-linux-gnueabihf/libX11.so \
 	./usr/include/X11/Xregion.h \
 	./usr/share/doc/libx11-dev/copyright \
@@ -244,8 +244,8 @@ FILES_${PN}-dev = " \
 	./usr/include/X11/Xlocale.h \
 	./usr/lib/arm-linux-gnueabihf/libX11.a \
 	./usr/include/X11/Xcms.h \
-	./usr/share/doc/libx11-dev/changelog.Debian.gz \
-	./usr/include/X11/cursorfont.h\
+	./usr/include/X11/cursorfont.h \
+	./usr/share/doc/libx11-dev/changelog.gz\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"
