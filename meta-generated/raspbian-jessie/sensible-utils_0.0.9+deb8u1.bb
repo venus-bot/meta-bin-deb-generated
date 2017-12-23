@@ -1,11 +1,11 @@
 PACKAGES = "sensible-utils"
 PROVIDES = "sensible-utils"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/s/sensible-utils/sensible-utils_0.0.9_all.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/s/sensible-utils/sensible-utils_0.0.9+deb8u1_all.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_sensible-utils = "sensible-utils_0.0.9_all.deb"
-SRC_URI[deb0.sha256sum] = "c848f80734e61379b5baac315c2342b2fea18d246074e6f5510fc643f5024978"
-SRC_URI[deb0.md5sum] = "1b8ddff8ac3690dfce889b580779dc1b"
+DEBFILENAME_sensible-utils = "sensible-utils_0.0.9+deb8u1_all.deb"
+SRC_URI[deb0.sha256sum] = "0de3d1447f16851862e57951a6779c5adc9a97d0438092b2761c0d989c64ae9c"
+SRC_URI[deb0.md5sum] = "c538301ccd44538097ebe8ecf883534f"
 
 
 inherit deb_group
