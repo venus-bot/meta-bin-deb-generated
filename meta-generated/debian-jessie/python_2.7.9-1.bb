@@ -1,29 +1,19 @@
-PACKAGES = "libpython-dev libpython-stdlib python python-dev"
-PROVIDES = "libpython-dev libpython-stdlib python python-dev"
+PACKAGES = "libpython-stdlib python"
+PROVIDES = "libpython-stdlib python"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/p/python-defaults/libpython-dev_2.7.9-1_armhf.deb;unpack=0;name=deb0\
-	http://ftp.de.debian.org/debian/pool/main/p/python-defaults/libpython-stdlib_2.7.9-1_armhf.deb;unpack=0;name=deb1\
-	http://ftp.de.debian.org/debian/pool/main/p/python-defaults/python_2.7.9-1_armhf.deb;unpack=0;name=deb2\
-	http://ftp.de.debian.org/debian/pool/main/p/python-defaults/python-dev_2.7.9-1_armhf.deb;unpack=0;name=deb3\
+	http://ftp.de.debian.org/debian/pool/main/p/python-defaults/libpython-stdlib_2.7.9-1_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/p/python-defaults/python_2.7.9-1_armhf.deb;unpack=0;name=deb1\
 "
-DEBFILENAME_libpython-dev = "libpython-dev_2.7.9-1_armhf.deb"
-SRC_URI[deb0.sha256sum] = "2dbd734efe40df72a09dd643fdd0c7107ff29cc8216d6b5b06e80542ee1eb430"
-SRC_URI[deb0.md5sum] = "6aedea17ea268b149c368b03a1d57314"
 DEBFILENAME_libpython-stdlib = "libpython-stdlib_2.7.9-1_armhf.deb"
-SRC_URI[deb1.sha256sum] = "34bde3ba85f2b2851f3be9c38643cdf9b1d6ccc083601a45008b880169b8c08d"
-SRC_URI[deb1.md5sum] = "837885b5ed1129a6906257beefae0ff4"
+SRC_URI[deb0.sha256sum] = "34bde3ba85f2b2851f3be9c38643cdf9b1d6ccc083601a45008b880169b8c08d"
+SRC_URI[deb0.md5sum] = "837885b5ed1129a6906257beefae0ff4"
 DEBFILENAME_python = "python_2.7.9-1_armhf.deb"
-SRC_URI[deb2.sha256sum] = "ef6cb9125827ed5bf39f1a28c49a685f97dfd8ea190fdba90b5caa1bca9253ae"
-SRC_URI[deb2.md5sum] = "bfdd1daca9ce7046c5af26649ff15276"
-DEBFILENAME_python-dev = "python-dev_2.7.9-1_armhf.deb"
-SRC_URI[deb3.sha256sum] = "37d703fdbef4830035a6004b2671e2975dc81ab8e70df499ee69933d99637293"
-SRC_URI[deb3.md5sum] = "fb132a4d1e17e570c652d8224c93d6cc"
+SRC_URI[deb1.sha256sum] = "ef6cb9125827ed5bf39f1a28c49a685f97dfd8ea190fdba90b5caa1bca9253ae"
+SRC_URI[deb1.md5sum] = "bfdd1daca9ce7046c5af26649ff15276"
 
-RDEPENDS_lib${PN}-dev = "libpython2.7-dev (>= 2.7.9-1~)"
 RDEPENDS_lib${PN}-stdlib = "libpython2.7-stdlib (>= 2.7.9-1~)"
 RDEPENDS_${PN} = "python2.7 (>= 2.7.9-1~) libpython-stdlib (= 2.7.9-1)"
-RDEPENDS_${PN}-dev = "python (= 2.7.9-1) libpython-dev (= 2.7.9-1) python2.7-dev (>= 2.7.9-1~)"
-DEPENDS = "python2.7 libpython2.7-dev python2.7-dev libpython2.7-stdlib"
+DEPENDS = "python2.7 libpython2.7-stdlib"
 
 
 inherit deb_group
@@ -33,13 +23,6 @@ INHIBIT_DEFAULT_DEPS = "1"
 INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
-FILES_libpython-dev = " \
-	./usr/share/doc/libpython-dev/README.Debian \
-	./usr/bin/arm-linux-gnueabihf-python-config \
-	./usr/share/man/man1/arm-linux-gnueabihf-python-config.1.gz \
-	./usr/share/doc/libpython-dev/changelog.Debian.gz \
-	./usr/share/doc/libpython-dev/copyright\
-"
 FILES_libpython-stdlib = " \
 	./usr/share/doc/libpython-stdlib/changelog.Debian.gz \
 	./usr/share/doc/libpython-stdlib/copyright \
@@ -96,15 +79,6 @@ FILES_${PN} = " \
 	./usr/share/doc/python/python-policy.html/ch-python.html \
 	./usr/share/doc/python/python-policy.html/ch-module_packages.html \
 	./usr/share/doc/python/python-policy.html/ap-upgrade.html\
-"
-FILES_${PN}-dev = " \
-	./usr/share/doc/python-dev \
-	./usr/share/man/man1/python-config.1.gz \
-	./usr/lib/arm-linux-gnueabihf/pkgconfig/python2.pc \
-	./usr/bin/python2-config \
-	./usr/bin/python-config \
-	./usr/lib/arm-linux-gnueabihf/pkgconfig/python.pc \
-	./usr/share/man/man1/python2-config.1.gz\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

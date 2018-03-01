@@ -1,43 +1,28 @@
-PACKAGES = "libpython2.7 libpython2.7-dev libpython2.7-minimal libpython2.7-stdlib python2.7 python2.7-dev python2.7-minimal"
-PROVIDES = "libpython2.7 libpython2.7-dev libpython2.7-minimal libpython2.7-stdlib python2.7 python2.7-dev python2.7-minimal"
+PACKAGES = "libpython2.7-minimal libpython2.7-stdlib python2.7 python2.7-minimal"
+PROVIDES = "libpython2.7-minimal libpython2.7-stdlib python2.7 python2.7-minimal"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/p/python2.7/libpython2.7_2.7.9-2+deb8u1_armhf.deb;unpack=0;name=deb0\
-	http://ftp.de.debian.org/debian/pool/main/p/python2.7/libpython2.7-dev_2.7.9-2+deb8u1_armhf.deb;unpack=0;name=deb1\
-	http://ftp.de.debian.org/debian/pool/main/p/python2.7/libpython2.7-minimal_2.7.9-2+deb8u1_armhf.deb;unpack=0;name=deb2\
-	http://ftp.de.debian.org/debian/pool/main/p/python2.7/libpython2.7-stdlib_2.7.9-2+deb8u1_armhf.deb;unpack=0;name=deb3\
-	http://ftp.de.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.9-2+deb8u1_armhf.deb;unpack=0;name=deb4\
-	http://ftp.de.debian.org/debian/pool/main/p/python2.7/python2.7-dev_2.7.9-2+deb8u1_armhf.deb;unpack=0;name=deb5\
-	http://ftp.de.debian.org/debian/pool/main/p/python2.7/python2.7-minimal_2.7.9-2+deb8u1_armhf.deb;unpack=0;name=deb6\
+	http://ftp.de.debian.org/debian/pool/main/p/python2.7/libpython2.7-minimal_2.7.9-2+deb8u1_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/p/python2.7/libpython2.7-stdlib_2.7.9-2+deb8u1_armhf.deb;unpack=0;name=deb1\
+	http://ftp.de.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.9-2+deb8u1_armhf.deb;unpack=0;name=deb2\
+	http://ftp.de.debian.org/debian/pool/main/p/python2.7/python2.7-minimal_2.7.9-2+deb8u1_armhf.deb;unpack=0;name=deb3\
 "
-DEBFILENAME_libpython2.7 = "libpython2.7_2.7.9-2+deb8u1_armhf.deb"
-SRC_URI[deb0.sha256sum] = "2856a2d235ae1826303396b2182c82d9c7108648b3f1de2b47ecccb527e43f59"
-SRC_URI[deb0.md5sum] = "53015fb3358eb5cb541fe5124fb4fa42"
-DEBFILENAME_libpython2.7-dev = "libpython2.7-dev_2.7.9-2+deb8u1_armhf.deb"
-SRC_URI[deb1.sha256sum] = "e697cff00ce4c4c3ce681558585fc1052e4e273e4469cec010a6fdc6e3c31ac6"
-SRC_URI[deb1.md5sum] = "4b8ad4dbe05d7b60ddae043a24da266e"
 DEBFILENAME_libpython2.7-minimal = "libpython2.7-minimal_2.7.9-2+deb8u1_armhf.deb"
-SRC_URI[deb2.sha256sum] = "997f1a1158f618eac91d4b7a21c5ba6f13593695cca4e21e8453f4eeba5061da"
-SRC_URI[deb2.md5sum] = "e95379e76baa5ad2a00db494d60f12df"
+SRC_URI[deb0.sha256sum] = "997f1a1158f618eac91d4b7a21c5ba6f13593695cca4e21e8453f4eeba5061da"
+SRC_URI[deb0.md5sum] = "e95379e76baa5ad2a00db494d60f12df"
 DEBFILENAME_libpython2.7-stdlib = "libpython2.7-stdlib_2.7.9-2+deb8u1_armhf.deb"
-SRC_URI[deb3.sha256sum] = "0257df704a632b51bfdf85778ef0724deaf44e7051cb0cdb4062ee72b89f6b95"
-SRC_URI[deb3.md5sum] = "c6040be00f507493ad5f4e81e9c66b89"
+SRC_URI[deb1.sha256sum] = "0257df704a632b51bfdf85778ef0724deaf44e7051cb0cdb4062ee72b89f6b95"
+SRC_URI[deb1.md5sum] = "c6040be00f507493ad5f4e81e9c66b89"
 DEBFILENAME_python2.7 = "python2.7_2.7.9-2+deb8u1_armhf.deb"
-SRC_URI[deb4.sha256sum] = "ffb6e7a6e47bd9d48f112d1eb37de2542ee286aeb5135913a3e57b9387dd9f85"
-SRC_URI[deb4.md5sum] = "886a305530f75e374936cd60e9d05595"
-DEBFILENAME_python2.7-dev = "python2.7-dev_2.7.9-2+deb8u1_armhf.deb"
-SRC_URI[deb5.sha256sum] = "4fa9b26d0ee8049ea156de7dcbdf103dd854b7330e5d572e8aa80fcf6e58b855"
-SRC_URI[deb5.md5sum] = "5ac94ded1bd15d99a05330bd746b6f28"
+SRC_URI[deb2.sha256sum] = "ffb6e7a6e47bd9d48f112d1eb37de2542ee286aeb5135913a3e57b9387dd9f85"
+SRC_URI[deb2.md5sum] = "886a305530f75e374936cd60e9d05595"
 DEBFILENAME_python2.7-minimal = "python2.7-minimal_2.7.9-2+deb8u1_armhf.deb"
-SRC_URI[deb6.sha256sum] = "2389e2e04357952642164020ec8d82a0bea84c3d17ec0faacec71f493a39a0ec"
-SRC_URI[deb6.md5sum] = "bf2eb6652d8ecb02e5792a4a9adf34fe"
+SRC_URI[deb3.sha256sum] = "2389e2e04357952642164020ec8d82a0bea84c3d17ec0faacec71f493a39a0ec"
+SRC_URI[deb3.md5sum] = "bf2eb6652d8ecb02e5792a4a9adf34fe"
 
-RDEPENDS_lib${PN} = "libpython2.7-stdlib (= 2.7.9-2+deb8u1) libc6 (>= 2.15) zlib1g (>= 1:1.2.0)"
-RDEPENDS_lib${PN}-dev = "libpython2.7-stdlib (= 2.7.9-2+deb8u1) libpython2.7 (= 2.7.9-2+deb8u1) libexpat1-dev"
 RDEPENDS_lib${PN}-stdlib = "libpython2.7-minimal (= 2.7.9-2+deb8u1) mime-support libbz2-1.0 libc6 (>= 2.15) libdb5.3 libexpat1 (>= 2.1~beta3) libffi6 (>= 3.0.4) libncursesw5 (>= 5.6+20070908) libreadline6 (>= 6.0) libsqlite3-0 (>= 3.5.9) libssl1.0.0 (>= 1.0.1) libtinfo5"
 RDEPENDS_${PN} = "python2.7-minimal (= 2.7.9-2+deb8u1) libpython2.7-stdlib (= 2.7.9-2+deb8u1) mime-support"
-RDEPENDS_${PN}-dev = "python2.7 (= 2.7.9-2+deb8u1) libpython2.7-dev (= 2.7.9-2+deb8u1) libpython2.7 (= 2.7.9-2+deb8u1) libexpat1-dev"
 RDEPENDS_${PN}-minimal = "libpython2.7-minimal (= 2.7.9-2+deb8u1) zlib1g (>= 1:1.2.0)"
-DEPENDS = "libssl1.0.0 libexpat1 libncursesw5 libtinfo5 libffi6 libsqlite3-0 libreadline6 libexpat1-dev libc6 mime-support libbz2-1.0 libdb5.3 zlib1g"
+DEPENDS = "libssl1.0.0 libexpat1 libncursesw5 libtinfo5 libffi6 libsqlite3-0 libreadline6 libdb5.3 libc6 mime-support libbz2-1.0 zlib1g"
 
 
 inherit deb_group
@@ -47,126 +32,6 @@ INHIBIT_DEFAULT_DEPS = "1"
 INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
-FILES_libpython2.7 = " \
-	./usr/lib/arm-linux-gnueabihf/libpython2.7.so.1.0 \
-	./usr/lib/arm-linux-gnueabihf/libpython2.7.so.1 \
-	./usr/share/lintian/overrides/libpython2.7 \
-	./usr/share/doc/libpython2.7 \
-	./usr/lib/python2.7/config-arm-linux-gnueabihf/libpython2.7.so\
-"
-FILES_libpython2.7-dev = " \
-	./usr/include/python2.7/funcobject.h \
-	./usr/lib/python2.7/config-arm-linux-gnueabihf/Setup.local \
-	./usr/include/python2.7/pystrtod.h \
-	./usr/lib/python2.7/config-arm-linux-gnueabihf/libpython2.7.a \
-	./usr/include/python2.7/pymem.h \
-	./usr/include/python2.7/eval.h \
-	./usr/include/python2.7/weakrefobject.h \
-	./usr/include/python2.7/setobject.h \
-	./usr/include/python2.7/pyconfig.h \
-	./usr/lib/arm-linux-gnueabihf/pkgconfig/python-2.7.pc \
-	./usr/include/python2.7/patchlevel.h \
-	./usr/include/python2.7/pydebug.h \
-	./usr/include/python2.7/Python-ast.h \
-	./usr/include/python2.7/ceval.h \
-	./usr/lib/python2.7/config-arm-linux-gnueabihf/Setup.config \
-	./usr/include/python2.7/sliceobject.h \
-	./usr/include/python2.7/pgenheaders.h \
-	./usr/include/python2.7/pyctype.h \
-	./usr/include/python2.7/ast.h \
-	./usr/lib/python2.7/config-arm-linux-gnueabihf/config.c.in \
-	./usr/include/python2.7/cobject.h \
-	./usr/include/python2.7/sysmodule.h \
-	./usr/include/python2.7/pystate.h \
-	./usr/include/python2.7/code.h \
-	./usr/include/python2.7/listobject.h \
-	./usr/include/python2.7/pymath.h \
-	./usr/include/python2.7/frameobject.h \
-	./usr/include/python2.7/bytearrayobject.h \
-	./usr/include/python2.7/Python.h \
-	./usr/include/python2.7/grammar.h \
-	./usr/include/python2.7/fileobject.h \
-	./usr/include/python2.7/node.h \
-	./usr/include/python2.7/floatobject.h \
-	./usr/include/python2.7/iterobject.h \
-	./usr/include/python2.7/warnings.h \
-	./usr/include/python2.7/compile.h \
-	./usr/include/python2.7/codecs.h \
-	./usr/include/python2.7/pyfpe.h \
-	./usr/include/python2.7/pygetopt.h \
-	./usr/lib/python2.7/config-arm-linux-gnueabihf/makesetup \
-	./usr/include/python2.7/token.h \
-	./usr/include/python2.7/import.h \
-	./usr/include/python2.7/rangeobject.h \
-	./usr/lib/arm-linux-gnueabihf/libpython2.7.so \
-	./usr/lib/python2.7/config-arm-linux-gnueabihf/install-sh \
-	./usr/lib/python2.7/config-arm-linux-gnueabihf/Makefile \
-	./usr/include/python2.7/genobject.h \
-	./usr/include/python2.7/moduleobject.h \
-	./usr/include/python2.7/ucnhash.h \
-	./usr/include/python2.7/asdl.h \
-	./usr/lib/python2.7/config-arm-linux-gnueabihf/config.c \
-	./usr/include/python2.7/bytesobject.h \
-	./usr/include/python2.7/longobject.h \
-	./usr/include/python2.7/traceback.h \
-	./usr/include/python2.7/descrobject.h \
-	./usr/include/python2.7/modsupport.h \
-	./usr/include/python2.7/pycapsule.h \
-	./usr/include/python2.7/unicodeobject.h \
-	./usr/include/python2.7/objimpl.h \
-	./usr/include/python2.7/abstract.h \
-	./usr/include/python2.7/bytes_methods.h \
-	./usr/bin/arm-linux-gnueabihf-python2.7-config \
-	./usr/share/doc/libpython2.7-dev \
-	./usr/include/python2.7/pyarena.h \
-	./usr/lib/arm-linux-gnueabihf/libpython2.7.a \
-	./usr/include/python2.7/intrcheck.h \
-	./usr/include/python2.7/bitset.h \
-	./usr/include/python2.7/opcode.h \
-	./usr/include/python2.7/complexobject.h \
-	./usr/include/python2.7/structseq.h \
-	./usr/share/man/man1/arm-linux-gnueabihf-python2.7-config.1.gz \
-	./usr/include/arm-linux-gnueabihf/python2.7/pyconfig.h \
-	./usr/include/python2.7/cStringIO.h \
-	./usr/include/python2.7/methodobject.h \
-	./usr/include/python2.7/boolobject.h \
-	./usr/include/python2.7/stringobject.h \
-	./usr/include/python2.7/dictobject.h \
-	./usr/lib/python2.7/config-arm-linux-gnueabihf/Setup \
-	./usr/include/python2.7/pyerrors.h \
-	./usr/include/python2.7/bufferobject.h \
-	./usr/include/python2.7/structmember.h \
-	./usr/include/python2.7/intobject.h \
-	./usr/include/python2.7/pythread.h \
-	./usr/include/python2.7/object.h \
-	./usr/include/python2.7/enumobject.h \
-	./usr/include/python2.7/symtable.h \
-	./usr/lib/python2.7/config-arm-linux-gnueabihf/python.o \
-	./usr/lib/python2.7/config-arm-linux-gnueabihf/libpython2.7-pic.a \
-	./usr/include/python2.7/dtoa.h \
-	./usr/include/python2.7/pymacconfig.h \
-	./usr/include/python2.7/osdefs.h \
-	./usr/include/python2.7/errcode.h \
-	./usr/include/python2.7/tupleobject.h \
-	./usr/include/python2.7/pyport.h \
-	./usr/include/python2.7/pyexpat.h \
-	./usr/include/python2.7/timefuncs.h \
-	./usr/include/python2.7/metagrammar.h \
-	./usr/share/lintian/overrides/libpython2.7-dev \
-	./usr/include/python2.7/parsetok.h \
-	./usr/include/python2.7/cellobject.h \
-	./usr/include/python2.7/memoryobject.h \
-	./usr/include/python2.7/pymactoolbox.h \
-	./usr/include/python2.7/pystrcmp.h \
-	./usr/include/python2.7/pythonrun.h \
-	./usr/include/python2.7/marshal.h \
-	./usr/include/python2.7/datetime.h \
-	./usr/include/python2.7/classobject.h \
-	./usr/include/python2.7/py_curses.h \
-	./usr/include/python2.7/graminit.h \
-	./usr/include/python2.7/pgen.h \
-	./usr/include/python2.7/longintrepr.h\
-"
 FILES_libpython2.7-minimal = " \
 	./usr/lib/python2.7/collections.py \
 	./usr/lib/python2.7/types.py \
@@ -849,17 +714,6 @@ FILES_${PN} = " \
 	./usr/bin/pdb2.7 \
 	./usr/bin/pydoc2.7 \
 	./usr/share/man/man1/2to3-2.7.1.gz\
-"
-FILES_${PN}-dev = " \
-	./usr/share/doc/python2.7/arm-linux-gnueabihf/test_results.gz \
-	./usr/share/man/man1/python2.7-config.1.gz \
-	./usr/share/doc/python2.7-dev \
-	./usr/share/doc/python2.7/README.maintainers \
-	./usr/share/doc/python2.7/arm-linux-gnueabihf/pybench.log.gz \
-	./usr/share/doc/python2.7/gdbinit.gz \
-	./usr/bin/python2.7-config \
-	./usr/share/doc/python2.7/README.valgrind.gz \
-	./usr/share/doc/python2.7/HISTORY.gz\
 "
 FILES_python2.7-minimal = " \
 	./usr/bin/python2.7 \
