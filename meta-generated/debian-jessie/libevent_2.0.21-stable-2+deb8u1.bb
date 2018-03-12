@@ -44,97 +44,97 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libevent-2.0-5 = " \
-    ./usr/lib/arm-linux-gnueabihf/libevent-2.0.so.5.1.9 \
     ./usr/lib/arm-linux-gnueabihf/libevent-2.0.so.5 \
+    ./usr/lib/arm-linux-gnueabihf/libevent-2.0.so.5.1.9 \
+    ./usr/share/doc/libevent-2.0-5/changelog.Debian.gz \
     ./usr/share/doc/libevent-2.0-5/changelog.gz \
-    ./usr/share/doc/libevent-2.0-5/copyright \
-    ./usr/share/doc/libevent-2.0-5/changelog.Debian.gz\
+    ./usr/share/doc/libevent-2.0-5/copyright\
 "
 FILES_libevent-core-2.0-5 = " \
     ./usr/lib/arm-linux-gnueabihf/libevent_core-2.0.so.5 \
-    ./usr/share/doc/libevent-core-2.0-5/changelog.gz \
-    ./usr/share/doc/libevent-core-2.0-5/copyright \
     ./usr/lib/arm-linux-gnueabihf/libevent_core-2.0.so.5.1.9 \
-    ./usr/share/doc/libevent-core-2.0-5/changelog.Debian.gz\
+    ./usr/share/doc/libevent-core-2.0-5/changelog.Debian.gz \
+    ./usr/share/doc/libevent-core-2.0-5/changelog.gz \
+    ./usr/share/doc/libevent-core-2.0-5/copyright\
 "
 FILES_${PN}-dev = " \
-    ./usr/include/evhttp.h \
-    ./usr/lib/arm-linux-gnueabihf/libevent_core.so \
-    ./usr/lib/arm-linux-gnueabihf/libevent_pthreads.so \
-    ./usr/include/event2/listener.h \
-    ./usr/include/event2/dns_struct.h \
     ./usr/include/evdns.h \
-    ./usr/share/doc/libevent-dev/examples/le-proxy.c.gz \
-    ./usr/include/event2/buffer_compat.h \
-    ./usr/share/doc/libevent-dev/examples/event-test.c \
-    ./usr/lib/arm-linux-gnueabihf/libevent_extra.so \
-    ./usr/lib/arm-linux-gnueabihf/pkgconfig/libevent.pc \
-    ./usr/share/doc/libevent-dev/examples/hello-world.c \
-    ./usr/include/event2/buffer.h \
-    ./usr/share/doc/libevent-dev/examples/signal-test.c \
-    ./usr/include/event2/event_struct.h \
     ./usr/include/event.h \
-    ./usr/include/event2/bufferevent_compat.h \
-    ./usr/include/event2/keyvalq_struct.h \
-    ./usr/lib/arm-linux-gnueabihf/pkgconfig/libevent_pthreads.pc \
-    ./usr/include/event2/bufferevent_struct.h \
-    ./usr/lib/arm-linux-gnueabihf/libevent_core.a \
-    ./usr/include/event2/util.h \
-    ./usr/lib/arm-linux-gnueabihf/pkgconfig/libevent_openssl.pc \
-    ./usr/include/event2/http.h \
-    ./usr/include/event2/rpc_compat.h \
-    ./usr/share/doc/libevent-dev/examples/time-test.c \
-    ./usr/include/event2/event.h \
-    ./usr/share/doc/libevent-dev/changelog.Debian.gz \
-    ./usr/share/doc/libevent-dev/examples/http-server.c.gz \
-    ./usr/include/event2/dns.h \
-    ./usr/share/doc/libevent-dev/examples/Makefile.sample \
-    ./usr/share/doc/libevent-dev/copyright \
-    ./usr/lib/arm-linux-gnueabihf/libevent.a \
-    ./usr/include/event2/http_compat.h \
-    ./usr/share/doc/libevent-dev/whatsnew-2.0.txt.gz \
-    ./usr/include/event2/bufferevent_ssl.h \
-    ./usr/share/doc/libevent-dev/changelog.gz \
-    ./usr/lib/arm-linux-gnueabihf/libevent.so \
-    ./usr/share/doc/libevent-dev/TODO.Debian \
-    ./usr/lib/arm-linux-gnueabihf/libevent_extra.a \
-    ./usr/include/event2/http_struct.h \
-    ./usr/include/event2/event_compat.h \
-    ./usr/include/event2/rpc_struct.h \
+    ./usr/include/event2/buffer.h \
+    ./usr/include/event2/buffer_compat.h \
     ./usr/include/event2/bufferevent.h \
-    ./usr/lib/arm-linux-gnueabihf/libevent_openssl.so \
-    ./usr/lib/arm-linux-gnueabihf/libevent_openssl.a \
-    ./usr/include/evrpc.h \
+    ./usr/include/event2/bufferevent_compat.h \
+    ./usr/include/event2/bufferevent_ssl.h \
+    ./usr/include/event2/bufferevent_struct.h \
+    ./usr/include/event2/dns.h \
+    ./usr/include/event2/dns_compat.h \
+    ./usr/include/event2/dns_struct.h \
     ./usr/include/event2/event-config.h \
-    ./usr/include/evutil.h \
-    ./usr/include/event2/thread.h \
-    ./usr/share/doc/libevent-dev/examples/dns-example.c.gz \
-    ./usr/include/event2/tag_compat.h \
+    ./usr/include/event2/event.h \
+    ./usr/include/event2/event_compat.h \
+    ./usr/include/event2/event_struct.h \
+    ./usr/include/event2/http.h \
+    ./usr/include/event2/http_compat.h \
+    ./usr/include/event2/http_struct.h \
+    ./usr/include/event2/keyvalq_struct.h \
+    ./usr/include/event2/listener.h \
     ./usr/include/event2/rpc.h \
+    ./usr/include/event2/rpc_compat.h \
+    ./usr/include/event2/rpc_struct.h \
     ./usr/include/event2/tag.h \
+    ./usr/include/event2/tag_compat.h \
+    ./usr/include/event2/thread.h \
+    ./usr/include/event2/util.h \
+    ./usr/include/evhttp.h \
+    ./usr/include/evrpc.h \
+    ./usr/include/evutil.h \
+    ./usr/lib/arm-linux-gnueabihf/libevent.a \
+    ./usr/lib/arm-linux-gnueabihf/libevent.so \
+    ./usr/lib/arm-linux-gnueabihf/libevent_core.a \
+    ./usr/lib/arm-linux-gnueabihf/libevent_core.so \
+    ./usr/lib/arm-linux-gnueabihf/libevent_extra.a \
+    ./usr/lib/arm-linux-gnueabihf/libevent_extra.so \
+    ./usr/lib/arm-linux-gnueabihf/libevent_openssl.a \
+    ./usr/lib/arm-linux-gnueabihf/libevent_openssl.so \
     ./usr/lib/arm-linux-gnueabihf/libevent_pthreads.a \
-    ./usr/include/event2/dns_compat.h\
+    ./usr/lib/arm-linux-gnueabihf/libevent_pthreads.so \
+    ./usr/lib/arm-linux-gnueabihf/pkgconfig/libevent.pc \
+    ./usr/lib/arm-linux-gnueabihf/pkgconfig/libevent_openssl.pc \
+    ./usr/lib/arm-linux-gnueabihf/pkgconfig/libevent_pthreads.pc \
+    ./usr/share/doc/libevent-dev/TODO.Debian \
+    ./usr/share/doc/libevent-dev/changelog.Debian.gz \
+    ./usr/share/doc/libevent-dev/changelog.gz \
+    ./usr/share/doc/libevent-dev/copyright \
+    ./usr/share/doc/libevent-dev/examples/Makefile.sample \
+    ./usr/share/doc/libevent-dev/examples/dns-example.c.gz \
+    ./usr/share/doc/libevent-dev/examples/event-test.c \
+    ./usr/share/doc/libevent-dev/examples/hello-world.c \
+    ./usr/share/doc/libevent-dev/examples/http-server.c.gz \
+    ./usr/share/doc/libevent-dev/examples/le-proxy.c.gz \
+    ./usr/share/doc/libevent-dev/examples/signal-test.c \
+    ./usr/share/doc/libevent-dev/examples/time-test.c \
+    ./usr/share/doc/libevent-dev/whatsnew-2.0.txt.gz\
 "
 FILES_libevent-extra-2.0-5 = " \
     ./usr/lib/arm-linux-gnueabihf/libevent_extra-2.0.so.5 \
-    ./usr/share/doc/libevent-extra-2.0-5/changelog.Debian.gz \
     ./usr/lib/arm-linux-gnueabihf/libevent_extra-2.0.so.5.1.9 \
-    ./usr/share/doc/libevent-extra-2.0-5/copyright \
-    ./usr/share/doc/libevent-extra-2.0-5/changelog.gz\
+    ./usr/share/doc/libevent-extra-2.0-5/changelog.Debian.gz \
+    ./usr/share/doc/libevent-extra-2.0-5/changelog.gz \
+    ./usr/share/doc/libevent-extra-2.0-5/copyright\
 "
 FILES_libevent-openssl-2.0-5 = " \
-    ./usr/share/doc/libevent-openssl-2.0-5/changelog.gz \
-    ./usr/share/doc/libevent-openssl-2.0-5/changelog.Debian.gz \
-    ./usr/share/doc/libevent-openssl-2.0-5/copyright \
+    ./usr/lib/arm-linux-gnueabihf/libevent_openssl-2.0.so.5 \
     ./usr/lib/arm-linux-gnueabihf/libevent_openssl-2.0.so.5.1.9 \
-    ./usr/lib/arm-linux-gnueabihf/libevent_openssl-2.0.so.5\
+    ./usr/share/doc/libevent-openssl-2.0-5/changelog.Debian.gz \
+    ./usr/share/doc/libevent-openssl-2.0-5/changelog.gz \
+    ./usr/share/doc/libevent-openssl-2.0-5/copyright\
 "
 FILES_libevent-pthreads-2.0-5 = " \
-    ./usr/lib/arm-linux-gnueabihf/libevent_pthreads-2.0.so.5.1.9 \
-    ./usr/share/doc/libevent-pthreads-2.0-5/copyright \
-    ./usr/share/doc/libevent-pthreads-2.0-5/changelog.gz \
     ./usr/lib/arm-linux-gnueabihf/libevent_pthreads-2.0.so.5 \
-    ./usr/share/doc/libevent-pthreads-2.0-5/changelog.Debian.gz\
+    ./usr/lib/arm-linux-gnueabihf/libevent_pthreads-2.0.so.5.1.9 \
+    ./usr/share/doc/libevent-pthreads-2.0-5/changelog.Debian.gz \
+    ./usr/share/doc/libevent-pthreads-2.0-5/changelog.gz \
+    ./usr/share/doc/libevent-pthreads-2.0-5/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

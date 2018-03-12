@@ -19,12 +19,12 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN} = " \
-    ./usr/share/doc/libjpeg8/README.8d1 \
-    ./usr/lib/arm-linux-gnueabihf/libjpeg.so.8.4.0 \
     ./usr/lib/arm-linux-gnueabihf/libjpeg.so.8 \
-    ./usr/share/doc/libjpeg8/changelog.gz \
-    ./usr/share/doc/libjpeg8/changelog.Debian.gz \
+    ./usr/lib/arm-linux-gnueabihf/libjpeg.so.8.4.0 \
+    ./usr/share/doc/libjpeg8/README.8d1 \
     ./usr/share/doc/libjpeg8/README.gz \
+    ./usr/share/doc/libjpeg8/changelog.Debian.gz \
+    ./usr/share/doc/libjpeg8/changelog.gz \
     ./usr/share/doc/libjpeg8/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!

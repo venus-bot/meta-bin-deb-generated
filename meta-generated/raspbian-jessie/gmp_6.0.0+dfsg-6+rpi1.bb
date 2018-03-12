@@ -19,11 +19,11 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libgmp10 = " \
-    ./usr/lib/arm-linux-gnueabihf/libgmp.so.10.2.0 \
-    ./usr/share/doc/libgmp10/copyright \
     ./usr/lib/arm-linux-gnueabihf/libgmp.so.10 \
+    ./usr/lib/arm-linux-gnueabihf/libgmp.so.10.2.0 \
+    ./usr/share/doc/libgmp10/README.Debian \
     ./usr/share/doc/libgmp10/changelog.Debian.gz \
-    ./usr/share/doc/libgmp10/README.Debian\
+    ./usr/share/doc/libgmp10/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

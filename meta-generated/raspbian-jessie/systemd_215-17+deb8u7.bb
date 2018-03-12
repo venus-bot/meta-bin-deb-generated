@@ -18,8 +18,8 @@ INSANE_SKIP_${PN} += "already-stripped"
 FILES_libsystemd0 = " \
     ./lib/arm-linux-gnueabihf/libsystemd.so.0 \
     ./lib/arm-linux-gnueabihf/libsystemd.so.0.3.1 \
-    ./usr/share/doc/libsystemd0/copyright \
-    ./usr/share/doc/libsystemd0/changelog.Debian.gz\
+    ./usr/share/doc/libsystemd0/changelog.Debian.gz \
+    ./usr/share/doc/libsystemd0/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

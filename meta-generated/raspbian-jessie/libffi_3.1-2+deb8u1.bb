@@ -19,10 +19,10 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libffi6 = " \
-    ./usr/share/doc/libffi6/copyright \
+    ./usr/lib/arm-linux-gnueabihf/libffi.so.6 \
     ./usr/lib/arm-linux-gnueabihf/libffi.so.6.0.2 \
     ./usr/share/doc/libffi6/changelog.Debian.gz \
-    ./usr/lib/arm-linux-gnueabihf/libffi.so.6\
+    ./usr/share/doc/libffi6/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

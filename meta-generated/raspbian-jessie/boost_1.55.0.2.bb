@@ -23,7 +23,7 @@ RDEPENDS_lib${PN}-program-options-dev = "libboost-program-options1.55-dev"
 RDEPENDS_lib${PN}-regex-dev = "libboost-regex1.55-dev"
 RDEPENDS_lib${PN}-system-dev = "libboost-system1.55-dev"
 RDEPENDS_lib${PN}-thread-dev = "libboost-thread1.55-dev"
-DEPENDS = "libboost-program-options1.55-dev libboost-system1.55-dev libboost-thread1.55-dev libboost-regex1.55-dev"
+DEPENDS = "libboost-system1.55-dev libboost-thread1.55-dev libboost-regex1.55-dev libboost-program-options1.55-dev"
 
 
 inherit deb_group
@@ -34,8 +34,8 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libboost-program-options-dev = " \
-    ./usr/share/doc/libboost-program-options-dev/copyright \
-    ./usr/share/doc/libboost-program-options-dev/changelog.gz\
+    ./usr/share/doc/libboost-program-options-dev/changelog.gz \
+    ./usr/share/doc/libboost-program-options-dev/copyright\
 "
 FILES_libboost-regex-dev = " \
     ./usr/share/doc/libboost-regex-dev/changelog.gz \

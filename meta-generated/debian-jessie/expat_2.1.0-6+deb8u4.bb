@@ -8,7 +8,7 @@ SRC_URI[deb0.sha256sum] = "5444982b2a0e2d091e1918de2fdded3ddaad79e766fc3c984c3ad
 SRC_URI[deb0.md5sum] = "908e3ad199f6668e143d0bcd60dff879"
 
 RDEPENDS_lib${PN}1 = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0)"
-DEPENDS = "libgcc1 libc6"
+DEPENDS = "libc6 libgcc1"
 
 
 inherit deb_group
@@ -19,13 +19,13 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libexpat1 = " \
-    ./usr/share/doc/libexpat1/changelog.Debian.gz \
+    ./lib/arm-linux-gnueabihf/libexpat.so.1 \
     ./lib/arm-linux-gnueabihf/libexpat.so.1.6.0 \
     ./usr/lib/arm-linux-gnueabihf/libexpatw.so.1 \
+    ./usr/lib/arm-linux-gnueabihf/libexpatw.so.1.6.0 \
+    ./usr/share/doc/libexpat1/changelog.Debian.gz \
     ./usr/share/doc/libexpat1/changelog.gz \
-    ./lib/arm-linux-gnueabihf/libexpat.so.1 \
-    ./usr/share/doc/libexpat1/copyright \
-    ./usr/lib/arm-linux-gnueabihf/libexpatw.so.1.6.0\
+    ./usr/share/doc/libexpat1/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

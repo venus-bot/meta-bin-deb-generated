@@ -16,10 +16,10 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libpthread-stubs0-dev = " \
-    ./usr/share/doc/libpthread-stubs0-dev/copyright \
-    ./usr/share/doc/libpthread-stubs0-dev/README \
     ./usr/lib/arm-linux-gnueabihf/pkgconfig/pthread-stubs.pc \
-    ./usr/share/doc/libpthread-stubs0-dev/changelog.Debian.gz\
+    ./usr/share/doc/libpthread-stubs0-dev/README \
+    ./usr/share/doc/libpthread-stubs0-dev/changelog.Debian.gz \
+    ./usr/share/doc/libpthread-stubs0-dev/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

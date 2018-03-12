@@ -24,17 +24,17 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libhogweed2 = " \
-    ./usr/share/doc/libhogweed2 \
     ./usr/lib/arm-linux-gnueabihf/libhogweed.so.2 \
-    ./usr/lib/arm-linux-gnueabihf/libhogweed.so.2.5\
+    ./usr/lib/arm-linux-gnueabihf/libhogweed.so.2.5 \
+    ./usr/share/doc/libhogweed2\
 "
 FILES_libnettle4 = " \
-    ./usr/share/doc/libnettle4/NEWS.gz \
-    ./usr/share/doc/libnettle4/changelog.gz \
     ./usr/lib/arm-linux-gnueabihf/libnettle.so.4 \
-    ./usr/share/doc/libnettle4/README \
     ./usr/lib/arm-linux-gnueabihf/libnettle.so.4.7 \
+    ./usr/share/doc/libnettle4/NEWS.gz \
+    ./usr/share/doc/libnettle4/README \
     ./usr/share/doc/libnettle4/changelog.Debian.gz \
+    ./usr/share/doc/libnettle4/changelog.gz \
     ./usr/share/doc/libnettle4/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!

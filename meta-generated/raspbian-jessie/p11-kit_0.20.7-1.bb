@@ -8,7 +8,7 @@ SRC_URI[deb0.sha256sum] = "b6c6f686c0c91f84a3ce1ffc5dab87dd8b04e506203852b2f9817
 SRC_URI[deb0.md5sum] = "6e0651809666feb291e2a029fa274d74"
 
 RDEPENDS_lib${PN}0 = "libc6 (>= 2.16) libffi6 (>= 3.0.4)"
-DEPENDS = "libc6 libffi6"
+DEPENDS = "libffi6 libc6"
 
 
 inherit deb_group
@@ -19,12 +19,12 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libp11-kit0 = " \
-    ./usr/share/doc/libp11-kit0/copyright \
-    ./usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0 \
-    ./usr/share/doc/libp11-kit0/examples/pkcs11.conf.example \
     ./usr/lib/arm-linux-gnueabihf/libp11-kit.so.0 \
+    ./usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0 \
+    ./usr/share/doc/libp11-kit0/changelog.Debian.gz \
     ./usr/share/doc/libp11-kit0/changelog.gz \
-    ./usr/share/doc/libp11-kit0/changelog.Debian.gz\
+    ./usr/share/doc/libp11-kit0/copyright \
+    ./usr/share/doc/libp11-kit0/examples/pkcs11.conf.example\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

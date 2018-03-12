@@ -24,25 +24,25 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libncursesw5 = " \
-    ./lib/arm-linux-gnueabihf/libncursesw.so.5.9 \
     ./lib/arm-linux-gnueabihf/libncursesw.so.5 \
+    ./lib/arm-linux-gnueabihf/libncursesw.so.5.9 \
+    ./usr/lib/arm-linux-gnueabihf/libformw.so.5 \
     ./usr/lib/arm-linux-gnueabihf/libformw.so.5.9 \
     ./usr/lib/arm-linux-gnueabihf/libmenuw.so.5 \
-    ./usr/lib/arm-linux-gnueabihf/libformw.so.5 \
-    ./usr/lib/arm-linux-gnueabihf/libpanelw.so.5 \
     ./usr/lib/arm-linux-gnueabihf/libmenuw.so.5.9 \
-    ./usr/share/doc/libncursesw5 \
-    ./usr/lib/arm-linux-gnueabihf/libpanelw.so.5.9\
+    ./usr/lib/arm-linux-gnueabihf/libpanelw.so.5 \
+    ./usr/lib/arm-linux-gnueabihf/libpanelw.so.5.9 \
+    ./usr/share/doc/libncursesw5\
 "
 FILES_libtinfo5 = " \
-    ./usr/lib/arm-linux-gnueabihf/libtic.so.5 \
-    ./usr/share/doc/libtinfo5/changelog.gz \
-    ./usr/lib/arm-linux-gnueabihf/libtic.so.5.9 \
-    ./usr/share/doc/libtinfo5/copyright \
-    ./usr/share/doc/libtinfo5/changelog.Debian.gz \
-    ./lib/arm-linux-gnueabihf/libtinfo.so.5.9 \
     ./lib/arm-linux-gnueabihf/libtinfo.so.5 \
-    ./usr/share/doc/libtinfo5/TODO.Debian\
+    ./lib/arm-linux-gnueabihf/libtinfo.so.5.9 \
+    ./usr/lib/arm-linux-gnueabihf/libtic.so.5 \
+    ./usr/lib/arm-linux-gnueabihf/libtic.so.5.9 \
+    ./usr/share/doc/libtinfo5/TODO.Debian \
+    ./usr/share/doc/libtinfo5/changelog.Debian.gz \
+    ./usr/share/doc/libtinfo5/changelog.gz \
+    ./usr/share/doc/libtinfo5/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

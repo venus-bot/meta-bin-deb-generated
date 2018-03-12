@@ -13,7 +13,7 @@ SRC_URI[deb1.md5sum] = "c8f3a3dbca2e939c66a4f0756b51a599"
 
 RDEPENDS_libuuid1 = "passwd libc6 (>= 2.4)"
 RDEPENDS_uuid-dev = "libc6-dev libuuid1 (= 2.25.2-6)"
-DEPENDS = "passwd libc6 libc6-dev"
+DEPENDS = "libc6 passwd libc6-dev"
 
 
 inherit deb_group
@@ -24,32 +24,32 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libuuid1 = " \
-    ./usr/share/doc/libuuid1/copyright \
-    ./usr/share/doc/libuuid1/changelog.Debian.gz \
-    ./lib/arm-linux-gnueabihf/libuuid.so.1.3.0 \
     ./lib/arm-linux-gnueabihf/libuuid.so.1 \
-    ./usr/share/doc/libuuid1/changelog.gz\
+    ./lib/arm-linux-gnueabihf/libuuid.so.1.3.0 \
+    ./usr/share/doc/libuuid1/changelog.Debian.gz \
+    ./usr/share/doc/libuuid1/changelog.gz \
+    ./usr/share/doc/libuuid1/copyright\
 "
 FILES_uuid-dev = " \
-    ./usr/share/man/man3/uuid_copy.3.gz \
-    ./usr/lib/arm-linux-gnueabihf/pkgconfig/uuid.pc \
-    ./usr/share/man/man3/uuid_generate_random.3.gz \
     ./usr/include/uuid/uuid.h \
     ./usr/lib/arm-linux-gnueabihf/libuuid.a \
-    ./usr/share/man/man3/uuid_compare.3.gz \
-    ./usr/share/doc/uuid-dev/copyright \
-    ./usr/share/man/man3/uuid_time.3.gz \
-    ./usr/share/man/man3/uuid_is_null.3.gz \
-    ./usr/share/man/man3/uuid_unparse.3.gz \
-    ./usr/share/man/man3/uuid.3.gz \
-    ./usr/share/doc/uuid-dev/changelog.Debian.gz \
-    ./usr/share/man/man3/uuid_generate.3.gz \
     ./usr/lib/arm-linux-gnueabihf/libuuid.so \
-    ./usr/share/man/man3/uuid_generate_time_safe.3.gz \
-    ./usr/share/man/man3/uuid_generate_time.3.gz \
+    ./usr/lib/arm-linux-gnueabihf/pkgconfig/uuid.pc \
+    ./usr/share/doc/uuid-dev/changelog.Debian.gz \
     ./usr/share/doc/uuid-dev/changelog.gz \
+    ./usr/share/doc/uuid-dev/copyright \
+    ./usr/share/man/man3/uuid.3.gz \
+    ./usr/share/man/man3/uuid_clear.3.gz \
+    ./usr/share/man/man3/uuid_compare.3.gz \
+    ./usr/share/man/man3/uuid_copy.3.gz \
+    ./usr/share/man/man3/uuid_generate.3.gz \
+    ./usr/share/man/man3/uuid_generate_random.3.gz \
+    ./usr/share/man/man3/uuid_generate_time.3.gz \
+    ./usr/share/man/man3/uuid_generate_time_safe.3.gz \
+    ./usr/share/man/man3/uuid_is_null.3.gz \
     ./usr/share/man/man3/uuid_parse.3.gz \
-    ./usr/share/man/man3/uuid_clear.3.gz\
+    ./usr/share/man/man3/uuid_time.3.gz \
+    ./usr/share/man/man3/uuid_unparse.3.gz\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

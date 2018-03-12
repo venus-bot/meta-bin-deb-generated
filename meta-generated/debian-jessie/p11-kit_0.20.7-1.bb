@@ -20,11 +20,11 @@ INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libp11-kit0 = " \
     ./usr/lib/arm-linux-gnueabihf/libp11-kit.so.0 \
-    ./usr/share/doc/libp11-kit0/changelog.Debian.gz \
-    ./usr/share/doc/libp11-kit0/examples/pkcs11.conf.example \
-    ./usr/share/doc/libp11-kit0/changelog.gz \
     ./usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0 \
-    ./usr/share/doc/libp11-kit0/copyright\
+    ./usr/share/doc/libp11-kit0/changelog.Debian.gz \
+    ./usr/share/doc/libp11-kit0/changelog.gz \
+    ./usr/share/doc/libp11-kit0/copyright \
+    ./usr/share/doc/libp11-kit0/examples/pkcs11.conf.example\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

@@ -16,18 +16,18 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN} = " \
+    ./usr/share/doc/xorg-sgml-doctools/changelog.Debian.gz \
+    ./usr/share/doc/xorg-sgml-doctools/changelog.gz \
+    ./usr/share/doc/xorg-sgml-doctools/copyright \
+    ./usr/share/pkgconfig/xorg-sgml-doctools.pc \
+    ./usr/share/sgml/X11/dbs/masterdb.html.xml \
+    ./usr/share/sgml/X11/dbs/masterdb.pdf.xml \
+    ./usr/share/sgml/X11/defs.ent \
+    ./usr/share/sgml/X11/xorg-chunk.xsl \
     ./usr/share/sgml/X11/xorg-fo.xsl \
     ./usr/share/sgml/X11/xorg-xhtml.xsl \
-    ./usr/share/sgml/X11/xorg.xsl \
-    ./usr/share/doc/xorg-sgml-doctools/copyright \
     ./usr/share/sgml/X11/xorg.css \
-    ./usr/share/sgml/X11/defs.ent \
-    ./usr/share/pkgconfig/xorg-sgml-doctools.pc \
-    ./usr/share/doc/xorg-sgml-doctools/changelog.Debian.gz \
-    ./usr/share/sgml/X11/xorg-chunk.xsl \
-    ./usr/share/doc/xorg-sgml-doctools/changelog.gz \
-    ./usr/share/sgml/X11/dbs/masterdb.html.xml \
-    ./usr/share/sgml/X11/dbs/masterdb.pdf.xml\
+    ./usr/share/sgml/X11/xorg.xsl\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

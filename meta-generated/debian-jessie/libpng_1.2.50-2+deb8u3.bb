@@ -19,19 +19,19 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libpng12-0 = " \
-    ./usr/share/doc/libpng12-0/KNOWNBUG \
-    ./usr/share/doc/libpng12-0/TODO \
     ./lib/arm-linux-gnueabihf/libpng12.so.0 \
-    ./usr/share/doc/libpng12-0/changelog.gz \
-    ./usr/share/doc-base/libpng12 \
     ./lib/arm-linux-gnueabihf/libpng12.so.0.50.0 \
-    ./usr/share/doc/libpng12-0/changelog.Debian.gz \
-    ./usr/share/doc/libpng12-0/libpng-1.2.50.txt.gz \
-    ./usr/share/doc/libpng12-0/README.Debian \
     ./usr/lib/arm-linux-gnueabihf/libpng12.so.0 \
-    ./usr/share/doc/libpng12-0/README.gz \
+    ./usr/share/doc-base/libpng12 \
     ./usr/share/doc/libpng12-0/ANNOUNCE \
-    ./usr/share/doc/libpng12-0/copyright\
+    ./usr/share/doc/libpng12-0/KNOWNBUG \
+    ./usr/share/doc/libpng12-0/README.Debian \
+    ./usr/share/doc/libpng12-0/README.gz \
+    ./usr/share/doc/libpng12-0/TODO \
+    ./usr/share/doc/libpng12-0/changelog.Debian.gz \
+    ./usr/share/doc/libpng12-0/changelog.gz \
+    ./usr/share/doc/libpng12-0/copyright \
+    ./usr/share/doc/libpng12-0/libpng-1.2.50.txt.gz\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

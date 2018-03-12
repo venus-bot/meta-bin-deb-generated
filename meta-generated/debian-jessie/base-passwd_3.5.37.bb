@@ -19,23 +19,23 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN} = " \
-    ./usr/share/lintian/overrides/base-passwd \
-    ./usr/share/man/man8/update-passwd.8.gz \
-    ./usr/share/doc/base-passwd/changelog.gz \
-    ./usr/share/base-passwd/passwd.master \
-    ./usr/share/doc/base-passwd/users-and-groups.txt.gz \
-    ./usr/share/doc/base-passwd/users-and-groups.html \
     ./usr/sbin/update-passwd \
-    ./usr/share/doc/base-passwd/README \
     ./usr/share/base-passwd/group.master \
-    ./usr/share/man/pl/man8/update-passwd.8.gz \
-    ./usr/share/doc/base-passwd/copyright \
-    ./usr/share/man/ru/man8/update-passwd.8.gz \
+    ./usr/share/base-passwd/passwd.master \
     ./usr/share/doc-base/users-and-groups \
+    ./usr/share/doc/base-passwd/README \
+    ./usr/share/doc/base-passwd/changelog.gz \
+    ./usr/share/doc/base-passwd/copyright \
+    ./usr/share/doc/base-passwd/users-and-groups.html \
+    ./usr/share/doc/base-passwd/users-and-groups.txt.gz \
+    ./usr/share/lintian/overrides/base-passwd \
+    ./usr/share/man/de/man8/update-passwd.8.gz \
+    ./usr/share/man/es/man8/update-passwd.8.gz \
     ./usr/share/man/fr/man8/update-passwd.8.gz \
     ./usr/share/man/ja/man8/update-passwd.8.gz \
-    ./usr/share/man/es/man8/update-passwd.8.gz \
-    ./usr/share/man/de/man8/update-passwd.8.gz\
+    ./usr/share/man/man8/update-passwd.8.gz \
+    ./usr/share/man/pl/man8/update-passwd.8.gz \
+    ./usr/share/man/ru/man8/update-passwd.8.gz\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

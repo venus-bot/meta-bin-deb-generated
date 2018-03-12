@@ -8,7 +8,7 @@ SRC_URI[deb0.sha256sum] = "51df1c00c01d76c8d5e6c3cfde5fa84cbb7d900ce82a65036f2cc
 SRC_URI[deb0.md5sum] = "36313bc894962edb7c3223d32082bbc3"
 
 RDEPENDS_${PN}6 = "libc6 (>= 2.11) x11-common"
-DEPENDS = "libc6 x11-common"
+DEPENDS = "x11-common libc6"
 
 
 inherit deb_group
@@ -19,10 +19,10 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libice6 = " \
-    ./usr/share/doc/libice6/changelog.gz \
+    ./usr/lib/arm-linux-gnueabihf/libICE.so.6 \
     ./usr/lib/arm-linux-gnueabihf/libICE.so.6.3.0 \
     ./usr/share/doc/libice6/changelog.Debian.gz \
-    ./usr/lib/arm-linux-gnueabihf/libICE.so.6 \
+    ./usr/share/doc/libice6/changelog.gz \
     ./usr/share/doc/libice6/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!

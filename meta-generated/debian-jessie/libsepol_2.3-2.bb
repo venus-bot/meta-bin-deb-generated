@@ -19,10 +19,10 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libsepol1 = " \
-    ./usr/share/doc/libsepol1/changelog.gz \
-    ./usr/share/doc/libsepol1/copyright \
     ./lib/arm-linux-gnueabihf/libsepol.so.1 \
-    ./usr/share/doc/libsepol1/changelog.Debian.gz\
+    ./usr/share/doc/libsepol1/changelog.Debian.gz \
+    ./usr/share/doc/libsepol1/changelog.gz \
+    ./usr/share/doc/libsepol1/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

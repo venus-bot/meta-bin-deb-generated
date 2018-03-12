@@ -19,12 +19,12 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libsqlite3-0 = " \
-    ./usr/lib/arm-linux-gnueabihf/libsqlite3.so.0.8.6 \
     ./usr/lib/arm-linux-gnueabihf/libsqlite3.so.0 \
-    ./usr/share/doc/libsqlite3-0/changelog.html.gz \
+    ./usr/lib/arm-linux-gnueabihf/libsqlite3.so.0.8.6 \
     ./usr/share/doc/libsqlite3-0/README.Debian \
-    ./usr/share/doc/libsqlite3-0/changelog.gz \
     ./usr/share/doc/libsqlite3-0/changelog.Debian.gz \
+    ./usr/share/doc/libsqlite3-0/changelog.gz \
+    ./usr/share/doc/libsqlite3-0/changelog.html.gz \
     ./usr/share/doc/libsqlite3-0/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!

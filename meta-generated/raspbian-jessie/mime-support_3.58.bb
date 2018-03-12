@@ -16,28 +16,28 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN} = " \
-    ./usr/share/man/man1/edit.1.gz \
-    ./usr/bin/print \
-    ./usr/share/man/man1/compose.1.gz \
-    ./usr/lib/mime/packages/mime-support \
-    ./usr/share/man/man8/update-mime.8.gz \
-    ./usr/lib/mime/mailcap \
-    ./usr/share/doc/mime-support/changelog.gz \
-    ./etc/mime.types \
-    ./usr/share/man/man1/see.1.gz \
-    ./usr/share/man/man1/print.1.gz \
-    ./usr/bin/run-mailcap \
-    ./usr/bin/compose \
-    ./usr/share/man/man5/mailcap.5.gz \
-    ./usr/share/doc/mime-support/copyright \
-    ./usr/sbin/update-mime \
-    ./usr/share/man/man1/run-mailcap.1.gz \
-    ./usr/share/man/man5/mailcap.order.5.gz \
-    ./usr/share/bug/mime-support/presubj \
     ./etc/mailcap.order \
+    ./etc/mime.types \
+    ./usr/bin/compose \
     ./usr/bin/edit \
+    ./usr/bin/print \
+    ./usr/bin/run-mailcap \
+    ./usr/bin/see \
     ./usr/lib/mime/debian-view \
-    ./usr/bin/see\
+    ./usr/lib/mime/mailcap \
+    ./usr/lib/mime/packages/mime-support \
+    ./usr/sbin/update-mime \
+    ./usr/share/bug/mime-support/presubj \
+    ./usr/share/doc/mime-support/changelog.gz \
+    ./usr/share/doc/mime-support/copyright \
+    ./usr/share/man/man1/compose.1.gz \
+    ./usr/share/man/man1/edit.1.gz \
+    ./usr/share/man/man1/print.1.gz \
+    ./usr/share/man/man1/run-mailcap.1.gz \
+    ./usr/share/man/man1/see.1.gz \
+    ./usr/share/man/man5/mailcap.5.gz \
+    ./usr/share/man/man5/mailcap.order.5.gz \
+    ./usr/share/man/man8/update-mime.8.gz\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

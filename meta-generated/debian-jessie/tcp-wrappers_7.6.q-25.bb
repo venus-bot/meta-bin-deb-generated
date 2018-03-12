@@ -19,17 +19,17 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libwrap0 = " \
-    ./usr/share/doc/libwrap0/README.gz \
-    ./usr/share/doc/libwrap0/changelog.gz \
-    ./usr/share/man/man5/hosts_access.5.gz \
-    ./usr/share/doc/libwrap0/README.Debian \
-    ./usr/share/man/man5/hosts.deny.5.gz \
+    ./lib/arm-linux-gnueabihf/libwrap.so.0 \
     ./lib/arm-linux-gnueabihf/libwrap.so.0.7.6 \
-    ./usr/share/man/man5/hosts_options.5.gz \
+    ./usr/share/doc/libwrap0/README.Debian \
+    ./usr/share/doc/libwrap0/README.gz \
+    ./usr/share/doc/libwrap0/changelog.Debian.gz \
+    ./usr/share/doc/libwrap0/changelog.gz \
     ./usr/share/doc/libwrap0/copyright \
     ./usr/share/man/man5/hosts.allow.5.gz \
-    ./usr/share/doc/libwrap0/changelog.Debian.gz \
-    ./lib/arm-linux-gnueabihf/libwrap.so.0\
+    ./usr/share/man/man5/hosts.deny.5.gz \
+    ./usr/share/man/man5/hosts_access.5.gz \
+    ./usr/share/man/man5/hosts_options.5.gz\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

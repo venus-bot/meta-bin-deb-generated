@@ -19,14 +19,14 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN} = " \
-    ./usr/share/doc/libtasn1-6/THANKS \
+    ./usr/lib/arm-linux-gnueabihf/libtasn1.so.6 \
+    ./usr/lib/arm-linux-gnueabihf/libtasn1.so.6.3.2 \
     ./usr/share/doc/libtasn1-6/AUTHORS \
     ./usr/share/doc/libtasn1-6/NEWS.gz \
-    ./usr/lib/arm-linux-gnueabihf/libtasn1.so.6 \
+    ./usr/share/doc/libtasn1-6/README \
+    ./usr/share/doc/libtasn1-6/THANKS \
     ./usr/share/doc/libtasn1-6/changelog.Debian.gz \
-    ./usr/share/doc/libtasn1-6/copyright \
-    ./usr/lib/arm-linux-gnueabihf/libtasn1.so.6.3.2 \
-    ./usr/share/doc/libtasn1-6/README\
+    ./usr/share/doc/libtasn1-6/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

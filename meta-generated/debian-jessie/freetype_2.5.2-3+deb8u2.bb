@@ -8,7 +8,7 @@ SRC_URI[deb0.sha256sum] = "75dbd9430ea3bb67f690a3e31f5d719458bbc80ea57e61d3eeeb4
 SRC_URI[deb0.md5sum] = "81f0fd1a12488c4253730769635f5d14"
 
 RDEPENDS_lib${PN}6 = "libc6 (>= 2.11) libpng12-0 (>= 1.2.13-4) zlib1g (>= 1:1.1.4)"
-DEPENDS = "libc6 zlib1g libpng12-0"
+DEPENDS = "libc6 libpng12-0 zlib1g"
 
 
 inherit deb_group
@@ -20,15 +20,15 @@ INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libfreetype6 = " \
     ./usr/lib/arm-linux-gnueabihf/libfreetype.so.6 \
-    ./usr/share/doc/libfreetype6/copyright \
-    ./usr/share/doc/libfreetype6/CHANGES.gz \
-    ./usr/share/doc/libfreetype6/changelog.Debian.gz \
-    ./usr/share/doc/libfreetype6/ft2faq.html \
     ./usr/lib/arm-linux-gnueabihf/libfreetype.so.6.11.1 \
+    ./usr/share/doc/libfreetype6/CHANGES.gz \
     ./usr/share/doc/libfreetype6/FTL.TXT.gz \
-    ./usr/share/doc/libfreetype6/pcf/README \
     ./usr/share/doc/libfreetype6/TODO \
-    ./usr/share/doc/libfreetype6/changelog.gz\
+    ./usr/share/doc/libfreetype6/changelog.Debian.gz \
+    ./usr/share/doc/libfreetype6/changelog.gz \
+    ./usr/share/doc/libfreetype6/copyright \
+    ./usr/share/doc/libfreetype6/ft2faq.html \
+    ./usr/share/doc/libfreetype6/pcf/README\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

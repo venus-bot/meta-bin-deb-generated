@@ -19,15 +19,15 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libtiff5 = " \
-    ./usr/share/doc/libtiff5/changelog.gz \
-    ./usr/lib/arm-linux-gnueabihf/libtiff.so.5.2.0 \
-    ./usr/share/doc/libtiff5/copyright \
-    ./usr/share/doc/libtiff5/changelog.Debian.gz \
-    ./usr/share/doc/libtiff5/README.Debian \
-    ./usr/share/doc/libtiff5/README \
-    ./usr/share/lintian/overrides/libtiff5 \
     ./usr/lib/arm-linux-gnueabihf/libtiff.so.5 \
-    ./usr/share/doc/libtiff5/TODO\
+    ./usr/lib/arm-linux-gnueabihf/libtiff.so.5.2.0 \
+    ./usr/share/doc/libtiff5/README \
+    ./usr/share/doc/libtiff5/README.Debian \
+    ./usr/share/doc/libtiff5/TODO \
+    ./usr/share/doc/libtiff5/changelog.Debian.gz \
+    ./usr/share/doc/libtiff5/changelog.gz \
+    ./usr/share/doc/libtiff5/copyright \
+    ./usr/share/lintian/overrides/libtiff5\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

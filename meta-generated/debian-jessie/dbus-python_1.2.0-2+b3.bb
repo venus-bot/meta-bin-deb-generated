@@ -12,7 +12,7 @@ SRC_URI[deb1.sha256sum] = "b0e2a7c5d4dcb5cca78ad7b9cc358c4bda01a4ee9646cb441d2a2
 SRC_URI[deb1.md5sum] = "ce7b6ee8d5644139880c2126bca52ced"
 
 RDEPENDS_python-dbus = "python (>= 2.7) python (<< 2.8) libc6 (>= 2.4) libdbus-1-3 (>= 1.5.12) libdbus-glib-1-2 (>= 0.78) libglib2.0-0 (>= 2.12.0) python-dbus-dev"
-DEPENDS = "libglib2.0-0 libdbus-1-3 python libc6 libdbus-glib-1-2"
+DEPENDS = "libglib2.0-0 libc6 libdbus-glib-1-2 python libdbus-1-3"
 
 
 inherit deb_group
@@ -23,40 +23,40 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_python-dbus = " \
-    ./usr/share/doc/python-dbus/changelog.Debian.gz \
-    ./usr/lib/python2.7/dist-packages/dbus/_expat_introspect_parser.py \
-    ./usr/lib/python2.7/dist-packages/dbus/bus.py \
-    ./usr/lib/python2.7/dist-packages/dbus/__init__.py \
-    ./usr/lib/python2.7/dist-packages/dbus/mainloop/glib.py \
-    ./usr/lib/python2.7/dist-packages/dbus/glib.py \
-    ./usr/share/doc/python-dbus/README \
-    ./usr/lib/python2.7/dist-packages/dbus/lowlevel.py \
-    ./usr/lib/python2.7/dist-packages/dbus/server.py \
-    ./usr/lib/python2.7/dist-packages/dbus/connection.py \
-    ./usr/lib/python2.7/dist-packages/dbus/service.py \
-    ./usr/lib/python2.7/dist-packages/dbus/proxies.py \
-    ./usr/share/doc/python-dbus/NEWS.gz \
-    ./usr/lib/python2.7/dist-packages/dbus/_dbus.py \
-    ./usr/share/doc/python-dbus/changelog.Debian.armhf.gz \
-    ./usr/lib/python2.7/dist-packages/dbus/mainloop/__init__.py \
-    ./usr/lib/python2.7/dist-packages/dbus/exceptions.py \
-    ./usr/lib/python2.7/dist-packages/dbus/types.py \
     ./usr/lib/python2.7/dist-packages/_dbus_bindings.so \
-    ./usr/share/doc/python-dbus/changelog.gz \
-    ./usr/lib/python2.7/dist-packages/dbus/gi_service.py \
-    ./usr/lib/python2.7/dist-packages/dbus/_version.py \
-    ./usr/lib/python2.7/dist-packages/dbus/_compat.py \
-    ./usr/share/doc/python-dbus/copyright \
     ./usr/lib/python2.7/dist-packages/_dbus_glib_bindings.so \
+    ./usr/lib/python2.7/dist-packages/dbus/__init__.py \
+    ./usr/lib/python2.7/dist-packages/dbus/_compat.py \
+    ./usr/lib/python2.7/dist-packages/dbus/_dbus.py \
+    ./usr/lib/python2.7/dist-packages/dbus/_expat_introspect_parser.py \
+    ./usr/lib/python2.7/dist-packages/dbus/_version.py \
+    ./usr/lib/python2.7/dist-packages/dbus/bus.py \
+    ./usr/lib/python2.7/dist-packages/dbus/connection.py \
+    ./usr/lib/python2.7/dist-packages/dbus/decorators.py \
+    ./usr/lib/python2.7/dist-packages/dbus/exceptions.py \
+    ./usr/lib/python2.7/dist-packages/dbus/gi_service.py \
+    ./usr/lib/python2.7/dist-packages/dbus/glib.py \
     ./usr/lib/python2.7/dist-packages/dbus/gobject_service.py \
-    ./usr/lib/python2.7/dist-packages/dbus/decorators.py\
+    ./usr/lib/python2.7/dist-packages/dbus/lowlevel.py \
+    ./usr/lib/python2.7/dist-packages/dbus/mainloop/__init__.py \
+    ./usr/lib/python2.7/dist-packages/dbus/mainloop/glib.py \
+    ./usr/lib/python2.7/dist-packages/dbus/proxies.py \
+    ./usr/lib/python2.7/dist-packages/dbus/server.py \
+    ./usr/lib/python2.7/dist-packages/dbus/service.py \
+    ./usr/lib/python2.7/dist-packages/dbus/types.py \
+    ./usr/share/doc/python-dbus/NEWS.gz \
+    ./usr/share/doc/python-dbus/README \
+    ./usr/share/doc/python-dbus/changelog.Debian.armhf.gz \
+    ./usr/share/doc/python-dbus/changelog.Debian.gz \
+    ./usr/share/doc/python-dbus/changelog.gz \
+    ./usr/share/doc/python-dbus/copyright\
 "
 FILES_python-dbus-dev = " \
-    ./usr/lib/pkgconfig/dbus-python.pc \
-    ./usr/share/doc/python-dbus-dev/changelog.gz \
-    ./usr/share/doc/python-dbus-dev/copyright \
     ./usr/include/dbus-1.0/dbus/dbus-python.h \
-    ./usr/share/doc/python-dbus-dev/changelog.Debian.gz\
+    ./usr/lib/pkgconfig/dbus-python.pc \
+    ./usr/share/doc/python-dbus-dev/changelog.Debian.gz \
+    ./usr/share/doc/python-dbus-dev/changelog.gz \
+    ./usr/share/doc/python-dbus-dev/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

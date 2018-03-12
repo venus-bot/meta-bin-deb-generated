@@ -19,39 +19,39 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN}-dev = " \
-    ./usr/include/X11/Xprotostr.h \
-    ./usr/include/X11/Xos.h \
-    ./usr/include/X11/keysym.h \
-    ./usr/include/X11/Xpoll.h \
-    ./usr/include/X11/Xwindows.h \
-    ./usr/include/X11/Sunkeysym.h \
-    ./usr/include/X11/ap_keysym.h \
+    ./usr/include/X11/DECkeysym.h \
     ./usr/include/X11/HPkeysym.h \
-    ./usr/share/doc/x11proto-core-dev/x11protocol.txt.gz \
-    ./usr/share/doc/x11proto-core-dev/changelog.Debian.gz \
-    ./usr/include/X11/XWDFile.h \
-    ./usr/include/X11/Xthreads.h \
-    ./usr/include/X11/Xosdefs.h \
-    ./usr/include/X11/Xw32defs.h \
-    ./usr/include/X11/Xfuncproto.h \
+    ./usr/include/X11/Sunkeysym.h \
     ./usr/include/X11/X.h \
-    ./usr/share/doc/x11proto-core-dev/x11protocol.html \
+    ./usr/include/X11/XF86keysym.h \
+    ./usr/include/X11/XWDFile.h \
+    ./usr/include/X11/Xalloca.h \
     ./usr/include/X11/Xarch.h \
     ./usr/include/X11/Xatom.h \
-    ./usr/include/X11/Xmd.h \
-    ./usr/include/X11/Xproto.h \
-    ./usr/include/X11/Xfuncs.h \
     ./usr/include/X11/Xdefs.h \
+    ./usr/include/X11/Xfuncproto.h \
+    ./usr/include/X11/Xfuncs.h \
+    ./usr/include/X11/Xmd.h \
+    ./usr/include/X11/Xos.h \
     ./usr/include/X11/Xos_r.h \
-    ./usr/include/X11/DECkeysym.h \
-    ./usr/include/X11/keysymdef.h \
-    ./usr/share/doc/x11proto-core-dev/x11protocol.pdf.gz \
-    ./usr/share/pkgconfig/xproto.pc \
-    ./usr/include/X11/XF86keysym.h \
+    ./usr/include/X11/Xosdefs.h \
+    ./usr/include/X11/Xpoll.h \
+    ./usr/include/X11/Xproto.h \
+    ./usr/include/X11/Xprotostr.h \
+    ./usr/include/X11/Xthreads.h \
+    ./usr/include/X11/Xw32defs.h \
+    ./usr/include/X11/Xwindows.h \
     ./usr/include/X11/Xwinsock.h \
+    ./usr/include/X11/ap_keysym.h \
+    ./usr/include/X11/keysym.h \
+    ./usr/include/X11/keysymdef.h \
+    ./usr/share/doc/x11proto-core-dev/changelog.Debian.gz \
     ./usr/share/doc/x11proto-core-dev/changelog.gz \
     ./usr/share/doc/x11proto-core-dev/copyright \
-    ./usr/include/X11/Xalloca.h\
+    ./usr/share/doc/x11proto-core-dev/x11protocol.html \
+    ./usr/share/doc/x11proto-core-dev/x11protocol.pdf.gz \
+    ./usr/share/doc/x11proto-core-dev/x11protocol.txt.gz \
+    ./usr/share/pkgconfig/xproto.pc\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

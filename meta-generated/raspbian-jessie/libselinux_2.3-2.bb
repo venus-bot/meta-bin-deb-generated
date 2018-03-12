@@ -19,10 +19,10 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libselinux1 = " \
-    ./usr/share/doc/libselinux1/copyright \
-    ./usr/share/doc/libselinux1/changelog.gz \
+    ./lib/arm-linux-gnueabihf/libselinux.so.1 \
     ./usr/share/doc/libselinux1/changelog.Debian.gz \
-    ./lib/arm-linux-gnueabihf/libselinux.so.1\
+    ./usr/share/doc/libselinux1/changelog.gz \
+    ./usr/share/doc/libselinux1/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

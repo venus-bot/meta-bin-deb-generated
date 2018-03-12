@@ -22,10 +22,10 @@ FILES_libbz2-1.0 = " \
     ./lib/arm-linux-gnueabihf/libbz2.so.1 \
     ./lib/arm-linux-gnueabihf/libbz2.so.1.0 \
     ./lib/arm-linux-gnueabihf/libbz2.so.1.0.4 \
-    ./usr/share/doc/libbz2-1.0/copyright \
     ./usr/share/doc/libbz2-1.0/changelog.Debian.armhf.gz \
+    ./usr/share/doc/libbz2-1.0/changelog.Debian.gz \
     ./usr/share/doc/libbz2-1.0/changelog.gz \
-    ./usr/share/doc/libbz2-1.0/changelog.Debian.gz\
+    ./usr/share/doc/libbz2-1.0/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

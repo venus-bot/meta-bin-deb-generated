@@ -8,7 +8,7 @@ SRC_URI[deb0.sha256sum] = "0325b0949f022458bacc517536b1712f4dfb7cee0f7cec118fe76
 SRC_URI[deb0.md5sum] = "6d40756aedafd9c24bbfde30b36df525"
 
 RDEPENDS_${PN}1.1 = "libc6 (>= 2.17) libgcrypt20 (>= 1.6.0) libxml2 (>= 2.9.0)"
-DEPENDS = "libgcrypt20 libc6 libxml2"
+DEPENDS = "libc6 libgcrypt20 libxml2"
 
 
 inherit deb_group
@@ -19,21 +19,21 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libxslt1.1 = " \
-    ./usr/share/doc/libxslt1.1/changelog.Debian.gz \
-    ./usr/share/doc/libxslt1.1/copyright \
-    ./usr/share/doc/libxslt1.1/AUTHORS \
-    ./usr/share/doc/libxslt1.1/NEWS.gz \
-    ./usr/share/doc/libxslt1.1/FEATURES.gz \
-    ./usr/share/doc/libxslt1.1/README.Debian \
-    ./usr/share/doc/libxslt1.1/changelog.gz \
-    ./usr/share/doc/libxslt1.1/TODO.Debian \
-    ./usr/lib/arm-linux-gnueabihf/libxslt.so.1 \
-    ./usr/share/lintian/overrides/libxslt1.1 \
-    ./usr/share/doc/libxslt1.1/README \
-    ./usr/share/doc/libxslt1.1/TODO \
     ./usr/lib/arm-linux-gnueabihf/libexslt.so.0 \
+    ./usr/lib/arm-linux-gnueabihf/libexslt.so.0.8.17 \
+    ./usr/lib/arm-linux-gnueabihf/libxslt.so.1 \
     ./usr/lib/arm-linux-gnueabihf/libxslt.so.1.1.28 \
-    ./usr/lib/arm-linux-gnueabihf/libexslt.so.0.8.17\
+    ./usr/share/doc/libxslt1.1/AUTHORS \
+    ./usr/share/doc/libxslt1.1/FEATURES.gz \
+    ./usr/share/doc/libxslt1.1/NEWS.gz \
+    ./usr/share/doc/libxslt1.1/README \
+    ./usr/share/doc/libxslt1.1/README.Debian \
+    ./usr/share/doc/libxslt1.1/TODO \
+    ./usr/share/doc/libxslt1.1/TODO.Debian \
+    ./usr/share/doc/libxslt1.1/changelog.Debian.gz \
+    ./usr/share/doc/libxslt1.1/changelog.gz \
+    ./usr/share/doc/libxslt1.1/copyright \
+    ./usr/share/lintian/overrides/libxslt1.1\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

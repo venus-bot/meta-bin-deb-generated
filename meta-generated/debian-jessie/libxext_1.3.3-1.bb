@@ -19,11 +19,11 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libxext6 = " \
-    ./usr/share/doc/libxext6/changelog.Debian.gz \
-    ./usr/share/doc/libxext6/copyright \
-    ./usr/share/doc/libxext6/changelog.gz \
     ./usr/lib/arm-linux-gnueabihf/libXext.so.6 \
-    ./usr/lib/arm-linux-gnueabihf/libXext.so.6.4.0\
+    ./usr/lib/arm-linux-gnueabihf/libXext.so.6.4.0 \
+    ./usr/share/doc/libxext6/changelog.Debian.gz \
+    ./usr/share/doc/libxext6/changelog.gz \
+    ./usr/share/doc/libxext6/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

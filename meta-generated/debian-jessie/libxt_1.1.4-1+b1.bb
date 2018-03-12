@@ -8,7 +8,7 @@ SRC_URI[deb0.sha256sum] = "40abdb4e94de643075f46b09ab62e6b14d39fb17af1db9dbbad2c
 SRC_URI[deb0.md5sum] = "8f04c396ad766afad90d06efe22c9dea"
 
 RDEPENDS_${PN}6 = "libc6 (>= 2.7) libice6 (>= 1:1.0.0) libsm6 libx11-6"
-DEPENDS = "libice6 libc6 libsm6 libx11-6"
+DEPENDS = "libc6 libice6 libsm6 libx11-6"
 
 
 inherit deb_group
@@ -19,12 +19,12 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libxt6 = " \
-    ./usr/share/doc/libxt6/copyright \
-    ./usr/share/doc/libxt6/changelog.gz \
-    ./usr/lib/arm-linux-gnueabihf/libXt.so.6.0.0 \
     ./usr/lib/arm-linux-gnueabihf/libXt.so.6 \
+    ./usr/lib/arm-linux-gnueabihf/libXt.so.6.0.0 \
+    ./usr/share/doc/libxt6/changelog.Debian.armhf.gz \
     ./usr/share/doc/libxt6/changelog.Debian.gz \
-    ./usr/share/doc/libxt6/changelog.Debian.armhf.gz\
+    ./usr/share/doc/libxt6/changelog.gz \
+    ./usr/share/doc/libxt6/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

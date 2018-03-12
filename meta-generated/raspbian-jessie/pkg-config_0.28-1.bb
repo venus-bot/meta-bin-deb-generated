@@ -19,17 +19,17 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN} = " \
-    ./usr/share/aclocal/pkg.m4 \
-    ./usr/bin/pkg-config \
-    ./usr/share/doc/pkg-config/AUTHORS \
-    ./usr/share/man/man1/pkg-config.1.gz \
-    ./usr/share/doc/pkg-config/changelog.Debian.gz \
-    ./usr/share/doc/pkg-config/pkg-config-guide.html \
-    ./usr/share/doc/pkg-config/README \
-    ./usr/share/doc/pkg-config/copyright \
-    ./usr/share/doc/pkg-config/NEWS.gz \
     ./usr/bin/arm-unknown-linux-gnueabihf-pkg-config \
+    ./usr/bin/pkg-config \
+    ./usr/share/aclocal/pkg.m4 \
+    ./usr/share/doc/pkg-config/AUTHORS \
+    ./usr/share/doc/pkg-config/NEWS.gz \
+    ./usr/share/doc/pkg-config/README \
+    ./usr/share/doc/pkg-config/changelog.Debian.gz \
     ./usr/share/doc/pkg-config/changelog.gz \
+    ./usr/share/doc/pkg-config/copyright \
+    ./usr/share/doc/pkg-config/pkg-config-guide.html \
+    ./usr/share/man/man1/pkg-config.1.gz \
     ./usr/share/pkg-config-crosswrapper\
 "
 #FAKE LICENSE FOR TESTING!!!

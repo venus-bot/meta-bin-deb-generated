@@ -13,7 +13,7 @@ SRC_URI[deb1.md5sum] = "27db6b19be74ae9bca26d65a0a1403f5"
 
 RDEPENDS_${PN}-dev = "libxdmcp6 (= 1:1.1.1-1) x11proto-core-dev"
 RDEPENDS_${PN}6 = "libc6 (>= 2.13-28)"
-DEPENDS = "libc6 x11proto-core-dev"
+DEPENDS = "x11proto-core-dev libc6"
 
 
 inherit deb_group
@@ -24,21 +24,21 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN}-dev = " \
-    ./usr/share/doc/libxdmcp-dev/copyright \
-    ./usr/share/doc/libxdmcp-dev/xdmcp.txt.gz \
-    ./usr/lib/arm-linux-gnueabihf/libXdmcp.so \
     ./usr/include/X11/Xdmcp.h \
+    ./usr/lib/arm-linux-gnueabihf/libXdmcp.a \
+    ./usr/lib/arm-linux-gnueabihf/libXdmcp.so \
     ./usr/lib/arm-linux-gnueabihf/pkgconfig/xdmcp.pc \
     ./usr/share/doc/libxdmcp-dev/changelog.Debian.gz \
-    ./usr/lib/arm-linux-gnueabihf/libXdmcp.a \
-    ./usr/share/doc/libxdmcp-dev/changelog.gz\
+    ./usr/share/doc/libxdmcp-dev/changelog.gz \
+    ./usr/share/doc/libxdmcp-dev/copyright \
+    ./usr/share/doc/libxdmcp-dev/xdmcp.txt.gz\
 "
 FILES_libxdmcp6 = " \
-    ./usr/share/doc/libxdmcp6/changelog.Debian.gz \
-    ./usr/share/doc/libxdmcp6/copyright \
+    ./usr/lib/arm-linux-gnueabihf/libXdmcp.so.6 \
     ./usr/lib/arm-linux-gnueabihf/libXdmcp.so.6.0.0 \
+    ./usr/share/doc/libxdmcp6/changelog.Debian.gz \
     ./usr/share/doc/libxdmcp6/changelog.gz \
-    ./usr/lib/arm-linux-gnueabihf/libXdmcp.so.6\
+    ./usr/share/doc/libxdmcp6/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

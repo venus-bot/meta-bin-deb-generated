@@ -30,31 +30,31 @@ INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_dconf-gsettings-backend = " \
     ./usr/lib/arm-linux-gnueabihf/gio/modules/libdconfsettings.so \
-    ./usr/share/doc/dconf-gsettings-backend/NEWS.gz \
     ./usr/share/doc/dconf-gsettings-backend/NEWS.Debian.gz \
+    ./usr/share/doc/dconf-gsettings-backend/NEWS.gz \
     ./usr/share/doc/dconf-gsettings-backend/README \
     ./usr/share/doc/dconf-gsettings-backend/changelog.Debian.gz \
     ./usr/share/doc/dconf-gsettings-backend/copyright\
 "
 FILES_dconf-service = " \
-    ./usr/share/doc/dconf-service/README \
-    ./usr/share/dbus-1/services/ca.desrt.dconf.service \
-    ./usr/share/dbus-1/services/ca.desrt.dconf-editor.service \
-    ./usr/share/doc/dconf-service/NEWS.Debian.gz \
-    ./usr/share/man/man1/dconf-service.1.gz \
     ./usr/lib/dconf/dconf-service \
-    ./usr/share/doc/dconf-service/changelog.Debian.gz \
+    ./usr/share/dbus-1/services/ca.desrt.dconf-editor.service \
+    ./usr/share/dbus-1/services/ca.desrt.dconf.service \
+    ./usr/share/doc/dconf-service/NEWS.Debian.gz \
     ./usr/share/doc/dconf-service/NEWS.gz \
-    ./usr/share/doc/dconf-service/copyright\
+    ./usr/share/doc/dconf-service/README \
+    ./usr/share/doc/dconf-service/changelog.Debian.gz \
+    ./usr/share/doc/dconf-service/copyright \
+    ./usr/share/man/man1/dconf-service.1.gz\
 "
 FILES_libdconf1 = " \
-    ./usr/lib/arm-linux-gnueabihf/libdconf.so.1.0.0 \
-    ./usr/share/doc/libdconf1/changelog.Debian.gz \
-    ./usr/share/doc/libdconf1/copyright \
     ./usr/lib/arm-linux-gnueabihf/libdconf.so.1 \
+    ./usr/lib/arm-linux-gnueabihf/libdconf.so.1.0.0 \
     ./usr/share/doc/libdconf1/NEWS.Debian.gz \
     ./usr/share/doc/libdconf1/NEWS.gz \
-    ./usr/share/doc/libdconf1/README\
+    ./usr/share/doc/libdconf1/README \
+    ./usr/share/doc/libdconf1/changelog.Debian.gz \
+    ./usr/share/doc/libdconf1/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

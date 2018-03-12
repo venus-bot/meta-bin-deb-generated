@@ -18,7 +18,7 @@ SRC_URI[deb2.md5sum] = "b355763328bec13cbbd6591da97c24d2"
 RDEPENDS_dconf-gsettings-backend = "libc6 (>= 2.4) libglib2.0-0 (>= 2.39.1) dconf-service (>= 0.22.0-1) dconf-service (<< 0.22.0-1.1~) libdconf1 (= 0.22.0-1)"
 RDEPENDS_dconf-service = "libc6 (>= 2.4) libglib2.0-0 (>= 2.39.1) libdconf1 (= 0.22.0-1)"
 RDEPENDS_libdconf1 = "libc6 (>= 2.4) libglib2.0-0 (>= 2.39.1)"
-DEPENDS = "libc6 libglib2.0-0"
+DEPENDS = "libglib2.0-0 libc6"
 
 
 inherit deb_group
@@ -29,32 +29,32 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_dconf-gsettings-backend = " \
-    ./usr/share/doc/dconf-gsettings-backend/copyright \
-    ./usr/share/doc/dconf-gsettings-backend/changelog.Debian.gz \
-    ./usr/share/doc/dconf-gsettings-backend/README \
+    ./usr/lib/arm-linux-gnueabihf/gio/modules/libdconfsettings.so \
     ./usr/share/doc/dconf-gsettings-backend/NEWS.Debian.gz \
     ./usr/share/doc/dconf-gsettings-backend/NEWS.gz \
-    ./usr/lib/arm-linux-gnueabihf/gio/modules/libdconfsettings.so\
+    ./usr/share/doc/dconf-gsettings-backend/README \
+    ./usr/share/doc/dconf-gsettings-backend/changelog.Debian.gz \
+    ./usr/share/doc/dconf-gsettings-backend/copyright\
 "
 FILES_dconf-service = " \
-    ./usr/share/doc/dconf-service/NEWS.Debian.gz \
-    ./usr/share/doc/dconf-service/changelog.Debian.gz \
-    ./usr/share/dbus-1/services/ca.desrt.dconf-editor.service \
-    ./usr/share/doc/dconf-service/copyright \
-    ./usr/share/doc/dconf-service/NEWS.gz \
-    ./usr/share/man/man1/dconf-service.1.gz \
     ./usr/lib/dconf/dconf-service \
+    ./usr/share/dbus-1/services/ca.desrt.dconf-editor.service \
     ./usr/share/dbus-1/services/ca.desrt.dconf.service \
-    ./usr/share/doc/dconf-service/README\
+    ./usr/share/doc/dconf-service/NEWS.Debian.gz \
+    ./usr/share/doc/dconf-service/NEWS.gz \
+    ./usr/share/doc/dconf-service/README \
+    ./usr/share/doc/dconf-service/changelog.Debian.gz \
+    ./usr/share/doc/dconf-service/copyright \
+    ./usr/share/man/man1/dconf-service.1.gz\
 "
 FILES_libdconf1 = " \
-    ./usr/share/doc/libdconf1/changelog.Debian.gz \
-    ./usr/share/doc/libdconf1/copyright \
-    ./usr/lib/arm-linux-gnueabihf/libdconf.so.1.0.0 \
-    ./usr/share/doc/libdconf1/NEWS.gz \
-    ./usr/share/doc/libdconf1/NEWS.Debian.gz \
     ./usr/lib/arm-linux-gnueabihf/libdconf.so.1 \
-    ./usr/share/doc/libdconf1/README\
+    ./usr/lib/arm-linux-gnueabihf/libdconf.so.1.0.0 \
+    ./usr/share/doc/libdconf1/NEWS.Debian.gz \
+    ./usr/share/doc/libdconf1/NEWS.gz \
+    ./usr/share/doc/libdconf1/README \
+    ./usr/share/doc/libdconf1/changelog.Debian.gz \
+    ./usr/share/doc/libdconf1/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

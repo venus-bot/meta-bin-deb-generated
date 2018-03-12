@@ -8,7 +8,7 @@ SRC_URI[deb0.sha256sum] = "3225bb209c515470e174916594fbfc3213f3633af50410c09cc48
 SRC_URI[deb0.md5sum] = "13541aaa0441c3b6ac16a7fb83b949c2"
 
 RDEPENDS_${PN}6 = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0)"
-DEPENDS = "libgcc1 libc6"
+DEPENDS = "libc6 libgcc1"
 
 
 inherit deb_group
@@ -19,10 +19,10 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libffi6 = " \
+    ./usr/lib/arm-linux-gnueabihf/libffi.so.6 \
     ./usr/lib/arm-linux-gnueabihf/libffi.so.6.0.2 \
-    ./usr/share/doc/libffi6/copyright \
     ./usr/share/doc/libffi6/changelog.Debian.gz \
-    ./usr/lib/arm-linux-gnueabihf/libffi.so.6\
+    ./usr/share/doc/libffi6/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

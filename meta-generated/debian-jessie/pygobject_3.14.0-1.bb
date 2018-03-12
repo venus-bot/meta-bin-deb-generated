@@ -13,7 +13,7 @@ SRC_URI[deb1.md5sum] = "e50d802841f709cdffcce07ccce6e23a"
 
 RDEPENDS_python-gi = "python (>= 2.7) python (<< 2.8) libc6 (>= 2.4) libffi6 (>= 3.0.4) libgirepository-1.0-1 (>= 1.33.10) libglib2.0-0 (>= 2.41.1) gir1.2-glib-2.0 (>= 1.39.0)"
 RDEPENDS_python-gobject = "python-gi (>= 3.14.0-1) python-gobject-2"
-DEPENDS = "libffi6 libglib2.0-0 gir1.2-glib-2.0 python libc6 python-gobject-2 libgirepository-1.0-1"
+DEPENDS = "libglib2.0-0 libc6 libgirepository-1.0-1 gir1.2-glib-2.0 python python-gobject-2 libffi6"
 
 
 inherit deb_group
@@ -24,45 +24,45 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_python-gi = " \
-    ./usr/share/doc/python-gi/changelog.gz \
-    ./usr/lib/python2.7/dist-packages/gi/overrides/GLib.py \
-    ./usr/share/doc/python-gi/NEWS.gz \
+    ./usr/lib/python2.7/dist-packages/gi/__init__.py \
+    ./usr/lib/python2.7/dist-packages/gi/_constants.py \
     ./usr/lib/python2.7/dist-packages/gi/_error.py \
-    ./usr/lib/python2.7/dist-packages/gi/overrides/Pango.py \
-    ./usr/lib/python2.7/dist-packages/pygtkcompat/pygtkcompat.py \
+    ./usr/lib/python2.7/dist-packages/gi/_gi.so \
+    ./usr/lib/python2.7/dist-packages/gi/_gobject/__init__.py \
+    ./usr/lib/python2.7/dist-packages/gi/_option.py \
+    ./usr/lib/python2.7/dist-packages/gi/_propertyhelper.py \
+    ./usr/lib/python2.7/dist-packages/gi/_signalhelper.py \
+    ./usr/lib/python2.7/dist-packages/gi/docstring.py \
+    ./usr/lib/python2.7/dist-packages/gi/importer.py \
+    ./usr/lib/python2.7/dist-packages/gi/module.py \
+    ./usr/lib/python2.7/dist-packages/gi/overrides/GIMarshallingTests.py \
+    ./usr/lib/python2.7/dist-packages/gi/overrides/GLib.py \
+    ./usr/lib/python2.7/dist-packages/gi/overrides/GObject.py \
     ./usr/lib/python2.7/dist-packages/gi/overrides/Gdk.py \
     ./usr/lib/python2.7/dist-packages/gi/overrides/Gio.py \
-    ./usr/lib/python2.7/dist-packages/gi/overrides/GIMarshallingTests.py \
-    ./usr/lib/python2.7/dist-packages/gi/module.py \
-    ./usr/lib/python2.7/dist-packages/gi/_propertyhelper.py \
-    ./usr/lib/python2.7/dist-packages/pygtkcompat/__init__.py \
+    ./usr/lib/python2.7/dist-packages/gi/overrides/Gtk.py \
+    ./usr/lib/python2.7/dist-packages/gi/overrides/Pango.py \
+    ./usr/lib/python2.7/dist-packages/gi/overrides/__init__.py \
     ./usr/lib/python2.7/dist-packages/gi/overrides/keysyms.py \
     ./usr/lib/python2.7/dist-packages/gi/pygtkcompat.py \
-    ./usr/lib/python2.7/dist-packages/gi/docstring.py \
-    ./usr/share/doc/python-gi/README \
-    ./usr/lib/python2.7/dist-packages/gi/_option.py \
-    ./usr/lib/python2.7/dist-packages/gi/_signalhelper.py \
-    ./usr/lib/python2.7/dist-packages/pygtkcompat/generictreemodel.py \
-    ./usr/lib/python2.7/dist-packages/gi/overrides/GObject.py \
-    ./usr/lib/python2.7/dist-packages/gi/__init__.py \
-    ./usr/lib/python2.7/dist-packages/gi/_gobject/__init__.py \
-    ./usr/lib/python2.7/dist-packages/gi/importer.py \
-    ./usr/lib/python2.7/dist-packages/gi/_gi.so \
-    ./usr/share/doc/python-gi/changelog.Debian.gz \
-    ./usr/lib/python2.7/dist-packages/pygobject-3.14.0.egg-info \
-    ./usr/lib/python2.7/dist-packages/gi/overrides/Gtk.py \
-    ./usr/lib/python2.7/dist-packages/gi/overrides/__init__.py \
-    ./usr/share/doc/python-gi/AUTHORS \
-    ./usr/share/lintian/overrides/python-gi \
+    ./usr/lib/python2.7/dist-packages/gi/repository/__init__.py \
     ./usr/lib/python2.7/dist-packages/gi/types.py \
+    ./usr/lib/python2.7/dist-packages/pygobject-3.14.0.egg-info \
+    ./usr/lib/python2.7/dist-packages/pygtkcompat/__init__.py \
+    ./usr/lib/python2.7/dist-packages/pygtkcompat/generictreemodel.py \
+    ./usr/lib/python2.7/dist-packages/pygtkcompat/pygtkcompat.py \
+    ./usr/share/doc/python-gi/AUTHORS \
+    ./usr/share/doc/python-gi/NEWS.gz \
+    ./usr/share/doc/python-gi/README \
+    ./usr/share/doc/python-gi/changelog.Debian.gz \
+    ./usr/share/doc/python-gi/changelog.gz \
     ./usr/share/doc/python-gi/copyright \
-    ./usr/lib/python2.7/dist-packages/gi/_constants.py \
-    ./usr/lib/python2.7/dist-packages/gi/repository/__init__.py\
+    ./usr/share/lintian/overrides/python-gi\
 "
 FILES_python-gobject = " \
     ./usr/share/doc/python-gobject/changelog.Debian.gz \
-    ./usr/share/doc/python-gobject/copyright \
-    ./usr/share/doc/python-gobject/changelog.gz\
+    ./usr/share/doc/python-gobject/changelog.gz \
+    ./usr/share/doc/python-gobject/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

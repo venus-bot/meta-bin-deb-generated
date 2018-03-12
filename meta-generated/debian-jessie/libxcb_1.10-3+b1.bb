@@ -23,7 +23,7 @@ RDEPENDS_${PN}-render0 = "libc6 (>= 2.4) libxcb1 (>= 1.8)"
 RDEPENDS_${PN}-shm0 = "libc6 (>= 2.4) libxcb1 (>= 1.9.2)"
 RDEPENDS_${PN}1 = "libc6 (>= 2.4) libxau6 libxdmcp6"
 RDEPENDS_${PN}1-dev = "libxcb1 (= 1.10-3+b1) libpthread-stubs0-dev libxau-dev (>= 1:1.0.0-1) libxdmcp-dev (>= 1:1.0.0-1)"
-DEPENDS = "libxau6 libpthread-stubs0-dev libxdmcp-dev libxau-dev libxdmcp6 libc6"
+DEPENDS = "libc6 libxau-dev libxdmcp-dev libxau6 libxdmcp6 libpthread-stubs0-dev"
 
 
 inherit deb_group
@@ -34,38 +34,38 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libxcb-render0 = " \
-    ./usr/share/doc/libxcb-render0/copyright \
+    ./usr/lib/arm-linux-gnueabihf/libxcb-render.so.0 \
+    ./usr/lib/arm-linux-gnueabihf/libxcb-render.so.0.0.0 \
     ./usr/share/doc/libxcb-render0/changelog.Debian.armhf.gz \
     ./usr/share/doc/libxcb-render0/changelog.Debian.gz \
-    ./usr/lib/arm-linux-gnueabihf/libxcb-render.so.0.0.0 \
-    ./usr/lib/arm-linux-gnueabihf/libxcb-render.so.0\
+    ./usr/share/doc/libxcb-render0/copyright\
 "
 FILES_libxcb-shm0 = " \
-    ./usr/share/doc/libxcb-shm0/changelog.Debian.armhf.gz \
-    ./usr/share/doc/libxcb-shm0/copyright \
-    ./usr/share/doc/libxcb-shm0/changelog.Debian.gz \
     ./usr/lib/arm-linux-gnueabihf/libxcb-shm.so.0 \
-    ./usr/lib/arm-linux-gnueabihf/libxcb-shm.so.0.0.0\
+    ./usr/lib/arm-linux-gnueabihf/libxcb-shm.so.0.0.0 \
+    ./usr/share/doc/libxcb-shm0/changelog.Debian.armhf.gz \
+    ./usr/share/doc/libxcb-shm0/changelog.Debian.gz \
+    ./usr/share/doc/libxcb-shm0/copyright\
 "
 FILES_libxcb1 = " \
-    ./usr/share/doc/libxcb1/changelog.Debian.armhf.gz \
-    ./usr/share/doc/libxcb1/copyright \
-    ./usr/share/doc/libxcb1/changelog.Debian.gz \
+    ./usr/lib/arm-linux-gnueabihf/libxcb.so.1 \
     ./usr/lib/arm-linux-gnueabihf/libxcb.so.1.1.0 \
-    ./usr/lib/arm-linux-gnueabihf/libxcb.so.1\
+    ./usr/share/doc/libxcb1/changelog.Debian.armhf.gz \
+    ./usr/share/doc/libxcb1/changelog.Debian.gz \
+    ./usr/share/doc/libxcb1/copyright\
 "
 FILES_libxcb1-dev = " \
-    ./usr/lib/arm-linux-gnueabihf/libxcb.so \
-    ./usr/share/doc/libxcb1-dev/copyright \
-    ./usr/share/doc/libxcb1-dev/changelog.Debian.armhf.gz \
-    ./usr/lib/arm-linux-gnueabihf/pkgconfig/xcb.pc \
-    ./usr/include/xcb/xc_misc.h \
-    ./usr/include/xcb/xproto.h \
-    ./usr/include/xcb/xcb.h \
     ./usr/include/xcb/bigreq.h \
-    ./usr/share/doc/libxcb1-dev/changelog.Debian.gz \
+    ./usr/include/xcb/xc_misc.h \
+    ./usr/include/xcb/xcb.h \
+    ./usr/include/xcb/xcbext.h \
+    ./usr/include/xcb/xproto.h \
     ./usr/lib/arm-linux-gnueabihf/libxcb.a \
-    ./usr/include/xcb/xcbext.h\
+    ./usr/lib/arm-linux-gnueabihf/libxcb.so \
+    ./usr/lib/arm-linux-gnueabihf/pkgconfig/xcb.pc \
+    ./usr/share/doc/libxcb1-dev/changelog.Debian.armhf.gz \
+    ./usr/share/doc/libxcb1-dev/changelog.Debian.gz \
+    ./usr/share/doc/libxcb1-dev/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

@@ -19,14 +19,14 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_liblzma5 = " \
-    ./usr/share/doc/liblzma5/NEWS.gz \
     ./lib/arm-linux-gnueabihf/liblzma.so.5 \
     ./lib/arm-linux-gnueabihf/liblzma.so.5.0.0 \
-    ./usr/share/doc/liblzma5/copyright \
-    ./usr/share/doc/liblzma5/changelog.Debian.gz \
     ./usr/share/doc/liblzma5/AUTHORS \
+    ./usr/share/doc/liblzma5/NEWS.gz \
     ./usr/share/doc/liblzma5/THANKS \
-    ./usr/share/doc/liblzma5/changelog.gz\
+    ./usr/share/doc/liblzma5/changelog.Debian.gz \
+    ./usr/share/doc/liblzma5/changelog.gz \
+    ./usr/share/doc/liblzma5/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

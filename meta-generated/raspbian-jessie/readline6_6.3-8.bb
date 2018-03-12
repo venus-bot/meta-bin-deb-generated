@@ -13,7 +13,7 @@ SRC_URI[deb1.md5sum] = "d072984a0bf5e597ca57bc8f07ef1849"
 
 RDEPENDS_lib${PN} = "readline-common libc6 (>= 2.15) libtinfo5"
 RDEPENDS_readline-common = "dpkg (>= 1.15.4)"
-DEPENDS = "libc6 dpkg libtinfo5"
+DEPENDS = "libtinfo5 dpkg libc6"
 
 
 inherit deb_group
@@ -24,27 +24,27 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libreadline6 = " \
-    ./usr/share/doc/libreadline6/copyright \
-    ./usr/share/doc/libreadline6/examples/Inputrc \
-    ./usr/share/doc/libreadline6/README.Debian \
-    ./usr/share/doc/libreadline6/inputrc.arrows \
-    ./usr/share/doc/libreadline6/USAGE \
-    ./lib/arm-linux-gnueabihf/libhistory.so.6.3 \
     ./lib/arm-linux-gnueabihf/libhistory.so.6 \
-    ./usr/share/doc/libreadline6/changelog.Debian.gz \
+    ./lib/arm-linux-gnueabihf/libhistory.so.6.3 \
     ./lib/arm-linux-gnueabihf/libreadline.so.6 \
     ./lib/arm-linux-gnueabihf/libreadline.so.6.3 \
-    ./usr/share/doc/libreadline6/changelog.gz\
+    ./usr/share/doc/libreadline6/README.Debian \
+    ./usr/share/doc/libreadline6/USAGE \
+    ./usr/share/doc/libreadline6/changelog.Debian.gz \
+    ./usr/share/doc/libreadline6/changelog.gz \
+    ./usr/share/doc/libreadline6/copyright \
+    ./usr/share/doc/libreadline6/examples/Inputrc \
+    ./usr/share/doc/libreadline6/inputrc.arrows\
 "
 FILES_readline-common = " \
+    ./usr/share/doc/readline-common/changelog.Debian.gz \
     ./usr/share/doc/readline-common/copyright \
     ./usr/share/doc/readline-common/inputrc.arrows \
-    ./usr/share/readline/inputrc \
-    ./usr/share/man/man3/readline.3readline.gz \
-    ./usr/share/man/man3/history.3readline.gz \
-    ./usr/share/doc/readline-common/changelog.Debian.gz \
+    ./usr/share/info/rluserman.info.gz \
     ./usr/share/lintian/overrides/readline-common \
-    ./usr/share/info/rluserman.info.gz\
+    ./usr/share/man/man3/history.3readline.gz \
+    ./usr/share/man/man3/readline.3readline.gz \
+    ./usr/share/readline/inputrc\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

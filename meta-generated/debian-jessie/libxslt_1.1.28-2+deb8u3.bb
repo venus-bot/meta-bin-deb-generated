@@ -19,21 +19,21 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libxslt1.1 = " \
-    ./usr/share/doc/libxslt1.1/README.Debian \
-    ./usr/share/doc/libxslt1.1/NEWS.gz \
-    ./usr/share/doc/libxslt1.1/TODO.Debian \
     ./usr/lib/arm-linux-gnueabihf/libexslt.so.0 \
-    ./usr/share/doc/libxslt1.1/FEATURES.gz \
-    ./usr/share/doc/libxslt1.1/copyright \
-    ./usr/lib/arm-linux-gnueabihf/libxslt.so.1 \
     ./usr/lib/arm-linux-gnueabihf/libexslt.so.0.8.17 \
-    ./usr/share/doc/libxslt1.1/changelog.gz \
-    ./usr/share/doc/libxslt1.1/changelog.Debian.gz \
-    ./usr/share/doc/libxslt1.1/AUTHORS \
+    ./usr/lib/arm-linux-gnueabihf/libxslt.so.1 \
     ./usr/lib/arm-linux-gnueabihf/libxslt.so.1.1.28 \
+    ./usr/share/doc/libxslt1.1/AUTHORS \
+    ./usr/share/doc/libxslt1.1/FEATURES.gz \
+    ./usr/share/doc/libxslt1.1/NEWS.gz \
+    ./usr/share/doc/libxslt1.1/README \
+    ./usr/share/doc/libxslt1.1/README.Debian \
     ./usr/share/doc/libxslt1.1/TODO \
-    ./usr/share/lintian/overrides/libxslt1.1 \
-    ./usr/share/doc/libxslt1.1/README\
+    ./usr/share/doc/libxslt1.1/TODO.Debian \
+    ./usr/share/doc/libxslt1.1/changelog.Debian.gz \
+    ./usr/share/doc/libxslt1.1/changelog.gz \
+    ./usr/share/doc/libxslt1.1/copyright \
+    ./usr/share/lintian/overrides/libxslt1.1\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

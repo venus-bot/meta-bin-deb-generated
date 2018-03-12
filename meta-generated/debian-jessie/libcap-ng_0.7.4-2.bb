@@ -19,11 +19,11 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libcap-ng0 = " \
-    ./usr/share/doc/libcap-ng0/changelog.Debian.gz \
     ./usr/lib/arm-linux-gnueabihf/libcap-ng.so.0 \
     ./usr/lib/arm-linux-gnueabihf/libcap-ng.so.0.0.0 \
-    ./usr/share/doc/libcap-ng0/copyright \
-    ./usr/share/doc/libcap-ng0/changelog.gz\
+    ./usr/share/doc/libcap-ng0/changelog.Debian.gz \
+    ./usr/share/doc/libcap-ng0/changelog.gz \
+    ./usr/share/doc/libcap-ng0/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

@@ -19,11 +19,11 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libdb5.3 = " \
-    ./usr/share/lintian/overrides/libdb5.3 \
-    ./usr/share/doc/libdb5.3/changelog.Debian.gz \
-    ./usr/share/doc/libdb5.3/build_signature_armhf.txt \
     ./usr/lib/arm-linux-gnueabihf/libdb-5.3.so \
-    ./usr/share/doc/libdb5.3/copyright\
+    ./usr/share/doc/libdb5.3/build_signature_armhf.txt \
+    ./usr/share/doc/libdb5.3/changelog.Debian.gz \
+    ./usr/share/doc/libdb5.3/copyright \
+    ./usr/share/lintian/overrides/libdb5.3\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

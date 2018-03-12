@@ -19,12 +19,12 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libxrender1 = " \
-    ./usr/share/doc/libxrender1/copyright \
+    ./usr/lib/arm-linux-gnueabihf/libXrender.so.1 \
     ./usr/lib/arm-linux-gnueabihf/libXrender.so.1.3.0 \
     ./usr/share/doc/libxrender1/changelog.Debian.armhf.gz \
-    ./usr/share/doc/libxrender1/changelog.gz \
     ./usr/share/doc/libxrender1/changelog.Debian.gz \
-    ./usr/lib/arm-linux-gnueabihf/libXrender.so.1\
+    ./usr/share/doc/libxrender1/changelog.gz \
+    ./usr/share/doc/libxrender1/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

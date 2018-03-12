@@ -19,18 +19,18 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN}-dev = " \
-    ./usr/share/pkgconfig/inputproto.pc \
-    ./usr/share/doc/x11proto-input-dev/XIproto.txt.gz \
-    ./usr/include/X11/extensions/XIproto.h \
+    ./usr/include/X11/extensions/XI.h \
     ./usr/include/X11/extensions/XI2.h \
     ./usr/include/X11/extensions/XI2proto.h \
-    ./usr/share/doc/x11proto-input-dev/XIproto.html \
-    ./usr/share/doc/x11proto-input-dev/XI2proto.txt.gz \
-    ./usr/share/doc/x11proto-input-dev/changelog.gz \
+    ./usr/include/X11/extensions/XIproto.h \
     ./usr/share/doc/x11proto-input-dev/XI2proto.html \
-    ./usr/include/X11/extensions/XI.h \
+    ./usr/share/doc/x11proto-input-dev/XI2proto.txt.gz \
+    ./usr/share/doc/x11proto-input-dev/XIproto.html \
+    ./usr/share/doc/x11proto-input-dev/XIproto.txt.gz \
     ./usr/share/doc/x11proto-input-dev/changelog.Debian.gz \
-    ./usr/share/doc/x11proto-input-dev/copyright\
+    ./usr/share/doc/x11proto-input-dev/changelog.gz \
+    ./usr/share/doc/x11proto-input-dev/copyright \
+    ./usr/share/pkgconfig/inputproto.pc\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

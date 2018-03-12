@@ -16,10 +16,10 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libsystemd0 = " \
-    ./usr/share/doc/libsystemd0/changelog.Debian.gz \
-    ./usr/share/doc/libsystemd0/copyright \
+    ./lib/arm-linux-gnueabihf/libsystemd.so.0 \
     ./lib/arm-linux-gnueabihf/libsystemd.so.0.3.1 \
-    ./lib/arm-linux-gnueabihf/libsystemd.so.0\
+    ./usr/share/doc/libsystemd0/changelog.Debian.gz \
+    ./usr/share/doc/libsystemd0/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

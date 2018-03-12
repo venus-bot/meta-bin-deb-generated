@@ -24,40 +24,40 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_zlib1g = " \
-    ./usr/share/doc/zlib1g/changelog.Debian.gz \
-    ./lib/arm-linux-gnueabihf/libz.so.1.2.8 \
-    ./usr/share/doc/zlib1g/changelog.gz \
     ./lib/arm-linux-gnueabihf/libz.so.1 \
+    ./lib/arm-linux-gnueabihf/libz.so.1.2.8 \
+    ./usr/share/doc/zlib1g/changelog.Debian.gz \
+    ./usr/share/doc/zlib1g/changelog.gz \
     ./usr/share/doc/zlib1g/copyright\
 "
 FILES_zlib1g-dev = " \
-    ./usr/share/doc/zlib1g-dev/FAQ.gz \
-    ./usr/share/doc/zlib1g-dev/changelog.gz \
-    ./usr/share/doc/zlib1g-dev/examples/zlib_how.html \
-    ./usr/share/doc/zlib1g-dev/txtvsbin.txt.gz \
-    ./usr/share/doc/zlib1g-dev/examples/minigzip.c.gz \
-    ./usr/share/doc/zlib1g-dev/examples/fitblk.c.gz \
-    ./usr/share/doc/zlib1g-dev/README.gz \
-    ./usr/share/doc/zlib1g-dev/examples/zpipe.c.gz \
-    ./usr/share/doc/zlib1g-dev/algorithm.txt.gz \
-    ./usr/share/doc/zlib1g-dev/examples/gun.c.gz \
-    ./usr/share/doc/zlib1g-dev/examples/infcover.c.gz \
-    ./usr/share/man/man3/zlib.3.gz \
-    ./usr/share/doc/zlib1g-dev/examples/gzlog.h.gz \
-    ./usr/share/doc/zlib1g-dev/examples/example.c.gz \
-    ./usr/share/doc/zlib1g-dev/examples/gzlog.c.gz \
-    ./usr/share/doc/zlib1g-dev/examples/gzjoin.c.gz \
+    ./usr/include/arm-linux-gnueabihf/zconf.h \
+    ./usr/include/zlib.h \
     ./usr/lib/arm-linux-gnueabihf/libz.a \
     ./usr/lib/arm-linux-gnueabihf/libz.so \
-    ./usr/include/arm-linux-gnueabihf/zconf.h \
-    ./usr/share/doc/zlib1g-dev/changelog.Debian.gz \
     ./usr/lib/arm-linux-gnueabihf/pkgconfig/zlib.pc \
-    ./usr/include/zlib.h \
-    ./usr/share/doc/zlib1g-dev/examples/zran.c.gz \
+    ./usr/share/doc/zlib1g-dev/FAQ.gz \
+    ./usr/share/doc/zlib1g-dev/README.gz \
+    ./usr/share/doc/zlib1g-dev/algorithm.txt.gz \
+    ./usr/share/doc/zlib1g-dev/changelog.Debian.gz \
+    ./usr/share/doc/zlib1g-dev/changelog.gz \
+    ./usr/share/doc/zlib1g-dev/copyright \
     ./usr/share/doc/zlib1g-dev/examples/README.examples \
     ./usr/share/doc/zlib1g-dev/examples/enough.c.gz \
+    ./usr/share/doc/zlib1g-dev/examples/example.c.gz \
+    ./usr/share/doc/zlib1g-dev/examples/fitblk.c.gz \
+    ./usr/share/doc/zlib1g-dev/examples/gun.c.gz \
     ./usr/share/doc/zlib1g-dev/examples/gzappend.c.gz \
-    ./usr/share/doc/zlib1g-dev/copyright\
+    ./usr/share/doc/zlib1g-dev/examples/gzjoin.c.gz \
+    ./usr/share/doc/zlib1g-dev/examples/gzlog.c.gz \
+    ./usr/share/doc/zlib1g-dev/examples/gzlog.h.gz \
+    ./usr/share/doc/zlib1g-dev/examples/infcover.c.gz \
+    ./usr/share/doc/zlib1g-dev/examples/minigzip.c.gz \
+    ./usr/share/doc/zlib1g-dev/examples/zlib_how.html \
+    ./usr/share/doc/zlib1g-dev/examples/zpipe.c.gz \
+    ./usr/share/doc/zlib1g-dev/examples/zran.c.gz \
+    ./usr/share/doc/zlib1g-dev/txtvsbin.txt.gz \
+    ./usr/share/man/man3/zlib.3.gz\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

@@ -19,12 +19,12 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libexpat1 = " \
-    ./usr/lib/arm-linux-gnueabihf/libexpatw.so.1 \
     ./lib/arm-linux-gnueabihf/libexpat.so.1 \
-    ./usr/share/doc/libexpat1/changelog.gz \
-    ./usr/share/doc/libexpat1/changelog.Debian.gz \
     ./lib/arm-linux-gnueabihf/libexpat.so.1.6.0 \
+    ./usr/lib/arm-linux-gnueabihf/libexpatw.so.1 \
     ./usr/lib/arm-linux-gnueabihf/libexpatw.so.1.6.0 \
+    ./usr/share/doc/libexpat1/changelog.Debian.gz \
+    ./usr/share/doc/libexpat1/changelog.gz \
     ./usr/share/doc/libexpat1/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!

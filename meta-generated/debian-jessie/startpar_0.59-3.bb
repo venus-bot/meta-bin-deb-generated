@@ -19,12 +19,12 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN} = " \
-    ./lib/startpar/startpar-upstart-inject \
     ./etc/init/startpar-bridge.conf \
-    ./usr/share/doc/startpar/changelog.Debian.gz \
     ./lib/startpar/startpar \
-    ./usr/share/man/man8/startpar-upstart-inject.8.gz \
+    ./lib/startpar/startpar-upstart-inject \
+    ./usr/share/doc/startpar/changelog.Debian.gz \
     ./usr/share/doc/startpar/copyright \
+    ./usr/share/man/man8/startpar-upstart-inject.8.gz \
     ./usr/share/man/man8/startpar.8.gz\
 "
 #FAKE LICENSE FOR TESTING!!!

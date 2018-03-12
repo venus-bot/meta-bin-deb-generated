@@ -8,7 +8,7 @@ SRC_URI[deb0.sha256sum] = "d15e815667fbaa7e7a6e86202da03e73bc7c6bf20eb8c9f9f9a0b
 SRC_URI[deb0.md5sum] = "d17cab31770ae2c4d8357fbc0663f7b4"
 
 RDEPENDS_${PN}1 = "libc6 (>= 2.4) libx11-6 (>= 2:1.6.0)"
-DEPENDS = "libc6 libx11-6"
+DEPENDS = "libx11-6 libc6"
 
 
 inherit deb_group
@@ -20,10 +20,10 @@ INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libxrender1 = " \
     ./usr/lib/arm-linux-gnueabihf/libXrender.so.1 \
-    ./usr/share/doc/libxrender1/copyright \
+    ./usr/lib/arm-linux-gnueabihf/libXrender.so.1.3.0 \
     ./usr/share/doc/libxrender1/changelog.Debian.gz \
     ./usr/share/doc/libxrender1/changelog.gz \
-    ./usr/lib/arm-linux-gnueabihf/libXrender.so.1.3.0\
+    ./usr/share/doc/libxrender1/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

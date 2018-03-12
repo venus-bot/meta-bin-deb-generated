@@ -19,13 +19,13 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libelfg0 = " \
-    ./usr/share/doc/libelfg0/README.gz \
     ./usr/lib/arm-linux-gnueabihf/libelf.so.0 \
-    ./usr/share/locale/de/LC_MESSAGES/libelf.mo \
     ./usr/lib/arm-linux-gnueabihf/libelf.so.0.8.13 \
-    ./usr/share/doc/libelfg0/changelog.gz \
+    ./usr/share/doc/libelfg0/README.gz \
     ./usr/share/doc/libelfg0/changelog.Debian.gz \
-    ./usr/share/doc/libelfg0/copyright\
+    ./usr/share/doc/libelfg0/changelog.gz \
+    ./usr/share/doc/libelfg0/copyright \
+    ./usr/share/locale/de/LC_MESSAGES/libelf.mo\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

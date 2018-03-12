@@ -8,7 +8,7 @@ SRC_URI[deb0.sha256sum] = "2a9ea6f498ff141138af7a5c07128a0acce21c4d75775f3c256c7
 SRC_URI[deb0.md5sum] = "d44640e3e691e6e5d7dabc65d83483af"
 
 RDEPENDS_${PN} = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libstdc++6 (>= 4.9)"
-DEPENDS = "libc6 libgcc1 libstdc++6"
+DEPENDS = "libstdc++6 libc6 libgcc1"
 
 
 inherit deb_group
@@ -19,50 +19,50 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN} = " \
-    ./usr/bin/qtconfig \
-    ./usr/bin/qhelpgenerator \
-    ./usr/bin/qtpaths \
-    ./usr/bin/qdoc \
-    ./usr/bin/uic3 \
-    ./usr/bin/qmake \
-    ./usr/bin/rcc \
-    ./usr/share/doc/qtchooser/README.Debian \
-    ./usr/bin/qmlprofiler \
-    ./usr/share/lintian/overrides/qtchooser \
-    ./usr/bin/qmlviewer \
-    ./usr/bin/xmlpatterns \
-    ./usr/bin/pixeltool \
-    ./usr/bin/qmlplugindump \
-    ./usr/bin/qdbusxml2cpp \
-    ./usr/bin/qdbusviewer \
-    ./usr/share/doc/qtchooser/copyright \
-    ./usr/share/doc/qtchooser/changelog.Debian.gz \
+    ./usr/bin/assistant \
     ./usr/bin/designer \
-    ./usr/bin/qml1plugindump \
-    ./usr/bin/qtdiag \
-    ./usr/bin/qmltestrunner \
-    ./usr/bin/qdbuscpp2xml \
+    ./usr/bin/lconvert \
+    ./usr/bin/linguist \
     ./usr/bin/lrelease \
     ./usr/bin/lupdate \
-    ./usr/bin/qmlbundle \
-    ./usr/bin/qtchooser \
-    ./usr/bin/uic \
-    ./usr/bin/qcollectiongenerator \
-    ./usr/bin/qdoc3 \
-    ./usr/bin/qml \
-    ./usr/bin/qmlscene \
-    ./usr/bin/qhelpconverter \
-    ./usr/bin/qdbus \
-    ./usr/bin/qmlmin \
-    ./usr/bin/xmlpatternsvalidator \
-    ./usr/bin/assistant \
     ./usr/bin/moc \
-    ./usr/share/man/man1/qtchooser.1.gz \
+    ./usr/bin/pixeltool \
+    ./usr/bin/qcollectiongenerator \
+    ./usr/bin/qdbus \
+    ./usr/bin/qdbuscpp2xml \
+    ./usr/bin/qdbusviewer \
+    ./usr/bin/qdbusxml2cpp \
+    ./usr/bin/qdoc \
+    ./usr/bin/qdoc3 \
     ./usr/bin/qglinfo \
-    ./usr/bin/qmlimportscanner \
-    ./usr/bin/lconvert \
+    ./usr/bin/qhelpconverter \
+    ./usr/bin/qhelpgenerator \
     ./usr/bin/qlalr \
-    ./usr/bin/linguist\
+    ./usr/bin/qmake \
+    ./usr/bin/qml \
+    ./usr/bin/qml1plugindump \
+    ./usr/bin/qmlbundle \
+    ./usr/bin/qmlimportscanner \
+    ./usr/bin/qmlmin \
+    ./usr/bin/qmlplugindump \
+    ./usr/bin/qmlprofiler \
+    ./usr/bin/qmlscene \
+    ./usr/bin/qmltestrunner \
+    ./usr/bin/qmlviewer \
+    ./usr/bin/qtchooser \
+    ./usr/bin/qtconfig \
+    ./usr/bin/qtdiag \
+    ./usr/bin/qtpaths \
+    ./usr/bin/rcc \
+    ./usr/bin/uic \
+    ./usr/bin/uic3 \
+    ./usr/bin/xmlpatterns \
+    ./usr/bin/xmlpatternsvalidator \
+    ./usr/share/doc/qtchooser/README.Debian \
+    ./usr/share/doc/qtchooser/changelog.Debian.gz \
+    ./usr/share/doc/qtchooser/copyright \
+    ./usr/share/lintian/overrides/qtchooser \
+    ./usr/share/man/man1/qtchooser.1.gz\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

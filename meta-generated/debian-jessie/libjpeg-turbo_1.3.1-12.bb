@@ -19,11 +19,11 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libjpeg62-turbo = " \
-    ./usr/lib/arm-linux-gnueabihf/libjpeg.so.62.1.0 \
-    ./usr/share/doc/libjpeg62-turbo/copyright \
-    ./usr/share/doc/libjpeg62-turbo/changelog.Debian.gz \
     ./usr/lib/arm-linux-gnueabihf/libjpeg.so.62 \
-    ./usr/share/doc/libjpeg62-turbo/changelog.gz\
+    ./usr/lib/arm-linux-gnueabihf/libjpeg.so.62.1.0 \
+    ./usr/share/doc/libjpeg62-turbo/changelog.Debian.gz \
+    ./usr/share/doc/libjpeg62-turbo/changelog.gz \
+    ./usr/share/doc/libjpeg62-turbo/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

@@ -18,7 +18,7 @@ SRC_URI[deb2.md5sum] = "357131184439e7d7349cd9230655c3b0"
 RDEPENDS_initscripts = "libc6 (>= 2.4) debianutils (>= 4) lsb-base (>= 3.2-14) sysvinit-utils (>= 2.88dsf-50) sysv-rc coreutils (>= 5.93)"
 RDEPENDS_sysv-rc = "debconf (>= 0.5) sysvinit-utils (>= 2.86.ds1-62) insserv (>> 1.12.0-10) startpar"
 RDEPENDS_${PN}-utils = "libc6 (>= 2.7) libselinux1 (>= 1.32) startpar"
-DEPENDS = "debianutils coreutils debconf insserv lsb-base startpar libc6 libselinux1"
+DEPENDS = "lsb-base debconf libc6 debianutils coreutils libselinux1 insserv startpar"
 
 
 inherit deb_group
@@ -29,105 +29,105 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_initscripts = " \
-    ./etc/init.d/checkroot-bootclean.sh \
-    ./usr/share/lintian/overrides/initscripts \
-    ./etc/init.d/umountfs \
-    ./etc/init.d/mountkernfs.sh \
-    ./sbin/fsck.nfs \
-    ./lib/init/bootclean.sh \
-    ./etc/init.d/checkroot.sh \
-    ./etc/init.d/rc.local \
-    ./etc/init.d/mountnfs-bootclean.sh \
-    ./usr/share/man/man5/halt.5.gz \
-    ./usr/share/man/man1/mountpoint.1.gz \
-    ./usr/share/doc/initscripts/NEWS.Debian.gz \
-    ./etc/init.d/sendsigs \
-    ./etc/init.d/umountroot \
-    ./etc/init.d/motd \
-    ./etc/init.d/skeleton \
-    ./etc/init.d/checkfs.sh \
-    ./usr/share/doc/initscripts/copyright \
-    ./etc/init.d/halt \
-    ./lib/init/swap-functions.sh \
-    ./lib/init/tmpfs.sh \
-    ./lib/init/mount-functions.sh \
-    ./usr/share/doc/initscripts/changelog.gz \
-    ./etc/init.d/killprocs \
-    ./etc/init.d/bootmisc.sh \
-    ./etc/init.d/mountall.sh \
     ./bin/mountpoint \
-    ./etc/init.d/single \
-    ./etc/init.d/mountall-bootclean.sh \
-    ./etc/init.d/urandom \
-    ./etc/init.d/hostname.sh \
-    ./etc/init.d/rmnologin \
     ./etc/default/devpts \
-    ./etc/init.d/mountnfs.sh \
-    ./etc/init.d/reboot \
-    ./etc/init.d/bootlogs \
+    ./etc/default/halt \
     ./etc/default/rcS \
     ./etc/default/tmpfs \
+    ./etc/init.d/bootlogs \
+    ./etc/init.d/bootmisc.sh \
+    ./etc/init.d/checkfs.sh \
+    ./etc/init.d/checkroot-bootclean.sh \
+    ./etc/init.d/checkroot.sh \
+    ./etc/init.d/halt \
+    ./etc/init.d/hostname.sh \
+    ./etc/init.d/killprocs \
+    ./etc/init.d/motd \
+    ./etc/init.d/mountall-bootclean.sh \
+    ./etc/init.d/mountall.sh \
+    ./etc/init.d/mountdevsubfs.sh \
+    ./etc/init.d/mountkernfs.sh \
+    ./etc/init.d/mountnfs-bootclean.sh \
+    ./etc/init.d/mountnfs.sh \
+    ./etc/init.d/rc.local \
+    ./etc/init.d/reboot \
+    ./etc/init.d/rmnologin \
+    ./etc/init.d/sendsigs \
+    ./etc/init.d/single \
+    ./etc/init.d/skeleton \
+    ./etc/init.d/umountfs \
     ./etc/init.d/umountnfs.sh \
-    ./usr/share/man/man8/fsck.nfs.8.gz \
-    ./etc/default/halt \
+    ./etc/init.d/umountroot \
+    ./etc/init.d/urandom \
     ./etc/network/if-up.d/mountnfs \
+    ./lib/init/bootclean.sh \
+    ./lib/init/mount-functions.sh \
+    ./lib/init/swap-functions.sh \
+    ./lib/init/tmpfs.sh \
+    ./lib/init/vars.sh \
+    ./sbin/fsck.nfs \
+    ./usr/share/doc/initscripts/NEWS.Debian.gz \
+    ./usr/share/doc/initscripts/README.Debian \
     ./usr/share/doc/initscripts/changelog.Debian.gz \
+    ./usr/share/doc/initscripts/changelog.gz \
+    ./usr/share/doc/initscripts/copyright \
+    ./usr/share/lintian/overrides/initscripts \
+    ./usr/share/man/man1/mountpoint.1.gz \
+    ./usr/share/man/man5/halt.5.gz \
     ./usr/share/man/man5/rcS.5.gz \
     ./usr/share/man/man5/tmpfs.5.gz \
-    ./usr/share/doc/initscripts/README.Debian \
-    ./etc/init.d/mountdevsubfs.sh \
-    ./lib/init/vars.sh\
+    ./usr/share/man/man8/fsck.nfs.8.gz\
 "
 FILES_sysv-rc = " \
-    ./usr/share/doc/sysv-rc/NEWS.Debian.gz \
     ./etc/init.d/README \
-    ./usr/share/doc/sysv-rc/copyright \
-    ./usr/share/man/man8/invoke-rc.d.8.gz \
-    ./etc/rcS.d/README \
-    ./etc/rc6.d/README \
-    ./etc/rc1.d/README \
     ./etc/init.d/rc \
+    ./etc/init.d/rcS \
     ./etc/rc0.d/README \
-    ./usr/share/doc/sysv-rc/README.policy-rc.d.gz \
-    ./etc/rc3.d/README \
-    ./usr/sbin/update-rc.d \
-    ./etc/rc4.d/README \
-    ./usr/share/doc/sysv-rc/README.invoke-rc.d.gz \
-    ./usr/share/doc/sysv-rc/README.Debian \
-    ./usr/share/lintian/overrides/sysv-rc \
-    ./usr/share/man/man8/update-rc.d.8.gz \
+    ./etc/rc1.d/README \
     ./etc/rc2.d/README \
+    ./etc/rc3.d/README \
+    ./etc/rc4.d/README \
+    ./etc/rc5.d/README \
+    ./etc/rc6.d/README \
+    ./etc/rcS.d/README \
+    ./usr/sbin/invoke-rc.d \
+    ./usr/sbin/update-rc.d \
+    ./usr/share/doc/sysv-rc/NEWS.Debian.gz \
+    ./usr/share/doc/sysv-rc/README.Debian \
+    ./usr/share/doc/sysv-rc/README.invoke-rc.d.gz \
+    ./usr/share/doc/sysv-rc/README.policy-rc.d.gz \
+    ./usr/share/doc/sysv-rc/README.runlevels.gz \
     ./usr/share/doc/sysv-rc/changelog.Debian.gz \
     ./usr/share/doc/sysv-rc/changelog.gz \
-    ./etc/rc5.d/README \
-    ./usr/share/sysv-rc/saveconfig \
-    ./etc/init.d/rcS \
-    ./usr/sbin/invoke-rc.d \
-    ./usr/share/doc/sysv-rc/README.runlevels.gz\
+    ./usr/share/doc/sysv-rc/copyright \
+    ./usr/share/lintian/overrides/sysv-rc \
+    ./usr/share/man/man8/invoke-rc.d.8.gz \
+    ./usr/share/man/man8/update-rc.d.8.gz \
+    ./usr/share/sysv-rc/saveconfig\
 "
 FILES_sysvinit-utils = " \
-    ./usr/share/man/man8/pidof.8.gz \
-    ./usr/bin/last \
-    ./usr/bin/mesg \
-    ./usr/share/man/man1/lastb.1.gz \
-    ./usr/share/man/man8/fstab-decode.8.gz \
-    ./usr/share/man/man8/sulogin.8.gz \
-    ./usr/share/doc/sysvinit-utils/changelog.Debian.gz \
-    ./sbin/killall5 \
-    ./usr/share/man/man1/mesg.1.gz \
-    ./usr/bin/lastb \
     ./bin/pidof \
-    ./usr/share/man/man5/init-d-script.5.gz \
-    ./sbin/sulogin \
     ./lib/init/init-d-script \
-    ./usr/share/doc/sysvinit-utils/changelog.gz \
-    ./usr/share/doc/sysvinit-utils/NEWS.Debian.gz \
-    ./usr/share/doc/sysvinit-utils/copyright \
-    ./usr/share/man/man8/killall5.8.gz \
     ./sbin/fstab-decode \
+    ./sbin/killall5 \
+    ./sbin/sulogin \
+    ./usr/bin/last \
+    ./usr/bin/lastb \
+    ./usr/bin/mesg \
     ./usr/sbin/service \
+    ./usr/share/doc/sysvinit-utils/NEWS.Debian.gz \
+    ./usr/share/doc/sysvinit-utils/changelog.Debian.gz \
+    ./usr/share/doc/sysvinit-utils/changelog.gz \
+    ./usr/share/doc/sysvinit-utils/copyright \
     ./usr/share/man/man1/last.1.gz \
-    ./usr/share/man/man8/service.8.gz\
+    ./usr/share/man/man1/lastb.1.gz \
+    ./usr/share/man/man1/mesg.1.gz \
+    ./usr/share/man/man5/init-d-script.5.gz \
+    ./usr/share/man/man8/fstab-decode.8.gz \
+    ./usr/share/man/man8/killall5.8.gz \
+    ./usr/share/man/man8/pidof.8.gz \
+    ./usr/share/man/man8/service.8.gz \
+    ./usr/share/man/man8/sulogin.8.gz\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

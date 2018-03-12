@@ -8,7 +8,7 @@ SRC_URI[deb0.sha256sum] = "87dffad890cad99cd09f90414109c571f6a8dc499ff24865afa84
 SRC_URI[deb0.md5sum] = "8f33508c11f5708e17056f470210074c"
 
 RDEPENDS_libgnutls-deb0-28 = "libc6 (>= 2.17) libgmp10 (>= 2:6) libhogweed2 (>= 2.7) libnettle4 (>= 2.7) libp11-kit0 (>= 0.20.7) libtasn1-6 (>= 4.1-0) zlib1g (>= 1:1.1.4)"
-DEPENDS = "libgmp10 libtasn1-6 libhogweed2 libnettle4 libc6 zlib1g libp11-kit0"
+DEPENDS = "libhogweed2 libnettle4 libc6 libgmp10 libtasn1-6 zlib1g libp11-kit0"
 
 
 inherit deb_group
@@ -19,31 +19,31 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libgnutls-deb0-28 = " \
-    ./usr/share/locale/vi/LC_MESSAGES/gnutls-deb0-28.mo \
-    ./usr/share/locale/en@boldquot/LC_MESSAGES/gnutls-deb0-28.mo \
-    ./usr/share/locale/de/LC_MESSAGES/gnutls-deb0-28.mo \
-    ./usr/share/locale/ms/LC_MESSAGES/gnutls-deb0-28.mo \
-    ./usr/share/locale/cs/LC_MESSAGES/gnutls-deb0-28.mo \
-    ./usr/share/doc/libgnutls-deb0-28/NEWS.gz \
-    ./usr/share/locale/fi/LC_MESSAGES/gnutls-deb0-28.mo \
-    ./usr/share/locale/eo/LC_MESSAGES/gnutls-deb0-28.mo \
-    ./usr/share/locale/en@quot/LC_MESSAGES/gnutls-deb0-28.mo \
-    ./usr/share/doc/libgnutls-deb0-28/copyright \
-    ./usr/share/locale/sv/LC_MESSAGES/gnutls-deb0-28.mo \
-    ./usr/share/doc/libgnutls-deb0-28/NEWS.Debian.gz \
-    ./usr/share/locale/zh_CN/LC_MESSAGES/gnutls-deb0-28.mo \
-    ./usr/share/doc/libgnutls-deb0-28/changelog.gz \
-    ./usr/share/locale/it/LC_MESSAGES/gnutls-deb0-28.mo \
-    ./usr/share/locale/fr/LC_MESSAGES/gnutls-deb0-28.mo \
-    ./usr/share/locale/nl/LC_MESSAGES/gnutls-deb0-28.mo \
-    ./usr/share/doc/libgnutls-deb0-28/THANKS.gz \
     ./usr/lib/arm-linux-gnueabihf/libgnutls-deb0.so.28 \
-    ./usr/share/doc/libgnutls-deb0-28/AUTHORS \
-    ./usr/share/locale/pl/LC_MESSAGES/gnutls-deb0-28.mo \
     ./usr/lib/arm-linux-gnueabihf/libgnutls-deb0.so.28.41.0 \
-    ./usr/share/doc/libgnutls-deb0-28/changelog.Debian.gz \
+    ./usr/share/doc/libgnutls-deb0-28/AUTHORS \
+    ./usr/share/doc/libgnutls-deb0-28/NEWS.Debian.gz \
+    ./usr/share/doc/libgnutls-deb0-28/NEWS.gz \
     ./usr/share/doc/libgnutls-deb0-28/README.gz \
-    ./usr/share/locale/uk/LC_MESSAGES/gnutls-deb0-28.mo\
+    ./usr/share/doc/libgnutls-deb0-28/THANKS.gz \
+    ./usr/share/doc/libgnutls-deb0-28/changelog.Debian.gz \
+    ./usr/share/doc/libgnutls-deb0-28/changelog.gz \
+    ./usr/share/doc/libgnutls-deb0-28/copyright \
+    ./usr/share/locale/cs/LC_MESSAGES/gnutls-deb0-28.mo \
+    ./usr/share/locale/de/LC_MESSAGES/gnutls-deb0-28.mo \
+    ./usr/share/locale/en@boldquot/LC_MESSAGES/gnutls-deb0-28.mo \
+    ./usr/share/locale/en@quot/LC_MESSAGES/gnutls-deb0-28.mo \
+    ./usr/share/locale/eo/LC_MESSAGES/gnutls-deb0-28.mo \
+    ./usr/share/locale/fi/LC_MESSAGES/gnutls-deb0-28.mo \
+    ./usr/share/locale/fr/LC_MESSAGES/gnutls-deb0-28.mo \
+    ./usr/share/locale/it/LC_MESSAGES/gnutls-deb0-28.mo \
+    ./usr/share/locale/ms/LC_MESSAGES/gnutls-deb0-28.mo \
+    ./usr/share/locale/nl/LC_MESSAGES/gnutls-deb0-28.mo \
+    ./usr/share/locale/pl/LC_MESSAGES/gnutls-deb0-28.mo \
+    ./usr/share/locale/sv/LC_MESSAGES/gnutls-deb0-28.mo \
+    ./usr/share/locale/uk/LC_MESSAGES/gnutls-deb0-28.mo \
+    ./usr/share/locale/vi/LC_MESSAGES/gnutls-deb0-28.mo \
+    ./usr/share/locale/zh_CN/LC_MESSAGES/gnutls-deb0-28.mo\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

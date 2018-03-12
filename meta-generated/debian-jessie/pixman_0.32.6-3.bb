@@ -19,12 +19,12 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libpixman-1-0 = " \
-    ./usr/share/lintian/overrides/libpixman-1-0 \
-    ./usr/share/doc/libpixman-1-0/changelog.gz \
+    ./usr/lib/arm-linux-gnueabihf/libpixman-1.so.0 \
     ./usr/lib/arm-linux-gnueabihf/libpixman-1.so.0.32.6 \
     ./usr/share/doc/libpixman-1-0/changelog.Debian.gz \
-    ./usr/lib/arm-linux-gnueabihf/libpixman-1.so.0 \
-    ./usr/share/doc/libpixman-1-0/copyright\
+    ./usr/share/doc/libpixman-1-0/changelog.gz \
+    ./usr/share/doc/libpixman-1-0/copyright \
+    ./usr/share/lintian/overrides/libpixman-1-0\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

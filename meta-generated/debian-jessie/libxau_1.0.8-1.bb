@@ -13,7 +13,7 @@ SRC_URI[deb1.md5sum] = "d3ae7c68e51a44e6e07b0afad56d559f"
 
 RDEPENDS_${PN}-dev = "libxau6 (= 1:1.0.8-1) x11proto-core-dev"
 RDEPENDS_${PN}6 = "libc6 (>= 2.4)"
-DEPENDS = "libc6 x11proto-core-dev"
+DEPENDS = "x11proto-core-dev libc6"
 
 
 inherit deb_group
@@ -24,29 +24,29 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN}-dev = " \
-    ./usr/share/man/man3/XauUnlockAuth.3.gz \
+    ./usr/include/X11/Xauth.h \
+    ./usr/lib/arm-linux-gnueabihf/libXau.a \
+    ./usr/lib/arm-linux-gnueabihf/libXau.so \
+    ./usr/lib/arm-linux-gnueabihf/pkgconfig/xau.pc \
     ./usr/share/doc/libxau-dev/changelog.Debian.gz \
     ./usr/share/doc/libxau-dev/changelog.gz \
-    ./usr/share/man/man3/XauLockAuth.3.gz \
-    ./usr/share/man/man3/XauFileName.3.gz \
-    ./usr/share/man/man3/XauWriteAuth.3.gz \
-    ./usr/lib/arm-linux-gnueabihf/pkgconfig/xau.pc \
     ./usr/share/doc/libxau-dev/copyright \
     ./usr/share/man/man3/Xau.3.gz \
     ./usr/share/man/man3/XauDisposeAuth.3.gz \
-    ./usr/share/man/man3/XauReadAuth.3.gz \
-    ./usr/lib/arm-linux-gnueabihf/libXau.a \
-    ./usr/include/X11/Xauth.h \
+    ./usr/share/man/man3/XauFileName.3.gz \
     ./usr/share/man/man3/XauGetAuthByAddr.3.gz \
-    ./usr/lib/arm-linux-gnueabihf/libXau.so \
-    ./usr/share/man/man3/XauGetBestAuthByAddr.3.gz\
+    ./usr/share/man/man3/XauGetBestAuthByAddr.3.gz \
+    ./usr/share/man/man3/XauLockAuth.3.gz \
+    ./usr/share/man/man3/XauReadAuth.3.gz \
+    ./usr/share/man/man3/XauUnlockAuth.3.gz \
+    ./usr/share/man/man3/XauWriteAuth.3.gz\
 "
 FILES_libxau6 = " \
-    ./usr/share/doc/libxau6/changelog.gz \
     ./usr/lib/arm-linux-gnueabihf/libXau.so.6 \
-    ./usr/share/doc/libxau6/copyright \
     ./usr/lib/arm-linux-gnueabihf/libXau.so.6.0.0 \
-    ./usr/share/doc/libxau6/changelog.Debian.gz\
+    ./usr/share/doc/libxau6/changelog.Debian.gz \
+    ./usr/share/doc/libxau6/changelog.gz \
+    ./usr/share/doc/libxau6/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

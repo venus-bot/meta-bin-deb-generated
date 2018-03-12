@@ -23,18 +23,18 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libaudit-common = " \
-    ./usr/share/man/man5/libaudit.conf.5.gz \
     ./etc/libaudit.conf \
     ./usr/share/doc/libaudit-common/changelog.Debian.gz \
+    ./usr/share/doc/libaudit-common/changelog.gz \
     ./usr/share/doc/libaudit-common/copyright \
-    ./usr/share/doc/libaudit-common/changelog.gz\
+    ./usr/share/man/man5/libaudit.conf.5.gz\
 "
 FILES_libaudit1 = " \
+    ./lib/arm-linux-gnueabihf/libaudit.so.1 \
     ./lib/arm-linux-gnueabihf/libaudit.so.1.0.0 \
     ./usr/share/doc/libaudit1/changelog.Debian.gz \
     ./usr/share/doc/libaudit1/changelog.gz \
-    ./usr/share/doc/libaudit1/copyright \
-    ./lib/arm-linux-gnueabihf/libaudit.so.1\
+    ./usr/share/doc/libaudit1/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

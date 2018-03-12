@@ -16,12 +16,12 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_lsb-base = " \
-    ./usr/share/doc/lsb-base/NEWS.Debian.gz \
-    ./usr/share/doc/lsb-base/changelog.gz \
-    ./usr/share/doc/lsb-base/README.Debian.gz \
     ./lib/lsb/init-functions \
-    ./usr/share/doc/lsb-base/copyright \
-    ./lib/lsb/init-functions.d/20-left-info-blocks\
+    ./lib/lsb/init-functions.d/20-left-info-blocks \
+    ./usr/share/doc/lsb-base/NEWS.Debian.gz \
+    ./usr/share/doc/lsb-base/README.Debian.gz \
+    ./usr/share/doc/lsb-base/changelog.gz \
+    ./usr/share/doc/lsb-base/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

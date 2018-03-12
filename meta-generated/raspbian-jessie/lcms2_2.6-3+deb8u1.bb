@@ -19,11 +19,11 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_liblcms2-2 = " \
-    ./usr/share/doc/liblcms2-2/changelog.Debian.gz \
-    ./usr/share/doc/liblcms2-2/copyright \
-    ./usr/share/doc/liblcms2-2/changelog.gz \
     ./usr/lib/arm-linux-gnueabihf/liblcms2.so.2 \
-    ./usr/lib/arm-linux-gnueabihf/liblcms2.so.2.0.6\
+    ./usr/lib/arm-linux-gnueabihf/liblcms2.so.2.0.6 \
+    ./usr/share/doc/liblcms2-2/changelog.Debian.gz \
+    ./usr/share/doc/liblcms2-2/changelog.gz \
+    ./usr/share/doc/liblcms2-2/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

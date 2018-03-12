@@ -19,15 +19,15 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN} = " \
-    ./usr/share/doc/libgcrypt20/copyright \
-    ./usr/share/doc/libgcrypt20/AUTHORS.gz \
-    ./usr/share/doc/libgcrypt20/THANKS.gz \
-    ./lib/arm-linux-gnueabihf/libgcrypt.so.20.0.3 \
     ./lib/arm-linux-gnueabihf/libgcrypt.so.20 \
-    ./usr/share/doc/libgcrypt20/changelog.gz \
+    ./lib/arm-linux-gnueabihf/libgcrypt.so.20.0.3 \
+    ./usr/share/doc/libgcrypt20/AUTHORS.gz \
+    ./usr/share/doc/libgcrypt20/NEWS.gz \
     ./usr/share/doc/libgcrypt20/README.gz \
+    ./usr/share/doc/libgcrypt20/THANKS.gz \
     ./usr/share/doc/libgcrypt20/changelog.Debian.gz \
-    ./usr/share/doc/libgcrypt20/NEWS.gz\
+    ./usr/share/doc/libgcrypt20/changelog.gz \
+    ./usr/share/doc/libgcrypt20/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

@@ -20,9 +20,9 @@ INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libjbig0 = " \
     ./usr/lib/arm-linux-gnueabihf/libjbig.so.0 \
+    ./usr/share/doc/libjbig0/changelog.Debian.gz \
     ./usr/share/doc/libjbig0/changelog.gz \
-    ./usr/share/doc/libjbig0/copyright \
-    ./usr/share/doc/libjbig0/changelog.Debian.gz\
+    ./usr/share/doc/libjbig0/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

@@ -19,12 +19,12 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libbz2-1.0 = " \
-    ./lib/arm-linux-gnueabihf/libbz2.so.1.0.4 \
-    ./usr/share/doc/libbz2-1.0/copyright \
-    ./usr/share/doc/libbz2-1.0/changelog.Debian.gz \
     ./lib/arm-linux-gnueabihf/libbz2.so.1 \
+    ./lib/arm-linux-gnueabihf/libbz2.so.1.0 \
+    ./lib/arm-linux-gnueabihf/libbz2.so.1.0.4 \
+    ./usr/share/doc/libbz2-1.0/changelog.Debian.gz \
     ./usr/share/doc/libbz2-1.0/changelog.gz \
-    ./lib/arm-linux-gnueabihf/libbz2.so.1.0\
+    ./usr/share/doc/libbz2-1.0/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

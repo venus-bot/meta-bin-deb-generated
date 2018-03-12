@@ -19,9 +19,9 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libdebconfclient0 = " \
-    ./usr/share/doc/libdebconfclient0/changelog.gz \
-    ./usr/lib/arm-linux-gnueabihf/libdebconfclient.so.0.0.0 \
     ./usr/lib/arm-linux-gnueabihf/libdebconfclient.so.0 \
+    ./usr/lib/arm-linux-gnueabihf/libdebconfclient.so.0.0.0 \
+    ./usr/share/doc/libdebconfclient0/changelog.gz \
     ./usr/share/doc/libdebconfclient0/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!

@@ -16,45 +16,45 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_fonts-dejavu-core = " \
-    ./usr/share/doc/fonts-dejavu-core/changelog.Debian.gz \
-    ./usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf \
-    ./etc/fonts/conf.d/57-dejavu-sans.conf \
-    ./etc/fonts/conf.avail/58-dejavu-lgc-serif.conf \
-    ./etc/fonts/conf.d/58-dejavu-lgc-serif.conf \
-    ./usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf \
-    ./etc/fonts/conf.avail/20-unhint-small-dejavu-serif.conf \
-    ./etc/fonts/conf.avail/20-unhint-small-dejavu-sans-mono.conf \
-    ./etc/fonts/conf.avail/57-dejavu-sans-mono.conf \
-    ./usr/share/doc/fonts-dejavu-core/changelog.gz \
-    ./usr/share/doc/fonts-dejavu-core/README \
-    ./etc/fonts/conf.d/58-dejavu-lgc-sans.conf \
-    ./etc/fonts/conf.avail/20-unhint-small-dejavu-sans.conf \
-    ./etc/fonts/conf.avail/57-dejavu-sans.conf \
-    ./usr/share/doc/fonts-dejavu-core/BUGS \
-    ./usr/share/fonts/truetype/dejavu/DejaVuSans.ttf \
-    ./etc/fonts/conf.avail/58-dejavu-lgc-sans.conf \
-    ./usr/share/doc/fonts-dejavu-core/status.txt.gz \
-    ./usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf \
-    ./usr/share/doc/fonts-dejavu-core/langcover.txt.gz \
-    ./usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf \
-    ./usr/share/doc/fonts-dejavu-core/AUTHORS \
-    ./etc/fonts/conf.d/20-unhint-small-dejavu-serif.conf \
-    ./usr/share/doc/fonts-dejavu-core/copyright \
-    ./usr/share/doc/fonts-dejavu-core/unicover.txt.gz \
-    ./etc/fonts/conf.avail/58-dejavu-lgc-sans-mono.conf \
-    ./etc/fonts/conf.d/20-unhint-small-dejavu-lgc-serif.conf \
-    ./etc/fonts/conf.d/58-dejavu-lgc-sans-mono.conf \
-    ./usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf \
-    ./etc/fonts/conf.d/20-unhint-small-dejavu-sans-mono.conf \
     ./etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans-mono.conf \
     ./etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans.conf \
-    ./etc/fonts/conf.avail/57-dejavu-serif.conf \
-    ./etc/fonts/conf.d/20-unhint-small-dejavu-sans.conf \
-    ./etc/fonts/conf.d/57-dejavu-sans-mono.conf \
-    ./etc/fonts/conf.d/20-unhint-small-dejavu-lgc-sans-mono.conf \
     ./etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-serif.conf \
+    ./etc/fonts/conf.avail/20-unhint-small-dejavu-sans-mono.conf \
+    ./etc/fonts/conf.avail/20-unhint-small-dejavu-sans.conf \
+    ./etc/fonts/conf.avail/20-unhint-small-dejavu-serif.conf \
+    ./etc/fonts/conf.avail/57-dejavu-sans-mono.conf \
+    ./etc/fonts/conf.avail/57-dejavu-sans.conf \
+    ./etc/fonts/conf.avail/57-dejavu-serif.conf \
+    ./etc/fonts/conf.avail/58-dejavu-lgc-sans-mono.conf \
+    ./etc/fonts/conf.avail/58-dejavu-lgc-sans.conf \
+    ./etc/fonts/conf.avail/58-dejavu-lgc-serif.conf \
+    ./etc/fonts/conf.d/20-unhint-small-dejavu-lgc-sans-mono.conf \
     ./etc/fonts/conf.d/20-unhint-small-dejavu-lgc-sans.conf \
-    ./etc/fonts/conf.d/57-dejavu-serif.conf\
+    ./etc/fonts/conf.d/20-unhint-small-dejavu-lgc-serif.conf \
+    ./etc/fonts/conf.d/20-unhint-small-dejavu-sans-mono.conf \
+    ./etc/fonts/conf.d/20-unhint-small-dejavu-sans.conf \
+    ./etc/fonts/conf.d/20-unhint-small-dejavu-serif.conf \
+    ./etc/fonts/conf.d/57-dejavu-sans-mono.conf \
+    ./etc/fonts/conf.d/57-dejavu-sans.conf \
+    ./etc/fonts/conf.d/57-dejavu-serif.conf \
+    ./etc/fonts/conf.d/58-dejavu-lgc-sans-mono.conf \
+    ./etc/fonts/conf.d/58-dejavu-lgc-sans.conf \
+    ./etc/fonts/conf.d/58-dejavu-lgc-serif.conf \
+    ./usr/share/doc/fonts-dejavu-core/AUTHORS \
+    ./usr/share/doc/fonts-dejavu-core/BUGS \
+    ./usr/share/doc/fonts-dejavu-core/README \
+    ./usr/share/doc/fonts-dejavu-core/changelog.Debian.gz \
+    ./usr/share/doc/fonts-dejavu-core/changelog.gz \
+    ./usr/share/doc/fonts-dejavu-core/copyright \
+    ./usr/share/doc/fonts-dejavu-core/langcover.txt.gz \
+    ./usr/share/doc/fonts-dejavu-core/status.txt.gz \
+    ./usr/share/doc/fonts-dejavu-core/unicover.txt.gz \
+    ./usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf \
+    ./usr/share/fonts/truetype/dejavu/DejaVuSans.ttf \
+    ./usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf \
+    ./usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf \
+    ./usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf \
+    ./usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"
