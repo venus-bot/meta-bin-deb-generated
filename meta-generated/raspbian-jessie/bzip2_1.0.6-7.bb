@@ -1,4 +1,4 @@
-PACKAGES = "libbz2-1.0"
+PACKAGES = "${PN} libbz2-1.0"
 PROVIDES = "libbz2-1.0"
 SRC_URI = " \
 	http://archive.raspbian.org/raspbian/pool/main/b/bzip2/libbz2-1.0_1.0.6-7_armhf.deb;unpack=0;name=deb0\
@@ -19,12 +19,12 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libbz2-1.0 = " \
-	./lib/arm-linux-gnueabihf/libbz2.so.1.0 \
-	./usr/share/doc/libbz2-1.0/changelog.gz \
-	./usr/share/doc/libbz2-1.0/changelog.Debian.gz \
-	./lib/arm-linux-gnueabihf/libbz2.so.1.0.4 \
-	./lib/arm-linux-gnueabihf/libbz2.so.1 \
-	./usr/share/doc/libbz2-1.0/copyright\
+    ./lib/arm-linux-gnueabihf/libbz2.so.1.0.4 \
+    ./usr/share/doc/libbz2-1.0/copyright \
+    ./usr/share/doc/libbz2-1.0/changelog.Debian.gz \
+    ./lib/arm-linux-gnueabihf/libbz2.so.1 \
+    ./usr/share/doc/libbz2-1.0/changelog.gz \
+    ./lib/arm-linux-gnueabihf/libbz2.so.1.0\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

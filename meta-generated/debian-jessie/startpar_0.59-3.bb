@@ -1,4 +1,4 @@
-PACKAGES = "startpar"
+PACKAGES = "${PN} startpar"
 PROVIDES = "startpar"
 SRC_URI = " \
 	http://ftp.de.debian.org/debian/pool/main/s/startpar/startpar_0.59-3_armhf.deb;unpack=0;name=deb0\
@@ -19,13 +19,13 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN} = " \
-	./usr/share/doc/startpar/copyright \
-	./lib/startpar/startpar-upstart-inject \
-	./lib/startpar/startpar \
-	./usr/share/man/man8/startpar-upstart-inject.8.gz \
-	./usr/share/doc/startpar/changelog.Debian.gz \
-	./usr/share/man/man8/startpar.8.gz \
-	./etc/init/startpar-bridge.conf\
+    ./lib/startpar/startpar-upstart-inject \
+    ./etc/init/startpar-bridge.conf \
+    ./usr/share/doc/startpar/changelog.Debian.gz \
+    ./lib/startpar/startpar \
+    ./usr/share/man/man8/startpar-upstart-inject.8.gz \
+    ./usr/share/doc/startpar/copyright \
+    ./usr/share/man/man8/startpar.8.gz\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

@@ -1,4 +1,4 @@
-PACKAGES = "libffi6"
+PACKAGES = "${PN} libffi6"
 PROVIDES = "libffi6"
 SRC_URI = " \
 	http://ftp.de.debian.org/debian/pool/main/libf/libffi/libffi6_3.1-2+deb8u1_armhf.deb;unpack=0;name=deb0\
@@ -19,10 +19,10 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libffi6 = " \
-	./usr/lib/arm-linux-gnueabihf/libffi.so.6 \
-	./usr/share/doc/libffi6/changelog.Debian.gz \
-	./usr/share/doc/libffi6/copyright \
-	./usr/lib/arm-linux-gnueabihf/libffi.so.6.0.2\
+    ./usr/lib/arm-linux-gnueabihf/libffi.so.6.0.2 \
+    ./usr/share/doc/libffi6/copyright \
+    ./usr/share/doc/libffi6/changelog.Debian.gz \
+    ./usr/lib/arm-linux-gnueabihf/libffi.so.6\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

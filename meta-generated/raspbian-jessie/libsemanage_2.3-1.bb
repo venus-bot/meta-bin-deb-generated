@@ -1,4 +1,4 @@
-PACKAGES = "libsemanage-common libsemanage1"
+PACKAGES = "${PN} libsemanage-common libsemanage1"
 PROVIDES = "libsemanage-common libsemanage1"
 SRC_URI = " \
 	http://archive.raspbian.org/raspbian/pool/main/libs/libsemanage/libsemanage-common_2.3-1_all.deb;unpack=0;name=deb0\
@@ -12,7 +12,7 @@ SRC_URI[deb1.sha256sum] = "0b15c0194eeddf7eff81b35e6736e950381c77af239d84a2de304
 SRC_URI[deb1.md5sum] = "79a365607ece88c74d00b2c1e11ae683"
 
 RDEPENDS_${PN}1 = "libsemanage-common (= 2.3-1) libaudit1 (>= 1:2.2.1) libbz2-1.0 libc6 (>= 2.8) libselinux1 (>= 2.1.12) libsepol1 (>= 2.1.4) libustr-1.0-1 (>= 1.0.4)"
-DEPENDS = "libustr-1.0-1 libsepol1 libselinux1 libaudit1 libc6 libbz2-1.0"
+DEPENDS = "libaudit1 libsepol1 libc6 libselinux1 libbz2-1.0 libustr-1.0-1"
 
 
 inherit deb_group
@@ -23,17 +23,17 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libsemanage-common = " \
-	./usr/share/doc/libsemanage-common/changelog.Debian.gz \
-	./etc/selinux/semanage.conf \
-	./usr/share/doc/libsemanage-common/copyright \
-	./usr/share/doc/libsemanage-common/changelog.gz \
-	./usr/share/man/man5/semanage.conf.5.gz\
+    ./usr/share/doc/libsemanage-common/changelog.gz \
+    ./usr/share/doc/libsemanage-common/copyright \
+    ./usr/share/doc/libsemanage-common/changelog.Debian.gz \
+    ./usr/share/man/man5/semanage.conf.5.gz \
+    ./etc/selinux/semanage.conf\
 "
 FILES_libsemanage1 = " \
-	./usr/share/doc/libsemanage1/copyright \
-	./usr/share/doc/libsemanage1/changelog.Debian.gz \
-	./usr/share/doc/libsemanage1/changelog.gz \
-	./usr/lib/arm-linux-gnueabihf/libsemanage.so.1\
+    ./usr/share/doc/libsemanage1/changelog.gz \
+    ./usr/lib/arm-linux-gnueabihf/libsemanage.so.1 \
+    ./usr/share/doc/libsemanage1/copyright \
+    ./usr/share/doc/libsemanage1/changelog.Debian.gz\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

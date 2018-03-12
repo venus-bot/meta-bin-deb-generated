@@ -1,4 +1,4 @@
-PACKAGES = "x11proto-input-dev"
+PACKAGES = "${PN} x11proto-input-dev"
 PROVIDES = "x11proto-input-dev"
 SRC_URI = " \
 	http://ftp.de.debian.org/debian/pool/main/x/x11proto-input/x11proto-input-dev_2.3.1-1_all.deb;unpack=0;name=deb0\
@@ -19,18 +19,18 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN}-dev = " \
-	./usr/include/X11/extensions/XI.h \
-	./usr/include/X11/extensions/XI2proto.h \
-	./usr/share/doc/x11proto-input-dev/copyright \
-	./usr/share/doc/x11proto-input-dev/XIproto.txt.gz \
-	./usr/share/doc/x11proto-input-dev/XI2proto.txt.gz \
-	./usr/include/X11/extensions/XIproto.h \
-	./usr/include/X11/extensions/XI2.h \
-	./usr/share/pkgconfig/inputproto.pc \
-	./usr/share/doc/x11proto-input-dev/XIproto.html \
-	./usr/share/doc/x11proto-input-dev/changelog.gz \
-	./usr/share/doc/x11proto-input-dev/XI2proto.html \
-	./usr/share/doc/x11proto-input-dev/changelog.Debian.gz\
+    ./usr/share/pkgconfig/inputproto.pc \
+    ./usr/share/doc/x11proto-input-dev/XIproto.txt.gz \
+    ./usr/include/X11/extensions/XIproto.h \
+    ./usr/include/X11/extensions/XI2.h \
+    ./usr/include/X11/extensions/XI2proto.h \
+    ./usr/share/doc/x11proto-input-dev/XIproto.html \
+    ./usr/share/doc/x11proto-input-dev/XI2proto.txt.gz \
+    ./usr/share/doc/x11proto-input-dev/changelog.gz \
+    ./usr/share/doc/x11proto-input-dev/XI2proto.html \
+    ./usr/include/X11/extensions/XI.h \
+    ./usr/share/doc/x11proto-input-dev/changelog.Debian.gz \
+    ./usr/share/doc/x11proto-input-dev/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

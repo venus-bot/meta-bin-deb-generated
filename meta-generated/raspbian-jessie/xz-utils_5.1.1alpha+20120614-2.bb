@@ -1,4 +1,4 @@
-PACKAGES = "liblzma5"
+PACKAGES = "${PN} liblzma5"
 PROVIDES = "liblzma5"
 SRC_URI = " \
 	http://archive.raspbian.org/raspbian/pool/main/x/xz-utils/liblzma5_5.1.1alpha+20120614-2_armhf.deb;unpack=0;name=deb0\
@@ -19,14 +19,14 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_liblzma5 = " \
-	./usr/share/doc/liblzma5/changelog.gz \
-	./usr/share/doc/liblzma5/NEWS.gz \
-	./lib/arm-linux-gnueabihf/liblzma.so.5 \
-	./usr/share/doc/liblzma5/changelog.Debian.gz \
-	./usr/share/doc/liblzma5/THANKS \
-	./usr/share/doc/liblzma5/copyright \
-	./lib/arm-linux-gnueabihf/liblzma.so.5.0.0 \
-	./usr/share/doc/liblzma5/AUTHORS\
+    ./usr/share/doc/liblzma5/NEWS.gz \
+    ./lib/arm-linux-gnueabihf/liblzma.so.5 \
+    ./lib/arm-linux-gnueabihf/liblzma.so.5.0.0 \
+    ./usr/share/doc/liblzma5/copyright \
+    ./usr/share/doc/liblzma5/changelog.Debian.gz \
+    ./usr/share/doc/liblzma5/AUTHORS \
+    ./usr/share/doc/liblzma5/THANKS \
+    ./usr/share/doc/liblzma5/changelog.gz\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

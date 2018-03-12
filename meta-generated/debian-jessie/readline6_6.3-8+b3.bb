@@ -1,4 +1,4 @@
-PACKAGES = "libreadline6 readline-common"
+PACKAGES = "${PN} libreadline6 readline-common"
 PROVIDES = "libreadline6 readline-common"
 SRC_URI = " \
 	http://ftp.de.debian.org/debian/pool/main/r/readline6/libreadline6_6.3-8+b3_armhf.deb;unpack=0;name=deb0\
@@ -24,28 +24,28 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libreadline6 = " \
-	./lib/arm-linux-gnueabihf/libreadline.so.6 \
-	./lib/arm-linux-gnueabihf/libhistory.so.6 \
-	./usr/share/doc/libreadline6/README.Debian \
-	./usr/share/doc/libreadline6/changelog.Debian.armhf.gz \
-	./usr/share/doc/libreadline6/USAGE \
-	./usr/share/doc/libreadline6/changelog.gz \
-	./usr/share/doc/libreadline6/examples/Inputrc \
-	./usr/share/doc/libreadline6/copyright \
-	./lib/arm-linux-gnueabihf/libreadline.so.6.3 \
-	./usr/share/doc/libreadline6/inputrc.arrows \
-	./usr/share/doc/libreadline6/changelog.Debian.gz \
-	./lib/arm-linux-gnueabihf/libhistory.so.6.3\
+    ./usr/share/doc/libreadline6/changelog.Debian.gz \
+    ./usr/share/doc/libreadline6/changelog.Debian.armhf.gz \
+    ./lib/arm-linux-gnueabihf/libreadline.so.6 \
+    ./usr/share/doc/libreadline6/copyright \
+    ./lib/arm-linux-gnueabihf/libhistory.so.6 \
+    ./usr/share/doc/libreadline6/examples/Inputrc \
+    ./lib/arm-linux-gnueabihf/libhistory.so.6.3 \
+    ./usr/share/doc/libreadline6/README.Debian \
+    ./lib/arm-linux-gnueabihf/libreadline.so.6.3 \
+    ./usr/share/doc/libreadline6/changelog.gz \
+    ./usr/share/doc/libreadline6/inputrc.arrows \
+    ./usr/share/doc/libreadline6/USAGE\
 "
 FILES_readline-common = " \
-	./usr/share/doc/readline-common/changelog.Debian.gz \
-	./usr/share/readline/inputrc \
-	./usr/share/man/man3/history.3readline.gz \
-	./usr/share/info/rluserman.info.gz \
-	./usr/share/lintian/overrides/readline-common \
-	./usr/share/doc/readline-common/copyright \
-	./usr/share/man/man3/readline.3readline.gz \
-	./usr/share/doc/readline-common/inputrc.arrows\
+    ./usr/share/man/man3/readline.3readline.gz \
+    ./usr/share/man/man3/history.3readline.gz \
+    ./usr/share/doc/readline-common/changelog.Debian.gz \
+    ./usr/share/info/rluserman.info.gz \
+    ./usr/share/lintian/overrides/readline-common \
+    ./usr/share/doc/readline-common/inputrc.arrows \
+    ./usr/share/doc/readline-common/copyright \
+    ./usr/share/readline/inputrc\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

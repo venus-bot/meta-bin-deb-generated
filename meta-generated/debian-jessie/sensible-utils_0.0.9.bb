@@ -1,4 +1,4 @@
-PACKAGES = "sensible-utils"
+PACKAGES = "${PN} sensible-utils"
 PROVIDES = "sensible-utils"
 SRC_URI = " \
 	http://ftp.de.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.9_all.deb;unpack=0;name=deb0\
@@ -16,35 +16,35 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN} = " \
-	./usr/bin/sensible-browser \
-	./usr/share/man/es/man1/sensible-editor.1.gz \
-	./usr/share/doc/sensible-utils/changelog.gz \
-	./usr/lib/mime/packages/sensible-utils \
-	./usr/share/man/fr/man1/sensible-editor.1.gz \
-	./usr/share/man/fr/man1/sensible-browser.1.gz \
-	./usr/share/man/man1/sensible-browser.1.gz \
-	./usr/share/man/es/man1/sensible-pager.1.gz \
-	./usr/share/man/de/man1/sensible-editor.1.gz \
-	./usr/share/man/pl/man1/sensible-editor.1.gz \
-	./usr/share/man/de/man1/sensible-pager.1.gz \
-	./usr/bin/select-editor \
-	./usr/share/doc/sensible-utils/copyright \
-	./usr/share/man/de/man1/sensible-browser.1.gz \
-	./usr/share/man/pl/man1/sensible-pager.1.gz \
-	./usr/share/man/it/man1/sensible-editor.1.gz \
-	./usr/bin/sensible-editor \
-	./usr/share/man/ja/man1/sensible-pager.1.gz \
-	./usr/share/man/es/man1/sensible-browser.1.gz \
-	./usr/share/man/man1/sensible-editor.1.gz \
-	./usr/bin/sensible-pager \
-	./usr/share/man/man1/select-editor.1.gz \
-	./usr/share/man/it/man1/sensible-pager.1.gz \
-	./usr/share/man/it/man1/sensible-browser.1.gz \
-	./usr/share/man/ja/man1/sensible-browser.1.gz \
-	./usr/share/man/man1/sensible-pager.1.gz \
-	./usr/share/man/pl/man1/sensible-browser.1.gz \
-	./usr/share/man/ja/man1/sensible-editor.1.gz \
-	./usr/share/man/fr/man1/sensible-pager.1.gz\
+    ./usr/share/man/man1/sensible-editor.1.gz \
+    ./usr/bin/sensible-editor \
+    ./usr/share/man/es/man1/sensible-browser.1.gz \
+    ./usr/lib/mime/packages/sensible-utils \
+    ./usr/share/man/es/man1/sensible-editor.1.gz \
+    ./usr/share/man/ja/man1/sensible-pager.1.gz \
+    ./usr/share/man/fr/man1/sensible-pager.1.gz \
+    ./usr/share/man/man1/select-editor.1.gz \
+    ./usr/share/man/pl/man1/sensible-browser.1.gz \
+    ./usr/share/man/pl/man1/sensible-pager.1.gz \
+    ./usr/share/man/es/man1/sensible-pager.1.gz \
+    ./usr/share/man/de/man1/sensible-pager.1.gz \
+    ./usr/share/man/ja/man1/sensible-editor.1.gz \
+    ./usr/share/man/de/man1/sensible-browser.1.gz \
+    ./usr/share/man/it/man1/sensible-browser.1.gz \
+    ./usr/share/man/ja/man1/sensible-browser.1.gz \
+    ./usr/bin/sensible-browser \
+    ./usr/share/man/it/man1/sensible-editor.1.gz \
+    ./usr/share/man/pl/man1/sensible-editor.1.gz \
+    ./usr/bin/select-editor \
+    ./usr/share/doc/sensible-utils/copyright \
+    ./usr/share/man/it/man1/sensible-pager.1.gz \
+    ./usr/share/man/fr/man1/sensible-editor.1.gz \
+    ./usr/share/man/fr/man1/sensible-browser.1.gz \
+    ./usr/share/man/de/man1/sensible-editor.1.gz \
+    ./usr/share/doc/sensible-utils/changelog.gz \
+    ./usr/share/man/man1/sensible-pager.1.gz \
+    ./usr/bin/sensible-pager \
+    ./usr/share/man/man1/sensible-browser.1.gz\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

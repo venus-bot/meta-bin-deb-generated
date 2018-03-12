@@ -1,4 +1,4 @@
-PACKAGES = "libexpat1"
+PACKAGES = "${PN} libexpat1"
 PROVIDES = "libexpat1"
 SRC_URI = " \
 	http://ftp.de.debian.org/debian/pool/main/e/expat/libexpat1_2.1.0-6+deb8u4_armhf.deb;unpack=0;name=deb0\
@@ -19,13 +19,13 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libexpat1 = " \
-	./usr/lib/arm-linux-gnueabihf/libexpatw.so.1 \
-	./usr/share/doc/libexpat1/copyright \
-	./usr/share/doc/libexpat1/changelog.gz \
-	./lib/arm-linux-gnueabihf/libexpat.so.1.6.0 \
-	./usr/share/doc/libexpat1/changelog.Debian.gz \
-	./lib/arm-linux-gnueabihf/libexpat.so.1 \
-	./usr/lib/arm-linux-gnueabihf/libexpatw.so.1.6.0\
+    ./usr/share/doc/libexpat1/changelog.Debian.gz \
+    ./lib/arm-linux-gnueabihf/libexpat.so.1.6.0 \
+    ./usr/lib/arm-linux-gnueabihf/libexpatw.so.1 \
+    ./usr/share/doc/libexpat1/changelog.gz \
+    ./lib/arm-linux-gnueabihf/libexpat.so.1 \
+    ./usr/share/doc/libexpat1/copyright \
+    ./usr/lib/arm-linux-gnueabihf/libexpatw.so.1.6.0\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

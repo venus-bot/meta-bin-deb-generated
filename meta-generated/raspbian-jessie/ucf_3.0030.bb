@@ -1,4 +1,4 @@
-PACKAGES = "ucf"
+PACKAGES = "${PN} ucf"
 PROVIDES = "ucf"
 SRC_URI = " \
 	http://archive.raspbian.org/raspbian/pool/main/u/ucf/ucf_3.0030_all.deb;unpack=0;name=deb0\
@@ -8,7 +8,7 @@ SRC_URI[deb0.sha256sum] = "1b93d9fc5930b9d8382705b71605e07fe11f4796db239b7ac2644
 SRC_URI[deb0.md5sum] = "bbec42184e8bdce20002bcf37b38b89a"
 
 RDEPENDS_${PN} = "debconf (>= 1.5.19) coreutils (>= 5.91)"
-DEPENDS = "debconf coreutils"
+DEPENDS = "coreutils debconf"
 
 
 inherit deb_group
@@ -19,21 +19,21 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN} = " \
-	./usr/bin/lcf \
-	./usr/share/man/man1/ucfq.1.gz \
-	./usr/share/doc/ucf/examples/postrm \
-	./usr/share/man/man1/ucf.1.gz \
-	./usr/share/doc/ucf/examples/postinst.gz \
-	./usr/bin/ucfr \
-	./usr/share/man/man1/lcf.1.gz \
-	./usr/share/man/man5/ucf.conf.5.gz \
-	./usr/bin/ucfq \
-	./usr/share/lintian/overrides/ucf \
-	./usr/bin/ucf \
-	./etc/ucf.conf \
-	./usr/share/man/man1/ucfr.1.gz \
-	./usr/share/doc/ucf/copyright \
-	./usr/share/doc/ucf/changelog.gz\
+    ./usr/share/man/man1/lcf.1.gz \
+    ./usr/bin/lcf \
+    ./usr/bin/ucf \
+    ./usr/bin/ucfr \
+    ./usr/share/lintian/overrides/ucf \
+    ./usr/share/man/man1/ucfr.1.gz \
+    ./usr/share/man/man1/ucf.1.gz \
+    ./usr/share/doc/ucf/examples/postrm \
+    ./usr/share/man/man1/ucfq.1.gz \
+    ./usr/bin/ucfq \
+    ./usr/share/doc/ucf/copyright \
+    ./usr/share/man/man5/ucf.conf.5.gz \
+    ./usr/share/doc/ucf/examples/postinst.gz \
+    ./usr/share/doc/ucf/changelog.gz \
+    ./etc/ucf.conf\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

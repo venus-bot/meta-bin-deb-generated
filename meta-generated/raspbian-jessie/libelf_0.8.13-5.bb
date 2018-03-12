@@ -1,4 +1,4 @@
-PACKAGES = "libelfg0"
+PACKAGES = "${PN} libelfg0"
 PROVIDES = "libelfg0"
 SRC_URI = " \
 	http://archive.raspbian.org/raspbian/pool/main/libe/libelf/libelfg0_0.8.13-5_armhf.deb;unpack=0;name=deb0\
@@ -19,13 +19,13 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libelfg0 = " \
-	./usr/share/locale/de/LC_MESSAGES/libelf.mo \
-	./usr/share/doc/libelfg0/changelog.Debian.gz \
-	./usr/lib/arm-linux-gnueabihf/libelf.so.0 \
-	./usr/share/doc/libelfg0/README.gz \
-	./usr/share/doc/libelfg0/copyright \
-	./usr/lib/arm-linux-gnueabihf/libelf.so.0.8.13 \
-	./usr/share/doc/libelfg0/changelog.gz\
+    ./usr/share/doc/libelfg0/README.gz \
+    ./usr/lib/arm-linux-gnueabihf/libelf.so.0 \
+    ./usr/share/locale/de/LC_MESSAGES/libelf.mo \
+    ./usr/lib/arm-linux-gnueabihf/libelf.so.0.8.13 \
+    ./usr/share/doc/libelfg0/changelog.gz \
+    ./usr/share/doc/libelfg0/changelog.Debian.gz \
+    ./usr/share/doc/libelfg0/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

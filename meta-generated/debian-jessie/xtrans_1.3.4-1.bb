@@ -1,4 +1,4 @@
-PACKAGES = "xtrans-dev"
+PACKAGES = "${PN} xtrans-dev"
 PROVIDES = "xtrans-dev"
 SRC_URI = " \
 	http://ftp.de.debian.org/debian/pool/main/x/xtrans/xtrans-dev_1.3.4-1_all.deb;unpack=0;name=deb0\
@@ -16,24 +16,24 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN}-dev = " \
-	./usr/share/pkgconfig/xtrans.pc \
-	./usr/include/X11/Xtrans/Xtranssock.c \
-	./usr/include/X11/Xtrans/Xtransutil.c \
-	./usr/share/doc/xtrans-dev/xtrans.xml.gz \
-	./usr/share/doc/xtrans-dev/xtrans.html \
-	./usr/share/aclocal/xtrans.m4 \
-	./usr/share/doc/xtrans-dev/xtrans.html.db \
-	./usr/include/X11/Xtrans/Xtrans.h \
-	./usr/share/doc/xtrans-dev/copyright \
-	./usr/share/doc/xtrans-dev/changelog.gz \
-	./usr/share/doc/xtrans-dev/xtrans.pdf.db.gz \
-	./usr/share/doc/xtrans-dev/changelog.Debian.gz \
-	./usr/share/doc/xtrans-dev/xtrans.txt.gz \
-	./usr/include/X11/Xtrans/Xtranslcl.c \
-	./usr/include/X11/Xtrans/Xtrans.c \
-	./usr/share/doc/xtrans-dev/README \
-	./usr/include/X11/Xtrans/Xtransint.h \
-	./usr/include/X11/Xtrans/transport.c\
+    ./usr/share/doc/xtrans-dev/xtrans.txt.gz \
+    ./usr/include/X11/Xtrans/Xtransutil.c \
+    ./usr/share/doc/xtrans-dev/copyright \
+    ./usr/share/doc/xtrans-dev/README \
+    ./usr/include/X11/Xtrans/Xtranslcl.c \
+    ./usr/share/doc/xtrans-dev/xtrans.html \
+    ./usr/share/aclocal/xtrans.m4 \
+    ./usr/include/X11/Xtrans/Xtransint.h \
+    ./usr/share/doc/xtrans-dev/changelog.Debian.gz \
+    ./usr/share/doc/xtrans-dev/xtrans.xml.gz \
+    ./usr/share/doc/xtrans-dev/xtrans.html.db \
+    ./usr/share/pkgconfig/xtrans.pc \
+    ./usr/share/doc/xtrans-dev/xtrans.pdf.db.gz \
+    ./usr/include/X11/Xtrans/Xtranssock.c \
+    ./usr/share/doc/xtrans-dev/changelog.gz \
+    ./usr/include/X11/Xtrans/Xtrans.h \
+    ./usr/include/X11/Xtrans/transport.c \
+    ./usr/include/X11/Xtrans/Xtrans.c\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

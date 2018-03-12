@@ -1,4 +1,4 @@
-PACKAGES = "libdebconfclient0"
+PACKAGES = "${PN} libdebconfclient0"
 PROVIDES = "libdebconfclient0"
 SRC_URI = " \
 	http://archive.raspbian.org/raspbian/pool/main/c/cdebconf/libdebconfclient0_0.192_armhf.deb;unpack=0;name=deb0\
@@ -19,10 +19,10 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libdebconfclient0 = " \
-	./usr/lib/arm-linux-gnueabihf/libdebconfclient.so.0 \
-	./usr/lib/arm-linux-gnueabihf/libdebconfclient.so.0.0.0 \
-	./usr/share/doc/libdebconfclient0/copyright \
-	./usr/share/doc/libdebconfclient0/changelog.gz\
+    ./usr/lib/arm-linux-gnueabihf/libdebconfclient.so.0.0.0 \
+    ./usr/lib/arm-linux-gnueabihf/libdebconfclient.so.0 \
+    ./usr/share/doc/libdebconfclient0/copyright \
+    ./usr/share/doc/libdebconfclient0/changelog.gz\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

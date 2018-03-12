@@ -1,4 +1,4 @@
-PACKAGES = "libcap-ng0"
+PACKAGES = "${PN} libcap-ng0"
 PROVIDES = "libcap-ng0"
 SRC_URI = " \
 	http://archive.raspbian.org/raspbian/pool/main/libc/libcap-ng/libcap-ng0_0.7.4-2_armhf.deb;unpack=0;name=deb0\
@@ -19,11 +19,11 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libcap-ng0 = " \
-	./usr/share/doc/libcap-ng0/copyright \
-	./usr/lib/arm-linux-gnueabihf/libcap-ng.so.0 \
-	./usr/share/doc/libcap-ng0/changelog.Debian.gz \
-	./usr/share/doc/libcap-ng0/changelog.gz \
-	./usr/lib/arm-linux-gnueabihf/libcap-ng.so.0.0.0\
+    ./usr/lib/arm-linux-gnueabihf/libcap-ng.so.0.0.0 \
+    ./usr/share/doc/libcap-ng0/changelog.gz \
+    ./usr/lib/arm-linux-gnueabihf/libcap-ng.so.0 \
+    ./usr/share/doc/libcap-ng0/changelog.Debian.gz \
+    ./usr/share/doc/libcap-ng0/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

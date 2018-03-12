@@ -1,4 +1,4 @@
-PACKAGES = "gir1.2-gssdp-1.0 libgssdp-1.0-3 libgssdp-1.0-dev"
+PACKAGES = "${PN} gir1.2-gssdp-1.0 libgssdp-1.0-3 libgssdp-1.0-dev"
 PROVIDES = "gir1.2-gssdp-1.0 libgssdp-1.0-3 libgssdp-1.0-dev"
 SRC_URI = " \
 	http://ftp.de.debian.org/debian/pool/main/g/gssdp/gir1.2-gssdp-1.0_0.14.10-1_armhf.deb;unpack=0;name=deb0\
@@ -18,7 +18,7 @@ SRC_URI[deb2.md5sum] = "f41c44cc52d4e79f15fb697e80ee0e03"
 RDEPENDS_gir1.2-${PN}-1.0 = "gir1.2-glib-2.0 gir1.2-soup-2.4 libgssdp-1.0-3 (>= 0.14.8)"
 RDEPENDS_lib${PN}-1.0-3 = "libc6 (>= 2.7) libglib2.0-0 (>= 2.37.3) libsoup2.4-1 (>= 2.26.1)"
 RDEPENDS_lib${PN}-1.0-dev = "libgssdp-1.0-3 (= 0.14.10-1) gir1.2-gssdp-1.0 (= 0.14.10-1) libsoup2.4-dev"
-DEPENDS = "libglib2.0-0 gir1.2-glib-2.0 gir1.2-soup-2.4 libc6 libsoup2.4-1 libsoup2.4-dev"
+DEPENDS = "gir1.2-soup-2.4 libsoup2.4-dev libglib2.0-0 gir1.2-glib-2.0 libc6 libsoup2.4-1"
 
 
 inherit deb_group
@@ -29,39 +29,39 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_gir1.2-gssdp-1.0 = " \
-	./usr/share/doc/gir1.2-gssdp-1.0/changelog.Debian.gz \
-	./usr/share/doc/gir1.2-gssdp-1.0/copyright \
-	./usr/share/doc/gir1.2-gssdp-1.0/README \
-	./usr/share/doc/gir1.2-gssdp-1.0/AUTHORS \
-	./usr/share/doc/gir1.2-gssdp-1.0/NEWS.gz \
-	./usr/lib/girepository-1.0/GSSDP-1.0.typelib\
+    ./usr/share/doc/gir1.2-gssdp-1.0/copyright \
+    ./usr/share/doc/gir1.2-gssdp-1.0/NEWS.gz \
+    ./usr/share/doc/gir1.2-gssdp-1.0/AUTHORS \
+    ./usr/lib/girepository-1.0/GSSDP-1.0.typelib \
+    ./usr/share/doc/gir1.2-gssdp-1.0/changelog.Debian.gz \
+    ./usr/share/doc/gir1.2-gssdp-1.0/README\
 "
 FILES_libgssdp-1.0-3 = " \
-	./usr/lib/libgssdp-1.0.so.3 \
-	./usr/share/doc/libgssdp-1.0-3/changelog.Debian.gz \
-	./usr/share/doc/libgssdp-1.0-3/README \
-	./usr/share/doc/libgssdp-1.0-3/NEWS.gz \
-	./usr/lib/libgssdp-1.0.so.3.0.0 \
-	./usr/share/doc/libgssdp-1.0-3/AUTHORS \
-	./usr/share/doc/libgssdp-1.0-3/copyright\
+    ./usr/lib/libgssdp-1.0.so.3 \
+    ./usr/share/doc/libgssdp-1.0-3/copyright \
+    ./usr/share/doc/libgssdp-1.0-3/NEWS.gz \
+    ./usr/share/doc/libgssdp-1.0-3/README \
+    ./usr/share/doc/libgssdp-1.0-3/AUTHORS \
+    ./usr/share/doc/libgssdp-1.0-3/changelog.Debian.gz \
+    ./usr/lib/libgssdp-1.0.so.3.0.0\
 "
 FILES_libgssdp-1.0-dev = " \
-	./usr/include/gssdp-1.0/libgssdp/gssdp-client.h \
-	./usr/lib/pkgconfig/gssdp-1.0.pc \
-	./usr/share/doc/libgssdp-1.0-dev/copyright \
-	./usr/share/gir-1.0/GSSDP-1.0.gir \
-	./usr/include/gssdp-1.0/libgssdp/gssdp.h \
-	./usr/share/doc/libgssdp-1.0-dev/changelog.Debian.gz \
-	./usr/include/gssdp-1.0/libgssdp/gssdp-resource-group.h \
-	./usr/include/gssdp-1.0/libgssdp/gssdp-error.h \
-	./usr/share/vala/vapi/gssdp-1.0.vapi \
-	./usr/lib/libgssdp-1.0.so \
-	./usr/lib/libgssdp-1.0.a \
-	./usr/share/doc/libgssdp-1.0-dev/NEWS.gz \
-	./usr/share/doc/libgssdp-1.0-dev/AUTHORS \
-	./usr/share/doc/libgssdp-1.0-dev/README \
-	./usr/include/gssdp-1.0/libgssdp/gssdp-resource-browser.h \
-	./usr/share/vala/vapi/gssdp-1.0.deps\
+    ./usr/share/gir-1.0/GSSDP-1.0.gir \
+    ./usr/share/doc/libgssdp-1.0-dev/README \
+    ./usr/share/vala/vapi/gssdp-1.0.deps \
+    ./usr/share/doc/libgssdp-1.0-dev/AUTHORS \
+    ./usr/lib/libgssdp-1.0.a \
+    ./usr/share/vala/vapi/gssdp-1.0.vapi \
+    ./usr/lib/pkgconfig/gssdp-1.0.pc \
+    ./usr/share/doc/libgssdp-1.0-dev/copyright \
+    ./usr/include/gssdp-1.0/libgssdp/gssdp-error.h \
+    ./usr/lib/libgssdp-1.0.so \
+    ./usr/include/gssdp-1.0/libgssdp/gssdp-client.h \
+    ./usr/share/doc/libgssdp-1.0-dev/changelog.Debian.gz \
+    ./usr/share/doc/libgssdp-1.0-dev/NEWS.gz \
+    ./usr/include/gssdp-1.0/libgssdp/gssdp-resource-browser.h \
+    ./usr/include/gssdp-1.0/libgssdp/gssdp-resource-group.h \
+    ./usr/include/gssdp-1.0/libgssdp/gssdp.h\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

@@ -1,4 +1,4 @@
-PACKAGES = "libustr-1.0-1"
+PACKAGES = "${PN} libustr-1.0-1"
 PROVIDES = "libustr-1.0-1"
 SRC_URI = " \
 	http://ftp.de.debian.org/debian/pool/main/u/ustr/libustr-1.0-1_1.0.4-3+b2_armhf.deb;unpack=0;name=deb0\
@@ -19,17 +19,17 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libustr-1.0-1 = " \
-	./usr/share/doc/libustr-1.0-1/README \
-	./usr/share/doc/libustr-1.0-1/THANKS \
-	./usr/share/doc/libustr-1.0-1/TODO \
-	./usr/share/doc/libustr-1.0-1/changelog.Debian.armhf.gz \
-	./usr/share/doc/libustr-1.0-1/changelog.Debian.gz \
-	./usr/share/doc/libustr-1.0-1/NEWS.gz \
-	./usr/share/doc/libustr-1.0-1/AUTHORS \
-	./usr/share/doc/libustr-1.0-1/changelog.gz \
-	./usr/share/doc/libustr-1.0-1/copyright \
-	./usr/lib/arm-linux-gnueabihf/libustr-1.0.so.1.0.4 \
-	./usr/lib/arm-linux-gnueabihf/libustr-1.0.so.1\
+    ./usr/lib/arm-linux-gnueabihf/libustr-1.0.so.1.0.4 \
+    ./usr/share/doc/libustr-1.0-1/TODO \
+    ./usr/share/doc/libustr-1.0-1/README \
+    ./usr/share/doc/libustr-1.0-1/changelog.Debian.gz \
+    ./usr/share/doc/libustr-1.0-1/NEWS.gz \
+    ./usr/share/doc/libustr-1.0-1/changelog.Debian.armhf.gz \
+    ./usr/share/doc/libustr-1.0-1/changelog.gz \
+    ./usr/share/doc/libustr-1.0-1/copyright \
+    ./usr/share/doc/libustr-1.0-1/AUTHORS \
+    ./usr/lib/arm-linux-gnueabihf/libustr-1.0.so.1 \
+    ./usr/share/doc/libustr-1.0-1/THANKS\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

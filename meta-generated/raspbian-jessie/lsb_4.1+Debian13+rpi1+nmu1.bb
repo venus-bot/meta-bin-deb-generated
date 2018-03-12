@@ -1,4 +1,4 @@
-PACKAGES = "lsb-base"
+PACKAGES = "${PN} lsb-base"
 PROVIDES = "lsb-base"
 SRC_URI = " \
 	http://archive.raspbian.org/raspbian/pool/main/l/lsb/lsb-base_4.1+Debian13+rpi1+nmu1_all.deb;unpack=0;name=deb0\
@@ -16,12 +16,12 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_lsb-base = " \
-	./usr/share/doc/lsb-base/NEWS.Debian.gz \
-	./usr/share/doc/lsb-base/copyright \
-	./usr/share/doc/lsb-base/changelog.gz \
-	./lib/lsb/init-functions.d/20-left-info-blocks \
-	./usr/share/doc/lsb-base/README.Debian.gz \
-	./lib/lsb/init-functions\
+    ./usr/share/doc/lsb-base/copyright \
+    ./lib/lsb/init-functions \
+    ./usr/share/doc/lsb-base/changelog.gz \
+    ./lib/lsb/init-functions.d/20-left-info-blocks \
+    ./usr/share/doc/lsb-base/README.Debian.gz \
+    ./usr/share/doc/lsb-base/NEWS.Debian.gz\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

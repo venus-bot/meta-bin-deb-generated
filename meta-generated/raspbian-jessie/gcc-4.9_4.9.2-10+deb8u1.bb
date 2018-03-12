@@ -1,4 +1,4 @@
-PACKAGES = "gcc-4.9-base libatomic1 libgcc1 libgomp1 libstdc++6"
+PACKAGES = "${PN} gcc-4.9-base libatomic1 libgcc1 libgomp1 libstdc++6"
 PROVIDES = "gcc-4.9-base libatomic1 libgcc1 libgomp1 libstdc++6"
 SRC_URI = " \
 	http://archive.raspbian.org/raspbian/pool/main/g/gcc-4.9/gcc-4.9-base_4.9.2-10+deb8u1_armhf.deb;unpack=0;name=deb0\
@@ -38,35 +38,35 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_gcc-4.9-base = " \
-	./usr/share/doc/gcc-4.9-base/TODO.Debian \
-	./usr/share/doc/gcc-4.9-base/copyright \
-	./usr/share/doc/gcc-4.9-base/README.Debian.armhf.gz \
-	./usr/lib/gcc/arm-linux-gnueabihf/4.9.2 \
-	./usr/share/doc/gcc-4.9-base/changelog.Debian.gz\
+    ./usr/share/doc/gcc-4.9-base/README.Debian.armhf.gz \
+    ./usr/share/doc/gcc-4.9-base/changelog.Debian.gz \
+    ./usr/share/doc/gcc-4.9-base/copyright \
+    ./usr/share/doc/gcc-4.9-base/TODO.Debian \
+    ./usr/lib/gcc/arm-linux-gnueabihf/4.9.2\
 "
 FILES_libatomic1 = " \
-	./usr/share/doc/libatomic1 \
-	./usr/lib/arm-linux-gnueabihf/libatomic.so.1.1.0 \
-	./usr/lib/arm-linux-gnueabihf/libatomic.so.1\
+    ./usr/lib/arm-linux-gnueabihf/libatomic.so.1.1.0 \
+    ./usr/lib/arm-linux-gnueabihf/libatomic.so.1 \
+    ./usr/share/doc/libatomic1\
 "
 FILES_libgcc1 = " \
-	./lib/arm-linux-gnueabihf/libgcc_s.so.1 \
-	./usr/share/lintian/overrides/libgcc1 \
-	./usr/share/doc/libgcc1\
+    ./usr/share/lintian/overrides/libgcc1 \
+    ./usr/share/doc/libgcc1 \
+    ./lib/arm-linux-gnueabihf/libgcc_s.so.1\
 "
 FILES_libgomp1 = " \
-	./usr/share/doc/libgomp1 \
-	./usr/lib/arm-linux-gnueabihf/libgomp.so.1 \
-	./usr/lib/arm-linux-gnueabihf/libgomp.so.1.0.0\
+    ./usr/lib/arm-linux-gnueabihf/libgomp.so.1 \
+    ./usr/lib/arm-linux-gnueabihf/libgomp.so.1.0.0 \
+    ./usr/share/doc/libgomp1\
 "
 FILES_libstdc++6 = " \
-	./usr/share/gdb/auto-load/usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.20-gdb.py \
-	./usr/share/gcc-4.9/python/libstdcxx/v6/__init__.py \
-	./usr/share/gcc-4.9/python/libstdcxx/__init__.py \
-	./usr/share/gcc-4.9/python/libstdcxx/v6/printers.py \
-	./usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.20 \
-	./usr/share/doc/libstdc++6 \
-	./usr/lib/arm-linux-gnueabihf/libstdc++.so.6\
+    ./usr/lib/arm-linux-gnueabihf/libstdc++.so.6 \
+    ./usr/share/gdb/auto-load/usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.20-gdb.py \
+    ./usr/share/gcc-4.9/python/libstdcxx/__init__.py \
+    ./usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.20 \
+    ./usr/share/doc/libstdc++6 \
+    ./usr/share/gcc-4.9/python/libstdcxx/v6/printers.py \
+    ./usr/share/gcc-4.9/python/libstdcxx/v6/__init__.py\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

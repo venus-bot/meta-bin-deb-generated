@@ -1,4 +1,4 @@
-PACKAGES = "mime-support"
+PACKAGES = "${PN} mime-support"
 PROVIDES = "mime-support"
 SRC_URI = " \
 	http://archive.raspbian.org/raspbian/pool/main/m/mime-support/mime-support_3.58_all.deb;unpack=0;name=deb0\
@@ -16,28 +16,28 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN} = " \
-	./usr/bin/edit \
-	./usr/share/bug/mime-support/presubj \
-	./usr/share/man/man5/mailcap.5.gz \
-	./usr/share/man/man1/edit.1.gz \
-	./usr/share/man/man1/run-mailcap.1.gz \
-	./usr/share/man/man8/update-mime.8.gz \
-	./usr/lib/mime/packages/mime-support \
-	./usr/share/doc/mime-support/changelog.gz \
-	./usr/sbin/update-mime \
-	./usr/bin/run-mailcap \
-	./usr/bin/see \
-	./usr/share/man/man1/see.1.gz \
-	./usr/bin/print \
-	./usr/bin/compose \
-	./usr/share/doc/mime-support/copyright \
-	./usr/share/man/man1/print.1.gz \
-	./etc/mime.types \
-	./usr/lib/mime/debian-view \
-	./etc/mailcap.order \
-	./usr/lib/mime/mailcap \
-	./usr/share/man/man1/compose.1.gz \
-	./usr/share/man/man5/mailcap.order.5.gz\
+    ./usr/share/man/man1/edit.1.gz \
+    ./usr/bin/print \
+    ./usr/share/man/man1/compose.1.gz \
+    ./usr/lib/mime/packages/mime-support \
+    ./usr/share/man/man8/update-mime.8.gz \
+    ./usr/lib/mime/mailcap \
+    ./usr/share/doc/mime-support/changelog.gz \
+    ./etc/mime.types \
+    ./usr/share/man/man1/see.1.gz \
+    ./usr/share/man/man1/print.1.gz \
+    ./usr/bin/run-mailcap \
+    ./usr/bin/compose \
+    ./usr/share/man/man5/mailcap.5.gz \
+    ./usr/share/doc/mime-support/copyright \
+    ./usr/sbin/update-mime \
+    ./usr/share/man/man1/run-mailcap.1.gz \
+    ./usr/share/man/man5/mailcap.order.5.gz \
+    ./usr/share/bug/mime-support/presubj \
+    ./etc/mailcap.order \
+    ./usr/bin/edit \
+    ./usr/lib/mime/debian-view \
+    ./usr/bin/see\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

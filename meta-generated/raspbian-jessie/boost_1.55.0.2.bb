@@ -1,4 +1,4 @@
-PACKAGES = "libboost-program-options-dev libboost-regex-dev libboost-system-dev libboost-thread-dev"
+PACKAGES = "${PN} libboost-program-options-dev libboost-regex-dev libboost-system-dev libboost-thread-dev"
 PROVIDES = "libboost-program-options-dev libboost-regex-dev libboost-system-dev libboost-thread-dev"
 SRC_URI = " \
 	http://archive.raspbian.org/raspbian/pool/main/b/boost-defaults/libboost-program-options-dev_1.55.0.2_armhf.deb;unpack=0;name=deb0\
@@ -23,7 +23,7 @@ RDEPENDS_lib${PN}-program-options-dev = "libboost-program-options1.55-dev"
 RDEPENDS_lib${PN}-regex-dev = "libboost-regex1.55-dev"
 RDEPENDS_lib${PN}-system-dev = "libboost-system1.55-dev"
 RDEPENDS_lib${PN}-thread-dev = "libboost-thread1.55-dev"
-DEPENDS = "libboost-system1.55-dev libboost-thread1.55-dev libboost-program-options1.55-dev libboost-regex1.55-dev"
+DEPENDS = "libboost-program-options1.55-dev libboost-system1.55-dev libboost-thread1.55-dev libboost-regex1.55-dev"
 
 
 inherit deb_group
@@ -34,20 +34,20 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libboost-program-options-dev = " \
-	./usr/share/doc/libboost-program-options-dev/copyright \
-	./usr/share/doc/libboost-program-options-dev/changelog.gz\
+    ./usr/share/doc/libboost-program-options-dev/copyright \
+    ./usr/share/doc/libboost-program-options-dev/changelog.gz\
 "
 FILES_libboost-regex-dev = " \
-	./usr/share/doc/libboost-regex-dev/copyright \
-	./usr/share/doc/libboost-regex-dev/changelog.gz\
+    ./usr/share/doc/libboost-regex-dev/changelog.gz \
+    ./usr/share/doc/libboost-regex-dev/copyright\
 "
 FILES_libboost-system-dev = " \
-	./usr/share/doc/libboost-system-dev/copyright \
-	./usr/share/doc/libboost-system-dev/changelog.gz\
+    ./usr/share/doc/libboost-system-dev/changelog.gz \
+    ./usr/share/doc/libboost-system-dev/copyright\
 "
 FILES_libboost-thread-dev = " \
-	./usr/share/doc/libboost-thread-dev/copyright \
-	./usr/share/doc/libboost-thread-dev/changelog.gz\
+    ./usr/share/doc/libboost-thread-dev/changelog.gz \
+    ./usr/share/doc/libboost-thread-dev/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

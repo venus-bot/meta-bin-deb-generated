@@ -1,4 +1,4 @@
-PACKAGES = "python-six"
+PACKAGES = "${PN} python-six"
 PROVIDES = "python-six"
 SRC_URI = " \
 	http://ftp.de.debian.org/debian/pool/main/s/six/python-six_1.8.0-1_all.deb;unpack=0;name=deb0\
@@ -19,13 +19,13 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_python-six = " \
-	./usr/share/doc/python-six/changelog.Debian.gz \
-	./usr/share/doc/python-six/changelog.gz \
-	./usr/lib/python2.7/dist-packages/six-1.8.0.egg-info/dependency_links.txt \
-	./usr/lib/python2.7/dist-packages/six-1.8.0.egg-info/PKG-INFO \
-	./usr/share/doc/python-six/copyright \
-	./usr/lib/python2.7/dist-packages/six.py \
-	./usr/lib/python2.7/dist-packages/six-1.8.0.egg-info/top_level.txt\
+    ./usr/lib/python2.7/dist-packages/six.py \
+    ./usr/share/doc/python-six/copyright \
+    ./usr/share/doc/python-six/changelog.Debian.gz \
+    ./usr/lib/python2.7/dist-packages/six-1.8.0.egg-info/PKG-INFO \
+    ./usr/share/doc/python-six/changelog.gz \
+    ./usr/lib/python2.7/dist-packages/six-1.8.0.egg-info/dependency_links.txt \
+    ./usr/lib/python2.7/dist-packages/six-1.8.0.egg-info/top_level.txt\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

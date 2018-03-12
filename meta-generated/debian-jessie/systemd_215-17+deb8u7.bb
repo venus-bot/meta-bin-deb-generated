@@ -1,4 +1,4 @@
-PACKAGES = "libsystemd0"
+PACKAGES = "${PN} libsystemd0"
 PROVIDES = "libsystemd0"
 SRC_URI = " \
 	http://ftp.de.debian.org/debian/pool/main/s/systemd/libsystemd0_215-17+deb8u7_armhf.deb;unpack=0;name=deb0\
@@ -16,10 +16,10 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libsystemd0 = " \
-	./lib/arm-linux-gnueabihf/libsystemd.so.0 \
-	./lib/arm-linux-gnueabihf/libsystemd.so.0.3.1 \
-	./usr/share/doc/libsystemd0/changelog.Debian.gz \
-	./usr/share/doc/libsystemd0/copyright\
+    ./usr/share/doc/libsystemd0/changelog.Debian.gz \
+    ./usr/share/doc/libsystemd0/copyright \
+    ./lib/arm-linux-gnueabihf/libsystemd.so.0.3.1 \
+    ./lib/arm-linux-gnueabihf/libsystemd.so.0\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

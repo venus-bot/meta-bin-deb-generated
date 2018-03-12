@@ -1,4 +1,4 @@
-PACKAGES = "python-pkg-resources"
+PACKAGES = "${PN} python-pkg-resources"
 PROVIDES = "python-pkg-resources"
 SRC_URI = " \
 	http://ftp.de.debian.org/debian/pool/main/p/python-setuptools/python-pkg-resources_5.5.1-1_all.deb;unpack=0;name=deb0\
@@ -19,11 +19,11 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_python-pkg-resources = " \
-	./usr/lib/python2.7/dist-packages/pkg_resources.py \
-	./usr/share/doc/python-pkg-resources/README.Debian \
-	./usr/share/doc/python-pkg-resources/changelog.Debian.gz \
-	./usr/share/doc/python-pkg-resources/copyright \
-	./usr/share/doc/python-pkg-resources/pkg_resources.txt.gz\
+    ./usr/share/doc/python-pkg-resources/pkg_resources.txt.gz \
+    ./usr/share/doc/python-pkg-resources/changelog.Debian.gz \
+    ./usr/lib/python2.7/dist-packages/pkg_resources.py \
+    ./usr/share/doc/python-pkg-resources/README.Debian \
+    ./usr/share/doc/python-pkg-resources/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

@@ -1,4 +1,4 @@
-PACKAGES = "libsepol1"
+PACKAGES = "${PN} libsepol1"
 PROVIDES = "libsepol1"
 SRC_URI = " \
 	http://archive.raspbian.org/raspbian/pool/main/libs/libsepol/libsepol1_2.3-2_armhf.deb;unpack=0;name=deb0\
@@ -19,10 +19,10 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libsepol1 = " \
-	./usr/share/doc/libsepol1/changelog.Debian.gz \
-	./usr/share/doc/libsepol1/copyright \
-	./usr/share/doc/libsepol1/changelog.gz \
-	./lib/arm-linux-gnueabihf/libsepol.so.1\
+    ./usr/share/doc/libsepol1/copyright \
+    ./usr/share/doc/libsepol1/changelog.Debian.gz \
+    ./lib/arm-linux-gnueabihf/libsepol.so.1 \
+    ./usr/share/doc/libsepol1/changelog.gz\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

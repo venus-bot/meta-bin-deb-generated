@@ -1,4 +1,4 @@
-PACKAGES = "libdb5.3"
+PACKAGES = "${PN} libdb5.3"
 PROVIDES = "libdb5.3"
 SRC_URI = " \
 	http://ftp.de.debian.org/debian/pool/main/d/db5.3/libdb5.3_5.3.28-9+deb8u1_armhf.deb;unpack=0;name=deb0\
@@ -19,11 +19,11 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libdb5.3 = " \
-	./usr/lib/arm-linux-gnueabihf/libdb-5.3.so \
-	./usr/share/doc/libdb5.3/build_signature_armhf.txt \
-	./usr/share/doc/libdb5.3/copyright \
-	./usr/share/lintian/overrides/libdb5.3 \
-	./usr/share/doc/libdb5.3/changelog.Debian.gz\
+    ./usr/share/lintian/overrides/libdb5.3 \
+    ./usr/lib/arm-linux-gnueabihf/libdb-5.3.so \
+    ./usr/share/doc/libdb5.3/build_signature_armhf.txt \
+    ./usr/share/doc/libdb5.3/changelog.Debian.gz \
+    ./usr/share/doc/libdb5.3/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

@@ -1,4 +1,4 @@
-PACKAGES = "libcairo-gobject2 libcairo2"
+PACKAGES = "${PN} libcairo-gobject2 libcairo2"
 PROVIDES = "libcairo-gobject2 libcairo2"
 SRC_URI = " \
 	http://archive.raspbian.org/raspbian/pool/main/c/cairo/libcairo-gobject2_1.14.0-2.1+deb8u2_armhf.deb;unpack=0;name=deb0\
@@ -13,7 +13,7 @@ SRC_URI[deb1.md5sum] = "909befa96c88f06acfc497fc17b8bc27"
 
 RDEPENDS_lib${PN}-gobject2 = "libc6 (>= 2.4) libcairo2 (>= 1.10.0) libglib2.0-0 (>= 2.14.0)"
 RDEPENDS_lib${PN}2 = "libc6 (>= 2.11) libfontconfig1 (>= 2.11) libfreetype6 (>= 2.3.5) libpixman-1-0 (>= 0.30.0) libpng12-0 (>= 1.2.13-4) libx11-6 libxcb-render0 libxcb-shm0 libxcb1 (>= 1.6) libxext6 libxrender1 zlib1g (>= 1:1.1.4)"
-DEPENDS = "libglib2.0-0 libx11-6 zlib1g libxcb1 libpng12-0 libxrender1 libpixman-1-0 libxext6 libfreetype6 libxcb-render0 libc6 libxcb-shm0 libfontconfig1"
+DEPENDS = "libfontconfig1 libpng12-0 libpixman-1-0 libxcb-render0 libxcb1 libxcb-shm0 libxext6 zlib1g libglib2.0-0 libc6 libfreetype6 libx11-6 libxrender1"
 
 
 inherit deb_group
@@ -24,24 +24,24 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libcairo-gobject2 = " \
-	./usr/share/doc/libcairo-gobject2/changelog.gz \
-	./usr/share/doc/libcairo-gobject2/copyright \
-	./usr/lib/arm-linux-gnueabihf/libcairo-gobject.so.2 \
-	./usr/lib/arm-linux-gnueabihf/libcairo-gobject.so.2.11400.0 \
-	./usr/share/doc/libcairo-gobject2/NEWS.gz \
-	./usr/share/doc/libcairo-gobject2/README.gz \
-	./usr/share/doc/libcairo-gobject2/AUTHORS.gz \
-	./usr/share/doc/libcairo-gobject2/changelog.Debian.gz\
+    ./usr/share/doc/libcairo-gobject2/copyright \
+    ./usr/lib/arm-linux-gnueabihf/libcairo-gobject.so.2 \
+    ./usr/share/doc/libcairo-gobject2/changelog.gz \
+    ./usr/share/doc/libcairo-gobject2/README.gz \
+    ./usr/share/doc/libcairo-gobject2/NEWS.gz \
+    ./usr/share/doc/libcairo-gobject2/changelog.Debian.gz \
+    ./usr/lib/arm-linux-gnueabihf/libcairo-gobject.so.2.11400.0 \
+    ./usr/share/doc/libcairo-gobject2/AUTHORS.gz\
 "
 FILES_libcairo2 = " \
-	./usr/share/doc/libcairo2/copyright \
-	./usr/share/doc/libcairo2/changelog.gz \
-	./usr/share/doc/libcairo2/README.gz \
-	./usr/lib/arm-linux-gnueabihf/libcairo.so.2 \
-	./usr/lib/arm-linux-gnueabihf/libcairo.so.2.11400.0 \
-	./usr/share/doc/libcairo2/changelog.Debian.gz \
-	./usr/share/doc/libcairo2/AUTHORS.gz \
-	./usr/share/doc/libcairo2/NEWS.gz\
+    ./usr/lib/arm-linux-gnueabihf/libcairo.so.2 \
+    ./usr/share/doc/libcairo2/changelog.Debian.gz \
+    ./usr/lib/arm-linux-gnueabihf/libcairo.so.2.11400.0 \
+    ./usr/share/doc/libcairo2/AUTHORS.gz \
+    ./usr/share/doc/libcairo2/copyright \
+    ./usr/share/doc/libcairo2/changelog.gz \
+    ./usr/share/doc/libcairo2/README.gz \
+    ./usr/share/doc/libcairo2/NEWS.gz\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

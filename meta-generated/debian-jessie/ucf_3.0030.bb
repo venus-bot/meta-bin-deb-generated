@@ -1,4 +1,4 @@
-PACKAGES = "ucf"
+PACKAGES = "${PN} ucf"
 PROVIDES = "ucf"
 SRC_URI = " \
 	http://ftp.de.debian.org/debian/pool/main/u/ucf/ucf_3.0030_all.deb;unpack=0;name=deb0\
@@ -19,21 +19,21 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN} = " \
-	./usr/bin/lcf \
-	./usr/share/man/man1/ucfq.1.gz \
-	./usr/share/doc/ucf/examples/postrm \
-	./usr/share/man/man1/ucf.1.gz \
-	./usr/share/doc/ucf/examples/postinst.gz \
-	./usr/bin/ucfr \
-	./usr/share/man/man1/lcf.1.gz \
-	./usr/share/man/man5/ucf.conf.5.gz \
-	./usr/bin/ucfq \
-	./usr/share/lintian/overrides/ucf \
-	./usr/bin/ucf \
-	./etc/ucf.conf \
-	./usr/share/man/man1/ucfr.1.gz \
-	./usr/share/doc/ucf/copyright \
-	./usr/share/doc/ucf/changelog.gz\
+    ./usr/share/man/man1/lcf.1.gz \
+    ./usr/share/doc/ucf/copyright \
+    ./usr/share/doc/ucf/changelog.gz \
+    ./usr/share/man/man1/ucf.1.gz \
+    ./usr/share/man/man1/ucfq.1.gz \
+    ./usr/bin/ucf \
+    ./usr/share/doc/ucf/examples/postrm \
+    ./usr/bin/lcf \
+    ./usr/bin/ucfr \
+    ./usr/share/lintian/overrides/ucf \
+    ./usr/bin/ucfq \
+    ./usr/share/doc/ucf/examples/postinst.gz \
+    ./etc/ucf.conf \
+    ./usr/share/man/man5/ucf.conf.5.gz \
+    ./usr/share/man/man1/ucfr.1.gz\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

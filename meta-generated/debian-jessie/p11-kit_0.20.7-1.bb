@@ -1,4 +1,4 @@
-PACKAGES = "libp11-kit0"
+PACKAGES = "${PN} libp11-kit0"
 PROVIDES = "libp11-kit0"
 SRC_URI = " \
 	http://ftp.de.debian.org/debian/pool/main/p/p11-kit/libp11-kit0_0.20.7-1_armhf.deb;unpack=0;name=deb0\
@@ -8,7 +8,7 @@ SRC_URI[deb0.sha256sum] = "70b3358352e793bc0e78cde9d8edd2e9c89ae3ec29b664c639544
 SRC_URI[deb0.md5sum] = "3e10fe21789f145b492178eb80e6d07c"
 
 RDEPENDS_lib${PN}0 = "libc6 (>= 2.16) libffi6 (>= 3.0.4)"
-DEPENDS = "libffi6 libc6"
+DEPENDS = "libc6 libffi6"
 
 
 inherit deb_group
@@ -19,12 +19,12 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libp11-kit0 = " \
-	./usr/share/doc/libp11-kit0/copyright \
-	./usr/share/doc/libp11-kit0/changelog.Debian.gz \
-	./usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0 \
-	./usr/share/doc/libp11-kit0/examples/pkcs11.conf.example \
-	./usr/share/doc/libp11-kit0/changelog.gz \
-	./usr/lib/arm-linux-gnueabihf/libp11-kit.so.0\
+    ./usr/lib/arm-linux-gnueabihf/libp11-kit.so.0 \
+    ./usr/share/doc/libp11-kit0/changelog.Debian.gz \
+    ./usr/share/doc/libp11-kit0/examples/pkcs11.conf.example \
+    ./usr/share/doc/libp11-kit0/changelog.gz \
+    ./usr/lib/arm-linux-gnueabihf/libp11-kit.so.0.0.0 \
+    ./usr/share/doc/libp11-kit0/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

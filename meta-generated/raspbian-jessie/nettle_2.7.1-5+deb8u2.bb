@@ -1,4 +1,4 @@
-PACKAGES = "libhogweed2 libnettle4"
+PACKAGES = "${PN} libhogweed2 libnettle4"
 PROVIDES = "libhogweed2 libnettle4"
 SRC_URI = " \
 	http://archive.raspbian.org/raspbian/pool/main/n/nettle/libhogweed2_2.7.1-5+deb8u2_armhf.deb;unpack=0;name=deb0\
@@ -13,7 +13,7 @@ SRC_URI[deb1.md5sum] = "483004cc146b48dcf5dd09d457be735c"
 
 RDEPENDS_libhogweed2 = "libc6 (>= 2.4) libgmp10 (>= 2:6.0.0) libnettle4 (= 2.7.1-5+deb8u2)"
 RDEPENDS_lib${PN}4 = "libc6 (>= 2.4)"
-DEPENDS = "libgmp10 libc6"
+DEPENDS = "libc6 libgmp10"
 
 
 inherit deb_group
@@ -24,18 +24,18 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libhogweed2 = " \
-	./usr/lib/arm-linux-gnueabihf/libhogweed.so.2.5 \
-	./usr/share/doc/libhogweed2 \
-	./usr/lib/arm-linux-gnueabihf/libhogweed.so.2\
+    ./usr/share/doc/libhogweed2 \
+    ./usr/lib/arm-linux-gnueabihf/libhogweed.so.2 \
+    ./usr/lib/arm-linux-gnueabihf/libhogweed.so.2.5\
 "
 FILES_libnettle4 = " \
-	./usr/share/doc/libnettle4/README \
-	./usr/lib/arm-linux-gnueabihf/libnettle.so.4 \
-	./usr/lib/arm-linux-gnueabihf/libnettle.so.4.7 \
-	./usr/share/doc/libnettle4/changelog.Debian.gz \
-	./usr/share/doc/libnettle4/NEWS.gz \
-	./usr/share/doc/libnettle4/changelog.gz \
-	./usr/share/doc/libnettle4/copyright\
+    ./usr/share/doc/libnettle4/NEWS.gz \
+    ./usr/share/doc/libnettle4/changelog.gz \
+    ./usr/lib/arm-linux-gnueabihf/libnettle.so.4 \
+    ./usr/share/doc/libnettle4/README \
+    ./usr/lib/arm-linux-gnueabihf/libnettle.so.4.7 \
+    ./usr/share/doc/libnettle4/changelog.Debian.gz \
+    ./usr/share/doc/libnettle4/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

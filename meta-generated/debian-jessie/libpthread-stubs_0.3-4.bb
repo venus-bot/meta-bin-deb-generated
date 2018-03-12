@@ -1,4 +1,4 @@
-PACKAGES = "libpthread-stubs0-dev"
+PACKAGES = "${PN} libpthread-stubs0-dev"
 PROVIDES = "libpthread-stubs0-dev"
 SRC_URI = " \
 	http://ftp.de.debian.org/debian/pool/main/libp/libpthread-stubs/libpthread-stubs0-dev_0.3-4_armhf.deb;unpack=0;name=deb0\
@@ -16,10 +16,10 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libpthread-stubs0-dev = " \
-	./usr/share/doc/libpthread-stubs0-dev/changelog.Debian.gz \
-	./usr/share/doc/libpthread-stubs0-dev/copyright \
-	./usr/lib/arm-linux-gnueabihf/pkgconfig/pthread-stubs.pc \
-	./usr/share/doc/libpthread-stubs0-dev/README\
+    ./usr/lib/arm-linux-gnueabihf/pkgconfig/pthread-stubs.pc \
+    ./usr/share/doc/libpthread-stubs0-dev/README \
+    ./usr/share/doc/libpthread-stubs0-dev/changelog.Debian.gz \
+    ./usr/share/doc/libpthread-stubs0-dev/copyright\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

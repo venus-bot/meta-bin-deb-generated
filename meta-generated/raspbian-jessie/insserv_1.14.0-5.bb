@@ -1,4 +1,4 @@
-PACKAGES = "insserv"
+PACKAGES = "${PN} insserv"
 PROVIDES = "insserv"
 SRC_URI = " \
 	http://archive.raspbian.org/raspbian/pool/main/i/insserv/insserv_1.14.0-5_armhf.deb;unpack=0;name=deb0\
@@ -19,19 +19,19 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN} = " \
-	./usr/share/insserv/check-archive-initd-scripts \
-	./usr/share/doc/insserv/changelog.gz \
-	./etc/insserv.conf \
-	./usr/share/insserv/seq-changes \
-	./usr/share/insserv/make-testsuite \
-	./sbin/insserv \
-	./usr/share/doc/insserv/changelog.Debian.gz \
-	./usr/share/doc/insserv/README \
-	./usr/share/doc/insserv/copyright \
-	./usr/share/doc/insserv/README.Debian \
-	./usr/share/insserv/check-initd-order \
-	./usr/share/man/man8/insserv.8.gz \
-	./etc/bash_completion.d/insserv\
+    ./usr/share/insserv/check-initd-order \
+    ./usr/share/doc/insserv/copyright \
+    ./etc/insserv.conf \
+    ./etc/bash_completion.d/insserv \
+    ./usr/share/insserv/seq-changes \
+    ./sbin/insserv \
+    ./usr/share/insserv/check-archive-initd-scripts \
+    ./usr/share/doc/insserv/README \
+    ./usr/share/doc/insserv/changelog.Debian.gz \
+    ./usr/share/doc/insserv/changelog.gz \
+    ./usr/share/insserv/make-testsuite \
+    ./usr/share/man/man8/insserv.8.gz \
+    ./usr/share/doc/insserv/README.Debian\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

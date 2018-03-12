@@ -1,4 +1,4 @@
-PACKAGES = "libncursesw5 libtinfo5"
+PACKAGES = "${PN} libncursesw5 libtinfo5"
 PROVIDES = "libncursesw5 libtinfo5"
 SRC_URI = " \
 	http://ftp.de.debian.org/debian/pool/main/n/ncurses/libncursesw5_5.9+20140913-1+deb8u2_armhf.deb;unpack=0;name=deb0\
@@ -24,25 +24,25 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libncursesw5 = " \
-	./usr/lib/arm-linux-gnueabihf/libpanelw.so.5 \
-	./lib/arm-linux-gnueabihf/libncursesw.so.5.9 \
-	./usr/lib/arm-linux-gnueabihf/libmenuw.so.5 \
-	./usr/lib/arm-linux-gnueabihf/libpanelw.so.5.9 \
-	./usr/lib/arm-linux-gnueabihf/libformw.so.5.9 \
-	./usr/lib/arm-linux-gnueabihf/libformw.so.5 \
-	./usr/share/doc/libncursesw5 \
-	./usr/lib/arm-linux-gnueabihf/libmenuw.so.5.9 \
-	./lib/arm-linux-gnueabihf/libncursesw.so.5\
+    ./lib/arm-linux-gnueabihf/libncursesw.so.5.9 \
+    ./lib/arm-linux-gnueabihf/libncursesw.so.5 \
+    ./usr/lib/arm-linux-gnueabihf/libformw.so.5.9 \
+    ./usr/lib/arm-linux-gnueabihf/libmenuw.so.5 \
+    ./usr/lib/arm-linux-gnueabihf/libformw.so.5 \
+    ./usr/lib/arm-linux-gnueabihf/libpanelw.so.5 \
+    ./usr/lib/arm-linux-gnueabihf/libmenuw.so.5.9 \
+    ./usr/share/doc/libncursesw5 \
+    ./usr/lib/arm-linux-gnueabihf/libpanelw.so.5.9\
 "
 FILES_libtinfo5 = " \
-	./usr/lib/arm-linux-gnueabihf/libtic.so.5.9 \
-	./lib/arm-linux-gnueabihf/libtinfo.so.5 \
-	./lib/arm-linux-gnueabihf/libtinfo.so.5.9 \
-	./usr/share/doc/libtinfo5/changelog.gz \
-	./usr/share/doc/libtinfo5/TODO.Debian \
-	./usr/lib/arm-linux-gnueabihf/libtic.so.5 \
-	./usr/share/doc/libtinfo5/copyright \
-	./usr/share/doc/libtinfo5/changelog.Debian.gz\
+    ./usr/lib/arm-linux-gnueabihf/libtic.so.5 \
+    ./usr/share/doc/libtinfo5/changelog.gz \
+    ./usr/lib/arm-linux-gnueabihf/libtic.so.5.9 \
+    ./usr/share/doc/libtinfo5/copyright \
+    ./usr/share/doc/libtinfo5/changelog.Debian.gz \
+    ./lib/arm-linux-gnueabihf/libtinfo.so.5.9 \
+    ./lib/arm-linux-gnueabihf/libtinfo.so.5 \
+    ./usr/share/doc/libtinfo5/TODO.Debian\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"

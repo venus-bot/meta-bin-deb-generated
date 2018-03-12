@@ -1,4 +1,4 @@
-PACKAGES = "libtasn1-6"
+PACKAGES = "${PN} libtasn1-6"
 PROVIDES = "libtasn1-6"
 SRC_URI = " \
 	http://archive.raspbian.org/raspbian/pool/main/libt/libtasn1-6/libtasn1-6_4.2-3+deb8u3_armhf.deb;unpack=0;name=deb0\
@@ -19,14 +19,14 @@ INHIBIT_PACKAGE_STRIP = "1"
 INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN} = " \
-	./usr/share/doc/libtasn1-6/THANKS \
-	./usr/share/doc/libtasn1-6/NEWS.gz \
-	./usr/lib/arm-linux-gnueabihf/libtasn1.so.6.3.2 \
-	./usr/share/doc/libtasn1-6/README \
-	./usr/lib/arm-linux-gnueabihf/libtasn1.so.6 \
-	./usr/share/doc/libtasn1-6/changelog.Debian.gz \
-	./usr/share/doc/libtasn1-6/AUTHORS \
-	./usr/share/doc/libtasn1-6/copyright\
+    ./usr/share/doc/libtasn1-6/THANKS \
+    ./usr/share/doc/libtasn1-6/AUTHORS \
+    ./usr/share/doc/libtasn1-6/NEWS.gz \
+    ./usr/lib/arm-linux-gnueabihf/libtasn1.so.6 \
+    ./usr/share/doc/libtasn1-6/changelog.Debian.gz \
+    ./usr/share/doc/libtasn1-6/copyright \
+    ./usr/lib/arm-linux-gnueabihf/libtasn1.so.6.3.2 \
+    ./usr/share/doc/libtasn1-6/README\
 "
 #FAKE LICENSE FOR TESTING!!!
 LICENSE = "MIT"
