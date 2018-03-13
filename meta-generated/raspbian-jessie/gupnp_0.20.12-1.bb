@@ -18,7 +18,7 @@ SRC_URI[deb2.md5sum] = "88b90cae8bf74d8586c290e1aee1183c"
 RDEPENDS_gir1.2-${PN}-1.0 = "gir1.2-freedesktop gir1.2-glib-2.0 gir1.2-gssdp-1.0 gir1.2-soup-2.4 libgupnp-1.0-4 (>= 0.20.12)"
 RDEPENDS_lib${PN}-1.0-4 = "libc6 (>= 2.4) libglib2.0-0 (>= 2.37.3) libgssdp-1.0-3 (>= 0.14.0) libsoup2.4-1 (>= 2.34.0-1~) libuuid1 (>= 2.16) libxml2 (>= 2.7.4) shared-mime-info"
 RDEPENDS_lib${PN}-1.0-dev = "libgupnp-1.0-4 (= 0.20.12-1) gir1.2-gupnp-1.0 (= 0.20.12-1) libgssdp-1.0-dev (>= 0.6.1) libsoup2.4-dev libxml2-dev uuid-dev"
-DEPENDS = "libuuid1 libc6 gir1.2-glib-2.0 gir1.2-gssdp-1.0 libsoup2.4-dev libsoup2.4-1 gir1.2-freedesktop libxml2-dev shared-mime-info libgssdp-1.0-dev libgssdp-1.0-3 libglib2.0-0 libxml2 uuid-dev gir1.2-soup-2.4"
+DEPENDS = "libc6 libuuid1 libgssdp-1.0-3 gir1.2-freedesktop libgssdp-1.0-dev libsoup2.4-1 libxml2 gir1.2-soup-2.4 libglib2.0-0 gir1.2-gssdp-1.0 gir1.2-glib-2.0 shared-mime-info libxml2-dev libsoup2.4-dev uuid-dev"
 
 
 inherit deb_group

@@ -22,7 +22,7 @@ SRC_URI[deb3.md5sum] = "bf2eb6652d8ecb02e5792a4a9adf34fe"
 RDEPENDS_lib${PN}-stdlib = "libpython2.7-minimal (= 2.7.9-2+deb8u1) mime-support libbz2-1.0 libc6 (>= 2.15) libdb5.3 libexpat1 (>= 2.1~beta3) libffi6 (>= 3.0.4) libncursesw5 (>= 5.6+20070908) libreadline6 (>= 6.0) libsqlite3-0 (>= 3.5.9) libssl1.0.0 (>= 1.0.1) libtinfo5"
 RDEPENDS_${PN} = "python2.7-minimal (= 2.7.9-2+deb8u1) libpython2.7-stdlib (= 2.7.9-2+deb8u1) mime-support"
 RDEPENDS_${PN}-minimal = "libpython2.7-minimal (= 2.7.9-2+deb8u1) zlib1g (>= 1:1.2.0)"
-DEPENDS = "libexpat1 libsqlite3-0 libc6 libreadline6 libdb5.3 libncursesw5 zlib1g libtinfo5 libbz2-1.0 libffi6 libssl1.0.0 mime-support"
+DEPENDS = "libffi6 libssl1.0.0 mime-support libbz2-1.0 libc6 libdb5.3 zlib1g libreadline6 libncursesw5 libtinfo5 libsqlite3-0 libexpat1"
 
 
 inherit deb_group

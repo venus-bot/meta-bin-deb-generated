@@ -8,7 +8,7 @@ SRC_URI[deb0.sha256sum] = "ef65ad057aab5be3281ce7d37ed653c244071c1f4b4844f941091
 SRC_URI[deb0.md5sum] = "38765588c3c219f3fabc3165288ccad1"
 
 RDEPENDS_${PN} = "libc6 (>= 2.4) libssl1.0.0 (>= 1.0.1) libwrap0 (>= 7.6-4~) adduser (>= 3.10) lsb-base (>= 4.1+Debian3) libuuid1"
-DEPENDS = "libuuid1 lsb-base libc6 libwrap0 adduser libssl1.0.0"
+DEPENDS = "libssl1.0.0 libuuid1 libc6 lsb-base libwrap0 adduser"
 
 
 inherit deb_group
