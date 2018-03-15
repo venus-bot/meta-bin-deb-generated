@@ -33,7 +33,7 @@ RDEPENDS_${PN}-dev = "libevent-2.0-5 (= 2.0.21-stable-2+deb8u1) libevent-core-2.
 RDEPENDS_${PN}-extra-2.0-5 = "libc6 (>= 2.7) libevent-core-2.0-5 (= 2.0.21-stable-2+deb8u1)"
 RDEPENDS_${PN}-openssl-2.0-5 = "libc6 (>= 2.4) libevent-core-2.0-5 (= 2.0.21-stable-2+deb8u1) libssl1.0.0 (>= 1.0.0)"
 RDEPENDS_${PN}-pthreads-2.0-5 = "libc6 (>= 2.4) libevent-core-2.0-5 (= 2.0.21-stable-2+deb8u1)"
-DEPENDS = "libssl1.0.0 libc6"
+DEPENDS = "libc6 libssl1.0.0"
 
 
 inherit deb_group
