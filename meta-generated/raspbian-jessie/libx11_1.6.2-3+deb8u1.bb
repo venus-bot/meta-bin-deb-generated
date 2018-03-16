@@ -17,7 +17,7 @@ SRC_URI[deb2.md5sum] = "e69e406e0ed5118f976d1b8c504d50a5"
 
 RDEPENDS_${PN}-6 = "libc6 (>= 2.15) libxcb1 (>= 1.2) libx11-data"
 RDEPENDS_${PN}-dev = "libx11-6 (= 2:1.6.2-3+deb8u1) libxau-dev (>= 1:1.0.0-1) libxdmcp-dev (>= 1:1.0.0-1) x11proto-core-dev (>= 7.0.17) x11proto-input-dev x11proto-kb-dev xtrans-dev libxcb1-dev"
-DEPENDS = "x11proto-kb-dev libxau-dev x11proto-core-dev x11proto-input-dev libxcb1 libxcb1-dev xtrans-dev libc6 libxdmcp-dev"
+DEPENDS = "x11proto-kb-dev libxcb1 xtrans-dev libc6 x11proto-input-dev libxdmcp-dev x11proto-core-dev libxau-dev libxcb1-dev"
 
 
 inherit deb_group

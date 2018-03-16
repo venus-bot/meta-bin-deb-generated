@@ -112,7 +112,7 @@ RDEPENDS_libqtgui4 = "fontconfig libaudio2 libc6 (>= 2.15) libfontconfig1 (>= 2.
 RDEPENDS_qdbus = "qtchooser libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqt4-xml (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtdbus4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libstdc++6 (>= 4.3.0)"
 RDEPENDS_qt4-linguist-tools = "qtchooser libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqt4-xml (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libstdc++6 (>= 4.4.0) zlib1g (>= 1:1.1.4)"
 RDEPENDS_qt4-qmake = "qtchooser libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libstdc++6 (>= 4.3.0)"
-DEPENDS = "libpng12-0 libice6 libx11-6 libmng1 libsm6 libc6 libaudio2 libfontconfig1 libxrender1 zlib1g libxext6 libjpeg62-turbo qtchooser libdbus-1-3 libfreetype6 libtiff5 libstdc++6 libgcc1 libglib2.0-0 fontconfig"
+DEPENDS = "libjpeg62-turbo libc6 libdbus-1-3 libfreetype6 libtiff5 libmng1 libaudio2 libx11-6 libpng12-0 zlib1g fontconfig libstdc++6 libsm6 libxext6 libfontconfig1 libxrender1 libgcc1 libglib2.0-0 libice6 qtchooser"
 
 
 inherit deb_group

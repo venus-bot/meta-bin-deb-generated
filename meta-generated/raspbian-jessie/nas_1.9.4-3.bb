@@ -8,7 +8,7 @@ SRC_URI[deb0.sha256sum] = "bc9266bad099ead346e45f0bd90d1581d1afae4a5b2e090c968d9
 SRC_URI[deb0.md5sum] = "a9261cdfe33da6791e7a31c2f17dfeb8"
 
 RDEPENDS_libaudio2 = "libc6 (>= 2.15) libxau6 libxt6"
-DEPENDS = "libc6 libxau6 libxt6"
+DEPENDS = "libxt6 libxau6 libc6"
 
 
 inherit deb_group

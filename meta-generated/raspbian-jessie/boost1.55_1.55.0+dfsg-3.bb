@@ -88,7 +88,7 @@ RDEPENDS_libboost-system1.55.0 = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libstdc++6
 RDEPENDS_libboost-thread1.55-dev = "libboost1.55-dev (= 1.55.0+dfsg-3) libboost-atomic1.55-dev (= 1.55.0+dfsg-3) libboost-chrono1.55-dev (= 1.55.0+dfsg-3) libboost-date-time1.55-dev (= 1.55.0+dfsg-3) libboost-system1.55-dev (= 1.55.0+dfsg-3) libboost-thread1.55.0 (= 1.55.0+dfsg-3)"
 RDEPENDS_libboost-thread1.55.0 = "libboost-atomic1.55.0 libboost-system1.55.0 libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libstdc++6 (>= 4.3.0)"
 RDEPENDS_lib${PN}-dev = "libstdc++-4.8-dev"
-DEPENDS = "libstdc++-4.8-dev libicu-dev libgcc1 libicu52 libc6 libstdc++6"
+DEPENDS = "libstdc++-4.8-dev libicu-dev libc6 libstdc++6 libgcc1 libicu52"
 
 
 inherit deb_group
