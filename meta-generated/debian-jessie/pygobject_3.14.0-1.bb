@@ -13,7 +13,7 @@ SRC_URI[deb1.md5sum] = "e50d802841f709cdffcce07ccce6e23a"
 
 RDEPENDS_python-gi = "python (>= 2.7) python (<< 2.8) libc6 (>= 2.4) libffi6 (>= 3.0.4) libgirepository-1.0-1 (>= 1.33.10) libglib2.0-0 (>= 2.41.1) gir1.2-glib-2.0 (>= 1.39.0)"
 RDEPENDS_python-gobject = "python-gi (>= 3.14.0-1) python-gobject-2"
-DEPENDS = "libc6 libgirepository-1.0-1 libglib2.0-0 libffi6 gir1.2-glib-2.0 python-gobject-2 python"
+DEPENDS = "libffi6 gir1.2-glib-2.0 python libgirepository-1.0-1 libc6 python-gobject-2 libglib2.0-0"
 
 
 inherit deb_group
