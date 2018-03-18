@@ -13,7 +13,7 @@ SRC_URI[deb1.md5sum] = "1c848a40d78d11d6824ea2d777ff9335"
 
 RDEPENDS_${PN}1g = "libc6 (>= 2.4)"
 RDEPENDS_${PN}1g-dev = "zlib1g (= 1:1.2.8.dfsg-2+b1) libc6-dev"
-DEPENDS = "libc6 libc6-dev"
+DEPENDS = "libc6-dev libc6"
 
 
 inherit deb_group

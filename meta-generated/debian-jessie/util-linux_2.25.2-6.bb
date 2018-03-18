@@ -13,7 +13,7 @@ SRC_URI[deb1.md5sum] = "ad5541a258d4a53da97e1f13d27e4f0d"
 
 RDEPENDS_libuuid1 = "passwd libc6 (>= 2.4)"
 RDEPENDS_uuid-dev = "libc6-dev libuuid1 (= 2.25.2-6)"
-DEPENDS = "passwd libc6 libc6-dev"
+DEPENDS = "libc6-dev passwd libc6"
 
 
 inherit deb_group
