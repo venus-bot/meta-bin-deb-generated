@@ -23,7 +23,7 @@ RDEPENDS_gir1.2-soup-2.4 = "gir1.2-glib-2.0 libsoup-gnome2.4-1 (>= 2.27.4) libso
 RDEPENDS_libsoup-gnome2.4-1 = "libc6 (>= 2.4) libglib2.0-0 (>= 2.39.90) libsoup2.4-1 (>= 2.41.90) libsqlite3-0 (>= 3.5.9) libxml2 (>= 2.6.27)"
 RDEPENDS_${PN}-1 = "libc6 (>= 2.4) libglib2.0-0 (>= 2.39.90) libsqlite3-0 (>= 3.5.9) libxml2 (>= 2.7.4) glib-networking (>= 2.32.0)"
 RDEPENDS_${PN}-dev = "libsoup2.4-1 (= 2.48.0-1+deb8u1) gir1.2-soup-2.4 (= 2.48.0-1+deb8u1) libglib2.0-dev (>= 2.35.0) libxml2-dev"
-DEPENDS = "libsqlite3-0 libxml2 libglib2.0-0 gir1.2-glib-2.0 libc6 libglib2.0-dev libxml2-dev glib-networking"
+DEPENDS = "libsqlite3-0 gir1.2-glib-2.0 libxml2-dev libglib2.0-0 libxml2 glib-networking libglib2.0-dev libc6"
 
 
 inherit deb_group

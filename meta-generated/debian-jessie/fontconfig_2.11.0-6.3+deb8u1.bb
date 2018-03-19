@@ -18,7 +18,7 @@ SRC_URI[deb2.md5sum] = "0c35910266e9ceea2ffcfd9a53edf7fd"
 RDEPENDS_${PN} = "libc6 (>= 2.4) libfontconfig1 (>= 2.11) libfreetype6 (>= 2.2.1) fontconfig-config"
 RDEPENDS_${PN}-config = "debconf (>= 0.5) ucf (>= 0.29) fonts-dejavu-core"
 RDEPENDS_lib${PN}1 = "libc6 (>= 2.7) libexpat1 (>= 2.0.1) libfreetype6 (>= 2.2.1) fontconfig-config (>= 2.11.0-6.3+deb8u1)"
-DEPENDS = "debconf libexpat1 libc6 libfreetype6 fonts-dejavu-core ucf"
+DEPENDS = "ucf libexpat1 libfreetype6 debconf fonts-dejavu-core libc6"
 
 
 inherit deb_group
