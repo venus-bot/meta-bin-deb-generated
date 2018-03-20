@@ -13,7 +13,7 @@ SRC_URI[deb1.md5sum] = "d072984a0bf5e597ca57bc8f07ef1849"
 
 RDEPENDS_lib${PN} = "readline-common libc6 (>= 2.15) libtinfo5"
 RDEPENDS_readline-common = "dpkg (>= 1.15.4)"
-DEPENDS = "libc6 libtinfo5 dpkg"
+DEPENDS = "dpkg libc6 libtinfo5"
 
 
 inherit deb_group
