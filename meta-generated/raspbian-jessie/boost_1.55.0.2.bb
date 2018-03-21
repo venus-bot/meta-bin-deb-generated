@@ -23,7 +23,7 @@ RDEPENDS_lib${PN}-program-options-dev = "libboost-program-options1.55-dev"
 RDEPENDS_lib${PN}-regex-dev = "libboost-regex1.55-dev"
 RDEPENDS_lib${PN}-system-dev = "libboost-system1.55-dev"
 RDEPENDS_lib${PN}-thread-dev = "libboost-thread1.55-dev"
-DEPENDS = "libboost-thread1.55-dev libboost-program-options1.55-dev libboost-regex1.55-dev libboost-system1.55-dev"
+DEPENDS = "libboost-regex1.55-dev libboost-program-options1.55-dev libboost-system1.55-dev libboost-thread1.55-dev"
 
 
 inherit deb_group
