@@ -8,7 +8,7 @@ SRC_URI[deb0.sha256sum] = "87dffad890cad99cd09f90414109c571f6a8dc499ff24865afa84
 SRC_URI[deb0.md5sum] = "8f33508c11f5708e17056f470210074c"
 
 RDEPENDS_libgnutls-deb0-28 = "libc6 (>= 2.17) libgmp10 (>= 2:6) libhogweed2 (>= 2.7) libnettle4 (>= 2.7) libp11-kit0 (>= 0.20.7) libtasn1-6 (>= 4.1-0) zlib1g (>= 1:1.1.4)"
-DEPENDS = "libgmp10 libnettle4 libc6 libtasn1-6 zlib1g libhogweed2 libp11-kit0"
+DEPENDS = "libgmp10 libp11-kit0 libc6 zlib1g libhogweed2 libtasn1-6 libnettle4"
 
 
 inherit deb_group
