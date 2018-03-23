@@ -12,7 +12,7 @@ SRC_URI[deb1.sha256sum] = "b0e2a7c5d4dcb5cca78ad7b9cc358c4bda01a4ee9646cb441d2a2
 SRC_URI[deb1.md5sum] = "ce7b6ee8d5644139880c2126bca52ced"
 
 RDEPENDS_python-dbus = "python (>= 2.7) python (<< 2.8) libc6 (>= 2.4) libdbus-1-3 (>= 1.5.12) libdbus-glib-1-2 (>= 0.78) libglib2.0-0 (>= 2.12.0) python-dbus-dev"
-DEPENDS = "libc6 python libglib2.0-0 libdbus-1-3 libdbus-glib-1-2"
+DEPENDS = "libc6 libdbus-1-3 libdbus-glib-1-2 python libglib2.0-0"
 
 
 inherit deb_group
