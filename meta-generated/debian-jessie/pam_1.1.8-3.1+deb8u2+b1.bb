@@ -12,7 +12,7 @@ SRC_URI[deb1.sha256sum] = "be22b07e9a62e113425e9104239dc08d90f99bdffbce8de9eeb38
 SRC_URI[deb1.md5sum] = "cb1544bd5c6839fafac0a8c6c2510e61"
 
 RDEPENDS_lib${PN}0g = "libaudit1 (>= 1:2.2.1) libc6 (>= 2.8) debconf (>= 0.5)"
-DEPENDS = "libc6 libaudit1 debconf"
+DEPENDS = "debconf libc6 libaudit1"
 
 
 inherit deb_group

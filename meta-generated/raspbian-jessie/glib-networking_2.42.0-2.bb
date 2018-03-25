@@ -17,7 +17,7 @@ SRC_URI[deb2.md5sum] = "31ef1c1a843fd4cd9ffb624945bb3e48"
 
 RDEPENDS_${PN} = "libc6 (>= 2.4) libglib2.0-0 (>= 2.41.3) libgnutls-deb0-28 (>= 3.3.8) libp11-kit0 (>= 0.11) libproxy1 (>= 0.4.11) glib-networking-services (>= 2.42.0-2) glib-networking-services (<< 2.42.0-2.1~) glib-networking-common (= 2.42.0-2) gsettings-desktop-schemas"
 RDEPENDS_${PN}-services = "libc6 (>= 2.4) libglib2.0-0 (>= 2.41.3) libproxy1 (>= 0.4.11) glib-networking-common (= 2.42.0-2)"
-DEPENDS = "libp11-kit0 libc6 gsettings-desktop-schemas libproxy1 libgnutls-deb0-28 libglib2.0-0"
+DEPENDS = "libp11-kit0 gsettings-desktop-schemas libc6 libgnutls-deb0-28 libglib2.0-0 libproxy1"
 
 
 inherit deb_group
