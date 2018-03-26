@@ -13,7 +13,7 @@ SRC_URI[deb1.md5sum] = "0496aaa3b28e8c3f20a28fe5fd8dabf6"
 
 RDEPENDS_libssl1.0.0 = "libc6 (>= 2.11) debconf (>= 0.5)"
 RDEPENDS_${PN} = "libc6 (>= 2.15) libssl1.0.0 (>= 1.0.1k-3+deb8u3)"
-DEPENDS = "debconf libc6"
+DEPENDS = "libc6 debconf"
 
 
 inherit deb_group

@@ -18,7 +18,7 @@ SRC_URI[deb2.md5sum] = "f6ac491479c35ed4f3f7f71c589f0b0e"
 RDEPENDS_${PN} = "libaudit1 (>= 1:2.2.1) libc6 (>= 2.17) libcap-ng0 libdbus-1-3 (>= 1.7.6) libexpat1 (>= 2.0.1) libselinux1 (>= 2.0.65) libsystemd0 adduser lsb-base (>= 3.2-14)"
 RDEPENDS_lib${PN}-1-3 = "libc6 (>= 2.17)"
 RDEPENDS_lib${PN}-1-dev = "libdbus-1-3 (= 1.8.22-0+deb8u1) pkg-config"
-DEPENDS = "libaudit1 libselinux1 libcap-ng0 lsb-base libc6 libsystemd0 pkg-config libexpat1 adduser"
+DEPENDS = "lsb-base libsystemd0 adduser libselinux1 pkg-config libaudit1 libexpat1 libcap-ng0 libc6"
 
 
 inherit deb_group

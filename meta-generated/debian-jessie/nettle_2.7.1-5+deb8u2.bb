@@ -13,7 +13,7 @@ SRC_URI[deb1.md5sum] = "524142851eaf1c3789689c36ff5e67f6"
 
 RDEPENDS_libhogweed2 = "libc6 (>= 2.4) libgmp10 (>= 2:6.0.0) libnettle4 (= 2.7.1-5+deb8u2)"
 RDEPENDS_lib${PN}4 = "libc6 (>= 2.4)"
-DEPENDS = "libgmp10 libc6"
+DEPENDS = "libc6 libgmp10"
 
 
 inherit deb_group

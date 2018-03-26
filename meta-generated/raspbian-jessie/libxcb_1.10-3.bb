@@ -23,7 +23,7 @@ RDEPENDS_${PN}-render0 = "libc6 (>= 2.4) libxcb1 (>= 1.8)"
 RDEPENDS_${PN}-shm0 = "libc6 (>= 2.4) libxcb1 (>= 1.9.2)"
 RDEPENDS_${PN}1 = "libc6 (>= 2.4) libxau6 libxdmcp6"
 RDEPENDS_${PN}1-dev = "libxcb1 (= 1.10-3) libpthread-stubs0-dev libxau-dev (>= 1:1.0.0-1) libxdmcp-dev (>= 1:1.0.0-1)"
-DEPENDS = "libxdmcp-dev libc6 libxau6 libpthread-stubs0-dev libxdmcp6 libxau-dev"
+DEPENDS = "libxdmcp6 libc6 libxau6 libpthread-stubs0-dev libxau-dev libxdmcp-dev"
 
 
 inherit deb_group
