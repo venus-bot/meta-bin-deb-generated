@@ -18,7 +18,7 @@ SRC_URI[deb2.md5sum] = "3a1e6da51bedc726447f580748a6d7ee"
 RDEPENDS_lib${PN} = "libc6 (>= 2.4)"
 RDEPENDS_lib${PN}-dev = "libc6-dev libpcre3 (= 2:8.35-3.3+deb8u4) libpcrecpp0 (= 2:8.35-3.3+deb8u4)"
 RDEPENDS_libpcrecpp0 = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libpcre3 (>= 1:8.35) libstdc++6 (>= 4.3.0)"
-DEPENDS = "libc6 libc6-dev libstdc++6 libgcc1"
+DEPENDS = "libc6 libstdc++6 libc6-dev libgcc1"
 
 
 inherit deb_group

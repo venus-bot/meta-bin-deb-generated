@@ -8,7 +8,7 @@ SRC_URI[deb0.sha256sum] = "44147bf259b5ceb8bb626af82adcb7295f4b6e7f860befc19c6b4
 SRC_URI[deb0.md5sum] = "d2b07a82b5d0e86f44be870f6e1d9a2a"
 
 RDEPENDS_${PN}1 = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libstdc++6 (>= 4.4.0)"
-DEPENDS = "libc6 libstdc++6 libgcc1"
+DEPENDS = "libgcc1 libc6 libstdc++6"
 
 
 inherit deb_group
