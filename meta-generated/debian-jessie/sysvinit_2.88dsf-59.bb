@@ -18,7 +18,7 @@ SRC_URI[deb2.md5sum] = "dd340a6a15007d814510ba4fb71ebde8"
 RDEPENDS_initscripts = "libc6 (>= 2.4) debianutils (>= 4) lsb-base (>= 3.2-14) sysvinit-utils (>= 2.88dsf-50) sysv-rc coreutils (>= 5.93)"
 RDEPENDS_sysv-rc = "debconf (>= 0.5) sysvinit-utils (>= 2.86.ds1-62) insserv (>> 1.12.0-10) startpar"
 RDEPENDS_${PN}-utils = "libc6 (>= 2.7) libselinux1 (>= 1.32) startpar"
-DEPENDS = "debconf libc6 debianutils lsb-base startpar coreutils libselinux1 insserv"
+DEPENDS = "debianutils startpar coreutils lsb-base libselinux1 debconf libc6 insserv"
 
 
 inherit deb_group
