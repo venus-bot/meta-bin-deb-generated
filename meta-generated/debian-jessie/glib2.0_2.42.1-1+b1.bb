@@ -22,7 +22,7 @@ SRC_URI[deb3.md5sum] = "a323c89d30a52fc447d4b0f3569f2803"
 RDEPENDS_lib${PN}-0 = "libc6 (>= 2.17) libffi6 (>= 3.0.4) libpcre3 (>= 1:8.35) libselinux1 (>= 1.32) zlib1g (>= 1:1.2.2)"
 RDEPENDS_lib${PN}-bin = "libc6 (>= 2.4) libelfg0 (>= 0.8.12) libglib2.0-0 (= 2.42.1-1+b1) libglib2.0-data"
 RDEPENDS_lib${PN}-dev = "libc6 (>= 2.4) libglib2.0-0 (= 2.42.1-1+b1) python (>= 2.6.6-7~) libglib2.0-bin (= 2.42.1-1+b1) libpcre3-dev (>= 1:8.31)  zlib1g-dev"
-DEPENDS = " python libselinux1 zlib1g libpcre3 libffi6 libelfg0 libpcre3-dev zlib1g-dev libc6"
+DEPENDS = " libffi6 python libselinux1 libpcre3-dev libelfg0 libpcre3 zlib1g zlib1g-dev libc6"
 
 
 inherit deb_group

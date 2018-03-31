@@ -12,7 +12,7 @@ SRC_URI[deb1.sha256sum] = "0b15c0194eeddf7eff81b35e6736e950381c77af239d84a2de304
 SRC_URI[deb1.md5sum] = "79a365607ece88c74d00b2c1e11ae683"
 
 RDEPENDS_${PN}1 = "libsemanage-common (= 2.3-1) libaudit1 (>= 1:2.2.1) libbz2-1.0 libc6 (>= 2.8) libselinux1 (>= 2.1.12) libsepol1 (>= 2.1.4) libustr-1.0-1 (>= 1.0.4)"
-DEPENDS = "libaudit1 libsepol1 libc6 libselinux1 libustr-1.0-1 libbz2-1.0"
+DEPENDS = "libaudit1 libc6 libselinux1 libustr-1.0-1 libbz2-1.0 libsepol1"
 
 
 inherit deb_group

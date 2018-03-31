@@ -18,7 +18,7 @@ SRC_URI[deb2.md5sum] = "a5aaf975a5c3a6dc3e5f0240a94f60f8"
 RDEPENDS_gir1.2-freedesktop = "gir1.2-glib-2.0 (= 1.42.0-2.2) libcairo-gobject2 (>= 1.10.0) libgirepository-1.0-1 (>= 1.41.4-1)"
 RDEPENDS_gir1.2-glib-2.0 = "libgirepository-1.0-1 (>= 1.41.4-1) libglib2.0-0 (>= 2.41.4)"
 RDEPENDS_libgirepository-1.0-1 = "libc6 (>= 2.4) libffi6 (>= 3.0.4) libglib2.0-0 (>= 2.39.0)"
-DEPENDS = "libffi6 libglib2.0-0 libc6 libcairo-gobject2"
+DEPENDS = "libglib2.0-0 libc6 libffi6 libcairo-gobject2"
 
 
 inherit deb_group

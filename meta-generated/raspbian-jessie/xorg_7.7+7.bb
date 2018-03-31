@@ -8,7 +8,7 @@ SRC_URI[deb0.sha256sum] = "5ea7301f38ffdfd987655e55b7ce74aa556718f20fca79077e0cf
 SRC_URI[deb0.md5sum] = "34aab40c713182b3d30d717c83bb6455"
 
 RDEPENDS_x11-common = "debconf (>= 0.5) lsb-base (>= 1.3-9ubuntu2)"
-DEPENDS = "lsb-base debconf"
+DEPENDS = "debconf lsb-base"
 
 
 inherit deb_group
