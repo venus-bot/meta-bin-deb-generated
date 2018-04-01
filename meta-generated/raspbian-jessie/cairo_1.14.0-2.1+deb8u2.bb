@@ -13,7 +13,7 @@ SRC_URI[deb1.md5sum] = "909befa96c88f06acfc497fc17b8bc27"
 
 RDEPENDS_lib${PN}-gobject2 = "libc6 (>= 2.4) libcairo2 (>= 1.10.0) libglib2.0-0 (>= 2.14.0)"
 RDEPENDS_lib${PN}2 = "libc6 (>= 2.11) libfontconfig1 (>= 2.11) libfreetype6 (>= 2.3.5) libpixman-1-0 (>= 0.30.0) libpng12-0 (>= 1.2.13-4) libx11-6 libxcb-render0 libxcb-shm0 libxcb1 (>= 1.6) libxext6 libxrender1 zlib1g (>= 1:1.1.4)"
-DEPENDS = "libglib2.0-0 libxcb1 libfontconfig1 zlib1g libc6 libxcb-render0 libxext6 libxrender1 libpixman-1-0 libpng12-0 libfreetype6 libx11-6 libxcb-shm0"
+DEPENDS = "libxcb-shm0 libpng12-0 libglib2.0-0 libx11-6 libxcb1 libxext6 libfontconfig1 zlib1g libxcb-render0 libpixman-1-0 libxrender1 libfreetype6 libc6"
 
 
 inherit deb_group
