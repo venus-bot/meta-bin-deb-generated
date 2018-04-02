@@ -22,7 +22,7 @@ SRC_URI[deb3.md5sum] = "26b51eede8d67b5b7f2e62385a7b0698"
 RDEPENDS_libasan0 = "gcc-4.8-base (= 4.8.4-1) libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libstdc++6 (>= 4.1.1)"
 RDEPENDS_lib${PN}-dev = "gcc-4.8-base (= 4.8.4-1) libgcc1 (>= 1:4.8.4-1) libgomp1 (>= 4.8.4-1) libatomic1 (>= 4.8.4-1) libasan0 (>= 4.8.4-1)"
 RDEPENDS_libstdc++-4.8-dev = "gcc-4.8-base (= 4.8.4-1) libgcc-4.8-dev (= 4.8.4-1) libstdc++6 (>= 4.8.4-1) libc6-dev (>= 2.13-5)"
-DEPENDS = "libgomp1 libatomic1 libgcc1 libstdc++6 libc6-dev libc6"
+DEPENDS = "libc6 libgomp1 libstdc++6 libgcc1 libatomic1 libc6-dev"
 
 
 inherit deb_group

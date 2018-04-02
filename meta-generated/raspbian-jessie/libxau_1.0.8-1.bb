@@ -13,7 +13,7 @@ SRC_URI[deb1.md5sum] = "88df5d710117b5a5790b867ce5ca6c86"
 
 RDEPENDS_${PN}-dev = "libxau6 (= 1:1.0.8-1) x11proto-core-dev"
 RDEPENDS_${PN}6 = "libc6 (>= 2.4)"
-DEPENDS = "x11proto-core-dev libc6"
+DEPENDS = "libc6 x11proto-core-dev"
 
 
 inherit deb_group
