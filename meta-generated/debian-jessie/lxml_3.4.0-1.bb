@@ -8,7 +8,7 @@ SRC_URI[deb0.sha256sum] = "4eecbc6bae8f385adedd07151c72548e312716b6819d82721934c
 SRC_URI[deb0.md5sum] = "3b78e82f5e9794209bf9bb72406f1e12"
 
 RDEPENDS_python-${PN} = "python (>= 2.7) python (<< 2.8) libc6 (>= 2.4) libxml2 (>= 2.9.0) libxslt1.1 (>= 1.1.26) zlib1g (>= 1:1.1.4)"
-DEPENDS = "zlib1g python libxslt1.1 libc6 libxml2"
+DEPENDS = "libc6 libxml2 libxslt1.1 zlib1g python"
 
 
 inherit deb_group
