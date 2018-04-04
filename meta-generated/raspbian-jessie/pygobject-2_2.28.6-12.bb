@@ -8,7 +8,7 @@ SRC_URI[deb0.sha256sum] = "6962d3cb9372672f247fbe6bd0d52789bf6d1a6582e087f6110e4
 SRC_URI[deb0.md5sum] = "8b25e7bbab51f03d051549ad3938d265"
 
 RDEPENDS_python-gobject-2 = "python (>= 2.7) python (<< 2.8) libc6 (>= 2.13-28) libffi6 (>= 3.0.4) libglib2.0-0 (>= 2.26.0)"
-DEPENDS = "libglib2.0-0 python libc6 libffi6"
+DEPENDS = "libglib2.0-0 libffi6 python libc6"
 
 
 inherit deb_group

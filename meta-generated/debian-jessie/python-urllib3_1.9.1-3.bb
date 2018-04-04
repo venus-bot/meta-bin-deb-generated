@@ -8,7 +8,7 @@ SRC_URI[deb0.sha256sum] = "495840e5740ec4d0dfd5f729b9412fdaaa99eef1f168327977d9e
 SRC_URI[deb0.md5sum] = "43ba3f7c2afb1730be7c657f5ec48163"
 
 RDEPENDS_${PN} = "python (<< 2.8) python (>= 2.7.5-5~) python-six"
-DEPENDS = "python-six python"
+DEPENDS = "python python-six"
 
 
 inherit deb_group
