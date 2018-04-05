@@ -16,9 +16,9 @@ SRC_URI[deb2.sha256sum] = "846fddef81c28a5d700f19cc5cd9e4a9088e530f96b9c879ae65b
 SRC_URI[deb2.md5sum] = "278226d265ea071f9799f5822944ff9a"
 
 RDEPENDS_${PN}-devtools = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libicu52 (>= 52~m1-1~) libstdc++6 (>= 4.9)"
-RDEPENDS_lib${PN}-dev = "libicu52 (= 52.1-8+deb8u7) icu-devtools (>= 52.1-8+deb8u7) libc6-dev"
+RDEPENDS_lib${PN}-dev = "icu-devtools (>= 52.1-8+deb8u7) libc6-dev libicu52 (= 52.1-8+deb8u7)"
 RDEPENDS_lib${PN}52 = "libc6 (>= 2.7) libgcc1 (>= 1:4.4.0) libstdc++6 (>= 4.9)"
-DEPENDS = "libgcc1 libc6 libc6-dev libstdc++6"
+DEPENDS = "libc6 libc6-dev libgcc1 libstdc++6"
 
 
 inherit deb_group

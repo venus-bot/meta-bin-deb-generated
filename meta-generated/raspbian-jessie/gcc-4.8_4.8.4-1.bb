@@ -20,9 +20,9 @@ SRC_URI[deb3.sha256sum] = "42351bb7683673c5b8fee74392d44b26835687693a20c2240e57a
 SRC_URI[deb3.md5sum] = "26b51eede8d67b5b7f2e62385a7b0698"
 
 RDEPENDS_libasan0 = "gcc-4.8-base (= 4.8.4-1) libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libstdc++6 (>= 4.1.1)"
-RDEPENDS_lib${PN}-dev = "gcc-4.8-base (= 4.8.4-1) libgcc1 (>= 1:4.8.4-1) libgomp1 (>= 4.8.4-1) libatomic1 (>= 4.8.4-1) libasan0 (>= 4.8.4-1)"
-RDEPENDS_libstdc++-4.8-dev = "gcc-4.8-base (= 4.8.4-1) libgcc-4.8-dev (= 4.8.4-1) libstdc++6 (>= 4.8.4-1) libc6-dev (>= 2.13-5)"
-DEPENDS = "libgcc1 libgomp1 libatomic1 libc6 libc6-dev libstdc++6"
+RDEPENDS_lib${PN}-dev = "gcc-4.8-base (= 4.8.4-1) libasan0 (>= 4.8.4-1) libatomic1 (>= 4.8.4-1) libgcc1 (>= 1:4.8.4-1) libgomp1 (>= 4.8.4-1)"
+RDEPENDS_libstdc++-4.8-dev = "gcc-4.8-base (= 4.8.4-1) libc6-dev (>= 2.13-5) libgcc-4.8-dev (= 4.8.4-1) libstdc++6 (>= 4.8.4-1)"
+DEPENDS = "libatomic1 libc6 libc6-dev libgcc1 libgomp1 libstdc++6"
 
 
 inherit deb_group

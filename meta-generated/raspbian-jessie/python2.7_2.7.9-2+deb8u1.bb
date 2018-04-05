@@ -19,10 +19,10 @@ DEBFILENAME_python2.7-minimal = "python2.7-minimal_2.7.9-2+deb8u1_armhf.deb"
 SRC_URI[deb3.sha256sum] = "d35a2960ab43934045d3f205ad4cf9693c852b64be7ad1e0ac3e94fab68f131b"
 SRC_URI[deb3.md5sum] = "72a4bbfa02bb25302adcaf45f2653f4b"
 
-RDEPENDS_lib${PN}-stdlib = "libpython2.7-minimal (= 2.7.9-2+deb8u1) mime-support libbz2-1.0 libc6 (>= 2.15) libdb5.3 libexpat1 (>= 2.1~beta3) libffi6 (>= 3.0.4) libncursesw5 (>= 5.6+20070908) libreadline6 (>= 6.0) libsqlite3-0 (>= 3.5.9) libssl1.0.0 (>= 1.0.1) libtinfo5"
-RDEPENDS_${PN} = "python2.7-minimal (= 2.7.9-2+deb8u1) libpython2.7-stdlib (= 2.7.9-2+deb8u1) mime-support"
+RDEPENDS_lib${PN}-stdlib = "libbz2-1.0 libc6 (>= 2.15) libdb5.3 libexpat1 (>= 2.1~beta3) libffi6 (>= 3.0.4) libncursesw5 (>= 5.6+20070908) libpython2.7-minimal (= 2.7.9-2+deb8u1) libreadline6 (>= 6.0) libsqlite3-0 (>= 3.5.9) libssl1.0.0 (>= 1.0.1) libtinfo5 mime-support"
+RDEPENDS_${PN} = "libpython2.7-stdlib (= 2.7.9-2+deb8u1) mime-support python2.7-minimal (= 2.7.9-2+deb8u1)"
 RDEPENDS_${PN}-minimal = "libpython2.7-minimal (= 2.7.9-2+deb8u1) zlib1g (>= 1:1.2.0)"
-DEPENDS = "libssl1.0.0 libffi6 zlib1g libc6 libbz2-1.0 libdb5.3 libsqlite3-0 libtinfo5 libexpat1 libncursesw5 libreadline6 mime-support"
+DEPENDS = "libbz2-1.0 libc6 libdb5.3 libexpat1 libffi6 libncursesw5 libreadline6 libsqlite3-0 libssl1.0.0 libtinfo5 mime-support zlib1g"
 
 
 inherit deb_group

@@ -12,8 +12,8 @@ SRC_URI[deb1.sha256sum] = "80005782f2e137294160d2fff5a8d9e563ca9c7b7ba1d7f4c6966
 SRC_URI[deb1.md5sum] = "2022a62a92c00cf30386b762847ccd3d"
 
 RDEPENDS_lib${PN}-stdlib = "libpython2.7-stdlib (>= 2.7.9-1~)"
-RDEPENDS_${PN} = "python2.7 (>= 2.7.9-1~) libpython-stdlib (= 2.7.9-1)"
-DEPENDS = "python2.7 libpython2.7-stdlib"
+RDEPENDS_${PN} = "libpython-stdlib (= 2.7.9-1) python2.7 (>= 2.7.9-1~)"
+DEPENDS = "libpython2.7-stdlib python2.7"
 
 
 inherit deb_group

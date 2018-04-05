@@ -7,7 +7,7 @@ DEBFILENAME_python-chardet = "python-chardet_2.3.0-1_all.deb"
 SRC_URI[deb0.sha256sum] = "12e634df582e3e17a1199279def572e0009edb9815807b96f3888a259cd3b888"
 SRC_URI[deb0.md5sum] = "842d486800e90fad8d3f573360d4378e"
 
-RDEPENDS_python-${PN} = "python (>= 2.7.5-5~) python python (<< 2.8) python-pkg-resources"
+RDEPENDS_python-${PN} = "python python (<< 2.8) python (>= 2.7.5-5~) python-pkg-resources"
 DEPENDS = "python python-pkg-resources"
 
 

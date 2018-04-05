@@ -7,7 +7,7 @@ DEBFILENAME_ca-certificates = "ca-certificates_20141019+deb8u3_all.deb"
 SRC_URI[deb0.sha256sum] = "bd799f47f5ae3260b6402b1fe19fe2c37f2f4125afcd19327bf69a9cf436aeff"
 SRC_URI[deb0.md5sum] = "f39a638adcc521e82fcfc802be156cf2"
 
-RDEPENDS_${PN} = "openssl (>= 1.0.0) debconf (>= 0.5)"
+RDEPENDS_${PN} = "debconf (>= 0.5) openssl (>= 1.0.0)"
 DEPENDS = "debconf openssl"
 
 

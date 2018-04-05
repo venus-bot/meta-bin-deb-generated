@@ -7,7 +7,7 @@ DEBFILENAME_python-pkg-resources = "python-pkg-resources_5.5.1-1_all.deb"
 SRC_URI[deb0.sha256sum] = "a6d6963f9a1943aee463356e462f7f5283938da6e810940514c1b6c8b8496595"
 SRC_URI[deb0.md5sum] = "87ded88929c5dcf14628b5b24fac0386"
 
-RDEPENDS_python-pkg-resources = "python (>= 2.7) python (<< 2.8)"
+RDEPENDS_python-pkg-resources = "python (<< 2.8) python (>= 2.7)"
 DEPENDS = "python"
 
 

@@ -12,7 +12,7 @@ SRC_URI[deb1.sha256sum] = "ef6cb9125827ed5bf39f1a28c49a685f97dfd8ea190fdba90b5ca
 SRC_URI[deb1.md5sum] = "bfdd1daca9ce7046c5af26649ff15276"
 
 RDEPENDS_lib${PN}-stdlib = "libpython2.7-stdlib (>= 2.7.9-1~)"
-RDEPENDS_${PN} = "python2.7 (>= 2.7.9-1~) libpython-stdlib (= 2.7.9-1)"
+RDEPENDS_${PN} = "libpython-stdlib (= 2.7.9-1) python2.7 (>= 2.7.9-1~)"
 DEPENDS = "libpython2.7-stdlib python2.7"
 
 

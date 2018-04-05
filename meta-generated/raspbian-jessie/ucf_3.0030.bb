@@ -7,7 +7,7 @@ DEBFILENAME_ucf = "ucf_3.0030_all.deb"
 SRC_URI[deb0.sha256sum] = "1b93d9fc5930b9d8382705b71605e07fe11f4796db239b7ac2644bf4fbd7f6a2"
 SRC_URI[deb0.md5sum] = "bbec42184e8bdce20002bcf37b38b89a"
 
-RDEPENDS_${PN} = "debconf (>= 1.5.19) coreutils (>= 5.91)"
+RDEPENDS_${PN} = "coreutils (>= 5.91) debconf (>= 1.5.19)"
 DEPENDS = "coreutils debconf"
 
 

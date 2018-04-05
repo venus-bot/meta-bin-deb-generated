@@ -11,8 +11,8 @@ DEBFILENAME_libsemanage1 = "libsemanage1_2.3-1_armhf.deb"
 SRC_URI[deb1.sha256sum] = "0b15c0194eeddf7eff81b35e6736e950381c77af239d84a2de30441a2f5d90aa"
 SRC_URI[deb1.md5sum] = "79a365607ece88c74d00b2c1e11ae683"
 
-RDEPENDS_${PN}1 = "libsemanage-common (= 2.3-1) libaudit1 (>= 1:2.2.1) libbz2-1.0 libc6 (>= 2.8) libselinux1 (>= 2.1.12) libsepol1 (>= 2.1.4) libustr-1.0-1 (>= 1.0.4)"
-DEPENDS = "libc6 libaudit1 libselinux1 libbz2-1.0 libustr-1.0-1 libsepol1"
+RDEPENDS_${PN}1 = "libaudit1 (>= 1:2.2.1) libbz2-1.0 libc6 (>= 2.8) libselinux1 (>= 2.1.12) libsemanage-common (= 2.3-1) libsepol1 (>= 2.1.4) libustr-1.0-1 (>= 1.0.4)"
+DEPENDS = "libaudit1 libbz2-1.0 libc6 libselinux1 libsepol1 libustr-1.0-1"
 
 
 inherit deb_group

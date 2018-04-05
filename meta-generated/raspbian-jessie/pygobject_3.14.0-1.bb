@@ -11,9 +11,9 @@ DEBFILENAME_python-gobject = "python-gobject_3.14.0-1_all.deb"
 SRC_URI[deb1.sha256sum] = "5e4872cd5248a0bf59b3377b8ccc1d07f8c682382214888c52aecc694010a63d"
 SRC_URI[deb1.md5sum] = "e50d802841f709cdffcce07ccce6e23a"
 
-RDEPENDS_python-gi = "python (>= 2.7) python (<< 2.8) libc6 (>= 2.4) libffi6 (>= 3.0.4) libgirepository-1.0-1 (>= 1.33.10) libglib2.0-0 (>= 2.38.0) gir1.2-glib-2.0 (>= 1.39.0)"
+RDEPENDS_python-gi = "gir1.2-glib-2.0 (>= 1.39.0) libc6 (>= 2.4) libffi6 (>= 3.0.4) libgirepository-1.0-1 (>= 1.33.10) libglib2.0-0 (>= 2.38.0) python (<< 2.8) python (>= 2.7)"
 RDEPENDS_python-gobject = "python-gi (>= 3.14.0-1) python-gobject-2"
-DEPENDS = "libffi6 python-gobject-2 libc6 gir1.2-glib-2.0 libglib2.0-0 python libgirepository-1.0-1"
+DEPENDS = "gir1.2-glib-2.0 libc6 libffi6 libgirepository-1.0-1 libglib2.0-0 python python-gobject-2"
 
 
 inherit deb_group

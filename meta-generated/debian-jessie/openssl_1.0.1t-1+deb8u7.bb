@@ -11,9 +11,9 @@ DEBFILENAME_openssl = "openssl_1.0.1t-1+deb8u7_armhf.deb"
 SRC_URI[deb1.sha256sum] = "0dcc10658d0f92521d168a7b8755b0ccded8448880e4b7e118555b5b415cf009"
 SRC_URI[deb1.md5sum] = "ef90d448f149b26c49754d455abc9763"
 
-RDEPENDS_libssl1.0.0 = "libc6 (>= 2.11) debconf (>= 0.5)"
+RDEPENDS_libssl1.0.0 = "debconf (>= 0.5) libc6 (>= 2.11)"
 RDEPENDS_${PN} = "libc6 (>= 2.15) libssl1.0.0 (>= 1.0.1k-3+deb8u3)"
-DEPENDS = "libc6 debconf"
+DEPENDS = "debconf libc6"
 
 
 inherit deb_group

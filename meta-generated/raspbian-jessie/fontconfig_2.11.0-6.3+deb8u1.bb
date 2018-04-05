@@ -15,10 +15,10 @@ DEBFILENAME_libfontconfig1 = "libfontconfig1_2.11.0-6.3+deb8u1_armhf.deb"
 SRC_URI[deb2.sha256sum] = "5a0462016b5f48b5c90009b30ecba3ec33ab41481fb2a246995df85ac4d100a9"
 SRC_URI[deb2.md5sum] = "4857524dc64b1960047e5cc68d5405f9"
 
-RDEPENDS_${PN} = "libc6 (>= 2.4) libfontconfig1 (>= 2.11) libfreetype6 (>= 2.2.1) fontconfig-config"
-RDEPENDS_${PN}-config = "debconf (>= 0.5) ucf (>= 0.29) fonts-dejavu-core"
-RDEPENDS_lib${PN}1 = "libc6 (>= 2.7) libexpat1 (>= 2.0.1) libfreetype6 (>= 2.2.1) fontconfig-config (>= 2.11.0-6.3+deb8u1)"
-DEPENDS = "libfreetype6 debconf ucf libc6 libexpat1 fonts-dejavu-core"
+RDEPENDS_${PN} = "fontconfig-config libc6 (>= 2.4) libfontconfig1 (>= 2.11) libfreetype6 (>= 2.2.1)"
+RDEPENDS_${PN}-config = "debconf (>= 0.5) fonts-dejavu-core ucf (>= 0.29)"
+RDEPENDS_lib${PN}1 = "fontconfig-config (>= 2.11.0-6.3+deb8u1) libc6 (>= 2.7) libexpat1 (>= 2.0.1) libfreetype6 (>= 2.2.1)"
+DEPENDS = "debconf fonts-dejavu-core libc6 libexpat1 libfreetype6 ucf"
 
 
 inherit deb_group

@@ -7,8 +7,8 @@ DEBFILENAME_python-requests = "python-requests_2.4.3-6_all.deb"
 SRC_URI[deb0.sha256sum] = "6ff5c6a721286e78750e9ba071486ec4306994fb064b29bd59f8e07d7f64de6a"
 SRC_URI[deb0.md5sum] = "92533571f12be406824aa8a7971fdb95"
 
-RDEPENDS_python-${PN} = "python (<< 2.8) python (>= 2.7.5-5~) ca-certificates python-chardet python-urllib3 (>= 1.9.1)"
-DEPENDS = "python-urllib3 ca-certificates python python-chardet"
+RDEPENDS_python-${PN} = "ca-certificates python (<< 2.8) python (>= 2.7.5-5~) python-chardet python-urllib3 (>= 1.9.1)"
+DEPENDS = "ca-certificates python python-chardet python-urllib3"
 
 
 inherit deb_group

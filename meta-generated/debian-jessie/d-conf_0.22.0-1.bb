@@ -15,10 +15,10 @@ DEBFILENAME_libdconf1 = "libdconf1_0.22.0-1_armhf.deb"
 SRC_URI[deb2.sha256sum] = "05c49ee63d4757aae976e95a71f606bb95e1c7fd2f78103f02d3f9573094313e"
 SRC_URI[deb2.md5sum] = "b355763328bec13cbbd6591da97c24d2"
 
-RDEPENDS_dconf-gsettings-backend = "libc6 (>= 2.4) libglib2.0-0 (>= 2.39.1) dconf-service (>= 0.22.0-1) dconf-service (<< 0.22.0-1.1~) libdconf1 (= 0.22.0-1)"
-RDEPENDS_dconf-service = "libc6 (>= 2.4) libglib2.0-0 (>= 2.39.1) libdconf1 (= 0.22.0-1)"
+RDEPENDS_dconf-gsettings-backend = "dconf-service (<< 0.22.0-1.1~) dconf-service (>= 0.22.0-1) libc6 (>= 2.4) libdconf1 (= 0.22.0-1) libglib2.0-0 (>= 2.39.1)"
+RDEPENDS_dconf-service = "libc6 (>= 2.4) libdconf1 (= 0.22.0-1) libglib2.0-0 (>= 2.39.1)"
 RDEPENDS_libdconf1 = "libc6 (>= 2.4) libglib2.0-0 (>= 2.39.1)"
-DEPENDS = "libglib2.0-0 libc6"
+DEPENDS = "libc6 libglib2.0-0"
 
 
 inherit deb_group

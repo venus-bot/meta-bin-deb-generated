@@ -11,7 +11,7 @@ DEBFILENAME_libtinfo5 = "libtinfo5_5.9+20140913-1+deb8u2_armhf.deb"
 SRC_URI[deb1.sha256sum] = "eac5f480312f2a95383f88120f751a83beb8a0e598f318e15d79c4c9935055c1"
 SRC_URI[deb1.md5sum] = "c26d1e8cd337a99b215e9793e89f3dc9"
 
-RDEPENDS_lib${PN}w5 = "libtinfo5 (= 5.9+20140913-1+deb8u2) libc6 (>= 2.15)"
+RDEPENDS_lib${PN}w5 = "libc6 (>= 2.15) libtinfo5 (= 5.9+20140913-1+deb8u2)"
 RDEPENDS_libtinfo5 = "libc6 (>= 2.15)"
 DEPENDS = "libc6"
 

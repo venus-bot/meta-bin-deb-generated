@@ -12,7 +12,7 @@ SRC_URI[deb1.sha256sum] = "47ac608bdf09d83981c8d115d7daabcd7b1215ab26a7706964640
 SRC_URI[deb1.md5sum] = "1c848a40d78d11d6824ea2d777ff9335"
 
 RDEPENDS_${PN}1g = "libc6 (>= 2.4)"
-RDEPENDS_${PN}1g-dev = "zlib1g (= 1:1.2.8.dfsg-2+b1) libc6-dev"
+RDEPENDS_${PN}1g-dev = "libc6-dev zlib1g (= 1:1.2.8.dfsg-2+b1)"
 DEPENDS = "libc6 libc6-dev"
 
 

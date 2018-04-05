@@ -7,7 +7,7 @@ DEBFILENAME_python-pymodbus = "python-pymodbus_1.2.0-2_all.deb"
 SRC_URI[deb0.sha256sum] = "88b8ae7403ac67900a012d68cd64f85609d06f3985870fd6fe61c5d81143bbd9"
 SRC_URI[deb0.md5sum] = "25bce30dc05d429c13ee593ade79225e"
 
-RDEPENDS_python-${PN} = "python (>= 2.6.6-7~) python (<< 2.8)"
+RDEPENDS_python-${PN} = "python (<< 2.8) python (>= 2.6.6-7~)"
 DEPENDS = "python"
 
 

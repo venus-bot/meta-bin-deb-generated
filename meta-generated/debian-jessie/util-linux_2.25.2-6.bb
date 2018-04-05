@@ -11,9 +11,9 @@ DEBFILENAME_uuid-dev = "uuid-dev_2.25.2-6_armhf.deb"
 SRC_URI[deb1.sha256sum] = "3d59551eabef2ed2dceacc49a7ffbd768fc85698fd4a3731f3b4c57fe55c09eb"
 SRC_URI[deb1.md5sum] = "ad5541a258d4a53da97e1f13d27e4f0d"
 
-RDEPENDS_libuuid1 = "passwd libc6 (>= 2.4)"
+RDEPENDS_libuuid1 = "libc6 (>= 2.4) passwd"
 RDEPENDS_uuid-dev = "libc6-dev libuuid1 (= 2.25.2-6)"
-DEPENDS = "passwd libc6 libc6-dev"
+DEPENDS = "libc6 libc6-dev passwd"
 
 
 inherit deb_group

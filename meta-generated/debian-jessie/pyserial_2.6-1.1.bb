@@ -7,7 +7,7 @@ DEBFILENAME_python-serial = "python-serial_2.6-1.1_all.deb"
 SRC_URI[deb0.sha256sum] = "14ea6ce8010ef53abf5f8267b8f7ebeae93c8039b0d637cb041d11fdae997873"
 SRC_URI[deb0.md5sum] = "4d66582159c4cdbdd10acd7e4faaf1ec"
 
-RDEPENDS_python-serial = "python (>= 2.7) python (<< 2.8)"
+RDEPENDS_python-serial = "python (<< 2.8) python (>= 2.7)"
 DEPENDS = "python"
 
 

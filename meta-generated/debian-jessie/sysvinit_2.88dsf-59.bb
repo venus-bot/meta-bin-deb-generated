@@ -15,10 +15,10 @@ DEBFILENAME_sysvinit-utils = "sysvinit-utils_2.88dsf-59_armhf.deb"
 SRC_URI[deb2.sha256sum] = "18c9d877ce34efcdd47529b25c79035585be5c8bd508fb48c603ccb85cb7d054"
 SRC_URI[deb2.md5sum] = "dd340a6a15007d814510ba4fb71ebde8"
 
-RDEPENDS_initscripts = "libc6 (>= 2.4) debianutils (>= 4) lsb-base (>= 3.2-14) sysvinit-utils (>= 2.88dsf-50) sysv-rc coreutils (>= 5.93)"
-RDEPENDS_sysv-rc = "debconf (>= 0.5) sysvinit-utils (>= 2.86.ds1-62) insserv (>> 1.12.0-10) startpar"
+RDEPENDS_initscripts = "coreutils (>= 5.93) debianutils (>= 4) libc6 (>= 2.4) lsb-base (>= 3.2-14) sysv-rc sysvinit-utils (>= 2.88dsf-50)"
+RDEPENDS_sysv-rc = "debconf (>= 0.5) insserv (>> 1.12.0-10) startpar sysvinit-utils (>= 2.86.ds1-62)"
 RDEPENDS_${PN}-utils = "libc6 (>= 2.7) libselinux1 (>= 1.32) startpar"
-DEPENDS = "insserv debconf debianutils lsb-base libselinux1 libc6 startpar coreutils"
+DEPENDS = "coreutils debconf debianutils insserv libc6 libselinux1 lsb-base startpar"
 
 
 inherit deb_group

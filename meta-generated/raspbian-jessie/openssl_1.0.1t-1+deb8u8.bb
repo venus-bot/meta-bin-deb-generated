@@ -11,7 +11,7 @@ DEBFILENAME_openssl = "openssl_1.0.1t-1+deb8u8_armhf.deb"
 SRC_URI[deb1.sha256sum] = "55b80506680a42cff8b111a5ea6e0e4fa9606df69660241951e3382121395460"
 SRC_URI[deb1.md5sum] = "07d7db486e06e7133b05ce037abdb6c1"
 
-RDEPENDS_libssl1.0.0 = "libc6 (>= 2.11) debconf (>= 0.5)"
+RDEPENDS_libssl1.0.0 = "debconf (>= 0.5) libc6 (>= 2.11)"
 RDEPENDS_${PN} = "libc6 (>= 2.15) libssl1.0.0 (>= 1.0.1k-3+deb8u3)"
 DEPENDS = "debconf libc6"
 

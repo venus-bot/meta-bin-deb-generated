@@ -7,8 +7,8 @@ DEBFILENAME_passwd = "passwd_4.2-3+deb8u4_armhf.deb"
 SRC_URI[deb0.sha256sum] = "b3d7128404ba55ef519ee4dce98da074cd437e3b7fa51bb49a2437f1aa7dae5f"
 SRC_URI[deb0.md5sum] = "5244ac4ed4b440880504a16d507b5551"
 
-RDEPENDS_passwd = "libaudit1 (>= 1:2.2.1) libc6 (>= 2.8) libpam0g (>= 0.99.7.1) libselinux1 (>= 1.32) libsemanage1 (>= 2.0.3) libpam-modules debianutils (>= 2.15.2)"
-DEPENDS = "libpam-modules debianutils libselinux1 libaudit1 libc6 libsemanage1 libpam0g"
+RDEPENDS_passwd = "debianutils (>= 2.15.2) libaudit1 (>= 1:2.2.1) libc6 (>= 2.8) libpam-modules libpam0g (>= 0.99.7.1) libselinux1 (>= 1.32) libsemanage1 (>= 2.0.3)"
+DEPENDS = "debianutils libaudit1 libc6 libpam-modules libpam0g libselinux1 libsemanage1"
 
 
 inherit deb_group

@@ -15,9 +15,9 @@ DEBFILENAME_glib-networking-services = "glib-networking-services_2.42.0-2_armhf.
 SRC_URI[deb2.sha256sum] = "f9fcae09e4e1992ffff4fde96697a1824558abd2579250c3f8acd5d86a59ac0f"
 SRC_URI[deb2.md5sum] = "57c9f0a91aae9cf65df0daeb31bfc817"
 
-RDEPENDS_${PN} = "libc6 (>= 2.4) libglib2.0-0 (>= 2.41.3) libgnutls-deb0-28 (>= 3.3.8) libp11-kit0 (>= 0.11) libproxy1 (>= 0.4.11) glib-networking-services (>= 2.42.0-2) glib-networking-services (<< 2.42.0-2.1~) glib-networking-common (= 2.42.0-2) gsettings-desktop-schemas"
-RDEPENDS_${PN}-services = "libc6 (>= 2.4) libglib2.0-0 (>= 2.41.3) libproxy1 (>= 0.4.11) glib-networking-common (= 2.42.0-2)"
-DEPENDS = "libp11-kit0 libgnutls-deb0-28 libc6 gsettings-desktop-schemas libglib2.0-0 libproxy1"
+RDEPENDS_${PN} = "glib-networking-common (= 2.42.0-2) glib-networking-services (<< 2.42.0-2.1~) glib-networking-services (>= 2.42.0-2) gsettings-desktop-schemas libc6 (>= 2.4) libglib2.0-0 (>= 2.41.3) libgnutls-deb0-28 (>= 3.3.8) libp11-kit0 (>= 0.11) libproxy1 (>= 0.4.11)"
+RDEPENDS_${PN}-services = "glib-networking-common (= 2.42.0-2) libc6 (>= 2.4) libglib2.0-0 (>= 2.41.3) libproxy1 (>= 0.4.11)"
+DEPENDS = "gsettings-desktop-schemas libc6 libglib2.0-0 libgnutls-deb0-28 libp11-kit0 libproxy1"
 
 
 inherit deb_group

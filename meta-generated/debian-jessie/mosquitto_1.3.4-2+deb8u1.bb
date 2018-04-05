@@ -7,8 +7,8 @@ DEBFILENAME_mosquitto = "mosquitto_1.3.4-2+deb8u1_armhf.deb"
 SRC_URI[deb0.sha256sum] = "ef65ad057aab5be3281ce7d37ed653c244071c1f4b4844f941091322a05028d9"
 SRC_URI[deb0.md5sum] = "38765588c3c219f3fabc3165288ccad1"
 
-RDEPENDS_${PN} = "libc6 (>= 2.4) libssl1.0.0 (>= 1.0.1) libwrap0 (>= 7.6-4~) adduser (>= 3.10) lsb-base (>= 4.1+Debian3) libuuid1"
-DEPENDS = "adduser libssl1.0.0 lsb-base libc6 libwrap0 libuuid1"
+RDEPENDS_${PN} = "adduser (>= 3.10) libc6 (>= 2.4) libssl1.0.0 (>= 1.0.1) libuuid1 libwrap0 (>= 7.6-4~) lsb-base (>= 4.1+Debian3)"
+DEPENDS = "adduser libc6 libssl1.0.0 libuuid1 libwrap0 lsb-base"
 
 
 inherit deb_group

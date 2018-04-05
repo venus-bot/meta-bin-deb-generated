@@ -7,8 +7,8 @@ DEBFILENAME_adduser = "adduser_3.113+nmu3_all.deb"
 SRC_URI[deb0.sha256sum] = "ae69ab0da5c36e48ba38e27c5e0886d6a67988adead5e5324b9b90736d37c11e"
 SRC_URI[deb0.md5sum] = "9b7a9665cd1a6290786478931aafa9bc"
 
-RDEPENDS_${PN} = "perl-base (>= 5.6.0) passwd (>= 1:4.0.12) debconf"
-DEPENDS = "passwd debconf perl-base"
+RDEPENDS_${PN} = "debconf passwd (>= 1:4.0.12) perl-base (>= 5.6.0)"
+DEPENDS = "debconf passwd perl-base"
 
 
 inherit deb_group

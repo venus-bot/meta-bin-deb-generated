@@ -15,9 +15,9 @@ DEBFILENAME_libc6-dev = "libc6-dev_2.19-18+deb8u10_armhf.deb"
 SRC_URI[deb2.sha256sum] = "896a46471befe4eb7bd6da878fdfb11d15f47d89a77f44341a890ee6d0cd5f4b"
 SRC_URI[deb2.md5sum] = "e9f984dbe4457805e16740c62d309879"
 
-RDEPENDS_libc-dev-bin = "libc6 (>> 2.19) libc6 (<< 2.20)"
+RDEPENDS_libc-dev-bin = "libc6 (<< 2.20) libc6 (>> 2.19)"
 RDEPENDS_libc6 = ""
-RDEPENDS_libc6-dev = "libc6 (= 2.19-18+deb8u10) libc-dev-bin (= 2.19-18+deb8u10) linux-libc-dev"
+RDEPENDS_libc6-dev = "libc-dev-bin (= 2.19-18+deb8u10) libc6 (= 2.19-18+deb8u10) linux-libc-dev"
 DEPENDS = " linux-libc-dev"
 
 

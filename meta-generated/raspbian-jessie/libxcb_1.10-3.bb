@@ -22,8 +22,8 @@ SRC_URI[deb3.md5sum] = "bc3bbbd78897f528764d23bf49fa13ff"
 RDEPENDS_${PN}-render0 = "libc6 (>= 2.4) libxcb1 (>= 1.8)"
 RDEPENDS_${PN}-shm0 = "libc6 (>= 2.4) libxcb1 (>= 1.9.2)"
 RDEPENDS_${PN}1 = "libc6 (>= 2.4) libxau6 libxdmcp6"
-RDEPENDS_${PN}1-dev = "libxcb1 (= 1.10-3) libpthread-stubs0-dev libxau-dev (>= 1:1.0.0-1) libxdmcp-dev (>= 1:1.0.0-1)"
-DEPENDS = "libxdmcp6 libc6 libpthread-stubs0-dev libxau6 libxdmcp-dev libxau-dev"
+RDEPENDS_${PN}1-dev = "libpthread-stubs0-dev libxau-dev (>= 1:1.0.0-1) libxcb1 (= 1.10-3) libxdmcp-dev (>= 1:1.0.0-1)"
+DEPENDS = "libc6 libpthread-stubs0-dev libxau-dev libxau6 libxdmcp-dev libxdmcp6"
 
 
 inherit deb_group

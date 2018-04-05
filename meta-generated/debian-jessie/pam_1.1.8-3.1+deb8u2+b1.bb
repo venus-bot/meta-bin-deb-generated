@@ -11,8 +11,8 @@ DEBFILENAME_libpam0g = "libpam0g_1.1.8-3.1+deb8u2+b1_armhf.deb"
 SRC_URI[deb1.sha256sum] = "be22b07e9a62e113425e9104239dc08d90f99bdffbce8de9eeb384b032eae64f"
 SRC_URI[deb1.md5sum] = "cb1544bd5c6839fafac0a8c6c2510e61"
 
-RDEPENDS_lib${PN}0g = "libaudit1 (>= 1:2.2.1) libc6 (>= 2.8) debconf (>= 0.5)"
-DEPENDS = "libaudit1 libc6 debconf"
+RDEPENDS_lib${PN}0g = "debconf (>= 0.5) libaudit1 (>= 1:2.2.1) libc6 (>= 2.8)"
+DEPENDS = "debconf libaudit1 libc6"
 
 
 inherit deb_group

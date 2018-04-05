@@ -7,8 +7,8 @@ DEBFILENAME_python-lxml = "python-lxml_3.4.0-1_armhf.deb"
 SRC_URI[deb0.sha256sum] = "167b41ccf056a4e5efc26989d3c09376f42c33eb88785c5825b02ae9640e0882"
 SRC_URI[deb0.md5sum] = "fbb977066c9e35f457e82f02528688e3"
 
-RDEPENDS_python-${PN} = "python (>= 2.7) python (<< 2.8) libc6 (>= 2.4) libxml2 (>= 2.9.0) libxslt1.1 (>= 1.1.26) zlib1g (>= 1:1.1.4)"
-DEPENDS = "libxslt1.1 libxml2 zlib1g python libc6"
+RDEPENDS_python-${PN} = "libc6 (>= 2.4) libxml2 (>= 2.9.0) libxslt1.1 (>= 1.1.26) python (<< 2.8) python (>= 2.7) zlib1g (>= 1:1.1.4)"
+DEPENDS = "libc6 libxml2 libxslt1.1 python zlib1g"
 
 
 inherit deb_group

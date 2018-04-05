@@ -15,10 +15,10 @@ DEBFILENAME_libdbus-1-dev = "libdbus-1-dev_1.8.22-0+deb8u1_armhf.deb"
 SRC_URI[deb2.sha256sum] = "768564d47f9d181f3f43e4785ad09b316ecf650d8cf35d2c65b4905b79ba1e73"
 SRC_URI[deb2.md5sum] = "295dcaf0fbb0c66d99663da53426cd33"
 
-RDEPENDS_${PN} = "libaudit1 (>= 1:2.2.1) libc6 (>= 2.17) libcap-ng0 libdbus-1-3 (>= 1.7.6) libexpat1 (>= 2.0.1) libselinux1 (>= 2.0.65) libsystemd0 adduser lsb-base (>= 3.2-14)"
+RDEPENDS_${PN} = "adduser libaudit1 (>= 1:2.2.1) libc6 (>= 2.17) libcap-ng0 libdbus-1-3 (>= 1.7.6) libexpat1 (>= 2.0.1) libselinux1 (>= 2.0.65) libsystemd0 lsb-base (>= 3.2-14)"
 RDEPENDS_lib${PN}-1-3 = "libc6 (>= 2.17)"
 RDEPENDS_lib${PN}-1-dev = "libdbus-1-3 (= 1.8.22-0+deb8u1) pkg-config"
-DEPENDS = "pkg-config libsystemd0 adduser lsb-base libcap-ng0 libselinux1 libaudit1 libc6 libexpat1"
+DEPENDS = "adduser libaudit1 libc6 libcap-ng0 libexpat1 libselinux1 libsystemd0 lsb-base pkg-config"
 
 
 inherit deb_group
