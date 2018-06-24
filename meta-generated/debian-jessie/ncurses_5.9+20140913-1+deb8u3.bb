@@ -1,17 +1,17 @@
 PACKAGES = "${PN} libncursesw5 libtinfo5"
 PROVIDES = "libncursesw5 libtinfo5"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/n/ncurses/libncursesw5_5.9+20140913-1+deb8u2_armhf.deb;unpack=0;name=deb0\
-	http://ftp.de.debian.org/debian/pool/main/n/ncurses/libtinfo5_5.9+20140913-1+deb8u2_armhf.deb;unpack=0;name=deb1\
+	http://ftp.de.debian.org/debian/pool/main/n/ncurses/libncursesw5_5.9+20140913-1+deb8u3_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/n/ncurses/libtinfo5_5.9+20140913-1+deb8u3_armhf.deb;unpack=0;name=deb1\
 "
-DEBFILENAME_libncursesw5 = "libncursesw5_5.9+20140913-1+deb8u2_armhf.deb"
-SRC_URI[deb0.sha256sum] = "2c5277a24771e36a721050226c21df53141dfb9242b6174782770e8fa2c4a3b2"
-SRC_URI[deb0.md5sum] = "a9e051e16bb02d1e61cd04e2a1fe441d"
-DEBFILENAME_libtinfo5 = "libtinfo5_5.9+20140913-1+deb8u2_armhf.deb"
-SRC_URI[deb1.sha256sum] = "ece08743d9d01ef0cd4206474893d2201128a0a11e0dff7505b51c862a0365b8"
-SRC_URI[deb1.md5sum] = "62e2b80ddfde12886154f621464aea0c"
+DEBFILENAME_libncursesw5 = "libncursesw5_5.9+20140913-1+deb8u3_armhf.deb"
+SRC_URI[deb0.sha256sum] = "ff4c69d5360a650f7c3c340539681decd92657ace115aaca4de49a060a53bacd"
+SRC_URI[deb0.md5sum] = "b93eaee36d9c0ab06593d575c9027976"
+DEBFILENAME_libtinfo5 = "libtinfo5_5.9+20140913-1+deb8u3_armhf.deb"
+SRC_URI[deb1.sha256sum] = "f6707c065096d68afe74c02a8a3917a0140cdf6ff31dfecc76c6dc8bf3c56efe"
+SRC_URI[deb1.md5sum] = "b66824f0db03b005492cbbe98c944ed4"
 
-RDEPENDS_lib${PN}w5 = "libc6 (>= 2.15) libtinfo5 (= 5.9+20140913-1+deb8u2)"
+RDEPENDS_lib${PN}w5 = "libc6 (>= 2.15) libtinfo5 (= 5.9+20140913-1+deb8u3)"
 RDEPENDS_libtinfo5 = "libc6 (>= 2.15)"
 DEPENDS = "libc6"
 

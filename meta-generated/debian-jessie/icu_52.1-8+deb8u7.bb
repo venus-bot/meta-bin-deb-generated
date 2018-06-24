@@ -1,22 +1,22 @@
 PACKAGES = "${PN} icu-devtools libicu-dev libicu52"
 PROVIDES = "icu-devtools libicu-dev libicu52"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/i/icu/icu-devtools_52.1-8+deb8u6_armhf.deb;unpack=0;name=deb0\
-	http://ftp.de.debian.org/debian/pool/main/i/icu/libicu-dev_52.1-8+deb8u6_armhf.deb;unpack=0;name=deb1\
-	http://ftp.de.debian.org/debian/pool/main/i/icu/libicu52_52.1-8+deb8u6_armhf.deb;unpack=0;name=deb2\
+	http://ftp.de.debian.org/debian/pool/main/i/icu/icu-devtools_52.1-8+deb8u7_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/i/icu/libicu-dev_52.1-8+deb8u7_armhf.deb;unpack=0;name=deb1\
+	http://ftp.de.debian.org/debian/pool/main/i/icu/libicu52_52.1-8+deb8u7_armhf.deb;unpack=0;name=deb2\
 "
-DEBFILENAME_icu-devtools = "icu-devtools_52.1-8+deb8u6_armhf.deb"
-SRC_URI[deb0.sha256sum] = "8a0eac495b7718869491b97f40cdc60dbab8eeee86e222cbb9e95a2908bd949e"
-SRC_URI[deb0.md5sum] = "50209e29180305500730e7f153b72c8f"
-DEBFILENAME_libicu-dev = "libicu-dev_52.1-8+deb8u6_armhf.deb"
-SRC_URI[deb1.sha256sum] = "1defe6edd1185acd2b15f0ba41707a03de62cf207d981565bed3d18070d05a10"
-SRC_URI[deb1.md5sum] = "95f7498378412432825f67f2d9c0f920"
-DEBFILENAME_libicu52 = "libicu52_52.1-8+deb8u6_armhf.deb"
-SRC_URI[deb2.sha256sum] = "fe3e6aa80e0ea34667c22b63e9f86b1c1481d44b4ae9e0ee759254480a0cb289"
-SRC_URI[deb2.md5sum] = "b10657204fed39e062771241d76717fa"
+DEBFILENAME_icu-devtools = "icu-devtools_52.1-8+deb8u7_armhf.deb"
+SRC_URI[deb0.sha256sum] = "f6f87d90f3bc3148a586fef0d1bb6f7df0fa421649ade197a1ecd2339a708b2a"
+SRC_URI[deb0.md5sum] = "7ee0ca6fe23f485901a61c97f6e71d27"
+DEBFILENAME_libicu-dev = "libicu-dev_52.1-8+deb8u7_armhf.deb"
+SRC_URI[deb1.sha256sum] = "81943411a06860dcd791b9106c2382b624d2138d539120940ded02a9b9fbdbf9"
+SRC_URI[deb1.md5sum] = "af45439ce655fc821292ad3c51b36046"
+DEBFILENAME_libicu52 = "libicu52_52.1-8+deb8u7_armhf.deb"
+SRC_URI[deb2.sha256sum] = "8bb1d5d553c9d6ea6740e8c5ec598f4d910997297af962db840c1c2faff7482e"
+SRC_URI[deb2.md5sum] = "44c2f5eed8acbac97b936de67b84ee4a"
 
 RDEPENDS_${PN}-devtools = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libicu52 (>= 52~m1-1~) libstdc++6 (>= 4.9)"
-RDEPENDS_lib${PN}-dev = "icu-devtools (>= 52.1-8+deb8u6) libc6-dev libicu52 (= 52.1-8+deb8u6)"
+RDEPENDS_lib${PN}-dev = "icu-devtools (>= 52.1-8+deb8u7) libc6-dev libicu52 (= 52.1-8+deb8u7)"
 RDEPENDS_lib${PN}52 = "libc6 (>= 2.7) libgcc1 (>= 1:4.4.0) libstdc++6 (>= 4.9)"
 DEPENDS = "libc6 libc6-dev libgcc1 libstdc++6"
 

@@ -1,18 +1,18 @@
 PACKAGES = "${PN} libxml2 libxml2-dev"
 PROVIDES = "libxml2 libxml2-dev"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u5_armhf.deb;unpack=0;name=deb0\
-	http://ftp.de.debian.org/debian/pool/main/libx/libxml2/libxml2-dev_2.9.1+dfsg1-5+deb8u5_armhf.deb;unpack=0;name=deb1\
+	http://ftp.de.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u6_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/libx/libxml2/libxml2-dev_2.9.1+dfsg1-5+deb8u6_armhf.deb;unpack=0;name=deb1\
 "
-DEBFILENAME_libxml2 = "libxml2_2.9.1+dfsg1-5+deb8u5_armhf.deb"
-SRC_URI[deb0.sha256sum] = "a6612feb8eebccbce1fed0e042623bd18c3fc1f52773956883236332b34613a7"
-SRC_URI[deb0.md5sum] = "e249612387faa2cd416c51980e9db2ab"
-DEBFILENAME_libxml2-dev = "libxml2-dev_2.9.1+dfsg1-5+deb8u5_armhf.deb"
-SRC_URI[deb1.sha256sum] = "deebbd2069cca9aa95cf173cee2d10a5fda887c58b96caf3e47bb710929caf03"
-SRC_URI[deb1.md5sum] = "f8c189b87d711cc3f211e80b39554b4d"
+DEBFILENAME_libxml2 = "libxml2_2.9.1+dfsg1-5+deb8u6_armhf.deb"
+SRC_URI[deb0.sha256sum] = "bf4aa80ba75c2d25b12167ab6c1e2a0ee1b3fa48a2f8ac9127c1239e0cecfb65"
+SRC_URI[deb0.md5sum] = "cd5f74377bd7aa061de3d9aebe089ea4"
+DEBFILENAME_libxml2-dev = "libxml2-dev_2.9.1+dfsg1-5+deb8u6_armhf.deb"
+SRC_URI[deb1.sha256sum] = "faa116b898ef148bfd108cd30e2c7305ae725e7d56e561f10645030940516cf6"
+SRC_URI[deb1.md5sum] = "b5b9df837714ae46e85f398aac443b10"
 
 RDEPENDS_${PN} = "libc6 (>= 2.15) liblzma5 (>= 5.1.1alpha+20120614) zlib1g (>= 1:1.2.3.3)"
-RDEPENDS_${PN}-dev = "libxml2 (= 2.9.1+dfsg1-5+deb8u5)"
+RDEPENDS_${PN}-dev = "libxml2 (= 2.9.1+dfsg1-5+deb8u6)"
 DEPENDS = "libc6 liblzma5 zlib1g"
 
 

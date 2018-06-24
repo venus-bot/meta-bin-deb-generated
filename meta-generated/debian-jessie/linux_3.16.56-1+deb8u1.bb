@@ -1,11 +1,11 @@
 PACKAGES = "${PN} linux-libc-dev"
 PROVIDES = "linux-libc-dev"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/l/linux/linux-libc-dev_3.16.51-2_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/l/linux/linux-libc-dev_3.16.56-1+deb8u1_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_linux-libc-dev = "linux-libc-dev_3.16.51-2_armhf.deb"
-SRC_URI[deb0.sha256sum] = "4df479278231cee2bfa89916a2794554ab05bf1c73903450676bed815242327a"
-SRC_URI[deb0.md5sum] = "dd1104c33e53435791fff4d0bc53db02"
+DEBFILENAME_linux-libc-dev = "linux-libc-dev_3.16.56-1+deb8u1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "8c0ebe33bc26b8925eea5f29cdd719b9f78abe60b9ce077761caeece32dfb736"
+SRC_URI[deb0.md5sum] = "8c9b65422c90c8f862164431792bb943"
 
 
 inherit deb_group

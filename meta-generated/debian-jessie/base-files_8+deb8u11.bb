@@ -1,11 +1,11 @@
 PACKAGES = "${PN} base-files"
 PROVIDES = "base-files"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/b/base-files/base-files_8+deb8u10_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/b/base-files/base-files_8+deb8u11_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_base-files = "base-files_8+deb8u10_armhf.deb"
-SRC_URI[deb0.sha256sum] = "b20d14a0e390b970c2467e43463a7a4e25d0996187e46383c654af83b6bfaa0d"
-SRC_URI[deb0.md5sum] = "e2fd84d89c974e3976841abb7d850c1f"
+DEBFILENAME_base-files = "base-files_8+deb8u11_armhf.deb"
+SRC_URI[deb0.sha256sum] = "ff63400a82b25f7e15dabbf36fa7ec66c0cc37a9405cf74c576a1a78668fd653"
+SRC_URI[deb0.md5sum] = "e27d36a89417c6e05f6883637a22322c"
 
 
 inherit deb_group
