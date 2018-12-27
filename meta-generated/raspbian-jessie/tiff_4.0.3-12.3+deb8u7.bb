@@ -1,11 +1,11 @@
 PACKAGES = "${PN} libtiff5"
 PROVIDES = "libtiff5"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/t/tiff/libtiff5_4.0.3-12.3+deb8u6_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/t/tiff/libtiff5_4.0.3-12.3+deb8u7_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_libtiff5 = "libtiff5_4.0.3-12.3+deb8u6_armhf.deb"
-SRC_URI[deb0.sha256sum] = "fbee991b9680aa8d525ee579a7de9d34d65c3aa22cc15317db383e2680e7abf9"
-SRC_URI[deb0.md5sum] = "7785dd72ca0fa64c2e8ab398791ae03b"
+DEBFILENAME_libtiff5 = "libtiff5_4.0.3-12.3+deb8u7_armhf.deb"
+SRC_URI[deb0.sha256sum] = "95d5b4437f95ace3bfb6d4a8612dcf8ba5f467dacaf851e6257f30a06d5ecd22"
+SRC_URI[deb0.md5sum] = "61c90ab12112b9674c299b2b73b35944"
 
 RDEPENDS_lib${PN}5 = "libc6 (>= 2.11) libjbig0 (>= 2.0) libjpeg62-turbo (>= 1.3.1) liblzma5 (>= 5.1.1alpha+20120614) zlib1g (>= 1:1.1.4)"
 DEPENDS = "libc6 libjbig0 libjpeg62-turbo liblzma5 zlib1g"

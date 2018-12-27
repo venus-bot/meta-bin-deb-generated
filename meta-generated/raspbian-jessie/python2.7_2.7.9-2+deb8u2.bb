@@ -1,27 +1,27 @@
 PACKAGES = "${PN} libpython2.7-minimal libpython2.7-stdlib python2.7 python2.7-minimal"
 PROVIDES = "libpython2.7-minimal libpython2.7-stdlib python2.7 python2.7-minimal"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/p/python2.7/libpython2.7-minimal_2.7.9-2+deb8u1_armhf.deb;unpack=0;name=deb0\
-	http://archive.raspbian.org/raspbian/pool/main/p/python2.7/libpython2.7-stdlib_2.7.9-2+deb8u1_armhf.deb;unpack=0;name=deb1\
-	http://archive.raspbian.org/raspbian/pool/main/p/python2.7/python2.7_2.7.9-2+deb8u1_armhf.deb;unpack=0;name=deb2\
-	http://archive.raspbian.org/raspbian/pool/main/p/python2.7/python2.7-minimal_2.7.9-2+deb8u1_armhf.deb;unpack=0;name=deb3\
+	http://archive.raspbian.org/raspbian/pool/main/p/python2.7/libpython2.7-minimal_2.7.9-2+deb8u2_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/p/python2.7/libpython2.7-stdlib_2.7.9-2+deb8u2_armhf.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/p/python2.7/python2.7_2.7.9-2+deb8u2_armhf.deb;unpack=0;name=deb2\
+	http://archive.raspbian.org/raspbian/pool/main/p/python2.7/python2.7-minimal_2.7.9-2+deb8u2_armhf.deb;unpack=0;name=deb3\
 "
-DEBFILENAME_libpython2.7-minimal = "libpython2.7-minimal_2.7.9-2+deb8u1_armhf.deb"
-SRC_URI[deb0.sha256sum] = "2d0b61594c44c810a5e18dafefc712c68e0b84749533f520f0568ae8695775ae"
-SRC_URI[deb0.md5sum] = "8b46c894653b1e4fd95b83a22693b707"
-DEBFILENAME_libpython2.7-stdlib = "libpython2.7-stdlib_2.7.9-2+deb8u1_armhf.deb"
-SRC_URI[deb1.sha256sum] = "4acce713bace2cdd7567ba97a6a6677bdf3650580997789139c01a1a94edcaed"
-SRC_URI[deb1.md5sum] = "8f1c14719eea5788d8f2b5d7f8595c9d"
-DEBFILENAME_python2.7 = "python2.7_2.7.9-2+deb8u1_armhf.deb"
-SRC_URI[deb2.sha256sum] = "a51d75d083d300f66c715a257cda4529d02ac23bd5c5508a5b468ca7a8b18ee0"
-SRC_URI[deb2.md5sum] = "b2d71269c9a535164d1ee3c3bb1ffb15"
-DEBFILENAME_python2.7-minimal = "python2.7-minimal_2.7.9-2+deb8u1_armhf.deb"
-SRC_URI[deb3.sha256sum] = "d35a2960ab43934045d3f205ad4cf9693c852b64be7ad1e0ac3e94fab68f131b"
-SRC_URI[deb3.md5sum] = "72a4bbfa02bb25302adcaf45f2653f4b"
+DEBFILENAME_libpython2.7-minimal = "libpython2.7-minimal_2.7.9-2+deb8u2_armhf.deb"
+SRC_URI[deb0.sha256sum] = "44246e4414e5c6b86e016af29ce3eb39853fec214d3d8ce660f606937bbd3814"
+SRC_URI[deb0.md5sum] = "033ef43e0c2007d2391c40de8325757f"
+DEBFILENAME_libpython2.7-stdlib = "libpython2.7-stdlib_2.7.9-2+deb8u2_armhf.deb"
+SRC_URI[deb1.sha256sum] = "ba4581c4f3be5b0d7582b78c3e6ec9b7ac3621dc1b8c96f341e386cee051aa1a"
+SRC_URI[deb1.md5sum] = "21aede7ea08115f8872cfaa13d256170"
+DEBFILENAME_python2.7 = "python2.7_2.7.9-2+deb8u2_armhf.deb"
+SRC_URI[deb2.sha256sum] = "4447300d16713fb6eb2c388fa42ab48480c62f938f048d0a9c1fdff9c22d6278"
+SRC_URI[deb2.md5sum] = "051a3c0b0faa56f12edf33b38c9bf48d"
+DEBFILENAME_python2.7-minimal = "python2.7-minimal_2.7.9-2+deb8u2_armhf.deb"
+SRC_URI[deb3.sha256sum] = "f730a2f89333bde124a6ad487fdf41be8d79b7db09de7ca45685448678322e9c"
+SRC_URI[deb3.md5sum] = "7c5854bce758cd91a06dcf7385d2c1e8"
 
-RDEPENDS_lib${PN}-stdlib = "libbz2-1.0 libc6 (>= 2.15) libdb5.3 libexpat1 (>= 2.1~beta3) libffi6 (>= 3.0.4) libncursesw5 (>= 5.6+20070908) libpython2.7-minimal (= 2.7.9-2+deb8u1) libreadline6 (>= 6.0) libsqlite3-0 (>= 3.5.9) libssl1.0.0 (>= 1.0.1) libtinfo5 mime-support"
-RDEPENDS_${PN} = "libpython2.7-stdlib (= 2.7.9-2+deb8u1) mime-support python2.7-minimal (= 2.7.9-2+deb8u1)"
-RDEPENDS_${PN}-minimal = "libpython2.7-minimal (= 2.7.9-2+deb8u1) zlib1g (>= 1:1.2.0)"
+RDEPENDS_lib${PN}-stdlib = "libbz2-1.0 libc6 (>= 2.15) libdb5.3 libexpat1 (>= 2.1~beta3) libffi6 (>= 3.0.4) libncursesw5 (>= 5.6+20070908) libpython2.7-minimal (= 2.7.9-2+deb8u2) libreadline6 (>= 6.0) libsqlite3-0 (>= 3.5.9) libssl1.0.0 (>= 1.0.1) libtinfo5 mime-support"
+RDEPENDS_${PN} = "libpython2.7-stdlib (= 2.7.9-2+deb8u2) mime-support python2.7-minimal (= 2.7.9-2+deb8u2)"
+RDEPENDS_${PN}-minimal = "libpython2.7-minimal (= 2.7.9-2+deb8u2) zlib1g (>= 1:1.2.0)"
 DEPENDS = "libbz2-1.0 libc6 libdb5.3 libexpat1 libffi6 libncursesw5 libreadline6 libsqlite3-0 libssl1.0.0 libtinfo5 mime-support zlib1g"
 
 

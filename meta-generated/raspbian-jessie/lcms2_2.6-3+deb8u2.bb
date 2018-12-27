@@ -1,11 +1,11 @@
 PACKAGES = "${PN} liblcms2-2"
 PROVIDES = "liblcms2-2"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/l/lcms2/liblcms2-2_2.6-3+deb8u1_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/l/lcms2/liblcms2-2_2.6-3+deb8u2_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_liblcms2-2 = "liblcms2-2_2.6-3+deb8u1_armhf.deb"
-SRC_URI[deb0.sha256sum] = "3d116d06150c793e4172ae148dfb2dd090c1ba479d5484f22f5496ca567ccfaa"
-SRC_URI[deb0.md5sum] = "2ed5293aa35eda60bb79fb669f566749"
+DEBFILENAME_liblcms2-2 = "liblcms2-2_2.6-3+deb8u2_armhf.deb"
+SRC_URI[deb0.sha256sum] = "f9a779b037bee266a94f6c186198ce3f39825d3bd5a48f060856f0f9bb78e791"
+SRC_URI[deb0.md5sum] = "fc8427bd11fa42ebe93dda970588edfc"
 
 RDEPENDS_lib${PN}-2 = "libc6 (>= 2.7)"
 DEPENDS = "libc6"
