@@ -1,11 +1,11 @@
 PACKAGES = "${PN} libsystemd0"
 PROVIDES = "libsystemd0"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/s/systemd/libsystemd0_215-17+deb8u9_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/s/systemd/libsystemd0_215-17+deb8u10_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_libsystemd0 = "libsystemd0_215-17+deb8u9_armhf.deb"
-SRC_URI[deb0.sha256sum] = "74662451faa6edb1b044c34c214cb6ad07c0c1c8fc7041afdd07695d61197ea3"
-SRC_URI[deb0.md5sum] = "4e39ca335cbde9b78d8a180d4bf63d75"
+DEBFILENAME_libsystemd0 = "libsystemd0_215-17+deb8u10_armhf.deb"
+SRC_URI[deb0.sha256sum] = "bfb2d1465de51c52073bd5c3d06bb742521c7ad67ffaa38adbb1e55cd7acac77"
+SRC_URI[deb0.md5sum] = "12ff5a7ce9a6aaa773f0dd8cbddfe04f"
 
 
 inherit deb_group
