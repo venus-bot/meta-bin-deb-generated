@@ -1,11 +1,11 @@
 PACKAGES = "${PN} libjpeg62-turbo"
 PROVIDES = "libjpeg62-turbo"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/libj/libjpeg-turbo/libjpeg62-turbo_1.3.1-12+deb8u1_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/libj/libjpeg-turbo/libjpeg62-turbo_1.3.1-12+deb8u2_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_libjpeg62-turbo = "libjpeg62-turbo_1.3.1-12+deb8u1_armhf.deb"
-SRC_URI[deb0.sha256sum] = "a23cf26d2b762f13135558cf4bfd9673e3a65504fb1f9b155b80332636a883c1"
-SRC_URI[deb0.md5sum] = "4943ff0b46906f553e0dfd90cc4266d3"
+DEBFILENAME_libjpeg62-turbo = "libjpeg62-turbo_1.3.1-12+deb8u2_armhf.deb"
+SRC_URI[deb0.sha256sum] = "0cafa6aec2723ab77e43aae52df1017463b389d2b3533f0ff48456edabd217f9"
+SRC_URI[deb0.md5sum] = "9e9dd66d826ceb90917523d9318d2adc"
 
 RDEPENDS_libjpeg62-turbo = "libc6 (>= 2.7)"
 DEPENDS = "libc6"
