@@ -1,11 +1,11 @@
 PACKAGES = "${PN} bash"
 PROVIDES = "bash"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/b/bash/bash_4.3-11+deb8u1_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/b/bash/bash_4.3-11+deb8u2_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_bash = "bash_4.3-11+deb8u1_armhf.deb"
-SRC_URI[deb0.sha256sum] = "6fdefd1dfb4a3e8a0fe0ddbfe4879f6fcaa1a6298b9c898f20326932e502ee67"
-SRC_URI[deb0.md5sum] = "a9ca5444595f70e0d54c9c11677632c4"
+DEBFILENAME_bash = "bash_4.3-11+deb8u2_armhf.deb"
+SRC_URI[deb0.sha256sum] = "de2c33ede588f7abb0bc26c988eea5e0ccacbc606ab85e21f4896aec1cdf8a78"
+SRC_URI[deb0.md5sum] = "c089ab595372c231d03a029a0da1b734"
 
 RDEPENDS_${PN} = "base-files (>= 2.1.12) debianutils (>= 2.15)"
 DEPENDS = "base-files debianutils"
