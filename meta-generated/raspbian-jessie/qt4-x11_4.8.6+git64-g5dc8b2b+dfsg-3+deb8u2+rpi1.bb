@@ -1,116 +1,116 @@
 PACKAGES = "${PN} libqt4-dbus libqt4-declarative libqt4-designer libqt4-dev libqt4-dev-bin libqt4-help libqt4-network libqt4-qt3support libqt4-script libqt4-scripttools libqt4-sql libqt4-svg libqt4-test libqt4-xml libqt4-xmlpatterns libqtcore4 libqtdbus4 libqtgui4 qdbus qt4-linguist-tools qt4-qmake qtcore4-l10n"
 PROVIDES = "libqt4-dbus libqt4-declarative libqt4-designer libqt4-dev libqt4-dev-bin libqt4-help libqt4-network libqt4-qt3support libqt4-script libqt4-scripttools libqt4-sql libqt4-svg libqt4-test libqt4-xml libqt4-xmlpatterns libqtcore4 libqtdbus4 libqtgui4 qdbus qt4-linguist-tools qt4-qmake qtcore4-l10n"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqt4-dbus_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb;unpack=0;name=deb0\
-	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqt4-declarative_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb;unpack=0;name=deb1\
-	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqt4-designer_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb;unpack=0;name=deb2\
-	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqt4-dev_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb;unpack=0;name=deb3\
-	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqt4-dev-bin_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb;unpack=0;name=deb4\
-	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqt4-help_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb;unpack=0;name=deb5\
-	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqt4-network_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb;unpack=0;name=deb6\
-	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqt4-qt3support_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb;unpack=0;name=deb7\
-	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqt4-script_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb;unpack=0;name=deb8\
-	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqt4-scripttools_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb;unpack=0;name=deb9\
-	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqt4-sql_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb;unpack=0;name=deb10\
-	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqt4-svg_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb;unpack=0;name=deb11\
-	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqt4-test_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb;unpack=0;name=deb12\
-	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqt4-xml_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb;unpack=0;name=deb13\
-	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqt4-xmlpatterns_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb;unpack=0;name=deb14\
-	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqtcore4_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb;unpack=0;name=deb15\
-	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqtdbus4_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb;unpack=0;name=deb16\
-	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqtgui4_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb;unpack=0;name=deb17\
-	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/qdbus_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb;unpack=0;name=deb18\
-	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/qt4-linguist-tools_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb;unpack=0;name=deb19\
-	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/qt4-qmake_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb;unpack=0;name=deb20\
-	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/qtcore4-l10n_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_all.deb;unpack=0;name=deb21\
+	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqt4-dbus_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqt4-declarative_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqt4-designer_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb;unpack=0;name=deb2\
+	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqt4-dev_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb;unpack=0;name=deb3\
+	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqt4-dev-bin_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb;unpack=0;name=deb4\
+	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqt4-help_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb;unpack=0;name=deb5\
+	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqt4-network_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb;unpack=0;name=deb6\
+	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqt4-qt3support_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb;unpack=0;name=deb7\
+	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqt4-script_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb;unpack=0;name=deb8\
+	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqt4-scripttools_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb;unpack=0;name=deb9\
+	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqt4-sql_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb;unpack=0;name=deb10\
+	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqt4-svg_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb;unpack=0;name=deb11\
+	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqt4-test_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb;unpack=0;name=deb12\
+	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqt4-xml_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb;unpack=0;name=deb13\
+	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqt4-xmlpatterns_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb;unpack=0;name=deb14\
+	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqtcore4_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb;unpack=0;name=deb15\
+	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqtdbus4_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb;unpack=0;name=deb16\
+	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/libqtgui4_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb;unpack=0;name=deb17\
+	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/qdbus_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb;unpack=0;name=deb18\
+	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/qt4-linguist-tools_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb;unpack=0;name=deb19\
+	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/qt4-qmake_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb;unpack=0;name=deb20\
+	http://archive.raspbian.org/raspbian/pool/main/q/qt4-x11/qtcore4-l10n_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_all.deb;unpack=0;name=deb21\
 "
-DEBFILENAME_libqt4-dbus = "libqt4-dbus_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb"
-SRC_URI[deb0.sha256sum] = "07a92b99d1305cf6eadbff33be12ba24fb8d8b418eea155981175fba20252490"
-SRC_URI[deb0.md5sum] = "16bbbd379b6a4f394100a874cffa74ee"
-DEBFILENAME_libqt4-declarative = "libqt4-declarative_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb"
-SRC_URI[deb1.sha256sum] = "4803cb7d91ada1550f2c161bc87c60d463535ac7d19de9c9e4d2ca62d565bf95"
-SRC_URI[deb1.md5sum] = "d5d7fd20613ca140d404044f57717eac"
-DEBFILENAME_libqt4-designer = "libqt4-designer_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb"
-SRC_URI[deb2.sha256sum] = "2623d07e1f057dbd84809a7dc92c051bc90b357715e8b7c0daff893f9fbf4a92"
-SRC_URI[deb2.md5sum] = "c0101b72511a28d65baacd57e901befc"
-DEBFILENAME_libqt4-dev = "libqt4-dev_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb"
-SRC_URI[deb3.sha256sum] = "3fb21d1a8de0ce36cdc2dd91459008eb09444bea2823a513911e61c24e7b3449"
-SRC_URI[deb3.md5sum] = "daf6ea75f9bfe0436acb63a4c32ddde0"
-DEBFILENAME_libqt4-dev-bin = "libqt4-dev-bin_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb"
-SRC_URI[deb4.sha256sum] = "c628d31436d3ba8dd509904e7691e204e49c6abf057d9becb436d99d7308c361"
-SRC_URI[deb4.md5sum] = "16e526ec7fb423a49a021fb0d8ec2326"
-DEBFILENAME_libqt4-help = "libqt4-help_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb"
-SRC_URI[deb5.sha256sum] = "cff23c57451f1ee472ed62fb53a83613c189a7897bd0afbfef2dca3443e26e26"
-SRC_URI[deb5.md5sum] = "41c9fcad74aea502669d25f1ae455702"
-DEBFILENAME_libqt4-network = "libqt4-network_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb"
-SRC_URI[deb6.sha256sum] = "c93045ced9629e44760595b3ebb1361755a5aa1b87e6d6f102c3342882ee3fd5"
-SRC_URI[deb6.md5sum] = "9aeeeb32f1eb667cdcdcf11e4f7ce2f5"
-DEBFILENAME_libqt4-qt3support = "libqt4-qt3support_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb"
-SRC_URI[deb7.sha256sum] = "8635aa613ed64d05dc8e23f23145096a4a41a3a6cc79dc0a8c22d43c2d19f1c8"
-SRC_URI[deb7.md5sum] = "a0bcc2ab270dd563c4114962b2f1fe45"
-DEBFILENAME_libqt4-script = "libqt4-script_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb"
-SRC_URI[deb8.sha256sum] = "838340110bedbcc767e41394ec463679558dd4a459328494ce95a7f1946c8aac"
-SRC_URI[deb8.md5sum] = "4c7014636821ff3b9e9d0fa5c2d17b92"
-DEBFILENAME_libqt4-scripttools = "libqt4-scripttools_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb"
-SRC_URI[deb9.sha256sum] = "5a6279ac8f65f87c4f0c3fba281670854c40a9ce2f570b912e4e5e4658b35f3e"
-SRC_URI[deb9.md5sum] = "efc732be9aec5988dc69fcebd073ca19"
-DEBFILENAME_libqt4-sql = "libqt4-sql_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb"
-SRC_URI[deb10.sha256sum] = "7d902662c56997e0ae836d869b070f60ef14abbdf4e56bce627ec5abfa931e25"
-SRC_URI[deb10.md5sum] = "0797c1e08a5d56431e12bebc24f0e3e4"
-DEBFILENAME_libqt4-svg = "libqt4-svg_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb"
-SRC_URI[deb11.sha256sum] = "ebbac3c86031467ff89688c1e092c79f07dfa2d42b7b1a145f301a5362fbe9ba"
-SRC_URI[deb11.md5sum] = "5a33662bd22302a337103be2f92e164d"
-DEBFILENAME_libqt4-test = "libqt4-test_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb"
-SRC_URI[deb12.sha256sum] = "24a9425206dc259cc65d567c28b6c52762462259aeff2031499d58e0b7c758d6"
-SRC_URI[deb12.md5sum] = "fd944dd8fbf877ef02486f07c11bb184"
-DEBFILENAME_libqt4-xml = "libqt4-xml_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb"
-SRC_URI[deb13.sha256sum] = "bb4080898bed5dc36a4cc973cc9964af898a1b2d974b60addc901a463998c0ea"
-SRC_URI[deb13.md5sum] = "8f18e5e3bbc030eb9c3c68c227082b65"
-DEBFILENAME_libqt4-xmlpatterns = "libqt4-xmlpatterns_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb"
-SRC_URI[deb14.sha256sum] = "20d99d435bdd965f71a48cadb8e4b7e72b236159232bc850e0490f215a169d17"
-SRC_URI[deb14.md5sum] = "5a1a5e978c0a020caf052737867ea316"
-DEBFILENAME_libqtcore4 = "libqtcore4_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb"
-SRC_URI[deb15.sha256sum] = "a9c2f9d3b294f640d8250896e5767d00fc3e5c1857c83b51369d578523d7b29b"
-SRC_URI[deb15.md5sum] = "d9d8ebc54357ce2894919af886520382"
-DEBFILENAME_libqtdbus4 = "libqtdbus4_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb"
-SRC_URI[deb16.sha256sum] = "bb2f1b91f6152d9429b6c7146c6125cce605d784a9113962e45c8f156c00badd"
-SRC_URI[deb16.md5sum] = "4c77cb5769c0d88e703680fcb04a1176"
-DEBFILENAME_libqtgui4 = "libqtgui4_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb"
-SRC_URI[deb17.sha256sum] = "e2723effb2830517236a281a137fe0481208dc2852155a91bb5d47749d2af06b"
-SRC_URI[deb17.md5sum] = "c5a054e19b185eb68222ba29fa56cf41"
-DEBFILENAME_qdbus = "qdbus_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb"
-SRC_URI[deb18.sha256sum] = "f0e775b5b7e92b5462e0c948b0197080c7327595f3f0d7a0b9401fb9a34d37f2"
-SRC_URI[deb18.md5sum] = "4b5568cd294b7d7ce1d1c011f44d0983"
-DEBFILENAME_qt4-linguist-tools = "qt4-linguist-tools_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb"
-SRC_URI[deb19.sha256sum] = "579abf22e07828d86136df6271697507b138db76653be66ae3ab4ea8afeac53c"
-SRC_URI[deb19.md5sum] = "fa4292c7787cb698bc669c13c80ea1f3"
-DEBFILENAME_qt4-qmake = "qt4-qmake_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_armhf.deb"
-SRC_URI[deb20.sha256sum] = "042c5eedac4bfb21dec081d4c5b55bb7496780b169722240f36be7f3e5ce060a"
-SRC_URI[deb20.md5sum] = "711778e09ac8647af897fb74362f634c"
-DEBFILENAME_qtcore4-l10n = "qtcore4-l10n_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1_all.deb"
-SRC_URI[deb21.sha256sum] = "2aa1a49172913e15f119aa867b47f775a8ee12ded7a0dd455d9d737cd9919a3e"
-SRC_URI[deb21.md5sum] = "3223cb072579b8f8f3dff2e65bbc2dc6"
+DEBFILENAME_libqt4-dbus = "libqt4-dbus_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "8bc3ceb4ad451be20f2ef9ca676827013c8195beffbb3590a91816a42dabbe87"
+SRC_URI[deb0.md5sum] = "4c765352c4d20f2193ee51f4b5b01963"
+DEBFILENAME_libqt4-declarative = "libqt4-declarative_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb"
+SRC_URI[deb1.sha256sum] = "600f3109d73c8f286dcbcc306a805a1b0cb8883d68c1f3055e39dc51711d6e7a"
+SRC_URI[deb1.md5sum] = "20037301f17678db4a1ca62ec29bdb55"
+DEBFILENAME_libqt4-designer = "libqt4-designer_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb"
+SRC_URI[deb2.sha256sum] = "d2e5372d13455d784d4c6d26c9e447a02972c832a08d40298dd311aa1586704c"
+SRC_URI[deb2.md5sum] = "bb7e83fb8ef7bdb64697f513e96fcdbf"
+DEBFILENAME_libqt4-dev = "libqt4-dev_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb"
+SRC_URI[deb3.sha256sum] = "b36bbe00e6a25edea5d4ceaa52d0983be124dbaae3f738f6d376909e7ef8de4f"
+SRC_URI[deb3.md5sum] = "84ed68909db757b0858c3145120493ee"
+DEBFILENAME_libqt4-dev-bin = "libqt4-dev-bin_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb"
+SRC_URI[deb4.sha256sum] = "67856fe149cd1507c7f3602b6457a6bb3a351cc0e777c3f3b2bd08002c1f6000"
+SRC_URI[deb4.md5sum] = "d8d4ed1118df037d62d319b6e469a928"
+DEBFILENAME_libqt4-help = "libqt4-help_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb"
+SRC_URI[deb5.sha256sum] = "280cd2ee244d63479985f82ed909c56fce4f6dc9a9b866c94c1b302736b8482f"
+SRC_URI[deb5.md5sum] = "9e35d3c1b27f8e80267abd44670e4768"
+DEBFILENAME_libqt4-network = "libqt4-network_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb"
+SRC_URI[deb6.sha256sum] = "25339332345fb51d63e0b2e2bc909200e9998c4945731d4212c4a7c1a91ae346"
+SRC_URI[deb6.md5sum] = "e3a42c930bbd697c527ea786fa672f85"
+DEBFILENAME_libqt4-qt3support = "libqt4-qt3support_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb"
+SRC_URI[deb7.sha256sum] = "6c69da4a1f8179d820201e6adaea8913c3e0589d82e2bcb09107630130a4c804"
+SRC_URI[deb7.md5sum] = "81006cd3998852ff7016610e838fab4d"
+DEBFILENAME_libqt4-script = "libqt4-script_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb"
+SRC_URI[deb8.sha256sum] = "560bd3a9f93e4327437be60e5a3affbac85efccddcd75b57bc78d13b25597261"
+SRC_URI[deb8.md5sum] = "f8f9d2a680435e8f1cf590709813ddd3"
+DEBFILENAME_libqt4-scripttools = "libqt4-scripttools_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb"
+SRC_URI[deb9.sha256sum] = "417bcaafe074d57fe63643a00a776fe15fb625266fa6b0678c2cc9f62cdd6d01"
+SRC_URI[deb9.md5sum] = "36e73d582631625cfbe157e21846b3dd"
+DEBFILENAME_libqt4-sql = "libqt4-sql_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb"
+SRC_URI[deb10.sha256sum] = "0ad598a83f23c6ec5f1bb81dc742f14c6c1ecaab450e5ea27c2ebeb1dfa6092b"
+SRC_URI[deb10.md5sum] = "e0506ffe1e4f1d9de43102a01ad2de24"
+DEBFILENAME_libqt4-svg = "libqt4-svg_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb"
+SRC_URI[deb11.sha256sum] = "33cb4df13c3c6e8a198996f613234f704ea4b1b24c90133b56e0f8ca2c4b46a8"
+SRC_URI[deb11.md5sum] = "14c71ff126907f93c28396f9fdf80245"
+DEBFILENAME_libqt4-test = "libqt4-test_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb"
+SRC_URI[deb12.sha256sum] = "1d7512d9277fc4bfcdb4e6169038b597ea7979d6e7047276621223e54ac5f2e8"
+SRC_URI[deb12.md5sum] = "ff1e4e88cdbbb57bc44d48b697baeb74"
+DEBFILENAME_libqt4-xml = "libqt4-xml_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb"
+SRC_URI[deb13.sha256sum] = "cb529c35f5fee87ab81cc9b907000ac1b8f4729d25b13c52137d8dc7234345d3"
+SRC_URI[deb13.md5sum] = "4a500fa629a5514f5a8d1091ca0e328c"
+DEBFILENAME_libqt4-xmlpatterns = "libqt4-xmlpatterns_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb"
+SRC_URI[deb14.sha256sum] = "90cc9bd0612c5d62b11f0125705480cba1f29ac3e5cdbe0860755dcd50abf936"
+SRC_URI[deb14.md5sum] = "53eb8470726cdb925875e067be212c1a"
+DEBFILENAME_libqtcore4 = "libqtcore4_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb"
+SRC_URI[deb15.sha256sum] = "7e3eba8d6b60e8c3f57982c5057df6f174dfa11992e2aeace999050ed5d1373c"
+SRC_URI[deb15.md5sum] = "f2a75851f55262b13ec56087b6793f8e"
+DEBFILENAME_libqtdbus4 = "libqtdbus4_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb"
+SRC_URI[deb16.sha256sum] = "0d653d8fac9d1a0d882d33d0a95a9d79af636b610d73b2e16a042e73067a4e80"
+SRC_URI[deb16.md5sum] = "e968b6dcc3dcc8055e0c4c45e8e6dc39"
+DEBFILENAME_libqtgui4 = "libqtgui4_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb"
+SRC_URI[deb17.sha256sum] = "4fe0f9fc30969b8f9fbbfc9a16052349d269c8f3292d02c336fcdfa7eb78db8b"
+SRC_URI[deb17.md5sum] = "6fa8a7f04e0f3f32be1a28e41aec39ea"
+DEBFILENAME_qdbus = "qdbus_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb"
+SRC_URI[deb18.sha256sum] = "287d60f2604bb87fab6a81a944b7c511ef0ca52eb637c3fb7389bbf7f4d5ab73"
+SRC_URI[deb18.md5sum] = "64fc902984fdb7b618d4846edab85e2c"
+DEBFILENAME_qt4-linguist-tools = "qt4-linguist-tools_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb"
+SRC_URI[deb19.sha256sum] = "672c182978ace771244f42e1d5356c249058eba8922fe4fb9879f1563f5b839f"
+SRC_URI[deb19.md5sum] = "225fb5268750733677e1aea1f23cce33"
+DEBFILENAME_qt4-qmake = "qt4-qmake_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_armhf.deb"
+SRC_URI[deb20.sha256sum] = "29921d6e0121c0c841b8c938a5b4565d1e6ac8f319df0da332a2597347156897"
+SRC_URI[deb20.md5sum] = "6e7c7cefa161047e81e6dc6b6a2a8db8"
+DEBFILENAME_qtcore4-l10n = "qtcore4-l10n_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1_all.deb"
+SRC_URI[deb21.sha256sum] = "86ea14b4cf30e36e4510164ea4d02eb661f4583c2dfffb3db41354960da9640a"
+SRC_URI[deb21.md5sum] = "1949105dd36cd7137ad7d99c14c66f90"
 
-RDEPENDS_libqt4-dbus = "libqtdbus4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) qdbus (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1)"
-RDEPENDS_libqt4-declarative = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqt4-network (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqt4-script (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqt4-sql (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqt4-xmlpatterns (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqtgui4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libstdc++6 (>= 4.3.0)"
-RDEPENDS_libqt4-designer = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqt4-script (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqt4-xml (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqtgui4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libstdc++6 (>= 4.3.0)"
-RDEPENDS_libqt4-dev = "libqt4-dbus (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqt4-declarative (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqt4-designer (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqt4-dev-bin (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqt4-help (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqt4-network (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqt4-qt3support (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqt4-script (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqt4-scripttools (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqt4-sql (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqt4-svg (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqt4-test (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqt4-xml (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqt4-xmlpatterns (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqtgui4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) qt4-linguist-tools (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) qt4-qmake (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) qtchooser"
-RDEPENDS_libqt4-dev-bin = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqt4-qt3support (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqt4-xml (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqtdbus4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqtgui4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libstdc++6 (>= 4.3.0) qtchooser zlib1g (>= 1:1.1.4)"
-RDEPENDS_libqt4-help = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqt4-network (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqt4-sql (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqtgui4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libstdc++6 (>= 4.3.0)"
-RDEPENDS_libqt4-network = "libc6 (>= 2.15) libgcc1 (>= 1:4.4.0) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqtdbus4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libstdc++6 (>= 4.3.0) zlib1g (>= 1:1.1.4)"
-RDEPENDS_libqt4-qt3support = "libc6 (>= 2.15) libgcc1 (>= 1:4.4.0) libqt4-designer (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqt4-network (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqt4-sql (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqt4-xml (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqtgui4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libstdc++6 (>= 4.3.0)"
-RDEPENDS_libqt4-script = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqtdbus4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libstdc++6 (>= 4.3.0)"
-RDEPENDS_libqt4-scripttools = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqt4-script (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqtgui4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libstdc++6 (>= 4.3.0)"
-RDEPENDS_libqt4-sql = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libstdc++6 (>= 4.3.0)"
-RDEPENDS_libqt4-svg = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqtgui4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libstdc++6 (>= 4.3.0) zlib1g (>= 1:1.1.4)"
-RDEPENDS_libqt4-test = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libstdc++6 (>= 4.3.0)"
-RDEPENDS_libqt4-xml = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libstdc++6 (>= 4.3.0)"
-RDEPENDS_libqt4-xmlpatterns = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqt4-network (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libstdc++6 (>= 4.3.0)"
+RDEPENDS_libqt4-dbus = "libqtdbus4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) qdbus (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1)"
+RDEPENDS_libqt4-declarative = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqt4-network (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqt4-script (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqt4-sql (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqt4-xmlpatterns (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqtgui4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libstdc++6 (>= 4.3.0)"
+RDEPENDS_libqt4-designer = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqt4-script (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqt4-xml (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqtgui4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libstdc++6 (>= 4.3.0)"
+RDEPENDS_libqt4-dev = "libqt4-dbus (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqt4-declarative (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqt4-designer (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqt4-dev-bin (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqt4-help (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqt4-network (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqt4-qt3support (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqt4-script (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqt4-scripttools (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqt4-sql (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqt4-svg (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqt4-test (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqt4-xml (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqt4-xmlpatterns (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqtgui4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) qt4-linguist-tools (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) qt4-qmake (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) qtchooser"
+RDEPENDS_libqt4-dev-bin = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqt4-qt3support (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqt4-xml (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqtdbus4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqtgui4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libstdc++6 (>= 4.3.0) qtchooser zlib1g (>= 1:1.1.4)"
+RDEPENDS_libqt4-help = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqt4-network (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqt4-sql (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqtgui4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libstdc++6 (>= 4.3.0)"
+RDEPENDS_libqt4-network = "libc6 (>= 2.15) libgcc1 (>= 1:4.4.0) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqtdbus4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libstdc++6 (>= 4.3.0) zlib1g (>= 1:1.1.4)"
+RDEPENDS_libqt4-qt3support = "libc6 (>= 2.15) libgcc1 (>= 1:4.4.0) libqt4-designer (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqt4-network (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqt4-sql (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqt4-xml (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqtgui4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libstdc++6 (>= 4.3.0)"
+RDEPENDS_libqt4-script = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqtdbus4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libstdc++6 (>= 4.3.0)"
+RDEPENDS_libqt4-scripttools = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqt4-script (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqtgui4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libstdc++6 (>= 4.3.0)"
+RDEPENDS_libqt4-sql = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libstdc++6 (>= 4.3.0)"
+RDEPENDS_libqt4-svg = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqtgui4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libstdc++6 (>= 4.3.0) zlib1g (>= 1:1.1.4)"
+RDEPENDS_libqt4-test = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libstdc++6 (>= 4.3.0)"
+RDEPENDS_libqt4-xml = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libstdc++6 (>= 4.3.0)"
+RDEPENDS_libqt4-xmlpatterns = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqt4-network (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libstdc++6 (>= 4.3.0)"
 RDEPENDS_libqtcore4 = "libc6 (>= 2.15) libgcc1 (>= 1:4.4.0) libglib2.0-0 (>= 2.22.0) libstdc++6 (>= 4.6) qtcore4-l10n zlib1g (>= 1:1.1.4)"
-RDEPENDS_libqtdbus4 = "libc6 (>= 2.4) libdbus-1-3 (>= 1.3.1) libgcc1 (>= 1:4.4.0) libqt4-xml (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libstdc++6 (>= 4.3.0)"
-RDEPENDS_libqtgui4 = "fontconfig libaudio2 libc6 (>= 2.15) libfontconfig1 (>= 2.11) libfreetype6 (>= 2.3.5) libgcc1 (>= 1:4.4.0) libglib2.0-0 (>= 2.12.0) libice6 (>= 1:1.0.0) libjpeg62-turbo (>= 1.3.1) libmng1 (>= 1.0.10) libpng12-0 (>= 1.2.13-4) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libsm6 libstdc++6 (>= 4.3.0) libtiff5 (>= 4.0.3) libx11-6 libxext6 libxrender1 zlib1g (>= 1:1.1.4)"
-RDEPENDS_qdbus = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqt4-xml (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqtdbus4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libstdc++6 (>= 4.3.0) qtchooser"
-RDEPENDS_qt4-linguist-tools = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqt4-xml (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1+rpi1) libstdc++6 (>= 4.4.0) qtchooser zlib1g (>= 1:1.1.4)"
+RDEPENDS_libqtdbus4 = "libc6 (>= 2.4) libdbus-1-3 (>= 1.3.1) libgcc1 (>= 1:4.4.0) libqt4-xml (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libstdc++6 (>= 4.3.0)"
+RDEPENDS_libqtgui4 = "fontconfig libaudio2 libc6 (>= 2.15) libfontconfig1 (>= 2.11) libfreetype6 (>= 2.3.5) libgcc1 (>= 1:4.4.0) libglib2.0-0 (>= 2.12.0) libice6 (>= 1:1.0.0) libjpeg62-turbo (>= 1.3.1) libmng1 (>= 1.0.10) libpng12-0 (>= 1.2.13-4) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libsm6 libstdc++6 (>= 4.3.0) libtiff5 (>= 4.0.3) libx11-6 libxext6 libxrender1 zlib1g (>= 1:1.1.4)"
+RDEPENDS_qdbus = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqt4-xml (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqtdbus4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libstdc++6 (>= 4.3.0) qtchooser"
+RDEPENDS_qt4-linguist-tools = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqt4-xml (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u2+rpi1) libstdc++6 (>= 4.4.0) qtchooser zlib1g (>= 1:1.1.4)"
 RDEPENDS_qt4-qmake = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libstdc++6 (>= 4.3.0) qtchooser"
 DEPENDS = "fontconfig libaudio2 libc6 libdbus-1-3 libfontconfig1 libfreetype6 libgcc1 libglib2.0-0 libice6 libjpeg62-turbo libmng1 libpng12-0 libsm6 libstdc++6 libtiff5 libx11-6 libxext6 libxrender1 qtchooser zlib1g"
 
