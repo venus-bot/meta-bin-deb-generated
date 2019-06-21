@@ -1,11 +1,11 @@
 PACKAGES = "${PN} python-urllib3"
 PROVIDES = "python-urllib3"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/p/python-urllib3/python-urllib3_1.9.1-3_all.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/p/python-urllib3/python-urllib3_1.9.1-3+deb8u1_all.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_python-urllib3 = "python-urllib3_1.9.1-3_all.deb"
-SRC_URI[deb0.sha256sum] = "495840e5740ec4d0dfd5f729b9412fdaaa99eef1f168327977d9e849a7d890a3"
-SRC_URI[deb0.md5sum] = "43ba3f7c2afb1730be7c657f5ec48163"
+DEBFILENAME_python-urllib3 = "python-urllib3_1.9.1-3+deb8u1_all.deb"
+SRC_URI[deb0.sha256sum] = "e27d99ad5c0b5e5299b8868e00a6cacaa6adbbb532874e95e893c27d36f2a25f"
+SRC_URI[deb0.md5sum] = "897db5703e814b71168f8fa70a4984e1"
 
 RDEPENDS_${PN} = "python (<< 2.8) python (>= 2.7.5-5~) python-six"
 DEPENDS = "python python-six"
