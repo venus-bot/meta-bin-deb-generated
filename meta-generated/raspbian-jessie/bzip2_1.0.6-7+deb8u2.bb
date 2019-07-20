@@ -1,11 +1,11 @@
 PACKAGES = "${PN} libbz2-1.0"
 PROVIDES = "libbz2-1.0"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/b/bzip2/libbz2-1.0_1.0.6-7+deb8u1_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/b/bzip2/libbz2-1.0_1.0.6-7+deb8u2_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_libbz2-1.0 = "libbz2-1.0_1.0.6-7+deb8u1_armhf.deb"
-SRC_URI[deb0.sha256sum] = "1f1772e6a007613d02fe7625a74416062cf520a28b67dd8bd757ab8956c49e69"
-SRC_URI[deb0.md5sum] = "5cd3719c1471371a5f4d050b935bc585"
+DEBFILENAME_libbz2-1.0 = "libbz2-1.0_1.0.6-7+deb8u2_armhf.deb"
+SRC_URI[deb0.sha256sum] = "d0445338fc349fc2f5691ca931143b40e8c77c64da96f898fce3b18b64f025b1"
+SRC_URI[deb0.md5sum] = "62d8ac512c42d12fb5878ef3405af50e"
 
 RDEPENDS_libbz2-1.0 = "libc6 (>= 2.4)"
 DEPENDS = "libc6"
