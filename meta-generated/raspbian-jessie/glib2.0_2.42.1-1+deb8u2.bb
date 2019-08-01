@@ -1,27 +1,27 @@
 PACKAGES = "${PN} libglib2.0-0 libglib2.0-bin libglib2.0-data libglib2.0-dev"
 PROVIDES = "libglib2.0-0 libglib2.0-bin libglib2.0-data libglib2.0-dev"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/g/glib2.0/libglib2.0-0_2.42.1-1+deb8u1_armhf.deb;unpack=0;name=deb0\
-	http://archive.raspbian.org/raspbian/pool/main/g/glib2.0/libglib2.0-bin_2.42.1-1+deb8u1_armhf.deb;unpack=0;name=deb1\
-	http://archive.raspbian.org/raspbian/pool/main/g/glib2.0/libglib2.0-data_2.42.1-1+deb8u1_all.deb;unpack=0;name=deb2\
-	http://archive.raspbian.org/raspbian/pool/main/g/glib2.0/libglib2.0-dev_2.42.1-1+deb8u1_armhf.deb;unpack=0;name=deb3\
+	http://archive.raspbian.org/raspbian/pool/main/g/glib2.0/libglib2.0-0_2.42.1-1+deb8u2_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/g/glib2.0/libglib2.0-bin_2.42.1-1+deb8u2_armhf.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/g/glib2.0/libglib2.0-data_2.42.1-1+deb8u2_all.deb;unpack=0;name=deb2\
+	http://archive.raspbian.org/raspbian/pool/main/g/glib2.0/libglib2.0-dev_2.42.1-1+deb8u2_armhf.deb;unpack=0;name=deb3\
 "
-DEBFILENAME_libglib2.0-0 = "libglib2.0-0_2.42.1-1+deb8u1_armhf.deb"
-SRC_URI[deb0.sha256sum] = "d5f5b84788aaf8523e787e97e309a955660cebdef6431880467261e47dab35e2"
-SRC_URI[deb0.md5sum] = "2040726634c8aa2c1bdccce9dc394bba"
-DEBFILENAME_libglib2.0-bin = "libglib2.0-bin_2.42.1-1+deb8u1_armhf.deb"
-SRC_URI[deb1.sha256sum] = "ce01c518945c6d5b4d1db460506913efa1ba536556e69d64e3a2ca2df9cc2510"
-SRC_URI[deb1.md5sum] = "54bf4fba86a4b37e68718927d4c57a28"
-DEBFILENAME_libglib2.0-data = "libglib2.0-data_2.42.1-1+deb8u1_all.deb"
-SRC_URI[deb2.sha256sum] = "0afdf92b8b6c8eb84705b384fc92479f63a16966952f39643b3c2e9516923c30"
-SRC_URI[deb2.md5sum] = "f3197f73701690d5663452f8e761927f"
-DEBFILENAME_libglib2.0-dev = "libglib2.0-dev_2.42.1-1+deb8u1_armhf.deb"
-SRC_URI[deb3.sha256sum] = "c257ebe37369f7d5147cd8820b30001072a730255e7acbb6df4c4b77e1159794"
-SRC_URI[deb3.md5sum] = "8bdd51199dd6b93579e58a715c531723"
+DEBFILENAME_libglib2.0-0 = "libglib2.0-0_2.42.1-1+deb8u2_armhf.deb"
+SRC_URI[deb0.sha256sum] = "923fea67370c3270e0645313525922aab57e9e9a973edf5a2f1058592b04396f"
+SRC_URI[deb0.md5sum] = "e3841613793eb4eb83e4f69ad5bee6fc"
+DEBFILENAME_libglib2.0-bin = "libglib2.0-bin_2.42.1-1+deb8u2_armhf.deb"
+SRC_URI[deb1.sha256sum] = "d16e3ba1cf3b127809224498a2c44acc3a198cb1cb0bab344c4f0ab3871c930f"
+SRC_URI[deb1.md5sum] = "8c04b26eab5ba3ff8aa038d4e2f177bf"
+DEBFILENAME_libglib2.0-data = "libglib2.0-data_2.42.1-1+deb8u2_all.deb"
+SRC_URI[deb2.sha256sum] = "82f594a69a6407cc7682aabb4c4f882430e71d6a719739cbf2b65dcc002f60ef"
+SRC_URI[deb2.md5sum] = "aec1ce037f5435ab7329778f44047b01"
+DEBFILENAME_libglib2.0-dev = "libglib2.0-dev_2.42.1-1+deb8u2_armhf.deb"
+SRC_URI[deb3.sha256sum] = "8a8ea23483597690f5a13c528559fac9d9c8b7e44ae96717767a3dd752f43bf6"
+SRC_URI[deb3.md5sum] = "5ca1a38b8482bfdbaace8506548f9d38"
 
 RDEPENDS_lib${PN}-0 = "libc6 (>= 2.17) libffi6 (>= 3.0.4) libpcre3 (>= 1:8.35) libselinux1 (>= 1.32) zlib1g (>= 1:1.2.2)"
-RDEPENDS_lib${PN}-bin = "libc6 (>= 2.4) libelfg0 (>= 0.8.12) libglib2.0-0 (= 2.42.1-1+deb8u1) libglib2.0-data"
-RDEPENDS_lib${PN}-dev = " libc6 (>= 2.4) libglib2.0-0 (= 2.42.1-1+deb8u1) libglib2.0-bin (= 2.42.1-1+deb8u1) libpcre3-dev (>= 1:8.31) python (>= 2.6.6-7~) zlib1g-dev"
+RDEPENDS_lib${PN}-bin = "libc6 (>= 2.4) libelfg0 (>= 0.8.12) libglib2.0-0 (= 2.42.1-1+deb8u2) libglib2.0-data"
+RDEPENDS_lib${PN}-dev = " libc6 (>= 2.4) libglib2.0-0 (= 2.42.1-1+deb8u2) libglib2.0-bin (= 2.42.1-1+deb8u2) libpcre3-dev (>= 1:8.31) python (>= 2.6.6-7~) zlib1g-dev"
 DEPENDS = " libc6 libelfg0 libffi6 libpcre3 libpcre3-dev libselinux1 python zlib1g zlib1g-dev"
 
 
