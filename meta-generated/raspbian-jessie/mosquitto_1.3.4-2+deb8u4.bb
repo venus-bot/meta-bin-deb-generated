@@ -1,11 +1,11 @@
 PACKAGES = "${PN} mosquitto"
 PROVIDES = "mosquitto"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/m/mosquitto/mosquitto_1.3.4-2+deb8u3_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/m/mosquitto/mosquitto_1.3.4-2+deb8u4_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_mosquitto = "mosquitto_1.3.4-2+deb8u3_armhf.deb"
-SRC_URI[deb0.sha256sum] = "edb9b1bedaecb70a257520ebd68e24449ed07144b9f19a4bb83ec1fde96cc19f"
-SRC_URI[deb0.md5sum] = "fcc0ca044c3ad51b00402399686f9933"
+DEBFILENAME_mosquitto = "mosquitto_1.3.4-2+deb8u4_armhf.deb"
+SRC_URI[deb0.sha256sum] = "57a05965b7e64cd01c0c11ad93ffb9a0d9ec9b924e4b0fbb471b6055394ee6d2"
+SRC_URI[deb0.md5sum] = "15acb1f4583d773ba8114945b71ea92e"
 
 RDEPENDS_${PN} = "adduser (>= 3.10) libc6 (>= 2.4) libssl1.0.0 (>= 1.0.1) libuuid1 libwrap0 (>= 7.6-4~) lsb-base (>= 4.1+Debian3)"
 DEPENDS = "adduser libc6 libssl1.0.0 libuuid1 libwrap0 lsb-base"
