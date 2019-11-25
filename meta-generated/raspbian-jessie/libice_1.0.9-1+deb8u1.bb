@@ -1,14 +1,14 @@
 PACKAGES = "${PN} libice6"
 PROVIDES = "libice6"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/libi/libice/libice6_1.0.9-1_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/libi/libice/libice6_1.0.9-1+deb8u1_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_libice6 = "libice6_1.0.9-1_armhf.deb"
-SRC_URI[deb0.sha256sum] = "51df1c00c01d76c8d5e6c3cfde5fa84cbb7d900ce82a65036f2cccd553a4fb44"
-SRC_URI[deb0.md5sum] = "36313bc894962edb7c3223d32082bbc3"
+DEBFILENAME_libice6 = "libice6_1.0.9-1+deb8u1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "2969b6f99ce399f087c4ebdb3c720f918a336bde6327c6f03320ef7cb2812f22"
+SRC_URI[deb0.md5sum] = "a34a884198f608f298d27630cd678aab"
 
-RDEPENDS_${PN}6 = "libc6 (>= 2.11) x11-common"
-DEPENDS = "libc6 x11-common"
+RDEPENDS_${PN}6 = "libbsd0 (>= 0.2.0) libc6 (>= 2.11) x11-common"
+DEPENDS = "libbsd0 libc6 x11-common"
 
 
 inherit deb_group
