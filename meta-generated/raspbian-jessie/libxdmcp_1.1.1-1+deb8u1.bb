@@ -1,18 +1,18 @@
 PACKAGES = "${PN} libxdmcp-dev libxdmcp6"
 PROVIDES = "libxdmcp-dev libxdmcp6"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/libx/libxdmcp/libxdmcp-dev_1.1.1-1_armhf.deb;unpack=0;name=deb0\
-	http://archive.raspbian.org/raspbian/pool/main/libx/libxdmcp/libxdmcp6_1.1.1-1_armhf.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/libx/libxdmcp/libxdmcp-dev_1.1.1-1+deb8u1_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/libx/libxdmcp/libxdmcp6_1.1.1-1+deb8u1_armhf.deb;unpack=0;name=deb1\
 "
-DEBFILENAME_libxdmcp-dev = "libxdmcp-dev_1.1.1-1_armhf.deb"
-SRC_URI[deb0.sha256sum] = "833e121e18446479c8b8bc3619d19b2c35646dd4be43dc28b8265dc3beabebf1"
-SRC_URI[deb0.md5sum] = "d8638f20276f1778302f1794e5465cc2"
-DEBFILENAME_libxdmcp6 = "libxdmcp6_1.1.1-1_armhf.deb"
-SRC_URI[deb1.sha256sum] = "4f5ad0fc9fd5b37f35905d8f0a7907a090e63253e6c486f58c01a92f05bfadba"
-SRC_URI[deb1.md5sum] = "27db6b19be74ae9bca26d65a0a1403f5"
+DEBFILENAME_libxdmcp-dev = "libxdmcp-dev_1.1.1-1+deb8u1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "8610985382bbeda0fef3c4b273d7837fcd6753bfa43d825fdb7e87a2a6810017"
+SRC_URI[deb0.md5sum] = "cff008c328198f21f75dac24f6324ab6"
+DEBFILENAME_libxdmcp6 = "libxdmcp6_1.1.1-1+deb8u1_armhf.deb"
+SRC_URI[deb1.sha256sum] = "7f4048a687abcbc1a85f328f03ef20c61688abbdb241207acc809a4c5285d69e"
+SRC_URI[deb1.md5sum] = "ad521e3d6dd6e60b82ce4613e8f370a5"
 
-RDEPENDS_${PN}-dev = "libxdmcp6 (= 1:1.1.1-1) x11proto-core-dev"
-RDEPENDS_${PN}6 = "libc6 (>= 2.13-28)"
+RDEPENDS_${PN}-dev = "libxdmcp6 (= 1:1.1.1-1+deb8u1) x11proto-core-dev"
+RDEPENDS_${PN}6 = "libc6 (>= 2.4)"
 DEPENDS = "libc6 x11proto-core-dev"
 
 
