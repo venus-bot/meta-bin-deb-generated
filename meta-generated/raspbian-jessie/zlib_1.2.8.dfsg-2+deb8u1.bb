@@ -1,18 +1,18 @@
 PACKAGES = "${PN} zlib1g zlib1g-dev"
 PROVIDES = "zlib1g zlib1g-dev"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/z/zlib/zlib1g_1.2.8.dfsg-2_armhf.deb;unpack=0;name=deb0\
-	http://archive.raspbian.org/raspbian/pool/main/z/zlib/zlib1g-dev_1.2.8.dfsg-2_armhf.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/z/zlib/zlib1g_1.2.8.dfsg-2+deb8u1_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/z/zlib/zlib1g-dev_1.2.8.dfsg-2+deb8u1_armhf.deb;unpack=0;name=deb1\
 "
-DEBFILENAME_zlib1g = "zlib1g_1.2.8.dfsg-2_armhf.deb"
-SRC_URI[deb0.sha256sum] = "6ccc881c8a3d9841239466145113570618a03cb63e1f547b76dacac5e4fa2bd9"
-SRC_URI[deb0.md5sum] = "03beeedc8aa430fbd746959126ef7d9a"
-DEBFILENAME_zlib1g-dev = "zlib1g-dev_1.2.8.dfsg-2_armhf.deb"
-SRC_URI[deb1.sha256sum] = "b97e3d0668daa13a7c648f6f85d4777550ec2bbb48d6044b4416408b6b8027aa"
-SRC_URI[deb1.md5sum] = "f466fa71d786a428243a4b7c1305a7b8"
+DEBFILENAME_zlib1g = "zlib1g_1.2.8.dfsg-2+deb8u1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "4996145a6179a0d24bdd71e5fffa89cc2a96b607a4d35851cb998a536d1d4810"
+SRC_URI[deb0.md5sum] = "7de974c366b783636d1024a4acb56ad6"
+DEBFILENAME_zlib1g-dev = "zlib1g-dev_1.2.8.dfsg-2+deb8u1_armhf.deb"
+SRC_URI[deb1.sha256sum] = "5b39dc616995edd13ee66a31a52e9a209c7b7d847fa14b83e388e2b191527a87"
+SRC_URI[deb1.md5sum] = "3ec7df8cbf65135f2580214f73490af5"
 
 RDEPENDS_${PN}1g = "libc6 (>= 2.4)"
-RDEPENDS_${PN}1g-dev = "libc6-dev zlib1g (= 1:1.2.8.dfsg-2)"
+RDEPENDS_${PN}1g-dev = "libc6-dev zlib1g (= 1:1.2.8.dfsg-2+deb8u1)"
 DEPENDS = "libc6 libc6-dev"
 
 
