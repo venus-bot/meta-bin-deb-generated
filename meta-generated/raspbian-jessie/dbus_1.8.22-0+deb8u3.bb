@@ -1,23 +1,23 @@
 PACKAGES = "${PN} dbus libdbus-1-3 libdbus-1-dev"
 PROVIDES = "dbus libdbus-1-3 libdbus-1-dev"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/d/dbus/dbus_1.8.22-0+deb8u2_armhf.deb;unpack=0;name=deb0\
-	http://archive.raspbian.org/raspbian/pool/main/d/dbus/libdbus-1-3_1.8.22-0+deb8u2_armhf.deb;unpack=0;name=deb1\
-	http://archive.raspbian.org/raspbian/pool/main/d/dbus/libdbus-1-dev_1.8.22-0+deb8u2_armhf.deb;unpack=0;name=deb2\
+	http://archive.raspbian.org/raspbian/pool/main/d/dbus/dbus_1.8.22-0+deb8u3_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/d/dbus/libdbus-1-3_1.8.22-0+deb8u3_armhf.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/d/dbus/libdbus-1-dev_1.8.22-0+deb8u3_armhf.deb;unpack=0;name=deb2\
 "
-DEBFILENAME_dbus = "dbus_1.8.22-0+deb8u2_armhf.deb"
-SRC_URI[deb0.sha256sum] = "bebb31e28275dbada6f7ed052f16d3ec640e103cc1b40eb71bcc483b91db1638"
-SRC_URI[deb0.md5sum] = "48b26aaeaf675b8d82c33ffa872f1f0d"
-DEBFILENAME_libdbus-1-3 = "libdbus-1-3_1.8.22-0+deb8u2_armhf.deb"
-SRC_URI[deb1.sha256sum] = "f1dd19a8f076efd4fd617744ef0cbd52e34036f7025a0742a53073e2f13461bf"
-SRC_URI[deb1.md5sum] = "18f2464517e40f53c8f9eab84da094c6"
-DEBFILENAME_libdbus-1-dev = "libdbus-1-dev_1.8.22-0+deb8u2_armhf.deb"
-SRC_URI[deb2.sha256sum] = "f50a3911d6554c940b7c49e54b5b642ef617b6e65036218f511a92b364afb991"
-SRC_URI[deb2.md5sum] = "fbf37eb63c23711795ecf9595113de7c"
+DEBFILENAME_dbus = "dbus_1.8.22-0+deb8u3_armhf.deb"
+SRC_URI[deb0.sha256sum] = "e5853f882244871c6fa19abfb99c5105f65c88a6ee4c3602d541b64c1a3d9ec0"
+SRC_URI[deb0.md5sum] = "90ce3e0dda6d185c63b060b43574fc43"
+DEBFILENAME_libdbus-1-3 = "libdbus-1-3_1.8.22-0+deb8u3_armhf.deb"
+SRC_URI[deb1.sha256sum] = "bcf70829ac83a012264f78d113e6e04e66e187114df4fe8cdf5f8d1eaaed53ac"
+SRC_URI[deb1.md5sum] = "ab3c8b832f251b4fef76e8ce69d1f750"
+DEBFILENAME_libdbus-1-dev = "libdbus-1-dev_1.8.22-0+deb8u3_armhf.deb"
+SRC_URI[deb2.sha256sum] = "f9589c617d5bbd0858114c02c897ba0e1fd1c85ad03cc70d079d8ead64cd74c1"
+SRC_URI[deb2.md5sum] = "bd40dce16f4f5825c2075ad947a34403"
 
 RDEPENDS_${PN} = "adduser libaudit1 (>= 1:2.2.1) libc6 (>= 2.17) libcap-ng0 libdbus-1-3 (>= 1.7.6) libexpat1 (>= 2.0.1) libselinux1 (>= 2.0.65) libsystemd0 lsb-base (>= 3.2-14)"
 RDEPENDS_lib${PN}-1-3 = "libc6 (>= 2.17)"
-RDEPENDS_lib${PN}-1-dev = "libdbus-1-3 (= 1.8.22-0+deb8u2) pkg-config"
+RDEPENDS_lib${PN}-1-dev = "libdbus-1-3 (= 1.8.22-0+deb8u3) pkg-config"
 DEPENDS = "adduser libaudit1 libc6 libcap-ng0 libexpat1 libselinux1 libsystemd0 lsb-base pkg-config"
 
 
