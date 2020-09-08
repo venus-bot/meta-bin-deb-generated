@@ -7,13 +7,9 @@ DEBFILENAME_fonts-dejavu-core = "fonts-dejavu-core_2.34-1_all.deb"
 SRC_URI[deb0.sha256sum] = "002c9fa9445cfec4964637f22c73265d8a868f0810104452a6c906af52e43dab"
 SRC_URI[deb0.md5sum] = "0d4b6b9fff8697ee02bc3664318bd643"
 
+RDEPENDS_${PN}-core = ""
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_fonts-dejavu-core = " \
     ./etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans-mono.conf \
@@ -56,6 +52,3 @@ FILES_fonts-dejavu-core = " \
     ./usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf \
     ./usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

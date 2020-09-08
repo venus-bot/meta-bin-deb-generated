@@ -13,11 +13,6 @@ DEPENDS = "python python-pkg-resources"
 
 inherit deb_group
 
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
-
 FILES_python-chardet = " \
     ./usr/bin/chardet \
     ./usr/bin/chardetect \
@@ -68,6 +63,3 @@ FILES_python-chardet = " \
     ./usr/share/man/man1/chardet.1.gz \
     ./usr/share/man/man1/chardetect.1.gz\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

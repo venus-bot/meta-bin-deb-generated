@@ -27,21 +27,16 @@ DEBFILENAME_libevent-pthreads-2.0-5 = "libevent-pthreads-2.0-5_2.0.21-stable-2+d
 SRC_URI[deb5.sha256sum] = "ae136605a32a676396d6a5b8279a267a7bf0c258ae6c50fd62d25f99e4f23f8a"
 SRC_URI[deb5.md5sum] = "0aff53c094ded83b0262124af11da604"
 
-RDEPENDS_${PN}-2.0-5 = "libc6 (>= 2.17)"
-RDEPENDS_${PN}-core-2.0-5 = "libc6 (>= 2.17)"
+RDEPENDS_${PN}-2.0-5 = "libc6 (>= 2.17) multiarch-support"
+RDEPENDS_${PN}-core-2.0-5 = "libc6 (>= 2.17) multiarch-support"
 RDEPENDS_${PN}-dev = "libevent-2.0-5 (= 2.0.21-stable-2+deb8u1) libevent-core-2.0-5 (= 2.0.21-stable-2+deb8u1) libevent-extra-2.0-5 (= 2.0.21-stable-2+deb8u1) libevent-openssl-2.0-5 (= 2.0.21-stable-2+deb8u1) libevent-pthreads-2.0-5 (= 2.0.21-stable-2+deb8u1)"
-RDEPENDS_${PN}-extra-2.0-5 = "libc6 (>= 2.7) libevent-core-2.0-5 (= 2.0.21-stable-2+deb8u1)"
-RDEPENDS_${PN}-openssl-2.0-5 = "libc6 (>= 2.4) libevent-core-2.0-5 (= 2.0.21-stable-2+deb8u1) libssl1.0.0 (>= 1.0.0)"
-RDEPENDS_${PN}-pthreads-2.0-5 = "libc6 (>= 2.4) libevent-core-2.0-5 (= 2.0.21-stable-2+deb8u1)"
-DEPENDS = "libc6 libssl1.0.0"
+RDEPENDS_${PN}-extra-2.0-5 = "libc6 (>= 2.7) libevent-core-2.0-5 (= 2.0.21-stable-2+deb8u1) multiarch-support"
+RDEPENDS_${PN}-openssl-2.0-5 = "libc6 (>= 2.4) libevent-core-2.0-5 (= 2.0.21-stable-2+deb8u1) libssl1.0.0 (>= 1.0.0) multiarch-support"
+RDEPENDS_${PN}-pthreads-2.0-5 = "libc6 (>= 2.4) libevent-core-2.0-5 (= 2.0.21-stable-2+deb8u1) multiarch-support"
+DEPENDS = "libc6 libssl1.0.0 multiarch-support"
 
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libevent-2.0-5 = " \
     ./usr/lib/arm-linux-gnueabihf/libevent-2.0.so.5 \
@@ -136,6 +131,3 @@ FILES_libevent-pthreads-2.0-5 = " \
     ./usr/share/doc/libevent-pthreads-2.0-5/changelog.gz \
     ./usr/share/doc/libevent-pthreads-2.0-5/copyright\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

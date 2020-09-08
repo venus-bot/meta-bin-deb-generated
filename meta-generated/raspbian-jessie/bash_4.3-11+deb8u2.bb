@@ -7,16 +7,11 @@ DEBFILENAME_bash = "bash_4.3-11+deb8u2_armhf.deb"
 SRC_URI[deb0.sha256sum] = "de2c33ede588f7abb0bc26c988eea5e0ccacbc606ab85e21f4896aec1cdf8a78"
 SRC_URI[deb0.md5sum] = "c089ab595372c231d03a029a0da1b734"
 
-RDEPENDS_${PN} = "base-files (>= 2.1.12) debianutils (>= 2.15)"
-DEPENDS = "base-files debianutils"
+RDEPENDS_${PN} = "base-files (>= 2.1.12) dash (>= 0.5.5.1-2.2) debianutils (>= 2.15) libc6 (>= 2.15) libncurses5 (>= 5.5-5~) libtinfo5"
+DEPENDS = "base-files dash debianutils libc6 libncurses5 libtinfo5"
 
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN} = " \
     ./bin/bash \
@@ -84,6 +79,3 @@ FILES_${PN} = " \
     ./usr/share/man/man7/bash-builtins.7.gz \
     ./usr/share/menu/bash\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

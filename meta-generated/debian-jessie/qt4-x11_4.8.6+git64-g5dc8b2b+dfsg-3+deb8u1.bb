@@ -92,35 +92,31 @@ SRC_URI[deb21.sha256sum] = "cd01807de060b3ec83e7de24242c6723b1069887a0c5f8cbeddb
 SRC_URI[deb21.md5sum] = "0fe7340d234d373c764540fda96c31a8"
 
 RDEPENDS_libqt4-dbus = "libqtdbus4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) qdbus (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1)"
-RDEPENDS_libqt4-declarative = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqt4-network (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqt4-script (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqt4-sql (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqt4-xmlpatterns (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtgui4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libstdc++6 (>= 4.3.0)"
-RDEPENDS_libqt4-designer = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqt4-script (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqt4-xml (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtgui4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libstdc++6 (>= 4.3.0)"
+RDEPENDS_libqt4-declarative = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqt4-network (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqt4-script (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqt4-sql (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqt4-xmlpatterns (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtgui4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libstdc++6 (>= 4.3.0) multiarch-support"
+RDEPENDS_libqt4-designer = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqt4-script (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqt4-xml (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtgui4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libstdc++6 (>= 4.3.0) multiarch-support"
 RDEPENDS_libqt4-dev = "libqt4-dbus (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqt4-declarative (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqt4-designer (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqt4-dev-bin (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqt4-help (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqt4-network (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqt4-qt3support (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqt4-script (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqt4-scripttools (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqt4-sql (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqt4-svg (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqt4-test (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqt4-xml (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqt4-xmlpatterns (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtgui4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) qt4-linguist-tools (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) qt4-qmake (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) qtchooser"
 RDEPENDS_libqt4-dev-bin = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqt4-qt3support (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqt4-xml (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtdbus4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtgui4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libstdc++6 (>= 4.3.0) qtchooser zlib1g (>= 1:1.1.4)"
-RDEPENDS_libqt4-help = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqt4-network (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqt4-sql (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtgui4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libstdc++6 (>= 4.3.0)"
-RDEPENDS_libqt4-network = "libc6 (>= 2.15) libgcc1 (>= 1:4.4.0) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtdbus4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libstdc++6 (>= 4.3.0) zlib1g (>= 1:1.1.4)"
-RDEPENDS_libqt4-qt3support = "libc6 (>= 2.15) libgcc1 (>= 1:4.4.0) libqt4-designer (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqt4-network (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqt4-sql (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqt4-xml (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtgui4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libstdc++6 (>= 4.3.0)"
-RDEPENDS_libqt4-script = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtdbus4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libstdc++6 (>= 4.3.0)"
-RDEPENDS_libqt4-scripttools = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqt4-script (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtgui4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libstdc++6 (>= 4.3.0)"
-RDEPENDS_libqt4-sql = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libstdc++6 (>= 4.3.0)"
-RDEPENDS_libqt4-svg = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtgui4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libstdc++6 (>= 4.3.0) zlib1g (>= 1:1.1.4)"
-RDEPENDS_libqt4-test = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libstdc++6 (>= 4.3.0)"
-RDEPENDS_libqt4-xml = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libstdc++6 (>= 4.3.0)"
-RDEPENDS_libqt4-xmlpatterns = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqt4-network (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libstdc++6 (>= 4.3.0)"
-RDEPENDS_libqtcore4 = "libc6 (>= 2.15) libgcc1 (>= 1:4.4.0) libglib2.0-0 (>= 2.22.0) libstdc++6 (>= 4.6) qtcore4-l10n zlib1g (>= 1:1.1.4)"
-RDEPENDS_libqtdbus4 = "libc6 (>= 2.4) libdbus-1-3 (>= 1.3.1) libgcc1 (>= 1:4.4.0) libqt4-xml (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libstdc++6 (>= 4.3.0)"
-RDEPENDS_libqtgui4 = "fontconfig libaudio2 libc6 (>= 2.15) libfontconfig1 (>= 2.11) libfreetype6 (>= 2.3.5) libgcc1 (>= 1:4.4.0) libglib2.0-0 (>= 2.12.0) libice6 (>= 1:1.0.0) libjpeg62-turbo (>= 1.3.1) libmng1 (>= 1.0.10) libpng12-0 (>= 1.2.13-4) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libsm6 libstdc++6 (>= 4.3.0) libtiff5 (>= 4.0.3) libx11-6 libxext6 libxrender1 zlib1g (>= 1:1.1.4)"
+RDEPENDS_libqt4-help = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqt4-network (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqt4-sql (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtgui4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libstdc++6 (>= 4.3.0) multiarch-support"
+RDEPENDS_libqt4-network = "libc6 (>= 2.15) libgcc1 (>= 1:4.4.0) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtdbus4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libstdc++6 (>= 4.3.0) multiarch-support zlib1g (>= 1:1.1.4)"
+RDEPENDS_libqt4-qt3support = "libc6 (>= 2.15) libgcc1 (>= 1:4.4.0) libqt4-designer (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqt4-network (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqt4-sql (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqt4-xml (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtgui4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libstdc++6 (>= 4.3.0) multiarch-support"
+RDEPENDS_libqt4-script = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtdbus4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libstdc++6 (>= 4.3.0) multiarch-support"
+RDEPENDS_libqt4-scripttools = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqt4-script (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtgui4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libstdc++6 (>= 4.3.0) multiarch-support"
+RDEPENDS_libqt4-sql = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libstdc++6 (>= 4.3.0) multiarch-support"
+RDEPENDS_libqt4-svg = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtgui4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libstdc++6 (>= 4.3.0) multiarch-support zlib1g (>= 1:1.1.4)"
+RDEPENDS_libqt4-test = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libstdc++6 (>= 4.3.0) multiarch-support"
+RDEPENDS_libqt4-xml = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libstdc++6 (>= 4.3.0) multiarch-support"
+RDEPENDS_libqt4-xmlpatterns = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqt4-network (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libstdc++6 (>= 4.3.0) multiarch-support"
+RDEPENDS_libqtcore4 = "libc6 (>= 2.15) libgcc1 (>= 1:4.4.0) libglib2.0-0 (>= 2.22.0) libstdc++6 (>= 4.6) multiarch-support qtcore4-l10n zlib1g (>= 1:1.1.4)"
+RDEPENDS_libqtdbus4 = "libc6 (>= 2.4) libdbus-1-3 (>= 1.3.1) libgcc1 (>= 1:4.4.0) libqt4-xml (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libstdc++6 (>= 4.3.0) multiarch-support"
+RDEPENDS_libqtgui4 = "fontconfig libaudio2 libc6 (>= 2.15) libfontconfig1 (>= 2.11) libfreetype6 (>= 2.3.5) libgcc1 (>= 1:4.4.0) libglib2.0-0 (>= 2.12.0) libice6 (>= 1:1.0.0) libjpeg62-turbo (>= 1.3.1) libmng1 (>= 1.0.10) libpng12-0 (>= 1.2.13-4) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libsm6 libstdc++6 (>= 4.3.0) libtiff5 (>= 4.0.3) libx11-6 libxext6 libxrender1 multiarch-support zlib1g (>= 1:1.1.4)"
 RDEPENDS_qdbus = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqt4-xml (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtdbus4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libstdc++6 (>= 4.3.0) qtchooser"
 RDEPENDS_qt4-linguist-tools = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libqt4-xml (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libqtcore4 (= 4:4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1) libstdc++6 (>= 4.4.0) qtchooser zlib1g (>= 1:1.1.4)"
 RDEPENDS_qt4-qmake = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libstdc++6 (>= 4.3.0) qtchooser"
-DEPENDS = "fontconfig libaudio2 libc6 libdbus-1-3 libfontconfig1 libfreetype6 libgcc1 libglib2.0-0 libice6 libjpeg62-turbo libmng1 libpng12-0 libsm6 libstdc++6 libtiff5 libx11-6 libxext6 libxrender1 qtchooser zlib1g"
+RDEPENDS_qtcore4-l10n = ""
+DEPENDS = "fontconfig libaudio2 libc6 libdbus-1-3 libfontconfig1 libfreetype6 libgcc1 libglib2.0-0 libice6 libjpeg62-turbo libmng1 libpng12-0 libsm6 libstdc++6 libtiff5 libx11-6 libxext6 libxrender1 multiarch-support qtchooser zlib1g"
 
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libqt4-dbus = " \
     ./usr/share/doc/libqt4-dbus/LGPL_EXCEPTION.txt \
@@ -3862,6 +3858,3 @@ FILES_qtcore4-l10n = " \
     ./usr/share/qt4/translations/qt_zh_CN.qm \
     ./usr/share/qt4/translations/qt_zh_TW.qm\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

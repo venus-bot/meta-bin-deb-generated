@@ -19,19 +19,14 @@ DEBFILENAME_libxcb1-dev = "libxcb1-dev_1.10-3+b1_armhf.deb"
 SRC_URI[deb3.sha256sum] = "6cef447558a3921f46f2a85ece415d2d3aa4fdb17f0377922649fec0914c8068"
 SRC_URI[deb3.md5sum] = "dfeb673e04baedaf449cdea1f2a16865"
 
-RDEPENDS_${PN}-render0 = "libc6 (>= 2.4) libxcb1 (>= 1.8)"
-RDEPENDS_${PN}-shm0 = "libc6 (>= 2.4) libxcb1 (>= 1.9.2)"
-RDEPENDS_${PN}1 = "libc6 (>= 2.4) libxau6 libxdmcp6"
+RDEPENDS_${PN}-render0 = "libc6 (>= 2.4) libxcb1 (>= 1.8) multiarch-support"
+RDEPENDS_${PN}-shm0 = "libc6 (>= 2.4) libxcb1 (>= 1.9.2) multiarch-support"
+RDEPENDS_${PN}1 = "libc6 (>= 2.4) libxau6 libxdmcp6 multiarch-support"
 RDEPENDS_${PN}1-dev = "libpthread-stubs0-dev libxau-dev (>= 1:1.0.0-1) libxcb1 (= 1.10-3+b1) libxdmcp-dev (>= 1:1.0.0-1)"
-DEPENDS = "libc6 libpthread-stubs0-dev libxau-dev libxau6 libxdmcp-dev libxdmcp6"
+DEPENDS = "libc6 libpthread-stubs0-dev libxau-dev libxau6 libxdmcp-dev libxdmcp6 multiarch-support"
 
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libxcb-render0 = " \
     ./usr/lib/arm-linux-gnueabihf/libxcb-render.so.0 \
@@ -67,6 +62,3 @@ FILES_libxcb1-dev = " \
     ./usr/share/doc/libxcb1-dev/changelog.Debian.gz \
     ./usr/share/doc/libxcb1-dev/copyright\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

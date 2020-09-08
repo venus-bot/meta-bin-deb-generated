@@ -11,16 +11,12 @@ DEBFILENAME_libsemanage1 = "libsemanage1_2.3-1_armhf.deb"
 SRC_URI[deb1.sha256sum] = "0b15c0194eeddf7eff81b35e6736e950381c77af239d84a2de30441a2f5d90aa"
 SRC_URI[deb1.md5sum] = "79a365607ece88c74d00b2c1e11ae683"
 
-RDEPENDS_${PN}1 = "libaudit1 (>= 1:2.2.1) libbz2-1.0 libc6 (>= 2.8) libselinux1 (>= 2.1.12) libsemanage-common (= 2.3-1) libsepol1 (>= 2.1.4) libustr-1.0-1 (>= 1.0.4)"
-DEPENDS = "libaudit1 libbz2-1.0 libc6 libselinux1 libsepol1 libustr-1.0-1"
+RDEPENDS_${PN}-common = ""
+RDEPENDS_${PN}1 = "libaudit1 (>= 1:2.2.1) libbz2-1.0 libc6 (>= 2.8) libselinux1 (>= 2.1.12) libsemanage-common (= 2.3-1) libsepol1 (>= 2.1.4) libustr-1.0-1 (>= 1.0.4) multiarch-support"
+DEPENDS = "libaudit1 libbz2-1.0 libc6 libselinux1 libsepol1 libustr-1.0-1 multiarch-support"
 
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libsemanage-common = " \
     ./etc/selinux/semanage.conf \
@@ -35,6 +31,3 @@ FILES_libsemanage1 = " \
     ./usr/share/doc/libsemanage1/changelog.gz \
     ./usr/share/doc/libsemanage1/copyright\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

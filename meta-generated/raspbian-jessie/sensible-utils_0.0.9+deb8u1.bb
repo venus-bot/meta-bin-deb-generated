@@ -7,13 +7,9 @@ DEBFILENAME_sensible-utils = "sensible-utils_0.0.9+deb8u1_all.deb"
 SRC_URI[deb0.sha256sum] = "0de3d1447f16851862e57951a6779c5adc9a97d0438092b2761c0d989c64ae9c"
 SRC_URI[deb0.md5sum] = "c538301ccd44538097ebe8ecf883534f"
 
+RDEPENDS_${PN} = ""
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN} = " \
     ./usr/bin/select-editor \
@@ -46,6 +42,3 @@ FILES_${PN} = " \
     ./usr/share/man/pl/man1/sensible-editor.1.gz \
     ./usr/share/man/pl/man1/sensible-pager.1.gz\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

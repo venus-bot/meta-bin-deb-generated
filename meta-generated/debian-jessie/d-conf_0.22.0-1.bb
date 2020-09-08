@@ -17,16 +17,11 @@ SRC_URI[deb2.md5sum] = "b355763328bec13cbbd6591da97c24d2"
 
 RDEPENDS_dconf-gsettings-backend = "dconf-service (<< 0.22.0-1.1~) dconf-service (>= 0.22.0-1) libc6 (>= 2.4) libdconf1 (= 0.22.0-1) libglib2.0-0 (>= 2.39.1)"
 RDEPENDS_dconf-service = "libc6 (>= 2.4) libdconf1 (= 0.22.0-1) libglib2.0-0 (>= 2.39.1)"
-RDEPENDS_libdconf1 = "libc6 (>= 2.4) libglib2.0-0 (>= 2.39.1)"
-DEPENDS = "libc6 libglib2.0-0"
+RDEPENDS_libdconf1 = "libc6 (>= 2.4) libglib2.0-0 (>= 2.39.1) multiarch-support"
+DEPENDS = "libc6 libglib2.0-0 multiarch-support"
 
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_dconf-gsettings-backend = " \
     ./usr/lib/arm-linux-gnueabihf/gio/modules/libdconfsettings.so \
@@ -56,6 +51,3 @@ FILES_libdconf1 = " \
     ./usr/share/doc/libdconf1/changelog.Debian.gz \
     ./usr/share/doc/libdconf1/copyright\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

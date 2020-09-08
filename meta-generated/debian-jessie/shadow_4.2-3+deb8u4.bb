@@ -13,11 +13,6 @@ DEPENDS = "debianutils libaudit1 libc6 libpam-modules libpam0g libselinux1 libse
 
 inherit deb_group
 
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
-
 FILES_passwd = " \
     ./etc/cron.daily/passwd \
     ./etc/default/useradd \
@@ -327,6 +322,3 @@ FILES_passwd = " \
     ./usr/share/man/zh_TW/man8/userdel.8.gz \
     ./usr/share/man/zh_TW/man8/usermod.8.gz\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

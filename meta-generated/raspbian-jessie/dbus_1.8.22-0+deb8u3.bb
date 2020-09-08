@@ -16,17 +16,12 @@ SRC_URI[deb2.sha256sum] = "f9589c617d5bbd0858114c02c897ba0e1fd1c85ad03cc70d079d8
 SRC_URI[deb2.md5sum] = "bd40dce16f4f5825c2075ad947a34403"
 
 RDEPENDS_${PN} = "adduser libaudit1 (>= 1:2.2.1) libc6 (>= 2.17) libcap-ng0 libdbus-1-3 (>= 1.7.6) libexpat1 (>= 2.0.1) libselinux1 (>= 2.0.65) libsystemd0 lsb-base (>= 3.2-14)"
-RDEPENDS_lib${PN}-1-3 = "libc6 (>= 2.17)"
+RDEPENDS_lib${PN}-1-3 = "libc6 (>= 2.17) multiarch-support"
 RDEPENDS_lib${PN}-1-dev = "libdbus-1-3 (= 1.8.22-0+deb8u3) pkg-config"
-DEPENDS = "adduser libaudit1 libc6 libcap-ng0 libexpat1 libselinux1 libsystemd0 lsb-base pkg-config"
+DEPENDS = "adduser libaudit1 libc6 libcap-ng0 libexpat1 libselinux1 libsystemd0 lsb-base multiarch-support pkg-config"
 
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN} = " \
     ./etc/dbus-1/session.conf \
@@ -102,6 +97,3 @@ FILES_libdbus-1-dev = " \
     ./usr/share/doc/libdbus-1-dev/copyright \
     ./usr/share/lintian/overrides/libdbus-1-dev\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

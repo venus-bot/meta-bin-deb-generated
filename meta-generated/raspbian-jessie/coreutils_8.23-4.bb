@@ -7,13 +7,11 @@ DEBFILENAME_coreutils = "coreutils_8.23-4_armhf.deb"
 SRC_URI[deb0.sha256sum] = "5ee58e4740dcf75df84db41cdf5da2c2dca64dc4521af04084b67dbae90c68b7"
 SRC_URI[deb0.md5sum] = "f0944e1b5b8f30d5fe8cf19431879e69"
 
+RDEPENDS_${PN} = "libacl1 (>= 2.2.51-8) libattr1 (>= 1:2.4.46-8) libc6 (>= 2.17) libselinux1 (>= 2.1.13)"
+DEPENDS = "libacl1 libattr1 libc6 libselinux1"
+
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN} = " \
     ./bin/cat \
@@ -279,6 +277,3 @@ FILES_${PN} = " \
     ./usr/share/man/man1/yes.1.gz \
     ./usr/share/man/man8/chroot.8.gz\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

@@ -15,17 +15,13 @@ DEBFILENAME_libx11-dev = "libx11-dev_1.6.2-3+deb8u1_armhf.deb"
 SRC_URI[deb2.sha256sum] = "d5b0c2b3e8939e896da089757151a9f1f202b0e65134ed453b37d465566acd25"
 SRC_URI[deb2.md5sum] = "b4776a7b5e8d1a54280305cb9741aab1"
 
-RDEPENDS_${PN}-6 = "libc6 (>= 2.15) libx11-data libxcb1 (>= 1.2)"
+RDEPENDS_${PN}-6 = "libc6 (>= 2.15) libx11-data libxcb1 (>= 1.2) multiarch-support"
+RDEPENDS_${PN}-data = ""
 RDEPENDS_${PN}-dev = "libx11-6 (= 2:1.6.2-3+deb8u1) libxau-dev (>= 1:1.0.0-1) libxcb1-dev libxdmcp-dev (>= 1:1.0.0-1) x11proto-core-dev (>= 7.0.17) x11proto-input-dev x11proto-kb-dev xtrans-dev"
-DEPENDS = "libc6 libxau-dev libxcb1 libxcb1-dev libxdmcp-dev x11proto-core-dev x11proto-input-dev x11proto-kb-dev xtrans-dev"
+DEPENDS = "libc6 libxau-dev libxcb1 libxcb1-dev libxdmcp-dev multiarch-support x11proto-core-dev x11proto-input-dev x11proto-kb-dev xtrans-dev"
 
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libx11-6 = " \
     ./usr/lib/arm-linux-gnueabihf/libX11.so.6 \
@@ -247,6 +243,3 @@ FILES_${PN}-dev = " \
     ./usr/share/doc/libx11-dev/changelog.gz \
     ./usr/share/doc/libx11-dev/copyright\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

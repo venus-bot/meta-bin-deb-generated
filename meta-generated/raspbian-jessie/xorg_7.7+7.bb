@@ -13,11 +13,6 @@ DEPENDS = "debconf lsb-base"
 
 inherit deb_group
 
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
-
 FILES_x11-common = " \
     ./etc/X11/Xreset \
     ./etc/X11/Xreset.d/README \
@@ -45,6 +40,3 @@ FILES_x11-common = " \
     ./usr/share/man/man5/Xsession.options.5.gz \
     ./usr/share/man/man5/Xwrapper.config.5.gz\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

@@ -19,18 +19,14 @@ DEBFILENAME_libstdc++-4.8-dev = "libstdc++-4.8-dev_4.8.4-1_armhf.deb"
 SRC_URI[deb3.sha256sum] = "42351bb7683673c5b8fee74392d44b26835687693a20c2240e57a2b75ec060d2"
 SRC_URI[deb3.md5sum] = "26b51eede8d67b5b7f2e62385a7b0698"
 
-RDEPENDS_libasan0 = "gcc-4.8-base (= 4.8.4-1) libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libstdc++6 (>= 4.1.1)"
+RDEPENDS_${PN}-base = ""
+RDEPENDS_libasan0 = "gcc-4.8-base (= 4.8.4-1) libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libstdc++6 (>= 4.1.1) multiarch-support"
 RDEPENDS_lib${PN}-dev = "gcc-4.8-base (= 4.8.4-1) libasan0 (>= 4.8.4-1) libatomic1 (>= 4.8.4-1) libgcc1 (>= 1:4.8.4-1) libgomp1 (>= 4.8.4-1)"
 RDEPENDS_libstdc++-4.8-dev = "gcc-4.8-base (= 4.8.4-1) libc6-dev (>= 2.13-5) libgcc-4.8-dev (= 4.8.4-1) libstdc++6 (>= 4.8.4-1)"
-DEPENDS = "libatomic1 libc6 libc6-dev libgcc1 libgomp1 libstdc++6"
+DEPENDS = "libatomic1 libc6 libc6-dev libgcc1 libgomp1 libstdc++6 multiarch-support"
 
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_gcc-4.8-base = " \
     ./usr/lib/gcc/arm-linux-gnueabihf/4.8.4 \
@@ -777,6 +773,3 @@ FILES_libstdc++-4.8-dev = " \
     ./usr/share/doc/gcc-4.8-base/C++/changelog.libstdc++.gz \
     ./usr/share/doc/libstdc++-4.8-dev\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

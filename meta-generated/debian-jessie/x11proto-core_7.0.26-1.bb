@@ -13,11 +13,6 @@ DEPENDS = "xorg-sgml-doctools"
 
 inherit deb_group
 
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
-
 FILES_${PN}-dev = " \
     ./usr/include/X11/DECkeysym.h \
     ./usr/include/X11/HPkeysym.h \
@@ -53,6 +48,3 @@ FILES_${PN}-dev = " \
     ./usr/share/doc/x11proto-core-dev/x11protocol.txt.gz \
     ./usr/share/pkgconfig/xproto.pc\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

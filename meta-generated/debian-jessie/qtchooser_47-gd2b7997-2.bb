@@ -13,11 +13,6 @@ DEPENDS = "libc6 libgcc1 libstdc++6"
 
 inherit deb_group
 
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
-
 FILES_${PN} = " \
     ./usr/bin/assistant \
     ./usr/bin/designer \
@@ -64,6 +59,3 @@ FILES_${PN} = " \
     ./usr/share/lintian/overrides/qtchooser \
     ./usr/share/man/man1/qtchooser.1.gz\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

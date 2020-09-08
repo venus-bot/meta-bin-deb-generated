@@ -13,11 +13,6 @@ DEPENDS = "libc6"
 
 inherit deb_group
 
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
-
 FILES_${PN} = " \
     ./etc/init/startpar-bridge.conf \
     ./lib/startpar/startpar \
@@ -27,6 +22,3 @@ FILES_${PN} = " \
     ./usr/share/man/man8/startpar-upstart-inject.8.gz \
     ./usr/share/man/man8/startpar.8.gz\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

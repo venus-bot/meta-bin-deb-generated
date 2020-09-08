@@ -16,16 +16,12 @@ SRC_URI[deb2.sha256sum] = "f9fcae09e4e1992ffff4fde96697a1824558abd2579250c3f8acd
 SRC_URI[deb2.md5sum] = "57c9f0a91aae9cf65df0daeb31bfc817"
 
 RDEPENDS_${PN} = "glib-networking-common (= 2.42.0-2) glib-networking-services (<< 2.42.0-2.1~) glib-networking-services (>= 2.42.0-2) gsettings-desktop-schemas libc6 (>= 2.4) libglib2.0-0 (>= 2.41.3) libgnutls-deb0-28 (>= 3.3.8) libp11-kit0 (>= 0.11) libproxy1 (>= 0.4.11)"
+RDEPENDS_${PN}-common = ""
 RDEPENDS_${PN}-services = "glib-networking-common (= 2.42.0-2) libc6 (>= 2.4) libglib2.0-0 (>= 2.41.3) libproxy1 (>= 0.4.11)"
 DEPENDS = "gsettings-desktop-schemas libc6 libglib2.0-0 libgnutls-deb0-28 libp11-kit0 libproxy1"
 
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN} = " \
     ./usr/lib/arm-linux-gnueabihf/gio/modules/libgiognomeproxy.so \
@@ -112,6 +108,3 @@ FILES_glib-networking-services = " \
     ./usr/share/doc/glib-networking-services/changelog.Debian.gz \
     ./usr/share/doc/glib-networking-services/copyright\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

@@ -19,18 +19,14 @@ DEBFILENAME_python2.7-minimal = "python2.7-minimal_2.7.9-2+deb8u5_armhf.deb"
 SRC_URI[deb3.sha256sum] = "98d43d7d5dfd0c9085740ec00e46682c3b939e011873e37734e4236143d69599"
 SRC_URI[deb3.md5sum] = "a77f828583c961f17b9dc99c1525cdc9"
 
+RDEPENDS_lib${PN}-minimal = ""
 RDEPENDS_lib${PN}-stdlib = "libbz2-1.0 libc6 (>= 2.15) libdb5.3 libexpat1 (>= 2.1~beta3) libffi6 (>= 3.0.4) libncursesw5 (>= 5.6+20070908) libpython2.7-minimal (= 2.7.9-2+deb8u5) libreadline6 (>= 6.0) libsqlite3-0 (>= 3.5.9) libssl1.0.0 (>= 1.0.1) libtinfo5 mime-support"
 RDEPENDS_${PN} = "libpython2.7-stdlib (= 2.7.9-2+deb8u5) mime-support python2.7-minimal (= 2.7.9-2+deb8u5)"
-RDEPENDS_${PN}-minimal = "libpython2.7-minimal (= 2.7.9-2+deb8u5) zlib1g (>= 1:1.2.0)"
+RDEPENDS_${PN}-minimal = "libc6 (>= 2.15) libpython2.7-minimal (= 2.7.9-2+deb8u5) zlib1g (>= 1:1.2.0)"
 DEPENDS = "libbz2-1.0 libc6 libdb5.3 libexpat1 libffi6 libncursesw5 libreadline6 libsqlite3-0 libssl1.0.0 libtinfo5 mime-support zlib1g"
 
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libpython2.7-minimal = " \
     ./etc/python2.7/sitecustomize.py \
@@ -723,6 +719,3 @@ FILES_python2.7-minimal = " \
     ./usr/share/doc/python2.7-minimal/copyright \
     ./usr/share/man/man1/python2.7.1.gz\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

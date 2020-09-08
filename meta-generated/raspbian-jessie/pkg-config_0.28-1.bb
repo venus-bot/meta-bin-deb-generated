@@ -8,15 +8,8 @@ SRC_URI[deb0.sha256sum] = "b9d7cb9970cf58351b9252cff90410d09f2c75e0a53dab4490e70
 SRC_URI[deb0.md5sum] = "76e5ae5585f03d797e6efed5d87f75dc"
 
 RDEPENDS_${PN} = "libc6 (>= 2.4) libglib2.0-0 (>= 2.16.0)"
-DEPENDS = "libc6 libglib2.0-0"
-
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN} = " \
     ./usr/bin/arm-unknown-linux-gnueabihf-pkg-config \
@@ -32,6 +25,3 @@ FILES_${PN} = " \
     ./usr/share/man/man1/pkg-config.1.gz \
     ./usr/share/pkg-config-crosswrapper\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

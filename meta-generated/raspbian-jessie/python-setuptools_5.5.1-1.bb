@@ -13,11 +13,6 @@ DEPENDS = "python"
 
 inherit deb_group
 
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
-
 FILES_python-pkg-resources = " \
     ./usr/lib/python2.7/dist-packages/pkg_resources.py \
     ./usr/share/doc/python-pkg-resources/README.Debian \
@@ -25,6 +20,3 @@ FILES_python-pkg-resources = " \
     ./usr/share/doc/python-pkg-resources/copyright \
     ./usr/share/doc/python-pkg-resources/pkg_resources.txt.gz\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

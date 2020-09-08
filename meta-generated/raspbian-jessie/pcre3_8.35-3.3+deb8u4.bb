@@ -15,18 +15,13 @@ DEBFILENAME_libpcrecpp0 = "libpcrecpp0_8.35-3.3+deb8u4_armhf.deb"
 SRC_URI[deb2.sha256sum] = "29733988f6a04c61bd8bd6e50d9bc1340f62e747786819d9f436e64bcddf9e63"
 SRC_URI[deb2.md5sum] = "e078256efd5ab02d86e6afeca7a7f2e6"
 
-RDEPENDS_lib${PN} = "libc6 (>= 2.4)"
+RDEPENDS_lib${PN} = "libc6 (>= 2.4) multiarch-support"
 RDEPENDS_lib${PN}-dev = "libc6-dev libpcre3 (= 2:8.35-3.3+deb8u4) libpcrecpp0 (= 2:8.35-3.3+deb8u4)"
-RDEPENDS_libpcrecpp0 = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libpcre3 (>= 1:8.35) libstdc++6 (>= 4.3.0)"
-DEPENDS = "libc6 libc6-dev libgcc1 libstdc++6"
+RDEPENDS_libpcrecpp0 = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libpcre3 (>= 1:8.35) libstdc++6 (>= 4.3.0) multiarch-support"
+DEPENDS = "libc6 libc6-dev libgcc1 libstdc++6 multiarch-support"
 
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libpcre3 = " \
     ./lib/arm-linux-gnueabihf/libpcre.so.3 \
@@ -174,6 +169,3 @@ FILES_libpcrecpp0 = " \
     ./usr/share/doc/libpcrecpp0/changelog.gz \
     ./usr/share/doc/libpcrecpp0/copyright\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

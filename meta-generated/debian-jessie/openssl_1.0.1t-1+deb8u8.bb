@@ -11,17 +11,12 @@ DEBFILENAME_openssl = "openssl_1.0.1t-1+deb8u8_armhf.deb"
 SRC_URI[deb1.sha256sum] = "edd6f4d0296898627aeaeac3f6c2c68a1c396b6fb6e13a6a53a7698b839f2266"
 SRC_URI[deb1.md5sum] = "b0eb02118872969a7018fa4c662232fb"
 
-RDEPENDS_libssl1.0.0 = "debconf (>= 0.5) libc6 (>= 2.11)"
+RDEPENDS_libssl1.0.0 = "debconf (>= 0.5) libc6 (>= 2.11) multiarch-support"
 RDEPENDS_${PN} = "libc6 (>= 2.15) libssl1.0.0 (>= 1.0.1k-3+deb8u3)"
-DEPENDS = "debconf libc6"
+DEPENDS = "debconf libc6 multiarch-support"
 
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libssl1.0.0 = " \
     ./usr/lib/arm-linux-gnueabihf/libcrypto.so.1.0.0 \
@@ -134,6 +129,3 @@ FILES_${PN} = " \
     ./usr/share/man/man5/x509v3_config.5ssl.gz \
     ./usr/share/man/man7/des_modes.7ssl.gz\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

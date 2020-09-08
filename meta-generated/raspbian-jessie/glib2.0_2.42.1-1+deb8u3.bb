@@ -19,18 +19,14 @@ DEBFILENAME_libglib2.0-dev = "libglib2.0-dev_2.42.1-1+deb8u3_armhf.deb"
 SRC_URI[deb3.sha256sum] = "dfd89effad28145f7eeb9a9886f8de699cd075ee0757d27d6810ae424b9ee330"
 SRC_URI[deb3.md5sum] = "45676f109169a2c17eb150dcb4d0c0db"
 
-RDEPENDS_lib${PN}-0 = "libc6 (>= 2.17) libffi6 (>= 3.0.4) libpcre3 (>= 1:8.35) libselinux1 (>= 1.32) zlib1g (>= 1:1.2.2)"
+RDEPENDS_lib${PN}-0 = "libc6 (>= 2.17) libffi6 (>= 3.0.4) libpcre3 (>= 1:8.35) libselinux1 (>= 1.32) multiarch-support zlib1g (>= 1:1.2.2)"
 RDEPENDS_lib${PN}-bin = "libc6 (>= 2.4) libelfg0 (>= 0.8.12) libglib2.0-0 (= 2.42.1-1+deb8u3) libglib2.0-data"
+RDEPENDS_lib${PN}-data = ""
 RDEPENDS_lib${PN}-dev = " libc6 (>= 2.4) libglib2.0-0 (= 2.42.1-1+deb8u3) libglib2.0-bin (= 2.42.1-1+deb8u3) libpcre3-dev (>= 1:8.31) python (>= 2.6.6-7~) zlib1g-dev"
-DEPENDS = " libc6 libelfg0 libffi6 libpcre3 libpcre3-dev libselinux1 python zlib1g zlib1g-dev"
+DEPENDS = " libc6 libelfg0 libffi6 libpcre3 libpcre3-dev libselinux1 multiarch-support python zlib1g zlib1g-dev"
 
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libglib2.0-0 = " \
     ./lib/arm-linux-gnueabihf/libglib-2.0.so.0 \
@@ -498,6 +494,3 @@ FILES_libglib2.0-dev = " \
     ./usr/share/man/man1/gtester.1.gz \
     ./usr/share/python/runtime.d/libglib2.0-dev.rtupdate\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

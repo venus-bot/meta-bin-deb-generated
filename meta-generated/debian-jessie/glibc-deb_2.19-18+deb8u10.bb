@@ -1,9 +1,10 @@
-PACKAGES = "${PN} libc-dev-bin libc6 libc6-dev"
-PROVIDES = "libc-dev-bin libc6 libc6-dev"
+PACKAGES = "${PN} libc-dev-bin libc6 libc6-dev multiarch-support"
+PROVIDES = "libc-dev-bin libc6 libc6-dev multiarch-support"
 SRC_URI = " \
 	http://ftp.de.debian.org/debian/pool/main/g/glibc/libc-dev-bin_2.19-18+deb8u10_armhf.deb;unpack=0;name=deb0\
 	http://ftp.de.debian.org/debian/pool/main/g/glibc/libc6_2.19-18+deb8u10_armhf.deb;unpack=0;name=deb1\
 	http://ftp.de.debian.org/debian/pool/main/g/glibc/libc6-dev_2.19-18+deb8u10_armhf.deb;unpack=0;name=deb2\
+	http://ftp.de.debian.org/debian/pool/main/g/glibc/multiarch-support_2.19-18+deb8u10_armhf.deb;unpack=0;name=deb3\
 "
 DEBFILENAME_libc-dev-bin = "libc-dev-bin_2.19-18+deb8u10_armhf.deb"
 SRC_URI[deb0.sha256sum] = "7461d0b33ffade235d7c92f68e54ea57c6025d606041c4dc85c2d69bfbfde44d"
@@ -14,19 +15,18 @@ SRC_URI[deb1.md5sum] = "8336554140d53ad8045eb2f615f26be3"
 DEBFILENAME_libc6-dev = "libc6-dev_2.19-18+deb8u10_armhf.deb"
 SRC_URI[deb2.sha256sum] = "b5af7102716127343a82dfdb42e5b9cd9dc28e28fc14653e0db8f9efdd1fe0a9"
 SRC_URI[deb2.md5sum] = "c2548d3a7dfc480e5829479e5269cbb9"
+DEBFILENAME_multiarch-support = "multiarch-support_2.19-18+deb8u10_armhf.deb"
+SRC_URI[deb3.sha256sum] = "5f41c07f401227559a93cbfe85f93dca3e2c7895fc185ef29da03ec9dae22fae"
+SRC_URI[deb3.md5sum] = "426f85dcae23c888e9515024a1a95261"
 
 RDEPENDS_libc-dev-bin = "libc6 (<< 2.20) libc6 (>> 2.19)"
 RDEPENDS_libc6 = ""
 RDEPENDS_libc6-dev = "libc-dev-bin (= 2.19-18+deb8u10) libc6 (= 2.19-18+deb8u10) linux-libc-dev"
+RDEPENDS_multiarch-support = "libc6 (>= 2.13-5)"
 DEPENDS = " linux-libc-dev"
 
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libc-dev-bin = " \
     ./usr/bin/gencat \
@@ -825,6 +825,8 @@ FILES_libc6-dev = " \
     ./usr/share/doc/libc6-dev/copyright \
     ./usr/share/lintian/overrides/libc6-dev\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"
+FILES_multiarch-support = " \
+    ./usr/share/doc/multiarch-support/changelog.Debian.gz \
+    ./usr/share/doc/multiarch-support/changelog.gz \
+    ./usr/share/doc/multiarch-support/copyright\
+"

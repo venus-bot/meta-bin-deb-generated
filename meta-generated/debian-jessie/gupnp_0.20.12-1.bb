@@ -23,11 +23,6 @@ DEPENDS = "gir1.2-freedesktop gir1.2-glib-2.0 gir1.2-gssdp-1.0 gir1.2-soup-2.4 l
 
 inherit deb_group
 
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
-
 FILES_gir1.2-gupnp-1.0 = " \
     ./usr/lib/girepository-1.0/GUPnP-1.0.typelib \
     ./usr/share/doc/gir1.2-gupnp-1.0/AUTHORS \
@@ -83,6 +78,3 @@ FILES_libgupnp-1.0-dev = " \
     ./usr/share/vala/vapi/gupnp-1.0.deps \
     ./usr/share/vala/vapi/gupnp-1.0.vapi\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

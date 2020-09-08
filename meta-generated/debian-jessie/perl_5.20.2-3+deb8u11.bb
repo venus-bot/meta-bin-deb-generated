@@ -7,13 +7,11 @@ DEBFILENAME_perl-base = "perl-base_5.20.2-3+deb8u11_armhf.deb"
 SRC_URI[deb0.sha256sum] = "ff3807bea1685e15eaedc339be113da84b2b9d96cfc7aba8c2ec5d8fb4b7698e"
 SRC_URI[deb0.md5sum] = "4b59d4a4a02ab18f70402c97189c0caa"
 
+RDEPENDS_${PN}-base = "dpkg (>= 1.17.17) libc6 (>= 2.11)"
+DEPENDS = "dpkg libc6"
+
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_perl-base = " \
     ./usr/bin/perl \
@@ -489,6 +487,3 @@ FILES_perl-base = " \
     ./usr/share/perl/5.20.2/warnings.pm \
     ./usr/share/perl/5.20.2/warnings/register.pm\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

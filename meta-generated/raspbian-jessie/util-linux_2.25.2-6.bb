@@ -11,17 +11,12 @@ DEBFILENAME_uuid-dev = "uuid-dev_2.25.2-6_armhf.deb"
 SRC_URI[deb1.sha256sum] = "2ec3e04410212419430da8fe07f8d399aafa30f255a7d6a9988072e40952621e"
 SRC_URI[deb1.md5sum] = "c8f3a3dbca2e939c66a4f0756b51a599"
 
-RDEPENDS_libuuid1 = "libc6 (>= 2.4) passwd"
+RDEPENDS_libuuid1 = "libc6 (>= 2.4) multiarch-support passwd"
 RDEPENDS_uuid-dev = "libc6-dev libuuid1 (= 2.25.2-6)"
-DEPENDS = "libc6 libc6-dev passwd"
+DEPENDS = "libc6 libc6-dev multiarch-support passwd"
 
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libuuid1 = " \
     ./lib/arm-linux-gnueabihf/libuuid.so.1 \
@@ -51,6 +46,3 @@ FILES_uuid-dev = " \
     ./usr/share/man/man3/uuid_time.3.gz \
     ./usr/share/man/man3/uuid_unparse.3.gz\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

@@ -17,16 +17,11 @@ SRC_URI[deb2.md5sum] = "44c2f5eed8acbac97b936de67b84ee4a"
 
 RDEPENDS_${PN}-devtools = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libicu52 (>= 52~m1-1~) libstdc++6 (>= 4.9)"
 RDEPENDS_lib${PN}-dev = "icu-devtools (>= 52.1-8+deb8u7) libc6-dev libicu52 (= 52.1-8+deb8u7)"
-RDEPENDS_lib${PN}52 = "libc6 (>= 2.7) libgcc1 (>= 1:4.4.0) libstdc++6 (>= 4.9)"
-DEPENDS = "libc6 libc6-dev libgcc1 libstdc++6"
+RDEPENDS_lib${PN}52 = "libc6 (>= 2.7) libgcc1 (>= 1:4.4.0) libstdc++6 (>= 4.9) multiarch-support"
+DEPENDS = "libc6 libc6-dev libgcc1 libstdc++6 multiarch-support"
 
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_icu-devtools = " \
     ./usr/bin/derb \
@@ -556,6 +551,3 @@ FILES_libicu52 = " \
     ./usr/share/doc/libicu52/copyright \
     ./usr/share/lintian/overrides/libicu52\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

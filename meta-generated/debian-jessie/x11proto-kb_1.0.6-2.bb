@@ -7,13 +7,9 @@ DEBFILENAME_x11proto-kb-dev = "x11proto-kb-dev_1.0.6-2_all.deb"
 SRC_URI[deb0.sha256sum] = "b7ff8eceb9f05eb470700807c73fdae88f5f9f8b8fbef869029882264dbebd81"
 SRC_URI[deb0.md5sum] = "892865f3dc1b65a8a5c84413c2ce424b"
 
+RDEPENDS_${PN}-dev = ""
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN}-dev = " \
     ./usr/include/X11/extensions/XKB.h \
@@ -38,6 +34,3 @@ FILES_${PN}-dev = " \
     ./usr/share/doc/x11proto-kb-dev/xkbproto.txt.gz \
     ./usr/share/pkgconfig/kbproto.pc\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

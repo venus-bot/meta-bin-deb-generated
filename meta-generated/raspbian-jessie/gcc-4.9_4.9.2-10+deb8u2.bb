@@ -23,19 +23,15 @@ DEBFILENAME_libstdc++6 = "libstdc++6_4.9.2-10+deb8u2_armhf.deb"
 SRC_URI[deb4.sha256sum] = "32bcbb345f77c68e5ac5238b1e500888b8ecd9802b30ac49e39b5b690b69ca18"
 SRC_URI[deb4.md5sum] = "c2040a79d6c7b8168a3a5ff98fc6a948"
 
-RDEPENDS_libatomic1 = "gcc-4.9-base (= 4.9.2-10+deb8u2) libc6 (>= 2.4)"
-RDEPENDS_libgcc1 = "gcc-4.9-base (= 4.9.2-10+deb8u2) libc6 (>= 2.4)"
-RDEPENDS_libgomp1 = "gcc-4.9-base (= 4.9.2-10+deb8u2) libc6 (>= 2.17)"
-RDEPENDS_libstdc++6 = "gcc-4.9-base (= 4.9.2-10+deb8u2) libc6 (>= 2.18) libgcc1 (>= 1:4.4.0)"
-DEPENDS = "libc6"
+RDEPENDS_${PN}-base = ""
+RDEPENDS_libatomic1 = "gcc-4.9-base (= 4.9.2-10+deb8u2) libc6 (>= 2.4) multiarch-support"
+RDEPENDS_libgcc1 = "gcc-4.9-base (= 4.9.2-10+deb8u2) libc6 (>= 2.4) multiarch-support"
+RDEPENDS_libgomp1 = "gcc-4.9-base (= 4.9.2-10+deb8u2) libc6 (>= 2.17) multiarch-support"
+RDEPENDS_libstdc++6 = "gcc-4.9-base (= 4.9.2-10+deb8u2) libc6 (>= 2.18) libgcc1 (>= 1:4.4.0) multiarch-support"
+DEPENDS = "libc6 multiarch-support"
 
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_gcc-4.9-base = " \
     ./usr/lib/gcc/arm-linux-gnueabihf/4.9.2 \
@@ -68,6 +64,3 @@ FILES_libstdc++6 = " \
     ./usr/share/gcc-4.9/python/libstdcxx/v6/printers.py \
     ./usr/share/gdb/auto-load/usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.20-gdb.py\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

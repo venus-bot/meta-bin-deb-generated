@@ -11,17 +11,12 @@ DEBFILENAME_zlib1g-dev = "zlib1g-dev_1.2.8.dfsg-2+b1_armhf.deb"
 SRC_URI[deb1.sha256sum] = "47ac608bdf09d83981c8d115d7daabcd7b1215ab26a7706964640b0f818ceb5d"
 SRC_URI[deb1.md5sum] = "1c848a40d78d11d6824ea2d777ff9335"
 
-RDEPENDS_${PN}1g = "libc6 (>= 2.4)"
+RDEPENDS_${PN}1g = "libc6 (>= 2.4) multiarch-support"
 RDEPENDS_${PN}1g-dev = "libc6-dev zlib1g (= 1:1.2.8.dfsg-2+b1)"
-DEPENDS = "libc6 libc6-dev"
+DEPENDS = "libc6 libc6-dev multiarch-support"
 
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_zlib1g = " \
     ./lib/arm-linux-gnueabihf/libz.so.1 \
@@ -61,6 +56,3 @@ FILES_zlib1g-dev = " \
     ./usr/share/doc/zlib1g-dev/txtvsbin.txt.gz \
     ./usr/share/man/man3/zlib.3.gz\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

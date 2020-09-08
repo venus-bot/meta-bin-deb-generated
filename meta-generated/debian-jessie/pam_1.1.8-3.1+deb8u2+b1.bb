@@ -1,26 +1,27 @@
-PACKAGES = "${PN} libpam-modules libpam0g"
-PROVIDES = "libpam-modules libpam0g"
+PACKAGES = "${PN} libpam-modules libpam-modules-bin libpam0g"
+PROVIDES = "libpam-modules libpam-modules-bin libpam0g"
 SRC_URI = " \
 	http://ftp.de.debian.org/debian/pool/main/p/pam/libpam-modules_1.1.8-3.1+deb8u2+b1_armhf.deb;unpack=0;name=deb0\
-	http://ftp.de.debian.org/debian/pool/main/p/pam/libpam0g_1.1.8-3.1+deb8u2+b1_armhf.deb;unpack=0;name=deb1\
+	http://ftp.de.debian.org/debian/pool/main/p/pam/libpam-modules-bin_1.1.8-3.1+deb8u2+b1_armhf.deb;unpack=0;name=deb1\
+	http://ftp.de.debian.org/debian/pool/main/p/pam/libpam0g_1.1.8-3.1+deb8u2+b1_armhf.deb;unpack=0;name=deb2\
 "
 DEBFILENAME_libpam-modules = "libpam-modules_1.1.8-3.1+deb8u2+b1_armhf.deb"
 SRC_URI[deb0.sha256sum] = "5939f9ae4621f5dc1486a034736bc334e0cb232834c28ad72831b7b7107abaf2"
 SRC_URI[deb0.md5sum] = "cf7d1875d6f96845affea46bd452dc2c"
+DEBFILENAME_libpam-modules-bin = "libpam-modules-bin_1.1.8-3.1+deb8u2+b1_armhf.deb"
+SRC_URI[deb1.sha256sum] = "6d49386d38ad88c00b62e13da0ba27c9b067dfe858ecf9bd978f9215ff102f15"
+SRC_URI[deb1.md5sum] = "7b169c6b9bde1134a865ceb60043848a"
 DEBFILENAME_libpam0g = "libpam0g_1.1.8-3.1+deb8u2+b1_armhf.deb"
-SRC_URI[deb1.sha256sum] = "be22b07e9a62e113425e9104239dc08d90f99bdffbce8de9eeb384b032eae64f"
-SRC_URI[deb1.md5sum] = "cb1544bd5c6839fafac0a8c6c2510e61"
+SRC_URI[deb2.sha256sum] = "be22b07e9a62e113425e9104239dc08d90f99bdffbce8de9eeb384b032eae64f"
+SRC_URI[deb2.md5sum] = "cb1544bd5c6839fafac0a8c6c2510e61"
 
-RDEPENDS_lib${PN}0g = "debconf (>= 0.5) libaudit1 (>= 1:2.2.1) libc6 (>= 2.8)"
-DEPENDS = "debconf libaudit1 libc6"
+RDEPENDS_lib${PN}-modules = "debconf (>= 0.5) libaudit1 (>= 1:2.2.1) libc6 (>= 2.15) libdb5.3 libpam-modules-bin (= 1.1.8-3.1+deb8u2+b1) libpam0g (>= 1.1.3-2) libselinux1 (>= 2.1.9)"
+RDEPENDS_lib${PN}-modules-bin = "libaudit1 (>= 1:2.2.1) libc6 (>= 2.4) libpam0g (>= 0.99.7.1) libselinux1 (>= 1.32)"
+RDEPENDS_lib${PN}0g = "debconf (>= 0.5) libaudit1 (>= 1:2.2.1) libc6 (>= 2.8) multiarch-support"
+DEPENDS = "debconf libaudit1 libc6 libdb5.3 libselinux1 multiarch-support"
 
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libpam-modules = " \
     ./etc/security/access.conf \
@@ -131,6 +132,24 @@ FILES_libpam-modules = " \
     ./usr/share/man/man8/pam_wheel.8.gz \
     ./usr/share/man/man8/pam_xauth.8.gz\
 "
+FILES_libpam-modules-bin = " \
+    ./sbin/mkhomedir_helper \
+    ./sbin/pam_tally \
+    ./sbin/pam_tally2 \
+    ./sbin/unix_chkpwd \
+    ./sbin/unix_update \
+    ./usr/sbin/pam_timestamp_check \
+    ./usr/share/doc/libpam-modules-bin/NEWS.Debian.gz \
+    ./usr/share/doc/libpam-modules-bin/changelog.Debian.armhf.gz \
+    ./usr/share/doc/libpam-modules-bin/changelog.Debian.gz \
+    ./usr/share/doc/libpam-modules-bin/changelog.gz \
+    ./usr/share/doc/libpam-modules-bin/copyright \
+    ./usr/share/lintian/overrides/libpam-modules-bin \
+    ./usr/share/man/man8/mkhomedir_helper.8.gz \
+    ./usr/share/man/man8/pam_timestamp_check.8.gz \
+    ./usr/share/man/man8/unix_chkpwd.8.gz \
+    ./usr/share/man/man8/unix_update.8.gz\
+"
 FILES_libpam0g = " \
     ./lib/arm-linux-gnueabihf/libpam.so.0 \
     ./lib/arm-linux-gnueabihf/libpam.so.0.83.1 \
@@ -149,6 +168,3 @@ FILES_libpam0g = " \
     ./usr/share/doc/libpam0g/copyright \
     ./usr/share/lintian/overrides/libpam0g\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

@@ -13,11 +13,6 @@ DEPENDS = "python"
 
 inherit deb_group
 
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
-
 FILES_python-serial = " \
     ./usr/bin/miniterm.py \
     ./usr/lib/python2.7/dist-packages/pyserial-2.6.egg-info \
@@ -60,6 +55,3 @@ FILES_python-serial = " \
     ./usr/share/doc/python-serial/examples/wxTerminal.py \
     ./usr/share/doc/python-serial/examples/wxTerminal.wxg\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

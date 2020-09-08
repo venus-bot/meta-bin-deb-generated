@@ -7,16 +7,11 @@ DEBFILENAME_libelfg0 = "libelfg0_0.8.13-5_armhf.deb"
 SRC_URI[deb0.sha256sum] = "1427768f8da4ecfa097128fba3d1a6440748a81465282b26bd0200e20d9136bd"
 SRC_URI[deb0.md5sum] = "652ac86ee984f9be43df4e7f8d023cc4"
 
-RDEPENDS_${PN}g0 = "libc6 (>= 2.4)"
-DEPENDS = "libc6"
+RDEPENDS_${PN}g0 = "libc6 (>= 2.4) multiarch-support"
+DEPENDS = "libc6 multiarch-support"
 
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libelfg0 = " \
     ./usr/lib/arm-linux-gnueabihf/libelf.so.0 \
@@ -27,6 +22,3 @@ FILES_libelfg0 = " \
     ./usr/share/doc/libelfg0/copyright \
     ./usr/share/locale/de/LC_MESSAGES/libelf.mo\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

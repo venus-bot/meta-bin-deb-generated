@@ -72,31 +72,26 @@ SRC_URI[deb16.sha256sum] = "27f0dbe8f39ac3aae7d816339089b1bb0984d58fa32abf3777fc
 SRC_URI[deb16.md5sum] = "3277f1b65241f9cdfb2d94c415c16826"
 
 RDEPENDS_libboost-atomic1.55-dev = "libboost-atomic1.55.0 (= 1.55.0+dfsg-3) libboost1.55-dev (= 1.55.0+dfsg-3)"
-RDEPENDS_libboost-atomic1.55.0 = "libc6 (>= 2.4) libgcc1 (>= 1:4.1.1) libstdc++6 (>= 4.1.1)"
+RDEPENDS_libboost-atomic1.55.0 = "libc6 (>= 2.4) libgcc1 (>= 1:4.1.1) libstdc++6 (>= 4.1.1) multiarch-support"
 RDEPENDS_libboost-chrono1.55-dev = "libboost-chrono1.55.0 (= 1.55.0+dfsg-3) libboost1.55-dev (= 1.55.0+dfsg-3)"
-RDEPENDS_libboost-chrono1.55.0 = "libboost-system1.55.0 libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libstdc++6 (>= 4.3.0)"
+RDEPENDS_libboost-chrono1.55.0 = "libboost-system1.55.0 libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libstdc++6 (>= 4.3.0) multiarch-support"
 RDEPENDS_libboost-date-time1.55-dev = "libboost-date-time1.55.0 (= 1.55.0+dfsg-3) libboost-serialization1.55-dev (= 1.55.0+dfsg-3) libboost1.55-dev (= 1.55.0+dfsg-3)"
-RDEPENDS_libboost-date-time1.55.0 = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libstdc++6 (>= 4.6)"
+RDEPENDS_libboost-date-time1.55.0 = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libstdc++6 (>= 4.6) multiarch-support"
 RDEPENDS_libboost-program-options1.55-dev = "libboost-program-options1.55.0 (= 1.55.0+dfsg-3) libboost1.55-dev (= 1.55.0+dfsg-3)"
-RDEPENDS_libboost-program-options1.55.0 = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libstdc++6 (>= 4.9)"
+RDEPENDS_libboost-program-options1.55.0 = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libstdc++6 (>= 4.9) multiarch-support"
 RDEPENDS_libboost-regex1.55-dev = "libboost-regex1.55.0 (= 1.55.0+dfsg-3) libboost1.55-dev (= 1.55.0+dfsg-3) libicu-dev"
-RDEPENDS_libboost-regex1.55.0 = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libicu52 (>= 52~m1-1~) libstdc++6 (>= 4.9)"
+RDEPENDS_libboost-regex1.55.0 = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libicu52 (>= 52~m1-1~) libstdc++6 (>= 4.9) multiarch-support"
 RDEPENDS_libboost-serialization1.55-dev = "libboost-serialization1.55.0 (= 1.55.0+dfsg-3) libboost1.55-dev (= 1.55.0+dfsg-3)"
-RDEPENDS_libboost-serialization1.55.0 = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libstdc++6 (>= 4.9)"
+RDEPENDS_libboost-serialization1.55.0 = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libstdc++6 (>= 4.9) multiarch-support"
 RDEPENDS_libboost-system1.55-dev = "libboost-system1.55.0 (= 1.55.0+dfsg-3) libboost1.55-dev (= 1.55.0+dfsg-3)"
-RDEPENDS_libboost-system1.55.0 = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libstdc++6 (>= 4.3.0)"
+RDEPENDS_libboost-system1.55.0 = "libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libstdc++6 (>= 4.3.0) multiarch-support"
 RDEPENDS_libboost-thread1.55-dev = "libboost-atomic1.55-dev (= 1.55.0+dfsg-3) libboost-chrono1.55-dev (= 1.55.0+dfsg-3) libboost-date-time1.55-dev (= 1.55.0+dfsg-3) libboost-system1.55-dev (= 1.55.0+dfsg-3) libboost-thread1.55.0 (= 1.55.0+dfsg-3) libboost1.55-dev (= 1.55.0+dfsg-3)"
-RDEPENDS_libboost-thread1.55.0 = "libboost-system1.55.0 libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libstdc++6 (>= 4.3.0)"
+RDEPENDS_libboost-thread1.55.0 = "libboost-system1.55.0 libc6 (>= 2.4) libgcc1 (>= 1:4.4.0) libstdc++6 (>= 4.3.0) multiarch-support"
 RDEPENDS_lib${PN}-dev = "libstdc++-4.8-dev"
-DEPENDS = "libc6 libgcc1 libicu-dev libicu52 libstdc++-4.8-dev libstdc++6"
+DEPENDS = "libc6 libgcc1 libicu-dev libicu52 libstdc++-4.8-dev libstdc++6 multiarch-support"
 
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libboost-atomic1.55-dev = " \
     ./usr/lib/arm-linux-gnueabihf/libboost_atomic.a \
@@ -10126,6 +10121,3 @@ FILES_libboost1.55-dev = " \
     ./usr/share/doc/libboost1.55-dev/examples/random_device.cpp.gz \
     ./usr/share/lintian/overrides/libboost1.55-dev\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

@@ -11,17 +11,12 @@ DEBFILENAME_libxml2-dev = "libxml2-dev_2.9.1+dfsg1-5+deb8u6_armhf.deb"
 SRC_URI[deb1.sha256sum] = "faa116b898ef148bfd108cd30e2c7305ae725e7d56e561f10645030940516cf6"
 SRC_URI[deb1.md5sum] = "b5b9df837714ae46e85f398aac443b10"
 
-RDEPENDS_${PN} = "libc6 (>= 2.15) liblzma5 (>= 5.1.1alpha+20120614) zlib1g (>= 1:1.2.3.3)"
+RDEPENDS_${PN} = "libc6 (>= 2.15) liblzma5 (>= 5.1.1alpha+20120614) multiarch-support zlib1g (>= 1:1.2.3.3)"
 RDEPENDS_${PN}-dev = "libxml2 (= 2.9.1+dfsg1-5+deb8u6)"
-DEPENDS = "libc6 liblzma5 zlib1g"
+DEPENDS = "libc6 liblzma5 multiarch-support zlib1g"
 
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN} = " \
     ./usr/lib/arm-linux-gnueabihf/libxml2.so.2 \
@@ -99,6 +94,3 @@ FILES_${PN}-dev = " \
     ./usr/share/man/man1/xml2-config.1.gz \
     ./usr/share/man/man3/libxml.3.gz\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

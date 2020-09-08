@@ -28,11 +28,6 @@ DEPENDS = "libboost-program-options1.55-dev libboost-regex1.55-dev libboost-syst
 
 inherit deb_group
 
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
-
 FILES_libboost-program-options-dev = " \
     ./usr/share/doc/libboost-program-options-dev/changelog.gz \
     ./usr/share/doc/libboost-program-options-dev/copyright\
@@ -49,6 +44,3 @@ FILES_libboost-thread-dev = " \
     ./usr/share/doc/libboost-thread-dev/changelog.gz \
     ./usr/share/doc/libboost-thread-dev/copyright\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

@@ -7,16 +7,11 @@ DEBFILENAME_libxslt1.1 = "libxslt1.1_1.1.28-2+deb8u6_armhf.deb"
 SRC_URI[deb0.sha256sum] = "8335a8fdb6053ae85429f927bc081c76d221e6adfe4988c5c668b8ee8bcd1751"
 SRC_URI[deb0.md5sum] = "92ec1996f3d01ea76fe67e2df6783f82"
 
-RDEPENDS_${PN}1.1 = "libc6 (>= 2.17) libgcrypt20 (>= 1.6.0) libxml2 (>= 2.9.0)"
-DEPENDS = "libc6 libgcrypt20 libxml2"
+RDEPENDS_${PN}1.1 = "libc6 (>= 2.17) libgcrypt20 (>= 1.6.0) libxml2 (>= 2.9.0) multiarch-support"
+DEPENDS = "libc6 libgcrypt20 libxml2 multiarch-support"
 
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libxslt1.1 = " \
     ./usr/lib/arm-linux-gnueabihf/libexslt.so.0 \
@@ -35,6 +30,3 @@ FILES_libxslt1.1 = " \
     ./usr/share/doc/libxslt1.1/copyright \
     ./usr/share/lintian/overrides/libxslt1.1\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

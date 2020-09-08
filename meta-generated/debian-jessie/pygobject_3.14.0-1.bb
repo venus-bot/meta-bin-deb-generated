@@ -18,11 +18,6 @@ DEPENDS = "gir1.2-glib-2.0 libc6 libffi6 libgirepository-1.0-1 libglib2.0-0 pyth
 
 inherit deb_group
 
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
-
 FILES_python-gi = " \
     ./usr/lib/python2.7/dist-packages/gi/__init__.py \
     ./usr/lib/python2.7/dist-packages/gi/_constants.py \
@@ -64,6 +59,3 @@ FILES_python-gobject = " \
     ./usr/share/doc/python-gobject/changelog.gz \
     ./usr/share/doc/python-gobject/copyright\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

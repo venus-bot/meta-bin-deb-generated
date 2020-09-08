@@ -20,18 +20,13 @@ SRC_URI[deb3.sha256sum] = "2d2bc22a421eaeebd228d1191dad2768810648160ffddcae104f7
 SRC_URI[deb3.md5sum] = "5568b58a7c07beaac1acdb131977d3e0"
 
 RDEPENDS_gir1.2-soup-2.4 = "gir1.2-glib-2.0 libsoup-gnome2.4-1 (>= 2.27.4) libsoup2.4-1 (>= 2.47.4)"
-RDEPENDS_libsoup-gnome2.4-1 = "libc6 (>= 2.4) libglib2.0-0 (>= 2.39.90) libsoup2.4-1 (>= 2.41.90) libsqlite3-0 (>= 3.5.9) libxml2 (>= 2.6.27)"
-RDEPENDS_${PN}-1 = "glib-networking (>= 2.32.0) libc6 (>= 2.4) libglib2.0-0 (>= 2.39.90) libsqlite3-0 (>= 3.5.9) libxml2 (>= 2.7.4)"
+RDEPENDS_libsoup-gnome2.4-1 = "libc6 (>= 2.4) libglib2.0-0 (>= 2.39.90) libsoup2.4-1 (>= 2.41.90) libsqlite3-0 (>= 3.5.9) libxml2 (>= 2.6.27) multiarch-support"
+RDEPENDS_${PN}-1 = "glib-networking (>= 2.32.0) libc6 (>= 2.4) libglib2.0-0 (>= 2.39.90) libsqlite3-0 (>= 3.5.9) libxml2 (>= 2.7.4) multiarch-support"
 RDEPENDS_${PN}-dev = "gir1.2-soup-2.4 (= 2.48.0-1+deb8u1) libglib2.0-dev (>= 2.35.0) libsoup2.4-1 (= 2.48.0-1+deb8u1) libxml2-dev"
-DEPENDS = "gir1.2-glib-2.0 glib-networking libc6 libglib2.0-0 libglib2.0-dev libsqlite3-0 libxml2 libxml2-dev"
+DEPENDS = "gir1.2-glib-2.0 glib-networking libc6 libglib2.0-0 libglib2.0-dev libsqlite3-0 libxml2 libxml2-dev multiarch-support"
 
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_gir1.2-soup-2.4 = " \
     ./usr/lib/girepository-1.0/Soup-2.4.typelib \
@@ -120,6 +115,3 @@ FILES_${PN}-dev = " \
     ./usr/share/doc/libsoup2.4-dev/copyright \
     ./usr/share/gir-1.0/Soup-2.4.gir\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

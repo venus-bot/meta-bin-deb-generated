@@ -7,13 +7,11 @@ DEBFILENAME_base-files = "base-files_8+deb8u11_armhf.deb"
 SRC_URI[deb0.sha256sum] = "ff63400a82b25f7e15dabbf36fa7ec66c0cc37a9405cf74c576a1a78668fd653"
 SRC_URI[deb0.md5sum] = "e27d36a89417c6e05f6883637a22322c"
 
+RDEPENDS_${PN} = "awk"
+DEPENDS = "awk"
+
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN} = " \
     ./etc/debian_version \
@@ -53,6 +51,3 @@ FILES_${PN} = " \
     ./usr/share/doc/base-files/copyright \
     ./usr/share/lintian/overrides/base-files\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

@@ -13,11 +13,6 @@ DEPENDS = "python"
 
 inherit deb_group
 
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
-
 FILES_python-pymodbus = " \
     ./usr/lib/python2.6/dist-packages/ez_setup.py \
     ./usr/lib/python2.6/dist-packages/pymodbus-1.2.0.egg-info/PKG-INFO \
@@ -142,6 +137,3 @@ FILES_python-pymodbus = " \
     ./usr/share/pyshared/pymodbus/utilities.py \
     ./usr/share/pyshared/pymodbus/version.py\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

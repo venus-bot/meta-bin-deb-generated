@@ -15,18 +15,13 @@ DEBFILENAME_libfontconfig1 = "libfontconfig1_2.11.0-6.3+deb8u1_armhf.deb"
 SRC_URI[deb2.sha256sum] = "5a0462016b5f48b5c90009b30ecba3ec33ab41481fb2a246995df85ac4d100a9"
 SRC_URI[deb2.md5sum] = "4857524dc64b1960047e5cc68d5405f9"
 
-RDEPENDS_${PN} = "fontconfig-config libc6 (>= 2.4) libfontconfig1 (>= 2.11) libfreetype6 (>= 2.2.1)"
+RDEPENDS_${PN} = "dpkg (>= 1.16.1) fontconfig-config libc6 (>= 2.4) libfontconfig1 (>= 2.11) libfreetype6 (>= 2.2.1)"
 RDEPENDS_${PN}-config = "debconf (>= 0.5) fonts-dejavu-core ucf (>= 0.29)"
-RDEPENDS_lib${PN}1 = "fontconfig-config (>= 2.11.0-6.3+deb8u1) libc6 (>= 2.7) libexpat1 (>= 2.0.1) libfreetype6 (>= 2.2.1)"
-DEPENDS = "debconf fonts-dejavu-core libc6 libexpat1 libfreetype6 ucf"
+RDEPENDS_lib${PN}1 = "fontconfig-config (>= 2.11.0-6.3+deb8u1) libc6 (>= 2.7) libexpat1 (>= 2.0.1) libfreetype6 (>= 2.2.1) multiarch-support"
+DEPENDS = "debconf dpkg fonts-dejavu-core libc6 libexpat1 libfreetype6 multiarch-support ucf"
 
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN} = " \
     ./usr/bin/fc-cache \
@@ -123,6 +118,3 @@ FILES_libfontconfig1 = " \
     ./usr/share/doc/libfontconfig1/changelog.gz \
     ./usr/share/doc/libfontconfig1/copyright\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

@@ -7,13 +7,11 @@ DEBFILENAME_debconf = "debconf_1.5.56+deb8u1_all.deb"
 SRC_URI[deb0.sha256sum] = "c0496d049b8fdb2b2eea0b9f644d127b0fc6499e0b950d8ee5bba830ccfa0faa"
 SRC_URI[deb0.md5sum] = "c6c212c4bd19a817c122c1e65c3cf96f"
 
+RDEPENDS_${PN} = "perl-base (>= 5.20.1-3~)"
+DEPENDS = "perl-base"
+
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN} = " \
     ./etc/apt/apt.conf.d/70debconf \
@@ -165,6 +163,3 @@ FILES_${PN} = " \
     ./usr/share/perl5/Debian/DebConf/Client/ConfModule.pm \
     ./usr/share/pixmaps/debian-logo.png\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

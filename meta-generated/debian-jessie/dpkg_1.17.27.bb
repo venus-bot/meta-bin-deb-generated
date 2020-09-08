@@ -7,13 +7,9 @@ DEBFILENAME_dpkg = "dpkg_1.17.27_armhf.deb"
 SRC_URI[deb0.sha256sum] = "3e95e4c6abf44afe84ff376afdb730f0107745d2a2978688b6618cbe4edc0a65"
 SRC_URI[deb0.md5sum] = "d3167ad44058e1dc15e88c1b4f72c662"
 
+RDEPENDS_${PN} = "libbz2-1.0 libc6 (>= 2.11) liblzma5 (>= 5.1.1alpha+20120614) libselinux1 (>= 2.3) tar (>= 1.23) zlib1g (>= 1:1.1.4)"
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN} = " \
     ./etc/alternatives/README \
@@ -165,6 +161,3 @@ FILES_${PN} = " \
     ./usr/share/man/sv/man8/start-stop-daemon.8.gz \
     ./usr/share/man/sv/man8/update-alternatives.8.gz\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

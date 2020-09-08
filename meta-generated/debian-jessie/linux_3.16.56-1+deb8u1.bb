@@ -7,13 +7,9 @@ DEBFILENAME_linux-libc-dev = "linux-libc-dev_3.16.56-1+deb8u1_armhf.deb"
 SRC_URI[deb0.sha256sum] = "8c0ebe33bc26b8925eea5f29cdd719b9f78abe60b9ce077761caeece32dfb736"
 SRC_URI[deb0.md5sum] = "8c9b65422c90c8f862164431792bb943"
 
+RDEPENDS_${PN}-libc-dev = ""
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_linux-libc-dev = " \
     ./usr/include/arm-linux-gnueabihf/asm/auxvec.h \
@@ -697,6 +693,3 @@ FILES_linux-libc-dev = " \
     ./usr/share/doc/linux-libc-dev/changelog.Debian.gz \
     ./usr/share/doc/linux-libc-dev/copyright\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

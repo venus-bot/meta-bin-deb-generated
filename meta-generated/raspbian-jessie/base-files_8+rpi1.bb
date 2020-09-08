@@ -7,13 +7,11 @@ DEBFILENAME_base-files = "base-files_8+rpi1_armhf.deb"
 SRC_URI[deb0.sha256sum] = "8770d48eec724aac2c8a8afa986bc7d60fd8d3e43a37d3f3b432bdb422bca4fc"
 SRC_URI[deb0.md5sum] = "9d6104d024c42c6cb9e6f36d2b98f77d"
 
+RDEPENDS_${PN} = "awk"
+DEPENDS = "awk"
+
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN} = " \
     ./etc/debian_version \
@@ -54,6 +52,3 @@ FILES_${PN} = " \
     ./usr/share/doc/base-files/copyright \
     ./usr/share/lintian/overrides/base-files\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

@@ -13,11 +13,6 @@ DEPENDS = "python"
 
 inherit deb_group
 
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
-
 FILES_python-enum34 = " \
     ./usr/lib/python2.7/dist-packages/enum/README \
     ./usr/lib/python2.7/dist-packages/enum/__init__.py \
@@ -28,6 +23,3 @@ FILES_python-enum34 = " \
     ./usr/share/doc/python-enum34/changelog.Debian.gz \
     ./usr/share/doc/python-enum34/copyright\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

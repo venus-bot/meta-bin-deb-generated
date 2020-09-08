@@ -12,16 +12,11 @@ SRC_URI[deb1.sha256sum] = "69b7acf346ba3f997eb2b4e68924c4f1023d4a05f4950a73a10f8
 SRC_URI[deb1.md5sum] = "88df5d710117b5a5790b867ce5ca6c86"
 
 RDEPENDS_${PN}-dev = "libxau6 (= 1:1.0.8-1) x11proto-core-dev"
-RDEPENDS_${PN}6 = "libc6 (>= 2.4)"
-DEPENDS = "libc6 x11proto-core-dev"
+RDEPENDS_${PN}6 = "libc6 (>= 2.4) multiarch-support"
+DEPENDS = "libc6 multiarch-support x11proto-core-dev"
 
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN}-dev = " \
     ./usr/include/X11/Xauth.h \
@@ -48,6 +43,3 @@ FILES_libxau6 = " \
     ./usr/share/doc/libxau6/changelog.gz \
     ./usr/share/doc/libxau6/copyright\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

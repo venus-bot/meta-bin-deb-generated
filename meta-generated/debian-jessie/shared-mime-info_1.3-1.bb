@@ -13,11 +13,6 @@ DEPENDS = "libc6 libglib2.0-0 libxml2"
 
 inherit deb_group
 
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
-
 FILES_${PN} = " \
     ./usr/bin/update-mime-database \
     ./usr/bin/update-mime-database.real \
@@ -99,6 +94,3 @@ FILES_${PN} = " \
     ./usr/share/mime/packages/freedesktop.org.xml \
     ./usr/share/pkgconfig/shared-mime-info.pc\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

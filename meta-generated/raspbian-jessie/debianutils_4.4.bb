@@ -7,16 +7,11 @@ DEBFILENAME_debianutils = "debianutils_4.4_armhf.deb"
 SRC_URI[deb0.sha256sum] = "7dfff7acd983f00c4a8191b5cfeaa18cdee5bdfd64106fe56b266d9c35a7bd99"
 SRC_URI[deb0.md5sum] = "1defe2421140c04a82f50e9cfd119f22"
 
-RDEPENDS_${PN} = "sensible-utils"
-DEPENDS = "sensible-utils"
+RDEPENDS_${PN} = "libc6 (>= 2.15) sensible-utils"
+DEPENDS = "libc6 sensible-utils"
 
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN} = " \
     ./bin/run-parts \
@@ -90,6 +85,3 @@ FILES_${PN} = " \
     ./usr/share/man/sl/man8/run-parts.8.gz \
     ./usr/share/man/sl/man8/savelog.8.gz\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

@@ -12,15 +12,11 @@ SRC_URI[deb1.sha256sum] = "b0e2a7c5d4dcb5cca78ad7b9cc358c4bda01a4ee9646cb441d2a2
 SRC_URI[deb1.md5sum] = "ce7b6ee8d5644139880c2126bca52ced"
 
 RDEPENDS_python-dbus = "libc6 (>= 2.4) libdbus-1-3 (>= 1.5.12) libdbus-glib-1-2 (>= 0.78) libglib2.0-0 (>= 2.12.0) python (<< 2.8) python (>= 2.7) python-dbus-dev"
+RDEPENDS_python-dbus-dev = ""
 DEPENDS = "libc6 libdbus-1-3 libdbus-glib-1-2 libglib2.0-0 python"
 
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_python-dbus = " \
     ./usr/lib/python2.7/dist-packages/_dbus_bindings.so \
@@ -58,6 +54,3 @@ FILES_python-dbus-dev = " \
     ./usr/share/doc/python-dbus-dev/changelog.gz \
     ./usr/share/doc/python-dbus-dev/copyright\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

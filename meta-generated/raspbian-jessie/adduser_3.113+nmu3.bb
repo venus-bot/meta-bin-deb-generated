@@ -13,11 +13,6 @@ DEPENDS = "debconf passwd perl-base"
 
 inherit deb_group
 
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
-
 FILES_${PN} = " \
     ./etc/deluser.conf \
     ./usr/sbin/addgroup \
@@ -125,6 +120,3 @@ FILES_${PN} = " \
     ./usr/share/man/sv/man8/deluser.8.gz \
     ./usr/share/perl5/Debian/AdduserCommon.pm\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

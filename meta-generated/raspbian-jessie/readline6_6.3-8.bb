@@ -11,17 +11,12 @@ DEBFILENAME_readline-common = "readline-common_6.3-8_all.deb"
 SRC_URI[deb1.sha256sum] = "8b91bce988c38798e565820919a600f1a58ca483d8406860cc37e847a55a6bfd"
 SRC_URI[deb1.md5sum] = "d072984a0bf5e597ca57bc8f07ef1849"
 
-RDEPENDS_lib${PN} = "libc6 (>= 2.15) libtinfo5 readline-common"
+RDEPENDS_lib${PN} = "libc6 (>= 2.15) libtinfo5 multiarch-support readline-common"
 RDEPENDS_readline-common = "dpkg (>= 1.15.4)"
-DEPENDS = "dpkg libc6 libtinfo5"
+DEPENDS = "dpkg libc6 libtinfo5 multiarch-support"
 
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libreadline6 = " \
     ./lib/arm-linux-gnueabihf/libhistory.so.6 \
@@ -46,6 +41,3 @@ FILES_readline-common = " \
     ./usr/share/man/man3/readline.3readline.gz \
     ./usr/share/readline/inputrc\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

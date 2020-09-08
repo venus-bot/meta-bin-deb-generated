@@ -13,11 +13,6 @@ DEPENDS = "libc6 libxml2 libxslt1.1 python zlib1g"
 
 inherit deb_group
 
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
-
 FILES_python-lxml = " \
     ./usr/lib/python2.7/dist-packages/lxml-3.4.0.egg-info/PKG-INFO \
     ./usr/lib/python2.7/dist-packages/lxml-3.4.0.egg-info/SOURCES.txt \
@@ -88,6 +83,3 @@ FILES_python-lxml = " \
     ./usr/share/doc/python-lxml/examples/simple-ns.xml \
     ./usr/share/doc/python-lxml/examples/simple.xml\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

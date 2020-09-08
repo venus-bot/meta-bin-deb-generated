@@ -11,16 +11,12 @@ DEBFILENAME_libaudit1 = "libaudit1_2.4-1_armhf.deb"
 SRC_URI[deb1.sha256sum] = "0703932de0e8485f45300a85f341b59269150bf35163a9d734f52317e3416da5"
 SRC_URI[deb1.md5sum] = "fc2d213d16ebf264119df8ae4ec3a39b"
 
-RDEPENDS_lib${PN}1 = "libaudit-common (>= 1:2.4-1) libc6 (>= 2.8)"
-DEPENDS = "libc6"
+RDEPENDS_lib${PN}-common = ""
+RDEPENDS_lib${PN}1 = "libaudit-common (>= 1:2.4-1) libc6 (>= 2.8) multiarch-support"
+DEPENDS = "libc6 multiarch-support"
 
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_libaudit-common = " \
     ./etc/libaudit.conf \
@@ -36,6 +32,3 @@ FILES_libaudit1 = " \
     ./usr/share/doc/libaudit1/changelog.gz \
     ./usr/share/doc/libaudit1/copyright\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"

@@ -7,13 +7,9 @@ DEBFILENAME_xorg-sgml-doctools = "xorg-sgml-doctools_1.11-1_all.deb"
 SRC_URI[deb0.sha256sum] = "359dc76bf7b19fbbdb0b9e3ca3077e415b5b9ca8ff85162ccc889f9974493600"
 SRC_URI[deb0.md5sum] = "f5db107a5b79df9f02f9e39c7b3bd14f"
 
+RDEPENDS_${PN} = ""
 
 inherit deb_group
-
-# Prebuilt binaries, no need for any default dependencies
-INHIBIT_DEFAULT_DEPS = "1"
-INHIBIT_PACKAGE_STRIP = "1"
-INSANE_SKIP_${PN} += "already-stripped"
 
 FILES_${PN} = " \
     ./usr/share/doc/xorg-sgml-doctools/changelog.Debian.gz \
@@ -29,6 +25,3 @@ FILES_${PN} = " \
     ./usr/share/sgml/X11/xorg.css \
     ./usr/share/sgml/X11/xorg.xsl\
 "
-#FAKE LICENSE FOR TESTING!!!
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"
