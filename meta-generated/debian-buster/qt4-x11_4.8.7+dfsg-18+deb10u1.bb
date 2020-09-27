@@ -1,116 +1,116 @@
 PACKAGES = "${PN} libqt4-dbus libqt4-declarative libqt4-designer libqt4-dev libqt4-dev-bin libqt4-help libqt4-network libqt4-qt3support libqt4-script libqt4-scripttools libqt4-sql libqt4-svg libqt4-test libqt4-xml libqt4-xmlpatterns libqtcore4 libqtdbus4 libqtgui4 qdbus qt4-linguist-tools qt4-qmake qtcore4-l10n"
 PROVIDES = "libqt4-dbus libqt4-declarative libqt4-designer libqt4-dev libqt4-dev-bin libqt4-help libqt4-network libqt4-qt3support libqt4-script libqt4-scripttools libqt4-sql libqt4-svg libqt4-test libqt4-xml libqt4-xmlpatterns libqtcore4 libqtdbus4 libqtgui4 qdbus qt4-linguist-tools qt4-qmake qtcore4-l10n"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqt4-dbus_4.8.7+dfsg-18_armhf.deb;unpack=0;name=deb0\
-	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqt4-declarative_4.8.7+dfsg-18_armhf.deb;unpack=0;name=deb1\
-	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqt4-designer_4.8.7+dfsg-18_armhf.deb;unpack=0;name=deb2\
-	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqt4-dev_4.8.7+dfsg-18_armhf.deb;unpack=0;name=deb3\
-	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqt4-dev-bin_4.8.7+dfsg-18_armhf.deb;unpack=0;name=deb4\
-	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqt4-help_4.8.7+dfsg-18_armhf.deb;unpack=0;name=deb5\
-	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqt4-network_4.8.7+dfsg-18_armhf.deb;unpack=0;name=deb6\
-	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqt4-qt3support_4.8.7+dfsg-18_armhf.deb;unpack=0;name=deb7\
-	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqt4-script_4.8.7+dfsg-18_armhf.deb;unpack=0;name=deb8\
-	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqt4-scripttools_4.8.7+dfsg-18_armhf.deb;unpack=0;name=deb9\
-	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqt4-sql_4.8.7+dfsg-18_armhf.deb;unpack=0;name=deb10\
-	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqt4-svg_4.8.7+dfsg-18_armhf.deb;unpack=0;name=deb11\
-	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqt4-test_4.8.7+dfsg-18_armhf.deb;unpack=0;name=deb12\
-	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqt4-xml_4.8.7+dfsg-18_armhf.deb;unpack=0;name=deb13\
-	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqt4-xmlpatterns_4.8.7+dfsg-18_armhf.deb;unpack=0;name=deb14\
-	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqtcore4_4.8.7+dfsg-18_armhf.deb;unpack=0;name=deb15\
-	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqtdbus4_4.8.7+dfsg-18_armhf.deb;unpack=0;name=deb16\
-	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqtgui4_4.8.7+dfsg-18_armhf.deb;unpack=0;name=deb17\
-	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/qdbus_4.8.7+dfsg-18_armhf.deb;unpack=0;name=deb18\
-	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/qt4-linguist-tools_4.8.7+dfsg-18_armhf.deb;unpack=0;name=deb19\
-	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/qt4-qmake_4.8.7+dfsg-18_armhf.deb;unpack=0;name=deb20\
-	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/qtcore4-l10n_4.8.7+dfsg-18_all.deb;unpack=0;name=deb21\
+	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqt4-dbus_4.8.7+dfsg-18+deb10u1_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqt4-declarative_4.8.7+dfsg-18+deb10u1_armhf.deb;unpack=0;name=deb1\
+	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqt4-designer_4.8.7+dfsg-18+deb10u1_armhf.deb;unpack=0;name=deb2\
+	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqt4-dev_4.8.7+dfsg-18+deb10u1_armhf.deb;unpack=0;name=deb3\
+	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqt4-dev-bin_4.8.7+dfsg-18+deb10u1_armhf.deb;unpack=0;name=deb4\
+	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqt4-help_4.8.7+dfsg-18+deb10u1_armhf.deb;unpack=0;name=deb5\
+	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqt4-network_4.8.7+dfsg-18+deb10u1_armhf.deb;unpack=0;name=deb6\
+	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqt4-qt3support_4.8.7+dfsg-18+deb10u1_armhf.deb;unpack=0;name=deb7\
+	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqt4-script_4.8.7+dfsg-18+deb10u1_armhf.deb;unpack=0;name=deb8\
+	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqt4-scripttools_4.8.7+dfsg-18+deb10u1_armhf.deb;unpack=0;name=deb9\
+	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqt4-sql_4.8.7+dfsg-18+deb10u1_armhf.deb;unpack=0;name=deb10\
+	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqt4-svg_4.8.7+dfsg-18+deb10u1_armhf.deb;unpack=0;name=deb11\
+	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqt4-test_4.8.7+dfsg-18+deb10u1_armhf.deb;unpack=0;name=deb12\
+	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqt4-xml_4.8.7+dfsg-18+deb10u1_armhf.deb;unpack=0;name=deb13\
+	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqt4-xmlpatterns_4.8.7+dfsg-18+deb10u1_armhf.deb;unpack=0;name=deb14\
+	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqtcore4_4.8.7+dfsg-18+deb10u1_armhf.deb;unpack=0;name=deb15\
+	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqtdbus4_4.8.7+dfsg-18+deb10u1_armhf.deb;unpack=0;name=deb16\
+	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/libqtgui4_4.8.7+dfsg-18+deb10u1_armhf.deb;unpack=0;name=deb17\
+	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/qdbus_4.8.7+dfsg-18+deb10u1_armhf.deb;unpack=0;name=deb18\
+	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/qt4-linguist-tools_4.8.7+dfsg-18+deb10u1_armhf.deb;unpack=0;name=deb19\
+	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/qt4-qmake_4.8.7+dfsg-18+deb10u1_armhf.deb;unpack=0;name=deb20\
+	http://ftp.de.debian.org/debian/pool/main/q/qt4-x11/qtcore4-l10n_4.8.7+dfsg-18+deb10u1_all.deb;unpack=0;name=deb21\
 "
-DEBFILENAME_libqt4-dbus = "libqt4-dbus_4.8.7+dfsg-18_armhf.deb"
-SRC_URI[deb0.sha256sum] = "1f69ef5863e18144586e7206361d4bcd9d2d7aa56514788af3ceda3909799e33"
-SRC_URI[deb0.md5sum] = "b3bcbc841ced12168422e901f36b600f"
-DEBFILENAME_libqt4-declarative = "libqt4-declarative_4.8.7+dfsg-18_armhf.deb"
-SRC_URI[deb1.sha256sum] = "bbaeef774ab0315de553a79d08ee90e30075701c446877f8ff189e119180ecd2"
-SRC_URI[deb1.md5sum] = "039c94eddfd266265405ecae9eca7fb7"
-DEBFILENAME_libqt4-designer = "libqt4-designer_4.8.7+dfsg-18_armhf.deb"
-SRC_URI[deb2.sha256sum] = "d35c8e591715186121ad78ad5853f43a4d1b041f7c91f3bc1ae39f5f47eba523"
-SRC_URI[deb2.md5sum] = "2d64fbfe2da6d7f8a58e63f161b687a6"
-DEBFILENAME_libqt4-dev = "libqt4-dev_4.8.7+dfsg-18_armhf.deb"
-SRC_URI[deb3.sha256sum] = "e033ba8491cfbcc1061e84ab7296d30a07bfa2125957b77ba83f8123aeb72dc4"
-SRC_URI[deb3.md5sum] = "ea7da1ed3006e2ea92ee5343ca3fa260"
-DEBFILENAME_libqt4-dev-bin = "libqt4-dev-bin_4.8.7+dfsg-18_armhf.deb"
-SRC_URI[deb4.sha256sum] = "4a5eb151179c5a3c18e4499b9ff97b490d482fa6204c0757932a6df05480ee39"
-SRC_URI[deb4.md5sum] = "34fe2662f6a745f9ccd579065e131c43"
-DEBFILENAME_libqt4-help = "libqt4-help_4.8.7+dfsg-18_armhf.deb"
-SRC_URI[deb5.sha256sum] = "7cbf387f3e86f6676dbef7b58ea5fbcebef4c5b179fa49b4f079399892d2daae"
-SRC_URI[deb5.md5sum] = "073b3cb05959024f265809752ac6d3a6"
-DEBFILENAME_libqt4-network = "libqt4-network_4.8.7+dfsg-18_armhf.deb"
-SRC_URI[deb6.sha256sum] = "cb79cbcb4dc632e2750301479f72faf0e2c23a935d801b9ef532f458044090eb"
-SRC_URI[deb6.md5sum] = "b36ebbe991a6c66b6ead70c8813a9e21"
-DEBFILENAME_libqt4-qt3support = "libqt4-qt3support_4.8.7+dfsg-18_armhf.deb"
-SRC_URI[deb7.sha256sum] = "1997d621c933eebe9bb486b16879701f4940b9b92516a77952030833a8937ca3"
-SRC_URI[deb7.md5sum] = "a2c658132c847c8fd5f39da89b267a2e"
-DEBFILENAME_libqt4-script = "libqt4-script_4.8.7+dfsg-18_armhf.deb"
-SRC_URI[deb8.sha256sum] = "4a2949c3f3dd0b243421ffa2fe15d96cbb969f926c47001b7840f55aef2eec1f"
-SRC_URI[deb8.md5sum] = "926bda8286d84b1bed91942690587c1c"
-DEBFILENAME_libqt4-scripttools = "libqt4-scripttools_4.8.7+dfsg-18_armhf.deb"
-SRC_URI[deb9.sha256sum] = "6d6b718324f32ed04fbd1de0f670d89c9d4564db623e67e65cc0cc51a2846e01"
-SRC_URI[deb9.md5sum] = "b0d4fe75b35d0d55bebc1314ad4d836a"
-DEBFILENAME_libqt4-sql = "libqt4-sql_4.8.7+dfsg-18_armhf.deb"
-SRC_URI[deb10.sha256sum] = "1d7f041ff97f74645ea83d58c15478319e85d1417c21f7d3822af7f4e292610a"
-SRC_URI[deb10.md5sum] = "14b5c6b220dbc3c19103e82b0b5cba84"
-DEBFILENAME_libqt4-svg = "libqt4-svg_4.8.7+dfsg-18_armhf.deb"
-SRC_URI[deb11.sha256sum] = "2e248bd480bbbe1650684952f26f53eae5a48d99f2a0527635f4f7128f3b213a"
-SRC_URI[deb11.md5sum] = "53f8ba8ba906d3a69ce2b896afb00873"
-DEBFILENAME_libqt4-test = "libqt4-test_4.8.7+dfsg-18_armhf.deb"
-SRC_URI[deb12.sha256sum] = "86aba5d67a3aa4fa6ab580f8bbddacfac2a8efa2b7f17fc3ca793c815b365345"
-SRC_URI[deb12.md5sum] = "0584dfc87cff82b79ad8636780d85a5c"
-DEBFILENAME_libqt4-xml = "libqt4-xml_4.8.7+dfsg-18_armhf.deb"
-SRC_URI[deb13.sha256sum] = "fc783f28243827a43a0461bfe581af55d1f08e36e33b25510c8de752d51a911a"
-SRC_URI[deb13.md5sum] = "25181948a45cacd3cdae1cd70dc28e95"
-DEBFILENAME_libqt4-xmlpatterns = "libqt4-xmlpatterns_4.8.7+dfsg-18_armhf.deb"
-SRC_URI[deb14.sha256sum] = "b10eabcc8d9e317d1d6fc8a3726b3d64472954034fa8dda0dd66d66897b69b8d"
-SRC_URI[deb14.md5sum] = "66b7e78309589266ed184f23c2954804"
-DEBFILENAME_libqtcore4 = "libqtcore4_4.8.7+dfsg-18_armhf.deb"
-SRC_URI[deb15.sha256sum] = "71d281f25b52b520e9236cd1379667a4ef743720f0cedee3b079355f7944af31"
-SRC_URI[deb15.md5sum] = "645912e2d05a50a5482d7d7fb94ae187"
-DEBFILENAME_libqtdbus4 = "libqtdbus4_4.8.7+dfsg-18_armhf.deb"
-SRC_URI[deb16.sha256sum] = "25b50bcc7eb522d0c29d4991df5bd40684cf07ce5c75b3a2f89a9b60d04c979f"
-SRC_URI[deb16.md5sum] = "231f357f4a539815977fb00384acd192"
-DEBFILENAME_libqtgui4 = "libqtgui4_4.8.7+dfsg-18_armhf.deb"
-SRC_URI[deb17.sha256sum] = "65aca9218048b04b5bd67d938288094a6cb167db2ac5939835b5ef50a357bc5e"
-SRC_URI[deb17.md5sum] = "c158a57f5fda986c099625f5e051eb12"
-DEBFILENAME_qdbus = "qdbus_4.8.7+dfsg-18_armhf.deb"
-SRC_URI[deb18.sha256sum] = "cdf1f060f2ca17dab191b8681739169aa0f86f42a674f1e2e2075a3a7ac984cb"
-SRC_URI[deb18.md5sum] = "2df01035b3aa9e6720158619d514caeb"
-DEBFILENAME_qt4-linguist-tools = "qt4-linguist-tools_4.8.7+dfsg-18_armhf.deb"
-SRC_URI[deb19.sha256sum] = "a006ed28518525fa157bca6fffc661b86dac84472983ebd8a014a82374629239"
-SRC_URI[deb19.md5sum] = "47e4772bf2e3d5d33bd7b9d18a854c58"
-DEBFILENAME_qt4-qmake = "qt4-qmake_4.8.7+dfsg-18_armhf.deb"
-SRC_URI[deb20.sha256sum] = "af88ed2cfcb1de28a10b04a45faab6014fd2c7fa3a4a43642301a75b299c8f9d"
-SRC_URI[deb20.md5sum] = "aaed44f289785361a26d1660a5331618"
-DEBFILENAME_qtcore4-l10n = "qtcore4-l10n_4.8.7+dfsg-18_all.deb"
-SRC_URI[deb21.sha256sum] = "46098056d38735ed0ce59073344a94eb4f997ca5ea1ff0153d4a62fe6fc2d79d"
-SRC_URI[deb21.md5sum] = "6193bec312fe6e251709a2fcc7e91d36"
+DEBFILENAME_libqt4-dbus = "libqt4-dbus_4.8.7+dfsg-18+deb10u1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "2165306dddcd0e4fb4cbd1fca248062a4c29d3bec789f3e6d65274749d3c298e"
+SRC_URI[deb0.md5sum] = "363e43033b91fa0f1c2e61f5db1536a9"
+DEBFILENAME_libqt4-declarative = "libqt4-declarative_4.8.7+dfsg-18+deb10u1_armhf.deb"
+SRC_URI[deb1.sha256sum] = "3679584c7f411d603445131609121ac52472d927cdabffe038da79903613222e"
+SRC_URI[deb1.md5sum] = "373769c156f36acb18045660eaf1d3c1"
+DEBFILENAME_libqt4-designer = "libqt4-designer_4.8.7+dfsg-18+deb10u1_armhf.deb"
+SRC_URI[deb2.sha256sum] = "be8975a14ff7860e2b0b1c6b07d3e43b73f345f6092a4de4d7484a37c4214402"
+SRC_URI[deb2.md5sum] = "33a833b3a4a8ff9b35f49ced46c081b6"
+DEBFILENAME_libqt4-dev = "libqt4-dev_4.8.7+dfsg-18+deb10u1_armhf.deb"
+SRC_URI[deb3.sha256sum] = "fe6f7b5f07ea5c8f1d258da7b7aa7bf63b5584758f5073072fadd143f763f8a8"
+SRC_URI[deb3.md5sum] = "078eb8cfb3a8d891396796e7ecf90ad2"
+DEBFILENAME_libqt4-dev-bin = "libqt4-dev-bin_4.8.7+dfsg-18+deb10u1_armhf.deb"
+SRC_URI[deb4.sha256sum] = "33c0edb8dc84b0f23fb417e3b8512170d4283124aaa0c675290c17ba43d69589"
+SRC_URI[deb4.md5sum] = "f895d580051c2635d9e2e02f77a829c5"
+DEBFILENAME_libqt4-help = "libqt4-help_4.8.7+dfsg-18+deb10u1_armhf.deb"
+SRC_URI[deb5.sha256sum] = "f90d06c2de775f17faa1e52cd257bec06832d3726c96ca4f327b8dfee92aedf8"
+SRC_URI[deb5.md5sum] = "a843af58ce25d23b63703e39e0cbbdab"
+DEBFILENAME_libqt4-network = "libqt4-network_4.8.7+dfsg-18+deb10u1_armhf.deb"
+SRC_URI[deb6.sha256sum] = "2d0fcc8261e6796dd5ce074a9835fda5f720528d2038f2ec4c2fd69fb1d9b336"
+SRC_URI[deb6.md5sum] = "b6b39db334a140f05ee4d1633720e6fa"
+DEBFILENAME_libqt4-qt3support = "libqt4-qt3support_4.8.7+dfsg-18+deb10u1_armhf.deb"
+SRC_URI[deb7.sha256sum] = "b3d1a2ab43d9c27a0ad4c61c7dcf51bf0e818d7c89f3d34e8c27c195ad316b4e"
+SRC_URI[deb7.md5sum] = "ec69f94035f96e49846662a640eac6c6"
+DEBFILENAME_libqt4-script = "libqt4-script_4.8.7+dfsg-18+deb10u1_armhf.deb"
+SRC_URI[deb8.sha256sum] = "34a38d8143a71957c7b509c5338802e54dfae37be439434b3b28430fb08158d8"
+SRC_URI[deb8.md5sum] = "02ede906db5c3683449c13ef8d89295f"
+DEBFILENAME_libqt4-scripttools = "libqt4-scripttools_4.8.7+dfsg-18+deb10u1_armhf.deb"
+SRC_URI[deb9.sha256sum] = "7547de81b2ce1d8c7d672a99b95b004bab24aaa33af0f801424d804b0d3f21c9"
+SRC_URI[deb9.md5sum] = "3f0f4628b12c3bf4f3bf044d5c508996"
+DEBFILENAME_libqt4-sql = "libqt4-sql_4.8.7+dfsg-18+deb10u1_armhf.deb"
+SRC_URI[deb10.sha256sum] = "ea4717a99fb3e71d0837e53d8dfb0243e09ee57bef972f8c5ecd50f538b9c774"
+SRC_URI[deb10.md5sum] = "e7492ebc49862d3131781f643c8fddb6"
+DEBFILENAME_libqt4-svg = "libqt4-svg_4.8.7+dfsg-18+deb10u1_armhf.deb"
+SRC_URI[deb11.sha256sum] = "1184d8197c51007283b00d33f1667adb340022d162ac8048c8fe6b1f869d7740"
+SRC_URI[deb11.md5sum] = "653f3eb078474bd6dad8fdaaaccf3108"
+DEBFILENAME_libqt4-test = "libqt4-test_4.8.7+dfsg-18+deb10u1_armhf.deb"
+SRC_URI[deb12.sha256sum] = "9a7b9fe4336919a7bb8b7c6d5a1740ecc3d300ca22d53aa179537241f685d2bf"
+SRC_URI[deb12.md5sum] = "b84647b82bca7b0aab6a6a5a50c112c7"
+DEBFILENAME_libqt4-xml = "libqt4-xml_4.8.7+dfsg-18+deb10u1_armhf.deb"
+SRC_URI[deb13.sha256sum] = "e1c7a46f38652f4e956d07307b8b3bd4ce45b0d14bab2d83f97cec5b0e596c1d"
+SRC_URI[deb13.md5sum] = "0bac4cc4829c9b6dfa19ffad85f2d18c"
+DEBFILENAME_libqt4-xmlpatterns = "libqt4-xmlpatterns_4.8.7+dfsg-18+deb10u1_armhf.deb"
+SRC_URI[deb14.sha256sum] = "024eccd976a63c3e8e07e321decd908006553d1edf01d6ffb1db91bed02c714c"
+SRC_URI[deb14.md5sum] = "df57c5ad18f926a278cf6ca685d6bc0e"
+DEBFILENAME_libqtcore4 = "libqtcore4_4.8.7+dfsg-18+deb10u1_armhf.deb"
+SRC_URI[deb15.sha256sum] = "adfab44d64cbaa443bb90a9814cd93b03df55a4cd61842e86bf356a442ba816a"
+SRC_URI[deb15.md5sum] = "7617b53d01203ed5d4504111a4e206a1"
+DEBFILENAME_libqtdbus4 = "libqtdbus4_4.8.7+dfsg-18+deb10u1_armhf.deb"
+SRC_URI[deb16.sha256sum] = "cb4fb06db2d8ef7c61ffbc7beafe93ff500f3017f2b8eba288be0258a7ee4ece"
+SRC_URI[deb16.md5sum] = "c068755626a0a52d9815ca6064789f58"
+DEBFILENAME_libqtgui4 = "libqtgui4_4.8.7+dfsg-18+deb10u1_armhf.deb"
+SRC_URI[deb17.sha256sum] = "9fdf1f37cd1736217d9863181664db2496ce2e44c685464e4331bef8ff6f9c78"
+SRC_URI[deb17.md5sum] = "92caa24ecddc32305116267610578259"
+DEBFILENAME_qdbus = "qdbus_4.8.7+dfsg-18+deb10u1_armhf.deb"
+SRC_URI[deb18.sha256sum] = "231b69f3fc9ff2973abe86e1a2b714c92ca6ab4949782ec72278eb98ee3f0e05"
+SRC_URI[deb18.md5sum] = "61192651d5d41c1bdbfaf4457ef1736f"
+DEBFILENAME_qt4-linguist-tools = "qt4-linguist-tools_4.8.7+dfsg-18+deb10u1_armhf.deb"
+SRC_URI[deb19.sha256sum] = "6adef256866eb43d08189739ccb9d761d93f5c1e913f4696b9746ec3f283fd18"
+SRC_URI[deb19.md5sum] = "efba40367ecf59aa675e73f983d3dd80"
+DEBFILENAME_qt4-qmake = "qt4-qmake_4.8.7+dfsg-18+deb10u1_armhf.deb"
+SRC_URI[deb20.sha256sum] = "7374ce6696ba51a1cac2e17e331b4ae789b38f65f39c92d24dc7278e184fc618"
+SRC_URI[deb20.md5sum] = "43a2fc25dd757cef62a4bc504b67e137"
+DEBFILENAME_qtcore4-l10n = "qtcore4-l10n_4.8.7+dfsg-18+deb10u1_all.deb"
+SRC_URI[deb21.sha256sum] = "fcb6d39a4644138081a1316142829c3edb4d3a8efc7879511e05349474ac05a3"
+SRC_URI[deb21.md5sum] = "3e7900f047ea7a3fc6944e0d2e7b5ea9"
 
-RDEPENDS_libqt4-dbus = "libqtdbus4 (= 4:4.8.7+dfsg-18) qdbus (= 4:4.8.7+dfsg-18)"
-RDEPENDS_libqt4-declarative = "libc6 (>= 2.4) libgcc1 (>= 1:3.5) libqt4-network (= 4:4.8.7+dfsg-18) libqt4-script (= 4:4.8.7+dfsg-18) libqt4-sql (= 4:4.8.7+dfsg-18) libqt4-xmlpatterns (= 4:4.8.7+dfsg-18) libqtcore4 (= 4:4.8.7+dfsg-18) libqtgui4 (= 4:4.8.7+dfsg-18) libstdc++6 (>= 4.3.0)"
-RDEPENDS_libqt4-designer = "libc6 (>= 2.4) libgcc1 (>= 1:3.5) libqt4-script (= 4:4.8.7+dfsg-18) libqt4-xml (= 4:4.8.7+dfsg-18) libqtcore4 (= 4:4.8.7+dfsg-18) libqtgui4 (= 4:4.8.7+dfsg-18) libstdc++6 (>= 4.3.0)"
-RDEPENDS_libqt4-dev = "libqt4-dbus (= 4:4.8.7+dfsg-18) libqt4-declarative (= 4:4.8.7+dfsg-18) libqt4-designer (= 4:4.8.7+dfsg-18) libqt4-dev-bin (= 4:4.8.7+dfsg-18) libqt4-help (= 4:4.8.7+dfsg-18) libqt4-network (= 4:4.8.7+dfsg-18) libqt4-qt3support (= 4:4.8.7+dfsg-18) libqt4-script (= 4:4.8.7+dfsg-18) libqt4-scripttools (= 4:4.8.7+dfsg-18) libqt4-sql (= 4:4.8.7+dfsg-18) libqt4-svg (= 4:4.8.7+dfsg-18) libqt4-test (= 4:4.8.7+dfsg-18) libqt4-xml (= 4:4.8.7+dfsg-18) libqt4-xmlpatterns (= 4:4.8.7+dfsg-18) libqtcore4 (= 4:4.8.7+dfsg-18) libqtgui4 (= 4:4.8.7+dfsg-18) qt4-linguist-tools (= 4:4.8.7+dfsg-18) qt4-qmake (= 4:4.8.7+dfsg-18) qtchooser (>= 55-gc9562a1-1~)"
-RDEPENDS_libqt4-dev-bin = "libc6 (>= 2.28) libgcc1 (>= 1:3.5) libqt4-qt3support (= 4:4.8.7+dfsg-18) libqt4-xml (= 4:4.8.7+dfsg-18) libqtcore4 (= 4:4.8.7+dfsg-18) libqtdbus4 (= 4:4.8.7+dfsg-18) libqtgui4 (= 4:4.8.7+dfsg-18) libstdc++6 (>= 4.3.0) qtchooser (>= 55-gc9562a1-1~) zlib1g (>= 1:1.1.4)"
-RDEPENDS_libqt4-help = "libc6 (>= 2.4) libgcc1 (>= 1:3.5) libqt4-network (= 4:4.8.7+dfsg-18) libqt4-sql (= 4:4.8.7+dfsg-18) libqtcore4 (= 4:4.8.7+dfsg-18) libqtgui4 (= 4:4.8.7+dfsg-18) libstdc++6 (>= 4.3.0)"
-RDEPENDS_libqt4-network = "libc6 (>= 2.28) libgcc1 (>= 1:3.5) libqtcore4 (= 4:4.8.7+dfsg-18) libqtdbus4 (= 4:4.8.7+dfsg-18) libstdc++6 (>= 4.3.0) zlib1g (>= 1:1.1.4)"
-RDEPENDS_libqt4-qt3support = "libc6 (>= 2.28) libgcc1 (>= 1:3.5) libqt4-designer (= 4:4.8.7+dfsg-18) libqt4-network (= 4:4.8.7+dfsg-18) libqt4-sql (= 4:4.8.7+dfsg-18) libqt4-xml (= 4:4.8.7+dfsg-18) libqtcore4 (= 4:4.8.7+dfsg-18) libqtgui4 (= 4:4.8.7+dfsg-18) libstdc++6 (>= 4.3.0)"
-RDEPENDS_libqt4-script = "libc6 (>= 2.4) libgcc1 (>= 1:4.0) libqtcore4 (= 4:4.8.7+dfsg-18) libqtdbus4 (= 4:4.8.7+dfsg-18) libstdc++6 (>= 4.3.0)"
-RDEPENDS_libqt4-scripttools = "libc6 (>= 2.4) libgcc1 (>= 1:3.5) libqt4-script (= 4:4.8.7+dfsg-18) libqtcore4 (= 4:4.8.7+dfsg-18) libqtgui4 (= 4:4.8.7+dfsg-18) libstdc++6 (>= 4.3.0)"
-RDEPENDS_libqt4-sql = "libc6 (>= 2.4) libgcc1 (>= 1:3.5) libqtcore4 (= 4:4.8.7+dfsg-18) libstdc++6 (>= 4.3.0)"
-RDEPENDS_libqt4-svg = "libc6 (>= 2.4) libgcc1 (>= 1:3.5) libqtcore4 (= 4:4.8.7+dfsg-18) libqtgui4 (= 4:4.8.7+dfsg-18) libstdc++6 (>= 4.3.0) zlib1g (>= 1:1.1.4)"
-RDEPENDS_libqt4-test = "libc6 (>= 2.4) libgcc1 (>= 1:3.5) libqtcore4 (= 4:4.8.7+dfsg-18) libstdc++6 (>= 4.3.0)"
-RDEPENDS_libqt4-xml = "libc6 (>= 2.4) libgcc1 (>= 1:3.5) libqtcore4 (= 4:4.8.7+dfsg-18) libstdc++6 (>= 4.3.0)"
-RDEPENDS_libqt4-xmlpatterns = "libc6 (>= 2.4) libgcc1 (>= 1:3.5) libqt4-network (= 4:4.8.7+dfsg-18) libqtcore4 (= 4:4.8.7+dfsg-18) libstdc++6 (>= 4.3.0)"
+RDEPENDS_libqt4-dbus = "libqtdbus4 (= 4:4.8.7+dfsg-18+deb10u1) qdbus (= 4:4.8.7+dfsg-18+deb10u1)"
+RDEPENDS_libqt4-declarative = "libc6 (>= 2.4) libgcc1 (>= 1:3.5) libqt4-network (= 4:4.8.7+dfsg-18+deb10u1) libqt4-script (= 4:4.8.7+dfsg-18+deb10u1) libqt4-sql (= 4:4.8.7+dfsg-18+deb10u1) libqt4-xmlpatterns (= 4:4.8.7+dfsg-18+deb10u1) libqtcore4 (= 4:4.8.7+dfsg-18+deb10u1) libqtgui4 (= 4:4.8.7+dfsg-18+deb10u1) libstdc++6 (>= 4.3.0)"
+RDEPENDS_libqt4-designer = "libc6 (>= 2.4) libgcc1 (>= 1:3.5) libqt4-script (= 4:4.8.7+dfsg-18+deb10u1) libqt4-xml (= 4:4.8.7+dfsg-18+deb10u1) libqtcore4 (= 4:4.8.7+dfsg-18+deb10u1) libqtgui4 (= 4:4.8.7+dfsg-18+deb10u1) libstdc++6 (>= 4.3.0)"
+RDEPENDS_libqt4-dev = "libqt4-dbus (= 4:4.8.7+dfsg-18+deb10u1) libqt4-declarative (= 4:4.8.7+dfsg-18+deb10u1) libqt4-designer (= 4:4.8.7+dfsg-18+deb10u1) libqt4-dev-bin (= 4:4.8.7+dfsg-18+deb10u1) libqt4-help (= 4:4.8.7+dfsg-18+deb10u1) libqt4-network (= 4:4.8.7+dfsg-18+deb10u1) libqt4-qt3support (= 4:4.8.7+dfsg-18+deb10u1) libqt4-script (= 4:4.8.7+dfsg-18+deb10u1) libqt4-scripttools (= 4:4.8.7+dfsg-18+deb10u1) libqt4-sql (= 4:4.8.7+dfsg-18+deb10u1) libqt4-svg (= 4:4.8.7+dfsg-18+deb10u1) libqt4-test (= 4:4.8.7+dfsg-18+deb10u1) libqt4-xml (= 4:4.8.7+dfsg-18+deb10u1) libqt4-xmlpatterns (= 4:4.8.7+dfsg-18+deb10u1) libqtcore4 (= 4:4.8.7+dfsg-18+deb10u1) libqtgui4 (= 4:4.8.7+dfsg-18+deb10u1) qt4-linguist-tools (= 4:4.8.7+dfsg-18+deb10u1) qt4-qmake (= 4:4.8.7+dfsg-18+deb10u1) qtchooser (>= 55-gc9562a1-1~)"
+RDEPENDS_libqt4-dev-bin = "libc6 (>= 2.28) libgcc1 (>= 1:3.5) libqt4-qt3support (= 4:4.8.7+dfsg-18+deb10u1) libqt4-xml (= 4:4.8.7+dfsg-18+deb10u1) libqtcore4 (= 4:4.8.7+dfsg-18+deb10u1) libqtdbus4 (= 4:4.8.7+dfsg-18+deb10u1) libqtgui4 (= 4:4.8.7+dfsg-18+deb10u1) libstdc++6 (>= 4.3.0) qtchooser (>= 55-gc9562a1-1~) zlib1g (>= 1:1.1.4)"
+RDEPENDS_libqt4-help = "libc6 (>= 2.4) libgcc1 (>= 1:3.5) libqt4-network (= 4:4.8.7+dfsg-18+deb10u1) libqt4-sql (= 4:4.8.7+dfsg-18+deb10u1) libqtcore4 (= 4:4.8.7+dfsg-18+deb10u1) libqtgui4 (= 4:4.8.7+dfsg-18+deb10u1) libstdc++6 (>= 4.3.0)"
+RDEPENDS_libqt4-network = "libc6 (>= 2.28) libgcc1 (>= 1:3.5) libqtcore4 (= 4:4.8.7+dfsg-18+deb10u1) libqtdbus4 (= 4:4.8.7+dfsg-18+deb10u1) libstdc++6 (>= 4.3.0) zlib1g (>= 1:1.1.4)"
+RDEPENDS_libqt4-qt3support = "libc6 (>= 2.28) libgcc1 (>= 1:3.5) libqt4-designer (= 4:4.8.7+dfsg-18+deb10u1) libqt4-network (= 4:4.8.7+dfsg-18+deb10u1) libqt4-sql (= 4:4.8.7+dfsg-18+deb10u1) libqt4-xml (= 4:4.8.7+dfsg-18+deb10u1) libqtcore4 (= 4:4.8.7+dfsg-18+deb10u1) libqtgui4 (= 4:4.8.7+dfsg-18+deb10u1) libstdc++6 (>= 4.3.0)"
+RDEPENDS_libqt4-script = "libc6 (>= 2.4) libgcc1 (>= 1:4.0) libqtcore4 (= 4:4.8.7+dfsg-18+deb10u1) libqtdbus4 (= 4:4.8.7+dfsg-18+deb10u1) libstdc++6 (>= 4.3.0)"
+RDEPENDS_libqt4-scripttools = "libc6 (>= 2.4) libgcc1 (>= 1:3.5) libqt4-script (= 4:4.8.7+dfsg-18+deb10u1) libqtcore4 (= 4:4.8.7+dfsg-18+deb10u1) libqtgui4 (= 4:4.8.7+dfsg-18+deb10u1) libstdc++6 (>= 4.3.0)"
+RDEPENDS_libqt4-sql = "libc6 (>= 2.4) libgcc1 (>= 1:3.5) libqtcore4 (= 4:4.8.7+dfsg-18+deb10u1) libstdc++6 (>= 4.3.0)"
+RDEPENDS_libqt4-svg = "libc6 (>= 2.4) libgcc1 (>= 1:3.5) libqtcore4 (= 4:4.8.7+dfsg-18+deb10u1) libqtgui4 (= 4:4.8.7+dfsg-18+deb10u1) libstdc++6 (>= 4.3.0) zlib1g (>= 1:1.1.4)"
+RDEPENDS_libqt4-test = "libc6 (>= 2.4) libgcc1 (>= 1:3.5) libqtcore4 (= 4:4.8.7+dfsg-18+deb10u1) libstdc++6 (>= 4.3.0)"
+RDEPENDS_libqt4-xml = "libc6 (>= 2.4) libgcc1 (>= 1:3.5) libqtcore4 (= 4:4.8.7+dfsg-18+deb10u1) libstdc++6 (>= 4.3.0)"
+RDEPENDS_libqt4-xmlpatterns = "libc6 (>= 2.4) libgcc1 (>= 1:3.5) libqt4-network (= 4:4.8.7+dfsg-18+deb10u1) libqtcore4 (= 4:4.8.7+dfsg-18+deb10u1) libstdc++6 (>= 4.3.0)"
 RDEPENDS_libqtcore4 = "libc6 (>= 2.28) libgcc1 (>= 1:3.5) libglib2.0-0 (>= 2.22.0) libstdc++6 (>= 5.2) qtcore4-l10n zlib1g (>= 1:1.1.4)"
-RDEPENDS_libqtdbus4 = "libc6 (>= 2.28) libdbus-1-3 (>= 1.9.14) libgcc1 (>= 1:3.5) libqt4-xml (= 4:4.8.7+dfsg-18) libqtcore4 (= 4:4.8.7+dfsg-18) libstdc++6 (>= 4.3.0)"
-RDEPENDS_libqtgui4 = "fontconfig libaudio2 libc6 (>= 2.28) libfontconfig1 (>= 2.12.6) libfreetype6 (>= 2.3.5) libgcc1 (>= 1:3.5) libglib2.0-0 (>= 2.12.0) libice6 (>= 1:1.0.0) libjpeg62-turbo (>= 1.3.1) libmng1 (>= 1.0.10) libpng16-16 (>= 1.6.2-1) libqtcore4 (= 4:4.8.7+dfsg-18) libsm6 libstdc++6 (>= 4.3.0) libtiff5 (>= 4.0.3) libx11-6 libxext6 libxrender1 zlib1g (>= 1:1.1.4)"
-RDEPENDS_qdbus = "libc6 (>= 2.4) libgcc1 (>= 1:3.5) libqt4-xml (= 4:4.8.7+dfsg-18) libqtcore4 (= 4:4.8.7+dfsg-18) libqtdbus4 (= 4:4.8.7+dfsg-18) libstdc++6 (>= 4.3.0) qtchooser (>= 55-gc9562a1-1~)"
-RDEPENDS_qt4-linguist-tools = "libc6 (>= 2.28) libgcc1 (>= 1:3.5) libqt4-xml (= 4:4.8.7+dfsg-18) libqtcore4 (= 4:4.8.7+dfsg-18) libstdc++6 (>= 4.4.0) qtchooser (>= 55-gc9562a1-1~) zlib1g (>= 1:1.1.4)"
+RDEPENDS_libqtdbus4 = "libc6 (>= 2.28) libdbus-1-3 (>= 1.9.14) libgcc1 (>= 1:3.5) libqt4-xml (= 4:4.8.7+dfsg-18+deb10u1) libqtcore4 (= 4:4.8.7+dfsg-18+deb10u1) libstdc++6 (>= 4.3.0)"
+RDEPENDS_libqtgui4 = "fontconfig libaudio2 libc6 (>= 2.28) libfontconfig1 (>= 2.12.6) libfreetype6 (>= 2.3.5) libgcc1 (>= 1:3.5) libglib2.0-0 (>= 2.12.0) libice6 (>= 1:1.0.0) libjpeg62-turbo (>= 1.3.1) libmng1 (>= 1.0.10) libpng16-16 (>= 1.6.2-1) libqtcore4 (= 4:4.8.7+dfsg-18+deb10u1) libsm6 libstdc++6 (>= 4.3.0) libtiff5 (>= 4.0.3) libx11-6 libxext6 libxrender1 zlib1g (>= 1:1.1.4)"
+RDEPENDS_qdbus = "libc6 (>= 2.4) libgcc1 (>= 1:3.5) libqt4-xml (= 4:4.8.7+dfsg-18+deb10u1) libqtcore4 (= 4:4.8.7+dfsg-18+deb10u1) libqtdbus4 (= 4:4.8.7+dfsg-18+deb10u1) libstdc++6 (>= 4.3.0) qtchooser (>= 55-gc9562a1-1~)"
+RDEPENDS_qt4-linguist-tools = "libc6 (>= 2.28) libgcc1 (>= 1:3.5) libqt4-xml (= 4:4.8.7+dfsg-18+deb10u1) libqtcore4 (= 4:4.8.7+dfsg-18+deb10u1) libstdc++6 (>= 4.4.0) qtchooser (>= 55-gc9562a1-1~) zlib1g (>= 1:1.1.4)"
 RDEPENDS_qt4-qmake = "libc6 (>= 2.28) libgcc1 (>= 1:3.5) libstdc++6 (>= 5) qtchooser (>= 55-gc9562a1-1~)"
 RDEPENDS_qtcore4-l10n = ""
 DEPENDS = "fontconfig libaudio2 libc6 libdbus-1-3 libfontconfig1 libfreetype6 libgcc1 libglib2.0-0 libice6 libjpeg62-turbo libmng1 libpng16-16 libsm6 libstdc++6 libtiff5 libx11-6 libxext6 libxrender1 qtchooser zlib1g"

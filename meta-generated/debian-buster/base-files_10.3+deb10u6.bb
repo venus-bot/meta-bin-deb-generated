@@ -1,11 +1,11 @@
 PACKAGES = "${PN} base-files"
 PROVIDES = "base-files"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/b/base-files/base-files_10.3+deb10u5_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/b/base-files/base-files_10.3+deb10u6_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_base-files = "base-files_10.3+deb10u5_armhf.deb"
-SRC_URI[deb0.sha256sum] = "e0a6c8154f64d11f0a0343157b29b397a35228121ad97cb84732c6e1aa036df4"
-SRC_URI[deb0.md5sum] = "b7aaa1d818ea170381873ef8f944bd4f"
+DEBFILENAME_base-files = "base-files_10.3+deb10u6_armhf.deb"
+SRC_URI[deb0.sha256sum] = "a95366fdb94cf52dcfbabaad7bd93b989e8866aed5ff29e543a7d86115a70ad6"
+SRC_URI[deb0.md5sum] = "0af5c5efdca597e0d75e36bae61ebdc2"
 
 RDEPENDS_${PN} = "awk"
 DEPENDS = "awk"

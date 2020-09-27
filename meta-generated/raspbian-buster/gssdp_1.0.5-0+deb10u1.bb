@@ -1,23 +1,23 @@
 PACKAGES = "${PN} gir1.2-gssdp-1.0 libgssdp-1.0-3 libgssdp-1.0-dev"
 PROVIDES = "gir1.2-gssdp-1.0 libgssdp-1.0-3 libgssdp-1.0-dev"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/g/gssdp/gir1.2-gssdp-1.0_1.0.2-4_armhf.deb;unpack=0;name=deb0\
-	http://archive.raspbian.org/raspbian/pool/main/g/gssdp/libgssdp-1.0-3_1.0.2-4_armhf.deb;unpack=0;name=deb1\
-	http://archive.raspbian.org/raspbian/pool/main/g/gssdp/libgssdp-1.0-dev_1.0.2-4_armhf.deb;unpack=0;name=deb2\
+	http://archive.raspbian.org/raspbian/pool/main/g/gssdp/gir1.2-gssdp-1.0_1.0.5-0+deb10u1_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/g/gssdp/libgssdp-1.0-3_1.0.5-0+deb10u1_armhf.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/g/gssdp/libgssdp-1.0-dev_1.0.5-0+deb10u1_armhf.deb;unpack=0;name=deb2\
 "
-DEBFILENAME_gir1.2-gssdp-1.0 = "gir1.2-gssdp-1.0_1.0.2-4_armhf.deb"
-SRC_URI[deb0.sha256sum] = "f56d56f6b285df8311679d277d29e376f08d5b88cf86ff22aa569db4973ca13f"
-SRC_URI[deb0.md5sum] = "6687a06a3360971abd990bedb77213ea"
-DEBFILENAME_libgssdp-1.0-3 = "libgssdp-1.0-3_1.0.2-4_armhf.deb"
-SRC_URI[deb1.sha256sum] = "e9d0bc5dc4f7adf6708dabeed47fdaa20ff084d69354631320aece8bd1cdaf6d"
-SRC_URI[deb1.md5sum] = "d7493458380697d58e590e16bf02219e"
-DEBFILENAME_libgssdp-1.0-dev = "libgssdp-1.0-dev_1.0.2-4_armhf.deb"
-SRC_URI[deb2.sha256sum] = "f07294ed3c6997faa7a9d191192029904cf431cf242258a09978202e242539f7"
-SRC_URI[deb2.md5sum] = "f120f538625f76730d10a36c4aca5af2"
+DEBFILENAME_gir1.2-gssdp-1.0 = "gir1.2-gssdp-1.0_1.0.5-0+deb10u1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "bd036a97f23ab50694eecd2b93b66561dc02d2f2cc7dd66ed323bd2e7f34cc66"
+SRC_URI[deb0.md5sum] = "e8fcc8c5cd8318a47b0f742ce8408208"
+DEBFILENAME_libgssdp-1.0-3 = "libgssdp-1.0-3_1.0.5-0+deb10u1_armhf.deb"
+SRC_URI[deb1.sha256sum] = "17f332bc5689390636ada0027b6c1c96860dafc552140b2155ccd88e25cec7a8"
+SRC_URI[deb1.md5sum] = "f0711f803de60fdfe1327ca39154dfeb"
+DEBFILENAME_libgssdp-1.0-dev = "libgssdp-1.0-dev_1.0.5-0+deb10u1_armhf.deb"
+SRC_URI[deb2.sha256sum] = "5e56a53c3ceeb9b27389d2f931b72032056a4b1ee6e3e165965761d0a829ffa2"
+SRC_URI[deb2.md5sum] = "7d47ff1c3a72f132f766d78bf1c0af39"
 
-RDEPENDS_gir1.2-${PN}-1.0 = "gir1.2-glib-2.0 (>= 0.9.12) gir1.2-soup-2.4 (>= 2.26.1) libgssdp-1.0-3 (>= 0.14.16)"
+RDEPENDS_gir1.2-${PN}-1.0 = "gir1.2-glib-2.0 (>= 0.9.12) gir1.2-soup-2.4 (>= 2.26.1) libgssdp-1.0-3 (>= 1.0.5)"
 RDEPENDS_lib${PN}-1.0-3 = "libc6 (>= 2.7) libglib2.0-0 (>= 2.37.3) libsoup2.4-1 (>= 2.26.1)"
-RDEPENDS_lib${PN}-1.0-dev = "gir1.2-gssdp-1.0 (= 1.0.2-4) libgssdp-1.0-3 (= 1.0.2-4) libsoup2.4-dev"
+RDEPENDS_lib${PN}-1.0-dev = "gir1.2-gssdp-1.0 (= 1.0.5-0+deb10u1) libgssdp-1.0-3 (= 1.0.5-0+deb10u1) libsoup2.4-dev"
 DEPENDS = "gir1.2-glib-2.0 gir1.2-soup-2.4 libc6 libglib2.0-0 libsoup2.4-1 libsoup2.4-dev"
 
 

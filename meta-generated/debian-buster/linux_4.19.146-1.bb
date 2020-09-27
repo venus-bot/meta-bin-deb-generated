@@ -1,11 +1,11 @@
 PACKAGES = "${PN} linux-libc-dev"
 PROVIDES = "linux-libc-dev"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/l/linux/linux-libc-dev_4.19.132-1_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/l/linux/linux-libc-dev_4.19.146-1_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_linux-libc-dev = "linux-libc-dev_4.19.132-1_armhf.deb"
-SRC_URI[deb0.sha256sum] = "aed2cf7d04a9a6affeec635ae9d76a08514c9eb6545db3a9917708ee32a6caaa"
-SRC_URI[deb0.md5sum] = "9634a5b09c710b2c77a3fc16aa897102"
+DEBFILENAME_linux-libc-dev = "linux-libc-dev_4.19.146-1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "57695770bc3ea353c1c84d5f76e4b1505dffaf32dfccc5dad6e413f41d78d8fc"
+SRC_URI[deb0.md5sum] = "a88fec08a28b7ebb5be56cafc4491008"
 
 RDEPENDS_${PN}-libc-dev = ""
 
