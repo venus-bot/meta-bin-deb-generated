@@ -1,11 +1,11 @@
 PACKAGES = "${PN} libsqlite3-0"
 PROVIDES = "libsqlite3-0"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/s/sqlite3/libsqlite3-0_3.27.2-3_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/s/sqlite3/libsqlite3-0_3.27.2-3+deb10u1_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_libsqlite3-0 = "libsqlite3-0_3.27.2-3_armhf.deb"
-SRC_URI[deb0.sha256sum] = "cd7040cec8f05f06c40afea3d3e857890d9fd96ee4aecf61c8c7c0cf72d23004"
-SRC_URI[deb0.md5sum] = "d48912647d18dbdb5f59cc131251cc3a"
+DEBFILENAME_libsqlite3-0 = "libsqlite3-0_3.27.2-3+deb10u1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "f35d1f408b1ef9e6c0cbb2d5989f60f06faa07536a9b0ffd5c07f3b2be2eb301"
+SRC_URI[deb0.md5sum] = "bca275e55f961a82c637e2811d4a122a"
 
 RDEPENDS_lib${PN}-0 = "libc6 (>= 2.28)"
 DEPENDS = "libc6"

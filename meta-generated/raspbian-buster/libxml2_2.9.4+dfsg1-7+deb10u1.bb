@@ -1,18 +1,18 @@
 PACKAGES = "${PN} libxml2 libxml2-dev"
 PROVIDES = "libxml2 libxml2-dev"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-7+b3_armhf.deb;unpack=0;name=deb0\
-	http://ftp.de.debian.org/debian/pool/main/libx/libxml2/libxml2-dev_2.9.4+dfsg1-7+b3_armhf.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-7+deb10u1_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/libx/libxml2/libxml2-dev_2.9.4+dfsg1-7+deb10u1_armhf.deb;unpack=0;name=deb1\
 "
-DEBFILENAME_libxml2 = "libxml2_2.9.4+dfsg1-7+b3_armhf.deb"
-SRC_URI[deb0.sha256sum] = "8afefbe01aeb9f46977e015999e343144bc82b8e01e6611bee946ae6fc76a6cd"
-SRC_URI[deb0.md5sum] = "5f924c968d03f36754a7ff422df65dd6"
-DEBFILENAME_libxml2-dev = "libxml2-dev_2.9.4+dfsg1-7+b3_armhf.deb"
-SRC_URI[deb1.sha256sum] = "438630f0266f1af490aef01928c57e2c4f14ab306a38d4f99009d4b7a57522a2"
-SRC_URI[deb1.md5sum] = "e5b6e49b733879e235846c71213de89d"
+DEBFILENAME_libxml2 = "libxml2_2.9.4+dfsg1-7+deb10u1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "2c20be379e96b05e8fad0f2ea1a2291450d673d4539183e7f7977a4e3138f577"
+SRC_URI[deb0.md5sum] = "72e9649f556da3ffe2179f2fb2549362"
+DEBFILENAME_libxml2-dev = "libxml2-dev_2.9.4+dfsg1-7+deb10u1_armhf.deb"
+SRC_URI[deb1.sha256sum] = "e93095779b7447f6a27581e902b7ac2dcc22397dee3c2c92af7bd5e6c0f942da"
+SRC_URI[deb1.md5sum] = "6fe75fe9ef5b5bf24ad521b833b64ae0"
 
 RDEPENDS_${PN} = "libc6 (>= 2.28) libicu63 (>= 63.1-1~) liblzma5 (>= 5.1.1alpha+20120614) zlib1g (>= 1:1.2.3.3)"
-RDEPENDS_${PN}-dev = "libicu-dev libxml2 (= 2.9.4+dfsg1-7+b3)"
+RDEPENDS_${PN}-dev = "libicu-dev libxml2 (= 2.9.4+dfsg1-7+deb10u1)"
 DEPENDS = "libc6 libicu-dev libicu63 liblzma5 zlib1g"
 
 
@@ -25,7 +25,6 @@ FILES_${PN} = " \
     ./usr/share/doc/libxml2/NEWS.gz \
     ./usr/share/doc/libxml2/README \
     ./usr/share/doc/libxml2/README.Debian \
-    ./usr/share/doc/libxml2/changelog.Debian.armhf.gz \
     ./usr/share/doc/libxml2/changelog.Debian.gz \
     ./usr/share/doc/libxml2/changelog.gz \
     ./usr/share/doc/libxml2/copyright \
@@ -86,7 +85,6 @@ FILES_${PN}-dev = " \
     ./usr/lib/arm-linux-gnueabihf/xml2Conf.sh \
     ./usr/share/aclocal/libxml2.m4 \
     ./usr/share/doc/libxml2-dev/NEWS.gz \
-    ./usr/share/doc/libxml2-dev/changelog.Debian.armhf.gz \
     ./usr/share/doc/libxml2-dev/changelog.Debian.gz \
     ./usr/share/doc/libxml2-dev/changelog.gz \
     ./usr/share/doc/libxml2-dev/copyright \
