@@ -1,11 +1,11 @@
 PACKAGES = "${PN} python-lxml"
 PROVIDES = "python-lxml"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/l/lxml/python-lxml_4.3.2-1_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/l/lxml/python-lxml_4.3.2-1+deb10u1_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_python-lxml = "python-lxml_4.3.2-1_armhf.deb"
-SRC_URI[deb0.sha256sum] = "5d2ec237c0489fe99d65f24dc5aa75eb01c5a762a327588f6f863a195f258d72"
-SRC_URI[deb0.md5sum] = "92fa7798c85df061f577c66b83dc69d9"
+DEBFILENAME_python-lxml = "python-lxml_4.3.2-1+deb10u1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "d54a4732818166cbd7b7f0b45246601e0006daabc9c43dc7a579f405f86869a4"
+SRC_URI[deb0.md5sum] = "537e641057f95cefbdd0248ee1bc4749"
 
 RDEPENDS_python-${PN} = "libc6 (>= 2.4) libxml2 (>= 2.9.0) libxslt1.1 (>= 1.1.26) python (<< 2.8) python (<< 2.8) python (>= 2.7~) python (>= 2.7~) zlib1g (>= 1:1.1.4)"
 DEPENDS = "libc6 libxml2 libxslt1.1 python zlib1g"
