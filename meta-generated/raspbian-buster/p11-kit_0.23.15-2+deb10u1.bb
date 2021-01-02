@@ -1,11 +1,11 @@
 PACKAGES = "${PN} libp11-kit0"
 PROVIDES = "libp11-kit0"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/p/p11-kit/libp11-kit0_0.23.15-2_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/p/p11-kit/libp11-kit0_0.23.15-2+deb10u1_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_libp11-kit0 = "libp11-kit0_0.23.15-2_armhf.deb"
-SRC_URI[deb0.sha256sum] = "56de64f62447b20b4f24f3c1d5cf2036f0971f22e1e820e25ff16b8cf59a7490"
-SRC_URI[deb0.md5sum] = "97bb8763031cc71ab965ab7d2a8ccee5"
+DEBFILENAME_libp11-kit0 = "libp11-kit0_0.23.15-2+deb10u1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "1fe6536238d021e11ef3be2fa5b0d03de146bc863bf33d8dd82bae0336154751"
+SRC_URI[deb0.md5sum] = "41f0736bd83315a2fd901a4d2f35e094"
 
 RDEPENDS_lib${PN}0 = "libc6 (>= 2.28) libffi6 (>= 3.0.4)"
 DEPENDS = "libc6 libffi6"
