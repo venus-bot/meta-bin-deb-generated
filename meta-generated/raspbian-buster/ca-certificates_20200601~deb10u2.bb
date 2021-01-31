@@ -1,11 +1,11 @@
 PACKAGES = "${PN} ca-certificates"
 PROVIDES = "ca-certificates"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/c/ca-certificates/ca-certificates_20200601~deb10u1_all.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/c/ca-certificates/ca-certificates_20200601~deb10u2_all.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_ca-certificates = "ca-certificates_20200601~deb10u1_all.deb"
-SRC_URI[deb0.sha256sum] = "794bd3ffa0fc268dc8363f8924b2ab7cf831ab151574a6c1584790ce9945cbb2"
-SRC_URI[deb0.md5sum] = "c32645f8148926b178652275f2b13273"
+DEBFILENAME_ca-certificates = "ca-certificates_20200601~deb10u2_all.deb"
+SRC_URI[deb0.sha256sum] = "a9e267a24088c793a9cf782455fd344db5fdced714f112a8857c5bfd07179387"
+SRC_URI[deb0.md5sum] = "d2aa0ed4442fd30669dcee5210f4cf7d"
 
 RDEPENDS_${PN} = "debconf (>= 0.5) openssl (>= 1.1.1)"
 DEPENDS = "debconf openssl"
@@ -67,6 +67,11 @@ FILES_${PN} = " \
     ./usr/share/ca-certificates/mozilla/GTS_Root_R2.crt \
     ./usr/share/ca-certificates/mozilla/GTS_Root_R3.crt \
     ./usr/share/ca-certificates/mozilla/GTS_Root_R4.crt \
+    ./usr/share/ca-certificates/mozilla/GeoTrust_Global_CA.crt \
+    ./usr/share/ca-certificates/mozilla/GeoTrust_Primary_Certification_Authority.crt \
+    ./usr/share/ca-certificates/mozilla/GeoTrust_Primary_Certification_Authority_-_G2.crt \
+    ./usr/share/ca-certificates/mozilla/GeoTrust_Primary_Certification_Authority_-_G3.crt \
+    ./usr/share/ca-certificates/mozilla/GeoTrust_Universal_CA.crt \
     ./usr/share/ca-certificates/mozilla/GeoTrust_Universal_CA_2.crt \
     ./usr/share/ca-certificates/mozilla/GlobalSign_ECC_Root_CA_-_R4.crt \
     ./usr/share/ca-certificates/mozilla/GlobalSign_ECC_Root_CA_-_R5.crt \
@@ -133,6 +138,9 @@ FILES_${PN} = " \
     ./usr/share/ca-certificates/mozilla/UCA_Global_G2_Root.crt \
     ./usr/share/ca-certificates/mozilla/USERTrust_ECC_Certification_Authority.crt \
     ./usr/share/ca-certificates/mozilla/USERTrust_RSA_Certification_Authority.crt \
+    ./usr/share/ca-certificates/mozilla/VeriSign_Class_3_Public_Primary_Certification_Authority_-_G4.crt \
+    ./usr/share/ca-certificates/mozilla/VeriSign_Class_3_Public_Primary_Certification_Authority_-_G5.crt \
+    ./usr/share/ca-certificates/mozilla/VeriSign_Universal_Root_Certification_Authority.crt \
     ./usr/share/ca-certificates/mozilla/Verisign_Class_3_Public_Primary_Certification_Authority_-_G3.crt \
     ./usr/share/ca-certificates/mozilla/XRamp_Global_CA_Root.crt \
     ./usr/share/ca-certificates/mozilla/certSIGN_ROOT_CA.crt \
@@ -141,6 +149,9 @@ FILES_${PN} = " \
     ./usr/share/ca-certificates/mozilla/emSign_ECC_Root_CA_-_G3.crt \
     ./usr/share/ca-certificates/mozilla/emSign_Root_CA_-_C1.crt \
     ./usr/share/ca-certificates/mozilla/emSign_Root_CA_-_G1.crt \
+    ./usr/share/ca-certificates/mozilla/thawte_Primary_Root_CA.crt \
+    ./usr/share/ca-certificates/mozilla/thawte_Primary_Root_CA_-_G2.crt \
+    ./usr/share/ca-certificates/mozilla/thawte_Primary_Root_CA_-_G3.crt \
     ./usr/share/doc/ca-certificates/README.Debian \
     ./usr/share/doc/ca-certificates/changelog.gz \
     ./usr/share/doc/ca-certificates/copyright \
