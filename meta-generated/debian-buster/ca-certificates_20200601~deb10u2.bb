@@ -1,11 +1,11 @@
 PACKAGES = "${PN} ca-certificates"
 PROVIDES = "ca-certificates"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20190110_all.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20200601~deb10u2_all.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_ca-certificates = "ca-certificates_20190110_all.deb"
-SRC_URI[deb0.sha256sum] = "f55f88c8cc8fe014fa931fa22eae763fb12771e2b2a04a07bba5e4fdf3a3da6c"
-SRC_URI[deb0.md5sum] = "e19d56b1ec337f0841c8af944b509537"
+DEBFILENAME_ca-certificates = "ca-certificates_20200601~deb10u2_all.deb"
+SRC_URI[deb0.sha256sum] = "a9e267a24088c793a9cf782455fd344db5fdced714f112a8857c5bfd07179387"
+SRC_URI[deb0.md5sum] = "d2aa0ed4442fd30669dcee5210f4cf7d"
 
 RDEPENDS_${PN} = "debconf (>= 0.5) openssl (>= 1.1.1)"
 DEPENDS = "debconf openssl"
@@ -18,7 +18,6 @@ FILES_${PN} = " \
     ./usr/share/ca-certificates/mozilla/ACCVRAIZ1.crt \
     ./usr/share/ca-certificates/mozilla/AC_RAIZ_FNMT-RCM.crt \
     ./usr/share/ca-certificates/mozilla/Actalis_Authentication_Root_CA.crt \
-    ./usr/share/ca-certificates/mozilla/AddTrust_External_Root.crt \
     ./usr/share/ca-certificates/mozilla/AffirmTrust_Commercial.crt \
     ./usr/share/ca-certificates/mozilla/AffirmTrust_Networking.crt \
     ./usr/share/ca-certificates/mozilla/AffirmTrust_Premium.crt \
@@ -38,8 +37,7 @@ FILES_${PN} = " \
     ./usr/share/ca-certificates/mozilla/COMODO_ECC_Certification_Authority.crt \
     ./usr/share/ca-certificates/mozilla/COMODO_RSA_Certification_Authority.crt \
     ./usr/share/ca-certificates/mozilla/Certigna.crt \
-    ./usr/share/ca-certificates/mozilla/Certinomis_-_Root_CA.crt \
-    ./usr/share/ca-certificates/mozilla/Certplus_Class_2_Primary_CA.crt \
+    ./usr/share/ca-certificates/mozilla/Certigna_Root_CA.crt \
     ./usr/share/ca-certificates/mozilla/Certum_Trusted_Network_CA.crt \
     ./usr/share/ca-certificates/mozilla/Certum_Trusted_Network_CA_2.crt \
     ./usr/share/ca-certificates/mozilla/Chambers_of_Commerce_Root_-_2008.crt \
@@ -48,7 +46,6 @@ FILES_${PN} = " \
     ./usr/share/ca-certificates/mozilla/D-TRUST_Root_Class_3_CA_2_2009.crt \
     ./usr/share/ca-certificates/mozilla/D-TRUST_Root_Class_3_CA_2_EV_2009.crt \
     ./usr/share/ca-certificates/mozilla/DST_Root_CA_X3.crt \
-    ./usr/share/ca-certificates/mozilla/Deutsche_Telekom_Root_CA_2.crt \
     ./usr/share/ca-certificates/mozilla/DigiCert_Assured_ID_Root_CA.crt \
     ./usr/share/ca-certificates/mozilla/DigiCert_Assured_ID_Root_G2.crt \
     ./usr/share/ca-certificates/mozilla/DigiCert_Assured_ID_Root_G3.crt \
@@ -64,7 +61,12 @@ FILES_${PN} = " \
     ./usr/share/ca-certificates/mozilla/Entrust_Root_Certification_Authority.crt \
     ./usr/share/ca-certificates/mozilla/Entrust_Root_Certification_Authority_-_EC1.crt \
     ./usr/share/ca-certificates/mozilla/Entrust_Root_Certification_Authority_-_G2.crt \
+    ./usr/share/ca-certificates/mozilla/Entrust_Root_Certification_Authority_-_G4.crt \
     ./usr/share/ca-certificates/mozilla/GDCA_TrustAUTH_R5_ROOT.crt \
+    ./usr/share/ca-certificates/mozilla/GTS_Root_R1.crt \
+    ./usr/share/ca-certificates/mozilla/GTS_Root_R2.crt \
+    ./usr/share/ca-certificates/mozilla/GTS_Root_R3.crt \
+    ./usr/share/ca-certificates/mozilla/GTS_Root_R4.crt \
     ./usr/share/ca-certificates/mozilla/GeoTrust_Global_CA.crt \
     ./usr/share/ca-certificates/mozilla/GeoTrust_Primary_Certification_Authority.crt \
     ./usr/share/ca-certificates/mozilla/GeoTrust_Primary_Certification_Authority_-_G2.crt \
@@ -84,6 +86,7 @@ FILES_${PN} = " \
     ./usr/share/ca-certificates/mozilla/Hellenic_Academic_and_Research_Institutions_RootCA_2011.crt \
     ./usr/share/ca-certificates/mozilla/Hellenic_Academic_and_Research_Institutions_RootCA_2015.crt \
     ./usr/share/ca-certificates/mozilla/Hongkong_Post_Root_CA_1.crt \
+    ./usr/share/ca-certificates/mozilla/Hongkong_Post_Root_CA_3.crt \
     ./usr/share/ca-certificates/mozilla/ISRG_Root_X1.crt \
     ./usr/share/ca-certificates/mozilla/IdenTrust_Commercial_Root_CA_1.crt \
     ./usr/share/ca-certificates/mozilla/IdenTrust_Public_Sector_Root_CA_1.crt \
@@ -131,6 +134,8 @@ FILES_${PN} = " \
     ./usr/share/ca-certificates/mozilla/TrustCor_RootCert_CA-1.crt \
     ./usr/share/ca-certificates/mozilla/TrustCor_RootCert_CA-2.crt \
     ./usr/share/ca-certificates/mozilla/Trustis_FPS_Root_CA.crt \
+    ./usr/share/ca-certificates/mozilla/UCA_Extended_Validation_Root.crt \
+    ./usr/share/ca-certificates/mozilla/UCA_Global_G2_Root.crt \
     ./usr/share/ca-certificates/mozilla/USERTrust_ECC_Certification_Authority.crt \
     ./usr/share/ca-certificates/mozilla/USERTrust_RSA_Certification_Authority.crt \
     ./usr/share/ca-certificates/mozilla/VeriSign_Class_3_Public_Primary_Certification_Authority_-_G4.crt \
@@ -140,6 +145,10 @@ FILES_${PN} = " \
     ./usr/share/ca-certificates/mozilla/XRamp_Global_CA_Root.crt \
     ./usr/share/ca-certificates/mozilla/certSIGN_ROOT_CA.crt \
     ./usr/share/ca-certificates/mozilla/ePKI_Root_Certification_Authority.crt \
+    ./usr/share/ca-certificates/mozilla/emSign_ECC_Root_CA_-_C3.crt \
+    ./usr/share/ca-certificates/mozilla/emSign_ECC_Root_CA_-_G3.crt \
+    ./usr/share/ca-certificates/mozilla/emSign_Root_CA_-_C1.crt \
+    ./usr/share/ca-certificates/mozilla/emSign_Root_CA_-_G1.crt \
     ./usr/share/ca-certificates/mozilla/thawte_Primary_Root_CA.crt \
     ./usr/share/ca-certificates/mozilla/thawte_Primary_Root_CA_-_G2.crt \
     ./usr/share/ca-certificates/mozilla/thawte_Primary_Root_CA_-_G3.crt \
