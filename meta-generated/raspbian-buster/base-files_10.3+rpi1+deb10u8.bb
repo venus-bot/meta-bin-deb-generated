@@ -1,11 +1,11 @@
 PACKAGES = "${PN} base-files"
 PROVIDES = "base-files"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/b/base-files/base-files_10.3+rpi1+deb10u7_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/b/base-files/base-files_10.3+rpi1+deb10u8_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_base-files = "base-files_10.3+rpi1+deb10u7_armhf.deb"
-SRC_URI[deb0.sha256sum] = "4dfa72aa8835c2d346652960aeec87cfe558a4d255eb990c2a4f0e9c35065c2d"
-SRC_URI[deb0.md5sum] = "a098fc20a40c90a948c8fac6403130f1"
+DEBFILENAME_base-files = "base-files_10.3+rpi1+deb10u8_armhf.deb"
+SRC_URI[deb0.sha256sum] = "26f7edea885ee7091716c5354dac164d05b8cb33344f9e809c63a54219a8c78c"
+SRC_URI[deb0.md5sum] = "be086702540f3ea0002353a5c2a2df95"
 
 RDEPENDS_${PN} = "awk"
 DEPENDS = "awk"
