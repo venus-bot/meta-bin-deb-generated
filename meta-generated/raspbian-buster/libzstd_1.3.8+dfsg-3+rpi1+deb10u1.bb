@@ -1,11 +1,11 @@
 PACKAGES = "${PN} libzstd1"
 PROVIDES = "libzstd1"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/libz/libzstd/libzstd1_1.3.8+dfsg-3+rpi1_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/libz/libzstd/libzstd1_1.3.8+dfsg-3+rpi1+deb10u1_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_libzstd1 = "libzstd1_1.3.8+dfsg-3+rpi1_armhf.deb"
-SRC_URI[deb0.sha256sum] = "250e609240c682a90b85f2d90024acc63bd0b3f586699929246c1a5d4ba0458c"
-SRC_URI[deb0.md5sum] = "e7b0af3af434ad7ee87ce63d5dea3036"
+DEBFILENAME_libzstd1 = "libzstd1_1.3.8+dfsg-3+rpi1+deb10u1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "110cd98b76279accf02b5359a117da87d2c7490619dcb8ecf82bb322e11c0fe1"
+SRC_URI[deb0.md5sum] = "f850173c088759f53d92a9285aaaec91"
 
 RDEPENDS_${PN}1 = "libc6 (>= 2.4)"
 DEPENDS = "libc6"
