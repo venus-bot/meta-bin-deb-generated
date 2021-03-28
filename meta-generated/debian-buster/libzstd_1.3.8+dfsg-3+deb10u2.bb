@@ -1,11 +1,11 @@
 PACKAGES = "${PN} libzstd1"
 PROVIDES = "libzstd1"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/libz/libzstd/libzstd1_1.3.8+dfsg-3_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/libz/libzstd/libzstd1_1.3.8+dfsg-3+deb10u2_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_libzstd1 = "libzstd1_1.3.8+dfsg-3_armhf.deb"
-SRC_URI[deb0.sha256sum] = "0d67cba006a2b1e8def28ec30a7f31ff3505b3b65297091f6eca69ac3bbb7cb4"
-SRC_URI[deb0.md5sum] = "bdc4c35b357073dc392d8ceae8a0ccf5"
+DEBFILENAME_libzstd1 = "libzstd1_1.3.8+dfsg-3+deb10u2_armhf.deb"
+SRC_URI[deb0.sha256sum] = "e3acbac5f15b54f0d3ff99323c84c48a13476c76b3bd3aa297d331c9721b6fcd"
+SRC_URI[deb0.md5sum] = "98ae62a83070dec7bf6934e5f73dd252"
 
 RDEPENDS_${PN}1 = "libc6 (>= 2.4)"
 DEPENDS = "libc6"
