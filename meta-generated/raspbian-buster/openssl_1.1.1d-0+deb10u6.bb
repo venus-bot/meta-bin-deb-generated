@@ -1,15 +1,15 @@
 PACKAGES = "${PN} libssl1.1 openssl"
 PROVIDES = "libssl1.1 openssl"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/o/openssl/libssl1.1_1.1.1d-0+deb10u5_armhf.deb;unpack=0;name=deb0\
-	http://archive.raspbian.org/raspbian/pool/main/o/openssl/openssl_1.1.1d-0+deb10u5_armhf.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/o/openssl/libssl1.1_1.1.1d-0+deb10u6_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/o/openssl/openssl_1.1.1d-0+deb10u6_armhf.deb;unpack=0;name=deb1\
 "
-DEBFILENAME_libssl1.1 = "libssl1.1_1.1.1d-0+deb10u5_armhf.deb"
-SRC_URI[deb0.sha256sum] = "68d3e92ab4792365f5e3cc44270daea4e3e52d32674635f82ba5d6ca81603aff"
-SRC_URI[deb0.md5sum] = "309bc2e4ff6de1340bd1e6fbaac56ca1"
-DEBFILENAME_openssl = "openssl_1.1.1d-0+deb10u5_armhf.deb"
-SRC_URI[deb1.sha256sum] = "9dff3300666266138fb6804035119b332a50219aadda41dd2d49a586d4b9f7c2"
-SRC_URI[deb1.md5sum] = "bf53223f12b04e6499c2e101a96fd212"
+DEBFILENAME_libssl1.1 = "libssl1.1_1.1.1d-0+deb10u6_armhf.deb"
+SRC_URI[deb0.sha256sum] = "a55b518586522461500fe10b675df1d0bff83ff7f9acf5a8573fd5d417d5d7a8"
+SRC_URI[deb0.md5sum] = "de1cb32c29fd83d8bd963399e49b030d"
+DEBFILENAME_openssl = "openssl_1.1.1d-0+deb10u6_armhf.deb"
+SRC_URI[deb1.sha256sum] = "9f4d3a2e22e0668feaaa10fefcf3bcb4e1b30e8b2f2196253332ad1d8dcdb60f"
+SRC_URI[deb1.md5sum] = "c80ecd84166e07bbd23bff47747bcaf1"
 
 RDEPENDS_libssl1.1 = "debconf (>= 0.5) libc6 (>= 2.28)"
 RDEPENDS_${PN} = "libc6 (>= 2.15) libssl1.1 (>= 1.1.1)"

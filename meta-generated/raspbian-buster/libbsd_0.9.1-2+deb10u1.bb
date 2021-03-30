@@ -1,11 +1,11 @@
 PACKAGES = "${PN} libbsd0"
 PROVIDES = "libbsd0"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/libb/libbsd/libbsd0_0.9.1-2_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/libb/libbsd/libbsd0_0.9.1-2+deb10u1_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_libbsd0 = "libbsd0_0.9.1-2_armhf.deb"
-SRC_URI[deb0.sha256sum] = "49164a38e2aa95b45e154dafa9974765554bad662c6ee865244a1b115d568b94"
-SRC_URI[deb0.md5sum] = "9bb3be6da5751aea8d7a84504c08e28e"
+DEBFILENAME_libbsd0 = "libbsd0_0.9.1-2+deb10u1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "074aadec15e61f6bd3f2848f3d393b3f8e0d0b2de75202e9f2e53e3d5a0c2a0d"
+SRC_URI[deb0.md5sum] = "0a53e24f2ad120d42129372d2180ed90"
 
 RDEPENDS_${PN}0 = "libc6 (>= 2.25)"
 DEPENDS = "libc6"
