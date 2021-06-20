@@ -1,11 +1,11 @@
 PACKAGES = "${PN} python-lxml"
 PROVIDES = "python-lxml"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/l/lxml/python-lxml_4.3.2-1+deb10u2_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/l/lxml/python-lxml_4.3.2-1+deb10u3_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_python-lxml = "python-lxml_4.3.2-1+deb10u2_armhf.deb"
-SRC_URI[deb0.sha256sum] = "3a71355c16735ab1e441c82d9454f97aafddf3ebc6b22399d439e8b5b9b607bf"
-SRC_URI[deb0.md5sum] = "ba580b5fdca6494c18d17aafaff35f81"
+DEBFILENAME_python-lxml = "python-lxml_4.3.2-1+deb10u3_armhf.deb"
+SRC_URI[deb0.sha256sum] = "dc9deed03cd2ed8e916a855c99c2230753c716067b9f055c583c3b2a63616d8b"
+SRC_URI[deb0.md5sum] = "bb90676f5815a58128ab93ef3957794b"
 
 RDEPENDS_python-${PN} = "libc6 (>= 2.4) libxml2 (>= 2.9.0) libxslt1.1 (>= 1.1.26) python (<< 2.8) python (<< 2.8) python (>= 2.7~) python (>= 2.7~) zlib1g (>= 1:1.1.4)"
 DEPENDS = "libc6 libxml2 libxslt1.1 python zlib1g"

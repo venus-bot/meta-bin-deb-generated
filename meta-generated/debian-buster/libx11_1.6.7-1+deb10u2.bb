@@ -1,23 +1,23 @@
 PACKAGES = "${PN} libx11-6 libx11-data libx11-dev"
 PROVIDES = "libx11-6 libx11-data libx11-dev"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/libx/libx11/libx11-6_1.6.7-1+deb10u1_armhf.deb;unpack=0;name=deb0\
-	http://ftp.de.debian.org/debian/pool/main/libx/libx11/libx11-data_1.6.7-1+deb10u1_all.deb;unpack=0;name=deb1\
-	http://ftp.de.debian.org/debian/pool/main/libx/libx11/libx11-dev_1.6.7-1+deb10u1_armhf.deb;unpack=0;name=deb2\
+	http://ftp.de.debian.org/debian/pool/main/libx/libx11/libx11-6_1.6.7-1+deb10u2_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/libx/libx11/libx11-data_1.6.7-1+deb10u2_all.deb;unpack=0;name=deb1\
+	http://ftp.de.debian.org/debian/pool/main/libx/libx11/libx11-dev_1.6.7-1+deb10u2_armhf.deb;unpack=0;name=deb2\
 "
-DEBFILENAME_libx11-6 = "libx11-6_1.6.7-1+deb10u1_armhf.deb"
-SRC_URI[deb0.sha256sum] = "b3f92d1287553f4faccf37fe37dbe4f4454000668e56c29867cfe88776d1bdb0"
-SRC_URI[deb0.md5sum] = "ebf3fbd065ec63b68e0679f488236766"
-DEBFILENAME_libx11-data = "libx11-data_1.6.7-1+deb10u1_all.deb"
-SRC_URI[deb1.sha256sum] = "02f795889390fa0e1f29c6ecdd4a30cd0aae39c0c6b1379410055404b0897c66"
-SRC_URI[deb1.md5sum] = "69d2d71341cfa8346ae9df085e3f408e"
-DEBFILENAME_libx11-dev = "libx11-dev_1.6.7-1+deb10u1_armhf.deb"
-SRC_URI[deb2.sha256sum] = "3baf1cd0ee98d817eba6f5e84f6d7f845dac54ae538add8c38cb2e231bd953d2"
-SRC_URI[deb2.md5sum] = "237cc39f30e2837d9ed43050cd4af8fd"
+DEBFILENAME_libx11-6 = "libx11-6_1.6.7-1+deb10u2_armhf.deb"
+SRC_URI[deb0.sha256sum] = "c8a5c3106c95ed3d7e099f8d1d8f0d0563bfdb33ad9c42cb95370d08130b2556"
+SRC_URI[deb0.md5sum] = "c0245c3fbee8bde19b53005989278dcd"
+DEBFILENAME_libx11-data = "libx11-data_1.6.7-1+deb10u2_all.deb"
+SRC_URI[deb1.sha256sum] = "2c7473b87466a8eae640e44d80282a2c7474374858031fb1a1d499426b13dd75"
+SRC_URI[deb1.md5sum] = "ab30f9b6548126d8eab301ceb8f33560"
+DEBFILENAME_libx11-dev = "libx11-dev_1.6.7-1+deb10u2_armhf.deb"
+SRC_URI[deb2.sha256sum] = "9a5bec1a23202c384f7319fe7497c883537b37c0c2bfa63348e62286c6cf3d3b"
+SRC_URI[deb2.md5sum] = "8644c6be2ad72b8245268989c4d2593e"
 
 RDEPENDS_${PN}-6 = "libc6 (>= 2.28) libx11-data libxcb1 (>= 1.11.1)"
 RDEPENDS_${PN}-data = ""
-RDEPENDS_${PN}-dev = "libx11-6 (= 2:1.6.7-1+deb10u1) libxau-dev (>= 1:1.0.0-1) libxcb1-dev libxdmcp-dev (>= 1:1.0.0-1) x11proto-core-dev (>= 7.0.17) x11proto-input-dev x11proto-kb-dev xtrans-dev"
+RDEPENDS_${PN}-dev = "libx11-6 (= 2:1.6.7-1+deb10u2) libxau-dev (>= 1:1.0.0-1) libxcb1-dev libxdmcp-dev (>= 1:1.0.0-1) x11proto-core-dev (>= 7.0.17) x11proto-input-dev x11proto-kb-dev xtrans-dev"
 DEPENDS = "libc6 libxau-dev libxcb1 libxcb1-dev libxdmcp-dev x11proto-core-dev x11proto-input-dev x11proto-kb-dev xtrans-dev"
 
 
@@ -224,6 +224,7 @@ FILES_libx11-data = " \
     ./usr/share/X11/locale/zh_TW/Compose \
     ./usr/share/X11/locale/zh_TW/XI18N_OBJS \
     ./usr/share/X11/locale/zh_TW/XLC_LOCALE \
+    ./usr/share/doc/libx11-data/NEWS.gz \
     ./usr/share/doc/libx11-data/changelog.Debian.gz \
     ./usr/share/doc/libx11-data/changelog.gz \
     ./usr/share/doc/libx11-data/copyright \
