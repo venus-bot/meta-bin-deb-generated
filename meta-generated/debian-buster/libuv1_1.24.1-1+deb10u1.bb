@@ -1,11 +1,11 @@
 PACKAGES = "${PN} libuv1"
 PROVIDES = "libuv1"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/libu/libuv1/libuv1_1.24.1-1_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/libu/libuv1/libuv1_1.24.1-1+deb10u1_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_libuv1 = "libuv1_1.24.1-1_armhf.deb"
-SRC_URI[deb0.sha256sum] = "fa8fb939627665ebdace965c2220520e0f11f5e3ea72d8a3d2e9149e2fcfba32"
-SRC_URI[deb0.md5sum] = "cf801810b79cc273a2177d7eca23a1cf"
+DEBFILENAME_libuv1 = "libuv1_1.24.1-1+deb10u1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "01fc3d62b8216eb0a416d924746c6eb15138cb8d5e57c8c10c8deac6a501aa6b"
+SRC_URI[deb0.md5sum] = "d9100d33353ae7ea30763282cee76fcc"
 
 RDEPENDS_${PN} = "libc6 (>= 2.28)"
 DEPENDS = "libc6"
