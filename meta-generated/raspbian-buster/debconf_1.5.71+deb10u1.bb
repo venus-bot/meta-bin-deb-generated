@@ -1,11 +1,11 @@
 PACKAGES = "${PN} debconf"
 PROVIDES = "debconf"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/d/debconf/debconf_1.5.71_all.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/d/debconf/debconf_1.5.71+deb10u1_all.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_debconf = "debconf_1.5.71_all.deb"
-SRC_URI[deb0.sha256sum] = "27a3138139b8cce80a814db942688413d94c8f538651a9944d616962a8f71fae"
-SRC_URI[deb0.md5sum] = "5cc335d8a183e694809678ef06bdaa2d"
+DEBFILENAME_debconf = "debconf_1.5.71+deb10u1_all.deb"
+SRC_URI[deb0.sha256sum] = "768387e57225fdc33ac24e94da8437303e0d52730a22bf38e4bbfa88ef5b6024"
+SRC_URI[deb0.md5sum] = "61b2c3724a99ca490942e1da2c1aee9f"
 
 RDEPENDS_${PN} = "perl-base (>= 5.20.1-3~)"
 DEPENDS = "perl-base"
