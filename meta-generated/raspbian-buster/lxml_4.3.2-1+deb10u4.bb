@@ -1,15 +1,15 @@
 PACKAGES = "${PN} python-lxml python3-lxml"
 PROVIDES = "python-lxml python3-lxml"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/l/lxml/python-lxml_4.3.2-1+deb10u3_armhf.deb;unpack=0;name=deb0\
-	http://archive.raspbian.org/raspbian/pool/main/l/lxml/python3-lxml_4.3.2-1+deb10u3_armhf.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/l/lxml/python-lxml_4.3.2-1+deb10u4_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/l/lxml/python3-lxml_4.3.2-1+deb10u4_armhf.deb;unpack=0;name=deb1\
 "
-DEBFILENAME_python-lxml = "python-lxml_4.3.2-1+deb10u3_armhf.deb"
-SRC_URI[deb0.sha256sum] = "0ef6ac771c8b044d9ac263d751d2af4ee500e1f538bf652275f36314f3f500bb"
-SRC_URI[deb0.md5sum] = "57c5a54999f746956908b0816e0b1d62"
-DEBFILENAME_python3-lxml = "python3-lxml_4.3.2-1+deb10u3_armhf.deb"
-SRC_URI[deb1.sha256sum] = "afe6244519f090920a0e50176f09437566476247d71a4f34c035098d4cfaaa4e"
-SRC_URI[deb1.md5sum] = "f75502cfa84f684d6171dd48e4af7f3c"
+DEBFILENAME_python-lxml = "python-lxml_4.3.2-1+deb10u4_armhf.deb"
+SRC_URI[deb0.sha256sum] = "7a5324e80fad16189bdca8264119b8db80f0dd17d2555c9e8dc61d877c67fd10"
+SRC_URI[deb0.md5sum] = "3d9690d1251e3169c296d4d7a32d2e06"
+DEBFILENAME_python3-lxml = "python3-lxml_4.3.2-1+deb10u4_armhf.deb"
+SRC_URI[deb1.sha256sum] = "9bc2d3afc78196d63bb3bc67b537ffb6a11d32986a06a7c405b5909e563ccb55"
+SRC_URI[deb1.md5sum] = "4929220c0ffd3964b29d2edcbd58185e"
 
 RDEPENDS_python-${PN} = "libc6 (>= 2.4) libxml2 (>= 2.9.0) libxslt1.1 (>= 1.1.26) python (<< 2.8) python (<< 2.8) python (>= 2.7~) python (>= 2.7~) zlib1g (>= 1:1.1.4)"
 RDEPENDS_python3-${PN} = "libc6 (>= 2.4) libxml2 (>= 2.9.0) libxslt1.1 (>= 1.1.26) python3 python3 (<< 3.8) python3 (>= 3.7~) zlib1g (>= 1:1.1.4)"
