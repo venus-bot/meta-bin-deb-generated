@@ -1,24 +1,24 @@
 PACKAGES = "${PN} icu-devtools libicu-dev libicu63"
 PROVIDES = "icu-devtools libicu-dev libicu63"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/i/icu/icu-devtools_63.1-6+deb10u1_armhf.deb;unpack=0;name=deb0\
-	http://ftp.de.debian.org/debian/pool/main/i/icu/libicu-dev_63.1-6+deb10u1_armhf.deb;unpack=0;name=deb1\
-	http://ftp.de.debian.org/debian/pool/main/i/icu/libicu63_63.1-6+deb10u1_armhf.deb;unpack=0;name=deb2\
+	http://archive.raspbian.org/raspbian/pool/main/i/icu/icu-devtools_63.1-6+deb10u3_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/i/icu/libicu-dev_63.1-6+deb10u3_armhf.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/i/icu/libicu63_63.1-6+deb10u3_armhf.deb;unpack=0;name=deb2\
 "
-DEBFILENAME_icu-devtools = "icu-devtools_63.1-6+deb10u1_armhf.deb"
-SRC_URI[deb0.sha256sum] = "83417ad7be9c5a7f42114f4d686da267d33006a86cfe5038cebcdf760290e3ec"
-SRC_URI[deb0.md5sum] = "432601d13da679aa4a046242d7d1f780"
-DEBFILENAME_libicu-dev = "libicu-dev_63.1-6+deb10u1_armhf.deb"
-SRC_URI[deb1.sha256sum] = "6e4a429ac702803320b028890bd53852dbcc3954e920867f39968e757aabbfc9"
-SRC_URI[deb1.md5sum] = "994127ee88372d6b0448011ea82ff655"
-DEBFILENAME_libicu63 = "libicu63_63.1-6+deb10u1_armhf.deb"
-SRC_URI[deb2.sha256sum] = "11babf87a0d1565d9cd597020758b2e55a350bf02b1ce5bc08f24edfca00ebe0"
-SRC_URI[deb2.md5sum] = "ac6ebadff2098d66c0927ebe3c58ddcf"
+DEBFILENAME_icu-devtools = "icu-devtools_63.1-6+deb10u3_armhf.deb"
+SRC_URI[deb0.sha256sum] = "24b19326c3918336a7b560fca8136c19ad02dcd9bc7db9eeaa15274186295f2d"
+SRC_URI[deb0.md5sum] = "19040748c51d84acb2c755f77fc221fe"
+DEBFILENAME_libicu-dev = "libicu-dev_63.1-6+deb10u3_armhf.deb"
+SRC_URI[deb1.sha256sum] = "ad965d1966332f3df19a160859ab0089298d7b6c0a991e1b4be8802fe97e24f2"
+SRC_URI[deb1.md5sum] = "45e8b72c11d55caad119f6d1fc898012"
+DEBFILENAME_libicu63 = "libicu63_63.1-6+deb10u3_armhf.deb"
+SRC_URI[deb2.sha256sum] = "3df6599f13811039d215761f949505e21b98a2b04eba03c6b305c87f69ebd118"
+SRC_URI[deb2.md5sum] = "59dc3db7d307600eab8e32e2dfa4ebcc"
 
-RDEPENDS_${PN}-devtools = "libc6 (>= 2.4) libgcc1 (>= 1:3.5) libicu63 (>= 63.1-1~) libstdc++6 (>= 5.2)"
-RDEPENDS_lib${PN}-dev = "icu-devtools (>= 63.1-6+deb10u1) libc6-dev libicu63 (= 63.1-6+deb10u1)"
+RDEPENDS_${PN}-devtools = "libc6 (>= 2.4) libgcc1 (>= 1:3.5) libicu63 (>= 63.1-1~) libstdc++6 (>= 5.2) pkg-config"
+RDEPENDS_lib${PN}-dev = "icu-devtools (>= 63.1-6+deb10u3) libc6-dev libicu63 (= 63.1-6+deb10u3)"
 RDEPENDS_lib${PN}63 = "libc6 (>= 2.7) libgcc1 (>= 1:3.5) libstdc++6 (>= 5.2)"
-DEPENDS = "libc6 libc6-dev libgcc1 libstdc++6"
+DEPENDS = "libc6 libc6-dev libgcc1 libstdc++6 pkg-config"
 
 
 inherit deb_group

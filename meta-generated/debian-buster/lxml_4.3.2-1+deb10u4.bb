@@ -1,15 +1,15 @@
 PACKAGES = "${PN} python-lxml python3-lxml"
 PROVIDES = "python-lxml python3-lxml"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/l/lxml/python-lxml_4.3.2-1+deb10u3_armhf.deb;unpack=0;name=deb0\
-	http://ftp.de.debian.org/debian/pool/main/l/lxml/python3-lxml_4.3.2-1+deb10u3_armhf.deb;unpack=0;name=deb1\
+	http://ftp.de.debian.org/debian/pool/main/l/lxml/python-lxml_4.3.2-1+deb10u4_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/l/lxml/python3-lxml_4.3.2-1+deb10u4_armhf.deb;unpack=0;name=deb1\
 "
-DEBFILENAME_python-lxml = "python-lxml_4.3.2-1+deb10u3_armhf.deb"
-SRC_URI[deb0.sha256sum] = "dc9deed03cd2ed8e916a855c99c2230753c716067b9f055c583c3b2a63616d8b"
-SRC_URI[deb0.md5sum] = "bb90676f5815a58128ab93ef3957794b"
-DEBFILENAME_python3-lxml = "python3-lxml_4.3.2-1+deb10u3_armhf.deb"
-SRC_URI[deb1.sha256sum] = "0c4d3fc6e2e535ad4cee9c32d967be25943dab54ba99138b57ecb6c141e3c8b4"
-SRC_URI[deb1.md5sum] = "8818396c2da7fa1bc515a395588944af"
+DEBFILENAME_python-lxml = "python-lxml_4.3.2-1+deb10u4_armhf.deb"
+SRC_URI[deb0.sha256sum] = "5d8332b6fea61d6a28dc7a2e717c5d80739285ba9020fabf169d1734c792a5fc"
+SRC_URI[deb0.md5sum] = "e29ef5b8a1190b246e44ad3bfbe12d16"
+DEBFILENAME_python3-lxml = "python3-lxml_4.3.2-1+deb10u4_armhf.deb"
+SRC_URI[deb1.sha256sum] = "c3c3aab2bdacbaaa389bcf8dcafc79a34f1a4f7f861748dd93a1d0f2aab8d224"
+SRC_URI[deb1.md5sum] = "18cc6c71e98ffeaf6a64c3d3dd4a1d6f"
 
 RDEPENDS_python-${PN} = "libc6 (>= 2.4) libxml2 (>= 2.9.0) libxslt1.1 (>= 1.1.26) python (<< 2.8) python (<< 2.8) python (>= 2.7~) python (>= 2.7~) zlib1g (>= 1:1.1.4)"
 RDEPENDS_python3-${PN} = "libc6 (>= 2.4) libxml2 (>= 2.9.0) libxslt1.1 (>= 1.1.26) python3 python3 (<< 3.8) python3 (>= 3.7~) zlib1g (>= 1:1.1.4)"

@@ -1,23 +1,23 @@
 PACKAGES = "${PN} libc-dev-bin libc6 libc6-dev"
 PROVIDES = "libc-dev-bin libc6 libc6-dev"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/g/glibc/libc-dev-bin_2.28-10_armhf.deb;unpack=0;name=deb0\
-	http://ftp.de.debian.org/debian/pool/main/g/glibc/libc6_2.28-10_armhf.deb;unpack=0;name=deb1\
-	http://ftp.de.debian.org/debian/pool/main/g/glibc/libc6-dev_2.28-10_armhf.deb;unpack=0;name=deb2\
+	http://ftp.de.debian.org/debian/pool/main/g/glibc/libc-dev-bin_2.28-10+deb10u1_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/g/glibc/libc6_2.28-10+deb10u1_armhf.deb;unpack=0;name=deb1\
+	http://ftp.de.debian.org/debian/pool/main/g/glibc/libc6-dev_2.28-10+deb10u1_armhf.deb;unpack=0;name=deb2\
 "
-DEBFILENAME_libc-dev-bin = "libc-dev-bin_2.28-10_armhf.deb"
-SRC_URI[deb0.sha256sum] = "dda073328c3ddc326675793213d0e2cc00dcc22c7ca54cc5f10d6c9dcc30e865"
-SRC_URI[deb0.md5sum] = "322d5d5c931e8c4320f379a762b86d1f"
-DEBFILENAME_libc6 = "libc6_2.28-10_armhf.deb"
-SRC_URI[deb1.sha256sum] = "53808a0c23b22a7b110a67c203b6d163b97045b8a440e30369ea33bcd452346d"
-SRC_URI[deb1.md5sum] = "62542d1f2dc0bfd4e033c2cd4a4c5406"
-DEBFILENAME_libc6-dev = "libc6-dev_2.28-10_armhf.deb"
-SRC_URI[deb2.sha256sum] = "f9973b026a6ab3f12fe6626af32305e01c09840dca75d5a0602e0115666093b0"
-SRC_URI[deb2.md5sum] = "069aadbf34c2df774140f56b6e912f9d"
+DEBFILENAME_libc-dev-bin = "libc-dev-bin_2.28-10+deb10u1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "8ea30b4b756ac7fc6d2a41ddc45ce254a4eefcb22e18ad3c15fca1c8c66c557f"
+SRC_URI[deb0.md5sum] = "e99ccd9cf445a28cbc380b08dcb9f1ae"
+DEBFILENAME_libc6 = "libc6_2.28-10+deb10u1_armhf.deb"
+SRC_URI[deb1.sha256sum] = "c10a2ee12efdb773c1c626ed318f0d74108fce0aa11d66350b1c23ddbc8d5711"
+SRC_URI[deb1.md5sum] = "216b9dfc2e67d860c60111dcb4b53d07"
+DEBFILENAME_libc6-dev = "libc6-dev_2.28-10+deb10u1_armhf.deb"
+SRC_URI[deb2.sha256sum] = "1fa45a3bfd60b4c27751ab8d4be159984a035560127866648c8708c237b75fec"
+SRC_URI[deb2.md5sum] = "1fb4591d1426d75caf43fe888d787ceb"
 
 RDEPENDS_libc-dev-bin = "libc6 (<< 2.29) libc6 (>> 2.28)"
 RDEPENDS_libc6 = ""
-RDEPENDS_libc6-dev = "libc-dev-bin (= 2.28-10) libc6 (= 2.28-10) linux-libc-dev"
+RDEPENDS_libc6-dev = "libc-dev-bin (= 2.28-10+deb10u1) libc6 (= 2.28-10+deb10u1) linux-libc-dev"
 DEPENDS = " linux-libc-dev"
 
 

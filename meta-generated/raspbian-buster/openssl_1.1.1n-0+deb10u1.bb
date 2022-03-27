@@ -1,15 +1,15 @@
 PACKAGES = "${PN} libssl1.1 openssl"
 PROVIDES = "libssl1.1 openssl"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/o/openssl/libssl1.1_1.1.1d-0+deb10u8_armhf.deb;unpack=0;name=deb0\
-	http://archive.raspbian.org/raspbian/pool/main/o/openssl/openssl_1.1.1d-0+deb10u8_armhf.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/o/openssl/libssl1.1_1.1.1n-0+deb10u1_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/o/openssl/openssl_1.1.1n-0+deb10u1_armhf.deb;unpack=0;name=deb1\
 "
-DEBFILENAME_libssl1.1 = "libssl1.1_1.1.1d-0+deb10u8_armhf.deb"
-SRC_URI[deb0.sha256sum] = "4d721b3e601a9b75bdbd01829ba313fa4dc4d2fcf9db5287ee4393ed612083f2"
-SRC_URI[deb0.md5sum] = "4614826bff01deaaf6389bd3ab9393c0"
-DEBFILENAME_openssl = "openssl_1.1.1d-0+deb10u8_armhf.deb"
-SRC_URI[deb1.sha256sum] = "cddddc1978e233b3102f2f3be95989a591943d673cc126287a7f1d79fa256efb"
-SRC_URI[deb1.md5sum] = "b4e48a2d809b5eb2eee945259f00703f"
+DEBFILENAME_libssl1.1 = "libssl1.1_1.1.1n-0+deb10u1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "bc9c5ff96012a7d69e60e846aae7c25b6dc2d1e59fbefe1894775cfd9b509cef"
+SRC_URI[deb0.md5sum] = "7d49de6af9892ab179c3973439516000"
+DEBFILENAME_openssl = "openssl_1.1.1n-0+deb10u1_armhf.deb"
+SRC_URI[deb1.sha256sum] = "a2a2148683ae7ab0c44c3a19e58ac482aef21561b5dc2de9bb8c0446917e11ba"
+SRC_URI[deb1.md5sum] = "3be3da4558075bf2ee7e73544c58f485"
 
 RDEPENDS_libssl1.1 = "debconf (>= 0.5) libc6 (>= 2.28)"
 RDEPENDS_${PN} = "libc6 (>= 2.15) libssl1.1 (>= 1.1.1)"
@@ -42,7 +42,6 @@ FILES_${PN} = " \
     ./usr/share/doc/openssl/FAQ \
     ./usr/share/doc/openssl/HOWTO/certificates.txt.gz \
     ./usr/share/doc/openssl/HOWTO/keys.txt \
-    ./usr/share/doc/openssl/HOWTO/proxy_certificates.txt.gz \
     ./usr/share/doc/openssl/NEWS.Debian.gz \
     ./usr/share/doc/openssl/NEWS.gz \
     ./usr/share/doc/openssl/README \
@@ -172,6 +171,7 @@ FILES_${PN} = " \
     ./usr/share/man/man7/ossl_store-file.7ssl.gz \
     ./usr/share/man/man7/ossl_store.7ssl.gz \
     ./usr/share/man/man7/passphrase-encoding.7ssl.gz \
+    ./usr/share/man/man7/proxy-certificates.7ssl.gz \
     ./usr/share/man/man7/scrypt.7ssl.gz \
     ./usr/share/man/man7/ssl.7ssl.gz \
     ./usr/share/man/man7/x509.7ssl.gz\
