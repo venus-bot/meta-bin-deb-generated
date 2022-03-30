@@ -1,27 +1,27 @@
 PACKAGES = "${PN} libc-dev-bin libc6 libc6-dev multiarch-support"
 PROVIDES = "libc-dev-bin libc6 libc6-dev multiarch-support"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/g/glibc/libc-dev-bin_2.28-10+rpi1_armhf.deb;unpack=0;name=deb0\
-	http://archive.raspbian.org/raspbian/pool/main/g/glibc/libc6_2.28-10+rpi1_armhf.deb;unpack=0;name=deb1\
-	http://archive.raspbian.org/raspbian/pool/main/g/glibc/libc6-dev_2.28-10+rpi1_armhf.deb;unpack=0;name=deb2\
-	http://archive.raspbian.org/raspbian/pool/main/g/glibc/multiarch-support_2.28-10+rpi1_armhf.deb;unpack=0;name=deb3\
+	http://archive.raspbian.org/raspbian/pool/main/g/glibc/libc-dev-bin_2.28-10+rpi1+deb10u1_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/g/glibc/libc6_2.28-10+rpi1+deb10u1_armhf.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/g/glibc/libc6-dev_2.28-10+rpi1+deb10u1_armhf.deb;unpack=0;name=deb2\
+	http://archive.raspbian.org/raspbian/pool/main/g/glibc/multiarch-support_2.28-10+rpi1+deb10u1_armhf.deb;unpack=0;name=deb3\
 "
-DEBFILENAME_libc-dev-bin = "libc-dev-bin_2.28-10+rpi1_armhf.deb"
-SRC_URI[deb0.sha256sum] = "5a2e2cfef81b66506fe0c582a9083fd3c0a54e2c162db02a3d7f25dd57def0d8"
-SRC_URI[deb0.md5sum] = "c8f02364404b752c8150b41157299b40"
-DEBFILENAME_libc6 = "libc6_2.28-10+rpi1_armhf.deb"
-SRC_URI[deb1.sha256sum] = "dfa96d6a157a4e39380f56fbeac758d0d19bdbf2db4f400e983a132ed79805c5"
-SRC_URI[deb1.md5sum] = "59a5fa9f61e51eaabc28a9ee9a55d720"
-DEBFILENAME_libc6-dev = "libc6-dev_2.28-10+rpi1_armhf.deb"
-SRC_URI[deb2.sha256sum] = "dbb46d458bf0665d6caeae487f6c62210a754625cc1ebad9efc26d79544ae062"
-SRC_URI[deb2.md5sum] = "f8cb4b9bfc83aa92710c1dadcc20e7c6"
-DEBFILENAME_multiarch-support = "multiarch-support_2.28-10+rpi1_armhf.deb"
-SRC_URI[deb3.sha256sum] = "f322ddda60acb6d026fa94e4378e912fbe5e5adb828bb3659b1a6c5e6465f00c"
-SRC_URI[deb3.md5sum] = "9159feff494b9fe200960ecb047a875b"
+DEBFILENAME_libc-dev-bin = "libc-dev-bin_2.28-10+rpi1+deb10u1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "9ff8e82f5c72886cd9121ecf85765edd48c97e3bddba036a74ef09a4270d4f80"
+SRC_URI[deb0.md5sum] = "c1600572c5f21edc92d1ed4d07849a03"
+DEBFILENAME_libc6 = "libc6_2.28-10+rpi1+deb10u1_armhf.deb"
+SRC_URI[deb1.sha256sum] = "2036d530c0cc5d4c8d4a3f0403ee47c0b3b49363d9571e16e8ceb5340e12885b"
+SRC_URI[deb1.md5sum] = "6e721f0abbf7c57a07097cd88f5cc029"
+DEBFILENAME_libc6-dev = "libc6-dev_2.28-10+rpi1+deb10u1_armhf.deb"
+SRC_URI[deb2.sha256sum] = "3cdefb48c1de9ecfb7295778f6bea8dc9e47a66f1964981bf9a0df4f6d297f6d"
+SRC_URI[deb2.md5sum] = "3d776844220500d0e93eb1ab94c4254e"
+DEBFILENAME_multiarch-support = "multiarch-support_2.28-10+rpi1+deb10u1_armhf.deb"
+SRC_URI[deb3.sha256sum] = "ec7e437b5b0c2eb0517eec56df2acdb6f8cf1d59b55ac170fe2c2541ad9c1bd6"
+SRC_URI[deb3.md5sum] = "7b7266ac5508039a1378729fd1cd1daf"
 
 RDEPENDS_libc-dev-bin = "libc6 (<< 2.29) libc6 (>> 2.28)"
 RDEPENDS_libc6 = ""
-RDEPENDS_libc6-dev = "libc-dev-bin (= 2.28-10+rpi1) libc6 (= 2.28-10+rpi1) linux-libc-dev"
+RDEPENDS_libc6-dev = "libc-dev-bin (= 2.28-10+rpi1+deb10u1) libc6 (= 2.28-10+rpi1+deb10u1) linux-libc-dev"
 RDEPENDS_multiarch-support = "libc6 (>= 2.13-5)"
 DEPENDS = " linux-libc-dev"
 
