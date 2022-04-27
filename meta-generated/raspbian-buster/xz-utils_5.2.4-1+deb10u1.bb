@@ -1,11 +1,11 @@
 PACKAGES = "${PN} liblzma5"
 PROVIDES = "liblzma5"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/x/xz-utils/liblzma5_5.2.4-1_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/x/xz-utils/liblzma5_5.2.4-1+deb10u1_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_liblzma5 = "liblzma5_5.2.4-1_armhf.deb"
-SRC_URI[deb0.sha256sum] = "825babb4ce905472493d6f26a5ec6dfa055447f3a9f4b3418cec9e0d56681f03"
-SRC_URI[deb0.md5sum] = "a73f36b2df4cd0d52218da574295c44a"
+DEBFILENAME_liblzma5 = "liblzma5_5.2.4-1+deb10u1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "4224e2b97e530308a85211fc07a8a0629569f23e8c24bf8d01cb30eea8364419"
+SRC_URI[deb0.md5sum] = "7568a281ae32674334077278f50d0113"
 
 RDEPENDS_liblzma5 = "libc6 (>= 2.17)"
 DEPENDS = "libc6"
