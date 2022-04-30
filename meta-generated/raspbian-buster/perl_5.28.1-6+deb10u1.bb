@@ -1,26 +1,26 @@
 PACKAGES = "${PN} libperl5.28 perl perl-base perl-modules-5.28"
 PROVIDES = "libperl5.28 perl perl-base perl-modules-5.28"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/p/perl/libperl5.28_5.28.1-6_armhf.deb;unpack=0;name=deb0\
-	http://archive.raspbian.org/raspbian/pool/main/p/perl/perl_5.28.1-6_armhf.deb;unpack=0;name=deb1\
-	http://archive.raspbian.org/raspbian/pool/main/p/perl/perl-base_5.28.1-6_armhf.deb;unpack=0;name=deb2\
-	http://archive.raspbian.org/raspbian/pool/main/p/perl/perl-modules-5.28_5.28.1-6_all.deb;unpack=0;name=deb3\
+	http://archive.raspbian.org/raspbian/pool/main/p/perl/libperl5.28_5.28.1-6+deb10u1_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/p/perl/perl_5.28.1-6+deb10u1_armhf.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/p/perl/perl-base_5.28.1-6+deb10u1_armhf.deb;unpack=0;name=deb2\
+	http://archive.raspbian.org/raspbian/pool/main/p/perl/perl-modules-5.28_5.28.1-6+deb10u1_all.deb;unpack=0;name=deb3\
 "
-DEBFILENAME_libperl5.28 = "libperl5.28_5.28.1-6_armhf.deb"
-SRC_URI[deb0.sha256sum] = "6af53b2e95bb47dfb9c27bdbfceb57b904e570242ec5921ab752c9dae982b15e"
-SRC_URI[deb0.md5sum] = "fe513b6a7013e44f677900e94f7fabee"
-DEBFILENAME_perl = "perl_5.28.1-6_armhf.deb"
-SRC_URI[deb1.sha256sum] = "464d3c3c46d40e18ebb233106d83a1855931b01b02bd761e72217b161e87ec48"
-SRC_URI[deb1.md5sum] = "d9cead8d584c24f8d7b07f2cad7f4576"
-DEBFILENAME_perl-base = "perl-base_5.28.1-6_armhf.deb"
-SRC_URI[deb2.sha256sum] = "bd40319f8d6c0c86c557f81a4fe7ae86ce4660173d66446a0244ff09884dcd0d"
-SRC_URI[deb2.md5sum] = "9a73f440cbe10624f88bcaba686eb39a"
-DEBFILENAME_perl-modules-5.28 = "perl-modules-5.28_5.28.1-6_all.deb"
-SRC_URI[deb3.sha256sum] = "578764a9d163c9718158374b7bb24b012b4567cec4c74119a4e4c752d6cd6de9"
-SRC_URI[deb3.md5sum] = "cf2e9d8b365771fd46834746fbc6c3e3"
+DEBFILENAME_libperl5.28 = "libperl5.28_5.28.1-6+deb10u1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "a302503aa9096153c133a24a273cfc4208a9fd2b570efc0f6635debe04e7773b"
+SRC_URI[deb0.md5sum] = "c2ac646eee28f06b0a007527fdaae3c9"
+DEBFILENAME_perl = "perl_5.28.1-6+deb10u1_armhf.deb"
+SRC_URI[deb1.sha256sum] = "fc610bd3769318580110b7c1a056214d47dbfccbfc82381a8563638c90f0e9a1"
+SRC_URI[deb1.md5sum] = "a0fc6b7b09aba15acc845dd74a92c19e"
+DEBFILENAME_perl-base = "perl-base_5.28.1-6+deb10u1_armhf.deb"
+SRC_URI[deb2.sha256sum] = "0329254285de2eb4695e9396652a5129a89687409c8faa6d29ab5107a7245873"
+SRC_URI[deb2.md5sum] = "be4e794a12ac937b3120fb5ced102a20"
+DEBFILENAME_perl-modules-5.28 = "perl-modules-5.28_5.28.1-6+deb10u1_all.deb"
+SRC_URI[deb3.sha256sum] = "61c00b6f4c7a242aa6aefdc07012747607cd9c6c5392c1dcd087ce27031dd1dd"
+SRC_URI[deb3.md5sum] = "949d474003add0721114ccffab808819"
 
-RDEPENDS_lib${PN}5.28 = "libbz2-1.0 libc6 (>= 2.28) libdb5.3 libgdbm-compat4 (>= 1.18-3) libgdbm6 (>= 1.18-3) perl-modules-5.28 (>= 5.28.1-6) zlib1g (>= 1:1.2.2.3)"
-RDEPENDS_${PN} = "dpkg (>= 1.17.17) libperl5.28 (= 5.28.1-6) perl-base (= 5.28.1-6) perl-modules-5.28 (>= 5.28.1-6)"
+RDEPENDS_lib${PN}5.28 = "libbz2-1.0 libc6 (>= 2.28) libdb5.3 libgdbm-compat4 (>= 1.18-3) libgdbm6 (>= 1.18-3) perl-modules-5.28 (>= 5.28.1-6+deb10u1) zlib1g (>= 1:1.2.2.3)"
+RDEPENDS_${PN} = "dpkg (>= 1.17.17) libperl5.28 (= 5.28.1-6+deb10u1) perl-base (= 5.28.1-6+deb10u1) perl-modules-5.28 (>= 5.28.1-6+deb10u1)"
 RDEPENDS_${PN}-base = "dpkg (>= 1.17.17) libc6 (>= 2.28)"
 RDEPENDS_${PN}-modules-5.28 = "dpkg (>= 1.17.17) perl-base (>= 5.28.1-1)"
 DEPENDS = "dpkg libbz2-1.0 libc6 libdb5.3 libgdbm-compat4 libgdbm6 zlib1g"
