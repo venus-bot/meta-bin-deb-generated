@@ -1,18 +1,18 @@
 PACKAGES = "${PN} libxml2 libxml2-dev"
 PROVIDES = "libxml2 libxml2-dev"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-7+deb10u3_armhf.deb;unpack=0;name=deb0\
-	http://archive.raspbian.org/raspbian/pool/main/libx/libxml2/libxml2-dev_2.9.4+dfsg1-7+deb10u3_armhf.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-7+deb10u4_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/libx/libxml2/libxml2-dev_2.9.4+dfsg1-7+deb10u4_armhf.deb;unpack=0;name=deb1\
 "
-DEBFILENAME_libxml2 = "libxml2_2.9.4+dfsg1-7+deb10u3_armhf.deb"
-SRC_URI[deb0.sha256sum] = "3270674b7b23074b0a1f0f63277d75a6d792e11549de9c1f8e625400e4e12ac5"
-SRC_URI[deb0.md5sum] = "2755aa826e284a5554dc5d032a94b452"
-DEBFILENAME_libxml2-dev = "libxml2-dev_2.9.4+dfsg1-7+deb10u3_armhf.deb"
-SRC_URI[deb1.sha256sum] = "4b359334a4198343eaa0df0dd3f9183c6a1d47c071949d25c7255474db567484"
-SRC_URI[deb1.md5sum] = "8e09f47a07527826db298e70f90e8fee"
+DEBFILENAME_libxml2 = "libxml2_2.9.4+dfsg1-7+deb10u4_armhf.deb"
+SRC_URI[deb0.sha256sum] = "5295ce614ab93218d2ced542068d6785f17195cb4b94fedeb90f1b35b2f9c31e"
+SRC_URI[deb0.md5sum] = "ee48082101291a0d49d3bbfc03b3881c"
+DEBFILENAME_libxml2-dev = "libxml2-dev_2.9.4+dfsg1-7+deb10u4_armhf.deb"
+SRC_URI[deb1.sha256sum] = "c884f9869d533b68c474b6e59d69c9afeaa0a7f4b0fbeeccb006a80ec311836e"
+SRC_URI[deb1.md5sum] = "748f1ef0a8f8ba3c4a78584c56fdc14f"
 
 RDEPENDS_${PN} = "libc6 (>= 2.28) libicu63 (>= 63.1-1~) liblzma5 (>= 5.1.1alpha+20120614) zlib1g (>= 1:1.2.3.3)"
-RDEPENDS_${PN}-dev = "libicu-dev libxml2 (= 2.9.4+dfsg1-7+deb10u3)"
+RDEPENDS_${PN}-dev = "libicu-dev libxml2 (= 2.9.4+dfsg1-7+deb10u4)"
 DEPENDS = "libc6 libicu-dev libicu63 liblzma5 zlib1g"
 
 
