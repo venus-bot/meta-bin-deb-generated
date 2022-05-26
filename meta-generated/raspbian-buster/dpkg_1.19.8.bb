@@ -1,15 +1,15 @@
 PACKAGES = "${PN} dpkg libdpkg-perl"
 PROVIDES = "dpkg libdpkg-perl"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/d/dpkg/dpkg_1.19.7_armhf.deb;unpack=0;name=deb0\
-	http://archive.raspbian.org/raspbian/pool/main/d/dpkg/libdpkg-perl_1.19.7_all.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/d/dpkg/dpkg_1.19.8_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/d/dpkg/libdpkg-perl_1.19.8_all.deb;unpack=0;name=deb1\
 "
-DEBFILENAME_dpkg = "dpkg_1.19.7_armhf.deb"
-SRC_URI[deb0.sha256sum] = "14489814bf4c6f14b092f751a5612e8771bdc65a2cb4e73f59744de75d1ee1b0"
-SRC_URI[deb0.md5sum] = "20d25158464f483084211b1422f30689"
-DEBFILENAME_libdpkg-perl = "libdpkg-perl_1.19.7_all.deb"
-SRC_URI[deb1.sha256sum] = "1cb272a8168138e9b8334e87cc26388259f232b74667b3a7f3856f227adcc4ba"
-SRC_URI[deb1.md5sum] = "a48ac7ead97ef1bf1979bf904031463d"
+DEBFILENAME_dpkg = "dpkg_1.19.8_armhf.deb"
+SRC_URI[deb0.sha256sum] = "a2bbdb4e0a209e875abf13b54571524a2239d0626613601ee0619ffdd145e745"
+SRC_URI[deb0.md5sum] = "d89c4d02b41b17e88c613fa955c31c81"
+DEBFILENAME_libdpkg-perl = "libdpkg-perl_1.19.8_all.deb"
+SRC_URI[deb1.sha256sum] = "b445d9aa60b06e5424e17653091684b2928e828bdad2743dd85240f1824c4a8b"
+SRC_URI[deb1.md5sum] = "14dab87b11fe393640519d4fc7bd16f3"
 
 RDEPENDS_${PN} = "libbz2-1.0 libc6 (>= 2.28) liblzma5 (>= 5.2.2) libselinux1 (>= 2.3) tar (>= 1.28-1) zlib1g (>= 1:1.1.4)"
 RDEPENDS_lib${PN}-perl = "dpkg (>= 1.18.11) perl"
