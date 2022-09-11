@@ -1,15 +1,15 @@
 PACKAGES = "${PN} dpkg libdpkg-perl"
 PROVIDES = "dpkg libdpkg-perl"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/d/dpkg/dpkg_1.19.7_armhf.deb;unpack=0;name=deb0\
-	http://ftp.de.debian.org/debian/pool/main/d/dpkg/libdpkg-perl_1.19.7_all.deb;unpack=0;name=deb1\
+	http://ftp.de.debian.org/debian/pool/main/d/dpkg/dpkg_1.19.8_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/d/dpkg/libdpkg-perl_1.19.8_all.deb;unpack=0;name=deb1\
 "
-DEBFILENAME_dpkg = "dpkg_1.19.7_armhf.deb"
-SRC_URI[deb0.sha256sum] = "275e2938c26fb863c28ce7d346c4e79d4b58995d20ed09e79201d7a2374ff994"
-SRC_URI[deb0.md5sum] = "6863b2f7a75bdc3b23a2af38b7f383d1"
-DEBFILENAME_libdpkg-perl = "libdpkg-perl_1.19.7_all.deb"
-SRC_URI[deb1.sha256sum] = "1cb272a8168138e9b8334e87cc26388259f232b74667b3a7f3856f227adcc4ba"
-SRC_URI[deb1.md5sum] = "a48ac7ead97ef1bf1979bf904031463d"
+DEBFILENAME_dpkg = "dpkg_1.19.8_armhf.deb"
+SRC_URI[deb0.sha256sum] = "fda38c0081289e44869fce4d09e1008d4d55aead121aed66e58d21905bd346ed"
+SRC_URI[deb0.md5sum] = "636e5d10007e610557587ce202a082f1"
+DEBFILENAME_libdpkg-perl = "libdpkg-perl_1.19.8_all.deb"
+SRC_URI[deb1.sha256sum] = "b445d9aa60b06e5424e17653091684b2928e828bdad2743dd85240f1824c4a8b"
+SRC_URI[deb1.md5sum] = "14dab87b11fe393640519d4fc7bd16f3"
 
 RDEPENDS_${PN} = "libbz2-1.0 libc6 (>= 2.28) liblzma5 (>= 5.2.2) libselinux1 (>= 2.3) tar (>= 1.28-1) zlib1g (>= 1:1.1.4)"
 RDEPENDS_lib${PN}-perl = "dpkg (>= 1.18.11) perl"

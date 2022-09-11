@@ -1,15 +1,15 @@
 PACKAGES = "${PN} libssl1.1 openssl"
 PROVIDES = "libssl1.1 openssl"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/o/openssl/libssl1.1_1.1.1n-0+deb10u1_armhf.deb;unpack=0;name=deb0\
-	http://ftp.de.debian.org/debian/pool/main/o/openssl/openssl_1.1.1n-0+deb10u1_armhf.deb;unpack=0;name=deb1\
+	http://ftp.de.debian.org/debian/pool/main/o/openssl/libssl1.1_1.1.1n-0+deb10u3_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/o/openssl/openssl_1.1.1n-0+deb10u3_armhf.deb;unpack=0;name=deb1\
 "
-DEBFILENAME_libssl1.1 = "libssl1.1_1.1.1n-0+deb10u1_armhf.deb"
-SRC_URI[deb0.sha256sum] = "b58cd35591a3cbce0b493d903ae9f12f8f354ffd62c0c22b40fc562d00cf9083"
-SRC_URI[deb0.md5sum] = "8dac3ccac186cde8bec6108bd8e2c348"
-DEBFILENAME_openssl = "openssl_1.1.1n-0+deb10u1_armhf.deb"
-SRC_URI[deb1.sha256sum] = "25d3ad02de794d64301d09d4ba1e4270c4402a3eb9e4ed7d8be0157596609a55"
-SRC_URI[deb1.md5sum] = "4b1697557be7e00ed29b9e48b71d910b"
+DEBFILENAME_libssl1.1 = "libssl1.1_1.1.1n-0+deb10u3_armhf.deb"
+SRC_URI[deb0.sha256sum] = "f24b7c099c32b4a84ba4a3955b8f61637aca4fd7e30d848858776ec128d9ffac"
+SRC_URI[deb0.md5sum] = "7787114734bd5aaf07eca3a9b71b2c2e"
+DEBFILENAME_openssl = "openssl_1.1.1n-0+deb10u3_armhf.deb"
+SRC_URI[deb1.sha256sum] = "9f17422231a02f6906811e4ef235962a5d99e2a56eec91b64a43e10ea0bf870e"
+SRC_URI[deb1.md5sum] = "85966bc0a815e5fed3c4ea69236c076e"
 
 RDEPENDS_libssl1.1 = "debconf (>= 0.5) libc6 (>= 2.28)"
 RDEPENDS_${PN} = "libc6 (>= 2.15) libssl1.1 (>= 1.1.1)"

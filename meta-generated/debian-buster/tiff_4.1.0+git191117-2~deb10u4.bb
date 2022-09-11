@@ -1,11 +1,11 @@
 PACKAGES = "${PN} libtiff5"
 PROVIDES = "libtiff5"
 SRC_URI = " \
-	http://ftp.de.debian.org/debian/pool/main/t/tiff/libtiff5_4.1.0+git191117-2~deb10u3_armhf.deb;unpack=0;name=deb0\
+	http://ftp.de.debian.org/debian/pool/main/t/tiff/libtiff5_4.1.0+git191117-2~deb10u4_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_libtiff5 = "libtiff5_4.1.0+git191117-2~deb10u3_armhf.deb"
-SRC_URI[deb0.sha256sum] = "713223b22fc0efd0c1fff6d091966f8fb587836d05e3a1b11f5ccd719be9a992"
-SRC_URI[deb0.md5sum] = "3a33f6d3adf0daa35a948fd643188148"
+DEBFILENAME_libtiff5 = "libtiff5_4.1.0+git191117-2~deb10u4_armhf.deb"
+SRC_URI[deb0.sha256sum] = "f1de48164523849ae7c4f03e6d91c510a14768acc6512d39bf802d1e650d16df"
+SRC_URI[deb0.md5sum] = "9fc97a4675871475276d6203416be12c"
 
 RDEPENDS_lib${PN}5 = "libc6 (>= 2.11) libjbig0 (>= 2.0) libjpeg62-turbo (>= 1.3.1) liblzma5 (>= 5.1.1alpha+20120614) libwebp6 (>= 0.5.1) libzstd1 (>= 1.3.2) zlib1g (>= 1:1.1.4)"
 DEPENDS = "libc6 libjbig0 libjpeg62-turbo liblzma5 libwebp6 libzstd1 zlib1g"
