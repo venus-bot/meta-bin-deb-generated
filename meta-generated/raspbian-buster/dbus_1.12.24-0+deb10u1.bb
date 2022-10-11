@@ -1,23 +1,23 @@
 PACKAGES = "${PN} dbus libdbus-1-3 libdbus-1-dev"
 PROVIDES = "dbus libdbus-1-3 libdbus-1-dev"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/d/dbus/dbus_1.12.20-0+deb10u1_armhf.deb;unpack=0;name=deb0\
-	http://archive.raspbian.org/raspbian/pool/main/d/dbus/libdbus-1-3_1.12.20-0+deb10u1_armhf.deb;unpack=0;name=deb1\
-	http://archive.raspbian.org/raspbian/pool/main/d/dbus/libdbus-1-dev_1.12.20-0+deb10u1_armhf.deb;unpack=0;name=deb2\
+	http://archive.raspbian.org/raspbian/pool/main/d/dbus/dbus_1.12.24-0+deb10u1_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/d/dbus/libdbus-1-3_1.12.24-0+deb10u1_armhf.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/d/dbus/libdbus-1-dev_1.12.24-0+deb10u1_armhf.deb;unpack=0;name=deb2\
 "
-DEBFILENAME_dbus = "dbus_1.12.20-0+deb10u1_armhf.deb"
-SRC_URI[deb0.sha256sum] = "02ac0f0d5752f610fb5a3780a9553bb4fd9bb2e7c4a2b18a009e040c1fc84e21"
-SRC_URI[deb0.md5sum] = "949bf2be04492553ab99e9a0a8f9c132"
-DEBFILENAME_libdbus-1-3 = "libdbus-1-3_1.12.20-0+deb10u1_armhf.deb"
-SRC_URI[deb1.sha256sum] = "a68dec0d2d9370962629b375a029ef481b0e74b8cd4a5c97e625924fe5996f5c"
-SRC_URI[deb1.md5sum] = "d3fc59193874c2a332e7f0b2b63660cf"
-DEBFILENAME_libdbus-1-dev = "libdbus-1-dev_1.12.20-0+deb10u1_armhf.deb"
-SRC_URI[deb2.sha256sum] = "8f62f6f8073346fc85beb51a13154eb7e5c93333660e7c63999757e0af04da3d"
-SRC_URI[deb2.md5sum] = "3924e0e6f2ab3cf1316a15e1cab87b98"
+DEBFILENAME_dbus = "dbus_1.12.24-0+deb10u1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "b435c76d44d834390826d532bb04202ffa2236d9e407dc78aa3fe73e021c782f"
+SRC_URI[deb0.md5sum] = "a9163cb05dcd06b730a97199832f1751"
+DEBFILENAME_libdbus-1-3 = "libdbus-1-3_1.12.24-0+deb10u1_armhf.deb"
+SRC_URI[deb1.sha256sum] = "104e213524732f5d0a86d72e68e78c0f04aeb2e19033ec716591b9d516d5e9de"
+SRC_URI[deb1.md5sum] = "931dbe79724e485ddc2d67c73a70b7b3"
+DEBFILENAME_libdbus-1-dev = "libdbus-1-dev_1.12.24-0+deb10u1_armhf.deb"
+SRC_URI[deb2.sha256sum] = "121ac7901aa0708eb4240c7b20f9f9a597b4f528c24d528780e7de7884243fe5"
+SRC_URI[deb2.md5sum] = "4f0882b04b7b9d0d14fcc9241668a2e9"
 
-RDEPENDS_${PN} = "adduser libapparmor1 (>= 2.8.94) libaudit1 (>= 1:2.2.1) libc6 (>= 2.28) libcap-ng0 (>= 0.7.9) libdbus-1-3 (= 1.12.20-0+deb10u1) libexpat1 (>= 2.1~beta3) libselinux1 (>= 2.0.65) libsystemd0"
+RDEPENDS_${PN} = "adduser libapparmor1 (>= 2.8.94) libaudit1 (>= 1:2.2.1) libc6 (>= 2.28) libcap-ng0 (>= 0.7.9) libdbus-1-3 (= 1.12.24-0+deb10u1) libexpat1 (>= 2.1~beta3) libselinux1 (>= 2.0.65) libsystemd0"
 RDEPENDS_lib${PN}-1-3 = "libc6 (>= 2.28) libsystemd0"
-RDEPENDS_lib${PN}-1-dev = "libdbus-1-3 (= 1.12.20-0+deb10u1) pkg-config"
+RDEPENDS_lib${PN}-1-dev = "libdbus-1-3 (= 1.12.24-0+deb10u1) pkg-config"
 DEPENDS = "adduser libapparmor1 libaudit1 libc6 libcap-ng0 libexpat1 libselinux1 libsystemd0 pkg-config"
 
 
@@ -61,7 +61,7 @@ FILES_${PN} = " \
 "
 FILES_libdbus-1-3 = " \
     ./lib/arm-linux-gnueabihf/libdbus-1.so.3 \
-    ./lib/arm-linux-gnueabihf/libdbus-1.so.3.19.13 \
+    ./lib/arm-linux-gnueabihf/libdbus-1.so.3.19.15 \
     ./usr/share/doc/libdbus-1-3/AUTHORS.gz \
     ./usr/share/doc/libdbus-1-3/NEWS.gz \
     ./usr/share/doc/libdbus-1-3/README.gz \
