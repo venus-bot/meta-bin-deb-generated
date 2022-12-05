@@ -1,27 +1,27 @@
 PACKAGES = "${PN} libgssapi-krb5-2 libk5crypto3 libkrb5-3 libkrb5support0"
 PROVIDES = "libgssapi-krb5-2 libk5crypto3 libkrb5-3 libkrb5support0"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/k/krb5/libgssapi-krb5-2_1.17-3+deb10u4_armhf.deb;unpack=0;name=deb0\
-	http://archive.raspbian.org/raspbian/pool/main/k/krb5/libk5crypto3_1.17-3+deb10u4_armhf.deb;unpack=0;name=deb1\
-	http://archive.raspbian.org/raspbian/pool/main/k/krb5/libkrb5-3_1.17-3+deb10u4_armhf.deb;unpack=0;name=deb2\
-	http://archive.raspbian.org/raspbian/pool/main/k/krb5/libkrb5support0_1.17-3+deb10u4_armhf.deb;unpack=0;name=deb3\
+	http://archive.raspbian.org/raspbian/pool/main/k/krb5/libgssapi-krb5-2_1.17-3+deb10u5_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/k/krb5/libk5crypto3_1.17-3+deb10u5_armhf.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/k/krb5/libkrb5-3_1.17-3+deb10u5_armhf.deb;unpack=0;name=deb2\
+	http://archive.raspbian.org/raspbian/pool/main/k/krb5/libkrb5support0_1.17-3+deb10u5_armhf.deb;unpack=0;name=deb3\
 "
-DEBFILENAME_libgssapi-krb5-2 = "libgssapi-krb5-2_1.17-3+deb10u4_armhf.deb"
-SRC_URI[deb0.sha256sum] = "224b0578c766253f5b9c20666ffa7a22373d3a4661bcf11d8454c2c467a97ae1"
-SRC_URI[deb0.md5sum] = "57171d9f6d5b19bac02bb95075e12331"
-DEBFILENAME_libk5crypto3 = "libk5crypto3_1.17-3+deb10u4_armhf.deb"
-SRC_URI[deb1.sha256sum] = "45393116a2764288141199570401a68d8c123925c67d144065aa8b36d9618f07"
-SRC_URI[deb1.md5sum] = "de40c31c422799f33b3340daad55643b"
-DEBFILENAME_libkrb5-3 = "libkrb5-3_1.17-3+deb10u4_armhf.deb"
-SRC_URI[deb2.sha256sum] = "a4ea3e29ee4bd991366f92672780570b301c934f51da8d776881e31569e2fbd4"
-SRC_URI[deb2.md5sum] = "79db6f655d36990837118780f4aec59a"
-DEBFILENAME_libkrb5support0 = "libkrb5support0_1.17-3+deb10u4_armhf.deb"
-SRC_URI[deb3.sha256sum] = "b3d63cb1e1377b4307fe7393b0f3f6af47b63f4081309a841ad5f6c100c1310c"
-SRC_URI[deb3.md5sum] = "b34d3f8d61cab4acf288f9f9f3936df6"
+DEBFILENAME_libgssapi-krb5-2 = "libgssapi-krb5-2_1.17-3+deb10u5_armhf.deb"
+SRC_URI[deb0.sha256sum] = "e0153f15b3a4d26621bf61c9d30b04515cd594358d3fd462cb3a2a147f2a6ce6"
+SRC_URI[deb0.md5sum] = "03426f71eab9004da6c1056c729475f8"
+DEBFILENAME_libk5crypto3 = "libk5crypto3_1.17-3+deb10u5_armhf.deb"
+SRC_URI[deb1.sha256sum] = "bf69ff5d824a0713979ba7cff4d0305c330c4f978cd2d25f05f6f376177fc87c"
+SRC_URI[deb1.md5sum] = "c09e788d1b90f9ed8b14ddbcf5862bb0"
+DEBFILENAME_libkrb5-3 = "libkrb5-3_1.17-3+deb10u5_armhf.deb"
+SRC_URI[deb2.sha256sum] = "cc0af391f2fd302a8b88868dab9ee1e0ad081601c984e01478b2d15854e0e7b9"
+SRC_URI[deb2.md5sum] = "6105a13059bad742f2ec0a58f36507c5"
+DEBFILENAME_libkrb5support0 = "libkrb5support0_1.17-3+deb10u5_armhf.deb"
+SRC_URI[deb3.sha256sum] = "c713b21ea0d98daebe6370810e0a55e4293df91aea435dba701ecb81019f04a8"
+SRC_URI[deb3.md5sum] = "c8307e0dd06927e1f642bdcd805d4c0c"
 
-RDEPENDS_libgssapi-${PN}-2 = "libc6 (>= 2.27) libcom-err2 (>= 1.43.9) libk5crypto3 (>= 1.16) libkeyutils1 (>= 1.4) libkrb5-3 (= 1.17-3+deb10u4) libkrb5support0 (>= 1.15~beta1)"
+RDEPENDS_libgssapi-${PN}-2 = "libc6 (>= 2.27) libcom-err2 (>= 1.43.9) libk5crypto3 (>= 1.16) libkeyutils1 (>= 1.4) libkrb5-3 (= 1.17-3+deb10u5) libkrb5support0 (>= 1.15~beta1)"
 RDEPENDS_libk5crypto3 = "libc6 (>= 2.28) libkeyutils1 (>= 1.4) libkrb5support0 (>= 1.16)"
-RDEPENDS_lib${PN}-3 = "libc6 (>= 2.28) libcom-err2 (>= 1.43.9) libk5crypto3 (>= 1.15~beta1) libkeyutils1 (>= 1.5.9) libkrb5support0 (= 1.17-3+deb10u4) libssl1.1 (>= 1.1.0)"
+RDEPENDS_lib${PN}-3 = "libc6 (>= 2.28) libcom-err2 (>= 1.43.9) libk5crypto3 (>= 1.15~beta1) libkeyutils1 (>= 1.5.9) libkrb5support0 (= 1.17-3+deb10u5) libssl1.1 (>= 1.1.0)"
 RDEPENDS_lib${PN}support0 = "libc6 (>= 2.8) libkeyutils1 (>= 1.4)"
 DEPENDS = "libc6 libcom-err2 libkeyutils1 libssl1.1"
 
