@@ -1,11 +1,11 @@
 PACKAGES = "${PN} libtasn1-6"
 PROVIDES = "libtasn1-6"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/libt/libtasn1-6/libtasn1-6_4.13-3_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/libt/libtasn1-6/libtasn1-6_4.13-3+deb10u1_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_libtasn1-6 = "libtasn1-6_4.13-3_armhf.deb"
-SRC_URI[deb0.sha256sum] = "594f82946858a332bfbe55ddb2b10247a52486b8b183fd818231fef8a70ff682"
-SRC_URI[deb0.md5sum] = "4cb9505bad50c726508ab599815b5002"
+DEBFILENAME_libtasn1-6 = "libtasn1-6_4.13-3+deb10u1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "997fa644d1aeaa826f7a273841abfe0667a11a14d68b8b4e9dd218077708d531"
+SRC_URI[deb0.md5sum] = "2f012e43369f52d4ef7b765623e7c4a8"
 
 RDEPENDS_${PN} = "libc6 (>= 2.4)"
 DEPENDS = "libc6"
