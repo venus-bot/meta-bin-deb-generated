@@ -1,15 +1,15 @@
 PACKAGES = "${PN} python-requests python3-requests"
 PROVIDES = "python-requests python3-requests"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/r/requests/python-requests_2.21.0-1_all.deb;unpack=0;name=deb0\
-	http://archive.raspbian.org/raspbian/pool/main/r/requests/python3-requests_2.21.0-1_all.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/r/requests/python-requests_2.21.0-1+deb10u1_all.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/r/requests/python3-requests_2.21.0-1+deb10u1_all.deb;unpack=0;name=deb1\
 "
-DEBFILENAME_python-requests = "python-requests_2.21.0-1_all.deb"
-SRC_URI[deb0.sha256sum] = "b1f0ac9e3947c748b9c2b6bffee96329771deeff1dd8606906786dd17ab62e7b"
-SRC_URI[deb0.md5sum] = "6cfa984ea0873f1f095b2dc0dd36886a"
-DEBFILENAME_python3-requests = "python3-requests_2.21.0-1_all.deb"
-SRC_URI[deb1.sha256sum] = "1ef2814c9be7246165f56d8bd8fa9a42ed70eed989dc6da9d0d90e5d774d4b47"
-SRC_URI[deb1.md5sum] = "4994ba2f77b7f494f2fa9ae16b9e9bea"
+DEBFILENAME_python-requests = "python-requests_2.21.0-1+deb10u1_all.deb"
+SRC_URI[deb0.sha256sum] = "397a9dc1ee532f29f2a3d14a5ceebb8ae6453fdffbc82392646d6a200475d679"
+SRC_URI[deb0.md5sum] = "27900a3c381b013320968335889104ab"
+DEBFILENAME_python3-requests = "python3-requests_2.21.0-1+deb10u1_all.deb"
+SRC_URI[deb1.sha256sum] = "532a0977d7fe0c91878e628c9304ef6ad8073cf63932a2ce62133599e8a354bc"
+SRC_URI[deb1.md5sum] = "05788d8b280472bd6c1f9826d11412d6"
 
 RDEPENDS_python-${PN} = "ca-certificates python (<< 2.8) python (>= 2.7~) python-certifi python-chardet (<< 3.1.0) python-chardet (>= 3.0.2) python-idna python-urllib3 (<< 1.25) python-urllib3 (>= 1.21.1)"
 RDEPENDS_python3-${PN} = "ca-certificates python3 python3-certifi python3-chardet (<< 3.1.0) python3-chardet (>= 3.0.2) python3-idna python3-urllib3 (<< 1.25) python3-urllib3 (>= 1.21.1)"
