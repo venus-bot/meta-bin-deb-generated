@@ -1,11 +1,11 @@
 PACKAGES = "${PN} libwebp6"
 PROVIDES = "libwebp6"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/libw/libwebp/libwebp6_0.6.1-2+deb10u2_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/libw/libwebp/libwebp6_0.6.1-2+deb10u3_armhf.deb;unpack=0;name=deb0\
 "
-DEBFILENAME_libwebp6 = "libwebp6_0.6.1-2+deb10u2_armhf.deb"
-SRC_URI[deb0.sha256sum] = "7fcdb7736e392a86ba854fbbbf1304dbe5e7bba55b081a7277f749224e477db9"
-SRC_URI[deb0.md5sum] = "fa634cf928298d34bc42213de2d3c1d4"
+DEBFILENAME_libwebp6 = "libwebp6_0.6.1-2+deb10u3_armhf.deb"
+SRC_URI[deb0.sha256sum] = "6e82f5ffe13a576c10dad4b747d32069d20e9d754f60c456ac18381a59a27334"
+SRC_URI[deb0.md5sum] = "c31bbb401ea94be10d7a5d586d094067"
 
 RDEPENDS_${PN}6 = "libc6 (>= 2.4)"
 DEPENDS = "libc6"

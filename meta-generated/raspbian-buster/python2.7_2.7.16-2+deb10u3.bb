@@ -1,28 +1,28 @@
 PACKAGES = "${PN} libpython2.7-minimal libpython2.7-stdlib python2.7 python2.7-minimal"
 PROVIDES = "libpython2.7-minimal libpython2.7-stdlib python2.7 python2.7-minimal"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/p/python2.7/libpython2.7-minimal_2.7.16-2+deb10u2_armhf.deb;unpack=0;name=deb0\
-	http://archive.raspbian.org/raspbian/pool/main/p/python2.7/libpython2.7-stdlib_2.7.16-2+deb10u2_armhf.deb;unpack=0;name=deb1\
-	http://archive.raspbian.org/raspbian/pool/main/p/python2.7/python2.7_2.7.16-2+deb10u2_armhf.deb;unpack=0;name=deb2\
-	http://archive.raspbian.org/raspbian/pool/main/p/python2.7/python2.7-minimal_2.7.16-2+deb10u2_armhf.deb;unpack=0;name=deb3\
+	http://archive.raspbian.org/raspbian/pool/main/p/python2.7/libpython2.7-minimal_2.7.16-2+deb10u3_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/p/python2.7/libpython2.7-stdlib_2.7.16-2+deb10u3_armhf.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/p/python2.7/python2.7_2.7.16-2+deb10u3_armhf.deb;unpack=0;name=deb2\
+	http://archive.raspbian.org/raspbian/pool/main/p/python2.7/python2.7-minimal_2.7.16-2+deb10u3_armhf.deb;unpack=0;name=deb3\
 "
-DEBFILENAME_libpython2.7-minimal = "libpython2.7-minimal_2.7.16-2+deb10u2_armhf.deb"
-SRC_URI[deb0.sha256sum] = "0588ee55c103e99b480c73ee5c93979ab26cab5027d1597c81a4df648f9b06fe"
-SRC_URI[deb0.md5sum] = "e3ea53310aec655faff9a26cf6ce35eb"
-DEBFILENAME_libpython2.7-stdlib = "libpython2.7-stdlib_2.7.16-2+deb10u2_armhf.deb"
-SRC_URI[deb1.sha256sum] = "d5fb45d7e7578444fecd80243540f76aa66e455fabab06f76759b637784410fe"
-SRC_URI[deb1.md5sum] = "041de0eeae156174dd7775c8689bf805"
-DEBFILENAME_python2.7 = "python2.7_2.7.16-2+deb10u2_armhf.deb"
-SRC_URI[deb2.sha256sum] = "7c42482568dfcbc6c7ffe0ceed093b9b2dd7c736d2557bc778fe9d42bf0cd566"
-SRC_URI[deb2.md5sum] = "ae8fd9fc470c65e63a71db9cbd0298b9"
-DEBFILENAME_python2.7-minimal = "python2.7-minimal_2.7.16-2+deb10u2_armhf.deb"
-SRC_URI[deb3.sha256sum] = "5112b8315359901cdaf5a6f911bb843daddbfbf9569522a87c54a173ff0678bc"
-SRC_URI[deb3.md5sum] = "aacf260e627f0d399a0c8eeb7152ed09"
+DEBFILENAME_libpython2.7-minimal = "libpython2.7-minimal_2.7.16-2+deb10u3_armhf.deb"
+SRC_URI[deb0.sha256sum] = "44d7b52c7f4b96b9eb48b8e6dcd6362a70cc50768d531bb32eb9688b76d66747"
+SRC_URI[deb0.md5sum] = "26924568d4f4e06f3d8b8a539078cbda"
+DEBFILENAME_libpython2.7-stdlib = "libpython2.7-stdlib_2.7.16-2+deb10u3_armhf.deb"
+SRC_URI[deb1.sha256sum] = "bba808e2a738d52b14b1242f2dde022a4dc5ac2d151388952af61b647bb7ef71"
+SRC_URI[deb1.md5sum] = "083b2b4fff14acf32423a8d1fc42d1cd"
+DEBFILENAME_python2.7 = "python2.7_2.7.16-2+deb10u3_armhf.deb"
+SRC_URI[deb2.sha256sum] = "780a0fc726953190d648df2c0078078da5bf55af8c532c1b4c6cb813065ab792"
+SRC_URI[deb2.md5sum] = "6909811b0a4e5097f9e9e7f59d2280c4"
+DEBFILENAME_python2.7-minimal = "python2.7-minimal_2.7.16-2+deb10u3_armhf.deb"
+SRC_URI[deb3.sha256sum] = "85bd4faee3ec60a146aefa2aabbb6ab4ff0047b01e69661bd14263b270034ed9"
+SRC_URI[deb3.md5sum] = "5ca747db4f1437a18e2e3b889f274b73"
 
 RDEPENDS_lib${PN}-minimal = ""
-RDEPENDS_lib${PN}-stdlib = "libbz2-1.0 libc6 (>= 2.28) libdb5.3 libexpat1 (>= 2.1~beta3) libffi6 (>= 3.0.4) libncursesw6 (>= 6) libpython2.7-minimal (= 2.7.16-2+deb10u2) libreadline7 (>= 7.0~beta) libsqlite3-0 (>= 3.5.9) libssl1.1 (>= 1.1.1) libtinfo6 (>= 6) mime-support"
-RDEPENDS_${PN} = "libpython2.7-stdlib (= 2.7.16-2+deb10u2) mime-support python2.7-minimal (= 2.7.16-2+deb10u2)"
-RDEPENDS_${PN}-minimal = "libc6 (>= 2.28) libpython2.7-minimal (= 2.7.16-2+deb10u2) zlib1g (>= 1:1.2.0)"
+RDEPENDS_lib${PN}-stdlib = "libbz2-1.0 libc6 (>= 2.28) libdb5.3 libexpat1 (>= 2.1~beta3) libffi6 (>= 3.0.4) libncursesw6 (>= 6) libpython2.7-minimal (= 2.7.16-2+deb10u3) libreadline7 (>= 7.0~beta) libsqlite3-0 (>= 3.5.9) libssl1.1 (>= 1.1.1) libtinfo6 (>= 6) mime-support"
+RDEPENDS_${PN} = "libpython2.7-stdlib (= 2.7.16-2+deb10u3) mime-support python2.7-minimal (= 2.7.16-2+deb10u3)"
+RDEPENDS_${PN}-minimal = "libc6 (>= 2.28) libpython2.7-minimal (= 2.7.16-2+deb10u3) zlib1g (>= 1:1.2.0)"
 DEPENDS = "libbz2-1.0 libc6 libdb5.3 libexpat1 libffi6 libncursesw6 libreadline7 libsqlite3-0 libssl1.1 libtinfo6 mime-support zlib1g"
 
 
