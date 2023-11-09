@@ -1,15 +1,15 @@
 PACKAGES = "${PN} python-urllib3 python3-urllib3"
 PROVIDES = "python-urllib3 python3-urllib3"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/p/python-urllib3/python-urllib3_1.24.1-1+deb10u1_all.deb;unpack=0;name=deb0\
-	http://archive.raspbian.org/raspbian/pool/main/p/python-urllib3/python3-urllib3_1.24.1-1+deb10u1_all.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/p/python-urllib3/python-urllib3_1.24.1-1+deb10u2_all.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/p/python-urllib3/python3-urllib3_1.24.1-1+deb10u2_all.deb;unpack=0;name=deb1\
 "
-DEBFILENAME_python-urllib3 = "python-urllib3_1.24.1-1+deb10u1_all.deb"
-SRC_URI[deb0.sha256sum] = "1ba95f0792819cadfad9b35690a80e508e18979d710346bbcdd5750dcbe5a5f4"
-SRC_URI[deb0.md5sum] = "b049df180316c1ffd3a89ca1cfdaa4a6"
-DEBFILENAME_python3-urllib3 = "python3-urllib3_1.24.1-1+deb10u1_all.deb"
-SRC_URI[deb1.sha256sum] = "f36ff73e9997bb8e238fcb419e6acc6ba7d1bb4fef5e2d09ae000d91a6ab2142"
-SRC_URI[deb1.md5sum] = "789480743d52c777a6a698ea6d8e3097"
+DEBFILENAME_python-urllib3 = "python-urllib3_1.24.1-1+deb10u2_all.deb"
+SRC_URI[deb0.sha256sum] = "3a682c3f59cb25242310a37158e5aaf3aaa158230aa9b8632dc4bc5b1d6a2057"
+SRC_URI[deb0.md5sum] = "03a191b20a667d2cb9ae2a1841e34636"
+DEBFILENAME_python3-urllib3 = "python3-urllib3_1.24.1-1+deb10u2_all.deb"
+SRC_URI[deb1.sha256sum] = "65b28887c2a56f57e34b50b4d3bc79ca60c4fd36255e5168a02da13ad1e70eaf"
+SRC_URI[deb1.md5sum] = "84d50aea7853bf0d6ea1ce253b4fd930"
 
 RDEPENDS_${PN} = "python (<< 2.8) python (>= 2.7~) python-six"
 RDEPENDS_python3-urllib3 = "python3 python3-six"
