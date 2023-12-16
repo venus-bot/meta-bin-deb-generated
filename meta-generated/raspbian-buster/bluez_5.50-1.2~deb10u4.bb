@@ -1,17 +1,17 @@
 PACKAGES = "${PN} libbluetooth-dev libbluetooth3"
 PROVIDES = "libbluetooth-dev libbluetooth3"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/b/bluez/libbluetooth-dev_5.50-1.2~deb10u3_armhf.deb;unpack=0;name=deb0\
-	http://archive.raspbian.org/raspbian/pool/main/b/bluez/libbluetooth3_5.50-1.2~deb10u3_armhf.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/b/bluez/libbluetooth-dev_5.50-1.2~deb10u4_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/b/bluez/libbluetooth3_5.50-1.2~deb10u4_armhf.deb;unpack=0;name=deb1\
 "
-DEBFILENAME_libbluetooth-dev = "libbluetooth-dev_5.50-1.2~deb10u3_armhf.deb"
-SRC_URI[deb0.sha256sum] = "2e2588456100f9206c19047293025dae0d320b2f6196818945e7e69b41e90418"
-SRC_URI[deb0.md5sum] = "20439ca406aa80a4c1ae3edf0a1fad2b"
-DEBFILENAME_libbluetooth3 = "libbluetooth3_5.50-1.2~deb10u3_armhf.deb"
-SRC_URI[deb1.sha256sum] = "12fd8d66c652520bcfa99de03dc3893d9d1e63c5648e35b7d03dde9fccb81cb7"
-SRC_URI[deb1.md5sum] = "82aad6d22755c568bdabfd9de1d2a60a"
+DEBFILENAME_libbluetooth-dev = "libbluetooth-dev_5.50-1.2~deb10u4_armhf.deb"
+SRC_URI[deb0.sha256sum] = "1c3b97b2295704c727f3faf21d4dd01cd61d08e606ccd0e1aa866ace55edab67"
+SRC_URI[deb0.md5sum] = "a517beaf095618d46dff7f31647c4f49"
+DEBFILENAME_libbluetooth3 = "libbluetooth3_5.50-1.2~deb10u4_armhf.deb"
+SRC_URI[deb1.sha256sum] = "d5bd18b86b624f832cd3471f979054f599912385155b640db5afc947ebbb118b"
+SRC_URI[deb1.md5sum] = "466ab747bd5297b46549720e92aee09a"
 
-RDEPENDS_libbluetooth-dev = "libbluetooth3 (= 5.50-1.2~deb10u3) libc6-dev"
+RDEPENDS_libbluetooth-dev = "libbluetooth3 (= 5.50-1.2~deb10u4) libc6-dev"
 RDEPENDS_libbluetooth3 = "libc6 (>= 2.15) libudev1 (>= 183)"
 DEPENDS = "libc6 libc6-dev libudev1"
 
