@@ -1,28 +1,28 @@
 PACKAGES = "${PN} libpython3.7-minimal libpython3.7-stdlib python3.7 python3.7-minimal"
 PROVIDES = "libpython3.7-minimal libpython3.7-stdlib python3.7 python3.7-minimal"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/p/python3.7/libpython3.7-minimal_3.7.3-2+deb10u6_armhf.deb;unpack=0;name=deb0\
-	http://archive.raspbian.org/raspbian/pool/main/p/python3.7/libpython3.7-stdlib_3.7.3-2+deb10u6_armhf.deb;unpack=0;name=deb1\
-	http://archive.raspbian.org/raspbian/pool/main/p/python3.7/python3.7_3.7.3-2+deb10u6_armhf.deb;unpack=0;name=deb2\
-	http://archive.raspbian.org/raspbian/pool/main/p/python3.7/python3.7-minimal_3.7.3-2+deb10u6_armhf.deb;unpack=0;name=deb3\
+	http://archive.raspbian.org/raspbian/pool/main/p/python3.7/libpython3.7-minimal_3.7.3-2+deb10u7_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/p/python3.7/libpython3.7-stdlib_3.7.3-2+deb10u7_armhf.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/p/python3.7/python3.7_3.7.3-2+deb10u7_armhf.deb;unpack=0;name=deb2\
+	http://archive.raspbian.org/raspbian/pool/main/p/python3.7/python3.7-minimal_3.7.3-2+deb10u7_armhf.deb;unpack=0;name=deb3\
 "
-DEBFILENAME_libpython3.7-minimal = "libpython3.7-minimal_3.7.3-2+deb10u6_armhf.deb"
-SRC_URI[deb0.sha256sum] = "7ffd82878756064a941d50bed866c2ebba714e7eb968ddb0d1246b0e78b6d10f"
-SRC_URI[deb0.md5sum] = "9504e568e58e58b6e66cd94fd3d182d7"
-DEBFILENAME_libpython3.7-stdlib = "libpython3.7-stdlib_3.7.3-2+deb10u6_armhf.deb"
-SRC_URI[deb1.sha256sum] = "b1bc347ce1ea6922242811a628c0ba132bbefe02f13955128510fe51aca108cf"
-SRC_URI[deb1.md5sum] = "8f801deecb12680c38c4dd961f6bf02c"
-DEBFILENAME_python3.7 = "python3.7_3.7.3-2+deb10u6_armhf.deb"
-SRC_URI[deb2.sha256sum] = "cdb73f57288a9f2870468e5ed9a1b01487a38c158224e8980153a96a66ebf057"
-SRC_URI[deb2.md5sum] = "5c553927c86f7c43ae73c99e8f704ae6"
-DEBFILENAME_python3.7-minimal = "python3.7-minimal_3.7.3-2+deb10u6_armhf.deb"
-SRC_URI[deb3.sha256sum] = "aa7deeb85dd5badc3245aec5261d6f1d8a83331bcd5b9051816cc3bee8f18a18"
-SRC_URI[deb3.md5sum] = "81e6dda42a59f381241e9b2aee931580"
+DEBFILENAME_libpython3.7-minimal = "libpython3.7-minimal_3.7.3-2+deb10u7_armhf.deb"
+SRC_URI[deb0.sha256sum] = "7cddcb45e86cd59bc8c1021958cf7554425ce47d6008700c9dc8617a789ad169"
+SRC_URI[deb0.md5sum] = "3b925bfd0884d3a9f262f21e12ddfa0d"
+DEBFILENAME_libpython3.7-stdlib = "libpython3.7-stdlib_3.7.3-2+deb10u7_armhf.deb"
+SRC_URI[deb1.sha256sum] = "342ef49dcc5ea1e811b43b6bf6b17173740c99b65363ba72326704ecf08d410f"
+SRC_URI[deb1.md5sum] = "bb3428b97d31dcd5dc9fcdb584d132da"
+DEBFILENAME_python3.7 = "python3.7_3.7.3-2+deb10u7_armhf.deb"
+SRC_URI[deb2.sha256sum] = "53064bed1dc68da45e03139ee87aac9f1761193df5bccc20c6697a19db8cb884"
+SRC_URI[deb2.md5sum] = "288abf1c49348cc5cbcfccb9b848e4d3"
+DEBFILENAME_python3.7-minimal = "python3.7-minimal_3.7.3-2+deb10u7_armhf.deb"
+SRC_URI[deb3.sha256sum] = "d7b26493d7914c75b2d7abc875706d3c8c56f28e4f57b528103a37e8693b2304"
+SRC_URI[deb3.md5sum] = "0a11b21378355c3a28e1baeb78389f1a"
 
 RDEPENDS_lib${PN}-minimal = "libc6 (>= 2.4) libssl1.1 (>= 1.1.1)"
-RDEPENDS_lib${PN}-stdlib = "libbz2-1.0 libc6 (>= 2.28) libdb5.3 libffi6 (>= 3.0.4) liblzma5 (>= 5.1.1alpha+20120614) libmpdec2 libncursesw6 (>= 6) libpython3.7-minimal (= 3.7.3-2+deb10u6) libreadline7 (>= 7.0~beta) libsqlite3-0 (>= 3.7.15) libtinfo6 (>= 6) libuuid1 (>= 2.20.1) mime-support"
-RDEPENDS_${PN} = "libpython3.7-stdlib (= 3.7.3-2+deb10u6) mime-support python3.7-minimal (= 3.7.3-2+deb10u6)"
-RDEPENDS_${PN}-minimal = "libc6 (>= 2.28) libexpat1 (>= 2.1~beta3) libpython3.7-minimal (= 3.7.3-2+deb10u6) zlib1g (>= 1:1.2.0)"
+RDEPENDS_lib${PN}-stdlib = "libbz2-1.0 libc6 (>= 2.28) libdb5.3 libffi6 (>= 3.0.4) liblzma5 (>= 5.1.1alpha+20120614) libmpdec2 libncursesw6 (>= 6) libpython3.7-minimal (= 3.7.3-2+deb10u7) libreadline7 (>= 7.0~beta) libsqlite3-0 (>= 3.7.15) libtinfo6 (>= 6) libuuid1 (>= 2.20.1) mime-support"
+RDEPENDS_${PN} = "libpython3.7-stdlib (= 3.7.3-2+deb10u7) mime-support python3.7-minimal (= 3.7.3-2+deb10u7)"
+RDEPENDS_${PN}-minimal = "libc6 (>= 2.28) libexpat1 (>= 2.1~beta3) libpython3.7-minimal (= 3.7.3-2+deb10u7) zlib1g (>= 1:1.2.0)"
 DEPENDS = "libbz2-1.0 libc6 libdb5.3 libexpat1 libffi6 liblzma5 libmpdec2 libncursesw6 libreadline7 libsqlite3-0 libssl1.1 libtinfo6 libuuid1 mime-support zlib1g"
 
 
