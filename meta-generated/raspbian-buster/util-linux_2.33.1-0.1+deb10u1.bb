@@ -1,63 +1,63 @@
 PACKAGES = "${PN} fdisk libblkid-dev libblkid1 libfdisk1 libmount-dev libmount1 libsmartcols1 libuuid1 mount util-linux uuid-dev"
 PROVIDES = "fdisk libblkid-dev libblkid1 libfdisk1 libmount-dev libmount1 libsmartcols1 libuuid1 mount util-linux uuid-dev"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/u/util-linux/fdisk_2.33.1-0.1_armhf.deb;unpack=0;name=deb0\
-	http://archive.raspbian.org/raspbian/pool/main/u/util-linux/libblkid-dev_2.33.1-0.1_armhf.deb;unpack=0;name=deb1\
-	http://archive.raspbian.org/raspbian/pool/main/u/util-linux/libblkid1_2.33.1-0.1_armhf.deb;unpack=0;name=deb2\
-	http://archive.raspbian.org/raspbian/pool/main/u/util-linux/libfdisk1_2.33.1-0.1_armhf.deb;unpack=0;name=deb3\
-	http://archive.raspbian.org/raspbian/pool/main/u/util-linux/libmount-dev_2.33.1-0.1_armhf.deb;unpack=0;name=deb4\
-	http://archive.raspbian.org/raspbian/pool/main/u/util-linux/libmount1_2.33.1-0.1_armhf.deb;unpack=0;name=deb5\
-	http://archive.raspbian.org/raspbian/pool/main/u/util-linux/libsmartcols1_2.33.1-0.1_armhf.deb;unpack=0;name=deb6\
-	http://archive.raspbian.org/raspbian/pool/main/u/util-linux/libuuid1_2.33.1-0.1_armhf.deb;unpack=0;name=deb7\
-	http://archive.raspbian.org/raspbian/pool/main/u/util-linux/mount_2.33.1-0.1_armhf.deb;unpack=0;name=deb8\
-	http://archive.raspbian.org/raspbian/pool/main/u/util-linux/util-linux_2.33.1-0.1_armhf.deb;unpack=0;name=deb9\
-	http://archive.raspbian.org/raspbian/pool/main/u/util-linux/uuid-dev_2.33.1-0.1_armhf.deb;unpack=0;name=deb10\
+	http://archive.raspbian.org/raspbian/pool/main/u/util-linux/fdisk_2.33.1-0.1+deb10u1_armhf.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/u/util-linux/libblkid-dev_2.33.1-0.1+deb10u1_armhf.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/u/util-linux/libblkid1_2.33.1-0.1+deb10u1_armhf.deb;unpack=0;name=deb2\
+	http://archive.raspbian.org/raspbian/pool/main/u/util-linux/libfdisk1_2.33.1-0.1+deb10u1_armhf.deb;unpack=0;name=deb3\
+	http://archive.raspbian.org/raspbian/pool/main/u/util-linux/libmount-dev_2.33.1-0.1+deb10u1_armhf.deb;unpack=0;name=deb4\
+	http://archive.raspbian.org/raspbian/pool/main/u/util-linux/libmount1_2.33.1-0.1+deb10u1_armhf.deb;unpack=0;name=deb5\
+	http://archive.raspbian.org/raspbian/pool/main/u/util-linux/libsmartcols1_2.33.1-0.1+deb10u1_armhf.deb;unpack=0;name=deb6\
+	http://archive.raspbian.org/raspbian/pool/main/u/util-linux/libuuid1_2.33.1-0.1+deb10u1_armhf.deb;unpack=0;name=deb7\
+	http://archive.raspbian.org/raspbian/pool/main/u/util-linux/mount_2.33.1-0.1+deb10u1_armhf.deb;unpack=0;name=deb8\
+	http://archive.raspbian.org/raspbian/pool/main/u/util-linux/util-linux_2.33.1-0.1+deb10u1_armhf.deb;unpack=0;name=deb9\
+	http://archive.raspbian.org/raspbian/pool/main/u/util-linux/uuid-dev_2.33.1-0.1+deb10u1_armhf.deb;unpack=0;name=deb10\
 "
-DEBFILENAME_fdisk = "fdisk_2.33.1-0.1_armhf.deb"
-SRC_URI[deb0.sha256sum] = "b6b25b074c96cecea4591cea34a4ec8386f84b4839c062614b7a2b6860852f8d"
-SRC_URI[deb0.md5sum] = "b17c1f6d551f78deec1fb5115e2154b4"
-DEBFILENAME_libblkid-dev = "libblkid-dev_2.33.1-0.1_armhf.deb"
-SRC_URI[deb1.sha256sum] = "1274ba8a74c2144ddd3d6124cc81d1bffad228af6a5553e7e85dc72d515bc46f"
-SRC_URI[deb1.md5sum] = "edc423083d186e946c28bdc312a3c83a"
-DEBFILENAME_libblkid1 = "libblkid1_2.33.1-0.1_armhf.deb"
-SRC_URI[deb2.sha256sum] = "92801e35c3dbe24f2cb45d76e0837bc3928ecf2c1016ab07e827097634afa2c0"
-SRC_URI[deb2.md5sum] = "f5e4df75a2cb76c8ed668c389fcb6753"
-DEBFILENAME_libfdisk1 = "libfdisk1_2.33.1-0.1_armhf.deb"
-SRC_URI[deb3.sha256sum] = "3f6b0cf5c617b6a01d29d886da13c6b01089358a189defc4e3e77e8c2d5c3b82"
-SRC_URI[deb3.md5sum] = "ba7a71096391cec6043effa7e961d4b4"
-DEBFILENAME_libmount-dev = "libmount-dev_2.33.1-0.1_armhf.deb"
-SRC_URI[deb4.sha256sum] = "24c59b7b33df451c7c3eca4b1d39a25c2e26eca4d4ee6b47331382175307dc11"
-SRC_URI[deb4.md5sum] = "acdf0ab2fab5bbeb9ef6eb760441173b"
-DEBFILENAME_libmount1 = "libmount1_2.33.1-0.1_armhf.deb"
-SRC_URI[deb5.sha256sum] = "9443056463d7ddedde9bf28e1f2b6486198b68143fa0b7a2688e3edf823d566d"
-SRC_URI[deb5.md5sum] = "9049a84f7d2c01c14770134c0484630a"
-DEBFILENAME_libsmartcols1 = "libsmartcols1_2.33.1-0.1_armhf.deb"
-SRC_URI[deb6.sha256sum] = "89b68e6864243156a40e4b0f48a2f8be7d8839d10c57faabe118dd6b73ea72ac"
-SRC_URI[deb6.md5sum] = "26bdf3dfd66639ed2a6ecb649492d2ee"
-DEBFILENAME_libuuid1 = "libuuid1_2.33.1-0.1_armhf.deb"
-SRC_URI[deb7.sha256sum] = "31dd55f3044d29370d22f956aa86965b085a201f133771aed5a44631bf989791"
-SRC_URI[deb7.md5sum] = "100863dbcba430852d98b87500ab27e9"
-DEBFILENAME_mount = "mount_2.33.1-0.1_armhf.deb"
-SRC_URI[deb8.sha256sum] = "783415bffef39bf23b3f7951c1aa2f341dfa2ed39d8277373bbb0d94055b3fc7"
-SRC_URI[deb8.md5sum] = "4b4c9022c895e151e9685a45f38e46f5"
-DEBFILENAME_util-linux = "util-linux_2.33.1-0.1_armhf.deb"
-SRC_URI[deb9.sha256sum] = "cb49e05926af8592fb42b2b02b8a8c5b7a6933449b7445a88aa310b041b28e06"
-SRC_URI[deb9.md5sum] = "927b24588912778ece22ff74f86cd87c"
-DEBFILENAME_uuid-dev = "uuid-dev_2.33.1-0.1_armhf.deb"
-SRC_URI[deb10.sha256sum] = "76bd2830e577411840c79cf28560eb8041ddafc1f157d2cb9bde71ed1fbfbb33"
-SRC_URI[deb10.md5sum] = "4277ba83d6e939592749df3931378ffa"
+DEBFILENAME_fdisk = "fdisk_2.33.1-0.1+deb10u1_armhf.deb"
+SRC_URI[deb0.sha256sum] = "8e1c8b9d410c128ac1872b1d936c76a395efde0d09c75ec7a1a871830292972c"
+SRC_URI[deb0.md5sum] = "e3684c3d5e036d0a803329bbb514f63a"
+DEBFILENAME_libblkid-dev = "libblkid-dev_2.33.1-0.1+deb10u1_armhf.deb"
+SRC_URI[deb1.sha256sum] = "f1537633368300fc148205bbba16032d02461097021c3fa1feb79ecf5af91aff"
+SRC_URI[deb1.md5sum] = "53d6de2f9fd1a48f56af4ce3094931a0"
+DEBFILENAME_libblkid1 = "libblkid1_2.33.1-0.1+deb10u1_armhf.deb"
+SRC_URI[deb2.sha256sum] = "a53a5370f43074afeb2df1a6efb4bf58353bf0a6d6847b291f11d80356284446"
+SRC_URI[deb2.md5sum] = "bccd2f1ec69667765e8750bda1ba49fe"
+DEBFILENAME_libfdisk1 = "libfdisk1_2.33.1-0.1+deb10u1_armhf.deb"
+SRC_URI[deb3.sha256sum] = "67a80f09bd109802a8bc007baeab41d1ed58aeefb5ea3c2b6320cd8ecdf5754a"
+SRC_URI[deb3.md5sum] = "19c7b8354d85db773e349d6ba3a426b0"
+DEBFILENAME_libmount-dev = "libmount-dev_2.33.1-0.1+deb10u1_armhf.deb"
+SRC_URI[deb4.sha256sum] = "5a755e2e2d9a683e5f9fb543054176c1a9c43bddb8671556f5e54d2e73e5d484"
+SRC_URI[deb4.md5sum] = "d570f0f4aec1582a6d1364ae23e130cf"
+DEBFILENAME_libmount1 = "libmount1_2.33.1-0.1+deb10u1_armhf.deb"
+SRC_URI[deb5.sha256sum] = "08789d1999679fa7b8f3c9c0a84cbdb8d477be072fdb6ce3a20417aa472bd7f9"
+SRC_URI[deb5.md5sum] = "48557ccda223b82745dd025fc07c5fec"
+DEBFILENAME_libsmartcols1 = "libsmartcols1_2.33.1-0.1+deb10u1_armhf.deb"
+SRC_URI[deb6.sha256sum] = "20aa57ad4715b0b4c87190bd9415363b41a2df4b632711b1e160d3b674a54537"
+SRC_URI[deb6.md5sum] = "1e19b42cb23719550cd2401ee59cacde"
+DEBFILENAME_libuuid1 = "libuuid1_2.33.1-0.1+deb10u1_armhf.deb"
+SRC_URI[deb7.sha256sum] = "3a8bb51c8f06853b8be99a7a314d3d06e7322e82f97f79b315f2667baf7013fc"
+SRC_URI[deb7.md5sum] = "71f080c7da5ecafcf8b903e8d2fcaee2"
+DEBFILENAME_mount = "mount_2.33.1-0.1+deb10u1_armhf.deb"
+SRC_URI[deb8.sha256sum] = "fb8a3eb9af9f162b3a6ebd354a2defc65ce1009dfe9da8ae4becd84cc925535c"
+SRC_URI[deb8.md5sum] = "86becc906e07f5b67922d913c9fba4b5"
+DEBFILENAME_util-linux = "util-linux_2.33.1-0.1+deb10u1_armhf.deb"
+SRC_URI[deb9.sha256sum] = "05b1898d4c55b664dc9b8125bb27539632408118a5a8c5a77e656836ac4cb6cc"
+SRC_URI[deb9.md5sum] = "9d2b39d5c6a07cb733bcea1c70c8eeb9"
+DEBFILENAME_uuid-dev = "uuid-dev_2.33.1-0.1+deb10u1_armhf.deb"
+SRC_URI[deb10.sha256sum] = "11239e2c05a8fdadeda882380311bda1d60eb2cfc6f7442291205f1c24f33a67"
+SRC_URI[deb10.md5sum] = "16826dad557e28ec258c32eed2a6dcc9"
 
 RDEPENDS_fdisk = "libc6 (>= 2.28) libfdisk1 (>= 2.33) libmount1 (>= 2.24.2) libncursesw6 (>= 6) libsmartcols1 (>= 2.28~rc1) libtinfo6 (>= 6)"
-RDEPENDS_libblkid-dev = "libblkid1 (= 2.33.1-0.1) libc6-dev uuid-dev"
+RDEPENDS_libblkid-dev = "libblkid1 (= 2.33.1-0.1+deb10u1) libc6-dev uuid-dev"
 RDEPENDS_libblkid1 = "libc6 (>= 2.28) libuuid1 (>= 2.16)"
 RDEPENDS_libfdisk1 = "libblkid1 (>= 2.24.2) libc6 (>= 2.28) libuuid1 (>= 2.16)"
-RDEPENDS_libmount-dev = "libblkid-dev libc6-dev libmount1 (= 2.33.1-0.1)"
+RDEPENDS_libmount-dev = "libblkid-dev libc6-dev libmount1 (= 2.33.1-0.1+deb10u1)"
 RDEPENDS_libmount1 = "libblkid1 (>= 2.17.2) libc6 (>= 2.28) libselinux1 (>= 2.6-3~)"
 RDEPENDS_libsmartcols1 = "libc6 (>= 2.28)"
 RDEPENDS_libuuid1 = "libc6 (>= 2.28)"
 RDEPENDS_mount = "libblkid1 (>= 2.17.2) libc6 (>= 2.28) libmount1 (>= 2.33) libselinux1 (>= 2.6-3~) libsmartcols1 (>= 2.33) util-linux (>= 2.29.2-3~)"
 RDEPENDS_${PN} = "fdisk libaudit1 (>= 1:2.2.1) libblkid1 (>= 2.31.1) libc6 (>= 2.28) libcap-ng0 (>= 0.7.9) libmount1 (>= 2.25) libpam0g (>= 0.99.7.1) libselinux1 (>= 2.6-3~) libsmartcols1 (>= 2.33) libsystemd0 libtinfo6 (>= 6) libudev1 (>= 183) libuuid1 (>= 2.16) login (>= 1:4.5-1.1~) zlib1g (>= 1:1.1.4)"
-RDEPENDS_uuid-dev = "libc6-dev libuuid1 (= 2.33.1-0.1)"
+RDEPENDS_uuid-dev = "libc6-dev libuuid1 (= 2.33.1-0.1+deb10u1)"
 DEPENDS = "libaudit1 libc6 libc6-dev libcap-ng0 libncursesw6 libpam0g libselinux1 libsystemd0 libtinfo6 libudev1 login zlib1g"
 
 
