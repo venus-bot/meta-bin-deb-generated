@@ -1,18 +1,18 @@
 PACKAGES = "${PN} python-idna python3-idna"
 PROVIDES = "python-idna python3-idna"
 SRC_URI = " \
-	http://archive.raspbian.org/raspbian/pool/main/p/python-idna/python-idna_2.6-1_all.deb;unpack=0;name=deb0\
-	http://archive.raspbian.org/raspbian/pool/main/p/python-idna/python3-idna_2.6-1_all.deb;unpack=0;name=deb1\
+	http://archive.raspbian.org/raspbian/pool/main/p/python-idna/python-idna_2.6-1+deb10u1_all.deb;unpack=0;name=deb0\
+	http://archive.raspbian.org/raspbian/pool/main/p/python-idna/python3-idna_2.6-1+deb10u1_all.deb;unpack=0;name=deb1\
 "
-DEBFILENAME_python-idna = "python-idna_2.6-1_all.deb"
-SRC_URI[deb0.sha256sum] = "a534a4eb31584d72229121adca2facffec3730693dbc2aef5221eacd09c772be"
-SRC_URI[deb0.md5sum] = "90de88ac87c249700a667ebabbf996b6"
-DEBFILENAME_python3-idna = "python3-idna_2.6-1_all.deb"
-SRC_URI[deb1.sha256sum] = "84329a53dbff38040c02a65cce1f63e0c18b1e7bec432124f42eec6fee1e99de"
-SRC_URI[deb1.md5sum] = "a0143d8edba2822ba22a79fc8967a0dd"
+DEBFILENAME_python-idna = "python-idna_2.6-1+deb10u1_all.deb"
+SRC_URI[deb0.sha256sum] = "dec76ceae6106843f1d5236c96cd50e4c586d5b8d24198c321fd65c3c9158279"
+SRC_URI[deb0.md5sum] = "643a834a0e5cb7962eab645b160569e2"
+DEBFILENAME_python3-idna = "python3-idna_2.6-1+deb10u1_all.deb"
+SRC_URI[deb1.sha256sum] = "d2cc1b14262e123021f408fd60f68803451c22841b0fed811779aac8f8ea4728"
+SRC_URI[deb1.md5sum] = "3bd23fd2c426605aaa1cb59e4ad4a02f"
 
-RDEPENDS_${PN} = "python (<< 2.8) python (>= 2.7.5-5~)"
-RDEPENDS_python3-idna = "python3 (>= 3.3.2-2~)"
+RDEPENDS_${PN} = "python (<< 2.8) python (>= 2.7~)"
+RDEPENDS_python3-idna = "python3 (>= 3.3~)"
 DEPENDS = "python python3"
 
 
